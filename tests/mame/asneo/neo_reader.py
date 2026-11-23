@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact offline NeoFontTerminal decoding from LCD RAM records or historical PNGs."""
+"""Exact offline BetaWiseTerminal decoding from LCD RAM records or historical PNGs."""
 import argparse
 from collections import defaultdict
 from dataclasses import asdict, dataclass
@@ -10,7 +10,7 @@ import sys
 
 from PIL import Image
 
-FONT = Path(__file__).resolve().parents[3] / 'applets/NeoFontTerminal/glyphs.png'
+FONT = Path(__file__).resolve().parents[3] / 'tests/fonts/fixtures/glyphs.png'
 
 
 @dataclass

@@ -1,15 +1,15 @@
 FONT ?= Standard
-FONT_Standard = glyphs.png
-FONT_Small = glyphs-5x7.png
-FONT_Tiny = glyphs-4x6.png
+FONT_Standard = glyphs.bdf
+FONT_Small = glyphs-5x7.bdf
+FONT_Tiny = glyphs-4x6.bdf
 SUFFIX = $(if $(filter Standard,$(FONT)),,-$(FONT))
 INT = glyphs$(SUFFIX).h
-OBJ = NeoFontTerminal$(SUFFIX).o
-TARGET = NeoFontTerminal$(SUFFIX).OS3KApp
+OBJ = BetaWiseTerminal$(SUFFIX).o
+TARGET = BetaWiseTerminal$(SUFFIX).OS3KApp
 
-include ../../Makefile.common
+include ../Makefile.common
 
-$(OBJ): NeoFontTerminal.c $(INT) $(OS3K_HEADERS) Makefile
+$(OBJ): BetaWiseTerminal.c $(INT) $(OS3K_HEADERS) Makefile
 	$(CC) $(CPPFLAGS) $(CFLAGS) -DFONT_GLYPHS='"$(INT)"' -DFONT_$(FONT) -c $< -o $@
 
 $(INT): fontgen.py $(FONT_$(FONT))

@@ -84,7 +84,7 @@ seconds instead of 420. The two console objects contain 1907 bytes of code and
 
 Reverification after the Neo reader update adds 11 exact-pixel terminal
 assertions in `tests/mame/asneo/check-repl.py --case terminal`. These exercise
-Python output on the installed applet with NeoFontTerminal, using stable
+Python output on the installed applet with BetaWiseTerminal, using stable
 cursor-free captures and exact text/blank-cell regions. They pass without
 changing the production console. The native-key harness now maps @ to Shift+2
 so the scenario can define its escape-output helper through actual keyboard
@@ -92,7 +92,7 @@ input. Cursor-position reports remain covered by the compiled ROM probe, not
 by unsupported blocking Python stdin.
 
 The full post-reapply verification passes: all four MicroPython profiles and
-SDK/NeoFontTerminal/DebugTool/File Manager/Logo builds; 14 offline-reader/graphics
+SDK/BetaWiseTerminal/DebugTool/File Manager/Logo builds; 14 offline-reader/graphics
 unit tests; host console contracts; AS3000 core/extra REPL and DebugTool memory
 suites; console and formatter probes on both ROMs; 88 Neo rendered-screen/graphics
 assertions (12 baseline, 11 terminal, 65 extended REPL/Logo). Artifacts are under

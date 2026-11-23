@@ -48,7 +48,7 @@ make -C "$mame_dir" -j2 SUBTARGET=neodiag SOURCES=src/mame/skeleton/alphasneo.cp
 
 If the original test directory is still available, copy its saved flash
 and RAM before starting MAME. It contains MicroPython with wrapped input
-(`01f429c`), NeoFontTerminal, and stock AlphaWord Plus.
+(`01f429c`), BetaWiseTerminal, and stock AlphaWord Plus.
 
 ```bash
 test_run=/tmp/bw-neo-cursor.pcwFOh
@@ -65,7 +65,7 @@ cd "$session"
 ```
 
 Press **F9** for SmartApplets, select **MicroPython** with the arrow keys,
-and press **Enter**. Betawise selects NeoFontTerminal automatically.
+and press **Enter**. Betawise selects BetaWiseTerminal automatically.
 
 ## Create a fresh test session
 
@@ -83,7 +83,7 @@ betawise_dir="$workspace/betawise"
 neo_files="$workspace/Ghidra/Alphasmart Neo/SmartApplets"
 git -C "$betawise_dir" submodule update --init applets/MicroPython/upstream
 make -C "$betawise_dir/os3k"
-make -C "$betawise_dir/applets/NeoFontTerminal"
+make -C "$betawise_dir/fonts"
 make -C "$betawise_dir/applets/MicroPython" -j4
 
 session=$(mktemp -d)
@@ -111,7 +111,7 @@ neo_files, betawise = map(Path, sys.argv[1:])
 images = [
     neo_files / "alphawordplus.os3kapp",
     betawise / "applets/MicroPython/MicroPython-core.OS3KApp",
-    betawise / "applets/NeoFontTerminal/NeoFontTerminal.OS3KApp",
+    betawise / "fonts/BetaWiseTerminal.OS3KApp",
 ]
 flash = bytearray(Path("seed/asneo/flashnv").read_bytes())
 assert len(flash) == 0x400000, "unexpected flash size"
@@ -188,7 +188,7 @@ deliberately testing existing artifacts.
 without touching guest MMIO ports. It reconstructs native 264x64 pixels using the
 page layout, scroll origin, axis direction, inversion, display-off and all-points
 modes. `neo_reader.py` decodes exact glyphs from the canonical
-`applets/NeoFontTerminal/glyphs.png`; unknown/ambiguous cells fail. There is no
+`tests/fonts/fixtures/glyphs.png`; unknown/ambiguous cells fail. There is no
 network inference, OCR model or screenshot input in automated evaluations.
 Pillow is used for the local font and independently authored graphics references.
 

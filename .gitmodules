@@ -7,3 +7,6 @@
 [submodule "applets/UCBLogo/softfloat"]
 	path = applets/UCBLogo/softfloat
 	url = https://github.com/ucb-bar/berkeley-softfloat-3.git
+[submodule "applets/BibleReader/upstream"]
+	path = applets/BibleReader/upstream
+	url = https://github.com/jburson/bible-data.git

@@ -20,8 +20,8 @@ build/%.o: build/prepared $(OS3K_HEADERS)
 applet.o runtime.o softmath.o: build/prepared
 applet.o: ../../os3k/os3k_display_internal.h
 
-../NeoFontTerminal/glyphs.h: ../NeoFontTerminal/fontgen.py ../NeoFontTerminal/glyphs.png
-	+$(MAKE) -C ../NeoFontTerminal glyphs.h
+../../fonts/glyphs.h: ../../fonts/fontgen.py ../../fonts/glyphs.bdf
+	+$(MAKE) -C ../../fonts glyphs.h
 
 $(TARGET): Makefile
 

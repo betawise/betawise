@@ -7,7 +7,7 @@
 | `0xA1C0` | MicroPython |
 | `0xA1CB` | UCBLogo |
 | `0xA1DE` | DebugTool |
-| `0xA1F0` | NeoFontTerminal |
+| `0xA1F0` | BetaWise Terminal |
 | `0xA1F1` | File Manager |
 | `0xA1FF` | Betawise QEMU test applet |
 

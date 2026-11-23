@@ -25,36 +25,43 @@ jobs:
       run: echo TAG=$(git describe --tags | tail -c +2) >> $GITHUB_OUTPUT
     - name: Run m68k relocation tests.
       run: make -C tests/qemu check
-    - name: Build library and applets.
+    - name: Build library, applets, and fonts.
       run: |
         echo "$PREFIX/bin" >> $GITHUB_PATH
         make
         os3k/compiler-rt/check.sh
-    - name: Collect published applets.
-      id: applets
+    - name: Collect published applets and fonts.
+      id: artifacts
       shell: bash
       run: |
-        applet_list=$(make --no-print-directory -s -C applets published-applets)
-        applets=()
-        if [[ -n "$applet_list" ]]; then
-          mapfile -t applets <<< "$applet_list"
+        image_list=$(make --no-print-directory -s -C applets published-applets)
+        images=()
+        if [[ -n "$image_list" ]]; then
+          mapfile -t images <<< "$image_list"
         fi
-        if (( ${#applets[@]} == 0 )); then
-          echo "No published applets found" >&2
+        if (( ${#images[@]} == 0 )); then
+          echo "No published images found" >&2
           exit 1
         fi
         artifact_dir=$(mktemp -d "$RUNNER_TEMP/betawise-applets.XXXXXX")
-        for applet in "${applets[@]}"; do
-          if [[ -e "$artifact_dir/${applet##*/}" ]]; then
-            echo "Duplicate applet filename: ${applet##*/}" >&2
+        for image in "${images[@]}"; do
+          case "$image" in
+            applets/*) category=applets ;;
+            fonts/*) category=fonts ;;
+            *) echo "Unexpected publication path: $image" >&2; exit 1 ;;
+          esac
+          destination="$artifact_dir/$category"
+          mkdir -p -- "$destination"
+          if [[ -e "$destination/${image##*/}" ]]; then
+            echo "Duplicate filename in $category: ${image##*/}" >&2
             exit 1
           fi
-          cp -- "$applet" "$artifact_dir/"
+          cp -- "$image" "$destination/"
         done
         echo "path=$artifact_dir" >> "$GITHUB_OUTPUT"
-    - name: Upload applets artifact.
+    - name: Upload applets and fonts artifact.
       uses: actions/upload-artifact@v6
       with:
         name: betawise-applets-${{ steps.get_tag.outputs.TAG }}
-        path: ${{ steps.applets.outputs.path }}
+        path: ${{ steps.artifacts.outputs.path }}
         if-no-files-found: error

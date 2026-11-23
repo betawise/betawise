@@ -13,8 +13,15 @@ include ../Makefile.common
 # Run after building; paths are relative to the repository root.
 .PHONY: published-applets
 published-applets:
+	@$(foreach image,$(wildcard ../fonts/*.OS3KApp),printf '%s\n' 'fonts/$(notdir $(image))';) :
 	@$(foreach applet,$(SUBDIRS),$(foreach image,$(wildcard $(applet)/*.OS3KApp),printf '%s\n' 'applets/$(image)';)) :
 
-ifneq ($(filter NeoFontTerminal,$(SUBDIRS)),)
-UCBLogo: NeoFontTerminal
-endif
+.PHONY: fonts
+all: fonts
+fonts:
+	+$(MAKE) -C ../fonts all
+UCBLogo: fonts
+clean: clean-fonts
+.PHONY: clean-fonts
+clean-fonts:
+	+$(MAKE) -C ../fonts clean

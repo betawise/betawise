@@ -17,7 +17,7 @@ ROOT = HERE.parents[3]
 
 
 def build_images(variant, log_path):
-    targets = [('os3k', None), ('applets/NeoFontTerminal', None),
+    targets = [('os3k', None), ('fonts', None),
                ('applets/UCBLogo', None), ('applets/MicroPython', variant)]
     with Path(log_path).open('w') as log:
         for directory, target in targets:
@@ -49,7 +49,7 @@ def prepare_session(out, firmware, variant, mame):
         source += size
     images = [firmware/'alphawordplus.os3kapp', ROOT/'betawise/applets/UCBLogo/UCBLogo.OS3KApp',
               ROOT/f'betawise/applets/MicroPython/MicroPython-{variant}.OS3KApp',
-              ROOT/'betawise/applets/NeoFontTerminal/NeoFontTerminal.OS3KApp']
+              ROOT/'betawise/fonts/BetaWiseTerminal.OS3KApp']
     offset = 0x70000
     for path in images:
         data = path.read_bytes()

@@ -27,6 +27,17 @@ typedef enum _Message_e {
     MSG_USB_UNPLUG      = 0x3000C, /**< USB detach. param points to a USB request block. No reply is required by this notification. */
     MSG_USB_UNK_1E      = 0x3001E, /**< USB transfer event. Payload and reply are opaque. */
     MSG_USB_UNK_1F      = 0x3001F, /**< USB transfer event. Payload and reply are opaque. */
+    /* Scoped to Neo font-provider applets: other providers reuse these codes.
+     * param is writable pointer storage for queries 1–5, uint32_t for query 6.
+     * AppletSendMessage also accepts the corresponding low codes 1 through 6.
+     */
+    MSG_FONT_GET_NAME   = 0x1000001, /**< Write a borrowed const char* display name through param. */
+    MSG_FONT_GET_NORMAL = 0x1000002, /**< Write a borrowed FontHeader_t* for font slot 0 through param. */
+    MSG_FONT_GET_BOLD   = 0x1000003, /**< Write font slot 1, or NULL to use the normal face. */
+    MSG_FONT_GET_ITALIC = 0x1000004, /**< Write font slot 2, or NULL to use the normal face. */
+    MSG_FONT_GET_BOLD_ITALIC = 0x1000005, /**< Write font slot 3, or NULL to use the bold face. */
+    MSG_FONT_GET_HEIGHT = 0x1000006, /**< Write the pixel height as a uint32_t through param, not a FontHeader_t*. Stock Neo providers also initialize their descriptor and zero-extend its height byte; BetaWiseTerminal initializes via MSG_INIT. */
+    MSG_FONT_INITIALIZE = MSG_FONT_GET_HEIGHT, /**< Compatibility name; the output is a scalar height. */
     MSG_MOD_SYNTHETIC   = 0x1000000 /**< Dispatch flag applied by AppletSendMessage() to most messages. */
 } Message_e;
 

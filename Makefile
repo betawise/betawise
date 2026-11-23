@@ -1,5 +1,6 @@
-SUBDIRS = os3k tests/qemu applets
+SUBDIRS = os3k tests/qemu fonts applets
 
 include Makefile.common
 
-tests/qemu applets: os3k
+tests/qemu fonts applets: os3k
+applets: fonts
