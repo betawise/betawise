@@ -1,0 +1,573 @@
+Neo 3.21 static message evidence; no runtime acceptance claim.
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos SHA-256 32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00417ace <.data+0x7ace>:
+  417ace:	7021           	moveq #33,%d0
+  417ad0:	be80           	cmpl %d0,%d7
+  417ad2:	6640           	bnes 0x417b14
+  417ad4:	486f 0005      	pea %sp@(5)
+  417ad8:	7000           	moveq #0,%d0
+  417ada:	3004           	movew %d4,%d0
+  417adc:	2f00           	movel %d0,%sp@-
+  417ade:	6100 0792      	bsrw 0x418272
+  417ae2:	508f           	addql #8,%sp
+  417ae4:	4a00           	tstb %d0
+  417ae6:	672c           	beqs 0x417b14
+  417ae8:	4a2f 0005      	tstb %sp@(5)
+  417aec:	6722           	beqs 0x417b10
+  417aee:	7e1b           	moveq #27,%d7
+  417af0:	0c2f 00fc 0005 	cmpib #-4,%sp@(5)
+  417af6:	6608           	bnes 0x417b00
+  417af8:	2c3c 0000 00fc 	movel #252,%d6
+  417afe:	6014           	bras 0x417b14
+  417b00:	0c2f 00fe 0005 	cmpib #-2,%sp@(5)
+  417b06:	660a           	bnes 0x417b12
+  417b08:	2c3c 0000 00fe 	movel #254,%d6
+  417b0e:	6004           	bras 0x417b14
+  417b10:	7e00           	moveq #0,%d7
+  417b12:	7c00           	moveq #0,%d6
+  417b14:	4a87           	tstl %d7
+  417b16:	6700 010e      	beqw 0x417c26
+  417b1a:	486f 0006      	pea %sp@(6)
+  417b1e:	2f06           	movel %d6,%sp@-
+  417b20:	2f07           	movel %d7,%sp@-
+  417b22:	2052           	moveal %a2@,%a0
+  417b24:	4e90           	jsr %a0@
+  417b26:	4fef 000c      	lea %sp@(12),%sp
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00417c1e <.data+0x7c1e>:
+  417c1e:	7e1b           	moveq #27,%d7
+  417c20:	6002           	bras 0x417c24
+  417c22:	7e00           	moveq #0,%d7
+  417c24:	7c00           	moveq #0,%d6
+  417c26:	4a87           	tstl %d7
+  417c28:	666e           	bnes 0x417c98
+  417c2a:	4eb9 0042 3056 	jsr 0x423056
+  417c30:	4a00           	tstb %d0
+  417c32:	660c           	bnes 0x417c40
+  417c34:	4eb9 0043 dad2 	jsr 0x43dad2
+  417c3a:	0c00 0001      	cmpib #1,%d0
+  417c3e:	663e           	bnes 0x417c7e
+  417c40:	42a7           	clrl %sp@-
+  417c42:	4eb9 0042 3068 	jsr 0x423068
+  417c48:	588f           	addql #4,%sp
+  417c4a:	3800           	movew %d0,%d4
+  417c4c:	4eb9 0042 303c 	jsr 0x42303c
+  417c52:	4a00           	tstb %d0
+  417c54:	6704           	beqs 0x417c5a
+  417c56:	4205           	clrb %d5
+  417c58:	6010           	bras 0x417c6a
+  417c5a:	7000           	moveq #0,%d0
+  417c5c:	3004           	movew %d4,%d0
+  417c5e:	2f00           	movel %d0,%sp@-
+  417c60:	4eb9 0042 3c7c 	jsr 0x423c7c
+  417c66:	588f           	addql #4,%sp
+  417c68:	1a00           	moveb %d0,%d5
+  417c6a:	4a05           	tstb %d5
+  417c6c:	6708           	beqs 0x417c76
+  417c6e:	7e20           	moveq #32,%d7
+  417c70:	7c00           	moveq #0,%d6
+  417c72:	1c05           	moveb %d5,%d6
+  417c74:	6022           	bras 0x417c98
+  417c76:	7e21           	moveq #33,%d7
+  417c78:	7c00           	moveq #0,%d6
+  417c7a:	3c04           	movew %d4,%d6
+  417c7c:	601a           	bras 0x417c98
+  417c7e:	6100 008e      	bsrw 0x417d0e
+  417c82:	4eb9 0042 6df2 	jsr 0x426df2
+  417c88:	4a00           	tstb %d0
+  417c8a:	6702           	beqs 0x417c8e
+  417c8c:	7e25           	moveq #37,%d7
+  417c8e:	4a87           	tstl %d7
+  417c90:	6606           	bnes 0x417c98
+  417c92:	4eb9 0042 3446 	jsr 0x423446
+  417c98:	4a87           	tstl %d7
+  417c9a:	661e           	bnes 0x417cba
+  417c9c:	486f 0006      	pea %sp@(6)
+  417ca0:	2f06           	movel %d6,%sp@-
+  417ca2:	2f07           	movel %d7,%sp@-
+  417ca4:	2052           	moveal %a2@,%a0
+  417ca6:	4e90           	jsr %a0@
+  417ca8:	4fef 000c      	lea %sp@(12),%sp
+  417cac:	0caf 0000 0007 	cmpil #7,%sp@(6)
+  417cb2:	0006
+  417cb4:	6604           	bnes 0x417cba
+  417cb6:	7e1b           	moveq #27,%d7
+  417cb8:	7c00           	moveq #0,%d6
+  417cba:	4eb9 0043 d84c 	jsr 0x43d84c
+  417cc0:	0c00 0001      	cmpib #1,%d0
+  417cc4:	6604           	bnes 0x417cca
+  417cc6:	7e1b           	moveq #27,%d7
+  417cc8:	7c00           	moveq #0,%d6
+  417cca:	4eb9 0043 f3be 	jsr 0x43f3be
+  417cd0:	4eb9 0043 f542 	jsr 0x43f542
+  417cd6:	0c39 0001 0000 	cmpib #1,0x426
+  417cdc:	0426
+  417cde:	661a           	bnes 0x417cfa
+  417ce0:	4a87           	tstl %d7
+  417ce2:	6616           	bnes 0x417cfa
+  417ce4:	4239 0000 0426 	clrb 0x426
+  417cea:	7e1b           	moveq #27,%d7
+  417cec:	7c00           	moveq #0,%d6
+  417cee:	4eb9 0042 7c0a 	jsr 0x427c0a
+  417cf4:	4eb9 0042 e9c6 	jsr 0x42e9c6
+  417cfa:	4eb9 0043 4eb4 	jsr 0x434eb4
+  417d00:	6000 fdcc      	braw 0x417ace
+  417d04:	4fef 000a      	lea %sp@(10),%sp
+  417d08:	4cdf 5cf8      	moveml %sp@+,%d3-%d7/%a2-%a4/%fp
+  417d0c:	4e75           	rts
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00418588 <.data+0x8588>:
+  418588:	3887           	movew %d7,%a4@
+  41858a:	7c01           	moveq #1,%d6
+  41858c:	1686           	moveb %d6,%a3@
+  41858e:	486f 0006      	pea %sp@(6)
+  418592:	4e92           	jsr %a2@
+  418594:	486f 0005      	pea %sp@(5)
+  418598:	4eb9 0041 c2e4 	jsr 0x41c2e4
+  41859e:	4eb9 0041 aa3e 	jsr 0x41aa3e
+  4185a4:	486f 0008      	pea %sp@(8)
+  4185a8:	4eb9 0041 c2e4 	jsr 0x41c2e4
+  4185ae:	4fef 000c      	lea %sp@(12),%sp
+  4185b2:	102f 0001      	moveb %sp@(1),%d0
+  4185b6:	b017           	cmpb %sp@,%d0
+  4185b8:	6700 019a      	beqw 0x418754
+  4185bc:	16bc 00fe      	moveb #-2,%a3@
+  4185c0:	6000 0192      	braw 0x418754
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00418724 <.data+0x8724>:
+  418724:	2016           	movel %fp@,%d0
+  418726:	b085           	cmpl %d5,%d0
+  418728:	672a           	beqs 0x418754
+  41872a:	e588           	lsll #2,%d0
+  41872c:	0680 0000 0e0a 	addil #3594,%d0
+  418732:	2240           	moveal %d0,%a1
+  418734:	2051           	moveal %a1@,%a0
+  418736:	0828 0007 0013 	btst #7,%a0@(19)
+  41873c:	6716           	beqs 0x418754
+  41873e:	3887           	movew %d7,%a4@
+  418740:	7c01           	moveq #1,%d6
+  418742:	16bc 00fc      	moveb #-4,%a3@
+  418746:	486f 0006      	pea %sp@(6)
+  41874a:	4e92           	jsr %a2@
+  41874c:	588f           	addql #4,%sp
+  41874e:	4eb9 0042 284e 	jsr 0x42284e
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+0042882c <.data+0x1882c>:
+  42882c:	48e7 1f3a      	moveml %d3-%d7/%a2-%a4/%fp,%sp@-
+  428830:	4fef ff00      	lea %sp@(-256),%sp
+  428834:	286f 0128      	moveal %sp@(296),%a4
+  428838:	262f 012c      	movel %sp@(300),%d3
+  42883c:	2e2f 0130      	movel %sp@(304),%d7
+  428840:	266f 0138      	moveal %sp@(312),%a3
+  428844:	4293           	clrl %a3@
+  428846:	082c 0002 000d 	btst #2,%a4@(13)
+  42884c:	6608           	bnes 0x428856
+  42884e:	082c 0003 000d 	btst #3,%a4@(13)
+  428854:	670a           	beqs 0x428860
+  428856:	3a3c fffa      	movew #-6,%d5
+  42885a:	da6c 0012      	addw %a4@(18),%d5
+  42885e:	6004           	bras 0x428864
+  428860:	3a2c 0012      	movew %a4@(18),%d5
+  428864:	4a6c 004a      	tstw %a4@(74)
+  428868:	660e           	bnes 0x428878
+  42886a:	4eb9 0043 a400 	jsr 0x43a400
+  428870:	7200           	moveq #0,%d1
+  428872:	3214           	movew %a4@,%d1
+  428874:	b081           	cmpl %d1,%d0
+  428876:	6604           	bnes 0x42887c
+  428878:	4a54           	tstw %a4@
+  42887a:	660a           	bnes 0x428886
+  42887c:	203c 0200 0006 	movel #33554438,%d0
+  428882:	6000 0874      	braw 0x4290f8
+  428886:	701b           	moveq #27,%d0
+  428888:	b680           	cmpl %d0,%d3
+  42888a:	6600 00a6      	bnew 0x428932
+  42888e:	0c87 0000 00fc 	cmpil #252,%d7
+  428894:	666c           	bnes 0x428902
+  428896:	42a7           	clrl %sp@-
+  428898:	247c 0042 2af4 	moveal #4336372,%a2
+  42889e:	4e92           	jsr %a2@
+  4288a0:	2940 004e      	movel %d0,%a4@(78)
+  4288a4:	4878 0001      	pea 0x1
+  4288a8:	4e92           	jsr %a2@
+  4288aa:	2940 0052      	movel %d0,%a4@(82)
+  4288ae:	4878 0002      	pea 0x2
+  4288b2:	4e92           	jsr %a2@
+  4288b4:	2940 0056      	movel %d0,%a4@(86)
+  4288b8:	4878 0003      	pea 0x3
+  4288bc:	4e92           	jsr %a2@
+  4288be:	4fef 0010      	lea %sp@(16),%sp
+  4288c2:	2940 005a      	movel %d0,%a4@(90)
+  4288c6:	206c 004e      	moveal %a4@(78),%a0
+  4288ca:	1c10           	moveb %a0@,%d6
+  4288cc:	7000           	moveq #0,%d0
+  4288ce:	302c 0016      	movew %a4@(22),%d0
+  4288d2:	7200           	moveq #0,%d1
+  4288d4:	1206           	moveb %d6,%d1
+  4288d6:	4eb9 0043 709c 	jsr 0x43709c
+  4288dc:	4241           	clrw %d1
+  4288de:	1206           	moveb %d6,%d1
+  4288e0:	c0c1           	muluw %d1,%d0
+  4288e2:	3940 0014      	movew %d0,%a4@(20)
+  4288e6:	4a6c 004a      	tstw %a4@(74)
+  4288ea:	6610           	bnes 0x4288fc
+  4288ec:	4878 0001      	pea 0x1
+  4288f0:	2f0c           	movel %a4,%sp@-
+  4288f2:	4eb9 0042 b5d0 	jsr 0x42b5d0
+  4288f8:	508f           	addql #8,%sp
+  4288fa:	2680           	movel %d0,%a3@
+  4288fc:	4eb9 0042 1fe0 	jsr 0x421fe0
+  428902:	0c87 0000 00fe 	cmpil #254,%d7
+  428908:	6600 07de      	bnew 0x4290e8
+  42890c:	486f 00ff      	pea %sp@(255)
+  428910:	4eb9 0041 c2e4 	jsr 0x41c2e4
+  428916:	588f           	addql #4,%sp
+  428918:	4240           	clrw %d0
+  42891a:	102f 00ff      	moveb %sp@(255),%d0
+  42891e:	3940 004c      	movew %d0,%a4@(76)
+  428922:	4a6c 004a      	tstw %a4@(74)
+  428926:	6600 07c0      	bnew 0x4290e8
+  42892a:	4878 0001      	pea 0x1
+  42892e:	6000 07ac      	braw 0x4290dc
+  428932:	4a83           	tstl %d3
+  428934:	6700 07bc      	beqw 0x4290f2
+  428938:	7021           	moveq #33,%d0
+  42893a:	b680           	cmpl %d0,%d3
+  42893c:	6600       	bnew 0x428eda
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+004290d0 <.data+0x190d0>:
+  4290d0:	1487           	moveb %d7,%a2@
+  4290d2:	52ac 0028      	addql #1,%a4@(40)
+  4290d6:	52ac 0024      	addql #1,%a4@(36)
+  4290da:	42a7           	clrl %sp@-
+  4290dc:	2f0c           	movel %a4,%sp@-
+  4290de:	4eb9 0042 b5d0 	jsr 0x42b5d0
+  4290e4:	508f           	addql #8,%sp
+  4290e6:	2680           	movel %d0,%a3@
+  4290e8:	2f0c           	movel %a4,%sp@-
+  4290ea:	4eb9 0042 a0f8 	jsr 0x42a0f8
+  4290f0:	588f           	addql #4,%sp
+  4290f2:	7001           	moveq #1,%d0
+  4290f4:	6002           	bras 0x4290f8
+  4290f6:	7000           	moveq #0,%d0
+  4290f8:	4fef       	lea %sp@(256),%sp
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+0042f200 <.data+0x1f200>:
+  42f200:	48e7 033a      	moveml %d6-%d7/%a2-%a4/%fp,%sp@-
+  42f204:	4fef fff2      	lea %sp@(-14),%sp
+  42f208:	45ef 000a      	lea %sp@(10),%a2
+  42f20c:	286f 002a      	moveal %sp@(42),%a4
+  42f210:	2c2f 002e      	movel %sp@(46),%d6
+  42f214:	2e2f 0032      	movel %sp@(50),%d7
+  42f218:	2c6f 0036      	moveal %sp@(54),%fp
+  42f21c:	266f 003a      	moveal %sp@(58),%a3
+  42f220:	4292           	clrl %a2@
+  42f222:	4293           	clrl %a3@
+  42f224:	701b           	moveq #27,%d0
+  42f226:	bc80           	cmpl %d0,%d6
+  42f228:	661c           	bnes 0x42f246
+  42f22a:	0c87 0000 00fc 	cmpil #252,%d7
+  42f230:	6600 0452      	bnew 0x42f684
+  42f234:	42a7           	clrl %sp@-
+  42f236:	4eb9 0042 2af4 	jsr 0x422af4
+  42f23c:	588f           	addql #4,%sp
+  42f23e:	2940 0016      	movel %d0,%a4@(22)
+  42f242:	6000 0440      	braw 0x42f684
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00439c60 <.data+0x29c60>:
+  439c60:	48e7 0f18      	moveml %d4-%d7/%a3-%a4,%sp@-
+  439c64:	267c 0000 35e2 	moveal #13794,%a3
+  439c6a:	2e2f 001c      	movel %sp@(28),%d7
+  439c6e:	2c2f 0020      	movel %sp@(32),%d6
+  439c72:	2813           	movel %a3@,%d4
+  439c74:	4a87           	tstl %d7
+  439c76:	6724           	beqs 0x439c9c
+  439c78:	7020           	moveq #32,%d0
+  439c7a:	be80           	cmpl %d0,%d7
+  439c7c:	641e           	bccs 0x439c9c
+  439c7e:	287c 0000 0e0a 	moveal #3594,%a4
+  439c84:	2007           	movel %d7,%d0
+  439c86:	e588           	lsll #2,%d0
+  439c88:	4ab4 0800      	tstl %a4@(0,%d0:l)
+  439c8c:	670e           	beqs 0x439c9c
+  439c8e:	2f07           	movel %d7,%sp@-
+  439c90:	4eb9 0043 83c2 	jsr 0x4383c2
+  439c96:	588f           	addql #4,%sp
+  439c98:	4a80           	tstl %d0
+  439c9a:	6704           	beqs 0x439ca0
+  439c9c:	4200           	clrb %d0
+  439c9e:	6064           	bras 0x439d04
+  439ca0:	701c           	moveq #28,%d0
+  439ca2:	bc80           	cmpl %d0,%d6
+  439ca4:	6710           	beqs 0x439cb6
+  439ca6:	701d           	moveq #29,%d0
+  439ca8:	bc80           	cmpl %d0,%d6
+  439caa:	670a           	beqs 0x439cb6
+  439cac:	0286 00ff ffff 	andil #16777215,%d6
+  439cb2:	08c6 0018      	bset #24,%d6
+  439cb6:	2687           	movel %d7,%a3@
+  439cb8:	2007           	movel %d7,%d0
+  439cba:	e588           	lsll #2,%d0
+  439cbc:	2074 0800      	moveal %a4@(0,%d0:l),%a0
+  439cc0:	2a28 0084      	movel %a0@(132),%d5
+  439cc4:	2007           	movel %d7,%d0
+  439cc6:	e588           	lsll #2,%d0
+  439cc8:	dab4 0800      	addl %a4@(0,%d0:l),%d5
+  439ccc:	2007           	movel %d7,%d0
+  439cce:	e588           	lsll #2,%d0
+  439cd0:	0680 0000 355e 	addil #13662,%d0
+  439cd6:	2040           	moveal %d0,%a0
+  439cd8:	2f10           	movel %a0@,%sp@-
+  439cda:	4eb9 0041 0094 	jsr 0x410094
+  439ce0:	2e00           	movel %d0,%d7
+  439ce2:	204f           	moveal %sp,%a0
+  439ce4:	2f28 002c      	movel %a0@(44),%sp@-
+  439ce8:	204f           	moveal %sp,%a0
+  439cea:	2f28 002c      	movel %a0@(44),%sp@-
+  439cee:	2f06           	movel %d6,%sp@-
+  439cf0:	2045           	moveal %d5,%a0
+  439cf2:	4e90           	jsr %a0@
+  439cf4:	2f07           	movel %d7,%sp@-
+  439cf6:	4eb9 0041 0094 	jsr 0x410094
+  439cfc:	4fef 0014      	lea %sp@(20),%sp
+  439d00:	2684           	movel %d4,%a3@
+  439d02:	7001           	moveq #1,%d0
+  439d04:	4cdf 18f0      	moveml %sp@+,%d4-%d7/%a3-%a4
+  439d08:	4e75           	rts
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+004119e8 <.data+0x19e8>:
+  4119e8:	4279 0000 0484 	clrw 0x484
+  4119ee:	4279 0000 0486 	clrw 0x486
+  4119f4:	4279 0000 0488 	clrw 0x488
+  4119fa:	42b9 0000 048a 	clrl 0x48a
+  411a00:	486f 0110      	pea %sp@(272)
+  411a04:	4879 0000 0482 	pea 0x482
+  411a0a:	4878 001c      	pea 0x1c
+  411a0e:	4e92           	jsr %a2@
+  411a10:	4fef 000c      	lea %sp@(12),%sp
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00411bea <.data+0x1bea>:
+  411bea:	4879 0000 048a 	pea 0x48a
+  411bf0:	4879 0000 0488 	pea 0x488
+  411bf6:	4879 0000 0486 	pea 0x486
+  411bfc:	4879 0000 0484 	pea 0x484
+  411c02:	2f0e           	movel %fp,%sp@-
+  411c04:	4eb9 0042 7b08 	jsr 0x427b08
+  411c0a:	4fef 0014      	lea %sp@(20),%sp
+  411c0e:	303c 7000      	movew #28672,%d0
+  411c12:	b079 0000 0486 	cmpw 0x486,%d0
+  411c18:	6224           	bhis 0x411c3e
+  411c1a:	303c 7fff      	movew #32767,%d0
+  411c1e:	b079 0000 0486 	cmpw 0x486,%d0
+  411c24:	6518           	bcss 0x411c3e
+  411c26:	486f 0110      	pea %sp@(272)
+  411c2a:	4879 0000 0482 	pea 0x482
+  411c30:	4878 001d      	pea 0x1d
+  411c34:	6100 e46a      	bsrw 0x4100a0
+  411c38:	4fef 000c      	lea %sp@(12),%sp
+  411c3c:	6014           	bras 0x411c52
+  411c3e:	486f 0110      	pea %sp@(272)
+  411c42:	4879 0000 0482 	pea 0x482
+  411c48:	4878 001d      	pea 0x1d
+  411c4c:	4e92           	jsr %a2@
+  411c4e:	4fef 000c      	lea %sp@(12),%sp
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+0041c2e4 <.data+0xc2e4>:
+  41c2e4:	48e7 0038      	moveml %a2-%a4,%sp@-
+  41c2e8:	4fef fff0      	lea %sp@(-16),%sp
+  41c2ec:	266f 0020      	moveal %sp@(32),%a3
+  41c2f0:	4213           	clrb %a3@
+  41c2f2:	247c 0000 35e2 	moveal #13794,%a2
+  41c2f8:	4a92           	tstl %a2@
+  41c2fa:	6772           	beqs 0x41c36e
+  41c2fc:	0c92 ffff ffff 	cmpil #-1,%a2@
+  41c302:	676a           	beqs 0x41c36e
+  41c304:	4297           	clrl %sp@
+  41c306:	3f7c 0029 0004 	movew #41,%sp@(4)
+  41c30c:	3f7c 0103 0006 	movew #259,%sp@(6)
+  41c312:	3f7c 100f 0008 	movew #4111,%sp@(8)
+  41c318:	426f 000a      	clrw %sp@(10)
+  41c31c:	42af 000c      	clrl %sp@(12)
+  41c320:	2012           	movel %a2@,%d0
+  41c322:	e588           	lsll #2,%d0
+  41c324:	0680 0000 0e0a 	addil #3594,%d0
+  41c32a:	2240           	moveal %d0,%a1
+  41c32c:	2051           	moveal %a1@,%a0
+  41c32e:	2028 0084      	movel %a0@(132),%d0
+  41c332:	2212           	movel %a2@,%d1
+  41c334:	e589           	lsll #2,%d1
+  41c336:	0681 0000 0e0a 	addil #3594,%d1
+  41c33c:	2041           	moveal %d1,%a0
+  41c33e:	d090           	addl %a0@,%d0
+  41c340:	2840           	moveal %d0,%a4
+  41c342:	4857           	pea %sp@
+  41c344:	486f 0008      	pea %sp@(8)
+  41c348:	4878 001c      	pea 0x1c
+  41c34c:	4e94           	jsr %a4@
+  41c34e:	4fef 000c      	lea %sp@(12),%sp
+  41c352:	4aaf 000c      	tstl %sp@(12)
+  41c356:	6716           	beqs 0x41c36e
+  41c358:	206f 000c      	moveal %sp@(12),%a0
+  41c35c:	0c50 1001      	cmpiw #4097,%a0@
+  41c360:	57c0           	seq %d0
+  41c362:	4400           	negb %d0
+  41c364:	4880           	extw %d0
+  41c366:	48c0           	extl %d0
+  41c368:	1680           	moveb %d0,%a3@
+  41c36a:	7000           	moveq #0,%d0
+  41c36c:	6002           	bras 0x41c370
+  41c36e:	7001           	moveq #1,%d0
+  41c370:	4fef 0010      	lea %sp@(16),%sp
+  41c374:	4cdf 1c00      	moveml %sp@+,%a2-%a4
+  41c378:	4e75           	rts
+  41c37a:	48e7 0018      	moveml %a3-%a4,%sp@-
+  41c37e:	4fef ffea      	lea %sp@(-22),%sp
+  41c382:	267c 0000 35e2 	moveal #13794,%a3
+  41c388:	4a93           	tstl %a3@
+  41c38a:	6778           	beqs 0x41c404
+  41c38c:	0c93 ffff ffff 	cmpil #-1,%a3@
+  41c392:	6770           	beqs 0x41c404
+  41c394:	42af 0006      	clrl %sp@(6)
+  41c398:	4a2f 0025      	tstb %sp@(37)
+  41c39c:	6706           	beqs 0x41c3a4
+  41c39e:	3ebc 1001      	movew #4097,%sp@
+  41c3a2:	6004           	bras 0x41c3a8
+  41c3a4:	3ebc 1002      	movew #4098,%sp@
+  41c3a8:	3f7c 1001 0002 	movew #4097,%sp@(2)
+  41c3ae:	3f7c 1002 0004 	movew #4098,%sp@(4)
+  41c3b4:	426f 000a      	clrw %sp@(10)
+  41c3b8:	3f7c 0103 000c 	movew #259,%sp@(12)
+  41c3be:	3f7c 100f 000e 	movew #4111,%sp@(14)
+  41c3c4:	3f7c 0006 0010 	movew #6,%sp@(16)
+  41c3ca:	41d7           	lea %sp@,%a0
+  41c3cc:	2f48 0012      	movel %a0,%sp@(18)
+  41c3d0:	2013           	movel %a3@,%d0
+  41c3d2:	e588           	lsll #2,%d0
+  41c3d4:	0680 0000 0e0a 	addil #3594,%d0
+  41c3da:	2240           	moveal %d0,%a1
+  41c3dc:	2051           	moveal %a1@,%a0
+  41c3de:	2028 0084      	movel %a0@(132),%d0
+  41c3e2:	2213           	movel %a3@,%d1
+  41c3e4:	e589           	lsll #2,%d1
+  41c3e6:	0681 0000 0e0a 	addil #3594,%d1
+  41c3ec:	2041           	moveal %d1,%a0
+  41c3ee:	d090           	addl %a0@,%d0
+  41c3f0:	2840           	moveal %d0,%a4
+  41c3f2:	486f 0006      	pea %sp@(6)
+  41c3f6:	486f 000e      	pea %sp@(14)
+  41c3fa:	4878 001d      	pea 0x1d
+  41c3fe:	4e94           	jsr %a4@
+  41c400:	4fef 000c      	lea %sp@(12),%sp
+  41c404:	4fef 0016      	lea %sp@(22),%sp
+  41c408:	4cdf 1800      	moveml %sp@+,%a3-%a4
+  41c40c:	4e75           	rts
+
+
+Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos:     file format binary
+
+
+Disassembly of section .data:
+
+00422be4 <.data+0x12be4>:
+  422be4:	4857           	pea %sp@
+  422be6:	2f0c           	movel %a4,%sp@-
+  422be8:	4878 0002      	pea 0x2
+  422bec:	2f07           	movel %d7,%sp@-
+  422bee:	4eb9 0043 9c60 	jsr 0x439c60
+  422bf4:	4fef 0010      	lea %sp@(16),%sp
+  422bf8:	4a94           	tstl %a4@
+  422bfa:	6602           	bnes 0x422bfe
+  422bfc:	288e           	movel %fp,%a4@
+  422bfe:	4857           	pea %sp@
+  422c00:	2f0a           	movel %a2,%sp@-
+  422c02:	4878 0003      	pea 0x3
+  422c06:	2f07           	movel %d7,%sp@-
+  422c08:	4eb9 0043 9c60 	jsr 0x439c60
+  422c0e:	4fef 0010      	lea %sp@(16),%sp
+  422c12:	4a92           	tstl %a2@
+  422c14:	6602           	bnes 0x422c18
+  422c16:	2494           	movel %a4@,%a2@
+  422c18:	4857           	pea %sp@
+  422c1a:	4879 0000 5c82 	pea 0x5c82
+  422c20:	4878 0004      	pea 0x4
+  422c24:	2f07           	movel %d7,%sp@-
+  422c26:	4eb9 0043 9c60 	jsr 0x439c60
+  422c2c:	4fef 0010      	lea %sp@(16),%sp
+  422c30:	4ab9 0000 5c82 	tstl 0x5c82
+  422c36:	6606           	bnes 0x422c3e
+  422c38:	23d4 0000 5c82 	movel %a4@,0x5c82
+  422c3e:	4857           	pea %sp@
+  422c40:	4879 0000 5c86 	pea 0x5c86
+  422c46:	4878 0005      	pea 0x5
+  422c4a:	2f07           	movel %d7,%sp@-
+  422c4c:	4eb9 0043 9c60 	jsr 0x439c60
+  422c52:	4fef 0010      	lea %sp@(16),%sp
+  422c56:	4ab9 0000 5c86 	tstl 0x5c86
+  422c5c:	6606           	bnes 0x422c64
+  422c5e:	23d2 0000 5c86 	movel %a2@,0x5c86

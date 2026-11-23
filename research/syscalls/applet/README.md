@@ -105,3 +105,15 @@ USB/print request struct was added.
 See [Manager finalization and warm registration](../../applet-installation/README.md)
 for AS3000 3.01 install-transaction findings and the limits of AppletSendMessage
 for registering a newly appended applet.
+
+## Refresh and additional message inventory
+
+The [message investigation](messages.md) traces Neo 3.21 `0x1B` producers and
+`0xFC`/`0xFE` consumers, settings read/write callbacks, font-provider queries,
+and previously mapped full-code text-transfer messages now named in `Message_e`.
+It includes reproducible static instruction evidence and explicit scope limits.
+
+The expanded [ROM/applet dispatch audit](dispatch-audit.md) covers all three
+inventoried ROMs and all 56 original applet images, including ADB, PS/2, USB,
+AlphaHub, print, IrDA and scoped provider requests. It corrects font query 6 to
+a scalar height and records oversized CoWriter/dictionary reply buffers.

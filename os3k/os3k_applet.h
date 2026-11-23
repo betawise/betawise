@@ -16,17 +16,72 @@
  * USB payloads are opaque unless their message entry specifies a contract.
  */
 typedef enum _Message_e {
-    MSG_IDLE            = 0x00, /**< Idle notification. param is zero. Reply zero for ordinary handling. */
+    MSG_IDLE            = 0x00, /**< Idle notification. Foreground param is normally zero; battery diagnostic callbacks use 0xFEDCBA98. Reply zero for ordinary handling. */
+    MSG_PRINT_SETUP_FAILED = 0x0E, /**< Print-driver setup failed; param is zero. Native print path notifies the foreground applet. */
     MSG_INIT            = 0x18, /**< Initialize applet state. Native launch passed param zero. Reply zero for ordinary handling. */
     MSG_SETFOCUS        = 0x19, /**< Applet gains focus. param is an opaque launch value. Reply zero for ordinary handling. */
     MSG_KILLFOCUS       = 0x1A, /**< Applet loses focus. param is zero. Reply zero for ordinary handling. */
+    MSG_REFRESH         = 0x1B, /**< Redraw/update notification, not exclusively a font event. param: MessageRefreshParam_e (Neo 3.21); ordinary redraw uses zero. */
+    MSG_SETTINGS_READ   = 0x1C, /**< Read applet settings/resource record through a borrowed native request at param. Reply/request layout is workflow-specific; see message research. No synthetic flag is added. */
+    MSG_SETTINGS_WRITE  = 0x1D, /**< Apply applet settings/resource record through a borrowed native request at param. No synthetic flag is added. */
     MSG_CHAR            = 0x20, /**< param is a translated character byte, zero-extended. Reply zero for ordinary handling. */
     MSG_KEY             = 0x21, /**< param is a zero-extended 16-bit keyboard event word. Reply zero for ordinary handling. */
+    MSG_REFRESH_LEGACY  = 0x24, /**< Legacy refresh accepted by Inspiration; no producer identified in the three inventoried ROMs. Parameter meaning unresolved. */
+    MSG_LOW_BATTERY      = 0x25, /**< Foreground notification after the native low-battery warning. No new payload is initialized; do not interpret param. */
+    MSG_GET_ID           = 0x26, /**< Query applet identity: param is zero; write the 16-bit applet header ID, zero-extended, to status. Used for RAM-loaded applet registration. */
+    /* AS3000 keyboard transports. param is a borrowed 20-byte native request
+     * with five 32-bit fields (see dispatch audit); reply handling differs by transport.
+     * Control events may go only to the ROM's selected protocol handler.
+     */
+    MSG_ADB_OPEN         = 0x10001, /**< ADB session open; no input. Replies 0x11/0x12 suppress attachment text. */
+    MSG_ADB_RECEIVE      = 0x10002, /**< Host-command bytes; routed to the selected ADB protocol handler. */
+    MSG_ADB_UNK_03       = 0x10003, /**< ADB pump event 03; producer known, detailed control semantics unresolved. */
+    MSG_ADB_UNK_04       = 0x10004, /**< ADB pump event 04; selected protocol handler receives a native request. */
+    MSG_ADB_SEND_POLL    = 0x10006, /**< Protocol output poll. Reply 4 supplies raw ADB output bytes. */
+    MSG_ADB_TEXT_POLL    = 0x10007, /**< Keyboard text queue needs data; reply 6 converts supplied text to ADB key bytes. */
+    MSG_ADB_TEXT_DRAINED = 0x10008, /**< Keyboard text queue drained; may supply more text. */
+    MSG_ADB_CLOSE        = 0x1000C, /**< ADB session close notification. */
+    MSG_ADB_UNK_16       = 0x10016, /**< ADB pump control event 16; semantics unresolved. */
+    MSG_ADB_UNK_17       = 0x10017, /**< ADB pump control event 17; semantics unresolved. */
+    MSG_ADB_KEY_DOWN     = 0x1001E, /**< Input points to a native 16-bit key word. Reply 3 supplies native keys; reply 6 supplies text. */
+    MSG_ADB_KEY_UP       = 0x1001F, /**< Native key-up word. Same native-request layout as key-down. */
+    MSG_ADB_KEY_DOWN_BUSY = 0x1011E, /**< Native key-down with queued ADB output; do not mask off the busy bits. */
+    MSG_ADB_KEY_UP_BUSY  = 0x1011F, /**< Native key-up with queued ADB output. */
+    MSG_PS2_OPEN         = 0x20001, /**< PS/2 session open; no input. Replies 0x11/0x12 suppress attachment text. */
+    MSG_PS2_RECEIVE      = 0x20002, /**< Host-command byte(s); routed to the selected PS/2 protocol handler. */
+    MSG_PS2_SEND_POLL    = 0x20006, /**< Selected PS/2 protocol handler output poll. */
+    MSG_PS2_TEXT_POLL    = 0x20007, /**< Keyboard text queue needs more data; reply 6 supplies text for native conversion. */
+    MSG_PS2_TEXT_DRAINED = 0x20008, /**< Keyboard text queue drained. */
+    MSG_PS2_CLOSE        = 0x2000C, /**< PS/2 session close. */
+    MSG_PS2_UNK_14       = 0x20014, /**< PS/2 control-state notification; exact host-command meaning unresolved. */
+    MSG_PS2_UNK_15       = 0x20015, /**< PS/2 control-state notification; exact host-command meaning unresolved. */
+    MSG_PS2_KEY_DOWN     = 0x2001E, /**< Input points to a native 16-bit key word. */
+    MSG_PS2_KEY_UP       = 0x2001F, /**< Native key-up word. */
+    MSG_PS2_KEY_DOWN_BUSY = 0x2011E, /**< Native key-down while PS/2 output is queued (AS3000 pump 4D277A–4D2788). */
+    MSG_PS2_KEY_UP_BUSY  = 0x2011F, /**< Native key-up while PS/2 output is queued. */
     MSG_USB_PLUG        = 0x30001, /**< USB attach. param points to a ROM USB request block. The ROM checks the reply. */
     MSG_USB_UNK_07      = 0x30007, /**< USB event. param points to a USB request block. The request and reply are opaque. */
     MSG_USB_UNPLUG      = 0x3000C, /**< USB detach. param points to a USB request block. No reply is required by this notification. */
     MSG_USB_UNK_1E      = 0x3001E, /**< USB transfer event. Payload and reply are opaque. */
     MSG_USB_UNK_1F      = 0x3001F, /**< USB transfer event. Payload and reply are opaque. */
+    MSG_HUB_OPEN         = 0x50001, /**< AlphaHub connection/session open. param is a native 20-byte transfer request. */
+    MSG_HUB_RECEIVE      = 0x50002, /**< AlphaHub input bytes; reply 4 supplies output_length bytes. */
+    MSG_HUB_RECEIVE_CONTINUATION = 0x50005, /**< AlphaHub additional input callback; not USB direct-send reply 5. */
+    MSG_HUB_SEND_POLL    = 0x50006, /**< AlphaHub output queue empty; capacity 1020 in the traced Neo 3.21 path. Reply 4 supplies bytes. */
+    MSG_HUB_UNK_09       = 0x50009, /**< AlphaHub pump control event 09, empty request; detailed cause unresolved. */
+    MSG_HUB_UNK_0A       = 0x5000A, /**< AlphaHub pump control event 0A after packet-state processing, empty request. */
+    MSG_HUB_CLOSE        = 0x5000C, /**< AlphaHub close notification; input/output capacity zero. */
+    MSG_TRANSFER_OPEN   = 0x60001, /**< Native text-transfer open: request at param; copies a name capped at 39 characters, enters phase 6, replies 0x11. See text/USB research for scoped payload contract. */
+    MSG_TRANSFER_CLOSE  = 0x6000C, /**< Native text-transfer close: editor transfer handler enters phase 10. Payload/replies remain workflow-specific. */
+    MSG_TRANSFER_READ   = 0x6000D, /**< Printer requests another text chunk; native request at param, capacity up to 1024. Reply 4 supplies output_length bytes. */
+    MSG_TRANSFER_WAIT   = 0x60010, /**< Printer write has stalled/lasted long enough for progress UI. param is zero; reply 8 cancels in the traced path. */
+    MSG_TRANSFER_CONTINUE = 0x60011, /**< Printer wait ended; param is zero. Distinct from TRANSFER_READ. */
+    MSG_TRANSFER_CHAR   = 0x60020, /**< Native text-transfer character request; input points to a native 16-bit key. Escape enters phase 8 and replies 8. */
+    MSG_IRDA_OPEN        = 0x70001, /**< IrDA application-transfer session open. param is a native transfer request; selected handler may reply with data. */
+    MSG_IRDA_RECEIVE     = 0x70002, /**< IrDA application payload; native transfer request, not a raw IrLAP frame. */
+    MSG_IRDA_SEND_POLL   = 0x70006, /**< IrDA output poll; reply 4 supplies output_length bytes. */
+    MSG_IRDA_CLOSE       = 0x7000C, /**< IrDA application-transfer close; param may be NULL. */
+    MSG_IRDA_KEY         = 0x70020, /**< Input points to a native 16-bit key word; reply 0x10 cancels in the default Escape handler. */
     /* Scoped to Neo font-provider applets: other providers reuse these codes.
      * param is writable pointer storage for queries 1–5, uint32_t for query 6.
      * AppletSendMessage also accepts the corresponding low codes 1 through 6.
@@ -38,13 +93,56 @@ typedef enum _Message_e {
     MSG_FONT_GET_BOLD_ITALIC = 0x1000005, /**< Write font slot 3, or NULL to use the bold face. */
     MSG_FONT_GET_HEIGHT = 0x1000006, /**< Write the pixel height as a uint32_t through param, not a FontHeader_t*. Stock Neo providers also initialize their descriptor and zero-extend its height byte; BetaWiseTerminal initializes via MSG_INIT. */
     MSG_FONT_INITIALIZE = MSG_FONT_GET_HEIGHT, /**< Compatibility name; the output is a scalar height. */
+    /* Other providers intentionally reuse font-query numbers. These aliases
+     * are scoped protocol selectors, not universal meanings of low codes.
+     */
+    MSG_COWRITER_REQUEST_0 = 0x1000000, /**< CoWriter session/setup request; status points to a packed result record, not just a uint32_t. */
+    MSG_COWRITER_REQUEST_1 = 0x1000001, /**< CoWriter request 1; see scoped payload/result mapping in message research. */
+    MSG_COWRITER_REQUEST_2 = 0x1000002, /**< CoWriter request 2; scoped packed result record. */
+    MSG_COWRITER_KEY       = 0x1000003, /**< CoWriter native-key request; param is a key word, status is its packed result record. */
+    MSG_COWRITER_REQUEST_4 = 0x1000004, /**< CoWriter request 4; scoped packed result record. */
+    MSG_COWRITER_REQUEST_5 = 0x1000005, /**< CoWriter request 5; scoped packed result record. */
+    MSG_DICTIONARY_GET_DATA = 0x1000001, /**< CW_Topics/CW_MainDictionary: param points to output data pointer; status requires 8 writable bytes (zero uint32_t followed by data pointer). */
+    /* Thesaurus payload layouts: research/dictionaries/README.md. */
+    MSG_THESAURUS_FIND_GROUPS = 0x1000000,
+    MSG_THESAURUS_GET_GROUP = 0x1000001,
+    MSG_THESAURUS_GET_GROUP_COUNT = 0x1000002,
+    MSG_THESAURUS_GET_HEADWORD = 0x1000003,
+    MSG_THESAURUS_GET_WORD_CLASS = 0x1000004,
+    MSG_THESAURUS_GET_RELATED_WORDS = 0x1000005,
+    MSG_THESAURUS_GET_ANTONYM_GROUP = 0x1000006,
+    /* SpellCheck uses a distinct five-field request; selector 0 is unsupported.
+     * Operations 2 and 4 remain unresolved and are intentionally unnamed.
+     */
+    MSG_SPELLCHECK_CHECK = 0x1000001,
+    MSG_SPELLCHECK_INTERACTIVE = 0x1000003,
+    MSG_SPELLCHECK_ENABLE = 0x1000005,
+    MSG_SPELLCHECK_DISABLE = 0x1000006,
+    MSG_SPELLCHECK_GET_ENABLED = 0x1000007,
+    MSG_STYLEWRITER_QUERY = 0x1A01000, /**< SWFont: low byte of param indexes 256 relative offsets; status receives the selected borrowed ROM address. */
+    /* Source-compatible names retained for existing callers. */
     MSG_MOD_SYNTHETIC   = 0x1000000 /**< Dispatch flag applied by AppletSendMessage() to most messages. */
 } Message_e;
+
+/** @brief Parameters of MSG_REFRESH, traced on Neo 3.21.
+ *
+ * These are scalar reason codes, not message IDs, pointers, or font indices.
+ * Unknown values must not be assumed to mean a font change. Font selection
+ * can notify even when no different face was committed. See
+ * research/syscalls/applet/messages.md for producers and handler behavior.
+ */
+typedef enum _MessageRefreshParam_e {
+    MSG_REFRESH_REDRAW = 0x00, /**< Ordinary redraw after firmware UI/activity. */
+    MSG_REFRESH_FONTS = 0xFC, /**< Reload the four current font pointers and reconcile layout. */
+    MSG_REFRESH_CURSOR_STYLE = 0xFE /**< Refresh the applet's saved native cursor-style setting and redraw. */
+} MessageRefreshParam_e;
 
 /** @brief Applet-provided message handler.
  * @param message Message code, possibly including a dispatch flag.
  * @param param Message-specific value or target address.
- * @param status Message-specific reply word supplied by the caller.
+ * @param status Message-specific reply storage supplied by the caller. Most
+ * protocols use a uint32_t; CoWriter/dictionary services require larger packed
+ * result records despite this historical signature. See message research.
  */
 void ProcessMessage(Message_e message, uint32_t param, uint32_t* status);
 

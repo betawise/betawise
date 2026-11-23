@@ -22,3 +22,7 @@ Investigations, evidence, and reproducible probes for Betawise and AlphaSmart fi
 
 - [UCBLogo port](ucblogo/README.md): build instructions, OS3K backend, emulator
   tests, and memory measurements.
+
+- [Dictionary and Thesaurus services](dictionaries/README.md): packed message
+  contracts, native API probes, synonyms/antonyms, CW blob replies, SpellCheck
+  selector correction and rhyming-dictionary feasibility.

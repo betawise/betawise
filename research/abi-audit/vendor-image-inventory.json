@@ -340,5 +340,17 @@
     "name": "Neo Font - Large (4 lines)",
     "sha256": "7f86f664fe41cfda5057f9fea724e21abdc702c348dcb575b88f07c9fb3df365",
     "copies": []
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ControlPanel.OS3KApp",
+    "name": "Control Panel",
+    "sha256": "503e2aaa9ebdb85b7a693d0c75f8e1687da6cef16411cc27d66915cbae28c3f6",
+    "copies": []
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+    "name": "Thesaurus Spanish to English",
+    "sha256": "7605ba816106e72c090fc830d93dc0aac4c71159627dc1a477bee1d89af080a0",
+    "copies": []
   }
 ]

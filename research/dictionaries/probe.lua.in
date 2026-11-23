@@ -1,0 +1,77 @@
+-- API-only probes, disposable RAM/flash/config. No LCD capture or screen oracle.
+local machine=manager.machine
+local cpu=machine.devices[':maincpu'];local m=cpu.spaces.program
+local image,ram,param,reply,records,wordbuf,outcount=0x10000,0x6b000,0x74000,0x74100,0x74200,0x75000,0x74120
+local stack,code=0x7f000,0x7e000
+local frame,phase,index,deadline=0,'boot',0,360
+local cases={};local expected_text={};local expected_lookup_count;local failed=false
+local function fill(a,n,v)for i=0,n-1 do m:write_u8(a+i,v or 0)end end
+local function put(a,s)for i=1,#s do m:write_u8(a+i-1,s:byte(i))end;m:write_u8(a+#s,0)end
+local function hex(a,n)local t={};for i=0,n-1 do t[#t+1]=string.format('%02x',m:read_u8(a+i))end;return table.concat(t)end
+local function eq(a,b)assert(a==b,string.format('%x ~= %x',a,b))end
+local function add(label,selector,prep,check,direct)cases[#cases+1]={label=label,selector=selector,prep=prep,check=check,direct=direct}end
+local function record_text(label,record)
+ local nextrecord=record+0x200
+ add(label,3,function()
+  fill(wordbuf,256,0xa5);m:write_u32(param,record);m:write_u32(param+4,wordbuf);m:write_u8(param+8,127);m:write_u32(param+10,outcount);m:write_u8(outcount,0xa5)
+ end,function()
+  local n=m:read_u8(outcount);assert(n<=127);eq(m:read_u8(wordbuf+n),0xa5)
+  if expected_text[label] then assert(hex(wordbuf,n)==expected_text[label],label..' unexpected text')end
+  print('TEXT '..label..' bytes='..hex(wordbuf,n)..' count='..n)
+ end)
+ add(label..'-related',5,function()
+  fill(wordbuf,1025,0xa5);m:write_u32(param,record);m:write_u32(param+4,wordbuf);m:write_u16(param+8,1024);m:write_u32(param+10,outcount);m:write_u8(param+14,0);m:write_u16(outcount,0xa5a5)
+ end,function()
+  eq(m:read_u8(wordbuf+1024),0xa5);local n=m:read_u16(outcount);assert(n<128)
+  local size=0;for i=1,n do while size<1024 and m:read_u8(wordbuf+size)~=0 do size=size+1 end;assert(size<1024);size=size+1 end
+  print('RELATED '..label..' count='..n..' bytes='..hex(wordbuf,size))
+ end)
+ add(label..'-next',6,function()m:write_u32(param,record);m:write_u32(param+4,nextrecord)end,function()print('NEXT '..label..' bytes='..hex(nextrecord,10)); if m:read_u32(reply)==1 and not label:find('opposite') then record_text(label..'-opposite',nextrecord)end end)
+ add(label..'-type',4,function()m:write_u32(param,0)end,nil,false)
+ -- Selector 4 takes the record itself, rather than a pointer record.
+ cases[#cases].parameter=record
+end
+@CASES@
+local function setup()
+ local f=assert(io.open('@IMAGE@','rb'));local b=f:read('*a');f:close()
+ assert(#b==@IMAGE_SIZE@);for i=1,#b do m:write_u8(image+i-1,b:byte(i))end
+ fill(ram,@RAM_SIZE@);m:write_u32(ram+@RAM_SIZE@,0xc0decafe);fill(0x74000,0x3000,0xa5)
+ m:write_u32(0xe0e,image);m:write_u32(0x3562,ram);m:write_u32(0x34e2,0)
+ m:write_u32(0x35e2,0);m:write_u32(0x35ec,0);m:write_u32(0x35f0,0xffffffff)
+ print('READY dictionary API fixture')
+end
+emu.register_frame_done(function()
+ if failed then return end;frame=frame+1
+ local ok,err=pcall(function()
+  if phase=='boot' then
+   if cpu.state.PC.value>=0x410000 and cpu.state.PC.value<0x470000 and cpu.state.SP.value>=0x1000 and cpu.state.SP.value<0x80000 and m:read_u32(0x28)==0x426768 then setup();phase='start'
+   elseif frame>deadline then error(string.format('boot readiness timeout PC=%x flags=%x system=%x vector=%x',cpu.state.PC.value,m:read_u16(0x35f8),m:read_u32(0xe0a),m:read_u32(0x28)))end
+  elseif phase=='start' then
+   index=index+1
+   if index>#cases then print('PASS dictionary API probe cases='..#cases);machine:exit();phase='done';return end
+   local c=cases[index];fill(param,32,0xa5);m:write_u32(reply-4,0x12345678);fill(reply,12,0xa5);m:write_u32(reply+12,0xabcdef01)
+   if c.prep then c.prep()end
+   local args
+   if c.direct then
+    m:write_u16(code,0x4eb9);m:write_u32(code+2,image+@ENTRY@);m:write_u16(code+6,0x60fe);args={c.selector,0,reply};cpu.state.A5.value=ram
+   else
+    m:write_u16(code,0x4eb9);m:write_u32(code+2,0x439c60);m:write_u16(code+6,0x60fe);args={1,c.selector,c.parameter or param,reply};cpu.state.A5.value=0x7c000
+   end
+   for i,v in ipairs(args)do m:write_u32(stack+4*(i-1),v)end
+   cpu.state.SP.value=stack;cpu.state.SR.value=0x2700;cpu.state.PC.value=code
+   deadline=frame+120;phase='wait'
+  elseif phase=='wait' then
+   local c=cases[index];local stop=code+6;local pc=cpu.state.PC.value
+   if pc==stop or pc==stop+2 then
+    eq(cpu.state.SP.value,stack);eq(m:read_u32(ram+@RAM_SIZE@),0xc0decafe);eq(m:read_u32(reply-4),0x12345678);eq(m:read_u32(reply+12),0xabcdef01)
+    if not c.direct then eq(cpu.state.A5.value,0x7c000);eq(cpu.state.D0.value&255,1)end
+    print('RESULT '..c.label..' selector='..string.format('%x',c.selector)..' reply='..hex(reply,12)..' global_count='..m:read_u16(ram+0x28))
+    if '@KIND@'~='CW_Topics' and '@KIND@'~='CW_MainDictionary' then eq(m:read_u32(reply+4),0xa5a5a5a5);eq(m:read_u32(reply+8),0xa5a5a5a5)end
+    if c.label=='init' and ('@KIND@'):find('Thesaurus') then print('GROUPS offset='..string.format('%x',m:read_u32(ram+0x24)-image)..' count='..m:read_u16(ram+0x28))end
+    if c.check then c.check()end
+    phase='start'
+   elseif frame>deadline then error(string.format('callback timeout: %s PC=%x SP=%x',c.label,pc,cpu.state.SP.value))end
+  end
+ end)
+ if not ok then failed=true;print('FAIL dictionary API '..tostring(err));machine:exit()end
+end)

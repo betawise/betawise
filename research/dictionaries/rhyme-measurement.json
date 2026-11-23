@@ -1,0 +1,71 @@
+{
+  "source": "/usr/share/pocketsphinx/model/en-us/cmudict-en-us.dict",
+  "source_sha256": "9de99dd2a24b63c653c1c30ab39388d05185cae36d0875f15c319b4ad6dc43af",
+  "source_bytes": 3272051,
+  "pronunciation_rows": 134723,
+  "unique_words": 125945,
+  "phone_symbols": 39,
+  "last_vowel_keys": 1403,
+  "stress_available": false,
+  "production_rhyme_accuracy_qualified": false,
+  "components": {
+    "header": 64,
+    "word_blocks": 582351,
+    "word_directory": 23616,
+    "word_key_refs": 383197,
+    "word_key_directory": 23616,
+    "rhyme_directory": 8418,
+    "rhyme_keys": 5665,
+    "postings": 172083
+  },
+  "total_bytes": 1199010,
+  "examples": {
+    "rough": [
+      [
+        "R",
+        "AH",
+        "F"
+      ]
+    ],
+    "tough": [
+      [
+        "T",
+        "AH",
+        "F"
+      ]
+    ],
+    "through": [
+      [
+        "TH",
+        "R",
+        "UW"
+      ]
+    ],
+    "blue": [
+      [
+        "B",
+        "L",
+        "UW"
+      ]
+    ],
+    "love": [
+      [
+        "L",
+        "AH",
+        "V"
+      ]
+    ],
+    "move": [
+      [
+        "M",
+        "UW",
+        "V"
+      ]
+    ]
+  },
+  "known_false_positive": [
+    "station",
+    "pigeon"
+  ],
+  "scope": "storage baseline only; production must use a stress-preserving source and remeasure"
+}

@@ -1,0 +1,173 @@
+{
+  "scope": "Original applet service paths on Neo ROM 3.21; no UI qualification",
+  "total_cases": 160,
+  "runs": [
+    {
+      "image": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Large USA.OS3KApp",
+      "sha256": "f99536c33f406ebb28920116740fe4a1ebdef3a54d381e3f6717d29519a0da28",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 28,
+      "log_sha256": "2465b64dee6ddbd00f2ccb7a7dda5e571ba01b5a1c18497eb4e96db97c3d7389",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-0",
+      "observations": [
+        "GROUPS offset=2d3a0 count=5748",
+        "RECORDS query count=2 bytes=000119ca000032be0206000177b4000044dd0206",
+        "TEXT query-0 bytes=706c656173616e74 count=8",
+        "TEXT query-1 bytes=636865657266756c count=8",
+        "TEXT query-0-opposite bytes=646973616772656561626c65 count=12",
+        "TEXT query-1-opposite bytes=64656a6563746564 count=8"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Small USA.OS3KApp",
+      "sha256": "3b33dd1b02cb00b1d1bf4ebb7bb05754f01fea4519e78fe454aa69ed25931cbe",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 28,
+      "log_sha256": "195930b0ed4274785411b69ef1b1159dbdd5436b5d78dfcdeef256b36a97dbf9",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-1",
+      "observations": [
+        "GROUPS offset=1d668 count=5747",
+        "RECORDS query count=2 bytes=0000d9a400002f0602060001354e0000451a0206",
+        "TEXT query-0 bytes=706c656173616e74 count=8",
+        "TEXT query-1 bytes=636865657266756c count=8",
+        "TEXT query-0-opposite bytes=646973616772656561626c65 count=12",
+        "TEXT query-1-opposite bytes=64656a6563746564 count=8"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart 3000/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "sha256": "2d05592284470fff8e5e3760fcbfdc45d219d6b73f2351e37bade9c1e6605593",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "feliz",
+      "passed": true,
+      "cases": 16,
+      "log_sha256": "ad8f99c5e67dfc919f4ac34b6e0c78210d8320e0f70bcd2a7991178141938b54",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-2",
+      "observations": [
+        "GROUPS offset=ec6c count=4300",
+        "RECORDS query count=1 bytes=00002dd6000008f00206",
+        "TEXT query-0 bytes=66656c697a count=5"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart Neo/SmartApplets/CW_Topics.os3kapp",
+      "sha256": "e484c574fa6b5b31bc92f1f986e8f708011b4d49b0cc8d3bab0bbb0f3ae0697d",
+      "entry": 148,
+      "ram_size": 4,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 3,
+      "log_sha256": "50a3d01bb346f31d33769802beff1dbd8aeb4d7135c90fddf0e21091c7930b1b",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-3",
+      "observations": [
+        "DATA pointer=10106 magic=40546f706963524f4d40"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart Neo/SmartApplets/CW_MainDictionary.os3kapp",
+      "sha256": "a73e7e5b5f062f21da47dfd323e3bf88e69d4a8bd7a2fabead0f5c1b844049a0",
+      "entry": 148,
+      "ram_size": 4,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 3,
+      "log_sha256": "cad2d848c04c25053ad27a7477a418759e9f4d061d3914a2c63a6dba1928a9c6",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-4",
+      "observations": [
+        "DATA pointer=10106 magic=40416c706861524f4d40"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp",
+      "sha256": "8128f8545e0feecc8974192c9c6103f8e1b0770ef1cf4c830241370411569f8b",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 28,
+      "log_sha256": "eca75f342d3e9210d6b7a98a5f9812720fa62f94835774bb0cd24055429d56de",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-5",
+      "observations": [
+        "GROUPS offset=1d6c0 count=5747",
+        "RECORDS query count=2 bytes=0000d9a400002f0602060001354e0000451a0206",
+        "TEXT query-0 bytes=706c656173616e74 count=8",
+        "TEXT query-1 bytes=636865657266756c count=8",
+        "TEXT query-0-opposite bytes=646973616772656561626c65 count=12",
+        "TEXT query-1-opposite bytes=64656a6563746564 count=8"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp",
+      "sha256": "f91e89496cc2523bcfac57f195e7e277668cef71afd85b8d283f63a4144fa1d0",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 28,
+      "log_sha256": "6bd65bd99bf3688ec81c02d07d3056bbc59730bae629b49488503db1923783bd",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-6",
+      "observations": [
+        "GROUPS offset=2d6c0 count=5779",
+        "RECORDS query count=2 bytes=00011adc000032e40206000179380000450d0206",
+        "TEXT query-0 bytes=706c656173616e74 count=8",
+        "TEXT query-1 bytes=636865657266756c count=8",
+        "TEXT query-0-opposite bytes=646973616772656561626c65 count=12",
+        "TEXT query-1-opposite bytes=64656a6563746564 count=8"
+      ]
+    },
+    {
+      "image": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "sha256": "7605ba816106e72c090fc830d93dc0aac4c71159627dc1a477bee1d89af080a0",
+      "entry": 984,
+      "ram_size": 32860,
+      "returncode": 0,
+      "word": "feliz",
+      "passed": true,
+      "cases": 16,
+      "log_sha256": "8f4a18c329f24bafdeda2b375a2720df0e3ecb690fed3ebaecd0777b67168a84",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-7",
+      "observations": [
+        "GROUPS offset=ecc4 count=4300",
+        "RECORDS query count=1 bytes=00002dd6000008f00206",
+        "TEXT query-0 bytes=66656c697a count=5"
+      ]
+    },
+    {
+      "image": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp",
+      "sha256": "15e86f4f3ae1d68c76b5087c941dd7947128388217eb1a063263d4b2d42ef101",
+      "entry": 13234,
+      "ram_size": 7248,
+      "returncode": 0,
+      "word": "happy",
+      "passed": true,
+      "cases": 10,
+      "log_sha256": "4562cdfd69be1bb4615e55256f43d1127513f67a0d06736ed2f57aa97d6cf372",
+      "evidence_directory": ".research-work/dictionary-thesaurus/asserted-8",
+      "observations": [
+        "SPELL bytes=01 length=1",
+        "SPELL bytes=00 length=1",
+        "SPELL bytes=ff length=1",
+        "SPELL bytes= length=0",
+        "SPELL bytes=00 length=1",
+        "SPELL bytes=0c length=1",
+        "SPELL bytes= length=0",
+        "SPELL bytes=01 length=1",
+        "SPELL bytes= length=0"
+      ]
+    }
+  ]
+}
