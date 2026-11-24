@@ -1,0 +1,4318 @@
+[
+  {
+    "version": "1.7",
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ControlPanel.OS3KApp",
+    "size": 27412,
+    "sha256": "503e2aaa9ebdb85b7a693d0c75f8e1687da6cef16411cc27d66915cbae28c3f6",
+    "entry": "0x1f30",
+    "immediate_indexed_syscall_references": [
+      {
+        "site": "0xa8",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xd6",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x140",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x16e",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x184",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x19a",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b0",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c6",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1fa",
+        "target": "0x496c",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x214",
+        "target": "0x4a50",
+        "opcode": "0xa24c",
+        "kind": "call"
+      },
+      {
+        "site": "0x232",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x248",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x25e",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x26c",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ae",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2c8",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x2d4",
+        "target": "0x4a5a",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x302",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x334",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x34a",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x378",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b4",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ca",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3f2",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x408",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x42c",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x442",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x454",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x462",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x470",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x482",
+        "target": "0x49a8",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x490",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x49a",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x4c8",
+        "target": "0x49ae",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x4f2",
+        "target": "0x49b2",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x52c",
+        "target": "0x4a5e",
+        "opcode": "0xa268",
+        "kind": "call"
+      },
+      {
+        "site": "0x54c",
+        "target": "0x4a5c",
+        "opcode": "0xa264",
+        "kind": "call"
+      },
+      {
+        "site": "0x588",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x5c6",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x604",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x610",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x63e",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x680",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x696",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x6ac",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x6c2",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x6d8",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x70a",
+        "target": "0x496c",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x726",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x75c",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x77c",
+        "target": "0x4ad6",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x78e",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x7bc",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x7d4",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x7ea",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x7f8",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x820",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x832",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x852",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x85c",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x866",
+        "target": "0x4a5a",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x924",
+        "target": "0x496c",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x940",
+        "target": "0x4a50",
+        "opcode": "0xa24c",
+        "kind": "call"
+      },
+      {
+        "site": "0x954",
+        "target": "0x4a5a",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x966",
+        "target": "0x4a5e",
+        "opcode": "0xa268",
+        "kind": "call"
+      },
+      {
+        "site": "0x972",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x98c",
+        "target": "0x4a5c",
+        "opcode": "0xa264",
+        "kind": "call"
+      },
+      {
+        "site": "0x998",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x9ae",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x9e6",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0xa0a",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xa32",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xa4c",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0xa72",
+        "target": "0x4988",
+        "opcode": "0xa0bc",
+        "kind": "call"
+      },
+      {
+        "site": "0xaa2",
+        "target": "0x4960",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0xab8",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0xad2",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xae0",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xaee",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xb08",
+        "target": "0x49a8",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0xb16",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0xb20",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0xb4c",
+        "target": "0x49ae",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0xb8e",
+        "target": "0x49e2",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0xba8",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0xbb6",
+        "target": "0x4988",
+        "opcode": "0xa0bc",
+        "kind": "call"
+      },
+      {
+        "site": "0xbd2",
+        "target": "0x498a",
+        "opcode": "0xa0c0",
+        "kind": "call"
+      },
+      {
+        "site": "0xbf4",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xc1c",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0xc30",
+        "target": "0x4940",
+        "opcode": "0xa008",
+        "kind": "call"
+      },
+      {
+        "site": "0xc46",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0xc72",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xc8a",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xcb8",
+        "target": "0x4968",
+        "opcode": "0xa07c",
+        "kind": "call"
+      },
+      {
+        "site": "0xcc8",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xcd6",
+        "target": "0x4976",
+        "opcode": "0xa098",
+        "kind": "call"
+      },
+      {
+        "site": "0xce4",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0xcee",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0xd00",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0xd6e",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0xd7c",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0xda6",
+        "target": "0x4968",
+        "opcode": "0xa07c",
+        "kind": "call"
+      },
+      {
+        "site": "0xdb2",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xdc4",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xddc",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xe32",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0xe40",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0xe56",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xe7e",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xe98",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0xebe",
+        "target": "0x4a4e",
+        "opcode": "0xa248",
+        "kind": "call"
+      },
+      {
+        "site": "0xf1c",
+        "target": "0x4960",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0xf32",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0xf4e",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf5c",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf6a",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf84",
+        "target": "0x49a8",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0xf92",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0xf9c",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0xfc8",
+        "target": "0x49ae",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0xfec",
+        "target": "0x49b2",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x1046",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1054",
+        "target": "0x4a4c",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x106e",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x10a0",
+        "target": "0x4a16",
+        "opcode": "0xa1d8",
+        "kind": "call"
+      },
+      {
+        "site": "0x10c6",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x10dc",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x10f6",
+        "target": "0x4a0a",
+        "opcode": "0xa1c0",
+        "kind": "call"
+      },
+      {
+        "site": "0x110a",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1120",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1136",
+        "target": "0x4a4a",
+        "opcode": "0xa240",
+        "kind": "call"
+      },
+      {
+        "site": "0x1170",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x11a2",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x11bc",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x11d6",
+        "target": "0x4a22",
+        "opcode": "0xa1f0",
+        "kind": "address"
+      },
+      {
+        "site": "0x11f2",
+        "target": "0x4a26",
+        "opcode": "0xa1f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1262",
+        "target": "0x4ad6",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x126e",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x1296",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x12b2",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x12d0",
+        "target": "0x4a54",
+        "opcode": "0xa254",
+        "kind": "address"
+      },
+      {
+        "site": "0x12da",
+        "target": "0x4a28",
+        "opcode": "0xa1fc",
+        "kind": "address"
+      },
+      {
+        "site": "0x12f2",
+        "target": "0x4a24",
+        "opcode": "0xa1f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1418",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x143c",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1460",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x146e",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x147a",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x1484",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x14a4",
+        "target": "0x49b0",
+        "opcode": "0xa10c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1502",
+        "target": "0x4a1c",
+        "opcode": "0xa1e4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1534",
+        "target": "0x4af0",
+        "opcode": "0xa3ac",
+        "kind": "address"
+      },
+      {
+        "site": "0x15fc",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x17e4",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x180a",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x18b4",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x18d8",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x18f4",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x18fe",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1910",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x19e0",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x19f0",
+        "target": "0x4a30",
+        "opcode": "0xa20c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a10",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a36",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a50",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a62",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "address"
+      },
+      {
+        "site": "0x1a94",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ab2",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ad2",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ae8",
+        "target": "0x4a5a",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b54",
+        "target": "0x49c2",
+        "opcode": "0xa130",
+        "kind": "call"
+      },
+      {
+        "site": "0x1bf4",
+        "target": "0x4960",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c0a",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c26",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c34",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c42",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c5c",
+        "target": "0x49a8",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c6a",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c74",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c94",
+        "target": "0x49ae",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x1cb8",
+        "target": "0x49b2",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x1d46",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1d56",
+        "target": "0x4a64",
+        "opcode": "0xa274",
+        "kind": "call"
+      },
+      {
+        "site": "0x1d98",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1da4",
+        "target": "0x49c6",
+        "opcode": "0xa138",
+        "kind": "call"
+      },
+      {
+        "site": "0x1e0a",
+        "target": "0x4afc",
+        "opcode": "0xa3c4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1e34",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x1e52",
+        "target": "0x4a48",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1e60",
+        "target": "0x4a40",
+        "opcode": "0xa22c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1f02",
+        "target": "0x497e",
+        "opcode": "0xa0a8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1fe4",
+        "target": "0x497e",
+        "opcode": "0xa0a8",
+        "kind": "call"
+      },
+      {
+        "site": "0x2054",
+        "target": "0x49e4",
+        "opcode": "0xa174",
+        "kind": "call"
+      },
+      {
+        "site": "0x2062",
+        "target": "0x49e6",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x206e",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x2078",
+        "target": "0x497a",
+        "opcode": "0xa0a0",
+        "kind": "call"
+      },
+      {
+        "site": "0x209e",
+        "target": "0x49e6",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x20aa",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x20b4",
+        "target": "0x49e4",
+        "opcode": "0xa174",
+        "kind": "call"
+      },
+      {
+        "site": "0x20c8",
+        "target": "0x4990",
+        "opcode": "0xa0cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x2108",
+        "target": "0x49e6",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x2120",
+        "target": "0x4992",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x21f2",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x220a",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2220",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2238",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x224e",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2266",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x22a2",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x22ce",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x22f8",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2314",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2320",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x2364",
+        "target": "0x4940",
+        "opcode": "0xa008",
+        "kind": "call"
+      },
+      {
+        "site": "0x2380",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x239c",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x23a6",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x23ba",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x23de",
+        "target": "0x4940",
+        "opcode": "0xa008",
+        "kind": "call"
+      },
+      {
+        "site": "0x2402",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2410",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2434",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x247e",
+        "target": "0x49dc",
+        "opcode": "0xa164",
+        "kind": "call"
+      },
+      {
+        "site": "0x24a2",
+        "target": "0x4962",
+        "opcode": "0xa070",
+        "kind": "call"
+      },
+      {
+        "site": "0x24b8",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x24da",
+        "target": "0x4940",
+        "opcode": "0xa008",
+        "kind": "call"
+      },
+      {
+        "site": "0x24f6",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2564",
+        "target": "0x4990",
+        "opcode": "0xa0cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x257c",
+        "target": "0x4992",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x258c",
+        "target": "0x49e2",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x25aa",
+        "target": "0x4992",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x25be",
+        "target": "0x49e2",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x25e6",
+        "target": "0x49e2",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x261e",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x2634",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x2648",
+        "target": "0x49dc",
+        "opcode": "0xa164",
+        "kind": "address"
+      },
+      {
+        "site": "0x2684",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x26d6",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2728",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x277a",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x27a4",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x27fc",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x2908",
+        "target": "0x49dc",
+        "opcode": "0xa164",
+        "kind": "address"
+      },
+      {
+        "site": "0x298c",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a1e",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ab0",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2b42",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2bfe",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2c4c",
+        "target": "0x4ace",
+        "opcode": "0xa368",
+        "kind": "call"
+      },
+      {
+        "site": "0x2c6a",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x2d56",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x2e28",
+        "target": "0x4a80",
+        "opcode": "0xa2ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x2e40",
+        "target": "0x4a82",
+        "opcode": "0xa2b0",
+        "kind": "call"
+      },
+      {
+        "site": "0x2eca",
+        "target": "0x49a6",
+        "opcode": "0xa0f8",
+        "kind": "address"
+      },
+      {
+        "site": "0x2ed6",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x2ef0",
+        "target": "0x49a2",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f1a",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f34",
+        "target": "0x49a4",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f6a",
+        "target": "0x49a8",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f84",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f92",
+        "target": "0x49aa",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f9c",
+        "target": "0x49ac",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x2fae",
+        "target": "0x49ae",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x2fc0",
+        "target": "0x49b2",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x308c",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x309a",
+        "target": "0x496e",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x3112",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3120",
+        "target": "0x49c2",
+        "opcode": "0xa130",
+        "kind": "call"
+      },
+      {
+        "site": "0x3134",
+        "target": "0x49c4",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x3142",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x314c",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x3156",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x31ba",
+        "target": "0x4984",
+        "opcode": "0xa0b4",
+        "kind": "address"
+      },
+      {
+        "site": "0x3256",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x32c2",
+        "target": "0x49c4",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x32d6",
+        "target": "0x49c4",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x3308",
+        "target": "0x4ad6",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x3360",
+        "target": "0x4ad6",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x33f2",
+        "target": "0x4ace",
+        "opcode": "0xa368",
+        "kind": "call"
+      },
+      {
+        "site": "0x33fc",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3414",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3456",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3472",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x348c",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3496",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x34a6",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x34cc",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x34d8",
+        "target": "0x4980",
+        "opcode": "0xa0ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x3510",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x351c",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x3532",
+        "target": "0x4980",
+        "opcode": "0xa0ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x354a",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x3564",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x368e",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x3698",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x36a2",
+        "target": "0x497a",
+        "opcode": "0xa0a0",
+        "kind": "call"
+      },
+      {
+        "site": "0x36e4",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3748",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3766",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3780",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x37de",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x37ee",
+        "target": "0x495c",
+        "opcode": "0xa048",
+        "kind": "address"
+      },
+      {
+        "site": "0x3902",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x39a4",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a52",
+        "target": "0x49e6",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a7c",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a90",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ab2",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3abc",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3aca",
+        "target": "0x4994",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3adc",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b02",
+        "target": "0x4a86",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b10",
+        "target": "0x49e6",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x3c44",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x3c5e",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x3c82",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ca4",
+        "target": "0x493e",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3cb0",
+        "target": "0x4944",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d5a",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d72",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x3d90",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x3db4",
+        "target": "0x4af6",
+        "opcode": "0xa3b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3dc8",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e10",
+        "target": "0x4994",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e1e",
+        "target": "0x4af4",
+        "opcode": "0xa3b4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e44",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3f8c",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3fb2",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3fcc",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ff2",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x4024",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x402e",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x4092",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x4110",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x4160",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x4178",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x41a2",
+        "target": "0x4a58",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x41ce",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x4204",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x4232",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x425c",
+        "target": "0x4954",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x42a2",
+        "target": "0x4994",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x42ac",
+        "target": "0x49ba",
+        "opcode": "0xa120",
+        "kind": "call"
+      },
+      {
+        "site": "0x42b6",
+        "target": "0x49c0",
+        "opcode": "0xa12c",
+        "kind": "call"
+      },
+      {
+        "site": "0x42f2",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x430a",
+        "target": "0x4994",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x4314",
+        "target": "0x49ba",
+        "opcode": "0xa120",
+        "kind": "call"
+      },
+      {
+        "site": "0x431e",
+        "target": "0x49c0",
+        "opcode": "0xa12c",
+        "kind": "call"
+      },
+      {
+        "site": "0x435a",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x438c",
+        "target": "0x4946",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x43ae",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x43d4",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x43fe",
+        "target": "0x4a34",
+        "opcode": "0xa214",
+        "kind": "call"
+      },
+      {
+        "site": "0x4408",
+        "target": "0x4a10",
+        "opcode": "0xa1cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x441a",
+        "target": "0x4a0e",
+        "opcode": "0xa1c8",
+        "kind": "call"
+      },
+      {
+        "site": "0x44cc",
+        "target": "0x4ad6",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x44dc",
+        "target": "0x4ae2",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x44f0",
+        "target": "0x49f6",
+        "opcode": "0xa198",
+        "kind": "call"
+      },
+      {
+        "site": "0x4510",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x453a",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x456e",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x4580",
+        "target": "0x49b8",
+        "opcode": "0xa11c",
+        "kind": "call"
+      },
+      {
+        "site": "0x45a8",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x45b4",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x45c4",
+        "target": "0x497c",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x45ce",
+        "target": "0x4978",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x45de",
+        "target": "0x4974",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x4654",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x4670",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x46a6",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x46be",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x4708",
+        "target": "0x493c",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x4724",
+        "target": "0x4ad0",
+        "opcode": "0xa36c",
+        "kind": "call"
+      }
+    ],
+    "menu": [
+      {
+        "id": 0,
+        "offset": "0x50bc",
+        "text": "Select a Control Panel option:"
+      },
+      {
+        "id": 1,
+        "offset": "0x50db",
+        "text": "Diagnostics..."
+      },
+      {
+        "id": 2,
+        "offset": "0x50ea",
+        "text": "SpellCheck Settings..."
+      },
+      {
+        "id": 3,
+        "offset": "0x5101",
+        "text": "AlphaWord settings..."
+      },
+      {
+        "id": 4,
+        "offset": "0x5117",
+        "text": "Change default AlphaWord font..."
+      },
+      {
+        "id": 5,
+        "offset": "0x5138",
+        "text": "Turn Calculator ON..."
+      },
+      {
+        "id": 6,
+        "offset": "0x514e",
+        "text": "Turn Calculator OFF..."
+      },
+      {
+        "id": 7,
+        "offset": "0x5165",
+        "text": "Two-button On option..."
+      },
+      {
+        "id": 8,
+        "offset": "0x517d",
+        "text": "Set screen contrast..."
+      },
+      {
+        "id": 9,
+        "offset": "0x5194",
+        "text": "Select printer..."
+      },
+      {
+        "id": 10,
+        "offset": "0x51a6",
+        "text": "Keyboard command reference list..."
+      },
+      {
+        "id": 11,
+        "offset": "0x51c9",
+        "text": "View keyboard layout..."
+      },
+      {
+        "id": 12,
+        "offset": "0x51e1",
+        "text": "Display battery status..."
+      },
+      {
+        "id": 13,
+        "offset": "0x51fb",
+        "text": "Change keyboard settings..."
+      },
+      {
+        "id": 14,
+        "offset": "0x5217",
+        "text": "Search For Networks..."
+      },
+      {
+        "id": 15,
+        "offset": "0x522e",
+        "text": "About NEO 2..."
+      },
+      {
+        "id": 16,
+        "offset": "0x523d",
+        "text": "Wireless Security..."
+      },
+      {
+        "id": 17,
+        "offset": "0x5252",
+        "text": "Update Text2Speech device..."
+      }
+    ]
+  },
+  {
+    "version": "1.1",
+    "path": "Ghidra/Alphasmart 3000/SmartApplets/ControlPanel.OS3KApp",
+    "size": 24264,
+    "sha256": "37eb0e316503b1b2071aa5dced1700c69a028a79539f815e1a04c9b4c8fd74c1",
+    "entry": "0x1db8",
+    "immediate_indexed_syscall_references": [
+      {
+        "site": "0xa8",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xd6",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x140",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x16e",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x184",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x19a",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b0",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c6",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1fa",
+        "target": "0x4084",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x214",
+        "target": "0x4168",
+        "opcode": "0xa24c",
+        "kind": "call"
+      },
+      {
+        "site": "0x232",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x248",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x25e",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x26c",
+        "target": "0x4086",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ae",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2c8",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x2d4",
+        "target": "0x4172",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x302",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x334",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x34a",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x378",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b4",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ca",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3f2",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x408",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x42c",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x442",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x454",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x462",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x470",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x482",
+        "target": "0x40c0",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x490",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x49a",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x4c8",
+        "target": "0x40c6",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x4f2",
+        "target": "0x40ca",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x52c",
+        "target": "0x4176",
+        "opcode": "0xa268",
+        "kind": "call"
+      },
+      {
+        "site": "0x54c",
+        "target": "0x4174",
+        "opcode": "0xa264",
+        "kind": "call"
+      },
+      {
+        "site": "0x588",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x5c6",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x604",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x610",
+        "target": "0x4086",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x63e",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x680",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x696",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x6ac",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x6c2",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x6f4",
+        "target": "0x4084",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x710",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x746",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x766",
+        "target": "0x41ee",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x778",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x7a6",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x7be",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x7d4",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x7e2",
+        "target": "0x4086",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x80a",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x81c",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x83c",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x846",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x850",
+        "target": "0x4172",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x90e",
+        "target": "0x4084",
+        "opcode": "0xa084",
+        "kind": "call"
+      },
+      {
+        "site": "0x92a",
+        "target": "0x4168",
+        "opcode": "0xa24c",
+        "kind": "call"
+      },
+      {
+        "site": "0x93e",
+        "target": "0x4172",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x950",
+        "target": "0x4176",
+        "opcode": "0xa268",
+        "kind": "call"
+      },
+      {
+        "site": "0x95c",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x976",
+        "target": "0x4174",
+        "opcode": "0xa264",
+        "kind": "call"
+      },
+      {
+        "site": "0x982",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x998",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x9d0",
+        "target": "0x4086",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x9f4",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xa1c",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xa36",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0xa5c",
+        "target": "0x40a0",
+        "opcode": "0xa0bc",
+        "kind": "call"
+      },
+      {
+        "site": "0xa8c",
+        "target": "0x4078",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0xaa2",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0xabc",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xaca",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xad8",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xaf2",
+        "target": "0x40c0",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0xb00",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0xb0a",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0xb36",
+        "target": "0x40c6",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0xb78",
+        "target": "0x40fa",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0xb92",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0xba0",
+        "target": "0x40a0",
+        "opcode": "0xa0bc",
+        "kind": "call"
+      },
+      {
+        "site": "0xbbc",
+        "target": "0x40a2",
+        "opcode": "0xa0c0",
+        "kind": "call"
+      },
+      {
+        "site": "0xbde",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xc06",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0xc1a",
+        "target": "0x405a",
+        "opcode": "0xa008",
+        "kind": "call"
+      },
+      {
+        "site": "0xc30",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0xc5c",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xc74",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xca2",
+        "target": "0x4080",
+        "opcode": "0xa07c",
+        "kind": "call"
+      },
+      {
+        "site": "0xcb2",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xcc0",
+        "target": "0x408e",
+        "opcode": "0xa098",
+        "kind": "call"
+      },
+      {
+        "site": "0xcce",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0xcd8",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0xcea",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0xd58",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0xd66",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0xd90",
+        "target": "0x4080",
+        "opcode": "0xa07c",
+        "kind": "call"
+      },
+      {
+        "site": "0xd9c",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xdae",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xdc6",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0xe1c",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0xe2a",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0xe40",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0xe68",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0xe82",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0xea8",
+        "target": "0x4166",
+        "opcode": "0xa248",
+        "kind": "call"
+      },
+      {
+        "site": "0xf06",
+        "target": "0x4078",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0xf1c",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0xf38",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf46",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf54",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0xf6e",
+        "target": "0x40c0",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0xf7c",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0xf86",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0xfb2",
+        "target": "0x40c6",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0xfd6",
+        "target": "0x40ca",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x1030",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x103e",
+        "target": "0x4164",
+        "opcode": "0xa244",
+        "kind": "call"
+      },
+      {
+        "site": "0x1058",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x108a",
+        "target": "0x412e",
+        "opcode": "0xa1d8",
+        "kind": "call"
+      },
+      {
+        "site": "0x10b0",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x10c6",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x10e0",
+        "target": "0x4122",
+        "opcode": "0xa1c0",
+        "kind": "call"
+      },
+      {
+        "site": "0x10f4",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x110a",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x1120",
+        "target": "0x4162",
+        "opcode": "0xa240",
+        "kind": "call"
+      },
+      {
+        "site": "0x115a",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x118c",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x11a6",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x11c0",
+        "target": "0x413a",
+        "opcode": "0xa1f0",
+        "kind": "address"
+      },
+      {
+        "site": "0x11dc",
+        "target": "0x413e",
+        "opcode": "0xa1f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x124c",
+        "target": "0x41ee",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x1258",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x127c",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1298",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x12b6",
+        "target": "0x416c",
+        "opcode": "0xa254",
+        "kind": "address"
+      },
+      {
+        "site": "0x12c0",
+        "target": "0x4140",
+        "opcode": "0xa1fc",
+        "kind": "address"
+      },
+      {
+        "site": "0x12d8",
+        "target": "0x413c",
+        "opcode": "0xa1f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x13fc",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x141c",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1440",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x144e",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x145a",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x1464",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x1484",
+        "target": "0x40c8",
+        "opcode": "0xa10c",
+        "kind": "call"
+      },
+      {
+        "site": "0x14dc",
+        "target": "0x4134",
+        "opcode": "0xa1e4",
+        "kind": "call"
+      },
+      {
+        "site": "0x150e",
+        "target": "0x4208",
+        "opcode": "0xa3ac",
+        "kind": "address"
+      },
+      {
+        "site": "0x15d6",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x17be",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x17e4",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x188e",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x18b2",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x18ce",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x18d8",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x18ea",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x19ba",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x19ca",
+        "target": "0x4148",
+        "opcode": "0xa20c",
+        "kind": "call"
+      },
+      {
+        "site": "0x19ea",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a12",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a2c",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a5e",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a7e",
+        "target": "0x4160",
+        "opcode": "0xa23c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1a94",
+        "target": "0x4172",
+        "opcode": "0xa260",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ac6",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1aea",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b06",
+        "target": "0x40da",
+        "opcode": "0xa130",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b46",
+        "target": "0x4078",
+        "opcode": "0xa06c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b5c",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b78",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b86",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1b94",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "call"
+      },
+      {
+        "site": "0x1bae",
+        "target": "0x40c0",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x1bbc",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x1bc6",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x1bf4",
+        "target": "0x40c6",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c18",
+        "target": "0x40ca",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x1c9e",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x1cae",
+        "target": "0x417c",
+        "opcode": "0xa274",
+        "kind": "call"
+      },
+      {
+        "site": "0x1cea",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1cf6",
+        "target": "0x40de",
+        "opcode": "0xa138",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ea6",
+        "target": "0x40fc",
+        "opcode": "0xa174",
+        "kind": "call"
+      },
+      {
+        "site": "0x1eb4",
+        "target": "0x40fe",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ec0",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x1eca",
+        "target": "0x4092",
+        "opcode": "0xa0a0",
+        "kind": "call"
+      },
+      {
+        "site": "0x1ef0",
+        "target": "0x40fe",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x1efc",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x1f06",
+        "target": "0x40fc",
+        "opcode": "0xa174",
+        "kind": "call"
+      },
+      {
+        "site": "0x1f1a",
+        "target": "0x40a8",
+        "opcode": "0xa0cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x1f5a",
+        "target": "0x40fe",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x1f72",
+        "target": "0x40aa",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x206a",
+        "target": "0x40a8",
+        "opcode": "0xa0cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x2082",
+        "target": "0x40aa",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x2092",
+        "target": "0x40fa",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x20b0",
+        "target": "0x40aa",
+        "opcode": "0xa0d0",
+        "kind": "call"
+      },
+      {
+        "site": "0x20c4",
+        "target": "0x40fa",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x20ec",
+        "target": "0x40fa",
+        "opcode": "0xa170",
+        "kind": "call"
+      },
+      {
+        "site": "0x2120",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x2136",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x214a",
+        "target": "0x40f4",
+        "opcode": "0xa164",
+        "kind": "address"
+      },
+      {
+        "site": "0x2186",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x21d8",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x222a",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x227c",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x22a6",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x22fe",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x240a",
+        "target": "0x40f4",
+        "opcode": "0xa164",
+        "kind": "address"
+      },
+      {
+        "site": "0x248e",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2520",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x25b2",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2644",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2700",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x274c",
+        "target": "0x41e6",
+        "opcode": "0xa368",
+        "kind": "call"
+      },
+      {
+        "site": "0x276a",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x28d8",
+        "target": "0x4198",
+        "opcode": "0xa2ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x28f0",
+        "target": "0x419a",
+        "opcode": "0xa2b0",
+        "kind": "call"
+      },
+      {
+        "site": "0x297a",
+        "target": "0x40be",
+        "opcode": "0xa0f8",
+        "kind": "address"
+      },
+      {
+        "site": "0x2986",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x29a0",
+        "target": "0x40ba",
+        "opcode": "0xa0f0",
+        "kind": "call"
+      },
+      {
+        "site": "0x29ca",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x29e4",
+        "target": "0x40bc",
+        "opcode": "0xa0f4",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a1a",
+        "target": "0x40c0",
+        "opcode": "0xa0fc",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a34",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a42",
+        "target": "0x40c2",
+        "opcode": "0xa100",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a4c",
+        "target": "0x40c4",
+        "opcode": "0xa104",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a5e",
+        "target": "0x40c6",
+        "opcode": "0xa108",
+        "kind": "call"
+      },
+      {
+        "site": "0x2a70",
+        "target": "0x40ca",
+        "opcode": "0xa110",
+        "kind": "call"
+      },
+      {
+        "site": "0x2b3c",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x2b4a",
+        "target": "0x4086",
+        "opcode": "0xa088",
+        "kind": "call"
+      },
+      {
+        "site": "0x2bc0",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x2bce",
+        "target": "0x40da",
+        "opcode": "0xa130",
+        "kind": "call"
+      },
+      {
+        "site": "0x2be2",
+        "target": "0x40dc",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x2bf0",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "address"
+      },
+      {
+        "site": "0x2bfa",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x2c04",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "address"
+      },
+      {
+        "site": "0x2c68",
+        "target": "0x409c",
+        "opcode": "0xa0b4",
+        "kind": "address"
+      },
+      {
+        "site": "0x2d04",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x2d70",
+        "target": "0x40dc",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x2d84",
+        "target": "0x40dc",
+        "opcode": "0xa134",
+        "kind": "call"
+      },
+      {
+        "site": "0x2db6",
+        "target": "0x41ee",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x2e0e",
+        "target": "0x41ee",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ea0",
+        "target": "0x41e6",
+        "opcode": "0xa368",
+        "kind": "call"
+      },
+      {
+        "site": "0x2eaa",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ec2",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f04",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f20",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f3a",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f44",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f54",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f7a",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x2f86",
+        "target": "0x4098",
+        "opcode": "0xa0ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x2fbe",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x2fca",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x2fe0",
+        "target": "0x4098",
+        "opcode": "0xa0ac",
+        "kind": "call"
+      },
+      {
+        "site": "0x2ff8",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x3012",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x3130",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x314a",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x316e",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x31a0",
+        "target": "0x4076",
+        "opcode": "0xa048",
+        "kind": "call"
+      },
+      {
+        "site": "0x31ce",
+        "target": "0x4076",
+        "opcode": "0xa048",
+        "kind": "call"
+      },
+      {
+        "site": "0x328a",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x32be",
+        "target": "0x4076",
+        "opcode": "0xa048",
+        "kind": "call"
+      },
+      {
+        "site": "0x3334",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3366",
+        "target": "0x4076",
+        "opcode": "0xa048",
+        "kind": "call"
+      },
+      {
+        "site": "0x3394",
+        "target": "0x4076",
+        "opcode": "0xa048",
+        "kind": "call"
+      },
+      {
+        "site": "0x33e4",
+        "target": "0x40fe",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x340e",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3422",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3444",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x344e",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x345c",
+        "target": "0x40ac",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x346e",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x3492",
+        "target": "0x419e",
+        "opcode": "0xa2b8",
+        "kind": "call"
+      },
+      {
+        "site": "0x34a0",
+        "target": "0x40fe",
+        "opcode": "0xa178",
+        "kind": "call"
+      },
+      {
+        "site": "0x35d2",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x35ec",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "address"
+      },
+      {
+        "site": "0x3610",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x3632",
+        "target": "0x4058",
+        "opcode": "0xa004",
+        "kind": "call"
+      },
+      {
+        "site": "0x363e",
+        "target": "0x405e",
+        "opcode": "0xa010",
+        "kind": "call"
+      },
+      {
+        "site": "0x37bc",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x37e2",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x37fc",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3822",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3840",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3858",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x388e",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x38a8",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x38c8",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x38e0",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x390a",
+        "target": "0x4170",
+        "opcode": "0xa25c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3936",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "address"
+      },
+      {
+        "site": "0x396c",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x399a",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x39c4",
+        "target": "0x406e",
+        "opcode": "0xa030",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a0a",
+        "target": "0x40ac",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a14",
+        "target": "0x40d2",
+        "opcode": "0xa120",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a1e",
+        "target": "0x40d8",
+        "opcode": "0xa12c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a5a",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a72",
+        "target": "0x40ac",
+        "opcode": "0xa0d4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a7c",
+        "target": "0x40d2",
+        "opcode": "0xa120",
+        "kind": "call"
+      },
+      {
+        "site": "0x3a86",
+        "target": "0x40d8",
+        "opcode": "0xa12c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ac2",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3af4",
+        "target": "0x4060",
+        "opcode": "0xa014",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b16",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b3c",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b66",
+        "target": "0x414c",
+        "opcode": "0xa214",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b70",
+        "target": "0x4128",
+        "opcode": "0xa1cc",
+        "kind": "call"
+      },
+      {
+        "site": "0x3b82",
+        "target": "0x4126",
+        "opcode": "0xa1c8",
+        "kind": "call"
+      },
+      {
+        "site": "0x3c34",
+        "target": "0x41ee",
+        "opcode": "0xa378",
+        "kind": "call"
+      },
+      {
+        "site": "0x3c44",
+        "target": "0x41fa",
+        "opcode": "0xa390",
+        "kind": "call"
+      },
+      {
+        "site": "0x3c58",
+        "target": "0x410e",
+        "opcode": "0xa198",
+        "kind": "call"
+      },
+      {
+        "site": "0x3c78",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3ca2",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3cd6",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d00",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d0c",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d1c",
+        "target": "0x4094",
+        "opcode": "0xa0a4",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d26",
+        "target": "0x4090",
+        "opcode": "0xa09c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3d36",
+        "target": "0x408c",
+        "opcode": "0xa094",
+        "kind": "call"
+      },
+      {
+        "site": "0x3da8",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3dc4",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3dfa",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e12",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e32",
+        "target": "0x4056",
+        "opcode": "0xa000",
+        "kind": "call"
+      },
+      {
+        "site": "0x3e4e",
+        "target": "0x41e8",
+        "opcode": "0xa36c",
+        "kind": "call"
+      }
+    ]
+  }
+]

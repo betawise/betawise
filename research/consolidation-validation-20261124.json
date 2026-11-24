@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-24",
+  "source_baseline": "reproduction-baseline.json",
+  "scope": "Historical validation summary. Reproduce checks against fresh generated outputs; raw logs/captures are not repository inputs.",
+  "checks": [
+    {
+      "script": "research/memory-allocation/verify-evidence.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/verify-floor.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/check-floor-discovery.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/verify-lifecycle.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/verify-public-floor.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/verify-public-pressure.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/verify-public-preserve.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/manager/verify.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/memory-allocation/manager/verify-ram.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/flash-b3/shared-library-init/verify-vectors.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/usb/audit-static.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/usb/audit-native-usb.py",
+      "result": "PASS"
+    },
+    {
+      "script": "research/wireless-server/check-neo-radio.py",
+      "result": "PASS"
+    }
+  ],
+  "additional_checks": [
+    {
+      "command": "python3 research/markdown/file-bindings/verify.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 research/syscalls/wireless/run-probe.py NEW_OUTPUT",
+      "result": "PASS",
+      "cases": 54,
+      "evidence": "syscalls/wireless/binary-evidence-20261124/manifest.json"
+    },
+    {
+      "command": "git apply --check --cached research/reproduction-support.patch",
+      "result": "PASS"
+    },
+    {
+      "command": "git apply --check --reverse research/reproduction-support.patch",
+      "result": "PASS"
+    }
+  ]
+}

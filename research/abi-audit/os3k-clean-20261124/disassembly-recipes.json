@@ -1,0 +1,610 @@
+[
+  {
+    "output": "all.dis",
+    "source": "betawise/tests/mame/asma3k/OS3KROM.OS3KOS",
+    "source_sha256": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x4c0000",
+      "betawise/tests/mame/asma3k/OS3KROM.OS3KOS"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "beamer-serial.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp",
+    "source_sha256": "d89db41bd43e91e49ca81ce31f9676c40e80dc3f2508e37ed50c35430338a36d",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "neo-correct.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos",
+    "source_sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x410000",
+      "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "neo-later.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos",
+    "source_sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x5c0000",
+      "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "neo-raster-flags.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos",
+    "source_sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k",
+      "--adjust-vma=0x410000",
+      "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "neo.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/OS3KNeoROM.OS3KOS",
+    "source_sha256": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x5c0000",
+      "Ghidra/Alphasmart 3000/SmartApplets/OS3KNeoROM.OS3KOS"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-0.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Small USA.OS3KApp",
+    "source_sha256": "e699076e5d6522f63ab2201e1ac74dcff5ddc3f26beaaf801985c436179394ec",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Small USA.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-1.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/ControlPanel.OS3KApp",
+    "source_sha256": "37eb0e316503b1b2071aa5dced1700c69a028a79539f815e1a04c9b4c8fd74c1",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/ControlPanel.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-10.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp",
+    "source_sha256": "d89db41bd43e91e49ca81ce31f9676c40e80dc3f2508e37ed50c35430338a36d",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-11.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Large USA.OS3KApp",
+    "source_sha256": "8f5f13095104df68658ea7d31507455f926f03950c1522dde6b93cd4c79bc3af",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Large USA.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-12.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/Calculator.OS3KApp",
+    "source_sha256": "c6854215651418b0a25b9cc4903c78d996d15254f0f29f24b4febc6411b1851b",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/Calculator.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-13.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/AlphaWordPlus.OS3KApp",
+    "source_sha256": "22fc6a9b7ab96b332965074d81e88a61574c82bd118cd0a5122ff17eda348515",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/AlphaWordPlus.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-23.dis",
+    "source": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMicro.OS3KApp",
+    "source_sha256": "90aca9af77b4130d304416d2d00bf1d7289859868864e4d5f06a497c2fc1c097",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMicro.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-24.dis",
+    "source": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNano.OS3KApp",
+    "source_sha256": "ab5100bdc2b025c579340118861403252d1cb839d1d0327d1735c6c5476491ef",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNano.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-27.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsinaflash.os3kapp",
+    "source_sha256": "30a8933dd7baaaa896352b46e3491db8016e08399d9425bbb3a1ebd38f4713db",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/mathfactsinaflash.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-28.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsoffline.os3kapp",
+    "source_sha256": "819cd74d451839204d8cfa5a845d72a5a9cdc4912f73ff00cbc56bb5f425564a",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/mathfactsoffline.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-29.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp",
+    "source_sha256": "15e86f4f3ae1d68c76b5087c941dd7947128388217eb1a063263d4b2d42ef101",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-3.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Large USA.OS3KApp",
+    "source_sha256": "f99536c33f406ebb28920116740fe4a1ebdef3a54d381e3f6717d29519a0da28",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Large USA.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-32.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/responder.os3kapp",
+    "source_sha256": "3a90184b989e860e14cdb9bc1f8876ce16cba738784007c2351cd52cda2f3385",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/responder.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-35.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/wirelessfiletransfer.os3kapp",
+    "source_sha256": "b61b8fad98dcc24b5017176dfe1e5e84e816bdabce1d72c00f5b5c0a070906af",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/wirelessfiletransfer.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-36.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/alphaquiz.os3kapp",
+    "source_sha256": "3394331b6ba319ffe8f3de02e88a44e9f3a0998ca737bd93eeb9df784c98252e",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/alphaquiz.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-37.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp",
+    "source_sha256": "8128f8545e0feecc8974192c9c6103f8e1b0770ef1cf4c830241370411569f8b",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-38.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp",
+    "source_sha256": "a8ae516734a0e0b2e19d51ffb7dff3893074ca733fa40207cbff7ead1433f29e",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-39.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp",
+    "source_sha256": "f91e89496cc2523bcfac57f195e7e277668cef71afd85b8d283f63a4144fa1d0",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-41.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/acceleratedreader.os3kapp",
+    "source_sha256": "075366f9a098e418db5b8570059b166d6e8711f4ef7dac58b864ca4ffee7fe0f",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/acceleratedreader.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-42.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/calculator.os3kapp",
+    "source_sha256": "580b066bb82f55f902313f5363d51ed12bc2497f3c0a8ff8bf650d5b04d89ea4",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/calculator.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-43.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/Inspiration(R) Outliner.OS3KApp",
+    "source_sha256": "2c8327b49621726a7fef4029290b7acc7a49d4257d7890eb3d1b6abac902b0b6",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/Inspiration(R) Outliner.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-44.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/wirelessupdate.os3kapp",
+    "source_sha256": "2757f362ce35324217b2f459e120fadc52deb0926859a4b8a7ce0339d8d18f96",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/wirelessupdate.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-45.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/keywords.os3kapp",
+    "source_sha256": "8bb0594035691ae59e3c971e0b558fafeb6cfca60ad68e32d78f1477383b503d",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/keywords.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-46.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/beamer.os3kapp",
+    "source_sha256": "03899b453770f021b07a99fa002f501bc7d97dc1aa8cf32f32c7076680f389ce",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/beamer.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-47.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_spanish.os3kapp",
+    "source_sha256": "cbacbec35d8753dbf6d294737b0a86ee6296256e5b3498dccd32d19798d461f2",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_spanish.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-48.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_large_usa.os3kapp",
+    "source_sha256": "7528be2846076660930980c1d75cdeacc2a4a00d285e3b6dbe4a189ad1db4076",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_large_usa.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-49.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/text2speechupdate.os3kapp",
+    "source_sha256": "d21188ce3b4a2b7de1347338f4d07163b1a5316964068109ab758fb53db2b769",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/text2speechupdate.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-5.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Small USA.OS3KApp",
+    "source_sha256": "3b33dd1b02cb00b1d1bf4ebb7bb05754f01fea4519e78fe454aa69ed25931cbe",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Small USA.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-50.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/keywordswireless.os3kapp",
+    "source_sha256": "13605aa1d4822f3c6b04f1f0cb3fe21758ac1558d1dabb071bf5358eb9afacae",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/keywordswireless.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-52.dis",
+    "source": "Ghidra/Alphasmart Neo/SmartApplets/CoWriter.os3kapp",
+    "source_sha256": "e92783202e00fd9bce8003236866b8337b6a5a037726858af165b9b22445225f",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart Neo/SmartApplets/CoWriter.os3kapp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-7.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+    "source_sha256": "2d05592284470fff8e5e3760fcbfdc45d219d6b73f2351e37bade9c1e6605593",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/ThesaurusSpanishtoEng.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  },
+  {
+    "output": "vendor-8.dis",
+    "source": "Ghidra/Alphasmart 3000/SmartApplets/KeyWords.OS3KApp",
+    "source_sha256": "a0f9851a5c08c85a4ba3b59686497726a6a4b42b2a60796d268309546ccd61b0",
+    "argv": [
+      "m68k-linux-gnu-objdump",
+      "-D",
+      "-b",
+      "binary",
+      "-m",
+      "m68k:cpu32",
+      "--adjust-vma=0x0",
+      "Ghidra/Alphasmart 3000/SmartApplets/KeyWords.OS3KApp"
+    ],
+    "exact_after_header_normalization": true
+  }
+]

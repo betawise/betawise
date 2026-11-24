@@ -1,0 +1,1200 @@
+{
+  "status": "passed",
+  "scope": "KJV Neo 3.21 MAME, cold query setup plus directional backend service; no LCD writes or UI idle gaps; 8-bit Huffman, no verse boost",
+  "runs": [
+    {
+      "index": "full",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-mame-full",
+      "screen_checks": 8,
+      "production": {
+        "index": "full",
+        "rom_bytes": 1292076,
+        "index_bytes": 252739,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21812,
+        "executable_bytes": 14970,
+        "a5_bytes": 2986,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "full",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            23,
+            27,
+            7
+          ],
+          "setup_seconds": 0.14483419425500088,
+          "scan_seconds": 0.08325490838299743,
+          "total_seconds": 0.2280891026379983
+        },
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            23,
+            12,
+            5
+          ],
+          "setup_seconds": 0.14483365145299842,
+          "scan_seconds": 0.08326528194699989,
+          "total_seconds": 0.22809893339999832
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            44,
+            26,
+            24
+          ],
+          "setup_seconds": 0.13562982732199913,
+          "scan_seconds": 0.07464304083300277,
+          "total_seconds": 0.2102728681550019
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            14,
+            6,
+            2
+          ],
+          "setup_seconds": 0.13562928452000023,
+          "scan_seconds": 0.053772997949000256,
+          "total_seconds": 0.18940228246900048
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10041284372400128,
+          "scan_seconds": 0.004270711905999036,
+          "total_seconds": 0.10468355563000031
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            4,
+            27,
+            5
+          ],
+          "setup_seconds": 0.10041230092199882,
+          "scan_seconds": 0.0669912104530006,
+          "total_seconds": 0.16740351137499943
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            596,
+            115,
+            13
+          ],
+          "setup_seconds": 0.14483419425499733,
+          "scan_seconds": 0.20394770806500162,
+          "total_seconds": 0.34878190231999895
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            595,
+            28,
+            12
+          ],
+          "setup_seconds": 0.14483365145299842,
+          "scan_seconds": 0.2560135912930015,
+          "total_seconds": 0.4008472427459999
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            641,
+            15,
+            2
+          ],
+          "setup_seconds": 0.13562982732199913,
+          "scan_seconds": 0.34364035383299907,
+          "total_seconds": 0.4792701811549982
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.13562928452000023,
+          "scan_seconds": 0.3131865851900031,
+          "total_seconds": 0.4488158697100033
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10041284372500314,
+          "scan_seconds": 0.0024936962499992887,
+          "total_seconds": 0.10290653997500243
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10041230092199527,
+          "scan_seconds": 0.11597777355000005,
+          "total_seconds": 0.21639007447199532
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            1
+          ],
+          "setup_seconds": 0.14483419425499733,
+          "scan_seconds": 0.03903795325199866,
+          "total_seconds": 0.183872147506996
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            26
+          ],
+          "setup_seconds": 0.14483365145199656,
+          "scan_seconds": 0.039048507750003125,
+          "total_seconds": 0.18388215920199968
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            15
+          ],
+          "setup_seconds": 0.135629827323001,
+          "scan_seconds": 0.04047867243299663,
+          "total_seconds": 0.17610849975599763
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            15,
+            2
+          ],
+          "setup_seconds": 0.13562928452000023,
+          "scan_seconds": 0.04048741759000052,
+          "total_seconds": 0.17611670211000074
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10041284372500314,
+          "scan_seconds": 0.0008166166159995214,
+          "total_seconds": 0.10122946034100266
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10041230092200237,
+          "scan_seconds": 0.12511664228200203,
+          "total_seconds": 0.2255289432040044
+        }
+      ]
+    },
+    {
+      "index": "compact",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-mame-compact",
+      "screen_checks": 8,
+      "production": {
+        "index": "compact",
+        "rom_bytes": 1167254,
+        "index_bytes": 127917,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21812,
+        "executable_bytes": 14970,
+        "a5_bytes": 2986,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "compact",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            23,
+            27,
+            7
+          ],
+          "setup_seconds": 0.1206246477780013,
+          "scan_seconds": 0.08325490838299743,
+          "total_seconds": 0.20387955616099873
+        },
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            23,
+            12,
+            5
+          ],
+          "setup_seconds": 0.12062410497500053,
+          "scan_seconds": 0.08326528194699989,
+          "total_seconds": 0.20388938692200043
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            44,
+            26,
+            24
+          ],
+          "setup_seconds": 0.11993673573099883,
+          "scan_seconds": 0.563959777577999,
+          "total_seconds": 0.6838965133089978
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            14,
+            6,
+            2
+          ],
+          "setup_seconds": 0.11993619292899993,
+          "scan_seconds": 0.1050000699590008,
+          "total_seconds": 0.22493626288800073
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10039107130199909,
+          "scan_seconds": 1.520749902502999,
+          "total_seconds": 1.621140973804998
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            4,
+            27,
+            5
+          ],
+          "setup_seconds": 0.10039052850000019,
+          "scan_seconds": 0.2616703199240007,
+          "total_seconds": 0.3620608484240009
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            596,
+            115,
+            13
+          ],
+          "setup_seconds": 0.1206246477780013,
+          "scan_seconds": 0.20394770806500162,
+          "total_seconds": 0.3245723558430029
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            595,
+            28,
+            12
+          ],
+          "setup_seconds": 0.1206241049760024,
+          "scan_seconds": 0.25601359129299794,
+          "total_seconds": 0.37663769626900034
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            641,
+            15,
+            2
+          ],
+          "setup_seconds": 0.11993673573099528,
+          "scan_seconds": 0.43646505603599905,
+          "total_seconds": 0.5564017917669943
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.11993619292800162,
+          "scan_seconds": 0.3131865851889941,
+          "total_seconds": 0.43312277811699573
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10039107130199909,
+          "scan_seconds": 0.0024936962499992887,
+          "total_seconds": 0.10288476755199838
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10039052849900543,
+          "scan_seconds": 0.6557529735800003,
+          "total_seconds": 0.7561435020790057
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            1
+          ],
+          "setup_seconds": 0.12062464777900317,
+          "scan_seconds": 0.03903795325099679,
+          "total_seconds": 0.15966260102999996
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            26
+          ],
+          "setup_seconds": 0.1206241049759953,
+          "scan_seconds": 0.039048507750003125,
+          "total_seconds": 0.15967261272599842
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            15
+          ],
+          "setup_seconds": 0.11993673573099528,
+          "scan_seconds": 0.0404786724339985,
+          "total_seconds": 0.16041540816499378
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            15,
+            2
+          ],
+          "setup_seconds": 0.11993619292800162,
+          "scan_seconds": 0.04048741759000052,
+          "total_seconds": 0.16042361051800214
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10039107130199909,
+          "scan_seconds": 0.0008166166170013867,
+          "total_seconds": 0.10120768791900048
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.10039052850000019,
+          "scan_seconds": 0.6649013112029962,
+          "total_seconds": 0.7652918397029964
+        }
+      ]
+    },
+    {
+      "index": "scan",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-mame-scan",
+      "screen_checks": 8,
+      "production": {
+        "index": "scan",
+        "rom_bytes": 1089318,
+        "index_bytes": 49981,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21812,
+        "executable_bytes": 14970,
+        "a5_bytes": 2986,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "scan",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            23,
+            27,
+            7
+          ],
+          "setup_seconds": 0.10809790569500066,
+          "scan_seconds": 0.08325490838299743,
+          "total_seconds": 0.1913528140779981
+        },
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            23,
+            12,
+            5
+          ],
+          "setup_seconds": 0.10809736289199989,
+          "scan_seconds": 0.08326528194699989,
+          "total_seconds": 0.19136264483899978
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            44,
+            26,
+            24
+          ],
+          "setup_seconds": 0.11372695138500077,
+          "scan_seconds": 2.3583559782079995,
+          "total_seconds": 2.4720829295930002
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            14,
+            6,
+            2
+          ],
+          "setup_seconds": 0.11372640858299832,
+          "scan_seconds": 0.8900062651299976,
+          "total_seconds": 1.003732673712996
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.09937693478799758,
+          "scan_seconds": 30.812880021554,
+          "total_seconds": 30.912256956342
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            4,
+            27,
+            5
+          ],
+          "setup_seconds": 0.09937639198599868,
+          "scan_seconds": 1.5580370152529923,
+          "total_seconds": 1.657413407238991
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            596,
+            115,
+            13
+          ],
+          "setup_seconds": 0.10809790569599897,
+          "scan_seconds": 0.20394770806500162,
+          "total_seconds": 0.3120456137610006
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            595,
+            28,
+            12
+          ],
+          "setup_seconds": 0.10809736289300531,
+          "scan_seconds": 0.25601359129299794,
+          "total_seconds": 0.36411095418600326
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            641,
+            15,
+            2
+          ],
+          "setup_seconds": 0.11372695138500433,
+          "scan_seconds": 1.786723381876996,
+          "total_seconds": 1.9004503332620004
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.11372640858300542,
+          "scan_seconds": 0.3131865851890012,
+          "total_seconds": 0.42691299377200664
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.09937693478799758,
+          "scan_seconds": 45.198922981775,
+          "total_seconds": 45.298299916562996
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.09937639198500392,
+          "scan_seconds": 15.249042978053993,
+          "total_seconds": 15.348419370038997
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            1
+          ],
+          "setup_seconds": 0.10809790569601319,
+          "scan_seconds": 0.039037953251011004,
+          "total_seconds": 0.1471358589470242
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            26
+          ],
+          "setup_seconds": 0.10809736289297689,
+          "scan_seconds": 0.03904850774901547,
+          "total_seconds": 0.14714587064199236
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            15
+          ],
+          "setup_seconds": 0.1137269513860133,
+          "scan_seconds": 0.04047867243298242,
+          "total_seconds": 0.15420562381899572
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            15,
+            2
+          ],
+          "setup_seconds": 0.11372640858300542,
+          "scan_seconds": 0.04048741758899155,
+          "total_seconds": 0.15421382617199697
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.0993769347880118,
+          "scan_seconds": 14.327999913792013,
+          "total_seconds": 14.427376848580025
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.0993763919849755,
+          "scan_seconds": 45.904850291542004,
+          "total_seconds": 46.00422668352698
+        }
+      ]
+    },
+    {
+      "index": "none",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-mame-none",
+      "screen_checks": 8,
+      "production": {
+        "index": "none",
+        "rom_bytes": 1030174,
+        "index_bytes": 0,
+        "common_text_navigation_bytes": 1011381,
+        "app_code_assets_bytes": 18793,
+        "executable_bytes": 12062,
+        "a5_bytes": 2744,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "none",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            23,
+            27,
+            7
+          ],
+          "setup_seconds": 0.0010233038500047087,
+          "scan_seconds": 0.3246895409309971,
+          "total_seconds": 0.3257128447810018
+        },
+        {
+          "query": "God",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            23,
+            12,
+            5
+          ],
+          "setup_seconds": 0.0010227610479986993,
+          "scan_seconds": 0.3246999144949996,
+          "total_seconds": 0.3257226755429983
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            44,
+            26,
+            24
+          ],
+          "setup_seconds": 0.0010533992480006305,
+          "scan_seconds": 9.312218345462,
+          "total_seconds": 9.31327174471
+        },
+        {
+          "query": "believ",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            14,
+            6,
+            2
+          ],
+          "setup_seconds": 0.0010528564460017265,
+          "scan_seconds": 3.566985420476996,
+          "total_seconds": 3.568038276922998
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.00105388173899712,
+          "scan_seconds": 127.19708468785899,
+          "total_seconds": 127.198138569598
+        },
+        {
+          "query": "Methus",
+          "chapter": 23,
+          "verse": 20,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            4,
+            27,
+            5
+          ],
+          "setup_seconds": 0.001053338936998216,
+          "scan_seconds": 6.190519611686,
+          "total_seconds": 6.191572950622998
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            596,
+            115,
+            13
+          ],
+          "setup_seconds": 0.0010233038499904978,
+          "scan_seconds": 0.7697971027190249,
+          "total_seconds": 0.7708204065690154
+        },
+        {
+          "query": "God",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            595,
+            28,
+            12
+          ],
+          "setup_seconds": 0.0010227610470110449,
+          "scan_seconds": 0.9785895667779982,
+          "total_seconds": 0.9796123278250093
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            641,
+            15,
+            2
+          ],
+          "setup_seconds": 0.0010533992480077359,
+          "scan_seconds": 6.786296376915004,
+          "total_seconds": 6.787349776163012
+        },
+        {
+          "query": "believ",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.001052856445994621,
+          "scan_seconds": 1.1836029173090026,
+          "total_seconds": 1.1846557737549972
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.0010538817400060907,
+          "scan_seconds": 177.45424600432497,
+          "total_seconds": 177.45529988606498
+        },
+        {
+          "query": "Methus",
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.0010533389370266377,
+          "scan_seconds": 60.01619976646401,
+          "total_seconds": 60.01725310540104
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            1
+          ],
+          "setup_seconds": 0.0010233038499904978,
+          "scan_seconds": 0.15064483762898817,
+          "total_seconds": 0.15166814147897867
+        },
+        {
+          "query": "God",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            26
+          ],
+          "setup_seconds": 0.0010227610470110449,
+          "scan_seconds": 0.15065539212702106,
+          "total_seconds": 0.1516781531740321
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            15
+          ],
+          "setup_seconds": 0.0010533992480077359,
+          "scan_seconds": 0.15826789946100916,
+          "total_seconds": 0.1593212987090169
+        },
+        {
+          "query": "believ",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            15,
+            2
+          ],
+          "setup_seconds": 0.001052856445994621,
+          "scan_seconds": 0.15827664461602353,
+          "total_seconds": 0.15932950106201815
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.0010538817390397526,
+          "scan_seconds": 54.823360758506965,
+          "total_seconds": 54.824414640246005
+        },
+        {
+          "query": "Methus",
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            338,
+            3,
+            1
+          ],
+          "setup_seconds": 0.0010533389360034562,
+          "scan_seconds": 181.831880286395,
+          "total_seconds": 181.832933625331
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "host_direction_cases": 576,
+    "host_all_occurrence_cases": 168,
+    "mame_backend_cases": 72,
+    "mame_navigation_screen_checks": 32,
+    "final_native_screen_checks": 42,
+    "final_stream_screen_checks": 69,
+    "final_native_path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-native-final",
+    "final_stream_path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/navigation-stream-final"
+  }
+}

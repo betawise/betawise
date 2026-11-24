@@ -40,6 +40,28 @@ for _,flags in ipairs({0,1,3,0xfe})do
  local sum=0;for i=0,9 do sum=sum+m:read_u8(0x12ca4+i)end;eq(sum&255,0)
  end)
 end
+-- Binary transparency through the original packet routines, including NUL,
+-- high-bit bytes and a complete 2048-byte transfer-sized block.
+for _,n in ipairs({256,2048})do
+ add(238,{0x8300,data+0x800,n,3},function()
+  spi({});for i=0,n-1 do m:write_u8(data+0x800+i,i&255)end
+ end,function()
+  eq(cpu.state.D0.value&255,0);eq(m:read_u16(0x12ca6),n+7)
+  eq(m:read_u16(0x12ca8),0x8300)
+  for i=0,n-1 do eq(m:read_u8(0x12caa+i),i&255)end
+  local sum=0;for i=0,n+6 do sum=sum+m:read_u8(0x12ca4+i)end;eq(sum&255,0)
+ end)
+ local packet={0xa5,3,(n+7)>>8,(n+7)&255,0x83,0}
+ for i=0,n-1 do packet[#packet+1]=i&255 end
+ local sum=0;for _,v in ipairs(packet)do sum=sum+v end;packet[#packet+1]=(-sum)&255
+ add(237,{data+0x800},function()
+  spi(packet);m:write_u16(0x134ae,0x8300);m:write_u8(data+0x800+#packet,0x5a)
+ end,function()
+  eq(cpu.state.D0.value&65535,#packet)
+  for i,v in ipairs(packet)do eq(m:read_u8(data+0x7ff+i),v)end
+  eq(m:read_u8(data+0x800+#packet),0x5a)
+ end)
+end
 for _,bytes in ipairs({{0xa5,2,0,9,0x80,1,0,0x42},{0xa5,0,0,8,0x80,2,0}})do
  local sum=0;for _,v in ipairs(bytes)do sum=sum+v end;bytes[#bytes+1]=(-sum)&255
  add(237,{data+0x800},function()spi(bytes);m:write_u16(0x134ae,0x8000)end,function()

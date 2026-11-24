@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "cold RAM/vector assertions",
+    "fline-executed RAM/vector assertions",
+    "warm RAM/vector assertions",
+    "ram-loader RAM/vector assertions",
+    "hardware-reset RAM/vector assertions",
+    "no observed firmware F-line vector writes; native RAM loader rewrites A-line"
+  ],
+  "reset_caveat": "MAME machine_reset mirrors SmallROM into first 256 SRAM bytes; physical retained-SRAM reset result unproven"
+}

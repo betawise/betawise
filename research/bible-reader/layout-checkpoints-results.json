@@ -1,0 +1,5429 @@
+{
+  "status": "passed",
+  "scope": "KJV, original Neo3.21, private MAME sessions, deterministic pixel/font/source assertions; no physical energy measurements",
+  "native_layout_timings": [
+    {
+      "name": "John3 fresh start",
+      "milliseconds": 839.255593019999
+    },
+    {
+      "name": "Median chapter fresh start",
+      "milliseconds": 739.3356745250017
+    },
+    {
+      "name": "Median cached redraw",
+      "milliseconds": 79.9116051700004
+    },
+    {
+      "name": "Median cached page forward",
+      "milliseconds": 89.062234627999
+    },
+    {
+      "name": "Median cached next page",
+      "milliseconds": 88.48047067800024
+    },
+    {
+      "name": "Median cached page back",
+      "milliseconds": 85.04416725699926
+    },
+    {
+      "name": "Median cached first page",
+      "milliseconds": 84.87499372600027
+    },
+    {
+      "name": "Leave median chapter",
+      "milliseconds": 839.2555930210008
+    },
+    {
+      "name": "Median fresh middle verse",
+      "milliseconds": 798.9392186159989
+    }
+  ],
+  "native_layout_checks": 12,
+  "native_acceptance_checks": 36,
+  "streaming": [
+    {
+      "evidence": "layout3-buffered",
+      "status": "passed",
+      "rom_bytes": 1016350,
+      "static_ram_bytes": 3662,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 47,
+          "paint_ms": 3,
+          "total_ms": 50,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 3,
+          "total_ms": 48,
+          "decoded_symbols": 52,
+          "source_bytes": 347,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 48,
+          "paint_ms": 2,
+          "total_ms": 50,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 94,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 143,
+          "decoded_symbols": 283,
+          "source_bytes": 1816,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 26,
+          "source_bytes": 171,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 46,
+          "paint_ms": 2,
+          "total_ms": 406,
+          "decoded_symbols": 1014,
+          "source_bytes": 6567,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 730,
+          "layout_ms": 28,
+          "paint_ms": 2,
+          "total_ms": 760,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 730,
+          "layout_ms": 27,
+          "paint_ms": 2,
+          "total_ms": 759,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 47,
+          "paint_ms": 2,
+          "total_ms": 49,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 2,
+          "total_ms": 47,
+          "decoded_symbols": 52,
+          "source_bytes": 354,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 154,
+          "layout_ms": 16,
+          "paint_ms": 2,
+          "total_ms": 172,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 2,
+          "total_ms": 47,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2051,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-13.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 3,
+          "total_ms": 48,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-14.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-15.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 2,
+          "total_ms": 48,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-16.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 0,
+          "paint_ms": 2,
+          "total_ms": 2,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-17.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 47,
+          "paint_ms": 3,
+          "total_ms": 50,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2278,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-18.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 2,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 3,
+          "total_ms": 48,
+          "decoded_symbols": 70,
+          "source_bytes": 514,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-19.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 1,
+          "layout_ms": 47,
+          "paint_ms": 3,
+          "total_ms": 51,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-20.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-21.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 47,
+          "paint_ms": 3,
+          "total_ms": 50,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2207,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-buffered/expected-22.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 80,
+          "layout_ms": 46,
+          "paint_ms": 2,
+          "total_ms": 128,
+          "decoded_symbols": 235,
+          "source_bytes": 1633,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": false,
+        "combined": false,
+        "experiment": "baseline"
+      },
+      "backend_search": []
+    },
+    {
+      "evidence": "layout3-direct-final",
+      "status": "passed",
+      "rom_bytes": 1016084,
+      "static_ram_bytes": 1538,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 52,
+          "source_bytes": 347,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 93,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 120,
+          "decoded_symbols": 283,
+          "source_bytes": 1816,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 26,
+          "source_bytes": 171,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 385,
+          "decoded_symbols": 1014,
+          "source_bytes": 6567,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 17,
+          "paint_ms": 0,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 16,
+          "paint_ms": 1,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 52,
+          "source_bytes": 354,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 154,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 165,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2051,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-13.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-14.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-15.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-16.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-17.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2278,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-18.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 2,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 70,
+          "source_bytes": 514,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-19.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-20.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-21.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 28,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2207,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-final/expected-22.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 79,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 106,
+          "decoded_symbols": 235,
+          "source_bytes": 1633,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": true,
+        "combined": false,
+        "experiment": "baseline"
+      },
+      "backend_search": []
+    },
+    {
+      "evidence": "layout3-combined-direct-final",
+      "status": "passed",
+      "rom_bytes": 1280782,
+      "static_ram_bytes": 2544,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 52,
+          "source_bytes": 347,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 93,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 120,
+          "decoded_symbols": 283,
+          "source_bytes": 1816,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 26,
+          "source_bytes": 171,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 385,
+          "decoded_symbols": 1014,
+          "source_bytes": 6567,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 17,
+          "paint_ms": 0,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 16,
+          "paint_ms": 1,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 52,
+          "source_bytes": 354,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 154,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 165,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2051,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-13.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-14.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-15.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-16.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-17.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2278,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-18.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 2,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 70,
+          "source_bytes": 514,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-19.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-20.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-21.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 28,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2207,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-22.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 79,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 106,
+          "decoded_symbols": 235,
+          "source_bytes": 1633,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Search believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2149,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-23.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 4,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 31,
+          "decoded_symbols": 31,
+          "source_bytes": 232,
+          "seek_bytes": 56,
+          "checkpoint_hits": 4,
+          "start_word": 10
+        },
+        {
+          "name": "Next believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2246,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-24.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 31,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 58,
+          "decoded_symbols": 95,
+          "source_bytes": 693,
+          "seek_bytes": 516,
+          "checkpoint_hits": 4,
+          "start_word": 3
+        },
+        {
+          "name": "Reset median after search",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-25.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "No-hit search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-26.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-final/expected-27.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": true,
+        "combined": true,
+        "experiment": "huffman-prune"
+      },
+      "backend_search": [
+        {
+          "name": "No-hit search CPU",
+          "seconds": 16.698243091792,
+          "occurrences": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "seconds": 0.16373416463000012,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "evidence": "layout3-combined-direct-partial-final",
+      "status": "passed",
+      "rom_bytes": 1258174,
+      "static_ram_bytes": 2544,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 52,
+          "source_bytes": 347,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 93,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 120,
+          "decoded_symbols": 283,
+          "source_bytes": 1816,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 26,
+          "source_bytes": 171,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 385,
+          "decoded_symbols": 1014,
+          "source_bytes": 6567,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 17,
+          "paint_ms": 0,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 16,
+          "paint_ms": 1,
+          "total_ms": 748,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 52,
+          "source_bytes": 354,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 154,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 165,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2051,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-13.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 0,
+          "total_ms": 26,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-14.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-15.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-16.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-17.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2278,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-18.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 2,
+          "seek_ms": 0,
+          "layout_ms": 25,
+          "paint_ms": 0,
+          "total_ms": 25,
+          "decoded_symbols": 70,
+          "source_bytes": 514,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2205,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-19.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 1,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 50,
+          "source_bytes": 346,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-20.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              62
+            ],
+            "foreground_pixels": 2157,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-21.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 28,
+          "paint_ms": 0,
+          "total_ms": 28,
+          "decoded_symbols": 27,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2207,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-22.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 79,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 106,
+          "decoded_symbols": 235,
+          "source_bytes": 1633,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Search believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2149,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-23.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 4,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 31,
+          "decoded_symbols": 31,
+          "source_bytes": 232,
+          "seek_bytes": 56,
+          "checkpoint_hits": 4,
+          "start_word": 10
+        },
+        {
+          "name": "Next believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              62
+            ],
+            "foreground_pixels": 2246,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-24.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 31,
+          "layout_ms": 27,
+          "paint_ms": 0,
+          "total_ms": 58,
+          "decoded_symbols": 95,
+          "source_bytes": 693,
+          "seek_bytes": 516,
+          "checkpoint_hits": 4,
+          "start_word": 3
+        },
+        {
+          "name": "Reset median after search",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-25.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "No-hit search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-26.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2178,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-partial-final/expected-27.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 26,
+          "paint_ms": 1,
+          "total_ms": 27,
+          "decoded_symbols": 26,
+          "source_bytes": 172,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": true,
+        "combined": true,
+        "experiment": "huffman-prune-partial"
+      },
+      "backend_search": [
+        {
+          "name": "No-hit search CPU",
+          "seconds": 16.698243091792,
+          "occurrences": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "seconds": 84.468905782481,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "evidence": "layout3-combined-direct-small-v3",
+      "status": "passed",
+      "rom_bytes": 1280842,
+      "static_ram_bytes": 2544,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              261,
+              54
+            ],
+            "foreground_pixels": 2304,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-01.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 0,
+          "total_ms": 45,
+          "decoded_symbols": 39,
+          "source_bytes": 265,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              53
+            ],
+            "foreground_pixels": 2364,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-02.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 77,
+          "source_bytes": 540,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              261,
+              54
+            ],
+            "foreground_pixels": 2304,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-03.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 0,
+          "total_ms": 45,
+          "decoded_symbols": 39,
+          "source_bytes": 265,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              262,
+              54
+            ],
+            "foreground_pixels": 2262,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-04.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 93,
+          "layout_ms": 47,
+          "paint_ms": 0,
+          "total_ms": 140,
+          "decoded_symbols": 297,
+          "source_bytes": 1913,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              252,
+              54
+            ],
+            "foreground_pixels": 2296,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-05.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 41,
+          "source_bytes": 267,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              254,
+              54
+            ],
+            "foreground_pixels": 2337,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-06.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 48,
+          "paint_ms": 0,
+          "total_ms": 406,
+          "decoded_symbols": 1025,
+          "source_bytes": 6670,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              228,
+              21
+            ],
+            "foreground_pixels": 833,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-07.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 730,
+          "layout_ms": 20,
+          "paint_ms": 0,
+          "total_ms": 750,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              21
+            ],
+            "foreground_pixels": 806,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-08.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 18,
+          "paint_ms": 0,
+          "total_ms": 749,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              54
+            ],
+            "foreground_pixels": 2332,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-09.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 41,
+          "source_bytes": 276,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              53
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-10.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 44,
+          "paint_ms": 0,
+          "total_ms": 44,
+          "decoded_symbols": 77,
+          "source_bytes": 540,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              240,
+              19
+            ],
+            "foreground_pixels": 475,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-11.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 154,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 166,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              260,
+              41
+            ],
+            "foreground_pixels": 1407,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-12.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 30,
+          "paint_ms": 1,
+          "total_ms": 31,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              260,
+              41
+            ],
+            "foreground_pixels": 1426,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-13.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 31,
+          "paint_ms": 0,
+          "total_ms": 31,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2173,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-14.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 42,
+          "source_bytes": 258,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-15.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-16.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              262,
+              54
+            ],
+            "foreground_pixels": 2452,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-17.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 73,
+          "source_bytes": 537,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              54
+            ],
+            "foreground_pixels": 2335,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-18.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 2,
+          "seek_ms": 1,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 47,
+          "decoded_symbols": 114,
+          "source_bytes": 811,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              262,
+              54
+            ],
+            "foreground_pixels": 2452,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-19.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 1,
+          "total_ms": 47,
+          "decoded_symbols": 73,
+          "source_bytes": 537,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-20.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2173,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-21.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 45,
+          "paint_ms": 0,
+          "total_ms": 46,
+          "decoded_symbols": 42,
+          "source_bytes": 258,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              255,
+              54
+            ],
+            "foreground_pixels": 2347,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-22.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 79,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 125,
+          "decoded_symbols": 249,
+          "source_bytes": 1733,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Search believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              54
+            ],
+            "foreground_pixels": 2262,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-23.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 5,
+          "layout_ms": 47,
+          "paint_ms": 0,
+          "total_ms": 52,
+          "decoded_symbols": 47,
+          "source_bytes": 329,
+          "seek_bytes": 56,
+          "checkpoint_hits": 4,
+          "start_word": 10
+        },
+        {
+          "name": "Next believe actual word",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              261,
+              54
+            ],
+            "foreground_pixels": 2289,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-24.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 31,
+          "layout_ms": 46,
+          "paint_ms": 0,
+          "total_ms": 77,
+          "decoded_symbols": 108,
+          "source_bytes": 789,
+          "seek_bytes": 516,
+          "checkpoint_hits": 4,
+          "start_word": 3
+        },
+        {
+          "name": "Reset median after search",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-25.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 1,
+          "total_ms": 47,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "No-hit search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-26.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 1,
+          "total_ms": 47,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              256,
+              54
+            ],
+            "foreground_pixels": 2237,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-combined-direct-small-v3/expected-27.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 1,
+          "total_ms": 47,
+          "decoded_symbols": 40,
+          "source_bytes": 264,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": true,
+        "combined": true,
+        "experiment": "huffman-prune"
+      },
+      "backend_search": [
+        {
+          "name": "No-hit search CPU",
+          "seconds": 16.698243091792,
+          "occurrences": 0
+        },
+        {
+          "name": "Rare-word search CPU",
+          "seconds": 0.16373416463000012,
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "evidence": "layout3-direct-xlarge-final",
+      "status": "passed",
+      "rom_bytes": 1016144,
+      "static_ram_bytes": 1538,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2596,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-01.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              260,
+              60
+            ],
+            "foreground_pixels": 2352,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-02.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 15,
+          "source_bytes": 91,
+          "seek_bytes": 0,
+          "checkpoint_hits": 0,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2596,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-03.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              250,
+              62
+            ],
+            "foreground_pixels": 2416,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-04.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 93,
+          "layout_ms": 13,
+          "paint_ms": 0,
+          "total_ms": 106,
+          "decoded_symbols": 265,
+          "source_bytes": 1694,
+          "seek_bytes": 1644,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              218,
+              62
+            ],
+            "foreground_pixels": 2150,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-05.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 11,
+          "decoded_symbols": 6,
+          "source_bytes": 42,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              262,
+              62
+            ],
+            "foreground_pixels": 2700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-06.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 358,
+          "layout_ms": 13,
+          "paint_ms": 0,
+          "total_ms": 371,
+          "decoded_symbols": 998,
+          "source_bytes": 6448,
+          "seek_bytes": 6395,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              244,
+              62
+            ],
+            "foreground_pixels": 2391,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-07.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 13,
+          "paint_ms": 0,
+          "total_ms": 744,
+          "decoded_symbols": 2011,
+          "source_bytes": 12945,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              252,
+              62
+            ],
+            "foreground_pixels": 2584,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-08.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 731,
+          "layout_ms": 13,
+          "paint_ms": 0,
+          "total_ms": 744,
+          "decoded_symbols": 2012,
+          "source_bytes": 12954,
+          "seek_bytes": 12898,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2588,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-09.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 11,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              260,
+              60
+            ],
+            "foreground_pixels": 2341,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-10.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 15,
+          "source_bytes": 91,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              248,
+              56
+            ],
+            "foreground_pixels": 2280,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-11.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 155,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 166,
+          "decoded_symbols": 429,
+          "source_bytes": 2890,
+          "seek_bytes": 2843,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              242,
+              62
+            ],
+            "foreground_pixels": 2415,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-12.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 13,
+          "paint_ms": 0,
+          "total_ms": 13,
+          "decoded_symbols": 11,
+          "source_bytes": 51,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Enable numbers for benchmark",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              242,
+              62
+            ],
+            "foreground_pixels": 2423,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-13.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 11,
+          "source_bytes": 51,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "John3 fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              226,
+              60
+            ],
+            "foreground_pixels": 2308,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-14.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 9,
+          "source_bytes": 51,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh start",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              228,
+              56
+            ],
+            "foreground_pixels": 2390,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-15.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 10,
+          "source_bytes": 47,
+          "seek_bytes": 0,
+          "checkpoint_hits": 1,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached redraw",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              228,
+              56
+            ],
+            "foreground_pixels": 2390,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-16.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 1,
+          "layout_ms": 11,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 10,
+          "source_bytes": 47,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median forward page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              244,
+              62
+            ],
+            "foreground_pixels": 2589,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-17.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 14,
+          "source_bytes": 92,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              226,
+              56
+            ],
+            "foreground_pixels": 2066,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-18.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 2,
+          "seek_ms": 0,
+          "layout_ms": 10,
+          "paint_ms": 0,
+          "total_ms": 10,
+          "decoded_symbols": 19,
+          "source_bytes": 134,
+          "seek_bytes": 0,
+          "checkpoint_hits": 2,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached page back",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              244,
+              62
+            ],
+            "foreground_pixels": 2589,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-19.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 1,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 13,
+          "decoded_symbols": 14,
+          "source_bytes": 92,
+          "seek_bytes": 0,
+          "checkpoint_hits": 3,
+          "start_word": 0
+        },
+        {
+          "name": "Median cached first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              228,
+              56
+            ],
+            "foreground_pixels": 2390,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-20.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 12,
+          "decoded_symbols": 10,
+          "source_bytes": 47,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Leave median",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              226,
+              60
+            ],
+            "foreground_pixels": 2308,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-21.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 12,
+          "paint_ms": 1,
+          "total_ms": 13,
+          "decoded_symbols": 9,
+          "source_bytes": 51,
+          "seek_bytes": 0,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        },
+        {
+          "name": "Median fresh middle verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              226,
+              56
+            ],
+            "foreground_pixels": 2312,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/layout3-direct-xlarge-final/expected-22.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 79,
+          "layout_ms": 12,
+          "paint_ms": 0,
+          "total_ms": 91,
+          "decoded_symbols": 220,
+          "source_bytes": 1508,
+          "seek_bytes": 1463,
+          "checkpoint_hits": 4,
+          "start_word": 0
+        }
+      ],
+      "settings": {
+        "direct": true,
+        "combined": false,
+        "experiment": "baseline"
+      },
+      "backend_search": []
+    }
+  ],
+  "cross_renderer_identical_pages": [
+    {
+      "native": "Median chapter fresh start",
+      "stream": "Median fresh start",
+      "all_pixels_identical": true
+    },
+    {
+      "native": "Median cached page forward",
+      "stream": "Median forward page",
+      "all_pixels_identical": true
+    },
+    {
+      "native": "Median cached next page",
+      "stream": "Median next page",
+      "all_pixels_identical": true
+    },
+    {
+      "native": "Median cached page back",
+      "stream": "Median cached page back",
+      "all_pixels_identical": true
+    },
+    {
+      "native": "Median cached first page",
+      "stream": "Median cached first page",
+      "all_pixels_identical": true
+    }
+  ],
+  "partial_indexes": [
+    {
+      "policy": "full",
+      "bytes": 252739,
+      "indexed_words": 12517,
+      "known_words": 12517,
+      "queries": [
+        {
+          "query": "the",
+          "candidate_chapters": 1188,
+          "full_index_chapters": 1188,
+          "indexed_terms": [
+            "the"
+          ]
+        },
+        {
+          "query": "the earth",
+          "candidate_chapters": 450,
+          "full_index_chapters": 450,
+          "indexed_terms": [
+            "the",
+            "earth"
+          ]
+        },
+        {
+          "query": "Jesus Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus",
+            "jesus"
+          ]
+        },
+        {
+          "query": "believe",
+          "candidate_chapters": 82,
+          "full_index_chapters": 82,
+          "indexed_terms": [
+            "believe"
+          ]
+        },
+        {
+          "query": "God",
+          "candidate_chapters": 926,
+          "full_index_chapters": 926,
+          "indexed_terms": [
+            "god"
+          ]
+        },
+        {
+          "query": "Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus"
+          ]
+        },
+        {
+          "query": "Abraham",
+          "candidate_chapters": 76,
+          "full_index_chapters": 76,
+          "indexed_terms": [
+            "abraham"
+          ]
+        },
+        {
+          "query": "Melchizedek",
+          "candidate_chapters": 2,
+          "full_index_chapters": 2,
+          "indexed_terms": [
+            "melchizedek"
+          ]
+        },
+        {
+          "query": "charity",
+          "candidate_chapters": 19,
+          "full_index_chapters": 19,
+          "indexed_terms": [
+            "charity"
+          ]
+        },
+        {
+          "query": "forgiveness",
+          "candidate_chapters": 7,
+          "full_index_chapters": 7,
+          "indexed_terms": [
+            "forgiveness"
+          ]
+        },
+        {
+          "query": "in the beginning",
+          "candidate_chapters": 83,
+          "full_index_chapters": 83,
+          "indexed_terms": [
+            "in",
+            "the",
+            "beginning"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "omit-stopwords",
+      "bytes": 249986,
+      "indexed_words": 12487,
+      "known_words": 12517,
+      "queries": [
+        {
+          "query": "the",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 1188,
+          "indexed_terms": []
+        },
+        {
+          "query": "the earth",
+          "candidate_chapters": 450,
+          "full_index_chapters": 450,
+          "indexed_terms": [
+            "earth"
+          ]
+        },
+        {
+          "query": "Jesus Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus",
+            "jesus"
+          ]
+        },
+        {
+          "query": "believe",
+          "candidate_chapters": 82,
+          "full_index_chapters": 82,
+          "indexed_terms": [
+            "believe"
+          ]
+        },
+        {
+          "query": "God",
+          "candidate_chapters": 926,
+          "full_index_chapters": 926,
+          "indexed_terms": [
+            "god"
+          ]
+        },
+        {
+          "query": "Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus"
+          ]
+        },
+        {
+          "query": "Abraham",
+          "candidate_chapters": 76,
+          "full_index_chapters": 76,
+          "indexed_terms": [
+            "abraham"
+          ]
+        },
+        {
+          "query": "Melchizedek",
+          "candidate_chapters": 2,
+          "full_index_chapters": 2,
+          "indexed_terms": [
+            "melchizedek"
+          ]
+        },
+        {
+          "query": "charity",
+          "candidate_chapters": 19,
+          "full_index_chapters": 19,
+          "indexed_terms": [
+            "charity"
+          ]
+        },
+        {
+          "query": "forgiveness",
+          "candidate_chapters": 7,
+          "full_index_chapters": 7,
+          "indexed_terms": [
+            "forgiveness"
+          ]
+        },
+        {
+          "query": "in the beginning",
+          "candidate_chapters": 83,
+          "full_index_chapters": 83,
+          "indexed_terms": [
+            "beginning"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "omit-128-most-chapters",
+      "bytes": 235675,
+      "indexed_words": 12389,
+      "known_words": 12517,
+      "queries": [
+        {
+          "query": "the",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 1188,
+          "indexed_terms": []
+        },
+        {
+          "query": "the earth",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 450,
+          "indexed_terms": []
+        },
+        {
+          "query": "Jesus Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus",
+            "jesus"
+          ]
+        },
+        {
+          "query": "believe",
+          "candidate_chapters": 82,
+          "full_index_chapters": 82,
+          "indexed_terms": [
+            "believe"
+          ]
+        },
+        {
+          "query": "God",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 926,
+          "indexed_terms": []
+        },
+        {
+          "query": "Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus"
+          ]
+        },
+        {
+          "query": "Abraham",
+          "candidate_chapters": 76,
+          "full_index_chapters": 76,
+          "indexed_terms": [
+            "abraham"
+          ]
+        },
+        {
+          "query": "Melchizedek",
+          "candidate_chapters": 2,
+          "full_index_chapters": 2,
+          "indexed_terms": [
+            "melchizedek"
+          ]
+        },
+        {
+          "query": "charity",
+          "candidate_chapters": 19,
+          "full_index_chapters": 19,
+          "indexed_terms": [
+            "charity"
+          ]
+        },
+        {
+          "query": "forgiveness",
+          "candidate_chapters": 7,
+          "full_index_chapters": 7,
+          "indexed_terms": [
+            "forgiveness"
+          ]
+        },
+        {
+          "query": "in the beginning",
+          "candidate_chapters": 83,
+          "full_index_chapters": 83,
+          "indexed_terms": [
+            "beginning"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "frequency-at-least-5",
+      "bytes": 230131,
+      "indexed_words": 5333,
+      "known_words": 12517,
+      "queries": [
+        {
+          "query": "the",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 1188,
+          "indexed_terms": []
+        },
+        {
+          "query": "the earth",
+          "candidate_chapters": 450,
+          "full_index_chapters": 450,
+          "indexed_terms": [
+            "earth"
+          ]
+        },
+        {
+          "query": "Jesus Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus",
+            "jesus"
+          ]
+        },
+        {
+          "query": "believe",
+          "candidate_chapters": 82,
+          "full_index_chapters": 82,
+          "indexed_terms": [
+            "believe"
+          ]
+        },
+        {
+          "query": "God",
+          "candidate_chapters": 926,
+          "full_index_chapters": 926,
+          "indexed_terms": [
+            "god"
+          ]
+        },
+        {
+          "query": "Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus"
+          ]
+        },
+        {
+          "query": "Abraham",
+          "candidate_chapters": 76,
+          "full_index_chapters": 76,
+          "indexed_terms": [
+            "abraham"
+          ]
+        },
+        {
+          "query": "Melchizedek",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 2,
+          "indexed_terms": []
+        },
+        {
+          "query": "charity",
+          "candidate_chapters": 19,
+          "full_index_chapters": 19,
+          "indexed_terms": [
+            "charity"
+          ]
+        },
+        {
+          "query": "forgiveness",
+          "candidate_chapters": 7,
+          "full_index_chapters": 7,
+          "indexed_terms": [
+            "forgiveness"
+          ]
+        },
+        {
+          "query": "in the beginning",
+          "candidate_chapters": 83,
+          "full_index_chapters": 83,
+          "indexed_terms": [
+            "beginning"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "top-2000-not-stopwords",
+      "bytes": 196073,
+      "indexed_words": 2000,
+      "known_words": 12517,
+      "queries": [
+        {
+          "query": "the",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 1188,
+          "indexed_terms": []
+        },
+        {
+          "query": "the earth",
+          "candidate_chapters": 450,
+          "full_index_chapters": 450,
+          "indexed_terms": [
+            "earth"
+          ]
+        },
+        {
+          "query": "Jesus Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus",
+            "jesus"
+          ]
+        },
+        {
+          "query": "believe",
+          "candidate_chapters": 82,
+          "full_index_chapters": 82,
+          "indexed_terms": [
+            "believe"
+          ]
+        },
+        {
+          "query": "God",
+          "candidate_chapters": 926,
+          "full_index_chapters": 926,
+          "indexed_terms": [
+            "god"
+          ]
+        },
+        {
+          "query": "Jesus",
+          "candidate_chapters": 207,
+          "full_index_chapters": 207,
+          "indexed_terms": [
+            "jesus"
+          ]
+        },
+        {
+          "query": "Abraham",
+          "candidate_chapters": 76,
+          "full_index_chapters": 76,
+          "indexed_terms": [
+            "abraham"
+          ]
+        },
+        {
+          "query": "Melchizedek",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 2,
+          "indexed_terms": []
+        },
+        {
+          "query": "charity",
+          "candidate_chapters": 19,
+          "full_index_chapters": 19,
+          "indexed_terms": [
+            "charity"
+          ]
+        },
+        {
+          "query": "forgiveness",
+          "candidate_chapters": 1189,
+          "full_index_chapters": 7,
+          "indexed_terms": []
+        },
+        {
+          "query": "in the beginning",
+          "candidate_chapters": 83,
+          "full_index_chapters": 83,
+          "indexed_terms": [
+            "beginning"
+          ]
+        }
+      ]
+    }
+  ],
+  "checkpoint_host_checks": {
+    "huffman": {
+      "status": "passed",
+      "result": "PASS 134087 compact checkpoints across all chapters; size 12",
+      "target_codec_point_bytes": 10,
+      "target_page_point_bytes": 20
+    },
+    "scdc": {
+      "status": "passed",
+      "result": "PASS 134087 compact checkpoints across all chapters; size 12",
+      "target_codec_point_bytes": 10,
+      "target_page_point_bytes": 20
+    }
+  },
+  "target_codec_checkpoint_bytes": 10,
+  "target_page_checkpoint_bytes": 20,
+  "page_checkpoint_cache_entries": 32,
+  "page_checkpoint_cache_bytes": 640,
+  "native_median_file_content_bytes": 3458,
+  "native_gap_bytes": 512,
+  "median_chapter": {
+    "book": "Matthew",
+    "chapter": 2,
+    "verses": 23,
+    "ascii_bytes": 3284
+  },
+  "notes": [
+    "Native cached page movement uses four normal editor arrow commands; viewport shifts of four lines are independently asserted.",
+    "Streaming CPU timers bracket compressed checkpoint restoration, layout and drawing. Bitmap replay is a separate buffered-redraw case.",
+    "Search timings include setup and complete all occurrences, omit UI idle gaps. Unindexed known words scan all chapters.",
+    "The Small-font failure was caused by restoring a frame-end PC inside a 68000 extension word. Final harnesses park at a verified ROM instruction entry and preserve original stack/registers/scratch RAM. Earlier failure records are retained."
+  ],
+  "final_safe_capture_checks": 173,
+  "restored_defaults": {
+    "BibleReader.OS3KApp": {
+      "rom_bytes": 1432390,
+      "static_ram_bytes": 2874,
+      "matches_tested_artifact": true
+    },
+    "BibleReader-Stream.OS3KApp": {
+      "rom_bytes": 1016084,
+      "static_ram_bytes": 1538,
+      "matches_tested_artifact": true
+    }
+  },
+  "source_files": [
+    "betawise/applets/BibleReader/Streaming.c",
+    "betawise/applets/BibleReader/BibleReader.c",
+    "betawise/applets/BibleReader/HuffmanDecoder.c",
+    "betawise/applets/BibleReader/HuffmanDecoder.h",
+    "betawise/applets/BibleReader/Search.c",
+    "betawise/applets/BibleReader/Makefile",
+    "betawise/tests/mame/asneo/BibleReaderHarness.lua",
+    "betawise/tests/mame/asneo/BibleStreamHarness.lua",
+    "betawise/tests/mame/asneo/check-bible-reader.py",
+    "betawise/tests/mame/asneo/check-bible-stream.py"
+  ]
+}

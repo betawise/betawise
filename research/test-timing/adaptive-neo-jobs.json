@@ -1,0 +1,24 @@
+[
+  {
+    "id": "neo-adaptive-graphics-3-8",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5
+    }
+  },
+  {
+    "id": "neo-adaptive-history-3-8",
+    "platform": "neo",
+    "case": "history",
+    "adaptive": true,
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5
+    }
+  }
+]

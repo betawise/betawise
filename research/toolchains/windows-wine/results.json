@@ -1,0 +1,38 @@
+{
+  "toolchain": "MinGW m68k-elf GCC 13.1.0 (Tranaptic-2023/06/16-13:17:25)",
+  "archive_sha256": "ed6d151b7f02070048a464b578681d41182923dfa65f2a69a2edeccd691da0e6",
+  "host": "Linux, Wine 11.0, WINEARCH=win32",
+  "source_commit": "f23b40d2bf6be3bc6eabbfea9edbc714a8b2624a",
+  "passed": [
+    "SDK build",
+    "HelloWorld build",
+    "DebugTool build",
+    "FileManager build",
+    "three NeoFontTerminal variants",
+    "QEMU relocation/startup and packed dispatch",
+    "18 ABI bridges",
+    "setjmp -O0/-Os/-O2",
+    "compiler-rt arithmetic"
+  ],
+  "failed": {
+    "MicroPython": "All four profiles: internal compiler error, segmentation fault in RTL expand in gc_setup_area in upstream/py/gc.c",
+    "UCBLogo": "newlib standard-stream macro expansion breaks runtime.c FILE *stdin/stdout/stderr declarations"
+  },
+  "test_adaptations": [
+    "Isolated source copy with read-only Git metadata pointers",
+    "Windows toolchain bin added to WINEPATH for DLL lookup",
+    "QEMU wrapper sets Linux user execute bit on Windows-produced ELF files"
+  ],
+  "additional_limitations": [
+    "Not tested on native Windows",
+    "Wine-generated dependency files contain Z: paths that GNU Make on Linux cannot re-read"
+  ],
+  "applet_files": [
+    "applets/DebugTool/DebugTool.OS3KApp",
+    "applets/NeoFontTerminal/NeoFontTerminal.OS3KApp",
+    "applets/NeoFontTerminal/NeoFontTerminal-Tiny.OS3KApp",
+    "applets/NeoFontTerminal/NeoFontTerminal-Small.OS3KApp",
+    "applets/HelloWorld/HelloWorld.OS3KApp",
+    "applets/FileManager/FileManager.OS3KApp"
+  ]
+}

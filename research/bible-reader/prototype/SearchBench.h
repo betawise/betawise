@@ -1,0 +1,21 @@
+/* KJV navigation benchmark only; not included in production builds. */
+static const struct {const char*query;uint16_t chapter,verse,word;int16_t direction;} navigation_cases[]={
+{"God",23,20,0,1},
+{"God",23,20,0,-1},
+{"believ",23,20,0,1},
+{"believ",23,20,0,-1},
+{"Methus",23,20,0,1},
+{"Methus",23,20,0,-1},
+{"God",596,80,0,1},
+{"God",596,80,0,-1},
+{"believ",596,80,0,1},
+{"believ",596,80,0,-1},
+{"Methus",596,80,0,1},
+{"Methus",596,80,0,-1},
+{"God",999,16,0,1},
+{"God",999,16,0,-1},
+{"believ",999,16,0,1},
+{"believ",999,16,0,-1},
+{"Methus",999,16,0,1},
+{"Methus",999,16,0,-1},
+};

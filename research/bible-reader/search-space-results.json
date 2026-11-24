@@ -1,0 +1,3521 @@
+{
+  "chapters": 1189,
+  "terminal_leaves": 946456,
+  "vocabulary": 12517,
+  "baseline": {
+    "search_index_kind": "chapter",
+    "version": "KJV",
+    "bytes": 1007155,
+    "search_bytes": 368039,
+    "search_words": 12517,
+    "hot_dictionary_bytes": 2626,
+    "max_chapter_bytes": 12992,
+    "max_dictionary_word": 17,
+    "dictionary_entries": 14244,
+    "chapters": 1189,
+    "verses": 31102,
+    "mapped_text_bytes": 4138567
+  },
+  "index_fixed_overhead": 91098,
+  "index_experiments": [
+    {
+      "kind": "hybrid",
+      "group": 1,
+      "bytes": 268818,
+      "payload_bytes": 177720,
+      "record_modes": {
+        "4": 25,
+        "1": 1479,
+        "0": 10858,
+        "2": 151,
+        "3": 4
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 926,
+          "terminal_leaves": 762787,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 450,
+          "terminal_leaves": 369550,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 83,
+          "terminal_leaves": 73902,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 82,
+          "terminal_leaves": 79598,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 71135,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 162,
+          "terminal_leaves": 119984,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 77452,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 404,
+          "terminal_leaves": 373647,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1116,
+          "terminal_leaves": 913762,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 96,
+          "terminal_leaves": 92011,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 2,
+      "bytes": 229406,
+      "payload_bytes": 138308,
+      "record_modes": {
+        "3": 18,
+        "1": 1462,
+        "0": 10733,
+        "2": 264,
+        "4": 40
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1057,
+          "terminal_leaves": 846379,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 678,
+          "terminal_leaves": 534521,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 153,
+          "terminal_leaves": 128682,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 140,
+          "terminal_leaves": 128944,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 126,
+          "terminal_leaves": 108237,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 260,
+          "terminal_leaves": 192964,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 130,
+          "terminal_leaves": 127122,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 625,
+          "terminal_leaves": 542740,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1171,
+          "terminal_leaves": 940347,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 178,
+          "terminal_leaves": 158000,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 4,
+      "bytes": 196924,
+      "payload_bytes": 105826,
+      "record_modes": {
+        "3": 42,
+        "1": 1460,
+        "0": 10502,
+        "2": 457,
+        "4": 56
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1133,
+          "terminal_leaves": 909620,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 900,
+          "terminal_leaves": 711735,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 277,
+          "terminal_leaves": 235270,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 220,
+          "terminal_leaves": 194473,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 216,
+          "terminal_leaves": 176056,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 408,
+          "terminal_leaves": 310314,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 208,
+          "terminal_leaves": 189648,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 881,
+          "terminal_leaves": 728366,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 304,
+          "terminal_leaves": 268210,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 8,
+      "bytes": 171327,
+      "payload_bytes": 80229,
+      "record_modes": {
+        "3": 96,
+        "2": 903,
+        "0": 10219,
+        "1": 1238,
+        "4": 61
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1165,
+          "terminal_leaves": 928938,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1069,
+          "terminal_leaves": 843713,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 445,
+          "terminal_leaves": 363235,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 328,
+          "terminal_leaves": 277443,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 336,
+          "terminal_leaves": 269476,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 592,
+          "terminal_leaves": 448620,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 296,
+          "terminal_leaves": 253776,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1037,
+          "terminal_leaves": 838733,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 472,
+          "terminal_leaves": 397377,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 16,
+      "bytes": 152637,
+      "payload_bytes": 61539,
+      "record_modes": {
+        "3": 225,
+        "2": 1747,
+        "0": 10055,
+        "1": 483,
+        "4": 7
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 677,
+          "terminal_leaves": 542367,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 448,
+          "terminal_leaves": 372155,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 512,
+          "terminal_leaves": 401953,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 832,
+          "terminal_leaves": 642982,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 432,
+          "terminal_leaves": 355197,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1157,
+          "terminal_leaves": 917886,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 736,
+          "terminal_leaves": 602494,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 32,
+      "bytes": 136938,
+      "payload_bytes": 45840,
+      "record_modes": {
+        "3": 346,
+        "2": 3041,
+        "0": 9130
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 869,
+          "terminal_leaves": 702616,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 640,
+          "terminal_leaves": 516260,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 768,
+          "terminal_leaves": 618730,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1024,
+          "terminal_leaves": 814709,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 576,
+          "terminal_leaves": 462525,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 928,
+          "terminal_leaves": 766512,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "hybrid",
+      "group": 64,
+      "bytes": 127480,
+      "payload_bytes": 36382,
+      "record_modes": {
+        "3": 665,
+        "2": 3633,
+        "0": 8219
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 1061,
+          "terminal_leaves": 854234,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 805,
+          "terminal_leaves": 650168,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 933,
+          "terminal_leaves": 723343,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 888858,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 805,
+          "terminal_leaves": 658141,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 922478,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 1,
+      "bytes": 368039,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 926,
+          "terminal_leaves": 762787,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 450,
+          "terminal_leaves": 369550,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 83,
+          "terminal_leaves": 73902,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 82,
+          "terminal_leaves": 79598,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 71135,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 162,
+          "terminal_leaves": 119984,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 77452,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 404,
+          "terminal_leaves": 373647,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1116,
+          "terminal_leaves": 913762,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 96,
+          "terminal_leaves": 92011,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 2,
+      "bytes": 311693,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1057,
+          "terminal_leaves": 846379,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 678,
+          "terminal_leaves": 534521,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 153,
+          "terminal_leaves": 128682,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 140,
+          "terminal_leaves": 128944,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 126,
+          "terminal_leaves": 108237,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 260,
+          "terminal_leaves": 192964,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 130,
+          "terminal_leaves": 127122,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 625,
+          "terminal_leaves": 542740,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1171,
+          "terminal_leaves": 940347,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 178,
+          "terminal_leaves": 158000,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 4,
+      "bytes": 262104,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1133,
+          "terminal_leaves": 909620,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 900,
+          "terminal_leaves": 711735,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 277,
+          "terminal_leaves": 235270,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 220,
+          "terminal_leaves": 194473,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 216,
+          "terminal_leaves": 176056,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 408,
+          "terminal_leaves": 310314,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 208,
+          "terminal_leaves": 189648,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 881,
+          "terminal_leaves": 728366,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 304,
+          "terminal_leaves": 268210,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 8,
+      "bytes": 221274,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1165,
+          "terminal_leaves": 928938,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1069,
+          "terminal_leaves": 843713,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 445,
+          "terminal_leaves": 363235,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 328,
+          "terminal_leaves": 277443,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 336,
+          "terminal_leaves": 269476,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 592,
+          "terminal_leaves": 448620,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 296,
+          "terminal_leaves": 253776,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1037,
+          "terminal_leaves": 838733,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 472,
+          "terminal_leaves": 397377,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 16,
+      "bytes": 189280,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 677,
+          "terminal_leaves": 542367,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 448,
+          "terminal_leaves": 372155,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 512,
+          "terminal_leaves": 401953,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 832,
+          "terminal_leaves": 642982,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 432,
+          "terminal_leaves": 355197,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1157,
+          "terminal_leaves": 917886,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 736,
+          "terminal_leaves": 602494,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 32,
+      "bytes": 164300,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 869,
+          "terminal_leaves": 702616,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 640,
+          "terminal_leaves": 516260,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 768,
+          "terminal_leaves": 618730,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1024,
+          "terminal_leaves": 814709,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 576,
+          "terminal_leaves": 462525,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 928,
+          "terminal_leaves": 766512,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "delta",
+      "group": 64,
+      "bytes": 145042,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 1061,
+          "terminal_leaves": 854234,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 805,
+          "terminal_leaves": 650168,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 933,
+          "terminal_leaves": 723343,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 888858,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 805,
+          "terminal_leaves": 658141,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 922478,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 128,
+      "bytes": 72566,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1164,
+          "terminal_leaves": 936112,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1169,
+          "terminal_leaves": 940895,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 1134,
+          "terminal_leaves": 931583,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 1170,
+          "terminal_leaves": 940446,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 1170,
+          "terminal_leaves": 940446,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 978,
+          "terminal_leaves": 839266,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 874,
+          "terminal_leaves": 772564,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1164,
+          "terminal_leaves": 941596,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 1091,
+          "terminal_leaves": 904801,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1058,
+          "terminal_leaves": 888532,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1175,
+          "terminal_leaves": 943967,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 1123,
+          "terminal_leaves": 929077,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 1170,
+          "terminal_leaves": 940446,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 256,
+      "bytes": 91590,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1046,
+          "terminal_leaves": 858614,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 883,
+          "terminal_leaves": 736582,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 779,
+          "terminal_leaves": 692917,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 935,
+          "terminal_leaves": 825372,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 935,
+          "terminal_leaves": 825372,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 550,
+          "terminal_leaves": 508343,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 539,
+          "terminal_leaves": 512644,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1077,
+          "terminal_leaves": 897492,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 967,
+          "terminal_leaves": 827414,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 757,
+          "terminal_leaves": 683882,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1152,
+          "terminal_leaves": 935964,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 932,
+          "terminal_leaves": 818892,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 935,
+          "terminal_leaves": 825372,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 512,
+      "bytes": 129638,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 954,
+          "terminal_leaves": 787166,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 625,
+          "terminal_leaves": 527759,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 664,
+          "terminal_leaves": 606887,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 591,
+          "terminal_leaves": 553824,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 591,
+          "terminal_leaves": 553824,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 172,
+          "terminal_leaves": 177786,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 324,
+          "terminal_leaves": 319162,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 861,
+          "terminal_leaves": 757400,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 344,
+          "terminal_leaves": 346503,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 576,
+          "terminal_leaves": 532513,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1127,
+          "terminal_leaves": 921520,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 277,
+          "terminal_leaves": 270203,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 591,
+          "terminal_leaves": 553824,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 1024,
+      "bytes": 205734,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 939,
+          "terminal_leaves": 773534,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 592,
+          "terminal_leaves": 500231,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 198,
+          "terminal_leaves": 202322,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 270,
+          "terminal_leaves": 244891,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 270,
+          "terminal_leaves": 244891,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 100,
+          "terminal_leaves": 99589,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 124,
+          "terminal_leaves": 118022,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 684,
+          "terminal_leaves": 612985,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 93,
+          "terminal_leaves": 97214,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 554,
+          "terminal_leaves": 514949,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1123,
+          "terminal_leaves": 918667,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 123,
+          "terminal_leaves": 119402,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 270,
+          "terminal_leaves": 244891,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 2048,
+      "bytes": 357926,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 928,
+          "terminal_leaves": 765053,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 541,
+          "terminal_leaves": 452341,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 105,
+          "terminal_leaves": 96596,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 230,
+          "terminal_leaves": 202693,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 230,
+          "terminal_leaves": 202693,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 82,
+          "terminal_leaves": 79598,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 82,
+          "terminal_leaves": 77902,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 173,
+          "terminal_leaves": 133299,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 79,
+          "terminal_leaves": 80567,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 417,
+          "terminal_leaves": 387689,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1118,
+          "terminal_leaves": 915427,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 101,
+          "terminal_leaves": 96988,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 230,
+          "terminal_leaves": 202693,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "chapter-bloom-2hash",
+      "bits": 4096,
+      "bytes": 662310,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 926,
+          "terminal_leaves": 762787,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 455,
+          "terminal_leaves": 373642,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 91,
+          "terminal_leaves": 82348,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 226,
+          "terminal_leaves": 198370,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 226,
+          "terminal_leaves": 198370,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 82,
+          "terminal_leaves": 79598,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 71135,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 162,
+          "terminal_leaves": 119984,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 77,
+          "terminal_leaves": 78325,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 404,
+          "terminal_leaves": 373647,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1116,
+          "terminal_leaves": 913762,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 96,
+          "terminal_leaves": 92011,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 226,
+          "terminal_leaves": 198370,
+          "exact_terminal_leaves": 178171
+        }
+      ]
+    },
+    {
+      "kind": "none",
+      "bytes": 53542,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "note": "Retains query lexicon and terminal normalization map; no chapter postings."
+    }
+  ],
+  "codec_experiments": [
+    {
+      "kind": "word-dense",
+      "stoppers": 128,
+      "continuers": 128,
+      "payload_bytes": 1238121,
+      "dictionary_bytes": 76133,
+      "rank_table_bytes": 28488,
+      "grammar_bytes": 0,
+      "resource_bytes": 1363110,
+      "all_chapter_symbols_roundtrip_exact": true,
+      "full_text_roundtrip_exact": true,
+      "host_encode_and_verify_seconds": 0.23442585300654173,
+      "search_note": "Word codes allow direct single-word search; phrase codes require expansion or grammar-aware matching.",
+      "native_host_kmp_checks": [
+        {
+          "query": "God",
+          "occurrences": 4446,
+          "exact": true,
+          "host_process_seconds": 0.01085171103477478
+        },
+        {
+          "query": "the earth",
+          "occurrences": 849,
+          "exact": true,
+          "host_process_seconds": 0.00914834497962147
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 17,
+          "exact": true,
+          "host_process_seconds": 0.007901026983745396
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 984,
+          "exact": true,
+          "host_process_seconds": 0.008677716017700732
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007811776013113558
+        },
+        {
+          "query": "believe",
+          "occurrences": 143,
+          "exact": true,
+          "host_process_seconds": 0.007864187937229872
+        },
+        {
+          "query": "believed",
+          "occurrences": 116,
+          "exact": true,
+          "host_process_seconds": 0.007711490034125745
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007618410047143698
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.008191009983420372
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 25,
+          "exact": true,
+          "host_process_seconds": 0.007826871005818248
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 1,
+          "exact": true,
+          "host_process_seconds": 0.00768039096146822
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007772242068313062
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 134,
+          "exact": true,
+          "host_process_seconds": 0.007908687926828861
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 984,
+          "exact": true,
+          "host_process_seconds": 0.008334122016094625
+        }
+      ],
+      "direct_single_word_search": [
+        {
+          "query": "God",
+          "occurrences": 4446,
+          "raw_candidates": 6936,
+          "variants": 4,
+          "host_seconds": 0.0034893029369413853,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 984,
+          "raw_candidates": 2899,
+          "variants": 4,
+          "host_seconds": 0.0027641679625958204,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 143,
+          "raw_candidates": 143,
+          "variants": 3,
+          "host_seconds": 0.001999199972487986,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 116,
+          "raw_candidates": 116,
+          "variants": 1,
+          "host_seconds": 0.0008177109993994236,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 134,
+          "raw_candidates": 134,
+          "variants": 2,
+          "host_seconds": 0.0014696010621264577,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "kind": "word-dense",
+      "stoppers": 223,
+      "continuers": 33,
+      "payload_bytes": 1187704,
+      "dictionary_bytes": 76133,
+      "rank_table_bytes": 28488,
+      "grammar_bytes": 0,
+      "resource_bytes": 1312693,
+      "all_chapter_symbols_roundtrip_exact": true,
+      "full_text_roundtrip_exact": true,
+      "host_encode_and_verify_seconds": 0.22522566898260266,
+      "search_note": "Word codes allow direct single-word search; phrase codes require expansion or grammar-aware matching.",
+      "native_host_kmp_checks": [
+        {
+          "query": "God",
+          "occurrences": 4446,
+          "exact": true,
+          "host_process_seconds": 0.010808693012222648
+        },
+        {
+          "query": "the earth",
+          "occurrences": 849,
+          "exact": true,
+          "host_process_seconds": 0.008931469987146556
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 17,
+          "exact": true,
+          "host_process_seconds": 0.007417062995955348
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 984,
+          "exact": true,
+          "host_process_seconds": 0.007896999944932759
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007187371025793254
+        },
+        {
+          "query": "believe",
+          "occurrences": 143,
+          "exact": true,
+          "host_process_seconds": 0.0075673050014302135
+        },
+        {
+          "query": "believed",
+          "occurrences": 116,
+          "exact": true,
+          "host_process_seconds": 0.007272872957400978
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007546566077508032
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007036711904220283
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 25,
+          "exact": true,
+          "host_process_seconds": 0.007257533958181739
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 1,
+          "exact": true,
+          "host_process_seconds": 0.007406354998238385
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true,
+          "host_process_seconds": 0.007490561925806105
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 134,
+          "exact": true,
+          "host_process_seconds": 0.0071510199923068285
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 984,
+          "exact": true,
+          "host_process_seconds": 0.00774832593742758
+        }
+      ]
+    },
+    {
+      "kind": "phrase-dense",
+      "stoppers": 128,
+      "continuers": 128,
+      "payload_bytes": 1030357,
+      "dictionary_bytes": 76133,
+      "rank_table_bytes": 32568,
+      "grammar_bytes": 8192,
+      "resource_bytes": 1167618,
+      "all_chapter_symbols_roundtrip_exact": true,
+      "full_text_roundtrip_exact": true,
+      "host_encode_and_verify_seconds": 0.5650311659555882,
+      "search_note": "Word codes allow direct single-word search; phrase codes require expansion or grammar-aware matching."
+    },
+    {
+      "kind": "phrase-dense",
+      "stoppers": 211,
+      "continuers": 45,
+      "payload_bytes": 997544,
+      "dictionary_bytes": 76133,
+      "rank_table_bytes": 32568,
+      "grammar_bytes": 8192,
+      "resource_bytes": 1134805,
+      "all_chapter_symbols_roundtrip_exact": true,
+      "full_text_roundtrip_exact": true,
+      "host_encode_and_verify_seconds": 0.5113085759803653,
+      "search_note": "Word codes allow direct single-word search; phrase codes require expansion or grammar-aware matching."
+    }
+  ],
+  "notes": [
+    "All sizes include dictionaries, rank/model tables and 16-byte chapter framing; dense sizes exclude search index and hot cache.",
+    "Dense KMP correctness uses an auxiliary 2-byte-per-rank normalization table, not included in resource sizes; this could be avoided with per-query rank-variant sets.",
+    "Dense word streams preserve spelling/case/punctuation. Direct phrase byte search alone does not implement punctuation-insensitive case-insensitive semantics.",
+    "Bloom hashes computed on host; a device implementation can precompute per-word hashes, but their additional storage is not counted here.",
+    "Workload terminal leaves are scan-volume proxies, not measured CPU times."
+  ],
+  "packed_indexes": [
+    {
+      "kind": "packed-hybrid",
+      "group": 1,
+      "bytes": 252739,
+      "payload_bytes": 177720,
+      "record_modes": {
+        "4": 25,
+        "1": 1479,
+        "0": 10858,
+        "2": 151,
+        "3": 4
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 926,
+          "terminal_leaves": 762787,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 450,
+          "terminal_leaves": 369550,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 83,
+          "terminal_leaves": 73902,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 82,
+          "terminal_leaves": 79598,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 71135,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 162,
+          "terminal_leaves": 119984,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 76,
+          "terminal_leaves": 77452,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 404,
+          "terminal_leaves": 373647,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1116,
+          "terminal_leaves": 913762,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 96,
+          "terminal_leaves": 92011,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 207,
+          "terminal_leaves": 178171,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 2,
+      "bytes": 213327,
+      "payload_bytes": 138308,
+      "record_modes": {
+        "3": 18,
+        "1": 1462,
+        "0": 10733,
+        "2": 264,
+        "4": 40
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1057,
+          "terminal_leaves": 846379,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 678,
+          "terminal_leaves": 534521,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 153,
+          "terminal_leaves": 128682,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 140,
+          "terminal_leaves": 128944,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 126,
+          "terminal_leaves": 108237,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 260,
+          "terminal_leaves": 192964,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 130,
+          "terminal_leaves": 127122,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 625,
+          "terminal_leaves": 542740,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1171,
+          "terminal_leaves": 940347,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 178,
+          "terminal_leaves": 158000,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 239,
+          "terminal_leaves": 204262,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 4,
+      "bytes": 180845,
+      "payload_bytes": 105826,
+      "record_modes": {
+        "3": 42,
+        "1": 1460,
+        "0": 10502,
+        "2": 457,
+        "4": 56
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1133,
+          "terminal_leaves": 909620,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 900,
+          "terminal_leaves": 711735,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 277,
+          "terminal_leaves": 235270,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 220,
+          "terminal_leaves": 194473,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 216,
+          "terminal_leaves": 176056,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 408,
+          "terminal_leaves": 310314,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 208,
+          "terminal_leaves": 189648,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 881,
+          "terminal_leaves": 728366,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 304,
+          "terminal_leaves": 268210,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 8,
+      "bytes": 155248,
+      "payload_bytes": 80229,
+      "record_modes": {
+        "3": 96,
+        "2": 903,
+        "0": 10219,
+        "1": 1238,
+        "4": 61
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1165,
+          "terminal_leaves": 928938,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1069,
+          "terminal_leaves": 843713,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 445,
+          "terminal_leaves": 363235,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 328,
+          "terminal_leaves": 277443,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 336,
+          "terminal_leaves": 269476,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 592,
+          "terminal_leaves": 448620,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 296,
+          "terminal_leaves": 253776,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1037,
+          "terminal_leaves": 838733,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 472,
+          "terminal_leaves": 397377,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 253,
+          "terminal_leaves": 213223,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 16,
+      "bytes": 136558,
+      "payload_bytes": 61539,
+      "record_modes": {
+        "3": 225,
+        "2": 1747,
+        "0": 10055,
+        "1": 483,
+        "4": 7
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 677,
+          "terminal_leaves": 542367,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 448,
+          "terminal_leaves": 372155,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 512,
+          "terminal_leaves": 401953,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 832,
+          "terminal_leaves": 642982,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 432,
+          "terminal_leaves": 355197,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1157,
+          "terminal_leaves": 917886,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 736,
+          "terminal_leaves": 602494,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 32,
+      "bytes": 120859,
+      "payload_bytes": 45840,
+      "record_modes": {
+        "3": 346,
+        "2": 3041,
+        "0": 9130
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 869,
+          "terminal_leaves": 702616,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 640,
+          "terminal_leaves": 516260,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 768,
+          "terminal_leaves": 618730,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1024,
+          "terminal_leaves": 814709,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 576,
+          "terminal_leaves": 462525,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 928,
+          "terminal_leaves": 766512,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 261,
+          "terminal_leaves": 218283,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    },
+    {
+      "kind": "packed-hybrid",
+      "group": 64,
+      "bytes": 111401,
+      "payload_bytes": 36382,
+      "record_modes": {
+        "3": 665,
+        "2": 3633,
+        "0": 8219
+      },
+      "all_postings_roundtrip_exact": true,
+      "queries": [
+        {
+          "query": "God",
+          "exact_chapters": 926,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 762787
+        },
+        {
+          "query": "the earth",
+          "exact_chapters": 450,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 369550
+        },
+        {
+          "query": "in the beginning",
+          "exact_chapters": 83,
+          "candidate_chapters": 1061,
+          "terminal_leaves": 854234,
+          "exact_terminal_leaves": 73902
+        },
+        {
+          "query": "Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "Jesus Jesus",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        },
+        {
+          "query": "believe",
+          "exact_chapters": 82,
+          "candidate_chapters": 805,
+          "terminal_leaves": 650168,
+          "exact_terminal_leaves": 79598
+        },
+        {
+          "query": "believed",
+          "exact_chapters": 76,
+          "candidate_chapters": 933,
+          "terminal_leaves": 723343,
+          "exact_terminal_leaves": 71135
+        },
+        {
+          "query": "zzzzunknown",
+          "exact_chapters": 0,
+          "candidate_chapters": 0,
+          "terminal_leaves": 0,
+          "exact_terminal_leaves": 0
+        },
+        {
+          "query": "love love",
+          "exact_chapters": 162,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 888858,
+          "exact_terminal_leaves": 119984
+        },
+        {
+          "query": "verily verily",
+          "exact_chapters": 76,
+          "candidate_chapters": 805,
+          "terminal_leaves": 658141,
+          "exact_terminal_leaves": 77452
+        },
+        {
+          "query": "I am that I am",
+          "exact_chapters": 404,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 373647
+        },
+        {
+          "query": "a a",
+          "exact_chapters": 1116,
+          "candidate_chapters": 1189,
+          "terminal_leaves": 946456,
+          "exact_terminal_leaves": 913762
+        },
+        {
+          "query": "LORD's",
+          "exact_chapters": 96,
+          "candidate_chapters": 1125,
+          "terminal_leaves": 922478,
+          "exact_terminal_leaves": 92011
+        },
+        {
+          "query": "Jesus'",
+          "exact_chapters": 207,
+          "candidate_chapters": 293,
+          "terminal_leaves": 236670,
+          "exact_terminal_leaves": 178171
+        }
+      ],
+      "all_packed_fields_roundtrip_exact": true,
+      "field_savings_bytes": 16079
+    }
+  ],
+  "grammar_pruning": {
+    "all_occurrences_exact": true,
+    "queries": [
+      {
+        "query": "God",
+        "occurrences": 4446,
+        "exact": true,
+        "visited_nodes": 614393,
+        "visited_terminals": 378490,
+        "pruned_subtrees": 231518,
+        "python_host_scan_seconds": 0.12623332801740617
+      },
+      {
+        "query": "the earth",
+        "occurrences": 849,
+        "exact": true,
+        "visited_nodes": 783219,
+        "visited_terminals": 509170,
+        "pruned_subtrees": 185251,
+        "python_host_scan_seconds": 0.16486323799472302
+      },
+      {
+        "query": "in the beginning",
+        "occurrences": 17,
+        "exact": true,
+        "visited_nodes": 636217,
+        "visited_terminals": 397229,
+        "pruned_subtrees": 223691,
+        "python_host_scan_seconds": 0.12201876007020473
+      },
+      {
+        "query": "Jesus",
+        "occurrences": 984,
+        "exact": true,
+        "visited_nodes": 606705,
+        "visited_terminals": 372593,
+        "pruned_subtrees": 233571,
+        "python_host_scan_seconds": 0.11441479006316513
+      },
+      {
+        "query": "Jesus Jesus",
+        "occurrences": 0,
+        "exact": true,
+        "visited_nodes": 607855,
+        "visited_terminals": 373443,
+        "pruned_subtrees": 233296,
+        "python_host_scan_seconds": 0.11494275997392833
+      },
+      {
+        "query": "believe",
+        "occurrences": 143,
+        "exact": true,
+        "visited_nodes": 605623,
+        "visited_terminals": 371866,
+        "pruned_subtrees": 233757,
+        "python_host_scan_seconds": 0.11343589401803911
+      },
+      {
+        "query": "believed",
+        "occurrences": 116,
+        "exact": true,
+        "visited_nodes": 605623,
+        "visited_terminals": 371866,
+        "pruned_subtrees": 233757,
+        "python_host_scan_seconds": 0.113655247958377
+      },
+      {
+        "query": "zzzzunknown",
+        "occurrences": 0,
+        "exact": true,
+        "visited_nodes": 0,
+        "visited_terminals": 0,
+        "pruned_subtrees": 0,
+        "python_host_scan_seconds": 1.5120021998882294e-06
+      },
+      {
+        "query": "love love",
+        "occurrences": 0,
+        "exact": true,
+        "visited_nodes": 606101,
+        "visited_terminals": 372277,
+        "pruned_subtrees": 233585,
+        "python_host_scan_seconds": 0.11309944302774966
+      },
+      {
+        "query": "verily verily",
+        "occurrences": 25,
+        "exact": true,
+        "visited_nodes": 605895,
+        "visited_terminals": 372057,
+        "pruned_subtrees": 233702,
+        "python_host_scan_seconds": 0.11401471798308194
+      },
+      {
+        "query": "I am that I am",
+        "occurrences": 1,
+        "exact": true,
+        "visited_nodes": 628621,
+        "visited_terminals": 389477,
+        "pruned_subtrees": 227645,
+        "python_host_scan_seconds": 0.12255633797030896
+      },
+      {
+        "query": "a a",
+        "occurrences": 0,
+        "exact": true,
+        "visited_nodes": 617623,
+        "visited_terminals": 382940,
+        "pruned_subtrees": 228683,
+        "python_host_scan_seconds": 0.1269214729545638
+      },
+      {
+        "query": "LORD's",
+        "occurrences": 134,
+        "exact": true,
+        "visited_nodes": 605695,
+        "visited_terminals": 371938,
+        "pruned_subtrees": 233721,
+        "python_host_scan_seconds": 0.11578855593688786
+      },
+      {
+        "query": "Jesus'",
+        "occurrences": 984,
+        "exact": true,
+        "visited_nodes": 606705,
+        "visited_terminals": 372593,
+        "pruned_subtrees": 233571,
+        "python_host_scan_seconds": 0.118994384072721
+      }
+    ],
+    "grammar_rules": 2048,
+    "summary_bytes": 6144,
+    "summary_field_bytes": 1,
+    "max_summary_field": 10,
+    "query_grammar_bitmap_bytes": 256,
+    "baseline_terminal_leaves": 946456,
+    "top_level_symbols": 605623,
+    "note": "All top-level Huffman symbols still require decoding. Python scan timings exclude bit decoding and are not Neo timings. Query bitmap can be built bottom-up with no per-terminal bitmap: compare terminal IDs through the existing normalization map."
+  },
+  "scope": "KJV host only; production applet unchanged",
+  "experiment_sources": [
+    "search_space.py",
+    "compact_search_index.py",
+    "grammar_search_pruning.py",
+    "dense_search_check.c"
+  ]
+}

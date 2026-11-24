@@ -1,0 +1,64 @@
+-- Direct instruction probes in disposable Neo RAM; no LCD assertions.
+local machine=manager.machine;local cpu=machine.devices[':maincpu'];local m=cpu.spaces.program
+local code,stack,base,globals,out=0x70000,0x7f000,0x50000,0x18000,0x74000
+local function eq(a,b)assert(a==b,string.format('%x ~= %x',a,b))end
+local function fill(a,n,v)for i=0,n-1 do m:write_u8(a+i,v or 0)end end
+local cases={}
+local function add(name,target,args,prep,check)cases[#cases+1]={name,target,args,prep,check}end
+-- Exhaustively establish face selection; high bits do not change this helper.
+for flags=0,255 do
+ add('face-'..flags,0x42e62e,{out+0x100,out,flags},function()
+  for j=0,3 do m:write_u32(out+0x14e+4*j,0x11110000+j)end
+ end,function()eq(m:read_u32(out),0x11110000+((flags&12)>>2))end)
+end
+-- Exercise the real scanner's set/clear tokens for every individual bit.
+for bit=0,7 do for _,clear in ipairs({false,true})do
+ local mask=1<<bit
+ add((clear and 'clear-' or 'set-')..mask,0x42c120,{out+0x100,out+0x200,0,out+0x203,out+0x20,out+0x24,out+0x26,out+0x28,out+0x2a},function()
+  fill(out,0x300);m:write_u8(out+0x200,clear and 0xb2 or 0xb1);m:write_u8(out+0x201,mask);m:write_u8(out+0x202,clear and 0xb2 or 0xb1)
+  m:write_u16(out+0x24,clear and 255 or 0)
+  for j=0,3 do m:write_u32(out+0x14e+4*j,0x11110000+j)end
+ end,function()
+  local want=clear and (255~mask) or mask
+  eq(cpu.state.D0.value,3);eq(m:read_u16(out+0x24),want);eq(m:read_u32(out+0x20),0x11110000+((want&12)>>2))
+ end)
+end end
+local function cow(name,msg,param,state,want_state,want_action,extra)
+ add(name,base+0x94,{msg,param,out},function()
+  fill(out,16,0xa5);m:write_u8(globals+0x146,state);m:write_u16(globals+0x3e,0);m:write_u16(globals+0xc4be,0)
+ end,function()
+  eq(m:read_u8(out),want_state);eq(m:read_u8(globals+0x146),want_state);eq(m:read_u8(out+1),want_action)
+  eq(m:read_u32(out+2),0);eq(m:read_u32(out+6),0);eq(m:read_u8(out+10),0xa5)
+  if extra then extra()end
+ end)
+end
+cow('snapshot',0x1000004,0,1,1,1)
+cow('disable',0x1000002,0,2,0,1)
+cow('enable-from-disabled',0x1000005,0,0,2,0,function()eq(m:read_u16(globals+0x40),1)end)
+cow('tab-active-to-standby',0x1000001,9,2,1,3)
+cow('ordinary-char-in-standby',0x1000001,65,1,1,1)
+cow('ordinary-char-disabled',0x1000001,65,0,0,1)
+local frame,index,phase,deadline=0,0,-1,0
+emu.register_frame_done(function()
+ frame=frame+1;if frame<150 then return end
+ local ok,err=pcall(function()
+ if phase==-1 then
+  index=index+1;if index>#cases then print('PASS cowriter/face probe '..#cases..' cases');machine:exit();return end
+  if index==1 then
+   fill(globals,0x31504)
+   local f=assert(io.open('@COWRITER@','rb'));local b=f:read('*a');f:close()
+   for i=1,#b do m:write_u8(base+i-1,b:byte(i))end
+  end
+  local p=cases[index];p[4]();m:write_u16(code,0x4ef9);m:write_u32(code+2,p[2]);m:write_u16(code+6,0x60fe)
+  m:write_u32(stack,code+6);for i,v in ipairs(p[3])do m:write_u32(stack+4*i,v)end
+  cpu.state.A5.value=globals;cpu.state.SR.value=0x2700;cpu.state.SP.value=stack;cpu.state.PC.value=code
+  phase=0;deadline=frame+30
+ else
+  local pc=cpu.state.PC.value
+  if pc==code+6 or pc==code+8 then
+   eq(cpu.state.SP.value,stack+4);cases[index][5]();print('PASS '..cases[index][1]);phase=-1
+  else assert(frame<deadline,string.format('timeout PC=%x',pc))end
+ end
+ end)
+ if not ok then print('FAIL '..(cases[index]and cases[index][1]or 'setup')..' '..tostring(err));machine:exit()end
+end)

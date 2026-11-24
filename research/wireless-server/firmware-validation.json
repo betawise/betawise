@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "name": "receiver map output equals independently sliced data span",
+      "result": "PASS"
+    },
+    {
+      "name": "receiver page count/checksum",
+      "result": "PASS"
+    },
+    {
+      "name": "reject corrupted receiver payload",
+      "result": "PASS"
+    },
+    {
+      "name": "reject corrupted receiver page offset",
+      "result": "PASS"
+    },
+    {
+      "name": "reject truncated receiver map",
+      "result": "PASS"
+    },
+    {
+      "name": "reject unexpected receiver flash base",
+      "result": "PASS"
+    },
+    {
+      "name": "module 01.30 records/hash",
+      "result": "PASS"
+    },
+    {
+      "name": "module 01.30 every final mapped page matches source",
+      "result": "PASS"
+    },
+    {
+      "name": "reject 01.30 resource size mismatch",
+      "result": "PASS"
+    },
+    {
+      "name": "module 02.00 records/hash",
+      "result": "PASS"
+    },
+    {
+      "name": "module 02.00 every final mapped page matches source",
+      "result": "PASS"
+    },
+    {
+      "name": "reject 02.00 resource size mismatch",
+      "result": "PASS"
+    },
+    {
+      "name": "reviewed receiver literal values",
+      "result": "PASS"
+    },
+    {
+      "name": "channel expression gives standard channel 11-25 frequencies",
+      "result": "PASS"
+    }
+  ],
+  "literals": {
+    "0x107d74": "0xbe2",
+    "0x107d78": "0xae2",
+    "0x107d7c": "0x203",
+    "0x109860": "0x412e",
+    "0x1062e8": "0xfffe000c",
+    "0x1062ec": "0xfffe0008",
+    "0x1062f0": "0xfffe0010"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "source_bytes": 4247556,
+  "raw_utf8_bytes": 4148450,
+  "books": 66,
+  "chapters": 1189,
+  "verses": 31102,
+  "tokens": 951750,
+  "dictionary_entries": 14417,
+  "fixed_bits": 14,
+  "huffman_max_bits": 20,
+  "max_chapter_bytes": 13019,
+  "max_token_bytes": 17,
+  "non_ascii_characters": {
+    "\u2019": 1996,
+    "\u2026": 8,
+    "\u2014": 1,
+    "\u00e6": 93,
+    "\u00c6": 3
+  },
+  "results": [
+    {
+      "method": "raw UTF-8 + chapter index",
+      "bytes": 4168819,
+      "percent": 100.49
+    },
+    {
+      "method": "zlib whole (archive baseline)",
+      "bytes": 1211106,
+      "percent": 29.19,
+      "indexed": false
+    },
+    {
+      "method": "bzip2 whole (archive baseline)",
+      "bytes": 871397,
+      "percent": 21.01,
+      "indexed": false
+    },
+    {
+      "method": "xz whole (archive baseline)",
+      "bytes": 906224,
+      "percent": 21.84,
+      "indexed": false
+    },
+    {
+      "method": "DEFLATE chapter w10",
+      "bytes": 1767865,
+      "percent": 42.62,
+      "history_bytes": 1024
+    },
+    {
+      "method": "DEFLATE chapter w12",
+      "bytes": 1670904,
+      "percent": 40.28,
+      "history_bytes": 4096
+    },
+    {
+      "method": "DEFLATE chapter w15",
+      "bytes": 1667230,
+      "percent": 40.19,
+      "history_bytes": 32768
+    },
+    {
+      "method": "LZ4 HC chapter",
+      "bytes": 2394950,
+      "percent": 57.73
+    },
+    {
+      "method": "dictionary fixed 14-bit",
+      "bytes": 1870944,
+      "percent": 45.1,
+      "payload_bytes": 1666013,
+      "dictionary_bytes": 184562,
+      "chapter_index_bytes": 19024,
+      "header_and_book_bytes": 1345,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "dictionary canonical Huffman",
+      "bytes": 1229013,
+      "percent": 29.63,
+      "payload_bytes": 1009665,
+      "dictionary_bytes": 198979,
+      "chapter_index_bytes": 19024,
+      "header_and_book_bytes": 1345,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "byte canonical Huffman",
+      "bytes": 2307035,
+      "percent": 55.61
+    },
+    {
+      "method": "phrase grammar 512 + Huffman",
+      "bytes": 1134698,
+      "percent": 27.35,
+      "payload_bytes": 912790,
+      "dictionary_and_grammar_bytes": 201539,
+      "max_expansion_depth": 3,
+      "max_huffman_bits": 19,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "phrase grammar 1024 + Huffman",
+      "bytes": 1117299,
+      "percent": 26.93,
+      "payload_bytes": 892831,
+      "dictionary_and_grammar_bytes": 204099,
+      "max_expansion_depth": 4,
+      "max_huffman_bits": 19,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "phrase grammar 2048 + Huffman",
+      "bytes": 1099474,
+      "percent": 26.5,
+      "payload_bytes": 869886,
+      "dictionary_and_grammar_bytes": 209219,
+      "max_expansion_depth": 5,
+      "max_huffman_bits": 19,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "front dictionary + 2048 phrases + Huffman + ROM symbol map",
+      "bytes": 1025262,
+      "percent": 24.71,
+      "payload_bytes": 869886,
+      "front_dictionary_bytes": 77420,
+      "huffman_lengths_and_map_bytes": 49395,
+      "phrase_bytes": 8192,
+      "max_expansion_depth": 5,
+      "verified_chapters": 1189
+    }
+  ]
+}

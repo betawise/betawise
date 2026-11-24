@@ -1,0 +1,138 @@
+[
+  {
+    "id": "as3k-latency",
+    "platform": "as3k",
+    "case": "latency"
+  },
+  {
+    "id": "neo-completion-B",
+    "platform": "neo",
+    "case": "completion",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "as3k-repl-native-correct-6-2",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.5,
+    "native": true,
+    "step": 6,
+    "hold": 2,
+    "gc_extra": 400
+  },
+  {
+    "id": "as3k-repl-native-correct-4-2",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.3333333333333333,
+    "native": true,
+    "step": 4,
+    "hold": 2,
+    "gc_extra": 600
+  },
+  {
+    "id": "as3k-repl-natural-half-gc",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.5,
+    "gc_extra": 400
+  },
+  {
+    "id": "neo-terminal-B",
+    "platform": "neo",
+    "case": "terminal",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-logo-B",
+    "platform": "neo",
+    "case": "logo",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-logo-graphics-B",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "as3k-repl-natural-0.6",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.6
+  },
+  {
+    "id": "as3k-repl-natural-0.75",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.75
+  },
+  {
+    "id": "as3k-repl-native-correct-3-1",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.25,
+    "native": true,
+    "step": 3,
+    "hold": 1,
+    "gc_extra": 800
+  },
+  {
+    "id": "as3k-repl-native-correct-2-1",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.16666666666666666,
+    "native": true,
+    "step": 2,
+    "hold": 1,
+    "gc_extra": 1200
+  }
+]

@@ -1,0 +1,977 @@
+{
+  "status": "passed",
+  "baseline_session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/mame-prototype-07",
+  "indexed_session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/mame-seek-final",
+  "native_session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final",
+  "emulated_cpu_clock_hz": 33161216,
+  "baseline": {
+    "status": "passed",
+    "seek_checkpoints": false,
+    "applet_bytes": 960860,
+    "results": [
+      {
+        "name": "Genesis 1:1",
+        "serial": 1,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 329,
+          "paint": 50,
+          "total": 379
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 58,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:1\nIn the beginning God created the heaven and\nthe earth.\nAnd the earth was without form, and void; an\nd darkness was upon the face of the deep. An\nd the Spirit of God moved upon the face of t\nhe waters.\nAnd God said, Let there be light: and there",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ]
+      },
+      {
+        "name": "Genesis 1:1 next page",
+        "serial": 2,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 339,
+          "paint": 50,
+          "total": 389
+        },
+        "chapter_prefix_symbols": 58,
+        "page_symbols": 61,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:1 +1\nwas light.\nAnd God saw the light, that it was good: and\n God divided the light from the darkness.\nAnd God called the light Day, and the darkne\nss he called Night. And the evening and the\nmorning were the first day.\nAnd God said, Let there be a firmament in th",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 0.01730937700017421,
+          "layout": 342.0062159290005,
+          "paint": 49.83840158200081,
+          "total": 391.86192688800145
+        }
+      },
+      {
+        "name": "John 3:16",
+        "serial": 3,
+        "firmware_ms": {
+          "seek": 2233,
+          "layout": 331,
+          "paint": 50,
+          "total": 2614
+        },
+        "chapter_prefix_symbols": 395,
+        "page_symbols": 55,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV John 3:16\nFor God so loved the world, that he gave his\n only begotten Son, that whosoever believeth\n in him should not perish, but have everlast\ning life.\nFor God sent not his Son into the world to c\nondemn the world; but that the world through\n him might be saved.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 2249.122770357001,
+          "layout": 333.46617927800185,
+          "paint": 49.837195353998,
+          "total": 2632.426144989001
+        }
+      },
+      {
+        "name": "Genesis 1:31",
+        "serial": 4,
+        "firmware_ms": {
+          "seek": 5217,
+          "layout": 165,
+          "paint": 50,
+          "total": 5432
+        },
+        "chapter_prefix_symbols": 921,
+        "page_symbols": 31,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:31\nAnd God saw every thing that he had made, an\nd, behold, it was very good. And the evening\n and the morning were the sixth day.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 5254.529025595001,
+          "layout": 166.54347053799867,
+          "paint": 49.82235874399876,
+          "total": 5470.894854876999
+        }
+      },
+      {
+        "name": "Psalms 119:1",
+        "serial": 5,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 335,
+          "paint": 50,
+          "total": 385
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 59,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:1\nBlessed are the undefiled in the way, who wa\nlk in the law of the LORD .\nBlessed are they that keep his testimonies,\nand that seek him with the whole heart.\nThey also do no iniquity: they walk in his w\nays.\nThou hast commanded us to keep thy precepts",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 0.3118703490017083,
+          "layout": 337.2396838440004,
+          "paint": 49.83840158199726,
+          "total": 387.38995577499935
+        }
+      },
+      {
+        "name": "Psalms 119:88",
+        "serial": 6,
+        "firmware_ms": {
+          "seek": 8474,
+          "layout": 288,
+          "paint": 49,
+          "total": 8811
+        },
+        "chapter_prefix_symbols": 1506,
+        "page_symbols": 50,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:88\nQuicken me after thy lovingkindness; so shal\nl I keep the testimony of thy mouth.\nFor ever, O LORD , thy word is settled in he\naven.\nThy faithfulness is unto all generations: th\nou hast established the earth, and it abidet\nh.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 8533.947789898999,
+          "layout": 289.5411314170033,
+          "paint": 49.83550663399683,
+          "total": 8873.32442795
+        }
+      },
+      {
+        "name": "Psalms 119:176",
+        "serial": 7,
+        "firmware_ms": {
+          "seek": 17033,
+          "layout": 126,
+          "paint": 49,
+          "total": 17208
+        },
+        "chapter_prefix_symbols": 3011,
+        "page_symbols": 22,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:176\nI have gone astray like a lost sheep; seek t\nhy servant; for I do not forget thy commandm\nents.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 17153.470246299003,
+          "layout": 127.2180127510012,
+          "paint": 49.81922255099391,
+          "total": 17330.507481600995
+        }
+      },
+      {
+        "name": "Revelation 22:21",
+        "serial": 8,
+        "firmware_ms": {
+          "seek": 3830,
+          "layout": 80,
+          "paint": 49,
+          "total": 3959
+        },
+        "chapter_prefix_symbols": 668,
+        "page_symbols": 15,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Revelation 22:21\nThe grace of our Lord Jesus Christ be with y\nou all. Amen.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 3857.8624498299946,
+          "layout": 79.76064568800467,
+          "paint": 49.81572448799909,
+          "total": 3987.4388200059984
+        }
+      },
+      {
+        "name": "Psalms 117:1",
+        "serial": 9,
+        "firmware_ms": {
+          "seek": 1,
+          "layout": 256,
+          "paint": 50,
+          "total": 307
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 44,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 117:1\nO praise the LORD , all ye nations: praise h\nim, all ye people.\nFor his merciful kindness is great toward us\n: and the truth of the LORD endureth for eve\nr. Praise ye the LORD .",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 0.31187034799984303,
+          "layout": 258.4560831489995,
+          "paint": 49.82875175500112,
+          "total": 308.59670525200045
+        }
+      },
+      {
+        "name": "Matthew 5:1",
+        "serial": 10,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 304,
+          "paint": 49,
+          "total": 353
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 54,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Matthew 5:1\nAnd seeing the multitudes, he went up into a\n mountain: and when he was set, his disciple\ns came unto him:\nAnd he opened his mouth, and taught them, sa\nying,\nBlessed are the poor in spirit: for theirs i\ns the kingdom of heaven.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 0.3118703490017083,
+          "layout": 305.91767201099884,
+          "paint": 49.83574788000311,
+          "total": 356.06529024000366
+        }
+      },
+      {
+        "name": "Isaiah 53:5",
+        "serial": 11,
+        "firmware_ms": {
+          "seek": 777,
+          "layout": 382,
+          "paint": 49,
+          "total": 1208
+        },
+        "chapter_prefix_symbols": 132,
+        "page_symbols": 65,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Isaiah 53:5\nBut he was wounded for our transgressions, h\ne was bruised for our iniquities: the chasti\nsement of our peace was upon him; and with h\nis stripes we are healed.\nAll we like sheep have gone astray; we have\nturned every one to his own way; and the LOR\nD hath laid on him the iniquity of us all.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 782.5141273290014,
+          "layout": 384.74355101200075,
+          "paint": 49.843347117999315,
+          "total": 1217.1010254590014
+        }
+      },
+      {
+        "name": "John 3:16",
+        "serial": 12,
+        "firmware_ms": {
+          "seek": 2234,
+          "layout": 331,
+          "paint": 49,
+          "total": 2614
+        },
+        "chapter_prefix_symbols": 395,
+        "page_symbols": 55,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV John 3:16\nFor God so loved the world, that he gave his\n only begotten Son, that whosoever believeth\n in him should not perish, but have everlast\ning life.\nFor God sent not his Son into the world to c\nondemn the world; but that the world through\n him might be saved.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 2249.122770357005,
+          "layout": 333.46617927799826,
+          "paint": 49.83719535400155,
+          "total": 2632.4261449890046
+        }
+      },
+      {
+        "name": "Psalms 119:176",
+        "serial": 13,
+        "firmware_ms": {
+          "seek": -37967,
+          "layout": 126,
+          "paint": 50,
+          "total": -37791
+        },
+        "chapter_prefix_symbols": 3011,
+        "page_symbols": 22,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:176\nI have gone astray like a lost sheep; seek t\nhy servant; for I do not forget thy commandm\nents.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": false,
+        "cpu_clock_hz": [
+          0
+        ],
+        "emulated_ms": {
+          "seek": 17153.470246299003,
+          "layout": 127.2180127510012,
+          "paint": 49.81922255099391,
+          "total": 17330.507481600995
+        }
+      }
+    ]
+  },
+  "indexed": {
+    "status": "passed",
+    "seek_checkpoints": true,
+    "applet_bytes": 1024178,
+    "results": [
+      {
+        "name": "Genesis 1:1",
+        "serial": 1,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 329,
+          "paint": 50,
+          "total": 379
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 58,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:1\nIn the beginning God created the heaven and\nthe earth.\nAnd the earth was without form, and void; an\nd darkness was upon the face of the deep. An\nd the Spirit of God moved upon the face of t\nhe waters.\nAnd God said, Let there be light: and there",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ]
+      },
+      {
+        "name": "Genesis 1:1 next page",
+        "serial": 2,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 339,
+          "paint": 50,
+          "total": 389
+        },
+        "chapter_prefix_symbols": 58,
+        "page_symbols": 61,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:1 +1\nwas light.\nAnd God saw the light, that it was good: and\n God divided the light from the darkness.\nAnd God called the light Day, and the darkne\nss he called Night. And the evening and the\nmorning were the first day.\nAnd God said, Let there be a firmament in th",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 0.01730937700017421,
+          "layout": 342.0062159290005,
+          "paint": 49.83840158200081,
+          "total": 391.86192688800145
+        }
+      },
+      {
+        "name": "John 3:16",
+        "serial": 3,
+        "firmware_ms": {
+          "seek": 919,
+          "layout": 331,
+          "paint": 50,
+          "total": 1300
+        },
+        "chapter_prefix_symbols": 395,
+        "page_symbols": 55,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV John 3:16\nFor God so loved the world, that he gave his\n only begotten Son, that whosoever believeth\n in him should not perish, but have everlast\ning life.\nFor God sent not his Son into the world to c\nondemn the world; but that the world through\n him might be saved.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 925.9952348950015,
+          "layout": 333.46617927799826,
+          "paint": 49.83719535400155,
+          "total": 1309.2986095270014
+        }
+      },
+      {
+        "name": "Genesis 1:31",
+        "serial": 4,
+        "firmware_ms": {
+          "seek": 1515,
+          "layout": 165,
+          "paint": 50,
+          "total": 1730
+        },
+        "chapter_prefix_symbols": 921,
+        "page_symbols": 31,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Genesis 1:31\nAnd God saw every thing that he had made, an\nd, behold, it was very good. And the evening\n and the morning were the sixth day.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 1525.6439329259983,
+          "layout": 166.54347053800223,
+          "paint": 49.82235874399876,
+          "total": 1742.0097622079993
+        }
+      },
+      {
+        "name": "Psalms 119:1",
+        "serial": 5,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 335,
+          "paint": 50,
+          "total": 385
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 59,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:1\nBlessed are the undefiled in the way, who wa\nlk in the law of the LORD .\nBlessed are they that keep his testimonies,\nand that seek him with the whole heart.\nThey also do no iniquity: they walk in his w\nays.\nThou hast commanded us to keep thy precepts",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 0.35824983000054544,
+          "layout": 337.2396838449987,
+          "paint": 49.83840158200081,
+          "total": 387.43633525700005
+        }
+      },
+      {
+        "name": "Psalms 119:88",
+        "serial": 6,
+        "firmware_ms": {
+          "seek": 674,
+          "layout": 288,
+          "paint": 49,
+          "total": 1011
+        },
+        "chapter_prefix_symbols": 1506,
+        "page_symbols": 50,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:88\nQuicken me after thy lovingkindness; so shal\nl I keep the testimony of thy mouth.\nFor ever, O LORD , thy word is settled in he\naven.\nThy faithfulness is unto all generations: th\nou hast established the earth, and it abidet\nh.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 678.867204371997,
+          "layout": 289.54113141600146,
+          "paint": 49.835506634998694,
+          "total": 1018.2438424229972
+        }
+      },
+      {
+        "name": "Psalms 119:176",
+        "serial": 7,
+        "firmware_ms": {
+          "seek": 649,
+          "layout": 127,
+          "paint": 49,
+          "total": 825
+        },
+        "chapter_prefix_symbols": 3011,
+        "page_symbols": 22,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:176\nI have gone astray like a lost sheep; seek t\nhy servant; for I do not forget thy commandm\nents.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 653.373869025998,
+          "layout": 127.21801274999933,
+          "paint": 49.81922255100102,
+          "total": 830.4111043269984
+        }
+      },
+      {
+        "name": "Revelation 22:21",
+        "serial": 8,
+        "firmware_ms": {
+          "seek": 855,
+          "layout": 79,
+          "paint": 49,
+          "total": 983
+        },
+        "chapter_prefix_symbols": 668,
+        "page_symbols": 15,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Revelation 22:21\nThe grace of our Lord Jesus Christ be with y\nou all. Amen.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 860.5985377419997,
+          "layout": 79.76064568800112,
+          "paint": 49.81572448799909,
+          "total": 990.174907918
+        }
+      },
+      {
+        "name": "Psalms 117:1",
+        "serial": 9,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 257,
+          "paint": 49,
+          "total": 306
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 44,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 117:1\nO praise the LORD , all ye nations: praise h\nim, all ye people.\nFor his merciful kindness is great toward us\n: and the truth of the LORD endureth for eve\nr. Praise ye the LORD .",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 0.35824983000054544,
+          "layout": 258.4560831480012,
+          "paint": 49.82875175499757,
+          "total": 308.6430847329993
+        }
+      },
+      {
+        "name": "Matthew 5:1",
+        "serial": 10,
+        "firmware_ms": {
+          "seek": 0,
+          "layout": 304,
+          "paint": 49,
+          "total": 353
+        },
+        "chapter_prefix_symbols": 0,
+        "page_symbols": 54,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Matthew 5:1\nAnd seeing the multitudes, he went up into a\n mountain: and when he was set, his disciple\ns came unto him:\nAnd he opened his mouth, and taught them, sa\nying,\nBlessed are the poor in spirit: for theirs i\ns the kingdom of heaven.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 0.35824983000054544,
+          "layout": 305.91767201099884,
+          "paint": 49.83574787900125,
+          "total": 356.11166972000063
+        }
+      },
+      {
+        "name": "Isaiah 53:5",
+        "serial": 11,
+        "firmware_ms": {
+          "seek": 777,
+          "layout": 382,
+          "paint": 49,
+          "total": 1208
+        },
+        "chapter_prefix_symbols": 132,
+        "page_symbols": 65,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Isaiah 53:5\nBut he was wounded for our transgressions, h\ne was bruised for our iniquities: the chasti\nsement of our peace was upon him; and with h\nis stripes we are healed.\nAll we like sheep have gone astray; we have\nturned every one to his own way; and the LOR\nD hath laid on him the iniquity of us all.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 782.5605068100003,
+          "layout": 384.74355101200075,
+          "paint": 49.84334711900118,
+          "total": 1217.1474049410022
+        }
+      },
+      {
+        "name": "John 3:16",
+        "serial": 12,
+        "firmware_ms": {
+          "seek": 920,
+          "layout": 331,
+          "paint": 49,
+          "total": 1300
+        },
+        "chapter_prefix_symbols": 395,
+        "page_symbols": 55,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV John 3:16\nFor God so loved the world, that he gave his\n only begotten Son, that whosoever believeth\n in him should not perish, but have everlast\ning life.\nFor God sent not his Son into the world to c\nondemn the world; but that the world through\n him might be saved.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 925.9952348939997,
+          "layout": 333.46617927900013,
+          "paint": 49.837195352999686,
+          "total": 1309.2986095259996
+        }
+      },
+      {
+        "name": "Psalms 119:176",
+        "serial": 13,
+        "firmware_ms": {
+          "seek": 649,
+          "layout": 127,
+          "paint": 49,
+          "total": 825
+        },
+        "chapter_prefix_symbols": 3011,
+        "page_symbols": 22,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Psalms 119:176\nI have gone astray like a lost sheep; seek t\nhy servant; for I do not forget thy commandm\nents.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 653.3738690260016,
+          "layout": 127.21801274999933,
+          "paint": 49.81922255100102,
+          "total": 830.4111043270019
+        }
+      },
+      {
+        "name": "Matthew 22:21",
+        "serial": 14,
+        "firmware_ms": {
+          "seek": 400,
+          "layout": 408,
+          "paint": 49,
+          "total": 857
+        },
+        "chapter_prefix_symbols": 483,
+        "page_symbols": 70,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Matthew 22:21\nThey say unto him, Caesar's. Then saith he u\nnto them, Render therefore unto Caesar the t\nhings which are Caesar's; and unto God the t\nhings that are God's.\nWhen they had heard these words , they marve\nlled, and left him, and went their way.\nThe same day came to him the Sadducees, whic",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 402.73239677699735,
+          "layout": 410.30467639300025,
+          "paint": 49.843105873002,
+          "total": 862.8801790429997
+        }
+      },
+      {
+        "name": "John 3:23",
+        "serial": 15,
+        "firmware_ms": {
+          "seek": 957,
+          "layout": 331,
+          "paint": 50,
+          "total": 1338
+        },
+        "chapter_prefix_symbols": 591,
+        "page_symbols": 56,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV John 3:23\nAnd John also was baptizing in AEnon near to\n Salim, because there was much water there:\nand they came, and were baptized.\nFor John was not yet cast into prison.\nThen there arose a question between some of\nJohn's disciples and the Jews about purifyin\ng.",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 963.0833199629976,
+          "layout": 334.06905222500427,
+          "paint": 49.85106697999697,
+          "total": 1347.0034391679987
+        }
+      },
+      {
+        "name": "Exodus 17:16",
+        "serial": 16,
+        "firmware_ms": {
+          "seek": 1350,
+          "layout": 233,
+          "paint": 49,
+          "total": 1632
+        },
+        "chapter_prefix_symbols": 541,
+        "page_symbols": 41,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Exodus 17:16\nFor he said, Because the LORD hath sworn tha\nt the LORD will have war with Amalek from ge\nneration to generation. , therefore, etc hat\nh...: Heb. the hand upon the throne of the L\nORD",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 1358.986956298004,
+          "layout": 234.8675030440006,
+          "paint": 49.829354869999065,
+          "total": 1643.6838142120039
+        }
+      },
+      {
+        "name": "Exodus 32:32",
+        "serial": 17,
+        "firmware_ms": {
+          "seek": 1501,
+          "layout": 379,
+          "paint": 49,
+          "total": 1929
+        },
+        "chapter_prefix_symbols": 1219,
+        "page_symbols": 65,
+        "workspace_bytes": 1524,
+        "screen_bytes": 352,
+        "init_ms": 4,
+        "reading": {
+          "text": "KJV Exodus 32:32\nYet now, if thou wilt forgive their sin-; an\nd if not, blot me, I pray thee, out of thy b\nook which thou hast written.\nAnd the LORD said unto Moses, Whosoever hath\n sinned against me, him will I blot out of m\ny book.\nTherefore now go, lead the people unto the p",
+          "unknown_cells": [],
+          "ambiguous_cells": [],
+          "cursor_columns": []
+        },
+        "controller_flags_verified": true,
+        "firmware_timer_valid": true,
+        "cpu_clock_hz": [
+          33161216
+        ],
+        "emulated_ms": {
+          "seek": 1511.4755743230007,
+          "layout": 381.2776346840039,
+          "paint": 49.83864282799999,
+          "total": 1942.5918518350045
+        }
+      }
+    ]
+  },
+  "native": {
+    "status": "passed",
+    "chapters": 1189,
+    "utf8_bytes": 4148450,
+    "reverse_chapter_decode_exact": true,
+    "checkpoint_suffix_replays_exact": 3220,
+    "checkpoint_bytes": 62732
+  }
+}

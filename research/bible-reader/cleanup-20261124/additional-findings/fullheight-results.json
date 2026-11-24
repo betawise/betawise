@@ -1,0 +1,34 @@
+{
+  "suites": {
+    "fullheight-native": {
+      "status": "passed",
+      "checks": 21
+    },
+    "eleven-schoolbook": {
+      "status": "passed",
+      "checks": 10
+    },
+    "eleven-times": {
+      "status": "passed",
+      "checks": 10
+    },
+    "fullheight-search": {
+      "status": "passed",
+      "checks": 23
+    },
+    "eleven-helvetica-v2": {
+      "status": "passed",
+      "checks": 10
+    }
+  },
+  "sidebar_rows": 65,
+  "stipple_bitmap_bytes": 2268,
+  "stipple_function_frame_bytes": 2308,
+  "code_bytes": {
+    "sidebar_total": 486,
+    "rotation_loop_extracted": 116,
+    "rotated_pixel_probe": 174,
+    "rotated_columns_probe": 202,
+    "drawbitmap_trap": 2
+  }
+}

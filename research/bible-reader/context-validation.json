@@ -1,0 +1,19 @@
+{
+  "best_bytes": 948662,
+  "independent_repeat_identical": true,
+  "verified_chapters_per_variant": 1189,
+  "backend_tests_passed": 5,
+  "backend_tests": [
+    "uniform_binary_expected_bit_cost_and_corruption_rejection",
+    "zero_frequencies_and_single_symbol",
+    "sparse_escape_with_and_without_exclusion",
+    "large_alphabet_and_multilevel_backoff",
+    "large_exclusion_set"
+  ],
+  "assertion_status": "passed",
+  "native_neo_measurements": "not performed: no native decoder implemented",
+  "narrow_model_exclusion_scratch_bytes": 1024,
+  "narrow_scratch_full_corpus_roundtrip": true,
+  "narrow_scratch_container_unchanged": true,
+  "native_total_ram": "estimated 2-3 KiB; initial reservation 4 KiB; not measured on 68000"
+}

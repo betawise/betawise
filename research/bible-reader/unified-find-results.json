@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "mame": {
+    "unified-ui-small-v2": {
+      "status": "passed",
+      "cases": 50
+    },
+    "unified-ui-medium": {
+      "status": "passed",
+      "cases": 50
+    },
+    "unified-ui-search": {
+      "status": "passed",
+      "cases": 18
+    }
+  },
+  "references": {
+    "status": "passed",
+    "cases": 99
+  },
+  "kjv_applet_bytes": 1293142,
+  "a5_bytes": 3240
+}

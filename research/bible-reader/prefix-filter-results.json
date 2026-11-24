@@ -1,0 +1,633 @@
+{
+  "exact_index_bytes": 252739,
+  "lexicon_map_bytes": 49981,
+  "rows": [
+    {
+      "prefix_characters": 3,
+      "chapter_group": 1,
+      "buckets": 1832,
+      "filter_bytes": 98073,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 148054,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 54
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 54
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 257
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 282
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 263
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    },
+    {
+      "prefix_characters": 3,
+      "chapter_group": 4,
+      "buckets": 1832,
+      "filter_bytes": 45772,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 95753,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 192
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 192
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 377
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 672
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 593
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    },
+    {
+      "prefix_characters": 3,
+      "chapter_group": 8,
+      "buckets": 1832,
+      "filter_bytes": 31907,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 81888,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 328
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 328
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 437
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 893
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 829
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    },
+    {
+      "prefix_characters": 4,
+      "chapter_group": 1,
+      "buckets": 4902,
+      "filter_bytes": 162499,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 212480,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 5
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 5
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 257
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 154
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 247
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    },
+    {
+      "prefix_characters": 4,
+      "chapter_group": 4,
+      "buckets": 4902,
+      "filter_bytes": 98258,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 148239,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 20
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 20
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 377
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 388
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 573
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    },
+    {
+      "prefix_characters": 4,
+      "chapter_group": 8,
+      "buckets": 4902,
+      "filter_bytes": 77936,
+      "existing_style_lexicon_map_bytes": 49981,
+      "total_with_lexicon_map": 127917,
+      "queries": [
+        {
+          "query": "methus",
+          "words": [
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 2,
+          "exact_candidate_chapters": 3,
+          "prefix_bucket_chapters": 32
+        },
+        {
+          "query": "meth",
+          "words": [
+            "metheg",
+            "methoar",
+            "methusael",
+            "methuselah"
+          ],
+          "matching_words": 4,
+          "exact_candidate_chapters": 5,
+          "prefix_bucket_chapters": 32
+        },
+        {
+          "query": "jes",
+          "words": [
+            "jesaiah",
+            "jeshaiah",
+            "jeshanah",
+            "jesharelah",
+            "jeshebeab",
+            "jesher",
+            "jeshimon",
+            "jeshimoth",
+            "jeshishai",
+            "jeshohaiah",
+            "jeshua",
+            "jeshurun"
+          ],
+          "matching_words": 18,
+          "exact_candidate_chapters": 257,
+          "prefix_bucket_chapters": 437
+        },
+        {
+          "query": "believ",
+          "words": [
+            "believe",
+            "believed",
+            "believers",
+            "believest",
+            "believeth",
+            "believing"
+          ],
+          "matching_words": 6,
+          "exact_candidate_chapters": 140,
+          "prefix_bucket_chapters": 576
+        },
+        {
+          "query": "love",
+          "words": [
+            "love",
+            "love's",
+            "loved",
+            "lovedst",
+            "lovely",
+            "lover",
+            "lovers",
+            "loves",
+            "lovest",
+            "loveth"
+          ],
+          "matching_words": 10,
+          "exact_candidate_chapters": 247,
+          "prefix_bucket_chapters": 805
+        },
+        {
+          "query": "th",
+          "words": [
+            "thaddaeus",
+            "thahash",
+            "thamar",
+            "than",
+            "thank",
+            "thanked",
+            "thankful",
+            "thankfulness",
+            "thanking",
+            "thanks",
+            "thanksgiving",
+            "thanksgivings"
+          ],
+          "matching_words": 144,
+          "exact_candidate_chapters": 1189,
+          "prefix_bucket_chapters": 1189
+        }
+      ]
+    }
+  ],
+  "scope": "Host-only serialized KJV prefix filters; all bucket payloads and serialized keys/offsets round-trip; no device decoder or MAME timing",
+  "source": "reader-viewer/kjv/source.json",
+  "applet_changed": false
+}

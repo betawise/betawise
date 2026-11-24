@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.o
+*.elf
+*.OS3KApp
+/reader-fonts/build/

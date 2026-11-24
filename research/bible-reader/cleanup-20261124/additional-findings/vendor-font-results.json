@@ -1,0 +1,38 @@
+[
+  {
+    "font": "small",
+    "checks": 36,
+    "height": 11,
+    "proportional": true
+  },
+  {
+    "font": "medium",
+    "checks": 36,
+    "height": 13,
+    "proportional": true
+  },
+  {
+    "font": "large",
+    "checks": 36,
+    "height": 16,
+    "proportional": true
+  },
+  {
+    "font": "vlarge",
+    "checks": 36,
+    "height": 21,
+    "proportional": true
+  },
+  {
+    "font": "xlarge",
+    "checks": 36,
+    "height": 32,
+    "proportional": true
+  },
+  {
+    "font": "tiny",
+    "checks": 36,
+    "height": 6,
+    "proportional": false
+  }
+]

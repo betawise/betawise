@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "scope": "Incremental resource data only; formatting renderer is not implemented or priced.",
+  "kjv_source_audit": {
+    "flags": {
+      "p": 31102,
+      "s": 6883,
+      "r": 41809
+    },
+    "header_levels": {
+      "1": 1189,
+      "4": 116,
+      "3": 22
+    },
+    "generated_titles": 1189,
+    "default_layout": 1,
+    "verses": 31102,
+    "mapped_acrostic_headings": 0,
+    "atoms": 789631,
+    "layout_exceptions": 0,
+    "extra_headings": 138,
+    "heading_text_bytes": 5398,
+    "typography_events": 13683,
+    "typography_dense_bits": 98704,
+    "all_styles_events": 15004,
+    "all_styles_dense_bits": 197408,
+    "combined": {
+      "typography/rice/front_pool": {
+        "bytes": 22251,
+        "header_bytes": 2818,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2089,
+        "style_payload_bytes": 14432,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 532
+      },
+      "typography/rice/existing_bible_codec": {
+        "bytes": 23409,
+        "header_bytes": 17,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2090,
+        "style_payload_bytes": 14432,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 4490
+      },
+      "typography/singleton_runs/front_pool": {
+        "bytes": 18308,
+        "header_bytes": 2814,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2089,
+        "style_payload_bytes": 10493,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 532
+      },
+      "typography/singleton_runs/existing_bible_codec": {
+        "bytes": 19466,
+        "header_bytes": 13,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2090,
+        "style_payload_bytes": 10493,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 4490
+      },
+      "all_styles/rice/front_pool": {
+        "bytes": 25752,
+        "header_bytes": 2819,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2191,
+        "style_payload_bytes": 17830,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 532
+      },
+      "all_styles/rice/existing_bible_codec": {
+        "bytes": 26910,
+        "header_bytes": 18,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2192,
+        "style_payload_bytes": 17830,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 4490
+      },
+      "all_styles/singleton_runs/front_pool": {
+        "bytes": 20218,
+        "header_bytes": 2814,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2191,
+        "style_payload_bytes": 12301,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 532
+      },
+      "all_styles/singleton_runs/existing_bible_codec": {
+        "bytes": 21376,
+        "header_bytes": 13,
+        "chapter_index_bytes": 2380,
+        "chapter_framing_bytes": 2192,
+        "style_payload_bytes": 12301,
+        "layout_payload_bytes": 0,
+        "heading_payload_bytes": 4490
+      }
+    },
+    "production_resources": [
+      "container.bin",
+      "search.bin",
+      "pruning.bin",
+      "verses.bin"
+    ],
+    "whole_blob_deflate_reference_bytes": 19323,
+    "style_masks": {
+      "0": 740939,
+      "4": 6883,
+      "8": 41809
+    },
+    "max_chapter_font_transition_bytes_at_three_bytes_per_event": 246
+  },
+  "comparison_bytes": {
+    "gamma_style_sidecar": 18741,
+    "inline_style_flags": 13927,
+    "inline_flags_with_book_defaults": 5926,
+    "separate_sidecars_with_book_defaults": 5105,
+    "separate_sidecars_with_book_defaults_and_redletter": 7117
+  },
+  "recommended": {
+    "style_bytes": 2352,
+    "heading_bytes": 2753,
+    "total_bytes": 5105,
+    "including_redletter_bytes": 7117,
+    "word_default_table_bytes": 45,
+    "default_word_keys": [
+      "god",
+      "jehovah",
+      "lord",
+      "lord's"
+    ],
+    "smallcaps_exceptions": 762,
+    "heading_huffman": {
+      "model_bytes": 107,
+      "blocks": 6,
+      "dictionary_bytes": 1823,
+      "original_dictionary_bytes": 2801
+    },
+    "source_text_and_index_unchanged": true
+  },
+  "validation": {
+    "inline_search_cases": 1464,
+    "inline_atom_checks": 3158524,
+    "production_resource_files": [
+      "container.bin",
+      "search.bin",
+      "pruning.bin",
+      "verses.bin"
+    ],
+    "versions_audited": [
+      "kjv",
+      "nkjv",
+      "esv",
+      "niv",
+      "nasb",
+      "csb"
+    ]
+  },
+  "artifacts": {
+    "sidecars": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-options-v4",
+    "compact": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-compact",
+    "layouts": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-layout",
+    "word": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-word-defaults-verified",
+    "small": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-small-huffman",
+    "inline_type": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-inline-type",
+    "inline_all": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-inline-all",
+    "inline_pred_type": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-inline-predicted",
+    "inline_pred_all": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-inline-predicted-all",
+    "inline_check": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/formatting-inline-style-check"
+  },
+  "additional_translation_example": {
+    "status": "passed",
+    "version": "nkjv",
+    "layout_file_bytes": 33681,
+    "heading_huffman": {
+      "model_bytes": 142,
+      "blocks": 165,
+      "dictionary_bytes": 35133,
+      "original_dictionary_bytes": 55584
+    },
+    "heading_file": {
+      "bytes": 51713,
+      "index_bytes": 2471,
+      "present_chapters": 1160,
+      "header_bytes": 35146,
+      "framing_bytes": 0
+    },
+    "variants": {
+      "typography/runs": {
+        "style_bytes": 31715,
+        "separate_total": 117109,
+        "combined_bytes": 116840,
+        "style_huffman_table_bytes": 0,
+        "bytes": 31715,
+        "index_bytes": 2477,
+        "present_chapters": 1163,
+        "header_bytes": 59,
+        "framing_bytes": 0
+      },
+      "typography/runs_huffman": {
+        "style_bytes": 27476,
+        "separate_total": 112870,
+        "combined_bytes": 112600,
+        "style_huffman_table_bytes": 283,
+        "bytes": 27476,
+        "index_bytes": 2477,
+        "present_chapters": 1163,
+        "header_bytes": 342,
+        "framing_bytes": 0
+      },
+      "all_styles/runs": {
+        "style_bytes": 33442,
+        "separate_total": 118836,
+        "combined_bytes": 118567,
+        "style_huffman_table_bytes": 0,
+        "bytes": 33442,
+        "index_bytes": 2477,
+        "present_chapters": 1163,
+        "header_bytes": 59,
+        "framing_bytes": 0
+      },
+      "all_styles/runs_huffman": {
+        "style_bytes": 29143,
+        "separate_total": 114537,
+        "combined_bytes": 114267,
+        "style_huffman_table_bytes": 283,
+        "bytes": 29143,
+        "index_bytes": 2477,
+        "present_chapters": 1163,
+        "header_bytes": 342,
+        "framing_bytes": 0
+      }
+    }
+  },
+  "nkjv_italic_only": {
+    "runs": {
+      "bytes": 29997,
+      "index_bytes": 2477,
+      "present_chapters": 1163,
+      "header_bytes": 14,
+      "framing_bytes": 0
+    },
+    "compact_huffman": {
+      "bytes": 25968,
+      "index_bytes": 2477,
+      "present_chapters": 1163,
+      "header_bytes": 297,
+      "framing_bytes": 0
+    },
+    "italic_atoms": 22847
+  },
+  "verse_zero_validation": {
+    "host_cases": 102,
+    "mame_cases": 15,
+    "explicit_zero_rejected": true
+  }
+}

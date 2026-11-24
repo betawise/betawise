@@ -1,0 +1,698 @@
+{
+  "status": "passed",
+  "applet_id": "0xA1B1",
+  "default_version": "KJV",
+  "default_rom_bytes": 1431648,
+  "default_static_ram_bytes": 2828,
+  "decoder_workspace_bytes": 236,
+  "variants": [
+    {
+      "version": "NKJV",
+      "filename": "BibleReader-NKJV.OS3KApp",
+      "rom_bytes": 1470016,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "NKJV",
+        "bytes": 1040674,
+        "search_bytes": 372894,
+        "search_words": 13056,
+        "hot_dictionary_bytes": 2611,
+        "max_chapter_bytes": 12873,
+        "max_dictionary_word": 17,
+        "dictionary_entries": 15767,
+        "chapters": 1189,
+        "verses": 31102,
+        "mapped_text_bytes": 4025833
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 4025833,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 4397,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 4397,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 795,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 10,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 981,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 178,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 82,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 123,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 981,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "version": "ESV",
+      "filename": "BibleReader-ESV.OS3KApp",
+      "rom_bytes": 1445920,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "ESV",
+        "bytes": 1016763,
+        "search_bytes": 372703,
+        "search_words": 13306,
+        "hot_dictionary_bytes": 2607,
+        "max_chapter_bytes": 12492,
+        "max_dictionary_word": 16,
+        "dictionary_entries": 15685,
+        "chapters": 1189,
+        "verses": 31103,
+        "mapped_text_bytes": 3932249
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 3932249,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 4357,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 4357,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 719,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 10,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 966,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 1,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 149,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 82,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 1,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 135,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 966,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "version": "NIV",
+      "filename": "BibleReader-NIV.OS3KApp",
+      "rom_bytes": 1476532,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "NIV",
+        "bytes": 1030663,
+        "search_bytes": 389416,
+        "search_words": 13930,
+        "hot_dictionary_bytes": 2592,
+        "max_chapter_bytes": 12253,
+        "max_dictionary_word": 17,
+        "dictionary_entries": 16841,
+        "chapters": 1189,
+        "verses": 31103,
+        "mapped_text_bytes": 3837895
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 3837895,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 3999,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 3999,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 563,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 5,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 1301,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 1,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 160,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 69,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 356,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 1301,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "version": "NASB",
+      "filename": "BibleReader-NASB.OS3KApp",
+      "rom_bytes": 1495588,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "NASB",
+        "bytes": 1054933,
+        "search_bytes": 384206,
+        "search_words": 14019,
+        "hot_dictionary_bytes": 2638,
+        "max_chapter_bytes": 12871,
+        "max_dictionary_word": 17,
+        "dictionary_entries": 16708,
+        "chapters": 1189,
+        "verses": 31103,
+        "mapped_text_bytes": 4042842
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 4042842,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 4362,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 4362,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 752,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 8,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 987,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 1,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 152,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 84,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 134,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 987,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "version": "CSB",
+      "filename": "BibleReader-CSB.OS3KApp",
+      "rom_bytes": 1475404,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "CSB",
+        "bytes": 1027372,
+        "search_bytes": 391580,
+        "search_words": 14324,
+        "hot_dictionary_bytes": 2593,
+        "max_chapter_bytes": 12357,
+        "max_dictionary_word": 17,
+        "dictionary_entries": 17349,
+        "chapters": 1189,
+        "verses": 31104,
+        "mapped_text_bytes": 3846951
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 3846951,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 4123,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 4123,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 554,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 5,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 948,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 162,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 74,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 1023,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 948,
+          "exact": true
+        }
+      ]
+    },
+    {
+      "version": "KJV",
+      "filename": "BibleReader.OS3KApp",
+      "rom_bytes": 1431648,
+      "ram_bytes": 2828,
+      "id": "0xA1B1",
+      "resources": {
+        "search_index_kind": "chapter",
+        "version": "KJV",
+        "bytes": 1007155,
+        "search_bytes": 368039,
+        "search_words": 12517,
+        "hot_dictionary_bytes": 2626,
+        "max_chapter_bytes": 12992,
+        "max_dictionary_word": 17,
+        "dictionary_entries": 14244,
+        "chapters": 1189,
+        "verses": 31102,
+        "mapped_text_bytes": 4138567
+      },
+      "native_check": {
+        "status": "passed",
+        "codec": "huffman",
+        "chapters": 1189,
+        "text_bytes": 4138567,
+        "reverse_chapter_decode_exact": true
+      },
+      "search_queries": [
+        {
+          "query": "God",
+          "occurrences": 4446,
+          "exact": true
+        },
+        {
+          "query": "god",
+          "occurrences": 4446,
+          "exact": true
+        },
+        {
+          "query": "the earth",
+          "occurrences": 849,
+          "exact": true
+        },
+        {
+          "query": "in the beginning",
+          "occurrences": 17,
+          "exact": true
+        },
+        {
+          "query": "Jesus",
+          "occurrences": 984,
+          "exact": true
+        },
+        {
+          "query": "Jesus Jesus",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "believe",
+          "occurrences": 143,
+          "exact": true
+        },
+        {
+          "query": "believed",
+          "occurrences": 116,
+          "exact": true
+        },
+        {
+          "query": "zzzzunknown",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "love love",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "verily verily",
+          "occurrences": 25,
+          "exact": true
+        },
+        {
+          "query": "I am that I am",
+          "occurrences": 1,
+          "exact": true
+        },
+        {
+          "query": "a a",
+          "occurrences": 0,
+          "exact": true
+        },
+        {
+          "query": "LORD's",
+          "occurrences": 134,
+          "exact": true
+        },
+        {
+          "query": "Jesus'",
+          "occurrences": 984,
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "vendor_font_checks": [
+    {
+      "font": "small",
+      "checks": 36,
+      "height": 11,
+      "proportional": true
+    },
+    {
+      "font": "medium",
+      "checks": 36,
+      "height": 13,
+      "proportional": true
+    },
+    {
+      "font": "large",
+      "checks": 36,
+      "height": 16,
+      "proportional": true
+    },
+    {
+      "font": "vlarge",
+      "checks": 36,
+      "height": 21,
+      "proportional": true
+    },
+    {
+      "font": "xlarge",
+      "checks": 36,
+      "height": 32,
+      "proportional": true
+    },
+    {
+      "font": "tiny",
+      "checks": 36,
+      "height": 6,
+      "proportional": false
+    }
+  ],
+  "production_checks": 36,
+  "production_evidence": "reader-refinement-production",
+  "native_dialog_checks": 4,
+  "profile_evidence": "reader-profile-chapter-final",
+  "timings_seconds": {
+    "ps119_pure_decode_before": 0.918561,
+    "ps119_pure_decode_after": 0.612137504232,
+    "ps119_load_and_final_verse_before": 3.4069,
+    "ps119_load_and_final_verse_after": 2.5281316583230016,
+    "genesis_pure_decode_after": 0.178707017254,
+    "first_believe_search_cpu": 0.007219518127,
+    "next_believe_search_cpu": 0.01053531933,
+    "full_nohit_search_cpu": 17.325102432521
+  },
+  "rejected_verse_bloom": {
+    "index_bytes": 429146,
+    "first_believe_search_cpu_seconds": 1.457,
+    "full_nohit_search_cpu_seconds": 26.4885
+  },
+  "physical_power_tested": false
+}

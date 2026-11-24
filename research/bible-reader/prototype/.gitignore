@@ -1,0 +1,16 @@
+/bible.bin
+/Navigation.h
+/seek.bin
+/seek_prepare
+/*.su
+
+/search.bin
+/verses.bin
+
+/.build-profile
+
+/pruning.bin
+
+/wide.bin
+/verse-boost.bin
+/verse-boost.json

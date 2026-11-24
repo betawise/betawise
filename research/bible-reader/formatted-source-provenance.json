@@ -1,0 +1,38 @@
+{
+  "commit": "93ff30bbb530c53cd2ab26e42ee555d3938ded14",
+  "files": {
+    "data/kjv/kjv.json": {
+      "bytes": 6965262,
+      "git_blob_sha1": "543cead8250bf47b99427ad7901a1fcc026d8f78"
+    },
+    "data/kjv/kjv-footnotes.json": {
+      "bytes": 1151307,
+      "git_blob_sha1": "ff7e65afec066461ee157ab17136d3a87cdc1faa"
+    }
+  },
+  "items": 32429,
+  "headings": 1327,
+  "verses": 31102,
+  "words": 789631,
+  "marked_words": 78350,
+  "flags": {
+    "p": 31102,
+    "s": 6883,
+    "r": 41809
+  },
+  "flag_combinations": {
+    "p": 29658,
+    "s": 6864,
+    "sp": 19,
+    "r": 40384,
+    "rp": 1425
+  },
+  "sparse_format_events_bytes": 205392,
+  "plain_verse_text_bytes": 4140141,
+  "footnotes": 6956,
+  "footnote_text_bytes": 218700,
+  "style_transition_events": 15108,
+  "style_transition_bytes": 31406,
+  "paragraph_markers_all_at_verse_start": true,
+  "style_sidecar_exact_roundtrip": true
+}

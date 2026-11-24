@@ -1,0 +1,70 @@
+-- Native direct dispatcher tests only. No screens, cable, enumeration or flash writes.
+local machine=manager.machine
+local cpu=machine.devices[':maincpu'];local m=cpu.spaces.program
+local frame,phase,index=0,'wait',0
+local code,stack=0x70000,0x7e000
+local output_directory=@OUTPUT@
+local regs={'D0','D1','D2','D3','D4','D5','D6','D7','A0','A1','A2','A3','A4','A5','A6','SP','PC','SR'}
+local saved={};local ram={};local globals={}
+local addresses={0x13d56,0x13d5a,0x13cee,0x13cf2}
+local byteaddresses={0x13ceb,0x13cec,0x13cf6,0x3dfd}
+local cases={{0x40002,0,7},{0x40002,4,7},{0x40006,5,0},{0x40006,8,0}}
+local function eq(a,b)assert(a==b,string.format('%x != %x',a,b))end
+local function restore()
+ for a,v in pairs(ram)do m:write_u8(a,v)end
+ for a,v in pairs(globals)do m:write_u8(a,v)end
+ for _,r in ipairs(regs)do cpu.state[r].value=saved[r]end
+end
+emu.register_frame_done(function()
+ frame=frame+1
+ local ok,err=pcall(function()
+  assert(frame<1800,'bounded native probe deadline')
+  if phase=='wait' then
+   -- This isolated dispatcher needs no filesystem/format-dialog completion.
+   -- Wait for real main-ROM execution with a mapped RAM stack, then install
+   -- only its explicitly listed callback/queue fixture below.
+   local pc=cpu.state.PC.value;local sp=cpu.state.SP.value
+   if pc<0x410000 or pc>=0x470000 or sp<0x1000 or sp>=0x80000 then return end
+   for _,r in ipairs(regs)do saved[r]=cpu.state[r].value end
+   for a=0x70000,0x75fff do ram[a]=m:read_u8(a)end
+   for a=0x7d000,0x7efff do ram[a]=m:read_u8(a)end
+   for _,a in ipairs(addresses)do for j=0,3 do globals[a+j]=m:read_u8(a+j)end end
+   for _,a in ipairs(byteaddresses)do globals[a]=m:read_u8(a)end
+   -- Shared firmware output buffer must also survive the test call.
+   for a=0x35fa,0x39f9 do globals[a]=m:read_u8(a)end
+   local blob={@BYTES@};for i,v in ipairs(blob)do m:write_u8(0x70400+i-1,v)end
+   phase='start'
+  end
+  if phase=='start'then
+   index=index+1
+   if index>#cases then restore();print('PASS native USB dispatcher 4 cases');machine:exit();return end
+   local c=cases[index]
+   for a=0x74000,0x7407f do m:write_u8(a,0)end
+   m:write_u32(0x74040,c[2]);m:write_u32(0x13d56,@CALLBACK@);m:write_u32(0x13d5a,0)
+   m:write_u32(0x13cee,0);m:write_u32(0x13cf2,0);m:write_u8(0x13ceb,0);m:write_u8(0x13cec,0);m:write_u8(0x13cf6,0)
+   for i,v in ipairs({0,255,128,66,0,127,165})do m:write_u8(0x75000+i-1,v)end
+   m:write_u16(code,0x4eb9);m:write_u32(code+2,0x44129e);m:write_u16(code+6,0x60fe)
+   -- JSR pushes return; the dispatcher sees three ordinary stack-slot arguments.
+   m:write_u32(stack,c[1]);m:write_u32(stack+4,c[3]);m:write_u32(stack+8,c[3]>0 and 0x75000 or 0)
+   cpu.state.SR.value=0x2700;cpu.state.SP.value=stack;cpu.state.PC.value=code
+   phase='return';return
+  end
+  if phase=='return' then
+   local pc=cpu.state.PC.value;if pc~=code+6 and pc~=code+8 then return end
+   local c=cases[index]
+   eq(cpu.state.SP.value,stack);eq(m:read_u32(0x74000),c[1]);eq(m:read_u32(0x74004),c[3]);eq(m:read_u32(0x7400c),1024);eq(m:read_u32(0x74010),0);eq(m:read_u32(0x74014),0x35fa)
+   if c[3]>0 then for i,v in ipairs({0,255,128,66,0,127,165})do eq(m:read_u8(0x74020+i-1),v)end end
+   for i=0,15 do eq(m:read_u8(0x35fa+i),i*17)end
+   if c[2]==4 or c[2]==5 then eq(m:read_u32(0x13cee),16);eq(m:read_u32(0x13cf2),0x35fa)else eq(m:read_u32(0x13cee),0)end
+   eq(m:read_u8(0x13cec),c[2]==5 and 1 or 0)
+   eq(m:read_u32(0x13d56),c[2]==8 and 0x441064 or @CALLBACK@)
+   local function hex(a,n)local t={};for i=0,n-1 do t[#t+1]=string.format('%02x',m:read_u8(a+i))end;return table.concat(t)end
+   local record=assert(io.open(output_directory..'/case-'..index..'.json','w'))
+   record:write(string.format('{"message":"%08x","reply":"%x","callback_observation_hex":"%s","output_hex":"%s","queued_length":%d,"queued_address":"%08x","zlp_pending":%d,"handler":"%08x"}\n',c[1],c[2],hex(0x74000,0x50),hex(0x35fa,16),m:read_u32(0x13cee),m:read_u32(0x13cf2),m:read_u8(0x13cec),m:read_u32(0x13d56)))
+   record:close()
+   print(string.format('PASS native USB case=%d message=%x reply=%x input=%d',index,c[1],c[2],c[3]))
+   phase='start'
+  end
+ end)
+ if not ok then print('FAIL native USB '..tostring(err));machine:exit()end
+end)

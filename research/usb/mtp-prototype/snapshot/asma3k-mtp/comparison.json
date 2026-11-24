@@ -1,0 +1,201 @@
+{
+  "FAT12 read-only": {
+    "static_ram_bytes": 252,
+    "fat_view_state_bytes": 60,
+    "test_telemetry_bytes": 84,
+    "test_stack_reserved_bytes": 8192,
+    "entry": "0x3045a",
+    "end": "0x32f88",
+    "code_bytes": 11915,
+    "disk_image_bytes": 0,
+    "sector_buffer_bytes": 0,
+    "sectors": 4096,
+    "scope": "build only; filesystem export and AS3000 runtime awaiting validation"
+  },
+  "MTP read-only": {
+    "writable": false,
+    "code_bytes": 7697,
+    "static_ram_bytes": 648,
+    "stack_reserved_bytes": 8192,
+    "telemetry_bytes": 84,
+    "max_session_file_handles": 0,
+    "whole_file_buffer_bytes": 0,
+    "upload_chunk_bytes": 0,
+    "entry": "0x30364",
+    "end": "0x3209c"
+  },
+  "MTP read-write": {
+    "writable": true,
+    "code_bytes": 10575,
+    "static_ram_bytes": 1864,
+    "stack_reserved_bytes": 8192,
+    "telemetry_bytes": 84,
+    "max_session_file_handles": 256,
+    "whole_file_buffer_bytes": 0,
+    "upload_chunk_bytes": 128,
+    "entry": "0x30364",
+    "end": "0x33098"
+  },
+  "vhci_kernel_operations": {
+    "0x1001": {
+      "count": 1,
+      "total_seconds": 0.3884827659931034,
+      "median_seconds": 0.3884827659931034,
+      "download_bytes": 189,
+      "upload_bytes": 0
+    },
+    "0x1002": {
+      "count": 1,
+      "total_seconds": 0.045037257950752974,
+      "median_seconds": 0.045037257950752974,
+      "download_bytes": 0,
+      "upload_bytes": 0
+    },
+    "0x1005": {
+      "count": 1,
+      "total_seconds": 0.17910631000995636,
+      "median_seconds": 0.17910631000995636,
+      "download_bytes": 78,
+      "upload_bytes": 0
+    },
+    "0x1007": {
+      "count": 1,
+      "total_seconds": 0.753274490009062,
+      "median_seconds": 0.753274490009062,
+      "download_bytes": 80,
+      "upload_bytes": 0
+    },
+    "0x1008": {
+      "count": 19,
+      "total_seconds": 3.1723581809783354,
+      "median_seconds": 0.16138184105511755,
+      "download_bytes": 1350,
+      "upload_bytes": 0
+    },
+    "0x1009": {
+      "count": 19,
+      "total_seconds": 14.719542222912423,
+      "median_seconds": 0.7484648289391771,
+      "download_bytes": 8705,
+      "upload_bytes": 0
+    },
+    "0x100c": {
+      "count": 3,
+      "total_seconds": 0.7529658990679309,
+      "median_seconds": 0.25205323507543653,
+      "download_bytes": 0,
+      "upload_bytes": 220
+    },
+    "0x100d": {
+      "count": 3,
+      "total_seconds": 8.925669225980528,
+      "median_seconds": 1.0645626750774682,
+      "download_bytes": 0,
+      "upload_bytes": 4609
+    },
+    "0x100b": {
+      "count": 3,
+      "total_seconds": 0.18472308502532542,
+      "median_seconds": 0.05809697799850255,
+      "download_bytes": 0,
+      "upload_bytes": 0
+    },
+    "0x1003": {
+      "count": 1,
+      "total_seconds": 0.05308738991152495,
+      "median_seconds": 0.05308738991152495,
+      "download_bytes": 0,
+      "upload_bytes": 0
+    }
+  },
+  "vhci_bridge": {
+    "bulk_packet_requests": 32664,
+    "nak_requests": 26529,
+    "nak_fraction": 0.8121785451873622,
+    "packet_socket_seconds": 33.45750953396782,
+    "socket_seconds_on_nak": 27.23392829671502,
+    "backoff_seconds": 57.66407968464773,
+    "queue_wait_seconds": 10.592169320676476,
+    "bulk_urbs": 676,
+    "median_socket_request_ms": 0.868741946760565,
+    "note": "Combined independent-host and gphoto diagnostics, excludes idle status polling; queue/backoff may overlap other tasks, so totals are not an exclusive partition."
+  },
+  "ro_host_stages": [
+    {
+      "stage": "usbip_attach",
+      "seconds": 0.06402160809375346
+    },
+    {
+      "stage": "kernel_enumeration",
+      "seconds": 1.026001033023931
+    },
+    {
+      "stage": "gphoto_client",
+      "seconds": 42.48903721105307
+    },
+    {
+      "stage": "kernel_client",
+      "seconds": 30.510132269002497
+    },
+    {
+      "stage": "usbip_detach",
+      "seconds": 0.003948532044887543
+    }
+  ],
+  "rw_gphoto_stages": [
+    {
+      "stage": "enumerate",
+      "seconds": 9.517943111946806
+    },
+    {
+      "stage": "download-folder:AlphaWord Plus",
+      "seconds": 9.735085758031346
+    },
+    {
+      "stage": "upload:513",
+      "seconds": 4.5342543120495975
+    },
+    {
+      "stage": "readback:513",
+      "seconds": 10.745414271950722
+    }
+  ],
+  "resources": {
+    "resource-ro-v1": {
+      "rss_peak_kib": 83872,
+      "swap_peak_kib": 0,
+      "cpu_percent_median": 97.91265641955451
+    },
+    "rw": {
+      "rss_peak_kib": 84768,
+      "swap_peak_kib": 0,
+      "cpu_percent_median": 96.921176335034
+    },
+    "final-rw-v2": {
+      "rss_peak_kib": 84052,
+      "swap_peak_kib": 0,
+      "cpu_percent_median": 97.90572500471912
+    }
+  },
+  "stack": {
+    "resource-ro-v1": {
+      "stack_high_water_bytes": 388,
+      "minimum_observed_sp": 253564,
+      "watermark_including_nonstack_writes": 388
+    },
+    "rw": {
+      "stack_high_water_bytes": 456,
+      "minimum_observed_sp": 253504,
+      "watermark_including_nonstack_writes": 5171
+    },
+    "final-rw-v2": {
+      "stack_high_water_bytes": 456,
+      "minimum_observed_sp": 253504,
+      "watermark_including_nonstack_writes": 456
+    },
+    "FAT12 read-only": {
+      "stack_high_water_bytes": 568,
+      "minimum_observed_sp": 253384
+    }
+  }
+}

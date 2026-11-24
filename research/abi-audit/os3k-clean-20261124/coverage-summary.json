@@ -1,0 +1,18 @@
+{
+  "defined_syscalls": 264,
+  "covered_syscalls": 264,
+  "empty_slots_checked": 21,
+  "per_rom_executed": {
+    "as3000": 219,
+    "neo_3_21": 264
+  },
+  "live_roms": [
+    "as3000",
+    "neo_3_21"
+  ],
+  "table_checked_roms": [
+    "as3000",
+    "neo_3_01",
+    "neo_3_21"
+  ]
+}

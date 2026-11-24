@@ -1,0 +1,23 @@
+[
+  {
+    "layout": 12,
+    "selected_body_text": "Beta",
+    "native_selection_attribute": 1,
+    "changed_pixels": 2433,
+    "letter_choice": "B"
+  },
+  {
+    "layout": 13,
+    "selected_body_text": "Beta",
+    "native_selection_attribute": 1,
+    "changed_pixels": 2343,
+    "letter_choice": null
+  },
+  {
+    "layout": 15,
+    "selected_body_text": "Beta",
+    "native_selection_attribute": 1,
+    "changed_pixels": 2433,
+    "letter_choice": null
+  }
+]

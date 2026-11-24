@@ -1,0 +1,536 @@
+[
+  {
+    "reader": "native",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-line-v2",
+    "checks": 317,
+    "initial": {
+      "seconds": 2.0503691420259997,
+      "work": []
+    },
+    "scroll_seconds": 7.072371833250976,
+    "total_seconds": 9.122740975276976,
+    "final_end": {
+      "seconds": 0.25065160456699687,
+      "work": []
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.022017256544007324,
+    "movement_max_seconds": 0.25065160456699687,
+    "pure_decode": {
+      "seconds": 0.6412196102679957,
+      "work": []
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8537259308989995,
+      "work": []
+    },
+    "initial_editor_refresh": {
+      "seconds": 0.6361895775939992,
+      "work": []
+    },
+    "initial_jump": {
+      "seconds": 0.25430906996299996,
+      "work": []
+    }
+  },
+  {
+    "reader": "native",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 2.0503691420259997,
+      "work": []
+    },
+    "scroll_seconds": 7.080830690725005,
+    "total_seconds": 9.131199832751005,
+    "final_end": {
+      "seconds": 0.25065160456799873,
+      "work": []
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.08807002131499786,
+    "movement_max_seconds": 0.25065160456799873,
+    "pure_decode": {
+      "seconds": 0.6412196102680028,
+      "work": []
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8537259308989995,
+      "work": []
+    },
+    "initial_editor_refresh": {
+      "seconds": 0.6361895775939992,
+      "work": []
+    },
+    "initial_jump": {
+      "seconds": 0.25430906996299996,
+      "work": []
+    }
+  },
+  {
+    "reader": "streaming",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-line",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.06790921056600041,
+      "work": []
+    },
+    "scroll_seconds": 23.38526747580591,
+    "total_seconds": 23.45317668637191,
+    "final_end": {
+      "seconds": 0.003650831138998001,
+      "work": []
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.0756091393019993,
+    "movement_max_seconds": 0.08053914548700192,
+    "pure_decode": {
+      "seconds": 0.6644028373240047,
+      "work": []
+    },
+    "total_work": []
+  },
+  {
+    "reader": "streaming",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.06790921056600041,
+      "work": []
+    },
+    "scroll_seconds": 5.911783150403014,
+    "total_seconds": 5.979692360969015,
+    "final_end": {
+      "seconds": 0.0037191036660004784,
+      "work": []
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.07642183567500105,
+    "movement_max_seconds": 0.07998090298999827,
+    "pure_decode": {
+      "seconds": 0.6644028373240047,
+      "work": []
+    },
+    "total_work": []
+  },
+  {
+    "reader": "native",
+    "version": "NKJV",
+    "mode": "line",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-line-work",
+    "checks": 317,
+    "initial": {
+      "seconds": 2.092295831323998,
+      "work": [
+        12873,
+        12873,
+        1,
+        0
+      ]
+    },
+    "scroll_seconds": 7.072441734183975,
+    "total_seconds": 9.164737565507973,
+    "final_end": {
+      "seconds": 0.25065160456699687,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.02201327599049563,
+    "movement_max_seconds": 0.25065160456699687,
+    "pure_decode": {
+      "seconds": 0.6831483501530045,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      12873,
+      12873,
+      1,
+      0
+    ],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8956526201969979,
+      "work": [
+        12873,
+        12873,
+        1,
+        0
+      ]
+    },
+    "initial_editor_refresh": {
+      "seconds": 0.6361895775939992,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "initial_jump": {
+      "seconds": 0.25430906996299996,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "reader": "native",
+    "version": "NKJV",
+    "mode": "page",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-page-work",
+    "checks": 83,
+    "initial": {
+      "seconds": 2.092295831323998,
+      "work": [
+        12873,
+        12873,
+        1,
+        0
+      ]
+    },
+    "scroll_seconds": 7.080830690733027,
+    "total_seconds": 9.173126522057025,
+    "final_end": {
+      "seconds": 0.25065160456699687,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.08807177034549696,
+    "movement_max_seconds": 0.25065160456699687,
+    "pure_decode": {
+      "seconds": 0.6831483501539992,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      12873,
+      12873,
+      1,
+      0
+    ],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8956526201969979,
+      "work": [
+        12873,
+        12873,
+        1,
+        0
+      ]
+    },
+    "initial_editor_refresh": {
+      "seconds": 0.6361895775939992,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "initial_jump": {
+      "seconds": 0.25430906996299996,
+      "work": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "reader": "streaming",
+    "version": "NKJV",
+    "mode": "line",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-line-work",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.06855972953299982,
+      "work": [
+        195,
+        195,
+        5,
+        4
+      ]
+    },
+    "scroll_seconds": 23.64032905131194,
+    "total_seconds": 23.70888878084494,
+    "final_end": {
+      "seconds": 0.0037442535279978983,
+      "work": [
+        28,
+        27,
+        1,
+        1
+      ]
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.07640959245700074,
+    "movement_max_seconds": 0.08134774068400219,
+    "pure_decode": {
+      "seconds": 0.7063315772099941,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      76872,
+      76869,
+      1559,
+      1558
+    ]
+  },
+  {
+    "reader": "streaming",
+    "version": "NKJV",
+    "mode": "page",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-page-work",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.06855972953299982,
+      "work": [
+        195,
+        195,
+        5,
+        4
+      ]
+    },
+    "scroll_seconds": 5.975633824632979,
+    "total_seconds": 6.044193554165979,
+    "final_end": {
+      "seconds": 0.0038125260539985106,
+      "work": [
+        28,
+        27,
+        1,
+        1
+      ]
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.07724170910799977,
+    "movement_max_seconds": 0.08082857998699922,
+    "pure_decode": {
+      "seconds": 0.7063315772089993,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      19389,
+      19385,
+      396,
+      395
+    ]
+  },
+  {
+    "reader": "streaming-roll",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-line-v3",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.043829152705001206,
+      "work": []
+    },
+    "scroll_seconds": 5.958512317394025,
+    "total_seconds": 6.002341470099026,
+    "final_end": {
+      "seconds": 0.0033437857040041763,
+      "work": []
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.019196461311498325,
+    "movement_max_seconds": 0.021963488913996798,
+    "pure_decode": {
+      "seconds": 0.66440283732301,
+      "work": []
+    },
+    "total_work": []
+  },
+  {
+    "reader": "streaming-roll",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.043829152705001206,
+      "work": []
+    },
+    "scroll_seconds": 4.033448471766,
+    "total_seconds": 4.077277624471002,
+    "final_end": {
+      "seconds": 0.003413686638999991,
+      "work": []
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.052055961999498024,
+    "movement_max_seconds": 0.05494364259600104,
+    "pure_decode": {
+      "seconds": 0.6644028373230029,
+      "work": []
+    },
+    "total_work": []
+  },
+  {
+    "reader": "streaming-roll",
+    "version": "NKJV",
+    "mode": "line",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-line-work",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.04447967167299893,
+      "work": [
+        195,
+        195,
+        5,
+        4
+      ]
+    },
+    "scroll_seconds": 6.060794453248036,
+    "total_seconds": 6.105274124921035,
+    "final_end": {
+      "seconds": 0.003437208091995103,
+      "work": [
+        28,
+        27,
+        1,
+        1
+      ]
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.0195076682344979,
+    "movement_max_seconds": 0.02228301881299899,
+    "pure_decode": {
+      "seconds": 0.7063315772090135,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      30943,
+      30940,
+      629,
+      628
+    ]
+  },
+  {
+    "reader": "streaming-roll",
+    "version": "NKJV",
+    "mode": "page",
+    "work": true,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-page-work",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.04447967167299893,
+      "work": [
+        195,
+        195,
+        5,
+        4
+      ]
+    },
+    "scroll_seconds": 4.097299146004001,
+    "total_seconds": 4.141778817677,
+    "final_end": {
+      "seconds": 0.003507109026998023,
+      "work": [
+        28,
+        27,
+        1,
+        1
+      ]
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.052895496955001065,
+    "movement_max_seconds": 0.05580760367699966,
+    "pure_decode": {
+      "seconds": 0.7063315772089993,
+      "work": [
+        12874,
+        12873,
+        1,
+        0
+      ]
+    },
+    "total_work": [
+      19389,
+      19385,
+      396,
+      395
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+--- a/applets/BibleWise/BibleWise.c
++++ b/applets/BibleWise/BibleWise.c
+@@ -212,7 +212,7 @@
+ }
+ 
+ static void DrawBusyFrame(void) {
+-    uint8_t pixels[6];
++    uint8_t pixels[15];
+     memset(pixels, 0xff, sizeof(pixels));
+     g_busy_dots = g_busy_dots % 3 + 1;
+     for(unsigned dot = 0; dot < 3; ++dot) {
+@@ -834,13 +834,26 @@
+     BibleSearchResult_e result;
+     uint32_t start = GetUptimeMilliseconds();
+     ReaderProbeSet(phase, 11);
++#if BIBLEWISE_TEST && BIBLEWISE_TEST_TIMER
++    volatile uint8_t expired = 0;
++    TimerId_t timer = TIMER_ID_INVALID;
++    bool timed = TimerStart(READER_SEARCH_SLICE_MS, &expired, 0, &timer) == TIMER_OK;
++#endif
+     /* Yield on a held key as well as a queued event. A full ScanKeyboard call
+      * is too expensive here; the event loop performs normal key processing. */
+     do {
+         result = BibleSearchStep(&g_search, READER_SEARCH_BLOCK);
++#if !(BIBLEWISE_TEST && BIBLEWISE_TEST_TIMER)
+         UpdateBusy();
++#endif
+     } while(result == BIBLE_SEARCH_PENDING && !IsKeyReady() && !IsKeyDownNow() &&
++#if BIBLEWISE_TEST && BIBLEWISE_TEST_TIMER
++        (timed ? !expired : GetUptimeMilliseconds() - start < READER_SEARCH_SLICE_MS));
++    if(timed) TimerCancel(timer);
++    UpdateBusy();
++#else
+         GetUptimeMilliseconds() - start < READER_SEARCH_SLICE_MS);
++#endif
+     ReaderProbeSet(phase, 12);
+     if(result == BIBLE_SEARCH_PENDING) {
+         return;
+--- a/applets/BibleWise/Makefile
++++ b/applets/BibleWise/Makefile
+@@ -19,7 +19,7 @@
+ VERSION_LOWER = $(shell printf %s $(VERSION) | tr A-Z a-z)
+ APP_NAME = BibleWise$(if $(filter KJV,$(VERSION)),,-$(VERSION))
+ DATA_DIR = build/data/$(VERSION_LOWER)
+-BUILD_DIR = build/$(VERSION)$(if $(filter 1,$(TESTING)),-test$(if $(TEST_FONT_ID),-$(TEST_FONT_ID)))
++BUILD_DIR = build/$(VERSION)$(if $(filter 1,$(TESTING)),-test$(if $(TEST_FONT_ID),-$(TEST_FONT_ID))$(if $(TEST_SEARCH_TIMER),-timer))
+ TARGET = $(if $(filter 1,$(TESTING)),$(BUILD_DIR)/)$(APP_NAME).OS3KApp
+ OBJ = $(addprefix $(BUILD_DIR)/,BibleWise.o Decoder.o Search.o Resources.o)
+ 
+@@ -30,6 +30,9 @@
+ CPPFLAGS += -I$(DATA_DIR) -Ibuild/generated
+ CPPFLAGS += -DBIBLE_APP_NAME=\"$(APP_NAME)\" -DBIBLE_VERSION=\"$(VERSION)\"
+ CPPFLAGS += -DBIBLEWISE_TEST=$(TESTING)
++ifeq ($(TEST_SEARCH_TIMER),1)
++CPPFLAGS += -DBIBLEWISE_TEST_TIMER=1
++endif
+ CPPFLAGS += -DBIBLE_CONTAINER_PATH=\"$(DATA_DIR)/container.bin\"
+ CPPFLAGS += -DBIBLE_INDEX_PATH=\"$(DATA_DIR)/search.bin\"
+ CPPFLAGS += -DBIBLE_VERSES_PATH=\"$(DATA_DIR)/verses.bin\"
+--- a/tests/mame/asneo/check-biblewise.py
++++ b/tests/mame/asneo/check-biblewise.py
+@@ -30,6 +30,7 @@
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--version', choices=['KJV', 'NKJV'], default='KJV')
+     parser.add_argument('--case', choices=['reader', 'search', 'feedback', 'native'], default='reader')
++    parser.add_argument('--search-timer', action='store_true', help='Test-only timer-backed search slice experiment')
+     parser.add_argument('--vendor-font', choices=list(FONT_HEIGHTS))
+     parser.add_argument('--output', type=Path, required=True)
+     parser.add_argument('--verify-only', action='store_true')
+@@ -46,13 +47,15 @@
+             else firmware / f'neofont{args.vendor_font}.os3kapp')
+     font_id = int.from_bytes(vendor_font.read_bytes()[20:22], 'big') if vendor_font else None
+     command = ['make', '-C', str(APP), f'VERSION={args.version}', 'TESTING=1']
++    if args.search_timer:
++        command.append('TEST_SEARCH_TIMER=1')
+     if font_id:
+         command.append(f'TEST_FONT_ID={font_id:#x}')
+     with (output / 'build.log').open('w') as log:
+         subprocess.run(command, stdout=log, stderr=subprocess.STDOUT, check=True)
+ 
+     stem = 'BibleWise' + ('' if args.version == 'KJV' else '-' + args.version)
+-    build = APP / 'build' / (args.version + '-test' + (f'-{font_id:#x}' if font_id else ''))
++    build = APP / 'build' / (args.version + '-test' + (f'-{font_id:#x}' if font_id else '') + ('-timer' if args.search_timer else ''))
+     emulator = ROOT / 'mame/neodiag'
+     prepare_session(output, firmware, 'extra', emulator)
+     flash = bytearray((output / 'nvram/asneo/flashnv').read_bytes())

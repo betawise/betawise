@@ -1,0 +1,9 @@
+{
+  "metric": "linked .text sections only; excludes Bible, fonts, strings, tables and relocations",
+  "bytes": {
+    "SDK/runtime": 2128,
+    "BibleWise.o": 8600,
+    "Decoder.o": 1964,
+    "Search.o": 4088
+  }
+}

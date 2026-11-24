@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-24",
+  "result": "PASS",
+  "cases": 54,
+  "scope": "Directed original Neo 3.21 ROM/ABI checks with synthetic SPI; no physical RF or interactive screen acceptance.",
+  "reproduce": "python3 betawise/research/syscalls/wireless/run-probe.py NEW_OUTPUT"
+}

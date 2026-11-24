@@ -1,0 +1,59 @@
+{
+  "sources": [
+    "asma3k/DebugTool.lua",
+    "asma3k/HelloWorld.lua",
+    "asma3k/check.sh",
+    "asma3k/README.md",
+    "asma3k/MicroPythonRepl.lua",
+    "asma3k/OS3KROM.OS3KOS",
+    "asma3k/MicroPythonProfile.lua",
+    "asma3k/MicroPythonFacilities.lua",
+    "asma3k/asma3k.lua",
+    "asma3k/MicroPython.lua",
+    "asneo/neo_reader.py",
+    "asneo/test_neo_reader.py",
+    "asneo/.gitignore",
+    "asneo/MicroPythonBackspace.lua",
+    "asneo/README.md",
+    "asneo/check-repl.py",
+    "asneo/NeoHarness.lua",
+    "asneo/logo_graphics.py",
+    "asneo/test_logo_graphics.py",
+    "asneo/check.py",
+    "asneo/fixtures/backspace-cursor.png",
+    "asneo/fixtures/backspace-clean.png",
+    "asneo/fixtures/logo-graphics/square10.png",
+    "asneo/fixtures/logo-graphics/north-moved.png",
+    "asneo/fixtures/logo-graphics/README.md",
+    "asneo/fixtures/logo-graphics/north.png",
+    "asneo/fixtures/logo-graphics/east.png",
+    "asneo/fixtures/logo-graphics/square20.png",
+    "asneo/fixtures/logo-graphics/home-line.png",
+    "asneo/fixtures/logo-graphics/pen-line.png",
+    "asneo/fixtures/logo-graphics/blank.png",
+    "asneo/fixtures/logo-graphics/square20-north.png"
+  ],
+  "inputs": [
+    "/home/kirk/Projects/Alphasmart/mame/mame",
+    "/home/kirk/Projects/Alphasmart/mame/neodiag",
+    "/home/kirk/Projects/Alphasmart/betawise/applets/MicroPython/MicroPython-extra.OS3KApp",
+    "/home/kirk/Projects/Alphasmart/betawise/applets/MicroPython/build-extra/MicroPython.OS3KApp"
+  ],
+  "git": {
+    "betawise": {
+      "head": "813f70371d4149b3ad40b5e7aa32cbe770363192",
+      "status": "?? applets/NeoFontTerminal/glyphs-4x6.png\n?? applets/NeoFontTerminal/glyphs-5x7.png\n?? applets/NeoFontTerminal/glyphs-5x8.png\n"
+    },
+    "mame": {
+      "head": "ca1dc90ea59c89c2c5d35389dbb1fda7357f9fa6",
+      "status": "M  src/mame/skeleton/alphasneo.cpp\n"
+    }
+  },
+  "host": {
+    "/proc/cpuinfo": "processor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 126\nmodel name\t: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz\nstepping\t: 5\nmicrocode\t: 0xca\ncpu MHz\t\t: 3273.502\ncache size\t: 4096 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 2\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust sgx bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid sgx_lc fsrm md_clear flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb gds bhi its its_native_only\nbogomips\t: 2380.80\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 126\nmodel name\t: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz\nstepping\t: 5\nmicrocode\t: 0xca\ncpu MHz\t\t: 3399.960\ncache size\t: 4096 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 2\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust sgx bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid sgx_lc fsrm md_clear flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb gds bhi its its_native_only\nbogomips\t: 2380.80\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 126\nmodel name\t: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz\nstepping\t: 5\nmicrocode\t: 0xca\ncpu MHz\t\t: 3351.843\ncache size\t: 4096 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 2\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust sgx bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid sgx_lc fsrm md_clear flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb gds bhi its its_native_only\nbogomips\t: 2380.80\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 126\nmodel name\t: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz\nstepping\t: 5\nmicrocode\t: 0xca\ncpu MHz\t\t: 3400.008\ncache size\t: 4096 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 2\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust sgx bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid sgx_lc fsrm md_clear flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs itlb_multihit srbds mmio_stale_data retbleed eibrs_pbrsb gds bhi its its_native_only\nbogomips\t: 2380.80\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\n",
+    "/proc/loadavg": "1.93 1.29 1.28 1/1537 2862\n"
+  },
+  "external_inputs": {
+    "asma3k/OS3KROM.OS3KOS": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708"
+  }
+}

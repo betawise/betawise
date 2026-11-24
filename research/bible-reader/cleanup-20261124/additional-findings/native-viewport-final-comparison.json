@@ -1,0 +1,98 @@
+[
+  {
+    "reader": "native-viewport",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-viewport-page-final",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.34641075887400063,
+      "work": [],
+      "lcd_writes": 2124
+    },
+    "scroll_seconds": 3.3453813031869934,
+    "background_seconds": 1.463503690540012,
+    "total_seconds": 5.155295752601006,
+    "final_end": {
+      "seconds": 0.2644538125439979,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.03879158110400027,
+    "movement_max_seconds": 0.2644538125439979,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.016722185338000628,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 1.3268509988506594e-06,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.023908230626002336,
+      "work": [],
+      "lcd_writes": 2120
+    }
+  },
+  {
+    "reader": "native-viewport",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-viewport-line-final",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.34641075887400063,
+      "work": [],
+      "lcd_writes": 2124
+    },
+    "scroll_seconds": 9.524528774594977,
+    "background_seconds": 1.4374322099300194,
+    "total_seconds": 11.308371743398997,
+    "final_end": {
+      "seconds": 0.2644538125439908,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.02951191536450004,
+    "movement_max_seconds": 0.2644538125439908,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.016722185338000628,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 1.3268509988506594e-06,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.023908230626002336,
+      "work": [],
+      "lcd_writes": 2120
+    }
+  }
+]

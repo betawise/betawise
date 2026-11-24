@@ -90,6 +90,14 @@ Vendor allocators use this as the bound for slices from
 SYS_INT_GET_SCRATCH_BUFFER_PTR. Executing the MathFacts allocator in MAME filled
 all 8192 bytes and rejected the next byte. Neo only.
 
+The [allocation re-audit](../../memory-allocation/README.md) freshly checks both
+selectors on all three inventoried ROMs: **Neo 3.21 supports them; AS3000 3.01
+and Neo 3.01 return false and leave output storage unchanged.** Do not treat
+"Neo only" above as availability on every Neo ROM. Two independent applet A5
+contexts can allocate overlapping slices from this same arena; these selectors
+provide no global allocation, locking, or ownership tracking. The original
+MathFacts byte allocator also does not align requests or implement free.
+
 uint32_t* output: unconditional 1 in the tested Neo 3.21 ROM,
 even without wireless detection. Unsupported by the Neo 3.01
 ROM, which returns false and leaves data untouched.

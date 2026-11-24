@@ -1,0 +1,21 @@
+{
+  "scope": "Explicit *source-row-ID targets collapsed to verse references; self links excluded; range labels not expanded; word anchors and labels not deduplicated by this analysis.",
+  "results": [
+    {
+      "version": "nkjv",
+      "unique_directed_verse_target_edges": 64183,
+      "reciprocal_directed_edges": 19132,
+      "reciprocal_percent": 29.81,
+      "unordered_verse_pairs": 54617,
+      "unresolved_target_ids": 0
+    },
+    {
+      "version": "esv",
+      "unique_directed_verse_target_edges": 79959,
+      "reciprocal_directed_edges": 37454,
+      "reciprocal_percent": 46.84,
+      "unordered_verse_pairs": 61232,
+      "unresolved_target_ids": 0
+    }
+  ]
+}

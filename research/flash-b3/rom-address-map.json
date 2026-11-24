@@ -1,0 +1,587 @@
+[
+  {
+    "name": "as3000",
+    "sha256": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+    "package_bytes": 277488,
+    "segments": [
+      {
+        "begin": "0x4c0000",
+        "logical_bytes": 262144,
+        "mapped_bytes": 262144,
+        "end_exclusive": "0x500000",
+        "source_offset": "0x0",
+        "padding": [
+          {
+            "begin": "0x4eb4d2",
+            "end_exclusive": "0x4fff80",
+            "bytes": 84654,
+            "fill": "0x0",
+            "aligned_absolute_values_into_range": [
+              {
+                "package_offset": "0x217c",
+                "value": "0x4f2f0a"
+              },
+              {
+                "package_offset": "0x16926",
+                "value": "0x4f0007"
+              },
+              {
+                "package_offset": "0x191ee",
+                "value": "0x4f6704"
+              },
+              {
+                "package_offset": "0x20350",
+                "value": "0x4f4e92"
+              },
+              {
+                "package_offset": "0x2b2fa",
+                "value": "0x4eb80f"
+              }
+            ],
+            "status": "candidate padding; semantic non-use not proven"
+          }
+        ]
+      },
+      {
+        "begin": "0x404000",
+        "logical_bytes": 15340,
+        "mapped_bytes": 15340,
+        "end_exclusive": "0x407bec",
+        "source_offset": "0x40000",
+        "padding": []
+      }
+    ],
+    "remaining_package_bytes": 4,
+    "note": "SmallROM excluded; omitted physical bytes are unknown, not free"
+  },
+  {
+    "name": "neo_3_01",
+    "sha256": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+    "package_bytes": 262168,
+    "segments": [
+      {
+        "begin": "0x5c0000",
+        "logical_bytes": 262144,
+        "mapped_bytes": 262144,
+        "end_exclusive": "0x600000",
+        "source_offset": "0x0",
+        "padding": [
+          {
+            "begin": "0x5f1cf6",
+            "end_exclusive": "0x5fff80",
+            "bytes": 57994,
+            "fill": "0x0",
+            "aligned_absolute_values_into_range": [
+              {
+                "package_offset": "0x25c76",
+                "value": "0x5f4e93"
+              }
+            ],
+            "status": "candidate padding; semantic non-use not proven"
+          }
+        ]
+      },
+      {
+        "begin": "0x406000",
+        "logical_bytes": 20,
+        "mapped_bytes": 20,
+        "end_exclusive": "0x406014",
+        "source_offset": "0x40000",
+        "padding": []
+      }
+    ],
+    "remaining_package_bytes": 4,
+    "note": "SmallROM excluded; omitted physical bytes are unknown, not free"
+  },
+  {
+    "name": "neo_3_21",
+    "sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+    "package_bytes": 395264,
+    "segments": [
+      {
+        "begin": "0x410000",
+        "logical_bytes": 393216,
+        "mapped_bytes": 393216,
+        "end_exclusive": "0x470000",
+        "source_offset": "0x0",
+        "padding": [
+          {
+            "begin": "0x44fb26",
+            "end_exclusive": "0x44ff80",
+            "bytes": 1114,
+            "fill": "0x0",
+            "aligned_absolute_values_into_range": [],
+            "status": "candidate padding; semantic non-use not proven"
+          },
+          {
+            "begin": "0x452e8e",
+            "end_exclusive": "0x46ff80",
+            "bytes": 119026,
+            "fill": "0xff",
+            "aligned_absolute_values_into_range": [
+              {
+                "package_offset": "0x111c",
+                "value": "0x456000"
+              },
+              {
+                "package_offset": "0x1244",
+                "value": "0x466000"
+              },
+              {
+                "package_offset": "0x110b4",
+                "value": "0x46005e"
+              },
+              {
+                "package_offset": "0x115ca",
+                "value": "0x46005e"
+              },
+              {
+                "package_offset": "0x137a4",
+                "value": "0x456722"
+              },
+              {
+                "package_offset": "0x144e8",
+                "value": "0x45671a"
+              },
+              {
+                "package_offset": "0x15f64",
+                "value": "0x457217"
+              },
+              {
+                "package_offset": "0x181fa",
+                "value": "0x4692ac"
+              },
+              {
+                "package_offset": "0x18252",
+                "value": "0x4690ac"
+              },
+              {
+                "package_offset": "0x1848a",
+                "value": "0x469eac"
+              },
+              {
+                "package_offset": "0x1850c",
+                "value": "0x46676e"
+              },
+              {
+                "package_offset": "0x18c3c",
+                "value": "0x466610"
+              },
+              {
+                "package_offset": "0x18d66",
+                "value": "0x466700"
+              },
+              {
+                "package_offset": "0x19ab0",
+                "value": "0x462f0a"
+              },
+              {
+                "package_offset": "0x19f04",
+                "value": "0x462080"
+              },
+              {
+                "package_offset": "0x1a102",
+                "value": "0x4642a7"
+              },
+              {
+                "package_offset": "0x1a974",
+                "value": "0x464206"
+              },
+              {
+                "package_offset": "0x1add6",
+                "value": "0x4698ac"
+              },
+              {
+                "package_offset": "0x1b440",
+                "value": "0x4692aa"
+              },
+              {
+                "package_offset": "0x1bce8",
+                "value": "0x46b9ca"
+              },
+              {
+                "package_offset": "0x1bf8a",
+                "value": "0x4692ac"
+              },
+              {
+                "package_offset": "0x1cb3c",
+                "value": "0x467200"
+              },
+              {
+                "package_offset": "0x1d612",
+                "value": "0x46486f"
+              },
+              {
+                "package_offset": "0x1e02c",
+                "value": "0x4692aa"
+              },
+              {
+                "package_offset": "0x1e050",
+                "value": "0x4690aa"
+              },
+              {
+                "package_offset": "0x1f34a",
+                "value": "0x466700"
+              },
+              {
+                "package_offset": "0x1ffea",
+                "value": "0x46422b"
+              },
+              {
+                "package_offset": "0x1fff2",
+                "value": "0x460049"
+              },
+              {
+                "package_offset": "0x21a16",
+                "value": "0x466500"
+              },
+              {
+                "package_offset": "0x23242",
+                "value": "0x462f0b"
+              },
+              {
+                "package_offset": "0x28bb8",
+                "value": "0x464878"
+              },
+              {
+                "package_offset": "0x28d1a",
+                "value": "0x464e94"
+              },
+              {
+                "package_offset": "0x28dca",
+                "value": "0x464e94"
+              },
+              {
+                "package_offset": "0x2ab60",
+                "value": "0x466006"
+              },
+              {
+                "package_offset": "0x2ab68",
+                "value": "0x4642ac"
+              },
+              {
+                "package_offset": "0x2ac22",
+                "value": "0x4642ac"
+              },
+              {
+                "package_offset": "0x2acd0",
+                "value": "0x4642ac"
+              },
+              {
+                "package_offset": "0x2b0c6",
+                "value": "0x46ba83"
+              },
+              {
+                "package_offset": "0x2b64e",
+                "value": "0x466004"
+              },
+              {
+                "package_offset": "0x2b654",
+                "value": "0x467000"
+              },
+              {
+                "package_offset": "0x2b6d4",
+                "value": "0x466608"
+              },
+              {
+                "package_offset": "0x2b7f0",
+                "value": "0x464eb9"
+              },
+              {
+                "package_offset": "0x2baf8",
+                "value": "0x466710"
+              },
+              {
+                "package_offset": "0x2bce6",
+                "value": "0x4666ee"
+              },
+              {
+                "package_offset": "0x2bef2",
+                "value": "0x454eb9"
+              },
+              {
+                "package_offset": "0x2c646",
+                "value": "0x460024"
+              },
+              {
+                "package_offset": "0x2c73a",
+                "value": "0x46202b"
+              },
+              {
+                "package_offset": "0x2fa10",
+                "value": "0x467004"
+              },
+              {
+                "package_offset": "0x2fb2e",
+                "value": "0x462f0c"
+              },
+              {
+                "package_offset": "0x2fb36",
+                "value": "0x464e93"
+              },
+              {
+                "package_offset": "0x31bb4",
+                "value": "0x46182f"
+              },
+              {
+                "package_offset": "0x32312",
+                "value": "0x46142f"
+              },
+              {
+                "package_offset": "0x3352c",
+                "value": "0x46620c"
+              },
+              {
+                "package_offset": "0x34c54",
+                "value": "0x456600"
+              },
+              {
+                "package_offset": "0x34f62",
+                "value": "0x456002"
+              },
+              {
+                "package_offset": "0x357aa",
+                "value": "0x455343"
+              },
+              {
+                "package_offset": "0x357d0",
+                "value": "0x457665"
+              },
+              {
+                "package_offset": "0x35844",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x35ec0",
+                "value": "0x457073"
+              },
+              {
+                "package_offset": "0x362d4",
+                "value": "0x456e74"
+              },
+              {
+                "package_offset": "0x36320",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x36370",
+                "value": "0x456e74"
+              },
+              {
+                "package_offset": "0x36700",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x3671e",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x36744",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x36764",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x367c4",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x367e8",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x36802",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x36824",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x3685e",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x36a2a",
+                "value": "0x456e74"
+              },
+              {
+                "package_offset": "0x36dd6",
+                "value": "0x456d61"
+              },
+              {
+                "package_offset": "0x36fea",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x37676",
+                "value": "0x456e74"
+              },
+              {
+                "package_offset": "0x37738",
+                "value": "0x456e74"
+              },
+              {
+                "package_offset": "0x377ee",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x37888",
+                "value": "0x466f72"
+              },
+              {
+                "package_offset": "0x378a6",
+                "value": "0x466f72"
+              },
+              {
+                "package_offset": "0x37f6e",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x37fb4",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x37fca",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x381de",
+                "value": "0x46e262"
+              },
+              {
+                "package_offset": "0x381ea",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x38200",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x38216",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x38238",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x3824e",
+                "value": "0x46e262"
+              },
+              {
+                "package_offset": "0x3825a",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x38282",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x38298",
+                "value": "0x45e262"
+              },
+              {
+                "package_offset": "0x382b0",
+                "value": "0x46e262"
+              },
+              {
+                "package_offset": "0x38ebc",
+                "value": "0x464f52"
+              },
+              {
+                "package_offset": "0x38f8e",
+                "value": "0x466173"
+              },
+              {
+                "package_offset": "0x39018",
+                "value": "0x457272"
+              },
+              {
+                "package_offset": "0x3907e",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x390a0",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x390e2",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x3917e",
+                "value": "0x466c6f"
+              },
+              {
+                "package_offset": "0x3919e",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x3924c",
+                "value": "0x46696c"
+              },
+              {
+                "package_offset": "0x3d3ce",
+                "value": "0x460048"
+              },
+              {
+                "package_offset": "0x419be",
+                "value": "0x464878"
+              }
+            ],
+            "status": "candidate padding; semantic non-use not proven"
+          }
+        ]
+      },
+      {
+        "begin": "0x406000",
+        "logical_bytes": 20,
+        "mapped_bytes": 1024,
+        "end_exclusive": "0x406400",
+        "source_offset": "0x60000",
+        "padding": [
+          {
+            "begin": "0x406014",
+            "end_exclusive": "0x406400",
+            "bytes": 1004,
+            "fill": "0x0",
+            "aligned_absolute_values_into_range": [
+              {
+                "package_offset": "0x1c9b6",
+                "value": "0x40603e"
+              }
+            ],
+            "status": "candidate padding; semantic non-use not proven"
+          }
+        ]
+      },
+      {
+        "begin": "0x5ffc00",
+        "logical_bytes": 1024,
+        "mapped_bytes": 1024,
+        "end_exclusive": "0x600000",
+        "source_offset": "0x60400",
+        "padding": [
+          {
+            "begin": "0x5ffc00",
+            "end_exclusive": "0x5fff80",
+            "bytes": 896,
+            "fill": "0x0",
+            "aligned_absolute_values_into_range": [
+              {
+                "package_offset": "0x60",
+                "value": "0x5ffc00"
+              }
+            ],
+            "status": "candidate padding; semantic non-use not proven"
+          }
+        ]
+      }
+    ],
+    "remaining_package_bytes": 0,
+    "note": "SmallROM excluded; omitted physical bytes are unknown, not free"
+  }
+]

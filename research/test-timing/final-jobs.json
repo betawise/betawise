@@ -1,0 +1,164 @@
+[
+  {
+    "id": "perf-valid-as3k-fs10-0",
+    "platform": "as3k",
+    "case": "mini",
+    "fs": 10,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "10"
+    ]
+  },
+  {
+    "id": "perf-valid-as3k-fs6-0",
+    "platform": "as3k",
+    "case": "mini",
+    "fs": 6,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "6"
+    ]
+  },
+  {
+    "id": "perf-valid-as3k-fs0-0",
+    "platform": "as3k",
+    "case": "mini",
+    "fs": 0,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ]
+  },
+  {
+    "id": "perf-valid-as3k-fs10-1",
+    "platform": "as3k",
+    "case": "mini",
+    "fs": 10,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "10"
+    ]
+  },
+  {
+    "id": "perf-valid-neo-fs10-0",
+    "platform": "neo",
+    "case": "history",
+    "fs": 10,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "10"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-valid-neo-fs6-0",
+    "platform": "neo",
+    "case": "history",
+    "fs": 6,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "6"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-valid-neo-fs0-0",
+    "platform": "neo",
+    "case": "history",
+    "fs": 0,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-valid-neo-fs10-1",
+    "platform": "neo",
+    "case": "history",
+    "fs": 10,
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "10"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-adaptive-graphics-2-4",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "timing": {
+      "hold": 2,
+      "step": 4,
+      "gap": 2
+    }
+  },
+  {
+    "id": "neo-adaptive-graphics-3-8-repeat",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5
+    }
+  }
+]

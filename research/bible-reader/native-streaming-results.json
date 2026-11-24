@@ -1,0 +1,3753 @@
+{
+  "version": "NKJV",
+  "font": "original system 6x16",
+  "source_bytes": 12873,
+  "wrapped_lines": 314,
+  "rows": [
+    {
+      "name": "native-original",
+      "label": "Native, original wrapper",
+      "flags": {
+        "READER": "BibleReader",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 0,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 0
+      },
+      "rom_bytes": 1332008,
+      "a5_bytes": 3122,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 22030,
+      "file_peak_bytes": 14860,
+      "measurements": {
+        "line": {
+          "reader": "native",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-line-v2",
+          "checks": 317,
+          "initial": {
+            "seconds": 2.0503691420259997,
+            "work": []
+          },
+          "scroll_seconds": 7.072371833250976,
+          "background_seconds": 0,
+          "total_seconds": 9.122740975276976,
+          "final_end": {
+            "seconds": 0.25065160456699687,
+            "work": []
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.022017256544007324,
+          "movement_max_seconds": 0.25065160456699687,
+          "pure_decode": {
+            "seconds": 0.6412196102679957,
+            "work": []
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.8537259308989995,
+            "work": []
+          },
+          "initial_editor_refresh": {
+            "seconds": 0.6361895775939992,
+            "work": []
+          },
+          "initial_jump": {
+            "seconds": 0.25430906996299996,
+            "work": []
+          }
+        },
+        "page": {
+          "reader": "native",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 2.0503691420259997,
+            "work": []
+          },
+          "scroll_seconds": 7.080830690725005,
+          "background_seconds": 0,
+          "total_seconds": 9.131199832751005,
+          "final_end": {
+            "seconds": 0.25065160456799873,
+            "work": []
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.08807002131499786,
+          "movement_max_seconds": 0.25065160456799873,
+          "pure_decode": {
+            "seconds": 0.6412196102680028,
+            "work": []
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.8537259308989995,
+            "work": []
+          },
+          "initial_editor_refresh": {
+            "seconds": 0.6361895775939992,
+            "work": []
+          },
+          "initial_jump": {
+            "seconds": 0.25430906996299996,
+            "work": []
+          }
+        }
+      },
+      "application_rom_bytes": 20182,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 13360,
+      "font_bytes": 3584,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 5375,
+          "functions": 29,
+          "cc_sum": 307,
+          "cc_max": 60
+        },
+        "including_codec_search": {
+          "c_tokens": 10164,
+          "functions": 58,
+          "cc_sum": 523,
+          "cc_max": 60
+        },
+        "translation_units": [
+          {
+            "unit": "BibleReader",
+            "source_tokens": {
+              "BibleReader.c": 5375
+            },
+            "functions": [
+              {
+                "name": "close_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "read_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "be16",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "logical",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "verse_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "observe",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "ui_line",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "show_notice",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "redraw",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "reference",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "make_super",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "append",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "emit_byte",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "marker",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "move_to",
+                "source": "BibleReader.c",
+                "cc": 6
+              },
+              {
+                "name": "jump",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "jump_word",
+                "source": "BibleReader.c",
+                "cc": 20
+              },
+              {
+                "name": "open_chapter",
+                "source": "BibleReader.c",
+                "cc": 39
+              },
+              {
+                "name": "save",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "prompt",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "parse_reference",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "search_next",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "BibleReader.c",
+                "cc": 8
+              },
+              {
+                "name": "copy_verses_impl",
+                "source": "BibleReader.c",
+                "cc": 21
+              },
+              {
+                "name": "copy_verses",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "accept",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "character",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "BibleReader.c",
+                "cc": 60
+              }
+            ]
+          },
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2169
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2620
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "native-optimized",
+      "label": "Native, optimized full chapter",
+      "flags": {
+        "READER": "BibleReader",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 0,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 1,
+        "NATIVE_PAGE_TEST": 1
+      },
+      "rom_bytes": 1331958,
+      "a5_bytes": 3122,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 21980,
+      "file_peak_bytes": 14860,
+      "measurements": {
+        "line": {
+          "reader": "native-direct-cmd-page",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "background_policy": null,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final-optimized-line",
+          "checks": 317,
+          "initial": {
+            "seconds": 1.414112256888,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 7.072441734196978,
+          "background_seconds": 0,
+          "total_seconds": 8.486553991084978,
+          "final_end": {
+            "seconds": 0.25065160456800584,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.022016954987496007,
+          "movement_max_seconds": 0.25065160456800584,
+          "pure_decode": {
+            "seconds": 0.6412196102670009,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.8536581408639989,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031139996309776e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.25430894934000037,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        },
+        "page": {
+          "reader": "native-direct-cmd-page",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-direct-cmd-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 1.4141122568889983,
+            "work": []
+          },
+          "scroll_seconds": 2.708812306458988,
+          "background_seconds": 0,
+          "total_seconds": 4.122924563347986,
+          "final_end": {
+            "seconds": 0.25065160456800584,
+            "work": []
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.0312384503630021,
+          "movement_max_seconds": 0.25065160456800584,
+          "pure_decode": {
+            "seconds": 0.6412196102680028,
+            "work": []
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.8536581408640025,
+            "work": []
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031139996309776e-07,
+            "work": []
+          },
+          "initial_jump": {
+            "seconds": 0.2543089493409987,
+            "work": []
+          }
+        }
+      },
+      "application_rom_bytes": 20132,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 13310,
+      "font_bytes": 3584,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 5372,
+          "functions": 29,
+          "cc_sum": 306,
+          "cc_max": 60
+        },
+        "including_codec_search": {
+          "c_tokens": 10161,
+          "functions": 58,
+          "cc_sum": 522,
+          "cc_max": 60
+        },
+        "translation_units": [
+          {
+            "unit": "BibleReader",
+            "source_tokens": {
+              "BibleReader.c": 5372
+            },
+            "functions": [
+              {
+                "name": "close_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "read_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "be16",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "logical",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "verse_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "observe",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "ui_line",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "show_notice",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "redraw",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "reference",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "make_super",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "append",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "emit_byte",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "marker",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "move_to",
+                "source": "BibleReader.c",
+                "cc": 6
+              },
+              {
+                "name": "jump",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "jump_word",
+                "source": "BibleReader.c",
+                "cc": 20
+              },
+              {
+                "name": "open_chapter",
+                "source": "BibleReader.c",
+                "cc": 39
+              },
+              {
+                "name": "save",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "prompt",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "parse_reference",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "search_next",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "BibleReader.c",
+                "cc": 8
+              },
+              {
+                "name": "copy_verses_impl",
+                "source": "BibleReader.c",
+                "cc": 21
+              },
+              {
+                "name": "copy_verses",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "accept",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "character",
+                "source": "BibleReader.c",
+                "cc": 47
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "BibleReader.c",
+                "cc": 60
+              }
+            ]
+          },
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2169
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2620
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "native-window",
+      "label": "Native moving window",
+      "flags": {
+        "READER": "BibleReader",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 1,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 1
+      },
+      "rom_bytes": 1335442,
+      "a5_bytes": 3294,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 25464,
+      "file_peak_bytes": 4250,
+      "measurements": {
+        "line": {
+          "reader": "native-window",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "background_policy": null,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-window-line",
+          "checks": 317,
+          "initial": {
+            "seconds": 0.370327372788001,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 11.479288093390988,
+          "background_seconds": 0,
+          "total_seconds": 11.849615466178989,
+          "final_end": {
+            "seconds": 0.05177433782799312,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.022113815126498793,
+          "movement_max_seconds": 0.33748545287799914,
+          "pure_decode": {
+            "seconds": 0.6476468775910007,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032067581597999606,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031149979435213e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547400232,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        },
+        "page": {
+          "reader": "native-window",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "background_policy": null,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-window-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 0.370327372788001,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 7.19189151552299,
+          "background_seconds": 0,
+          "total_seconds": 7.562218888310991,
+          "final_end": {
+            "seconds": 0.05177433782800023,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.031796994416000146,
+          "movement_max_seconds": 0.36532182655000156,
+          "pure_decode": {
+            "seconds": 0.6476468775910007,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032067581597999606,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031149979435213e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547400232,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        }
+      },
+      "application_rom_bytes": 23616,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 16696,
+      "font_bytes": 3584,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 7968,
+          "functions": 47,
+          "cc_sum": 459,
+          "cc_max": 65
+        },
+        "including_codec_search": {
+          "c_tokens": 12757,
+          "functions": 76,
+          "cc_sum": 675,
+          "cc_max": 65
+        },
+        "translation_units": [
+          {
+            "unit": "BibleReader",
+            "source_tokens": {
+              "BibleReader.c": 5725,
+              "NativeFeed.h": 2243
+            },
+            "functions": [
+              {
+                "name": "close_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "read_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "be16",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "logical",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "verse_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "observe",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "ui_line",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "show_notice",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "redraw",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "reference",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "make_super",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "append",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "emit_byte",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "marker",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "feed_capture_file",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_abs",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_stats",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_position",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_drop",
+                "source": "NativeFeed.h",
+                "cc": 10
+              },
+              {
+                "name": "feed_more",
+                "source": "NativeFeed.h",
+                "cc": 26
+              },
+              {
+                "name": "feed_geometry",
+                "source": "NativeFeed.h",
+                "cc": 7
+              },
+              {
+                "name": "feed_start",
+                "source": "NativeFeed.h",
+                "cc": 2
+              },
+              {
+                "name": "feed_rebuild",
+                "source": "NativeFeed.h",
+                "cc": 15
+              },
+              {
+                "name": "feed_verse",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_view",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_finish",
+                "source": "NativeFeed.h",
+                "cc": 6
+              },
+              {
+                "name": "feed_ready",
+                "source": "NativeFeed.h",
+                "cc": 24
+              },
+              {
+                "name": "feed_selection",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_key",
+                "source": "NativeFeed.h",
+                "cc": 11
+              },
+              {
+                "name": "feed_key_done",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_select_all",
+                "source": "NativeFeed.h",
+                "cc": 4
+              },
+              {
+                "name": "move_to",
+                "source": "BibleReader.c",
+                "cc": 13
+              },
+              {
+                "name": "jump",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "jump_word",
+                "source": "BibleReader.c",
+                "cc": 17
+              },
+              {
+                "name": "open_chapter",
+                "source": "BibleReader.c",
+                "cc": 23
+              },
+              {
+                "name": "save",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "prompt",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "parse_reference",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "search_next",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "BibleReader.c",
+                "cc": 8
+              },
+              {
+                "name": "copy_verses_impl",
+                "source": "BibleReader.c",
+                "cc": 21
+              },
+              {
+                "name": "copy_feed_selection",
+                "source": "BibleReader.c",
+                "cc": 22
+              },
+              {
+                "name": "copy_verses",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "accept",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "character",
+                "source": "BibleReader.c",
+                "cc": 49
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "BibleReader.c",
+                "cc": 65
+              }
+            ]
+          },
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2169
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2620
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "native-demand",
+      "label": "Native append on demand",
+      "flags": {
+        "READER": "BibleReader",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 2,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 1
+      },
+      "rom_bytes": 1335146,
+      "a5_bytes": 3282,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 25168,
+      "file_peak_bytes": 14860,
+      "measurements": {
+        "line": {
+          "reader": "native-demand",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "background_policy": null,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-line",
+          "checks": 317,
+          "initial": {
+            "seconds": 0.37032206538300017,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 18.179180401177007,
+          "background_seconds": 0,
+          "total_seconds": 18.549502466560007,
+          "final_end": {
+            "seconds": 0.25070305020800276,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.022113815126502345,
+          "movement_max_seconds": 0.7666625373280027,
+          "pure_decode": {
+            "seconds": 0.6476468775909865,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032062274192998785,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.03115001496235e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547399877,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        },
+        "page": {
+          "reader": "native-demand",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "background_policy": null,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 0.37032206538300017,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 13.862883013380007,
+          "background_seconds": 0,
+          "total_seconds": 14.233205078763007,
+          "final_end": {
+            "seconds": 0.2507030502089975,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.03178785723600086,
+          "movement_max_seconds": 0.7784426843520009,
+          "pure_decode": {
+            "seconds": 0.6476468775910007,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032062274192998785,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.03115001496235e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547399877,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        }
+      },
+      "application_rom_bytes": 23320,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 16408,
+      "font_bytes": 3584,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 7764,
+          "functions": 46,
+          "cc_sum": 447,
+          "cc_max": 65
+        },
+        "including_codec_search": {
+          "c_tokens": 12553,
+          "functions": 75,
+          "cc_sum": 663,
+          "cc_max": 65
+        },
+        "translation_units": [
+          {
+            "unit": "BibleReader",
+            "source_tokens": {
+              "BibleReader.c": 5725,
+              "NativeFeed.h": 2039
+            },
+            "functions": [
+              {
+                "name": "close_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "read_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "be16",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "logical",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "verse_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "observe",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "ui_line",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "show_notice",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "redraw",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "reference",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "make_super",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "append",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "emit_byte",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "marker",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "feed_capture_file",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_abs",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_stats",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_position",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_more",
+                "source": "NativeFeed.h",
+                "cc": 24
+              },
+              {
+                "name": "feed_geometry",
+                "source": "NativeFeed.h",
+                "cc": 7
+              },
+              {
+                "name": "feed_start",
+                "source": "NativeFeed.h",
+                "cc": 2
+              },
+              {
+                "name": "feed_rebuild",
+                "source": "NativeFeed.h",
+                "cc": 15
+              },
+              {
+                "name": "feed_verse",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_view",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_finish",
+                "source": "NativeFeed.h",
+                "cc": 6
+              },
+              {
+                "name": "feed_ready",
+                "source": "NativeFeed.h",
+                "cc": 24
+              },
+              {
+                "name": "feed_selection",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_key",
+                "source": "NativeFeed.h",
+                "cc": 11
+              },
+              {
+                "name": "feed_key_done",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_select_all",
+                "source": "NativeFeed.h",
+                "cc": 4
+              },
+              {
+                "name": "move_to",
+                "source": "BibleReader.c",
+                "cc": 13
+              },
+              {
+                "name": "jump",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "jump_word",
+                "source": "BibleReader.c",
+                "cc": 17
+              },
+              {
+                "name": "open_chapter",
+                "source": "BibleReader.c",
+                "cc": 23
+              },
+              {
+                "name": "save",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "prompt",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "parse_reference",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "search_next",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "BibleReader.c",
+                "cc": 8
+              },
+              {
+                "name": "copy_verses_impl",
+                "source": "BibleReader.c",
+                "cc": 21
+              },
+              {
+                "name": "copy_feed_selection",
+                "source": "BibleReader.c",
+                "cc": 22
+              },
+              {
+                "name": "copy_verses",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "accept",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "character",
+                "source": "BibleReader.c",
+                "cc": 49
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "BibleReader.c",
+                "cc": 65
+              }
+            ]
+          },
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2169
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2620
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "native-background",
+      "label": "Native background completion",
+      "flags": {
+        "READER": "BibleReader",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 3,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 1
+      },
+      "rom_bytes": 1335324,
+      "a5_bytes": 3290,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 25346,
+      "file_peak_bytes": 14860,
+      "measurements": {
+        "line": {
+          "reader": "native-background",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "background_policy": "finish_before_scroll",
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-line",
+          "checks": 317,
+          "initial": {
+            "seconds": 0.37032206538300017,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 7.338806694989138,
+          "background_seconds": 0.896385102385004,
+          "total_seconds": 8.605513862757142,
+          "final_end": {
+            "seconds": 0.25070305020800276,
+            "work": [],
+            "lcd_writes": 2120
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.02205823815350172,
+          "movement_max_seconds": 0.2526465253809995,
+          "pure_decode": {
+            "seconds": 0.6476468775910007,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032062274192998785,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031139996309776e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547400232,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        },
+        "page": {
+          "reader": "native-background",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "background_policy": "finish_before_scroll",
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 0.37032206538300017,
+            "work": [],
+            "lcd_writes": 4500
+          },
+          "scroll_seconds": 2.963727807748022,
+          "background_seconds": 0.896385102385004,
+          "total_seconds": 4.230434975516026,
+          "final_end": {
+            "seconds": 0.25063314927299984,
+            "work": [],
+            "lcd_writes": 2116
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.03130048065749946,
+          "movement_max_seconds": 0.27780760511900127,
+          "pure_decode": {
+            "seconds": 0.6476468775910007,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "total_work": [],
+          "initial_decode_and_file_fill": {
+            "seconds": 0.032062274192998785,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_editor_refresh": {
+            "seconds": 6.031139996309776e-07,
+            "work": [],
+            "lcd_writes": 0
+          },
+          "initial_jump": {
+            "seconds": 0.03211287547400232,
+            "work": [],
+            "lcd_writes": 4496
+          }
+        }
+      },
+      "application_rom_bytes": 23498,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 16578,
+      "font_bytes": 3584,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 7868,
+          "functions": 46,
+          "cc_sum": 456,
+          "cc_max": 74
+        },
+        "including_codec_search": {
+          "c_tokens": 12657,
+          "functions": 75,
+          "cc_sum": 672,
+          "cc_max": 74
+        },
+        "translation_units": [
+          {
+            "unit": "BibleReader",
+            "source_tokens": {
+              "BibleReader.c": 5829,
+              "NativeFeed.h": 2039
+            },
+            "functions": [
+              {
+                "name": "close_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "read_jump",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "be16",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "logical",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "verse_for",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "observe",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "ui_line",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "show_notice",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "redraw",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "reference",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "make_super",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "append",
+                "source": "BibleReader.c",
+                "cc": 2
+              },
+              {
+                "name": "emit_byte",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "marker",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "feed_capture_file",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_abs",
+                "source": "NativeFeed.h",
+                "cc": 1
+              },
+              {
+                "name": "feed_stats",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_position",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_more",
+                "source": "NativeFeed.h",
+                "cc": 24
+              },
+              {
+                "name": "feed_geometry",
+                "source": "NativeFeed.h",
+                "cc": 7
+              },
+              {
+                "name": "feed_start",
+                "source": "NativeFeed.h",
+                "cc": 2
+              },
+              {
+                "name": "feed_rebuild",
+                "source": "NativeFeed.h",
+                "cc": 15
+              },
+              {
+                "name": "feed_verse",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_view",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_finish",
+                "source": "NativeFeed.h",
+                "cc": 6
+              },
+              {
+                "name": "feed_ready",
+                "source": "NativeFeed.h",
+                "cc": 24
+              },
+              {
+                "name": "feed_selection",
+                "source": "NativeFeed.h",
+                "cc": 5
+              },
+              {
+                "name": "feed_key",
+                "source": "NativeFeed.h",
+                "cc": 11
+              },
+              {
+                "name": "feed_key_done",
+                "source": "NativeFeed.h",
+                "cc": 3
+              },
+              {
+                "name": "feed_select_all",
+                "source": "NativeFeed.h",
+                "cc": 4
+              },
+              {
+                "name": "move_to",
+                "source": "BibleReader.c",
+                "cc": 13
+              },
+              {
+                "name": "jump",
+                "source": "BibleReader.c",
+                "cc": 4
+              },
+              {
+                "name": "jump_word",
+                "source": "BibleReader.c",
+                "cc": 17
+              },
+              {
+                "name": "open_chapter",
+                "source": "BibleReader.c",
+                "cc": 23
+              },
+              {
+                "name": "save",
+                "source": "BibleReader.c",
+                "cc": 1
+              },
+              {
+                "name": "prompt",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "parse_reference",
+                "source": "BibleReader.c",
+                "cc": 48
+              },
+              {
+                "name": "search_next",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "BibleReader.c",
+                "cc": 8
+              },
+              {
+                "name": "copy_verses_impl",
+                "source": "BibleReader.c",
+                "cc": 21
+              },
+              {
+                "name": "copy_feed_selection",
+                "source": "BibleReader.c",
+                "cc": 22
+              },
+              {
+                "name": "copy_verses",
+                "source": "BibleReader.c",
+                "cc": 3
+              },
+              {
+                "name": "accept",
+                "source": "BibleReader.c",
+                "cc": 5
+              },
+              {
+                "name": "character",
+                "source": "BibleReader.c",
+                "cc": 49
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "BibleReader.c",
+                "cc": 74
+              }
+            ]
+          },
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2169
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2620
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "custom-repaint",
+      "label": "Custom, full repaint",
+      "flags": {
+        "READER": "Streaming",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 0,
+        "LCD_ROLL": 0,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 0
+      },
+      "rom_bytes": 1332322,
+      "a5_bytes": 3862,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 22344,
+      "file_peak_bytes": 0,
+      "measurements": {
+        "line": {
+          "reader": "streaming",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-line",
+          "checks": 317,
+          "initial": {
+            "seconds": 0.06790921056600041,
+            "work": []
+          },
+          "scroll_seconds": 23.38526747580591,
+          "background_seconds": 0,
+          "total_seconds": 23.45317668637191,
+          "final_end": {
+            "seconds": 0.003650831138998001,
+            "work": []
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.0756091393019993,
+          "movement_max_seconds": 0.08053914548700192,
+          "pure_decode": {
+            "seconds": 0.6644028373240047,
+            "work": []
+          },
+          "total_work": []
+        },
+        "page": {
+          "reader": "streaming",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 0.06790921056600041,
+            "work": []
+          },
+          "scroll_seconds": 5.911783150403014,
+          "background_seconds": 0,
+          "total_seconds": 5.979692360969015,
+          "final_end": {
+            "seconds": 0.0037191036660004784,
+            "work": []
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.07642183567500105,
+          "movement_max_seconds": 0.07998090298999827,
+          "pure_decode": {
+            "seconds": 0.6644028373240047,
+            "work": []
+          },
+          "total_work": []
+        }
+      },
+      "application_rom_bytes": 20496,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 19222,
+      "font_bytes": 0,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 9211,
+          "functions": 56,
+          "cc_sum": 498,
+          "cc_max": 57
+        },
+        "including_codec_search": {
+          "c_tokens": 14316,
+          "functions": 87,
+          "cc_sum": 725,
+          "cc_max": 57
+        },
+        "translation_units": [
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2477
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 8
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleSavePoint",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleRestorePoint",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2628
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          },
+          {
+            "unit": "Streaming",
+            "source_tokens": {
+              "Streaming.c": 9211
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "width",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "bitmap",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "hide",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "set_roll",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "row_y",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "band_y",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "band_h",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "rect",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "blit",
+                "source": "Streaming.c",
+                "cc": 11
+              },
+              {
+                "name": "font",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "byte",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "save_point",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "cache_line",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "word",
+                "source": "Streaming.c",
+                "cc": 30
+              },
+              {
+                "name": "restore_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "marker_width",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "boundary",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "selected",
+                "source": "Streaming.c",
+                "cc": 6
+              },
+              {
+                "name": "cell",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "marker",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "line",
+                "source": "Streaming.c",
+                "cc": 18
+              },
+              {
+                "name": "reopen",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "seek_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "range",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "invert_selection",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "scan_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "all",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "caret_show",
+                "source": "Streaming.c",
+                "cc": 6
+              },
+              {
+                "name": "observe",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "begin",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "finish",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "viewport",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "reset_reference",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "selection_refresh",
+                "source": "Streaming.c",
+                "cc": 22
+              },
+              {
+                "name": "word_offset",
+                "source": "Streaming.c",
+                "cc": 28
+              },
+              {
+                "name": "locate",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "move",
+                "source": "Streaming.c",
+                "cc": 33
+              },
+              {
+                "name": "page_move",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "reference",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "ui_text",
+                "source": "Streaming.c",
+                "cc": 10
+              },
+              {
+                "name": "ui",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "input_panel",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "restore_overlay",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "copy",
+                "source": "Streaming.c",
+                "cc": 29
+              },
+              {
+                "name": "end_chapter",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "start_chapter",
+                "source": "Streaming.c",
+                "cc": 9
+              },
+              {
+                "name": "parse_reference",
+                "source": "Streaming.c",
+                "cc": 48
+              },
+              {
+                "name": "prompt",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "previous_match",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "next_match",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "accept",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "character",
+                "source": "Streaming.c",
+                "cc": 32
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "Streaming.c",
+                "cc": 57
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    },
+    {
+      "name": "custom-lcd-roll",
+      "label": "Custom, LCD roll",
+      "flags": {
+        "READER": "Streaming",
+        "VERSION": "NKJV",
+        "PRUNE": 1,
+        "PROFILE": 0,
+        "TEST_FONT": 0,
+        "WORK_PROFILE": 0,
+        "NATIVE_STREAM": 0,
+        "LCD_ROLL": 1,
+        "NATIVE_OPEN_TEST": 0,
+        "NATIVE_PAGE_TEST": 0
+      },
+      "rom_bytes": 1332512,
+      "a5_bytes": 3834,
+      "common_resource_bytes": 1309978,
+      "other_rom_bytes": 22534,
+      "file_peak_bytes": 0,
+      "measurements": {
+        "line": {
+          "reader": "streaming-roll",
+          "version": "NKJV",
+          "mode": "line",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-line-v3",
+          "checks": 317,
+          "initial": {
+            "seconds": 0.043829152705001206,
+            "work": []
+          },
+          "scroll_seconds": 5.958512317394025,
+          "background_seconds": 0,
+          "total_seconds": 6.002341470099026,
+          "final_end": {
+            "seconds": 0.0033437857040041763,
+            "work": []
+          },
+          "movement_commands": 314,
+          "movement_median_seconds": 0.019196461311498325,
+          "movement_max_seconds": 0.021963488913996798,
+          "pure_decode": {
+            "seconds": 0.66440283732301,
+            "work": []
+          },
+          "total_work": []
+        },
+        "page": {
+          "reader": "streaming-roll",
+          "version": "NKJV",
+          "mode": "page",
+          "work": false,
+          "wrapped_lines": 314,
+          "source_bytes": 12873,
+          "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-stream-roll-page",
+          "checks": 83,
+          "initial": {
+            "seconds": 0.043829152705001206,
+            "work": []
+          },
+          "scroll_seconds": 4.033448471766,
+          "background_seconds": 0,
+          "total_seconds": 4.077277624471002,
+          "final_end": {
+            "seconds": 0.003413686638999991,
+            "work": []
+          },
+          "movement_commands": 80,
+          "movement_median_seconds": 0.052055961999498024,
+          "movement_max_seconds": 0.05494364259600104,
+          "pure_decode": {
+            "seconds": 0.6644028373230029,
+            "work": []
+          },
+          "total_work": []
+        }
+      },
+      "application_rom_bytes": 20686,
+      "bible_navigation_bytes": 1848,
+      "executable_bytes": 19434,
+      "font_bytes": 0,
+      "maintenance": {
+        "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+        "frontend": {
+          "c_tokens": 9413,
+          "functions": 56,
+          "cc_sum": 496,
+          "cc_max": 57
+        },
+        "including_codec_search": {
+          "c_tokens": 14518,
+          "functions": 87,
+          "cc_sum": 723,
+          "cc_max": 57
+        },
+        "translation_units": [
+          {
+            "unit": "HuffmanDecoder",
+            "source_tokens": {
+              "HuffmanDecoder.c": 2477
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "fail",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleInit",
+                "source": "HuffmanDecoder.c",
+                "cc": 22
+              },
+              {
+                "name": "BibleOpenChapter",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "refill",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "symbol",
+                "source": "HuffmanDecoder.c",
+                "cc": 5
+              },
+              {
+                "name": "spelling",
+                "source": "HuffmanDecoder.c",
+                "cc": 19
+              },
+              {
+                "name": "BibleReadNode",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BiblePushRule",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleReadTerminal",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              },
+              {
+                "name": "BibleReadByte",
+                "source": "HuffmanDecoder.c",
+                "cc": 8
+              },
+              {
+                "name": "BibleGetWord",
+                "source": "HuffmanDecoder.c",
+                "cc": 4
+              },
+              {
+                "name": "BibleOpenVerse",
+                "source": "HuffmanDecoder.c",
+                "cc": 6
+              },
+              {
+                "name": "BibleSavePoint",
+                "source": "HuffmanDecoder.c",
+                "cc": 1
+              },
+              {
+                "name": "BibleRestorePoint",
+                "source": "HuffmanDecoder.c",
+                "cc": 7
+              }
+            ]
+          },
+          {
+            "unit": "Search",
+            "source_tokens": {
+              "Search.c": 2628
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be24",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "be32",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "packed14",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "mapped",
+                "source": "Search.c",
+                "cc": 5
+              },
+              {
+                "name": "canonical",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "posting_offset",
+                "source": "Search.c",
+                "cc": 2
+              },
+              {
+                "name": "bit",
+                "source": "Search.c",
+                "cc": 1
+              },
+              {
+                "name": "read_postings",
+                "source": "Search.c",
+                "cc": 29
+              },
+              {
+                "name": "letter",
+                "source": "Search.c",
+                "cc": 4
+              },
+              {
+                "name": "lower",
+                "source": "Search.c",
+                "cc": 3
+              },
+              {
+                "name": "compare_word",
+                "source": "Search.c",
+                "cc": 6
+              },
+              {
+                "name": "filter",
+                "source": "Search.c",
+                "cc": 9
+              },
+              {
+                "name": "SearchStart",
+                "source": "Search.c",
+                "cc": 37
+              },
+              {
+                "name": "SearchStep",
+                "source": "Search.c",
+                "cc": 21
+              }
+            ]
+          },
+          {
+            "unit": "Streaming",
+            "source_tokens": {
+              "Streaming.c": 9413
+            },
+            "functions": [
+              {
+                "name": "be16",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "book_for",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "width",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "bitmap",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "hide",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "set_roll",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "row_y",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "band_y",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "band_h",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "rect",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "blit",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "font",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "byte",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "save_point",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "cache_line",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "word",
+                "source": "Streaming.c",
+                "cc": 30
+              },
+              {
+                "name": "restore_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "marker_width",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "boundary",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "selected",
+                "source": "Streaming.c",
+                "cc": 6
+              },
+              {
+                "name": "cell",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "marker",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "line",
+                "source": "Streaming.c",
+                "cc": 18
+              },
+              {
+                "name": "reopen",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "seek_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "range",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "invert_selection",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "scan_line",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "all",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "caret_show",
+                "source": "Streaming.c",
+                "cc": 6
+              },
+              {
+                "name": "observe",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "begin",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "finish",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "viewport",
+                "source": "Streaming.c",
+                "cc": 6
+              },
+              {
+                "name": "reset_reference",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "selection_refresh",
+                "source": "Streaming.c",
+                "cc": 22
+              },
+              {
+                "name": "word_offset",
+                "source": "Streaming.c",
+                "cc": 28
+              },
+              {
+                "name": "locate",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "move",
+                "source": "Streaming.c",
+                "cc": 33
+              },
+              {
+                "name": "page_move",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "reference",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "ui_text",
+                "source": "Streaming.c",
+                "cc": 10
+              },
+              {
+                "name": "ui",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "input_panel",
+                "source": "Streaming.c",
+                "cc": 5
+              },
+              {
+                "name": "restore_overlay",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "copy",
+                "source": "Streaming.c",
+                "cc": 29
+              },
+              {
+                "name": "end_chapter",
+                "source": "Streaming.c",
+                "cc": 13
+              },
+              {
+                "name": "start_chapter",
+                "source": "Streaming.c",
+                "cc": 9
+              },
+              {
+                "name": "parse_reference",
+                "source": "Streaming.c",
+                "cc": 48
+              },
+              {
+                "name": "prompt",
+                "source": "Streaming.c",
+                "cc": 1
+              },
+              {
+                "name": "previous_match",
+                "source": "Streaming.c",
+                "cc": 2
+              },
+              {
+                "name": "next_match",
+                "source": "Streaming.c",
+                "cc": 3
+              },
+              {
+                "name": "search_step",
+                "source": "Streaming.c",
+                "cc": 7
+              },
+              {
+                "name": "accept",
+                "source": "Streaming.c",
+                "cc": 4
+              },
+              {
+                "name": "character",
+                "source": "Streaming.c",
+                "cc": 32
+              },
+              {
+                "name": "ProcessMessage",
+                "source": "Streaming.c",
+                "cc": 57
+              }
+            ]
+          }
+        ],
+        "parser_version": "Debian clang version 14.0.6",
+        "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+        "target_struct_alignment": 2
+      }
+    }
+  ],
+  "features": [
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-window-features-v5",
+      "checks": 45
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-features",
+      "checks": 45
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-features",
+      "checks": 49
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-font-window",
+      "checks": 17
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-font-demand-v2",
+      "checks": 17
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-small",
+      "checks": 17
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-window",
+      "checks": 8
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-demand",
+      "checks": 8
+    },
+    {
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-background",
+      "checks": 8
+    }
+  ],
+  "rapid_background": {
+    "reader": "native-background",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "background_policy": "rapid",
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-rapid",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.37032206538300017,
+      "work": [],
+      "lcd_writes": 4500
+    },
+    "scroll_seconds": 5.076070310453986,
+    "background_seconds": 0.8988715612670006,
+    "total_seconds": 6.3452639371039865,
+    "final_end": {
+      "seconds": 0.25070305020799566,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.03153234790799786,
+    "movement_max_seconds": 0.3567404162659997,
+    "pure_decode": {
+      "seconds": 0.6476468775899988,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.032062274192998785,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 6.031139996309776e-07,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.03211287547400232,
+      "work": [],
+      "lcd_writes": 4496
+    }
+  },
+  "background_elapsed_to_ready_seconds": 7.1666009471609975,
+  "background_largest_slice_seconds": 0.06665177778699771,
+  "prototype_checkpoints": 1497,
+  "cost_revision": "Sparse superscript font; app ROM excludes Bible payload and book metadata. Timing measurements retained from earlier builds."
+}

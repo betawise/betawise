@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "reader_checks": {
+    "ui-reader-small-accepted": {
+      "status": "passed",
+      "cases": 43,
+      "busy_pixel_checks": 2
+    },
+    "ui-reader-medium-accepted": {
+      "status": "passed",
+      "cases": 43,
+      "busy_pixel_checks": 2
+    },
+    "ui-feedback-large": {
+      "status": "passed",
+      "cases": 43,
+      "busy_pixel_checks": 1
+    },
+    "ui-feedback-search-accepted": {
+      "status": "passed",
+      "cases": 18,
+      "busy_pixel_checks": 2
+    },
+    "ui-feedback-timer": {
+      "status": "passed",
+      "cases": 5,
+      "busy_pixel_checks": 2
+    }
+  },
+  "vendor_screens": 4,
+  "kjv_applet_bytes": 1292562,
+  "a5_bytes": 3042,
+  "unchanged_kjv_resources": [
+    "container.bin",
+    "search.bin",
+    "pruning.bin",
+    "verses.bin",
+    "source.json"
+  ]
+}

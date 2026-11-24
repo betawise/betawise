@@ -131,7 +131,7 @@ prints both Ghidra instructions and inferred C. Run against the Neo 3.21 image
 mapped at 410000. Inferred void/wide returns were checked against the actual
 register writes and manufacturer uses, not accepted automatically.
 
-The directed suite passes 50 cases: cached getters, busy/no-op behavior,
+The directed suite passes 54 cases: cached getters, busy/no-op behavior,
 association state transitions, flags/command/length/checksum framing, native
 SPI receives, no-packet handling, oversized send failure, synchronization
 failure and controlled success, valid native ACK parsing, receive-request
@@ -146,6 +146,14 @@ Actual association with an access point, a peer wireless transfer, successful
 initialization handshake with a real module, cancellation/reset across applet
 focus changes, and a complete malformed-packet audit remain outside coverage.
 These limits are not claims about physical radio behavior.
+
+The four added binary-transparency cases execute the original send and receive
+packet routines with 256- and 2048-byte payloads cycling through all 256 byte
+values. They check every payload byte, transmitted length/command/checksum,
+received length and an untouched byte beyond the received packet. These establish
+that the Neo ROM packet API does not require XML or text encoding. SPI input is
+synthetic; they do not establish that every command or payload will be accepted
+or delivered by the stock radio firmware.
 
 ### Manufacturer evidence
 
@@ -167,3 +175,5 @@ Do not interpret its zero result as proof of two independent replies.
 
 The suite was repeated successfully after the Neo low-SRAM/high-MMIO mapping
 correction (2026-11-18); no firmware target was patched for that regression.
+
+The 2026-11-24 rerun passed all 54 directed cases. Its [result and reproduction command](results-summary.json) are retained with this research.

@@ -1,0 +1,43 @@
+{
+  "suites": {
+    "ui-notices": {
+      "status": "passed",
+      "checks": 10,
+      "busy_phases": 8
+    },
+    "ui-system": {
+      "status": "passed",
+      "checks": 10,
+      "busy_phases": 8
+    },
+    "ui-controls": {
+      "status": "passed",
+      "checks": 18,
+      "busy_phases": 2
+    },
+    "ui-overlap": {
+      "status": "passed",
+      "checks": 19,
+      "busy_phases": 2
+    },
+    "ui-search": {
+      "status": "passed",
+      "checks": 23,
+      "busy_phases": 8
+    },
+    "ui-century": {
+      "status": "passed",
+      "checks": 10,
+      "busy_phases": 0
+    }
+  },
+  "mame_checks": 90,
+  "launch_options": {
+    "unevenstretch": "0",
+    "intscalex": "3",
+    "intscaley": "3",
+    "window": "1",
+    "resolution": "792x195",
+    "filter": "0"
+  }
+}

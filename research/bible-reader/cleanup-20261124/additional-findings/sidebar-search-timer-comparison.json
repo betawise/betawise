@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "units": "emulated guest time; excludes chapter decode/draw and cancelled query",
+  "variants": [
+    {
+      "variant": "sidebar-search-clock",
+      "search_cpu_ms": 1372.068985617002,
+      "search_elapsed_ms": 1925.0105303310042,
+      "queries": [
+        {
+          "case": "Search faith works",
+          "cpu_ms": 307.0983886659988,
+          "elapsed_ms": 604.9403013319967,
+          "slices": 2
+        },
+        {
+          "case": "Next faith works",
+          "cpu_ms": 175.3008695419993,
+          "elapsed_ms": 176.64340173400106,
+          "slices": 2
+        },
+        {
+          "case": "Previous faith works",
+          "cpu_ms": 248.47502575900293,
+          "elapsed_ms": 495.45179524200125,
+          "slices": 3
+        },
+        {
+          "case": "Search kingdom of God",
+          "cpu_ms": 108.85927705199805,
+          "elapsed_ms": 108.85927705199805,
+          "slices": 1
+        },
+        {
+          "case": "Next kingdom of God",
+          "cpu_ms": 111.77828943000634,
+          "elapsed_ms": 113.12082162200454,
+          "slices": 2
+        },
+        {
+          "case": "Previous kingdom of God",
+          "cpu_ms": 122.72469139600162,
+          "elapsed_ms": 124.08978005900195,
+          "slices": 2
+        },
+        {
+          "case": "Search life God",
+          "cpu_ms": 45.919365561005066,
+          "elapsed_ms": 45.919365561005066,
+          "slices": 1
+        },
+        {
+          "case": "Next life God",
+          "cpu_ms": 53.7280659419892,
+          "elapsed_ms": 55.07059813399451,
+          "slices": 2
+        },
+        {
+          "case": "Previous life God",
+          "cpu_ms": 99.6207738560031,
+          "elapsed_ms": 100.98586251900343,
+          "slices": 2
+        },
+        {
+          "case": "Search be* bel*",
+          "cpu_ms": 44.66217402799799,
+          "elapsed_ms": 44.66217402799799,
+          "slices": 1
+        },
+        {
+          "case": "Next be* bel*",
+          "cpu_ms": 4.636560975001203,
+          "elapsed_ms": 4.636560975001203,
+          "slices": 1
+        },
+        {
+          "case": "Previous be* bel*",
+          "cpu_ms": 49.265503409998246,
+          "elapsed_ms": 50.63059207299858,
+          "slices": 2
+        }
+      ]
+    },
+    {
+      "variant": "sidebar-search-timer",
+      "search_cpu_ms": 1369.7228714109997,
+      "search_elapsed_ms": 1667.138201408999,
+      "queries": [
+        {
+          "case": "Search faith works",
+          "cpu_ms": 306.2050559239999,
+          "elapsed_ms": 594.1349677760002,
+          "slices": 2
+        },
+        {
+          "case": "Next faith works",
+          "cpu_ms": 174.95643102600056,
+          "elapsed_ms": 176.2986013499983,
+          "slices": 2
+        },
+        {
+          "case": "Previous faith works",
+          "cpu_ms": 247.90671125700214,
+          "elapsed_ms": 249.27143805100016,
+          "slices": 2
+        },
+        {
+          "case": "Search kingdom of God",
+          "cpu_ms": 108.79932750100352,
+          "elapsed_ms": 108.79932750100352,
+          "slices": 1
+        },
+        {
+          "case": "Next kingdom of God",
+          "cpu_ms": 111.62347001800299,
+          "elapsed_ms": 112.96564034100243,
+          "slices": 2
+        },
+        {
+          "case": "Previous kingdom of God",
+          "cpu_ms": 122.53826879899776,
+          "elapsed_ms": 123.90299559299933,
+          "slices": 2
+        },
+        {
+          "case": "Search life God",
+          "cpu_ms": 45.859355699001014,
+          "elapsed_ms": 45.859355699001014,
+          "slices": 1
+        },
+        {
+          "case": "Next life God",
+          "cpu_ms": 53.73126244700188,
+          "elapsed_ms": 55.07343277000132,
+          "slices": 2
+        },
+        {
+          "case": "Previous life God",
+          "cpu_ms": 99.49755762699652,
+          "elapsed_ms": 100.8622844209981,
+          "slices": 2
+        },
+        {
+          "case": "Search be* bel*",
+          "cpu_ms": 44.60216416499918,
+          "elapsed_ms": 44.60216416499918,
+          "slices": 1
+        },
+        {
+          "case": "Next be* bel*",
+          "cpu_ms": 4.702963847996955,
+          "elapsed_ms": 4.702963847996955,
+          "slices": 1
+        },
+        {
+          "case": "Previous be* bel*",
+          "cpu_ms": 49.30030309999722,
+          "elapsed_ms": 50.66502989399879,
+          "slices": 2
+        }
+      ]
+    }
+  ]
+}

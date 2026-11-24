@@ -1,0 +1,128 @@
+[
+  {
+    "reader": "native",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-baseline-paints-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 2.0503691420259997,
+      "work": [],
+      "lcd_writes": 4500
+    },
+    "scroll_seconds": 7.08083069073,
+    "total_seconds": 9.131199832756,
+    "final_end": {
+      "seconds": 0.25065160456799873,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.08807002131449693,
+    "movement_max_seconds": 0.25065160456799873,
+    "pure_decode": {
+      "seconds": 0.6412196102670009,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8537259308989995,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 0.6361895775939992,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.25430906996299996,
+      "work": [],
+      "lcd_writes": 4496
+    }
+  },
+  {
+    "reader": "native-direct",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-direct-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 1.4141122568889983,
+      "work": []
+    },
+    "scroll_seconds": 7.080830690721019,
+    "total_seconds": 8.494942947610017,
+    "final_end": {
+      "seconds": 0.2505817036330029,
+      "work": []
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.0880368198779955,
+    "movement_max_seconds": 0.2505817036330029,
+    "pure_decode": {
+      "seconds": 0.6412196102680028,
+      "work": []
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8536581408640025,
+      "work": []
+    },
+    "initial_editor_refresh": {
+      "seconds": 6.031139996309776e-07,
+      "work": []
+    },
+    "initial_jump": {
+      "seconds": 0.2543089493409987,
+      "work": []
+    }
+  },
+  {
+    "reader": "native-direct-cmd-page",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-direct-cmd-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 1.4141122568889983,
+      "work": []
+    },
+    "scroll_seconds": 2.708812306458988,
+    "total_seconds": 4.122924563347986,
+    "final_end": {
+      "seconds": 0.25065160456800584,
+      "work": []
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.0312384503630021,
+    "movement_max_seconds": 0.25065160456800584,
+    "pure_decode": {
+      "seconds": 0.6412196102680028,
+      "work": []
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.8536581408640025,
+      "work": []
+    },
+    "initial_editor_refresh": {
+      "seconds": 6.031139996309776e-07,
+      "work": []
+    },
+    "initial_jump": {
+      "seconds": 0.2543089493409987,
+      "work": []
+    }
+  }
+]

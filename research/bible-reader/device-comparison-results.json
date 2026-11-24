@@ -1,0 +1,1735 @@
+{
+  "status": "passed",
+  "scope": "KJV Neo 3.21 MAME, disposable flash/RAM; no model inference or physical power measurements",
+  "native_variants": [
+    {
+      "name": "baseline",
+      "rom_bytes": 1432380,
+      "static_ram_bytes": 2874,
+      "file_count": 1,
+      "file_usage_request": 0,
+      "acceptance_checks": 36,
+      "profile_checks": 7,
+      "ps119_decode_seconds": 0.6305867070600009,
+      "ps119_load_last_verse_seconds": 2.5540339050919982,
+      "genesis_decode_seconds": 0.18450559834299796,
+      "nohit_search_cpu_seconds": 18.594542732873002,
+      "first_believe_setup_seconds": 0.006034398737998714,
+      "first_believe_scan_cpu_seconds": 0.0016868500839990475,
+      "next_believe_scan_cpu_seconds": 0.011391620861001428,
+      "first_believe_ui_seconds": 1.3810400679810009,
+      "evidence": "compare2-baseline-acceptance",
+      "profile_evidence": "compare2-baseline-profile"
+    },
+    {
+      "name": "word-scdc",
+      "rom_bytes": 1425750,
+      "static_ram_bytes": 2874,
+      "file_count": 1,
+      "file_usage_request": 0,
+      "acceptance_checks": 36,
+      "profile_checks": 7,
+      "ps119_decode_seconds": 0.4346917796890004,
+      "ps119_load_last_verse_seconds": 2.3581410283089994,
+      "genesis_decode_seconds": 0.12808022480000147,
+      "nohit_search_cpu_seconds": 38.947859088482005,
+      "first_believe_setup_seconds": 0.0052466109810005435,
+      "first_believe_scan_cpu_seconds": 2.0152057752820163,
+      "next_believe_scan_cpu_seconds": 0.004869423364993963,
+      "first_believe_ui_seconds": 20.856509845246002,
+      "evidence": "compare2-word-scdc-acceptance",
+      "profile_evidence": "compare2-word-scdc-profile"
+    },
+    {
+      "name": "huffman-prune",
+      "rom_bytes": 1323740,
+      "static_ram_bytes": 3146,
+      "file_count": 1,
+      "file_usage_request": 0,
+      "acceptance_checks": 36,
+      "profile_checks": 7,
+      "ps119_decode_seconds": 0.630586707058999,
+      "ps119_load_last_verse_seconds": 2.5536633517319984,
+      "genesis_decode_seconds": 0.18450559834299796,
+      "nohit_search_cpu_seconds": 16.618457296244003,
+      "first_believe_setup_seconds": 0.07936506308899993,
+      "first_believe_scan_cpu_seconds": 0.0014668340269992086,
+      "next_believe_scan_cpu_seconds": 0.009254365099000239,
+      "first_believe_ui_seconds": 1.3804494382520005,
+      "evidence": "compare2-huffman-prune-acceptance",
+      "profile_evidence": "compare2-huffman-prune-profile"
+    }
+  ],
+  "streaming_variants": [
+    {
+      "name": "baseline",
+      "status": "passed",
+      "rom_bytes": 1015188,
+      "static_ram_bytes": 2866,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 44,
+          "paint_ms": 3,
+          "total_ms": 47,
+          "decoded_symbols": 52,
+          "source_bytes": 347,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 89,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 138,
+          "decoded_symbols": 283,
+          "source_bytes": 1816,
+          "seek_bytes": 1644
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 2,
+          "total_ms": 47,
+          "decoded_symbols": 26,
+          "source_bytes": 171,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 343,
+          "layout_ms": 45,
+          "paint_ms": 3,
+          "total_ms": 391,
+          "decoded_symbols": 1014,
+          "source_bytes": 6567,
+          "seek_bytes": 6395
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 701,
+          "layout_ms": 27,
+          "paint_ms": 3,
+          "total_ms": 731,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 702,
+          "layout_ms": 26,
+          "paint_ms": 3,
+          "total_ms": 731,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 46,
+          "paint_ms": 3,
+          "total_ms": 49,
+          "decoded_symbols": 28,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 44,
+          "paint_ms": 3,
+          "total_ms": 47,
+          "decoded_symbols": 52,
+          "source_bytes": 354,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 148,
+          "layout_ms": 15,
+          "paint_ms": 3,
+          "total_ms": 166,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 44,
+          "paint_ms": 3,
+          "total_ms": 47,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0
+        }
+      ],
+      "evidence": "stream2-baseline"
+    },
+    {
+      "name": "word-scdc",
+      "status": "passed",
+      "rom_bytes": 1323058,
+      "static_ram_bytes": 2866,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-01.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 44,
+          "paint_ms": 3,
+          "total_ms": 47,
+          "decoded_symbols": 41,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2169,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-02.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 42,
+          "paint_ms": 3,
+          "total_ms": 45,
+          "decoded_symbols": 85,
+          "source_bytes": 347,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2293,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-03.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 45,
+          "paint_ms": 2,
+          "total_ms": 47,
+          "decoded_symbols": 41,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2124,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-04.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 66,
+          "layout_ms": 43,
+          "paint_ms": 3,
+          "total_ms": 112,
+          "decoded_symbols": 433,
+          "source_bytes": 1816,
+          "seek_bytes": 1644
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              261,
+              63
+            ],
+            "foreground_pixels": 2156,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-05.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 43,
+          "paint_ms": 3,
+          "total_ms": 46,
+          "decoded_symbols": 41,
+          "source_bytes": 171,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              247,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-06.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 249,
+          "layout_ms": 42,
+          "paint_ms": 2,
+          "total_ms": 293,
+          "decoded_symbols": 1533,
+          "source_bytes": 6567,
+          "seek_bytes": 6395
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              44
+            ],
+            "foreground_pixels": 1231,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-07.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 508,
+          "layout_ms": 26,
+          "paint_ms": 2,
+          "total_ms": 536,
+          "decoded_symbols": 3006,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              44
+            ],
+            "foreground_pixels": 1204,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-08.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 508,
+          "layout_ms": 25,
+          "paint_ms": 2,
+          "total_ms": 535,
+          "decoded_symbols": 3006,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-09.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 43,
+          "paint_ms": 3,
+          "total_ms": 46,
+          "decoded_symbols": 41,
+          "source_bytes": 178,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2195,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-10.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 42,
+          "paint_ms": 3,
+          "total_ms": 45,
+          "decoded_symbols": 86,
+          "source_bytes": 354,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              31
+            ],
+            "foreground_pixels": 700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-11.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 109,
+          "layout_ms": 15,
+          "paint_ms": 3,
+          "total_ms": 127,
+          "decoded_symbols": 682,
+          "source_bytes": 2901,
+          "seek_bytes": 2843
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2032,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-word-scdc/expected-12.png"
+          },
+          "font_height": 16,
+          "proportional": false,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 42,
+          "paint_ms": 3,
+          "total_ms": 45,
+          "decoded_symbols": 42,
+          "source_bytes": 173,
+          "seek_bytes": 0
+        }
+      ],
+      "evidence": "stream2-word-scdc"
+    },
+    {
+      "name": "baseline-small",
+      "status": "passed",
+      "rom_bytes": 1015248,
+      "static_ram_bytes": 2866,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              261,
+              54
+            ],
+            "foreground_pixels": 2304,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-01.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 66,
+          "paint_ms": 2,
+          "total_ms": 68,
+          "decoded_symbols": 39,
+          "source_bytes": 265,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              53
+            ],
+            "foreground_pixels": 2364,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-02.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 67,
+          "paint_ms": 3,
+          "total_ms": 70,
+          "decoded_symbols": 77,
+          "source_bytes": 540,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              261,
+              54
+            ],
+            "foreground_pixels": 2304,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-03.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 65,
+          "paint_ms": 3,
+          "total_ms": 68,
+          "decoded_symbols": 39,
+          "source_bytes": 265,
+          "seek_bytes": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              262,
+              54
+            ],
+            "foreground_pixels": 2262,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-04.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 90,
+          "layout_ms": 67,
+          "paint_ms": 2,
+          "total_ms": 159,
+          "decoded_symbols": 297,
+          "source_bytes": 1913,
+          "seek_bytes": 1644
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              252,
+              54
+            ],
+            "foreground_pixels": 2296,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-05.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 65,
+          "paint_ms": 3,
+          "total_ms": 68,
+          "decoded_symbols": 41,
+          "source_bytes": 267,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              254,
+              54
+            ],
+            "foreground_pixels": 2337,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-06.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 344,
+          "layout_ms": 68,
+          "paint_ms": 3,
+          "total_ms": 415,
+          "decoded_symbols": 1025,
+          "source_bytes": 6670,
+          "seek_bytes": 6395
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              228,
+              21
+            ],
+            "foreground_pixels": 833,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-07.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 701,
+          "layout_ms": 26,
+          "paint_ms": 2,
+          "total_ms": 729,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              21
+            ],
+            "foreground_pixels": 806,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-08.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 702,
+          "layout_ms": 24,
+          "paint_ms": 3,
+          "total_ms": 729,
+          "decoded_symbols": 2018,
+          "source_bytes": 12992,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              54
+            ],
+            "foreground_pixels": 2332,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-09.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 67,
+          "paint_ms": 2,
+          "total_ms": 69,
+          "decoded_symbols": 41,
+          "source_bytes": 276,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              259,
+              53
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-10.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 65,
+          "paint_ms": 2,
+          "total_ms": 67,
+          "decoded_symbols": 77,
+          "source_bytes": 540,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              240,
+              19
+            ],
+            "foreground_pixels": 475,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-11.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 148,
+          "layout_ms": 14,
+          "paint_ms": 3,
+          "total_ms": 165,
+          "decoded_symbols": 430,
+          "source_bytes": 2901,
+          "seek_bytes": 2843
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              260,
+              41
+            ],
+            "foreground_pixels": 1407,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-small/expected-12.png"
+          },
+          "font_height": 11,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 42,
+          "paint_ms": 3,
+          "total_ms": 45,
+          "decoded_symbols": 28,
+          "source_bytes": 173,
+          "seek_bytes": 0
+        }
+      ],
+      "evidence": "stream2-baseline-small"
+    },
+    {
+      "name": "baseline-xlarge",
+      "status": "passed",
+      "rom_bytes": 1015248,
+      "static_ram_bytes": 2866,
+      "file_count": 0,
+      "results": [
+        {
+          "name": "Genesis first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2596,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-01.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 34,
+          "paint_ms": 3,
+          "total_ms": 37,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              260,
+              60
+            ],
+            "foreground_pixels": 2352,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-02.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 33,
+          "paint_ms": 3,
+          "total_ms": 36,
+          "decoded_symbols": 15,
+          "source_bytes": 91,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis previous page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2596,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-03.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 34,
+          "paint_ms": 2,
+          "total_ms": 36,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0
+        },
+        {
+          "name": "John 3:16",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              250,
+              62
+            ],
+            "foreground_pixels": 2416,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-04.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 89,
+          "layout_ms": 33,
+          "paint_ms": 3,
+          "total_ms": 125,
+          "decoded_symbols": 265,
+          "source_bytes": 1694,
+          "seek_bytes": 1644
+        },
+        {
+          "name": "Psalm119 first page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              218,
+              62
+            ],
+            "foreground_pixels": 2150,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-05.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 28,
+          "paint_ms": 3,
+          "total_ms": 31,
+          "decoded_symbols": 6,
+          "source_bytes": 42,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Psalm119 middle",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              262,
+              62
+            ],
+            "foreground_pixels": 2700,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-06.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 343,
+          "layout_ms": 36,
+          "paint_ms": 3,
+          "total_ms": 382,
+          "decoded_symbols": 998,
+          "source_bytes": 6448,
+          "seek_bytes": 6395
+        },
+        {
+          "name": "Psalm119 last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              244,
+              62
+            ],
+            "foreground_pixels": 2391,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-07.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 701,
+          "layout_ms": 33,
+          "paint_ms": 3,
+          "total_ms": 737,
+          "decoded_symbols": 2011,
+          "source_bytes": 12945,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Hide verse numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              252,
+              62
+            ],
+            "foreground_pixels": 2584,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-08.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 702,
+          "layout_ms": 35,
+          "paint_ms": 2,
+          "total_ms": 739,
+          "decoded_symbols": 2012,
+          "source_bytes": 12954,
+          "seek_bytes": 12898
+        },
+        {
+          "name": "Genesis no numbers",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              258,
+              56
+            ],
+            "foreground_pixels": 2588,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-09.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 34,
+          "paint_ms": 2,
+          "total_ms": 36,
+          "decoded_symbols": 8,
+          "source_bytes": 48,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Genesis no numbers next page",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              260,
+              60
+            ],
+            "foreground_pixels": 2341,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-10.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 1,
+          "seek_ms": 0,
+          "layout_ms": 32,
+          "paint_ms": 3,
+          "total_ms": 35,
+          "decoded_symbols": 15,
+          "source_bytes": 91,
+          "seek_bytes": 0
+        },
+        {
+          "name": "Revelation last verse",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              248,
+              56
+            ],
+            "foreground_pixels": 2280,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-11.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 148,
+          "layout_ms": 32,
+          "paint_ms": 2,
+          "total_ms": 182,
+          "decoded_symbols": 429,
+          "source_bytes": 2890,
+          "seek_bytes": 2843
+        },
+        {
+          "name": "Psalm117",
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              4,
+              242,
+              62
+            ],
+            "foreground_pixels": 2415,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/stream2-baseline-xlarge/expected-12.png"
+          },
+          "font_height": 32,
+          "proportional": true,
+          "page": 0,
+          "seek_ms": 0,
+          "layout_ms": 34,
+          "paint_ms": 2,
+          "total_ms": 36,
+          "decoded_symbols": 11,
+          "source_bytes": 51,
+          "seek_bytes": 0
+        }
+      ],
+      "evidence": "stream2-baseline-xlarge"
+    }
+  ],
+  "total_native_screen_checks": 108,
+  "total_native_profile_checks": 21,
+  "total_streaming_screen_checks": 48,
+  "host_huffman_decode": {
+    "status": "passed",
+    "codec": "huffman",
+    "chapters": 1189,
+    "text_bytes": 4138567,
+    "reverse_chapter_decode_exact": true
+  },
+  "host_word_decode": {
+    "status": "passed",
+    "codec": "huffman",
+    "chapters": 1189,
+    "text_bytes": 4138567,
+    "reverse_chapter_decode_exact": true
+  },
+  "host_search": {
+    "word-scdc": [
+      {
+        "query": "God",
+        "occurrences": 4446,
+        "exact": true
+      },
+      {
+        "query": "god",
+        "occurrences": 4446,
+        "exact": true
+      },
+      {
+        "query": "the earth",
+        "occurrences": 849,
+        "exact": true
+      },
+      {
+        "query": "in the beginning",
+        "occurrences": 17,
+        "exact": true
+      },
+      {
+        "query": "Jesus",
+        "occurrences": 984,
+        "exact": true
+      },
+      {
+        "query": "Jesus Jesus",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "believe",
+        "occurrences": 143,
+        "exact": true
+      },
+      {
+        "query": "believed",
+        "occurrences": 116,
+        "exact": true
+      },
+      {
+        "query": "zzzzunknown",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "love love",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "verily verily",
+        "occurrences": 25,
+        "exact": true
+      },
+      {
+        "query": "I am that I am",
+        "occurrences": 1,
+        "exact": true
+      },
+      {
+        "query": "a a",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "LORD's",
+        "occurrences": 134,
+        "exact": true
+      },
+      {
+        "query": "Jesus'",
+        "occurrences": 984,
+        "exact": true
+      }
+    ],
+    "huffman-prune": [
+      {
+        "query": "God",
+        "occurrences": 4446,
+        "exact": true
+      },
+      {
+        "query": "god",
+        "occurrences": 4446,
+        "exact": true
+      },
+      {
+        "query": "the earth",
+        "occurrences": 849,
+        "exact": true
+      },
+      {
+        "query": "in the beginning",
+        "occurrences": 17,
+        "exact": true
+      },
+      {
+        "query": "Jesus",
+        "occurrences": 984,
+        "exact": true
+      },
+      {
+        "query": "Jesus Jesus",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "believe",
+        "occurrences": 143,
+        "exact": true
+      },
+      {
+        "query": "believed",
+        "occurrences": 116,
+        "exact": true
+      },
+      {
+        "query": "zzzzunknown",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "love love",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "verily verily",
+        "occurrences": 25,
+        "exact": true
+      },
+      {
+        "query": "I am that I am",
+        "occurrences": 1,
+        "exact": true
+      },
+      {
+        "query": "a a",
+        "occurrences": 0,
+        "exact": true
+      },
+      {
+        "query": "LORD's",
+        "occurrences": 134,
+        "exact": true
+      },
+      {
+        "query": "Jesus'",
+        "occurrences": 984,
+        "exact": true
+      }
+    ]
+  },
+  "static_ram_excludes": "guest file allocations and firmware stack",
+  "notes_format": "undecided; implementation deferred",
+  "sources": [
+    "betawise/applets/BibleReader/BibleReader.c",
+    "betawise/applets/BibleReader/Streaming.c",
+    "betawise/applets/BibleReader/HuffmanDecoder.c",
+    "betawise/applets/BibleReader/HuffmanDecoder.h",
+    "betawise/applets/BibleReader/Search.c",
+    "betawise/applets/BibleReader/Search.h",
+    "betawise/applets/BibleReader/Makefile",
+    "betawise/applets/BibleReader/ReaderResource.asm",
+    "betawise/tests/mame/asneo/BibleReaderHarness.lua",
+    "betawise/tests/mame/asneo/BibleStreamHarness.lua",
+    "betawise/tests/mame/asneo/check-bible-reader.py",
+    "betawise/tests/mame/asneo/check-bible-stream.py",
+    "betawise/tests/mame/asneo/bible_layout.py"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "suites": {
+    "notice-transitions-v2": {
+      "status": "passed",
+      "checks": 14
+    },
+    "notice-search-regression": {
+      "status": "passed",
+      "checks": 23
+    },
+    "notice-overlap-regression": {
+      "status": "passed",
+      "checks": 19
+    },
+    "notice-controls-regression": {
+      "status": "passed",
+      "checks": 18
+    }
+  },
+  "checks": 74,
+  "transitions": [
+    {
+      "check": 7,
+      "lcd_writes": 664
+    },
+    {
+      "check": 10,
+      "lcd_writes": 784
+    },
+    {
+      "check": 13,
+      "lcd_writes": 784
+    }
+  ]
+}

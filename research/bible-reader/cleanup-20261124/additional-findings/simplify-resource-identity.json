@@ -1,0 +1,17 @@
+{
+  "KJV": [
+    "container.bin",
+    "search.bin",
+    "pruning.bin",
+    "verses.bin",
+    "source.json"
+  ],
+  "NKJV": [
+    "container.bin",
+    "search.bin",
+    "pruning.bin",
+    "verses.bin",
+    "source.json"
+  ],
+  "scope": "Resource files checked during simplification; regenerate byte comparisons from the recorded sources."
+}

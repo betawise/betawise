@@ -1,0 +1,21 @@
+{
+  "betawise_base_commit": "b8c5e945749b27f9eb40d4f1987f325089bce339",
+  "mame_base_commit": "53bcc26e4e5a6300a8742cffdc215290f3224a37",
+  "recorded_on": "2026-11-24",
+  "note": "Source and binaries recorded at cleanup; historical traces predate this snapshot. These are reproduction baselines, not proof that historical binaries were built from this exact dirty source.",
+  "tools": {
+    "m68k-linux-gnu-gcc": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+    "m68k-linux-gnu-objdump": "GNU objdump (GNU Binutils for Debian) 2.40",
+    "python3": "Python 3.11.2",
+    "doxygen": "1.9.4"
+  },
+  "manual": {
+    "source": "Ghidra/Alphasmart Neo/User_Guide/neo2usermanual.pdf",
+    "argv": [
+      "pdftotext",
+      "Ghidra/Alphasmart Neo/User_Guide/neo2usermanual.pdf",
+      "-"
+    ]
+  },
+  "betawise_support_patch": "research/reproduction-support.patch"
+}

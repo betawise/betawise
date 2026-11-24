@@ -1,0 +1,1051 @@
+{
+  "status": "passed",
+  "scope": "KJV Neo 3.21 MAME, backend service including common checksum bookkeeping; UI time includes idle gaps, index excluded from application code/assets",
+  "runs": [
+    {
+      "index": "full",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/prefix-mame-full-v2",
+      "screen_states": 8,
+      "queries": [
+        {
+          "query": "Methus",
+          "hits": 8,
+          "hash": 681930210,
+          "first": [
+            3,
+            18,
+            13
+          ],
+          "candidate_chapters": 3,
+          "setup_seconds": 0.10418140275399779,
+          "first_hit_seconds": 0.15213066975200107,
+          "all_hits_seconds": 0.3467131603300011
+        },
+        {
+          "query": "believ",
+          "hits": 322,
+          "hash": 3309473975,
+          "first": [
+            14,
+            6,
+            2
+          ],
+          "candidate_chapters": 140,
+          "setup_seconds": 0.13955537697700038,
+          "first_hit_seconds": 0.1543587545119962,
+          "all_hits_seconds": 12.204016523122
+        },
+        {
+          "query": "love",
+          "hits": 521,
+          "hash": 636864105,
+          "first": [
+            21,
+            2,
+            13
+          ],
+          "candidate_chapters": 247,
+          "setup_seconds": 0.1353691010579965,
+          "first_hit_seconds": 0.13930743673299872,
+          "all_hits_seconds": 17.542547534649998
+        },
+        {
+          "query": "God",
+          "hits": 4754,
+          "hash": 1819816850,
+          "first": [
+            0,
+            1,
+            3
+          ],
+          "candidate_chapters": 936,
+          "setup_seconds": 0.14967189381400203,
+          "first_hit_seconds": 0.15019961873199605,
+          "all_hits_seconds": 70.004259854264
+        },
+        {
+          "query": "in the beg",
+          "hits": 19,
+          "hash": 4080396034,
+          "first": [
+            0,
+            1,
+            0
+          ],
+          "candidate_chapters": 273,
+          "setup_seconds": 0.6432822004929903,
+          "first_hit_seconds": 0.6438232542350022,
+          "all_hits_seconds": 25.16596140446299
+        },
+        {
+          "query": "Jesus Jesus",
+          "hits": 0,
+          "hash": 2166136261,
+          "first": null,
+          "candidate_chapters": 207,
+          "setup_seconds": 0.14935399232300028,
+          "first_hit_seconds": null,
+          "all_hits_seconds": 17.08567393871101
+        },
+        {
+          "query": "th",
+          "hits": 128223,
+          "hash": 2693347581,
+          "first": [
+            0,
+            1,
+            1
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.8290223132759991,
+          "first_hit_seconds": 0.8293697070510007,
+          "all_hits_seconds": 100.69324797752498
+        }
+      ],
+      "ui": [
+        {
+          "query": "Methus",
+          "accept_to_result_elapsed_seconds": 1.3224320844870014
+        },
+        {
+          "query": "believ",
+          "accept_to_result_elapsed_seconds": 0.9306959069079994
+        },
+        {
+          "query": "love",
+          "accept_to_result_elapsed_seconds": 0.993451386079002
+        },
+        {
+          "query": "God",
+          "accept_to_result_elapsed_seconds": 1.187444694402
+        },
+        {
+          "query": "in the beg",
+          "accept_to_result_elapsed_seconds": 1.5064445163549998
+        },
+        {
+          "query": "th",
+          "accept_to_result_elapsed_seconds": 1.3229362276399996
+        }
+      ],
+      "production": {
+        "index": "full",
+        "rom_bytes": 1291506,
+        "index_bytes": 252739,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21242,
+        "executable_bytes": 14380,
+        "a5_bytes": 3168,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "full",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "max_captured_file_bytes": 4838
+    },
+    {
+      "index": "compact",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/prefix-mame-compact-v1",
+      "screen_states": 8,
+      "queries": [
+        {
+          "query": "Methus",
+          "hits": 8,
+          "hash": 681930210,
+          "first": [
+            3,
+            18,
+            13
+          ],
+          "candidate_chapters": 32,
+          "setup_seconds": 0.10419286192400534,
+          "first_hit_seconds": 0.3681970528379992,
+          "all_hits_seconds": 2.6433493270580044
+        },
+        {
+          "query": "believ",
+          "hits": 322,
+          "hash": 3309473975,
+          "first": [
+            14,
+            6,
+            2
+          ],
+          "candidate_chapters": 576,
+          "setup_seconds": 0.12436190518199908,
+          "first_hit_seconds": 0.5161102656669954,
+          "all_hits_seconds": 43.796068514709
+        },
+        {
+          "query": "love",
+          "hits": 521,
+          "hash": 636864105,
+          "first": [
+            21,
+            2,
+            13
+          ],
+          "candidate_chapters": 805,
+          "setup_seconds": 0.11212471822300074,
+          "first_hit_seconds": 0.5258077990749968,
+          "all_hits_seconds": 56.30153357336701
+        },
+        {
+          "query": "God",
+          "hits": 4754,
+          "hash": 1819816850,
+          "first": [
+            0,
+            1,
+            3
+          ],
+          "candidate_chapters": 1173,
+          "setup_seconds": 0.12573392965697394,
+          "first_hit_seconds": 0.12626165457598404,
+          "all_hits_seconds": 85.269569003015
+        },
+        {
+          "query": "in the beg",
+          "hits": 19,
+          "hash": 4080396034,
+          "first": [
+            0,
+            1,
+            0
+          ],
+          "candidate_chapters": 821,
+          "setup_seconds": 0.24045541634598067,
+          "first_hit_seconds": 0.24099647008799252,
+          "all_hits_seconds": 66.28639136605099
+        },
+        {
+          "query": "Jesus Jesus",
+          "hits": 0,
+          "hash": 2166136261,
+          "first": null,
+          "candidate_chapters": 261,
+          "setup_seconds": 0.12224298409000767,
+          "first_hit_seconds": null,
+          "all_hits_seconds": 21.170804351206016
+        },
+        {
+          "query": "th",
+          "hits": 128223,
+          "hash": 2693347581,
+          "first": [
+            0,
+            1,
+            1
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.18263190348199032,
+          "first_hit_seconds": 0.1829792972569635,
+          "all_hits_seconds": 100.04685756773097
+        }
+      ],
+      "ui": [
+        {
+          "query": "Methus",
+          "accept_to_result_elapsed_seconds": 3.325453384987
+        },
+        {
+          "query": "believ",
+          "accept_to_result_elapsed_seconds": 4.425198038476001
+        },
+        {
+          "query": "love",
+          "accept_to_result_elapsed_seconds": 4.534247477432
+        },
+        {
+          "query": "God",
+          "accept_to_result_elapsed_seconds": 1.1369762797340002
+        },
+        {
+          "query": "in the beg",
+          "accept_to_result_elapsed_seconds": 1.006022758611003
+        },
+        {
+          "query": "th",
+          "accept_to_result_elapsed_seconds": 0.8225400419389999
+        }
+      ],
+      "production": {
+        "index": "compact",
+        "rom_bytes": 1166684,
+        "index_bytes": 127917,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21242,
+        "executable_bytes": 14380,
+        "a5_bytes": 3168,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "compact",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "max_captured_file_bytes": 4838
+    },
+    {
+      "index": "scan",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/prefix-mame-scan-v1",
+      "screen_states": 8,
+      "queries": [
+        {
+          "query": "Methus",
+          "hits": 8,
+          "hash": 681930210,
+          "first": [
+            3,
+            18,
+            13
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.10450455133900505,
+          "first_hit_seconds": 0.368508742253006,
+          "all_hits_seconds": 85.42604631675002
+        },
+        {
+          "query": "believ",
+          "hits": 322,
+          "hash": 3309473975,
+          "first": [
+            14,
+            6,
+            2
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.11885456793498861,
+          "first_hit_seconds": 1.0408663542129943,
+          "all_hits_seconds": 85.551989888901
+        },
+        {
+          "query": "love",
+          "hits": 521,
+          "hash": 636864105,
+          "first": [
+            21,
+            2,
+            13
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.10468403812200222,
+          "first_hit_seconds": 1.5210639440619786,
+          "all_hits_seconds": 85.46688830517297
+        },
+        {
+          "query": "God",
+          "hits": 4754,
+          "hash": 1819816850,
+          "first": [
+            0,
+            1,
+            3
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.11322552224601168,
+          "first_hit_seconds": 0.11375324716499335,
+          "all_hits_seconds": 86.17518886928701
+        },
+        {
+          "query": "in the beg",
+          "hits": 19,
+          "hash": 4080396034,
+          "first": [
+            0,
+            1,
+            0
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.12226011253301294,
+          "first_hit_seconds": 0.12280116627499638,
+          "all_hits_seconds": 88.60207484349701
+        },
+        {
+          "query": "Jesus Jesus",
+          "hits": 0,
+          "hash": 2166136261,
+          "first": null,
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.11564569887599419,
+          "first_hit_seconds": null,
+          "all_hits_seconds": 86.22323119680397
+        },
+        {
+          "query": "th",
+          "hits": 128223,
+          "hash": 2693347581,
+          "first": [
+            0,
+            1,
+            1
+          ],
+          "candidate_chapters": 1189,
+          "setup_seconds": 0.09785069401300461,
+          "first_hit_seconds": 0.09819808778797778,
+          "all_hits_seconds": 99.96207635826306
+        }
+      ],
+      "ui": [
+        {
+          "query": "Methus",
+          "accept_to_result_elapsed_seconds": 3.325452178759001
+        },
+        {
+          "query": "believ",
+          "accept_to_result_elapsed_seconds": 8.964837417098003
+        },
+        {
+          "query": "love",
+          "accept_to_result_elapsed_seconds": 13.966920995584005
+        },
+        {
+          "query": "God",
+          "accept_to_result_elapsed_seconds": 1.1695845532060005
+        },
+        {
+          "query": "in the beg",
+          "accept_to_result_elapsed_seconds": 1.0052766460449973
+        },
+        {
+          "query": "th",
+          "accept_to_result_elapsed_seconds": 0.8217943515520005
+        }
+      ],
+      "production": {
+        "index": "scan",
+        "rom_bytes": 1088748,
+        "index_bytes": 49981,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 21242,
+        "executable_bytes": 14380,
+        "a5_bytes": 3168,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "scan",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "max_captured_file_bytes": 4838
+    }
+  ],
+  "host_validation": {
+    "status": "passed",
+    "cases": 96,
+    "results": [
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "Methus",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "meth",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "believ",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "believe",
+        "hits": 143
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "God",
+        "hits": 4446
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "love",
+        "hits": 310
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "th",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "in the beg",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "a a",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "be bel",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "in i",
+        "hits": 2
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "full",
+        "prefix": false,
+        "query": "zzzzunknown",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "Methus",
+        "hits": 8
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "meth",
+        "hits": 10
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "believ",
+        "hits": 322
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "believe",
+        "hits": 314
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "God",
+        "hits": 4754
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "love",
+        "hits": 521
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "th",
+        "hits": 128223
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "in the beg",
+        "hits": 19
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "a a",
+        "hits": 8371
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "be bel",
+        "hits": 3
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "in i",
+        "hits": 343
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "full",
+        "prefix": true,
+        "query": "zzzzunknown",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "Methus",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "meth",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "believ",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "believe",
+        "hits": 143
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "God",
+        "hits": 4446
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "love",
+        "hits": 310
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "th",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "in the beg",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "a a",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "be bel",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "in i",
+        "hits": 2
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "compact",
+        "prefix": false,
+        "query": "zzzzunknown",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "Methus",
+        "hits": 8
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "meth",
+        "hits": 10
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "believ",
+        "hits": 322
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "believe",
+        "hits": 314
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "God",
+        "hits": 4754
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "love",
+        "hits": 521
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "th",
+        "hits": 128223
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "in the beg",
+        "hits": 19
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "a a",
+        "hits": 8371
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "be bel",
+        "hits": 3
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "in i",
+        "hits": 343
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "compact",
+        "prefix": true,
+        "query": "zzzzunknown",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "Methus",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "meth",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "believ",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "believe",
+        "hits": 143
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "God",
+        "hits": 4446
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "love",
+        "hits": 310
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "th",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "in the beg",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "a a",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "be bel",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "in i",
+        "hits": 2
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "scan",
+        "prefix": false,
+        "query": "zzzzunknown",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "Methus",
+        "hits": 8
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "meth",
+        "hits": 10
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "believ",
+        "hits": 322
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "believe",
+        "hits": 314
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "God",
+        "hits": 4754
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "love",
+        "hits": 521
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "th",
+        "hits": 128223
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "in the beg",
+        "hits": 19
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "Jesus Jesus",
+        "hits": 0
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "a a",
+        "hits": 8371
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "be bel",
+        "hits": 3
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "in i",
+        "hits": 343
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "I am that I am",
+        "hits": 1
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "LORD's",
+        "hits": 134
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "Jesus'",
+        "hits": 984
+      },
+      {
+        "index": "scan",
+        "prefix": true,
+        "query": "zzzzunknown",
+        "hits": 0
+      }
+    ]
+  },
+  "regressions": [
+    {
+      "path": "prefix-native-regression",
+      "status": "passed",
+      "screen_states": 40
+    },
+    {
+      "path": "prefix-stream-regression",
+      "status": "passed",
+      "screen_states": 83
+    }
+  ],
+  "total_screen_states": 147
+}

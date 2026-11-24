@@ -1,0 +1,493 @@
+Control Panel 1.7; all addresses are image-relative file offsets.
+GNU m68k-linux-gnu-objdump -D -b binary -m m68k:68000.
+Annotations resolve the adjacent immediate An + PC-index(-2) sequence; names from abi-audit/slots.tsv.
+Static excerpts only; not runtime acceptance evidence.
+
+--- 1a04 <= offset < 1c1c ---
+    1a04:	48e7 073a      	moveml %d5-%d7/%a2-%a4/%fp,%sp@-
+    1a08:	598f           	subql #4,%sp
+    1a0a:	207c 0000 2f2c 	moveal #12076,%a0
+    1a10:	4ebb 88fe      	jsr %pc@(0x1a10,%a0:l) ; -> 493c _OS3K_ClearScreen (A000)
+    1a14:	2c7c 0000 3348 	moveal #13128,%fp
+    1a1a:	4dfb e8fe      	lea %pc@(0x1a1a,%fp:l),%fp ; -> 4d62 
+    1a1e:	2f0e           	movel %fp,%sp@-
+    1a20:	42a7           	clrl %sp@-
+    1a22:	207c 0000 11e4 	moveal #4580,%a0
+    1a28:	4ebb 88fe      	jsr %pc@(0x1a28,%a0:l) ; -> 2c0c b' o'
+    1a2c:	508f           	addql #8,%sp
+    1a2e:	2f00           	movel %d0,%sp@-
+    1a30:	207c 0000 2f10 	moveal #12048,%a0
+    1a36:	4ebb 88fe      	jsr %pc@(0x1a36,%a0:l) ; -> 4946 PutStringRaw (A014)
+    1a3a:	4878 0028      	pea 0x28
+    1a3e:	4878 0004      	pea 0x4
+    1a42:	4878 0002      	pea 0x2
+    1a46:	4878 0001      	pea 0x1
+    1a4a:	207c 0000 2f52 	moveal #12114,%a0
+    1a50:	4ebb 88fe      	jsr %pc@(0x1a50,%a0:l) ; -> 49a2 DialogInit (A0F0)
+    1a54:	4fef 0014      	lea %sp@(20),%sp
+    1a58:	7e01           	moveq #1,%d7
+    1a5a:	47d7           	lea %sp@,%a3
+    1a5c:	247c 0000 3024 	moveal #12324,%a2
+    1a62:	45fb a8fe      	lea %pc@(0x1a62,%a2:l),%a2 ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    1a66:	2a3c 0000 a007 	movel #40967,%d5
+    1a6c:	2f0e           	movel %fp,%sp@-
+    1a6e:	7000           	moveq #0,%d0
+    1a70:	3007           	movew %d7,%d0
+    1a72:	2f00           	movel %d0,%sp@-
+    1a74:	207c 0000 1192 	moveal #4498,%a0
+    1a7a:	4ebb 88fe      	jsr %pc@(0x1a7a,%a0:l) ; -> 2c0c b' o'
+    1a7e:	508f           	addql #8,%sp
+    1a80:	2840           	moveal %d0,%a4
+    1a82:	0c47 0002      	cmpiw #2,%d7
+    1a86:	6618           	bnes 0x1aa0
+    1a88:	4879 0000 a005 	pea 0xa005
+    1a8e:	207c 0000 2fb4 	moveal #12212,%a0
+    1a94:	4ebb 88fe      	jsr %pc@(0x1a94,%a0:l) ; -> 4a48 AppletFindById (A23C)
+    1a98:	588f           	addql #4,%sp
+    1a9a:	2c00           	movel %d0,%d6
+    1a9c:	6700 0174      	beqw 0x1c12
+    1aa0:	0c47 0011      	cmpiw #17,%d7
+    1aa4:	6618           	bnes 0x1abe
+    1aa6:	4879 0000 a027 	pea 0xa027
+    1aac:	207c 0000 2f96 	moveal #12182,%a0
+    1ab2:	4ebb 88fe      	jsr %pc@(0x1ab2,%a0:l) ; -> 4a48 AppletFindById (A23C)
+    1ab6:	588f           	addql #4,%sp
+    1ab8:	2c00           	movel %d0,%d6
+    1aba:	6700 0156      	beqw 0x1c12
+    1abe:	0c47 0005      	cmpiw #5,%d7
+    1ac2:	6646           	bnes 0x1b0a
+    1ac4:	5247           	addqw #1,%d7
+    1ac6:	4879 0000 a002 	pea 0xa002
+    1acc:	207c 0000 2f76 	moveal #12150,%a0
+    1ad2:	4ebb 88fe      	jsr %pc@(0x1ad2,%a0:l) ; -> 4a48 AppletFindById (A23C)
+    1ad6:	588f           	addql #4,%sp
+    1ad8:	2c00           	movel %d0,%d6
+    1ada:	6700 0136      	beqw 0x1c12
+    1ade:	2f0e           	movel %fp,%sp@-
+    1ae0:	2f06           	movel %d6,%sp@-
+    1ae2:	207c 0000 2f72 	moveal #12146,%a0
+    1ae8:	4ebb 88fe      	jsr %pc@(0x1ae8,%a0:l) ; -> 4a5a AppletGetDisableMask (A260)
+    1aec:	588f           	addql #4,%sp
+    1aee:	4a80           	tstl %d0
+    1af0:	6706           	beqs 0x1af8
+    1af2:	4878 0005      	pea 0x5
+    1af6:	6004           	bras 0x1afc
+    1af8:	4878 0006      	pea 0x6
+    1afc:	207c 0000 110a 	moveal #4362,%a0
+    1b02:	4ebb 88fe      	jsr %pc@(0x1b02,%a0:l) ; -> 2c0c b' o'
+    1b06:	508f           	addql #8,%sp
+    1b08:	2840           	moveal %d0,%a4
+    1b0a:	0c47 0004      	cmpiw #4,%d7
+    1b0e:	6706           	beqs 0x1b16
+    1b10:	0c47 0008      	cmpiw #8,%d7
+    1b14:	6616           	bnes 0x1b2c
+    1b16:	2f0b           	movel %a3,%sp@-
+    1b18:	42a7           	clrl %sp@-
+    1b1a:	2f05           	movel %d5,%sp@-
+    1b1c:	4e92           	jsr %a2@
+    1b1e:	4fef 000c      	lea %sp@(12),%sp
+    1b22:	0c93 0000 0001 	cmpil #1,%a3@
+    1b28:	6700 00e8      	beqw 0x1c12
+    1b2c:	0c47 0009      	cmpiw #9,%d7
+    1b30:	6616           	bnes 0x1b48
+    1b32:	2f0b           	movel %a3,%sp@-
+    1b34:	42a7           	clrl %sp@-
+    1b36:	2f05           	movel %d5,%sp@-
+    1b38:	4e92           	jsr %a2@
+    1b3a:	4fef 000c      	lea %sp@(12),%sp
+    1b3e:	0c93 0000 0002 	cmpil #2,%a3@
+    1b44:	6700 00cc      	beqw 0x1c12
+    1b48:	0c47 000c      	cmpiw #12,%d7
+    1b4c:	6624           	bnes 0x1b72
+    1b4e:	207c 0000 2e6e 	moveal #11886,%a0
+    1b54:	4ebb 88fe      	jsr %pc@(0x1b54,%a0:l) ; -> 49c2 GetHardwareRevision (A130)
+    1b58:	4a80           	tstl %d0
+    1b5a:	6700 00b6      	beqw 0x1c12
+    1b5e:	2f0e           	movel %fp,%sp@-
+    1b60:	4878 000c      	pea 0xc
+    1b64:	207c 0000 10a2 	moveal #4258,%a0
+    1b6a:	4ebb 88fe      	jsr %pc@(0x1b6a,%a0:l) ; -> 2c0c b' o'
+    1b6e:	508f           	addql #8,%sp
+    1b70:	2840           	moveal %d0,%a4
+    1b72:	0c47 0001      	cmpiw #1,%d7
+    1b76:	660e           	bnes 0x1b86
+    1b78:	203c 0000 0003 	movel #3,%d0
+    1b7e:	4a35 0800      	tstb %a5@(0,%d0:l)
+    1b82:	6700 008e      	beqw 0x1c12
+    1b86:	0c47 000e      	cmpiw #14,%d7
+    1b8a:	6616           	bnes 0x1ba2
+    1b8c:	2f0b           	movel %a3,%sp@-
+    1b8e:	4878 0900      	pea 0x900
+    1b92:	42a7           	clrl %sp@-
+    1b94:	4e92           	jsr %a2@
+    1b96:	4fef 000c      	lea %sp@(12),%sp
+    1b9a:	4a00           	tstb %d0
+    1b9c:	6774           	beqs 0x1c12
+    1b9e:	4a93           	tstl %a3@
+    1ba0:	6770           	beqs 0x1c12
+    1ba2:	0c47 000f      	cmpiw #15,%d7
+    1ba6:	6616           	bnes 0x1bbe
+    1ba8:	2f0b           	movel %a3,%sp@-
+    1baa:	4878 0900      	pea 0x900
+    1bae:	42a7           	clrl %sp@-
+    1bb0:	4e92           	jsr %a2@
+    1bb2:	4fef 000c      	lea %sp@(12),%sp
+    1bb6:	4a00           	tstb %d0
+    1bb8:	6758           	beqs 0x1c12
+    1bba:	4a93           	tstl %a3@
+    1bbc:	6754           	beqs 0x1c12
+    1bbe:	0c47 0010      	cmpiw #16,%d7
+    1bc2:	6616           	bnes 0x1bda
+    1bc4:	2f0b           	movel %a3,%sp@-
+    1bc6:	4878 0900      	pea 0x900
+    1bca:	42a7           	clrl %sp@-
+    1bcc:	4e92           	jsr %a2@
+    1bce:	4fef 000c      	lea %sp@(12),%sp
+    1bd2:	4a00           	tstb %d0
+    1bd4:	673c           	beqs 0x1c12
+    1bd6:	4a93           	tstl %a3@
+    1bd8:	6738           	beqs 0x1c12
+    1bda:	4878 ffff      	pea 0xffffffff
+    1bde:	4878 00ff      	pea 0xff
+    1be2:	7000           	moveq #0,%d0
+    1be4:	3007           	movew %d7,%d0
+    1be6:	2f00           	movel %d0,%sp@-
+    1be8:	4878 0020      	pea 0x20
+    1bec:	2f0c           	movel %a4,%sp@-
+    1bee:	207c 0000 2d6c 	moveal #11628,%a0
+    1bf4:	4ebb 88fe      	jsr %pc@(0x1bf4,%a0:l) ; -> 4960 _OS3K_strlen (A06C)
+    1bf8:	588f           	addql #4,%sp
+    1bfa:	7200           	moveq #0,%d1
+    1bfc:	1200           	moveb %d0,%d1
+    1bfe:	2001           	movel %d1,%d0
+    1c00:	2f00           	movel %d0,%sp@-
+    1c02:	2f0c           	movel %a4,%sp@-
+    1c04:	207c 0000 2d9a 	moveal #11674,%a0
+    1c0a:	4ebb 88fe      	jsr %pc@(0x1c0a,%a0:l) ; -> 49a4 DialogAddItem (A0F4)
+    1c0e:	4fef 0018      	lea %sp@(24),%sp
+    1c12:	5247           	addqw #1,%d7
+    1c14:	0c47 0011      	cmpiw #17,%d7
+    1c18:	6300 fe52      	blsw 0x1a6c
+
+--- 202e <= offset < 2092 ---
+    202e:	203c 0000 0000 	movel #0,%d0
+    2034:	4235 0800      	clrb %a5@(0,%d0:l)
+    2038:	4213           	clrb %a3@
+    203a:	203c 0000 0003 	movel #3,%d0
+    2040:	4235 0800      	clrb %a5@(0,%d0:l)
+    2044:	203c 0000 0004 	movel #4,%d0
+    204a:	4235 0800      	clrb %a5@(0,%d0:l)
+    204e:	207c 0000 2990 	moveal #10640,%a0
+    2054:	4ebb 88fe      	jsr %pc@(0x2054,%a0:l) ; -> 49e4 IsIdleSleepEnabled (A174)
+    2058:	1e00           	moveb %d0,%d7
+    205a:	42a7           	clrl %sp@-
+    205c:	207c 0000 2984 	moveal #10628,%a0
+    2062:	4ebb 88fe      	jsr %pc@(0x2062,%a0:l) ; -> 49e6 SetIdleSleepEnabled (A178)
+    2066:	588f           	addql #4,%sp
+    2068:	207c 0000 290e 	moveal #10510,%a0
+    206e:	4ebb 88fe      	jsr %pc@(0x206e,%a0:l) ; -> 497c ScanKeyboard (A0A4)
+    2072:	207c 0000 2902 	moveal #10498,%a0
+    2078:	4ebb 88fe      	jsr %pc@(0x2078,%a0:l) ; -> 497a GetKeyModifiers (A0A0)
+    207c:	0240 fc00      	andiw #-1024,%d0
+    2080:	0c40 c400      	cmpiw #-15360,%d0
+    2084:	660c           	bnes 0x2092
+    2086:	203c 0000 0003 	movel #3,%d0
+    208c:	1bbc 0001 0800 	moveb #1,%a5@(0,%d0:l)
+
+--- 21c2 <= offset < 232c ---
+    21c2:	2f07           	movel %d7,%sp@-
+    21c4:	4fef ffec      	lea %sp@(-20),%sp
+    21c8:	4217           	clrb %sp@
+    21ca:	42af 0004      	clrl %sp@(4)
+    21ce:	42af 0008      	clrl %sp@(8)
+    21d2:	42af 000c      	clrl %sp@(12)
+    21d6:	42af 0010      	clrl %sp@(16)
+    21da:	1f7c 0040 0001 	moveb #64,%sp@(1)
+    21e0:	1f7c 0048 0002 	moveb #72,%sp@(2)
+    21e6:	1f7c 00ff 0003 	moveb #-1,%sp@(3)
+    21ec:	207c 0000 274a 	moveal #10058,%a0
+    21f2:	4ebb 88fe      	jsr %pc@(0x21f2,%a0:l) ; -> 493c _OS3K_ClearScreen (A000)
+    21f6:	207c 0000 2d70 	moveal #11632,%a0
+    21fc:	41fb 88fe      	lea %pc@(0x21fc,%a0:l),%a0 ; -> 4f6c b'Enter Encryption Key'
+    2200:	2008           	movel %a0,%d0
+    2202:	2f00           	movel %d0,%sp@-
+    2204:	207c 0000 273c 	moveal #10044,%a0
+    220a:	4ebb 88fe      	jsr %pc@(0x220a,%a0:l) ; -> 4946 PutStringRaw (A014)
+    220e:	4878 000c      	pea 0xc
+    2212:	4878 0001      	pea 0x1
+    2216:	4878 0002      	pea 0x2
+    221a:	207c 0000 271e 	moveal #10014,%a0
+    2220:	4ebb 88fe      	jsr %pc@(0x2220,%a0:l) ; -> 493e _OS3K_SetCursor (A004)
+    2224:	207c 0000 2d57 	moveal #11607,%a0
+    222a:	41fb 88fe      	lea %pc@(0x222a,%a0:l),%a0 ; -> 4f81 b'(0 to Disable)'
+    222e:	2008           	movel %a0,%d0
+    2230:	2f00           	movel %d0,%sp@-
+    2232:	207c 0000 270e 	moveal #9998,%a0
+    2238:	4ebb 88fe      	jsr %pc@(0x2238,%a0:l) ; -> 4946 PutStringRaw (A014)
+    223c:	4878 000c      	pea 0xc
+    2240:	4878 0001      	pea 0x1
+    2244:	4878 0003      	pea 0x3
+    2248:	207c 0000 26f0 	moveal #9968,%a0
+    224e:	4ebb 88fe      	jsr %pc@(0x224e,%a0:l) ; -> 493e _OS3K_SetCursor (A004)
+    2252:	207c 0000 2d38 	moveal #11576,%a0
+    2258:	41fb 88fe      	lea %pc@(0x2258,%a0:l),%a0 ; -> 4f90 b'Key: '
+    225c:	2008           	movel %a0,%d0
+    225e:	2f00           	movel %d0,%sp@-
+    2260:	207c 0000 26e0 	moveal #9952,%a0
+    2266:	4ebb 88fe      	jsr %pc@(0x2266,%a0:l) ; -> 4946 PutStringRaw (A014)
+    226a:	486f 0025      	pea %sp@(37)
+    226e:	4878 000c      	pea 0xc
+    2272:	486f 002c      	pea %sp@(44)
+    2276:	486f 0034      	pea %sp@(52)
+    227a:	207c 0000 00c2 	moveal #194,%a0
+    2280:	4ebb 88fe      	jsr %pc@(0x2280,%a0:l) ; -> 2342 b'H\xe7\x1f:U\x8f$o'
+    2284:	4fef 0034      	lea %sp@(52),%sp
+    2288:	1e00           	moveb %d0,%d7
+    228a:	0c07 0040      	cmpib #64,%d7
+    228e:	6600 0094      	bnew 0x2324
+    2292:	486f 0004      	pea %sp@(4)
+    2296:	4878 0c00      	pea 0xc00
+    229a:	42a7           	clrl %sp@-
+    229c:	207c 0000 27e4 	moveal #10212,%a0
+    22a2:	4ebb 88fe      	jsr %pc@(0x22a2,%a0:l) ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    22a6:	4fef 000c      	lea %sp@(12),%sp
+    22aa:	0c17 0001      	cmpib #1,%sp@
+    22ae:	6608           	bnes 0x22b8
+    22b0:	0c2f 0030 0004 	cmpib #48,%sp@(4)
+    22b6:	6704           	beqs 0x22bc
+    22b8:	4a17           	tstb %sp@
+    22ba:	662a           	bnes 0x22e6
+    22bc:	4878 000c      	pea 0xc
+    22c0:	4878 0001      	pea 0x1
+    22c4:	4878 0004      	pea 0x4
+    22c8:	207c 0000 2670 	moveal #9840,%a0
+    22ce:	4ebb 88fe      	jsr %pc@(0x22ce,%a0:l) ; -> 493e _OS3K_SetCursor (A004)
+    22d2:	4fef 000c      	lea %sp@(12),%sp
+    22d6:	207c 0000 2cba 	moveal #11450,%a0
+    22dc:	41fb 88fe      	lea %pc@(0x22dc,%a0:l),%a0 ; -> 4f96 b'Security Disabled - Press any Key to Exit'
+    22e0:	2008           	movel %a0,%d0
+    22e2:	2f00           	movel %d0,%sp@-
+    22e4:	6028           	bras 0x230e
+    22e6:	4878 000c      	pea 0xc
+    22ea:	4878 0001      	pea 0x1
+    22ee:	4878 0004      	pea 0x4
+    22f2:	207c 0000 2646 	moveal #9798,%a0
+    22f8:	4ebb 88fe      	jsr %pc@(0x22f8,%a0:l) ; -> 493e _OS3K_SetCursor (A004)
+    22fc:	4fef 000c      	lea %sp@(12),%sp
+    2300:	207c 0000 2cba 	moveal #11450,%a0
+    2306:	41fb 88fe      	lea %pc@(0x2306,%a0:l),%a0 ; -> 4fc0 b'Security Enabled - Press any Key to Exit'
+    230a:	2008           	movel %a0,%d0
+    230c:	2f00           	movel %d0,%sp@-
+    230e:	207c 0000 2632 	moveal #9778,%a0
+    2314:	4ebb 88fe      	jsr %pc@(0x2314,%a0:l) ; -> 4946 PutStringRaw (A014)
+    2318:	588f           	addql #4,%sp
+    231a:	207c 0000 264e 	moveal #9806,%a0
+    2320:	4ebb 88fe      	jsr %pc@(0x2320,%a0:l) ; -> 496e WaitForKey (A088)
+    2324:	4fef 0014      	lea %sp@(20),%sp
+    2328:	2e1f           	movel %sp@+,%d7
+    232a:	4e75           	rts
+
+--- 2472 <= offset < 24ac ---
+    2472:	7000           	moveq #0,%d0
+    2474:	3005           	movew %d5,%d0
+    2476:	2f00           	movel %d0,%sp@-
+    2478:	207c 0000 255e 	moveal #9566,%a0
+    247e:	4ebb 88fe      	jsr %pc@(0x247e,%a0:l) ; -> 49dc _OS3K_TranslateKeyToChar (A164)
+    2482:	588f           	addql #4,%sp
+    2484:	1e00           	moveb %d0,%d7
+    2486:	6748           	beqs 0x24d0
+    2488:	7000           	moveq #0,%d0
+    248a:	1007           	moveb %d7,%d0
+    248c:	2f00           	movel %d0,%sp@-
+    248e:	207c 0000 273e 	moveal #10046,%a0
+    2494:	41fb 88fe      	lea %pc@(0x2494,%a0:l),%a0 ; -> 4bd2 b'abcde1234567890'
+    2498:	2008           	movel %a0,%d0
+    249a:	2f00           	movel %d0,%sp@-
+    249c:	207c 0000 24c0 	moveal #9408,%a0
+    24a2:	4ebb 88fe      	jsr %pc@(0x24a2,%a0:l) ; -> 4962 FindStringChar (A070)
+    24a6:	508f           	addql #8,%sp
+    24a8:	4a80           	tstl %d0
+    24aa:	6724           	beqs 0x24d0
+
+--- 36a2 <= offset < 37b8 ---
+    36a2:	4ebb 88fe      	jsr %pc@(0x36a2,%a0:l) ; -> 497a GetKeyModifiers (A0A0)
+    36a6:	0240 fc00      	andiw #-1024,%d0
+    36aa:	0c40 c400      	cmpiw #-15360,%d0
+    36ae:	6600 0108      	bnew 0x37b8
+    36b2:	45d7           	lea %sp@,%a2
+    36b4:	0c39 00ff 0040 	cmpib #-1,0x4003f5
+    36ba:	03f5 
+    36bc:	6600 00cc      	bnew 0x378a
+    36c0:	0c39 00ff 0040 	cmpib #-1,0x4003f4
+    36c6:	03f4 
+    36c8:	6600 00c0      	bnew 0x378a
+    36cc:	702b           	moveq #43,%d0
+    36ce:	2f40 0008      	movel %d0,%sp@(8)
+    36d2:	4292           	clrl %a2@
+    36d4:	486f 0008      	pea %sp@(8)
+    36d8:	4878 0200      	pea 0x200
+    36dc:	42a7           	clrl %sp@-
+    36de:	207c 0000 13a2 	moveal #5026,%a0
+    36e4:	4ebb 88fe      	jsr %pc@(0x36e4,%a0:l) ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    36e8:	4fef 000c      	lea %sp@(12),%sp
+    36ec:	4e93           	jsr %a3@
+    36ee:	2f12           	movel %a2@,%sp@-
+    36f0:	207c 0000 2baa 	moveal #11178,%a0
+    36f6:	41fb 88fe      	lea %pc@(0x36f6,%a0:l),%a0 ; -> 62a0 b'Calibrate LCD constrast trim value.\nUse the up and down arrows to adjust\nthe trim value. Current val'
+    36fa:	2008           	movel %a0,%d0
+    36fc:	2f00           	movel %d0,%sp@-
+    36fe:	4e96           	jsr %fp@
+    3700:	508f           	addql #8,%sp
+    3702:	4e94           	jsr %a4@
+    3704:	4247           	clrw %d7
+    3706:	1e00           	moveb %d0,%d7
+    3708:	0c47 004b      	cmpiw #75,%d7
+    370c:	6610           	bnes 0x371e
+    370e:	7033           	moveq #51,%d0
+    3710:	d02f 0003      	addb %sp@(3),%d0
+    3714:	0c00 003f      	cmpib #63,%d0
+    3718:	6416           	bccs 0x3730
+    371a:	5292           	addql #1,%a2@
+    371c:	6012           	bras 0x3730
+    371e:	0c47 000d      	cmpiw #13,%d7
+    3722:	660c           	bnes 0x3730
+    3724:	7024           	moveq #36,%d0
+    3726:	d02f 0003      	addb %sp@(3),%d0
+    372a:	4a00           	tstb %d0
+    372c:	6302           	blss 0x3730
+    372e:	5392           	subql #1,%a2@
+    3730:	702b           	moveq #43,%d0
+    3732:	d092           	addl %a2@,%d0
+    3734:	2f40 0008      	movel %d0,%sp@(8)
+    3738:	486f 0008      	pea %sp@(8)
+    373c:	4878 0200      	pea 0x200
+    3740:	42a7           	clrl %sp@-
+    3742:	207c 0000 133e 	moveal #4926,%a0
+    3748:	4ebb 88fe      	jsr %pc@(0x3748,%a0:l) ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    374c:	4fef 000c      	lea %sp@(12),%sp
+    3750:	0c47 0040      	cmpiw #64,%d7
+    3754:	6696           	bnes 0x36ec
+    3756:	2f0a           	movel %a2,%sp@-
+    3758:	4879 0000 a000 	pea 0xa000
+    375e:	42a7           	clrl %sp@-
+    3760:	207c 0000 1320 	moveal #4896,%a0
+    3766:	4ebb 88fe      	jsr %pc@(0x3766,%a0:l) ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    376a:	702b           	moveq #43,%d0
+    376c:	2f40 0014      	movel %d0,%sp@(20)
+    3770:	486f 0014      	pea %sp@(20)
+    3774:	4878 0200      	pea 0x200
+    3778:	42a7           	clrl %sp@-
+    377a:	207c 0000 1306 	moveal #4870,%a0
+    3780:	4ebb 88fe      	jsr %pc@(0x3780,%a0:l) ; -> 4a86 _OS3K_CallSysInt (A2B8)
+    3784:	4fef 0018      	lea %sp@(24),%sp
+    3788:	602e           	bras 0x37b8
+    378a:	0c39 0059 0040 	cmpib #89,0x4003f5
+    3790:	03f5 
+    3792:	6624           	bnes 0x37b8
+    3794:	1039 0040 03f4 	moveb 0x4003f4,%d0
+    379a:	4880           	extw %d0
+    379c:	48c0           	extl %d0
+    379e:	2480           	movel %d0,%a2@
+    37a0:	4e93           	jsr %a3@
+    37a2:	2f12           	movel %a2@,%sp@-
+    37a4:	207c 0000 2b7c 	moveal #11132,%a0
+    37aa:	41fb 88fe      	lea %pc@(0x37aa,%a0:l),%a0 ; -> 6326 b'LCD contrast trim value: %d\n\n\nPress any key to continue...'
+    37ae:	2008           	movel %a0,%d0
+    37b0:	2f00           	movel %d0,%sp@-
+    37b2:	4e96           	jsr %fp@
+    37b4:	508f           	addql #8,%sp
+    37b6:	4e94           	jsr %a4@
+
+--- 3b2e <= offset < 3c3a ---
+    3b2e:	48e7 3b00      	moveml %d2-%d4/%d6-%d7,%sp@-
+    3b32:	4244           	clrw %d4
+    3b34:	4206           	clrb %d6
+    3b36:	1206           	moveb %d6,%d1
+    3b38:	243c 0100 8000 	movel #16809984,%d2
+    3b3e:	700f           	moveq #15,%d0
+    3b40:	c001           	andb %d1,%d0
+    3b42:	0000 00b0      	orib #-80,%d0
+    3b46:	2042           	moveal %d2,%a0
+    3b48:	1080           	moveb %d0,%a0@
+    3b4a:	10bc 0010      	moveb #16,%a0@
+    3b4e:	4210           	clrb %a0@
+    3b50:	4207           	clrb %d7
+    3b52:	13c6 0100 8001 	moveb %d6,0x1008001
+    3b58:	5206           	addqb #1,%d6
+    3b5a:	5207           	addqb #1,%d7
+    3b5c:	0c07 0084      	cmpib #-124,%d7
+    3b60:	65f0           	bcss 0x3b52
+    3b62:	5201           	addqb #1,%d1
+    3b64:	0c01 0008      	cmpib #8,%d1
+    3b68:	65d4           	bcss 0x3b3e
+    3b6a:	4201           	clrb %d1
+    3b6c:	700f           	moveq #15,%d0
+    3b6e:	c001           	andb %d1,%d0
+    3b70:	0000 00b0      	orib #-80,%d0
+    3b74:	13c0 0100 0000 	moveb %d0,0x1000000
+    3b7a:	13fc 0010 0100 	moveb #16,0x1000000
+    3b80:	0000 
+    3b82:	4239 0100 0000 	clrb 0x1000000
+    3b88:	4207           	clrb %d7
+    3b8a:	13c6 0100 0001 	moveb %d6,0x1000001
+    3b90:	5206           	addqb #1,%d6
+    3b92:	5207           	addqb #1,%d7
+    3b94:	0c07 0084      	cmpib #-124,%d7
+    3b98:	65f0           	bcss 0x3b8a
+    3b9a:	5201           	addqb #1,%d1
+    3b9c:	0c01 0008      	cmpib #8,%d1
+    3ba0:	65ca           	bcss 0x3b6c
+    3ba2:	4206           	clrb %d6
+    3ba4:	1206           	moveb %d6,%d1
+    3ba6:	700f           	moveq #15,%d0
+    3ba8:	c001           	andb %d1,%d0
+    3baa:	0000 00b0      	orib #-80,%d0
+    3bae:	2042           	moveal %d2,%a0
+    3bb0:	1080           	moveb %d0,%a0@
+    3bb2:	10bc 0010      	moveb #16,%a0@
+    3bb6:	4210           	clrb %a0@
+    3bb8:	4a39 0100 8001 	tstb 0x1008001
+    3bbe:	4207           	clrb %d7
+    3bc0:	1639 0100 8001 	moveb 0x1008001,%d3
+    3bc6:	5206           	addqb #1,%d6
+    3bc8:	1006           	moveb %d6,%d0
+    3bca:	5300           	subqb #1,%d0
+    3bcc:	b600           	cmpb %d0,%d3
+    3bce:	6702           	beqs 0x3bd2
+    3bd0:	5244           	addqw #1,%d4
+    3bd2:	5207           	addqb #1,%d7
+    3bd4:	0c07 0084      	cmpib #-124,%d7
+    3bd8:	65e6           	bcss 0x3bc0
+    3bda:	5201           	addqb #1,%d1
+    3bdc:	0c01 0008      	cmpib #8,%d1
+    3be0:	65c4           	bcss 0x3ba6
+    3be2:	4201           	clrb %d1
+    3be4:	700f           	moveq #15,%d0
+    3be6:	c001           	andb %d1,%d0
+    3be8:	0000 00b0      	orib #-80,%d0
+    3bec:	13c0 0100 0000 	moveb %d0,0x1000000
+    3bf2:	13fc 0010 0100 	moveb #16,0x1000000
+    3bf8:	0000 
+    3bfa:	4239 0100 0000 	clrb 0x1000000
+    3c00:	4a39 0100 0001 	tstb 0x1000001
+    3c06:	4207           	clrb %d7
+    3c08:	1639 0100 0001 	moveb 0x1000001,%d3
+    3c0e:	5206           	addqb #1,%d6
+    3c10:	1006           	moveb %d6,%d0
+    3c12:	5300           	subqb #1,%d0
+    3c14:	b600           	cmpb %d0,%d3
+    3c16:	6702           	beqs 0x3c1a
+    3c18:	5244           	addqw #1,%d4
+    3c1a:	5207           	addqb #1,%d7
+    3c1c:	0c07 0084      	cmpib #-124,%d7
+    3c20:	65e6           	bcss 0x3c08
+    3c22:	5201           	addqb #1,%d1
+    3c24:	0c01 0008      	cmpib #8,%d1
+    3c28:	65ba           	bcss 0x3be4
+    3c2a:	4a44           	tstw %d4
+    3c2c:	6604           	bnes 0x3c32
+    3c2e:	7002           	moveq #2,%d0
+    3c30:	6002           	bras 0x3c34
+    3c32:	7003           	moveq #3,%d0
+    3c34:	4cdf 00dc      	moveml %sp@+,%d2-%d4/%d6-%d7
+    3c38:	4e75           	rts

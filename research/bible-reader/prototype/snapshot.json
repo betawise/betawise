@@ -1,0 +1,99 @@
+{
+  "description": "Complete reader prototype immediately before production simplification; native/streaming/codecs/indexes and benchmark controls.",
+  "files": [
+    {
+      "path": "Benchmark.c"
+    },
+    {
+      "path": "resource.asm"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": "NoIndex.h"
+    },
+    {
+      "path": "Search.h"
+    },
+    {
+      "path": "wide_huffman.py"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "ReaderResource.asm"
+    },
+    {
+      "path": "Decoder.c"
+    },
+    {
+      "path": "VerseBoost.h"
+    },
+    {
+      "path": "SearchMatch.h"
+    },
+    {
+      "path": "build_data.py"
+    },
+    {
+      "path": "search_options.py"
+    },
+    {
+      "path": "Decoder.h"
+    },
+    {
+      "path": "Search.c"
+    },
+    {
+      "path": "Superscript.h"
+    },
+    {
+      "path": "HuffmanDecoder.c"
+    },
+    {
+      "path": "generate_superscript.py"
+    },
+    {
+      "path": "Makefile"
+    },
+    {
+      "path": "profile.py"
+    },
+    {
+      "path": "native_check.c"
+    },
+    {
+      "path": "NativeFeed.h"
+    },
+    {
+      "path": "Streaming.c"
+    },
+    {
+      "path": "NativePrewrap.h"
+    },
+    {
+      "path": "HuffmanDecoder.h"
+    },
+    {
+      "path": "verse_boost.py"
+    },
+    {
+      "path": "SearchBench.h"
+    },
+    {
+      "path": "BibleReader.c"
+    },
+    {
+      "path": "prepare.py"
+    },
+    {
+      "path": "seek_prepare.c"
+    },
+    {
+      "path": "SearchModesBench.h"
+    }
+  ],
+  "generated_navigation": "Navigation.h is produced by prepare.py during the build and is not a snapshot input."
+}

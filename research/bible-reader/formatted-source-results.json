@@ -1,0 +1,24 @@
+{
+  "items": 32429,
+  "verses": 31102,
+  "headings": 1327,
+  "words": 789631,
+  "marked_words": 78350,
+  "flags": {
+    "p": 31102,
+    "s": 6883,
+    "r": 41809
+  },
+  "flag_combinations": {
+    "p": 29658,
+    "s": 6864,
+    "sp": 19,
+    "r": 40384,
+    "rp": 1425
+  },
+  "style_transition_events": 15108,
+  "style_transition_bytes": 31406,
+  "paragraph_markers_all_at_verse_start": true,
+  "style_sidecar_exact_roundtrip": true,
+  "plain_verse_text_bytes": 4140141
+}

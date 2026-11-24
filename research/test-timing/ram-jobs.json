@@ -1,0 +1,14 @@
+[
+  {
+    "id": "neo-adaptive-graphics-ram",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "ram": true,
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5
+    }
+  }
+]

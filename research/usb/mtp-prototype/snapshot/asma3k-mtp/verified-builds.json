@@ -1,0 +1,35 @@
+{
+  "ro": {
+    "build": {
+      "writable": false,
+      "code_bytes": 7697,
+      "static_ram_bytes": 648,
+      "stack_reserved_bytes": 8192,
+      "telemetry_bytes": 84,
+      "max_session_file_handles": 0,
+      "whole_file_buffer_bytes": 0,
+      "upload_chunk_bytes": 0,
+      "entry": "0x30364",
+      "end": "0x3209c"
+    }
+  },
+  "rw": {
+    "build": {
+      "writable": true,
+      "code_bytes": 10575,
+      "static_ram_bytes": 1864,
+      "stack_reserved_bytes": 8192,
+      "telemetry_bytes": 84,
+      "max_session_file_handles": 256,
+      "whole_file_buffer_bytes": 0,
+      "upload_chunk_bytes": 128,
+      "entry": "0x30364",
+      "end": "0x33098"
+    }
+  },
+  "fat_baseline_stack": {
+    "stack_high_water_bytes": 568,
+    "minimum_observed_sp": 253384
+  },
+  "vhci_detached": true
+}

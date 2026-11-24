@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "mode": "window",
+      "session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-window",
+      "record": {
+        "record": 4378,
+        "data": 99484,
+        "length": 1030,
+        "saved": 1030,
+        "capacity": 403456,
+        "reserved": 512,
+        "position": 0
+      }
+    },
+    {
+      "mode": "demand",
+      "session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-demand",
+      "record": {
+        "record": 4378,
+        "data": 99484,
+        "length": 14860,
+        "saved": 14860,
+        "capacity": 403456,
+        "reserved": 512,
+        "position": 0
+      }
+    },
+    {
+      "mode": "background",
+      "session": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-background",
+      "record": {
+        "record": 4378,
+        "data": 99484,
+        "length": 14860,
+        "saved": 14860,
+        "capacity": 403456,
+        "reserved": 512,
+        "position": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "layout": 5,
+    "stable_samples": 3,
+    "black_pixels": 3375,
+    "description": "Two inputs / two selected lists"
+  },
+  {
+    "layout": 6,
+    "stable_samples": 3,
+    "black_pixels": 2399,
+    "description": "Two input fields"
+  },
+  {
+    "layout": 7,
+    "stable_samples": 3,
+    "black_pixels": 4639,
+    "description": "Selected body; special input unset"
+  },
+  {
+    "layout": 8,
+    "stable_samples": 3,
+    "black_pixels": 2359,
+    "description": "Line selection enabled"
+  },
+  {
+    "layout": 9,
+    "stable_samples": 3,
+    "black_pixels": 2359,
+    "description": "Line selection enabled"
+  },
+  {
+    "layout": 11,
+    "stable_samples": 3,
+    "black_pixels": 5345,
+    "description": "40:60 panes / letter-choice inputs"
+  },
+  {
+    "layout": 12,
+    "stable_samples": 3,
+    "black_pixels": 5116,
+    "description": "Letter choice B / selected body"
+  },
+  {
+    "layout": 13,
+    "stable_samples": 3,
+    "black_pixels": 4549,
+    "description": "Selected body / no text input"
+  },
+  {
+    "layout": 14,
+    "stable_samples": 3,
+    "black_pixels": 5012,
+    "description": "Underlined text input / selected body"
+  },
+  {
+    "layout": 15,
+    "stable_samples": 3,
+    "black_pixels": 5005,
+    "description": "Text entry Ben / selected body"
+  },
+  {
+    "layout": 16,
+    "stable_samples": 3,
+    "black_pixels": 5051,
+    "description": "Text entry / selected lower panes"
+  },
+  {
+    "layout": 17,
+    "stable_samples": 3,
+    "black_pixels": 5165,
+    "description": "Letter choice B / selected lower panes"
+  },
+  {
+    "layout": 18,
+    "stable_samples": 3,
+    "black_pixels": 2359,
+    "description": "Selected body; special input unset"
+  },
+  {
+    "layout": 19,
+    "stable_samples": 3,
+    "black_pixels": 5350,
+    "description": "Equal panes / letter-choice inputs"
+  },
+  {
+    "layout": 20,
+    "stable_samples": 3,
+    "black_pixels": 4572,
+    "description": "Titled panes / selected bodies"
+  },
+  {
+    "layout": 21,
+    "stable_samples": 3,
+    "black_pixels": 5169,
+    "description": "Body panes / choice and text inputs"
+  }
+]

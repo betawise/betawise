@@ -1,0 +1,1137 @@
+{
+  "date": "2026-11-23",
+  "version": "NKJV",
+  "chapter": "Psalm 119",
+  "page": {
+    "reader": "native-lookahead",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-insert-coalesced-page",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.350182273163,
+      "work": [],
+      "lcd_writes": 4500
+    },
+    "scroll_seconds": 2.7110583640180117,
+    "background_seconds": 8.595655116913985,
+    "total_seconds": 11.656895754094997,
+    "final_end": {
+      "seconds": 0.25107903159500466,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.031257538927000894,
+    "movement_max_seconds": 0.25107903159500466,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.016724718418000606,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 6.031139996309776e-07,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.027680951143999266,
+      "work": [],
+      "lcd_writes": 4496
+    }
+  },
+  "line": {
+    "reader": "native-lookahead",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-insert-coalesced-line",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.350182273163,
+      "work": [],
+      "lcd_writes": 4500
+    },
+    "scroll_seconds": 7.077450718170098,
+    "background_seconds": 8.729801223016,
+    "total_seconds": 16.1574342143491,
+    "final_end": {
+      "seconds": 0.25107903159499756,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.022032153465005422,
+    "movement_max_seconds": 0.25107903159499756,
+    "pure_decode": {
+      "seconds": 0.6476468775909865,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.016724718418000606,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 6.031139996309776e-07,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.027680951143999266,
+      "work": [],
+      "lcd_writes": 4496
+    }
+  },
+  "production": {
+    "application_rom_bytes": 23586,
+    "bible_navigation_bytes": 1848,
+    "executable_bytes": 16662,
+    "font_bytes": 3584,
+    "maintenance": {
+      "parser_version": "Debian clang version 14.0.6",
+      "preprocessor_version": "m68k-linux-gnu-gcc (Debian 12.2.0-13) 12.2.0",
+      "target_struct_alignment": 2,
+      "method": "preprocessed C; CC=1/function + if/for/while/do/case/?:/&&/||; assets/SDK/firmware excluded",
+      "frontend": {
+        "c_tokens": 8013,
+        "functions": 46,
+        "cc_sum": 464,
+        "cc_max": 74
+      },
+      "including_codec_search": {
+        "c_tokens": 12802,
+        "functions": 75,
+        "cc_sum": 680,
+        "cc_max": 74
+      },
+      "translation_units": [
+        {
+          "unit": "BibleReader",
+          "source_tokens": {
+            "BibleReader.c": 5944,
+            "NativeFeed.h": 2069
+          },
+          "functions": [
+            {
+              "name": "close_jump",
+              "source": "BibleReader.c",
+              "cc": 2
+            },
+            {
+              "name": "read_jump",
+              "source": "BibleReader.c",
+              "cc": 2
+            },
+            {
+              "name": "be16",
+              "source": "BibleReader.c",
+              "cc": 1
+            },
+            {
+              "name": "book_for",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "logical",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "verse_for",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "observe",
+              "source": "BibleReader.c",
+              "cc": 4
+            },
+            {
+              "name": "ui_line",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "show_notice",
+              "source": "BibleReader.c",
+              "cc": 2
+            },
+            {
+              "name": "redraw",
+              "source": "BibleReader.c",
+              "cc": 2
+            },
+            {
+              "name": "reference",
+              "source": "BibleReader.c",
+              "cc": 1
+            },
+            {
+              "name": "make_super",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "append",
+              "source": "BibleReader.c",
+              "cc": 6
+            },
+            {
+              "name": "emit_byte",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "marker",
+              "source": "BibleReader.c",
+              "cc": 7
+            },
+            {
+              "name": "feed_capture_file",
+              "source": "NativeFeed.h",
+              "cc": 1
+            },
+            {
+              "name": "feed_abs",
+              "source": "NativeFeed.h",
+              "cc": 1
+            },
+            {
+              "name": "feed_stats",
+              "source": "NativeFeed.h",
+              "cc": 5
+            },
+            {
+              "name": "feed_position",
+              "source": "NativeFeed.h",
+              "cc": 3
+            },
+            {
+              "name": "feed_more",
+              "source": "NativeFeed.h",
+              "cc": 25
+            },
+            {
+              "name": "feed_geometry",
+              "source": "NativeFeed.h",
+              "cc": 8
+            },
+            {
+              "name": "feed_start",
+              "source": "NativeFeed.h",
+              "cc": 2
+            },
+            {
+              "name": "feed_rebuild",
+              "source": "NativeFeed.h",
+              "cc": 15
+            },
+            {
+              "name": "feed_verse",
+              "source": "NativeFeed.h",
+              "cc": 5
+            },
+            {
+              "name": "feed_view",
+              "source": "NativeFeed.h",
+              "cc": 5
+            },
+            {
+              "name": "feed_finish",
+              "source": "NativeFeed.h",
+              "cc": 6
+            },
+            {
+              "name": "feed_ready",
+              "source": "NativeFeed.h",
+              "cc": 24
+            },
+            {
+              "name": "feed_selection",
+              "source": "NativeFeed.h",
+              "cc": 5
+            },
+            {
+              "name": "feed_key",
+              "source": "NativeFeed.h",
+              "cc": 11
+            },
+            {
+              "name": "feed_key_done",
+              "source": "NativeFeed.h",
+              "cc": 3
+            },
+            {
+              "name": "feed_select_all",
+              "source": "NativeFeed.h",
+              "cc": 4
+            },
+            {
+              "name": "move_to",
+              "source": "BibleReader.c",
+              "cc": 13
+            },
+            {
+              "name": "jump",
+              "source": "BibleReader.c",
+              "cc": 4
+            },
+            {
+              "name": "jump_word",
+              "source": "BibleReader.c",
+              "cc": 17
+            },
+            {
+              "name": "open_chapter",
+              "source": "BibleReader.c",
+              "cc": 23
+            },
+            {
+              "name": "save",
+              "source": "BibleReader.c",
+              "cc": 1
+            },
+            {
+              "name": "prompt",
+              "source": "BibleReader.c",
+              "cc": 5
+            },
+            {
+              "name": "parse_reference",
+              "source": "BibleReader.c",
+              "cc": 48
+            },
+            {
+              "name": "search_next",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "search_step",
+              "source": "BibleReader.c",
+              "cc": 8
+            },
+            {
+              "name": "copy_verses_impl",
+              "source": "BibleReader.c",
+              "cc": 21
+            },
+            {
+              "name": "copy_feed_selection",
+              "source": "BibleReader.c",
+              "cc": 22
+            },
+            {
+              "name": "copy_verses",
+              "source": "BibleReader.c",
+              "cc": 3
+            },
+            {
+              "name": "accept",
+              "source": "BibleReader.c",
+              "cc": 5
+            },
+            {
+              "name": "character",
+              "source": "BibleReader.c",
+              "cc": 49
+            },
+            {
+              "name": "ProcessMessage",
+              "source": "BibleReader.c",
+              "cc": 74
+            }
+          ]
+        },
+        {
+          "unit": "HuffmanDecoder",
+          "source_tokens": {
+            "HuffmanDecoder.c": 2169
+          },
+          "functions": [
+            {
+              "name": "be16",
+              "source": "HuffmanDecoder.c",
+              "cc": 1
+            },
+            {
+              "name": "be32",
+              "source": "HuffmanDecoder.c",
+              "cc": 1
+            },
+            {
+              "name": "fail",
+              "source": "HuffmanDecoder.c",
+              "cc": 1
+            },
+            {
+              "name": "BibleInit",
+              "source": "HuffmanDecoder.c",
+              "cc": 22
+            },
+            {
+              "name": "BibleOpenChapter",
+              "source": "HuffmanDecoder.c",
+              "cc": 5
+            },
+            {
+              "name": "refill",
+              "source": "HuffmanDecoder.c",
+              "cc": 4
+            },
+            {
+              "name": "symbol",
+              "source": "HuffmanDecoder.c",
+              "cc": 5
+            },
+            {
+              "name": "spelling",
+              "source": "HuffmanDecoder.c",
+              "cc": 19
+            },
+            {
+              "name": "BibleReadNode",
+              "source": "HuffmanDecoder.c",
+              "cc": 5
+            },
+            {
+              "name": "BiblePushRule",
+              "source": "HuffmanDecoder.c",
+              "cc": 6
+            },
+            {
+              "name": "BibleReadTerminal",
+              "source": "HuffmanDecoder.c",
+              "cc": 7
+            },
+            {
+              "name": "BibleReadByte",
+              "source": "HuffmanDecoder.c",
+              "cc": 6
+            },
+            {
+              "name": "BibleGetWord",
+              "source": "HuffmanDecoder.c",
+              "cc": 4
+            },
+            {
+              "name": "BibleOpenVerse",
+              "source": "HuffmanDecoder.c",
+              "cc": 6
+            }
+          ]
+        },
+        {
+          "unit": "Search",
+          "source_tokens": {
+            "Search.c": 2620
+          },
+          "functions": [
+            {
+              "name": "be16",
+              "source": "Search.c",
+              "cc": 1
+            },
+            {
+              "name": "be24",
+              "source": "Search.c",
+              "cc": 1
+            },
+            {
+              "name": "be32",
+              "source": "Search.c",
+              "cc": 1
+            },
+            {
+              "name": "packed14",
+              "source": "Search.c",
+              "cc": 1
+            },
+            {
+              "name": "mapped",
+              "source": "Search.c",
+              "cc": 5
+            },
+            {
+              "name": "canonical",
+              "source": "Search.c",
+              "cc": 3
+            },
+            {
+              "name": "posting_offset",
+              "source": "Search.c",
+              "cc": 2
+            },
+            {
+              "name": "bit",
+              "source": "Search.c",
+              "cc": 1
+            },
+            {
+              "name": "read_postings",
+              "source": "Search.c",
+              "cc": 29
+            },
+            {
+              "name": "letter",
+              "source": "Search.c",
+              "cc": 4
+            },
+            {
+              "name": "lower",
+              "source": "Search.c",
+              "cc": 3
+            },
+            {
+              "name": "compare_word",
+              "source": "Search.c",
+              "cc": 6
+            },
+            {
+              "name": "filter",
+              "source": "Search.c",
+              "cc": 9
+            },
+            {
+              "name": "SearchStart",
+              "source": "Search.c",
+              "cc": 37
+            },
+            {
+              "name": "SearchStep",
+              "source": "Search.c",
+              "cc": 21
+            }
+          ]
+        }
+      ]
+    },
+    "name": "native-lookahead",
+    "flags": {
+      "READER": "BibleReader",
+      "VERSION": "NKJV",
+      "PRUNE": 1,
+      "PROFILE": 0,
+      "TEST_FONT": 0,
+      "WORK_PROFILE": 0,
+      "NATIVE_STREAM": 4,
+      "LCD_ROLL": 0,
+      "NATIVE_OPEN_TEST": 0,
+      "NATIVE_PAGE_TEST": 1
+    },
+    "rom_bytes": 1335412,
+    "a5_bytes": 3546,
+    "common_resource_bytes": 1309978,
+    "other_rom_bytes": 25434
+  },
+  "append_audit": {
+    "status": "passed",
+    "run": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-insert-coalesced-page",
+    "idle_slices": 55,
+    "idle_seconds": 8.595655116913983,
+    "max_idle_milliseconds": 266.68340508900457,
+    "insert_calls": 55,
+    "insert_seconds": 6.888474656497015,
+    "lcd_data_writes": 0,
+    "first_insert": {
+      "prefix_bytes": 257,
+      "milliseconds": 12.17060315200058,
+      "lcd_writes": 0
+    },
+    "last_insert": {
+      "prefix_bytes": 14253,
+      "milliseconds": 234.79868771499923,
+      "lcd_writes": 0
+    },
+    "inserts": [
+      {
+        "prefix_bytes": 257,
+        "milliseconds": 12.17060315200058,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 518,
+        "milliseconds": 16.44101350199989,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 777,
+        "milliseconds": 20.698637830001587,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1048,
+        "milliseconds": 25.048779875998406,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1312,
+        "milliseconds": 29.12577150299711,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1570,
+        "milliseconds": 33.22453555299987,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1827,
+        "milliseconds": 37.29278202499842,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2086,
+        "milliseconds": 41.364466246999854,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2343,
+        "milliseconds": 45.91610874399876,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2602,
+        "milliseconds": 49.95365670400176,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2861,
+        "milliseconds": 54.15742293499903,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3118,
+        "milliseconds": 58.286825186002034,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3374,
+        "milliseconds": 62.320030723999054,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3634,
+        "milliseconds": 66.47048165999792,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3891,
+        "milliseconds": 70.50839148800137,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4154,
+        "milliseconds": 74.50541017399814,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4411,
+        "milliseconds": 78.83408135399961,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4670,
+        "milliseconds": 82.88634530000039,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4927,
+        "milliseconds": 87.03480595900004,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5184,
+        "milliseconds": 91.33621637800005,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5444,
+        "milliseconds": 95.51929579200191,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5703,
+        "milliseconds": 99.95791468899995,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5965,
+        "milliseconds": 104.30630770299842,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6223,
+        "milliseconds": 108.31924860400122,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6479,
+        "milliseconds": 112.80002518299881,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6742,
+        "milliseconds": 116.77858857499857,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6998,
+        "milliseconds": 120.93519127600061,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7256,
+        "milliseconds": 125.27894031100217,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7513,
+        "milliseconds": 129.44386598799795,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7773,
+        "milliseconds": 133.4391356430018,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8032,
+        "milliseconds": 137.71340592199977,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8294,
+        "milliseconds": 142.08791378199948,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8564,
+        "milliseconds": 146.41688651800067,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8825,
+        "milliseconds": 150.7749293600007,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9090,
+        "milliseconds": 154.83310382500193,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9350,
+        "milliseconds": 159.02752178599755,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9608,
+        "milliseconds": 163.26819860499953,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9865,
+        "milliseconds": 167.46551151400269,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10124,
+        "milliseconds": 171.76276044500227,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10380,
+        "milliseconds": 175.8228045630048,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10636,
+        "milliseconds": 180.00751238599833,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10895,
+        "milliseconds": 183.9778131130032,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11151,
+        "milliseconds": 188.3614883070024,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11408,
+        "milliseconds": 192.40265495200504,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11664,
+        "milliseconds": 196.59749509300184,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11923,
+        "milliseconds": 200.88262142900248,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12180,
+        "milliseconds": 205.0212513269969,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12439,
+        "milliseconds": 209.09257368099787,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12696,
+        "milliseconds": 213.42462230099812,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12961,
+        "milliseconds": 217.64533604100222,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13220,
+        "milliseconds": 221.6557438620015,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13476,
+        "milliseconds": 225.99092867500303,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13735,
+        "milliseconds": 230.50306719200364,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13997,
+        "milliseconds": 234.58494404499675,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 14253,
+        "milliseconds": 234.79868771499923,
+        "lcd_writes": 0
+      }
+    ],
+    "idle": [
+      {
+        "prefix_bytes": 257,
+        "milliseconds": 30.598214492002285,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 518,
+        "milliseconds": 44.97657745599781,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 777,
+        "milliseconds": 52.64499347499907,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1048,
+        "milliseconds": 53.519810611000196,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1312,
+        "milliseconds": 60.0481598729985,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1570,
+        "milliseconds": 66.53423082999765,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 1827,
+        "milliseconds": 66.58730487900044,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2086,
+        "milliseconds": 73.05311119900182,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2343,
+        "milliseconds": 74.80479605900214,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2602,
+        "milliseconds": 80.75741251299817,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 2861,
+        "milliseconds": 88.05298333800238,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3118,
+        "milliseconds": 87.33895644699885,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3374,
+        "milliseconds": 94.9358431230003,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3634,
+        "milliseconds": 96.1327835489989,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 3891,
+        "milliseconds": 101.76882536200083,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4154,
+        "milliseconds": 108.60512473099959,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4411,
+        "milliseconds": 108.59794767199915,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4670,
+        "milliseconds": 114.43404246499966,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 4927,
+        "milliseconds": 116.15991403700221,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5184,
+        "milliseconds": 124.26775905599996,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5444,
+        "milliseconds": 129.4666033930021,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5703,
+        "milliseconds": 130.65099904300226,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 5965,
+        "milliseconds": 137.120122492,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6223,
+        "milliseconds": 137.53241135299987,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6479,
+        "milliseconds": 146.071543331999,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6742,
+        "milliseconds": 146.59564956500049,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 6998,
+        "milliseconds": 152.7092371969978,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7256,
+        "milliseconds": 158.82602133399715,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7513,
+        "milliseconds": 160.326267887001,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 7773,
+        "milliseconds": 167.59379390299856,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8032,
+        "milliseconds": 168.27109114100125,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8294,
+        "milliseconds": 175.8109232140015,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8564,
+        "milliseconds": 175.10383213499736,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 8825,
+        "milliseconds": 182.79788050699963,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9090,
+        "milliseconds": 190.24290303100244,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9350,
+        "milliseconds": 189.82024060499825,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9608,
+        "milliseconds": 195.80265089999926,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 9865,
+        "milliseconds": 196.72366658299723,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10124,
+        "milliseconds": 205.1673858950025,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10380,
+        "milliseconds": 211.65695491500003,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10636,
+        "milliseconds": 211.58711429099952,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 10895,
+        "milliseconds": 217.52977936099427,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11151,
+        "milliseconds": 217.7213284290005,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11408,
+        "milliseconds": 222.5361699589996,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11664,
+        "milliseconds": 231.7922840899982,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 11923,
+        "milliseconds": 232.060247725002,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12180,
+        "milliseconds": 237.1303271820011,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12439,
+        "milliseconds": 239.27566467499872,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12696,
+        "milliseconds": 246.01733542699833,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 12961,
+        "milliseconds": 245.63821784600037,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13220,
+        "milliseconds": 253.11779881099739,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13476,
+        "milliseconds": 259.3885580009996,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13735,
+        "milliseconds": 259.090498966998,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 13997,
+        "milliseconds": 266.68340508900457,
+        "lcd_writes": 0
+      },
+      {
+        "prefix_bytes": 14253,
+        "milliseconds": 253.97741746899527,
+        "lcd_writes": 0
+      }
+    ]
+  },
+  "comparison_source": "native-streaming.md; unchanged native/custom implementations use previously accepted current-clock MAME runs",
+  "validation": [
+    {
+      "run": "native-insert-coalesced-page",
+      "states": 83
+    },
+    {
+      "run": "native-insert-coalesced-line",
+      "states": 317
+    },
+    {
+      "run": "native-insert-features",
+      "states": 49
+    },
+    {
+      "run": "native-insert-small-final",
+      "states": 17
+    }
+  ]
+}

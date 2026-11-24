@@ -1,0 +1,639 @@
+{
+  "image_count": 56,
+  "scope": "All inventoried images; direct/nearby-register PC-indexed candidates only, not exhaustive indirect call resolution.",
+  "images": [
+    {
+      "name": "SpellCheck Small USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Small USA.OS3KApp",
+      "sha256": "e699076e5d6522f63ab2201e1ac74dcff5ddc3f26beaaf801985c436179394ec",
+      "header_ram_bytes": 7248,
+      "candidate_counts": {
+        "FileBindState": 7
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Control Panel",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/ControlPanel.OS3KApp",
+      "sha256": "37eb0e316503b1b2071aa5dced1700c69a028a79539f815e1a04c9b4c8fd74c1",
+      "header_ram_bytes": 404,
+      "candidate_counts": {
+        "CallSysInt": 10
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Medium (5 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontMedium.OS3KApp",
+      "sha256": "e4081207f4b4561f90e845e80a7623b4ae8ce90e88bf8b53bc8fc318819c1b90",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Large USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Large USA.OS3KApp",
+      "sha256": "f99536c33f406ebb28920116740fe4a1ebdef3a54d381e3f6717d29519a0da28",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Extra Large (2 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontXLarge.OS3KApp",
+      "sha256": "ff5fbe859cf17b9851007981f4722a76a63b6942dedea5c82004cc33f0e29c7c",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Small USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Small USA.OS3KApp",
+      "sha256": "3b33dd1b02cb00b1d1bf4ebb7bb05754f01fea4519e78fe454aa69ed25931cbe",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Small (6 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontSmall.OS3KApp",
+      "sha256": "dc5c987795574ba11561ca9384b9deb7fb8e02817a81de0b1b0ad6056fb11b77",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Spanish to English",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "sha256": "2d05592284470fff8e5e3760fcbfdc45d219d6b73f2351e37bade9c1e6605593",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Keywords",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/KeyWords.OS3KApp",
+      "sha256": "a0f9851a5c08c85a4ba3b59686497726a6a4b42b2a60796d268309546ccd61b0",
+      "header_ram_bytes": 3176,
+      "candidate_counts": {
+        "FileBindState": 3,
+        "FileCreate": 2
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Very Large (3 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontVLarge.OS3KApp",
+      "sha256": "95274568408c85000595f8993920575b19ffd809f6df678dd3e12c14c1adb2b3",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Beamer",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp",
+      "sha256": "d89db41bd43e91e49ca81ce31f9676c40e80dc3f2508e37ed50c35430338a36d",
+      "header_ram_bytes": 2076,
+      "candidate_counts": {
+        "ClipboardResize": 9,
+        "FileBindState": 2,
+        "FileCreate": 1
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "SpellCheck Large USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Large USA.OS3KApp",
+      "sha256": "8f5f13095104df68658ea7d31507455f926f03950c1522dde6b93cd4c79bc3af",
+      "header_ram_bytes": 7248,
+      "candidate_counts": {
+        "FileBindState": 7
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Calculator",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Calculator.OS3KApp",
+      "sha256": "c6854215651418b0a25b9cc4903c78d996d15254f0f29f24b4febc6411b1851b",
+      "header_ram_bytes": 1388,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "AlphaWord Plus",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/AlphaWordPlus.OS3KApp",
+      "sha256": "22fc6a9b7ab96b332965074d81e88a61574c82bd118cd0a5122ff17eda348515",
+      "header_ram_bytes": 3448,
+      "candidate_counts": {
+        "FileBindState": 6,
+        "FileCreate": 9
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "StyleWriterFont",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SWFont.OS3KApp",
+      "sha256": "8e3396159b5c15c4aa0e8bcefd3995d08cb743b9d321e377367446a8e0872b33",
+      "header_ram_bytes": 0,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Large (4 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontLarge.OS3KApp",
+      "sha256": "f9eccba695628705f99947f5f66e64fdca2ab3795cd741abd9c9742340d160c5",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Solo (1 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontSolo.OS3KApp",
+      "sha256": "579b4974599336abd487f3c2471b5251cef406e949941f6b1cd3b0dd606534a1",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Tech (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech6.OS3KApp",
+      "sha256": "045532ae8f597e5c77e5f29bde5fdc1032e586776ba52352295c9126ea9d9b2c",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Neuropol (3 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNeuropol.OS3KApp",
+      "sha256": "fb09f4a48179f88ec81eef8aff098125f38a73eb69455b0fa556b071375f0faf",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Tech (1 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech1.OS3KApp",
+      "sha256": "1532e57232236a2588301ff9763904dfd7506e7f613d8a85485b29adc76a5d13",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Femto (9 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontFemto.OS3KApp",
+      "sha256": "aa35d2a567e3aa2172713ae41429f89310110a7a84ebe9df5727a295098508ac",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Klingon (2 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontKlingon.OS3KApp",
+      "sha256": "5c5b78ff8e132b007376711459c1cafb1926553cfdec3407af785775e7adb319",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Atto (11 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontAtto.OS3KApp",
+      "sha256": "36ed02d2018c725304279d3cff70d2950813447f21dfdbcdab974adf27d0317e",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Micro (7 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMicro.OS3KApp",
+      "sha256": "90aca9af77b4130d304416d2d00bf1d7289859868864e4d5f06a497c2fc1c097",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Nano (8 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNano.OS3KApp",
+      "sha256": "ab5100bdc2b025c579340118861403252d1cb839d1d0327d1735c6c5476491ef",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Mirror (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMirror.OS3KApp",
+      "sha256": "8e55026b1a30cd8c85e00a943fccdb2944cdbf73144c5b89799f544f87ebaefa",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Bold (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontBold.OS3KApp",
+      "sha256": "0277a449b9964244358567b4d726b9fce4c1c1b720548181f1c091880ecbe0cb",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "MathFacts in a Flash RP",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsinaflash.os3kapp",
+      "sha256": "30a8933dd7baaaa896352b46e3491db8016e08399d9425bbb3a1ebd38f4713db",
+      "header_ram_bytes": 4516,
+      "candidate_counts": {
+        "CallSysInt": 2,
+        "FileBindState": 1,
+        "FontDialogCreate": 18
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "MathFacts in a Flash (offline)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsoffline.os3kapp",
+      "sha256": "819cd74d451839204d8cfa5a845d72a5a9cdc4912f73ff00cbc56bb5f425564a",
+      "header_ram_bytes": 1192,
+      "candidate_counts": {
+        "CallSysInt": 6,
+        "FileBindState": 3,
+        "FontDialogCreate": 17
+      },
+      "scratch_calls": [
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "963c:\t4ebb 88fe      \tjsr %pc@(0x963c,%a0:l)",
+          "nearby_pea_literals": [
+            12288
+          ],
+          "context": "    95fa:\t4ebb 88fe      \tjsr %pc@(0x95fa,%a0:l)\n    95fe:\t4fef 0014      \tlea %sp@(20),%sp\n    9602:\t508f           \taddql #8,%sp\n    9604:\t4cdf 1800      \tmoveml %sp@+,%a3-%a4\n    9608:\t4e75           \trts\n    960a:\t0c2f 003e 0007 \tcmpib #62,%sp@(7)\n    9610:\t6204           \tbhis 0x9616\n    9612:\t7201           \tmoveq #1,%d1\n    9614:\t6002           \tbras 0x9618\n    9616:\t4201           \tclrb %d1\n    9618:\t1001           \tmoveb %d1,%d0\n    961a:\t4e75           \trts\n    961c:\t203c 0000 0492 \tmovel #1170,%d0\n    9622:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    9626:\t203c 0000 0494 \tmovel #1172,%d0\n    962c:\td08d           \taddl %a5,%d0\n    962e:\t2f00           \tmovel %d0,%sp@-\n    9630:\t4878 3000      \tpea 0x3000\n    9634:\t42a7           \tclrl %sp@-\n    9636:\t207c 0000 110a \tmoveal #4362,%a0\n    963c:\t4ebb 88fe      \tjsr %pc@(0x963c,%a0:l)\n    9640:\t4fef 000c      \tlea %sp@(12),%sp\n    9644:\t4a00           \ttstb %d0"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "9668:\t4ebb 88fe      \tjsr %pc@(0x9668,%a0:l)",
+          "nearby_pea_literals": [
+            12288,
+            20480
+          ],
+          "context": "    961c:\t203c 0000 0492 \tmovel #1170,%d0\n    9622:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    9626:\t203c 0000 0494 \tmovel #1172,%d0\n    962c:\td08d           \taddl %a5,%d0\n    962e:\t2f00           \tmovel %d0,%sp@-\n    9630:\t4878 3000      \tpea 0x3000\n    9634:\t42a7           \tclrl %sp@-\n    9636:\t207c 0000 110a \tmoveal #4362,%a0\n    963c:\t4ebb 88fe      \tjsr %pc@(0x963c,%a0:l)\n    9640:\t4fef 000c      \tlea %sp@(12),%sp\n    9644:\t4a00           \ttstb %d0\n    9646:\t660a           \tbnes 0x9652\n    9648:\t203c 0000 0494 \tmovel #1172,%d0\n    964e:\t42b5 0800      \tclrl %a5@(0,%d0:l)\n    9652:\t203c 0000 048e \tmovel #1166,%d0\n    9658:\td08d           \taddl %a5,%d0\n    965a:\t2f00           \tmovel %d0,%sp@-\n    965c:\t4878 5000      \tpea 0x5000\n    9660:\t42a7           \tclrl %sp@-\n    9662:\t207c 0000 10de \tmoveal #4318,%a0\n    9668:\t4ebb 88fe      \tjsr %pc@(0x9668,%a0:l)\n    966c:\t4fef 000c      \tlea %sp@(12),%sp\n    9670:\t4a00           \ttstb %d0"
+        }
+      ]
+    },
+    {
+      "name": "SpellCheck Small USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp",
+      "sha256": "15e86f4f3ae1d68c76b5087c941dd7947128388217eb1a063263d4b2d42ef101",
+      "header_ram_bytes": 7248,
+      "candidate_counts": {
+        "FileBindState": 7
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Extra Large (2 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontxlarge.os3kapp",
+      "sha256": "bbf8231022e2bc625330312cbe1b1eb9f8ecc37c7fd5e026fd1dbad430d807f3",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "CW_Topics",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CW_Topics.os3kapp",
+      "sha256": "e484c574fa6b5b31bc92f1f986e8f708011b4d49b0cc8d3bab0bbb0f3ae0697d",
+      "header_ram_bytes": 4,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Responder",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/responder.os3kapp",
+      "sha256": "3a90184b989e860e14cdb9bc1f8876ce16cba738784007c2351cd52cda2f3385",
+      "header_ram_bytes": 1620,
+      "candidate_counts": {
+        "CallSysInt": 6
+      },
+      "scratch_calls": [
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "7784:\t4ebb 88fe      \tjsr %pc@(0x7784,%a0:l)",
+          "nearby_pea_literals": [
+            12288
+          ],
+          "context": "    7746:\t700f           \tmoveq #15,%d0\n    7748:\tc001           \tandb %d1,%d0\n    774a:\t8131 6800      \torb %d0,%a1@(0,%d6:l)\n    774e:\t5288           \taddql #1,%a0\n    7750:\t1e10           \tmoveb %a0@,%d7\n    7752:\t5286           \taddql #1,%d6\n    7754:\t4a07           \ttstb %d7\n    7756:\t66c2           \tbnes 0x771a\n    7758:\t4231 6800      \tclrb %a1@(0,%d6:l)\n    775c:\t2006           \tmovel %d6,%d0\n    775e:\t4cdf 00c0      \tmoveml %sp@+,%d6-%d7\n    7762:\t4e75           \trts\n    7764:\t203c 0000 064e \tmovel #1614,%d0\n    776a:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    776e:\t203c 0000 0650 \tmovel #1616,%d0\n    7774:\td08d           \taddl %a5,%d0\n    7776:\t2f00           \tmovel %d0,%sp@-\n    7778:\t4878 3000      \tpea 0x3000\n    777c:\t42a7           \tclrl %sp@-\n    777e:\t207c 0000 01d6 \tmoveal #470,%a0\n    7784:\t4ebb 88fe      \tjsr %pc@(0x7784,%a0:l)\n    7788:\t4fef 000c      \tlea %sp@(12),%sp\n    778c:\t4a00           \ttstb %d0"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "77b0:\t4ebb 88fe      \tjsr %pc@(0x77b0,%a0:l)",
+          "nearby_pea_literals": [
+            12288,
+            20480
+          ],
+          "context": "    7764:\t203c 0000 064e \tmovel #1614,%d0\n    776a:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    776e:\t203c 0000 0650 \tmovel #1616,%d0\n    7774:\td08d           \taddl %a5,%d0\n    7776:\t2f00           \tmovel %d0,%sp@-\n    7778:\t4878 3000      \tpea 0x3000\n    777c:\t42a7           \tclrl %sp@-\n    777e:\t207c 0000 01d6 \tmoveal #470,%a0\n    7784:\t4ebb 88fe      \tjsr %pc@(0x7784,%a0:l)\n    7788:\t4fef 000c      \tlea %sp@(12),%sp\n    778c:\t4a00           \ttstb %d0\n    778e:\t660a           \tbnes 0x779a\n    7790:\t203c 0000 0650 \tmovel #1616,%d0\n    7796:\t42b5 0800      \tclrl %a5@(0,%d0:l)\n    779a:\t203c 0000 064a \tmovel #1610,%d0\n    77a0:\td08d           \taddl %a5,%d0\n    77a2:\t2f00           \tmovel %d0,%sp@-\n    77a4:\t4878 5000      \tpea 0x5000\n    77a8:\t42a7           \tclrl %sp@-\n    77aa:\t207c 0000 01aa \tmoveal #426,%a0\n    77b0:\t4ebb 88fe      \tjsr %pc@(0x77b0,%a0:l)\n    77b4:\t4fef 000c      \tlea %sp@(12),%sp\n    77b8:\t4a00           \ttstb %d0"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Very Large (3 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontvlarge.os3kapp",
+      "sha256": "2ef76e0e2f6476e26ec514969e6262ddf83ad3afdf8ebeca40ef03d5363970dd",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "CW_MainDictionary",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CW_MainDictionary.os3kapp",
+      "sha256": "a73e7e5b5f062f21da47dfd323e3bf88e69d4a8bd7a2fabead0f5c1b844049a0",
+      "header_ram_bytes": 4,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Wireless File Transfer",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/wirelessfiletransfer.os3kapp",
+      "sha256": "b61b8fad98dcc24b5017176dfe1e5e84e816bdabce1d72c00f5b5c0a070906af",
+      "header_ram_bytes": 4692,
+      "candidate_counts": {
+        "CallSysInt": 9
+      },
+      "scratch_calls": [
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "b18e:\t4ebb 88fe      \tjsr %pc@(0xb18e,%a0:l)",
+          "nearby_pea_literals": [
+            12288
+          ],
+          "context": "    b14e:\t0c01 000d      \tcmpib #13,%d1\n    b152:\t670c           \tbeqs 0xb160\n    b154:\t0c01 000a      \tcmpib #10,%d1\n    b158:\t6706           \tbeqs 0xb160\n    b15a:\t0c01 0009      \tcmpib #9,%d1\n    b15e:\t6606           \tbnes 0xb166\n    b160:\t0c01 008f      \tcmpib #-113,%d1\n    b164:\t6602           \tbnes 0xb168\n    b166:\t7c01           \tmoveq #1,%d6\n    b168:\t1006           \tmoveb %d6,%d0\n    b16a:\t2c1f           \tmovel %sp@+,%d6\n    b16c:\t4e75           \trts\n    b16e:\t203c 0000 124e \tmovel #4686,%d0\n    b174:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    b178:\t203c 0000 1250 \tmovel #4688,%d0\n    b17e:\td08d           \taddl %a5,%d0\n    b180:\t2f00           \tmovel %d0,%sp@-\n    b182:\t4878 3000      \tpea 0x3000\n    b186:\t42a7           \tclrl %sp@-\n    b188:\t207c 0000 01d6 \tmoveal #470,%a0\n    b18e:\t4ebb 88fe      \tjsr %pc@(0xb18e,%a0:l)\n    b192:\t4fef 000c      \tlea %sp@(12),%sp\n    b196:\t4a00           \ttstb %d0"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "b1ba:\t4ebb 88fe      \tjsr %pc@(0xb1ba,%a0:l)",
+          "nearby_pea_literals": [
+            12288,
+            20480
+          ],
+          "context": "    b16e:\t203c 0000 124e \tmovel #4686,%d0\n    b174:\t4275 0800      \tclrw %a5@(0,%d0:l)\n    b178:\t203c 0000 1250 \tmovel #4688,%d0\n    b17e:\td08d           \taddl %a5,%d0\n    b180:\t2f00           \tmovel %d0,%sp@-\n    b182:\t4878 3000      \tpea 0x3000\n    b186:\t42a7           \tclrl %sp@-\n    b188:\t207c 0000 01d6 \tmoveal #470,%a0\n    b18e:\t4ebb 88fe      \tjsr %pc@(0xb18e,%a0:l)\n    b192:\t4fef 000c      \tlea %sp@(12),%sp\n    b196:\t4a00           \ttstb %d0\n    b198:\t660a           \tbnes 0xb1a4\n    b19a:\t203c 0000 1250 \tmovel #4688,%d0\n    b1a0:\t42b5 0800      \tclrl %a5@(0,%d0:l)\n    b1a4:\t203c 0000 124a \tmovel #4682,%d0\n    b1aa:\td08d           \taddl %a5,%d0\n    b1ac:\t2f00           \tmovel %d0,%sp@-\n    b1ae:\t4878 5000      \tpea 0x5000\n    b1b2:\t42a7           \tclrl %sp@-\n    b1b4:\t207c 0000 01aa \tmoveal #426,%a0\n    b1ba:\t4ebb 88fe      \tjsr %pc@(0xb1ba,%a0:l)\n    b1be:\t4fef 000c      \tlea %sp@(12),%sp\n    b1c2:\t4a00           \ttstb %d0"
+        }
+      ]
+    },
+    {
+      "name": "AlphaQuiz",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/alphaquiz.os3kapp",
+      "sha256": "3394331b6ba319ffe8f3de02e88a44e9f3a0998ca737bd93eeb9df784c98252e",
+      "header_ram_bytes": 328,
+      "candidate_counts": {
+        "CallSysInt": 3,
+        "FileBindState": 8,
+        "FileCreate": 1,
+        "SaveScreen": 1
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Small USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp",
+      "sha256": "8128f8545e0feecc8974192c9c6103f8e1b0770ef1cf4c830241370411569f8b",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "AlphaWord Plus",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp",
+      "sha256": "a8ae516734a0e0b2e19d51ffb7dff3893074ca733fa40207cbff7ead1433f29e",
+      "header_ram_bytes": 3472,
+      "candidate_counts": {
+        "CallSysInt": 2,
+        "FileBindState": 6,
+        "FileCreate": 9
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Large USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp",
+      "sha256": "f91e89496cc2523bcfac57f195e7e277668cef71afd85b8d283f63a4144fa1d0",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Medium (5 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontmedium.os3kapp",
+      "sha256": "0e4114ab6f2c7925c2bde8c1f77995746ae49e5147037bb3989b3496efa328ea",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Accelerated Reader",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/acceleratedreader.os3kapp",
+      "sha256": "075366f9a098e418db5b8570059b166d6e8711f4ef7dac58b864ca4ffee7fe0f",
+      "header_ram_bytes": 15036,
+      "candidate_counts": {
+        "CallSysInt": 2,
+        "FileBindState": 1,
+        "FontDialogCreate": 15
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Calculator",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/calculator.os3kapp",
+      "sha256": "580b066bb82f55f902313f5363d51ed12bc2497f3c0a8ff8bf650d5b04d89ea4",
+      "header_ram_bytes": 1388,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Inspiration(R) Outliner",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/Inspiration(R) Outliner.OS3KApp",
+      "sha256": "2c8327b49621726a7fef4029290b7acc7a49d4257d7890eb3d1b6abac902b0b6",
+      "header_ram_bytes": 464,
+      "candidate_counts": {
+        "ClipboardResize": 1,
+        "FileBindState": 5,
+        "FileCreate": 1
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Wireless Updater",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/wirelessupdate.os3kapp",
+      "sha256": "2757f362ce35324217b2f459e120fadc52deb0926859a4b8a7ce0339d8d18f96",
+      "header_ram_bytes": 0,
+      "candidate_counts": {
+        "CallSysInt": 6
+      },
+      "scratch_calls": [
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "c6c:\t4ebb 88fe      \tjsr %pc@(0xc6c,%a0:l)",
+          "nearby_pea_literals": [
+            2,
+            4,
+            12288,
+            1
+          ],
+          "context": "     c22:\t4ebb 88fe      \tjsr %pc@(0xc22,%a0:l)\n     c26:\t207c 0001 8712 \tmoveal #100114,%a0\n     c2c:\t41fb 88fe      \tlea %pc@(0xc2c,%a0:l),%a0\n     c30:\t2008           \tmovel %a0,%d0\n     c32:\t2f00           \tmovel %d0,%sp@-\n     c34:\t4878 0002      \tpea 0x2\n     c38:\t207c 0000 094a \tmoveal #2378,%a0\n     c3e:\t4ebb 88fe      \tjsr %pc@(0xc3e,%a0:l)\n     c42:\t204f           \tmoveal %sp,%a0\n     c44:\t2f28 00a2      \tmovel %a0@(162),%sp@-\n     c48:\t2f07           \tmovel %d7,%sp@-\n     c4a:\t4878 0004      \tpea 0x4\n     c4e:\t207c 0000 095c \tmoveal #2396,%a0\n     c54:\t4ebb 88fe      \tjsr %pc@(0xc54,%a0:l)\n     c58:\t4fef 0040      \tlea %sp@(64),%sp\n     c5c:\t45d7           \tlea %sp@,%a2\n     c5e:\t2f0a           \tmovel %a2,%sp@-\n     c60:\t4878 3000      \tpea 0x3000\n     c64:\t2f07           \tmovel %d7,%sp@-\n     c66:\t207c 0000 0a60 \tmoveal #2656,%a0\n     c6c:\t4ebb 88fe      \tjsr %pc@(0xc6c,%a0:l)\n     c70:\t4878 0001      \tpea 0x1\n     c74:\t207c ffff f9b2 \tmoveal #-1614,%a0"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "ed4:\t4ebb 88fe      \tjsr %pc@(0xed4,%a0:l)",
+          "nearby_pea_literals": [
+            1,
+            25200,
+            12288
+          ],
+          "context": "     e90:\t4878 0001      \tpea 0x1\n     e94:\t4878 6270      \tpea 0x6270\n     e98:\t207c ffff fa1a \tmoveal #-1510,%a0\n     e9e:\t4ebb 88fe      \tjsr %pc@(0xe9e,%a0:l)\n     ea2:\t508f           \taddql #8,%sp\n     ea4:\t0800 0007      \tbtst #7,%d0\n     ea8:\t66e6           \tbnes 0xe90\n     eaa:\t4fef 0046      \tlea %sp@(70),%sp\n     eae:\t4cdf 1cf8      \tmoveml %sp@+,%d3-%d7/%a2-%a4\n     eb2:\t4e75           \trts\n     eb4:\t48e7 1f18      \tmoveml %d3-%d7/%a3-%a4,%sp@-\n     eb8:\t4fef ffbc      \tlea %sp@(-68),%sp\n     ebc:\t286f 0064      \tmoveal %sp@(100),%a4\n     ec0:\t7e00           \tmoveq #0,%d7\n     ec2:\t2a07           \tmovel %d7,%d5\n     ec4:\t47d7           \tlea %sp@,%a3\n     ec6:\t2f0b           \tmovel %a3,%sp@-\n     ec8:\t4878 3000      \tpea 0x3000\n     ecc:\t2f05           \tmovel %d5,%sp@-\n     ece:\t207c 0000 07f8 \tmoveal #2040,%a0\n     ed4:\t4ebb 88fe      \tjsr %pc@(0xed4,%a0:l)\n     ed8:\t207c 0000 06a4 \tmoveal #1700,%a0\n     ede:\t4ebb 88fe      \tjsr %pc@(0xede,%a0:l)"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "12d6:\t4ebb 88fe      \tjsr %pc@(0x12d6,%a0:l)",
+          "nearby_pea_literals": [
+            224,
+            57299,
+            57298,
+            12288
+          ],
+          "context": "    128a:\t4878 00e0      \tpea 0xe0\n    128e:\t4879 0000 dfd3 \tpea 0xdfd3\n    1294:\t207c ffff f7de \tmoveal #-2082,%a0\n    129a:\t4ebb 88fe      \tjsr %pc@(0x129a,%a0:l)\n    129e:\t42a7           \tclrl %sp@-\n    12a0:\t42a7           \tclrl %sp@-\n    12a2:\t4879 0000 dfd2 \tpea 0xdfd2\n    12a8:\t207c ffff f7ca \tmoveal #-2102,%a0\n    12ae:\t4ebb 88fe      \tjsr %pc@(0x12ae,%a0:l)\n    12b2:\t4fef 0030      \tlea %sp@(48),%sp\n    12b6:\t4e75           \trts\n    12b8:\t48e7 0f3a      \tmoveml %d4-%d7/%a2-%a4/%fp,%sp@-\n    12bc:\t4fef ffbc      \tlea %sp@(-68),%sp\n    12c0:\t286f 0068      \tmoveal %sp@(104),%a4\n    12c4:\t7e00           \tmoveq #0,%d7\n    12c6:\t45d7           \tlea %sp@,%a2\n    12c8:\t2f0a           \tmovel %a2,%sp@-\n    12ca:\t4878 3000      \tpea 0x3000\n    12ce:\t2f07           \tmovel %d7,%sp@-\n    12d0:\t207c 0000 03f6 \tmoveal #1014,%a0\n    12d6:\t4ebb 88fe      \tjsr %pc@(0x12d6,%a0:l)\n    12da:\t203c 0000 0800 \tmovel #2048,%d0\n    12e0:\td092           \taddl %a2@,%d0"
+        }
+      ]
+    },
+    {
+      "name": "KeyWords",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/keywords.os3kapp",
+      "sha256": "8bb0594035691ae59e3c971e0b558fafeb6cfca60ad68e32d78f1477383b503d",
+      "header_ram_bytes": 3188,
+      "candidate_counts": {
+        "FileBindState": 4,
+        "FileCreate": 2
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Beamer",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/beamer.os3kapp",
+      "sha256": "03899b453770f021b07a99fa002f501bc7d97dc1aa8cf32f32c7076680f389ce",
+      "header_ram_bytes": 2076,
+      "candidate_counts": {
+        "ClipboardResize": 9,
+        "FileBindState": 2,
+        "FileCreate": 1
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "SpellCheck Spanish",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_spanish.os3kapp",
+      "sha256": "cbacbec35d8753dbf6d294737b0a86ee6296256e5b3498dccd32d19798d461f2",
+      "header_ram_bytes": 7696,
+      "candidate_counts": {
+        "FileBindState": 7
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "SpellCheck Large USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_large_usa.os3kapp",
+      "sha256": "7528be2846076660930980c1d75cdeacc2a4a00d285e3b6dbe4a189ad1db4076",
+      "header_ram_bytes": 7248,
+      "candidate_counts": {
+        "FileBindState": 7
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Text2Speech Updater",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/text2speechupdate.os3kapp",
+      "sha256": "d21188ce3b4a2b7de1347338f4d07163b1a5316964068109ab758fb53db2b769",
+      "header_ram_bytes": 444,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "KeyWords Wireless",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/keywordswireless.os3kapp",
+      "sha256": "13605aa1d4822f3c6b04f1f0cb3fe21758ac1558d1dabb071bf5358eb9afacae",
+      "header_ram_bytes": 3424,
+      "candidate_counts": {
+        "CallSysInt": 10,
+        "FileBindState": 5,
+        "FileCreate": 1,
+        "FontDialogCreate": 10
+      },
+      "scratch_calls": [
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "12f0a:\t4ebb 88fe      \tjsr %pc@(0x12f0a,%a0:l)",
+          "nearby_pea_literals": [
+            12288
+          ],
+          "context": "   12ec0:\t1bbc 0003 0800 \tmoveb #3,%a5@(0,%d0:l)\n   12ec6:\t203c 0000 000c \tmovel #12,%d0\n   12ecc:\t4235 0800      \tclrb %a5@(0,%d0:l)\n   12ed0:\t7001           \tmoveq #1,%d0\n   12ed2:\t4e75           \trts\n   12ed4:\t4201           \tclrb %d1\n   12ed6:\t203c 0000 09ce \tmovel #2510,%d0\n   12edc:\t0835 0002 0800 \tbtst #2,%a5@(0,%d0:l)\n   12ee2:\t6702           \tbeqs 0x12ee6\n   12ee4:\t7201           \tmoveq #1,%d1\n   12ee6:\t1001           \tmoveb %d1,%d0\n   12ee8:\t4e75           \trts\n   12eea:\t203c 0000 09d4 \tmovel #2516,%d0\n   12ef0:\t4275 0800      \tclrw %a5@(0,%d0:l)\n   12ef4:\t203c 0000 09d6 \tmovel #2518,%d0\n   12efa:\td08d           \taddl %a5,%d0\n   12efc:\t2f00           \tmovel %d0,%sp@-\n   12efe:\t4878 3000      \tpea 0x3000\n   12f02:\t42a7           \tclrl %sp@-\n   12f04:\t207c 0000 3f6a \tmoveal #16234,%a0\n   12f0a:\t4ebb 88fe      \tjsr %pc@(0x12f0a,%a0:l)\n   12f0e:\t4fef 000c      \tlea %sp@(12),%sp\n   12f12:\t4a00           \ttstb %d0"
+        },
+        {
+          "slot": 174,
+          "service": "CallSysInt",
+          "instruction": "12f36:\t4ebb 88fe      \tjsr %pc@(0x12f36,%a0:l)",
+          "nearby_pea_literals": [
+            12288,
+            20480
+          ],
+          "context": "   12eea:\t203c 0000 09d4 \tmovel #2516,%d0\n   12ef0:\t4275 0800      \tclrw %a5@(0,%d0:l)\n   12ef4:\t203c 0000 09d6 \tmovel #2518,%d0\n   12efa:\td08d           \taddl %a5,%d0\n   12efc:\t2f00           \tmovel %d0,%sp@-\n   12efe:\t4878 3000      \tpea 0x3000\n   12f02:\t42a7           \tclrl %sp@-\n   12f04:\t207c 0000 3f6a \tmoveal #16234,%a0\n   12f0a:\t4ebb 88fe      \tjsr %pc@(0x12f0a,%a0:l)\n   12f0e:\t4fef 000c      \tlea %sp@(12),%sp\n   12f12:\t4a00           \ttstb %d0\n   12f14:\t660a           \tbnes 0x12f20\n   12f16:\t203c 0000 09d6 \tmovel #2518,%d0\n   12f1c:\t42b5 0800      \tclrl %a5@(0,%d0:l)\n   12f20:\t203c 0000 09d0 \tmovel #2512,%d0\n   12f26:\td08d           \taddl %a5,%d0\n   12f28:\t2f00           \tmovel %d0,%sp@-\n   12f2a:\t4878 5000      \tpea 0x5000\n   12f2e:\t42a7           \tclrl %sp@-\n   12f30:\t207c 0000 3f3e \tmoveal #16190,%a0\n   12f36:\t4ebb 88fe      \tjsr %pc@(0x12f36,%a0:l)\n   12f3a:\t4fef 000c      \tlea %sp@(12),%sp\n   12f3e:\t4a00           \ttstb %d0"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Small (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontsmall.os3kapp",
+      "sha256": "c6e8004e245710235a7b99da59c9580f6844fc723e8ede3fd295645aede9de64",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "CoWriter",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CoWriter.os3kapp",
+      "sha256": "e92783202e00fd9bce8003236866b8337b6a5a037726858af165b9b22445225f",
+      "header_ram_bytes": 201988,
+      "candidate_counts": {
+        "FileBindState": 1
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Neo Font - Large (4 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontlarge.os3kapp",
+      "sha256": "7f86f664fe41cfda5057f9fea724e21abdc702c348dcb575b88f07c9fb3df365",
+      "header_ram_bytes": 16,
+      "candidate_counts": {},
+      "scratch_calls": []
+    },
+    {
+      "name": "Control Panel",
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ControlPanel.OS3KApp",
+      "sha256": "503e2aaa9ebdb85b7a693d0c75f8e1687da6cef16411cc27d66915cbae28c3f6",
+      "header_ram_bytes": 416,
+      "candidate_counts": {
+        "CallSysInt": 14
+      },
+      "scratch_calls": []
+    },
+    {
+      "name": "Thesaurus Spanish to English",
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "sha256": "7605ba816106e72c090fc830d93dc0aac4c71159627dc1a477bee1d89af080a0",
+      "header_ram_bytes": 32860,
+      "candidate_counts": {},
+      "scratch_calls": []
+    }
+  ]
+}

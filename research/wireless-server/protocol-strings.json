@@ -1,0 +1,1850 @@
+[
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 112264,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"srh\"><PRM cv=\"1\" si=\"%u\" sp=\"%s\" ph=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 112518,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/3.00~SA~1.00~ACT(l:%d)~1.00}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 113546,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 114858,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 117648,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 118073,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+    "offset": 118162,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 179575,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"gsd\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" lid=\"%s\" w=\"%c\" lv=\"2\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 179781,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"ptd\"><PRM uid=\"%s\" csy=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 179882,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"MF\" vl=\"1\" vh=\"5\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 179983,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"st\"><PRM uid=\"%s\" sid=\"%s\" cid=\"%s\" csy=\"%s\" top=\"%s%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 181332,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 181425,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 181698,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"4\" op=\"pml\"><PRM uid=\"%s\" csy=\"%s\" cid=\"%s\" sid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 181787,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"gdp\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" lid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 182224,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"cp\"><PRM uid=\"%s\" u=\"%s\" p1=\"%s\" p2=\"%s\" /></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 182309,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"4\" op=\"gpll\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 182924,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"scl\"><PRM uid=\"%s\" csy=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 183065,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"lk\"><PRM uid=\"%s\" cmd=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 183275,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"srh\"><PRM cv=\"1\" si=\"%u\" sp=\"%s\" ph=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 183662,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"tr\"><PRM gid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 184014,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/3.00~SA~1.00~ACT(l:%d)~1.00}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 185315,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"ssd\"><PRM sd=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 186161,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 187862,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 191887,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 192774,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+    "offset": 192930,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 38953,
+    "encoding": "ascii",
+    "text": "PAN Name: 32 letters max"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39119,
+    "encoding": "ascii",
+    "text": "USBSendData() Timeouts"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39169,
+    "encoding": "ascii",
+    "text": "USBSendReport() Timeouts Waiting For ACK"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39219,
+    "encoding": "ascii",
+    "text": "USBSendReport() Timeouts Waiting For FIFO"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39269,
+    "encoding": "ascii",
+    "text": "USBSendReport() Count Of ACKs Received"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39319,
+    "encoding": "ascii",
+    "text": "USBSendStall() Timeouts Waiting For Stall-ACK"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39719,
+    "encoding": "ascii",
+    "text": "DataIndication() Message Dropped"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 39769,
+    "encoding": "ascii",
+    "text": "BeaconNotifyIndication() Fifo Full"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+    "offset": 40119,
+    "encoding": "ascii",
+    "text": "MACTimer0 Interrupt Priority High Water Mark"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+    "offset": 49526,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+    "offset": 55223,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+    "offset": 55289,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+    "offset": 55322,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+    "offset": 49490,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+    "offset": 55016,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+    "offset": 55082,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+    "offset": 55115,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+    "offset": 33711,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+    "offset": 55518,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+    "offset": 55584,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+    "offset": 55617,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 49461,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/%s~SA~1.00~ACT(l:%d)~1.00}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 49547,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 55124,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 55172,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 55197,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+    "offset": 55230,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 0,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 47881,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 52260,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"srh\"><PRM cv=\"1\" l=\"US\" dt=\"RESP\" si=\"%u\" sp=\"%s\" ph=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 55388,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 55442,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+    "offset": 55475,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/RPGateway.exe",
+    "offset": 110769,
+    "encoding": "ascii",
+    "text": "<dataStream>k__BackingField"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/RPGateway.exe",
+    "offset": 119499,
+    "encoding": "utf-16le",
+    "text": "<data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/RPGateway.exe",
+    "offset": 121011,
+    "encoding": "utf-16le",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"pg\" /></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5438856,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5445872,
+    "encoding": "ascii",
+    "text": "DataIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5448512,
+    "encoding": "ascii",
+    "text": "%%o<Message_AssociateResponse>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5448844,
+    "encoding": "ascii",
+    "text": "%%o<Message_ULSendData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5448944,
+    "encoding": "ascii",
+    "text": "%%o<Message_ULSend>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449051,
+    "encoding": "ascii",
+    "text": "$%%o<Message_ULSendAssociateResponse>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449164,
+    "encoding": "ascii",
+    "text": "%o<Message_ULSend>%"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449415,
+    "encoding": "ascii",
+    "text": " %%o<Message_DisassociateRequest>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449651,
+    "encoding": "ascii",
+    "text": "&%%o<Message_ULSendDisassociateRequest>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449808,
+    "encoding": "ascii",
+    "text": "MAC_event_DataIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5449912,
+    "encoding": "ascii",
+    "text": "%o<Message_ULReceiveData>%"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5450016,
+    "encoding": "ascii",
+    "text": "%%o<Message_ULReceiveData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5450208,
+    "encoding": "ascii",
+    "text": "%%o<Message_DataRequest>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5450627,
+    "encoding": "ascii",
+    "text": "@%o<Message_ULSendData>%o<ULSendDataRequestTask>o<DeviceSession>b"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5454135,
+    "encoding": "ascii",
+    "text": " MAC_event_BeaconNotifyIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5454588,
+    "encoding": "ascii",
+    "text": "%%o<Message_DatagramACK>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5454695,
+    "encoding": "ascii",
+    "text": "@%o<Message_ULSendData>%o<ULSendDatagramACKTask>i4o<MemoryBlock>b"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5455740,
+    "encoding": "ascii",
+    "text": "A1o<Message_ULSendData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5455840,
+    "encoding": "ascii",
+    "text": "A1o<Message_ULSend>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5456180,
+    "encoding": "ascii",
+    "text": "A1o<Message_ULReceiveData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5456436,
+    "encoding": "ascii",
+    "text": "mMSDUHandleManager"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5457676,
+    "encoding": "ascii",
+    "text": "mEncryptionEngine"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5467912,
+    "encoding": "ascii",
+    "text": "%b%o<Message_ULSendData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5468000,
+    "encoding": "ascii",
+    "text": "%o<Message_ULSendData>%i4"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5469584,
+    "encoding": "ascii",
+    "text": "%%o<DataIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5470668,
+    "encoding": "ascii",
+    "text": "o<Message_AssociateResponse>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5470956,
+    "encoding": "ascii",
+    "text": "o<Message_DisassociateRequest>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471116,
+    "encoding": "ascii",
+    "text": "%%o<Message_DataConfirm>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471167,
+    "encoding": "ascii",
+    "text": "(%%o<AccessPoint>o<Message_ULReceiveData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471236,
+    "encoding": "ascii",
+    "text": "mDataIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471276,
+    "encoding": "ascii",
+    "text": "o<Message_ULReceiveData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471375,
+    "encoding": "ascii",
+    "text": "&%%o<AccessPoint>o<Message_DataRequest>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471484,
+    "encoding": "ascii",
+    "text": "%b%o<Message_DataConfirm>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5471624,
+    "encoding": "ascii",
+    "text": "A1o<Message_DataConfirm>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5476496,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5477208,
+    "encoding": "ascii",
+    "text": "%%o<SDTPStream>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5478000,
+    "encoding": "ascii",
+    "text": "%%o<SDMLReader>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5481935,
+    "encoding": "ascii",
+    "text": " %%o<Message_AssociateIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5482099,
+    "encoding": "ascii",
+    "text": "#%%o<Message_DisassociateIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5482588,
+    "encoding": "ascii",
+    "text": "MessageHandler_DataIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5482644,
+    "encoding": "ascii",
+    "text": "%%o<Message_DataIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5483796,
+    "encoding": "ascii",
+    "text": "Message_AssociateIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5484188,
+    "encoding": "ascii",
+    "text": "Message_AssociateResponse"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5484239,
+    "encoding": "ascii",
+    "text": "3%%o<Message_AssociateIndication>i4o<DeviceSession>b"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5484396,
+    "encoding": "ascii",
+    "text": "o<Message_AssociateIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5484892,
+    "encoding": "ascii",
+    "text": "Message_DataConfirm"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5484936,
+    "encoding": "ascii",
+    "text": "%%i4o<Message_ULSendData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485032,
+    "encoding": "ascii",
+    "text": "o<Message_ULSendData>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485176,
+    "encoding": "ascii",
+    "text": "Message_DatagramACK"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485220,
+    "encoding": "ascii",
+    "text": "Message_DataIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485428,
+    "encoding": "ascii",
+    "text": "Message_DataRequest"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485644,
+    "encoding": "ascii",
+    "text": "o<Message_DataIndication>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485752,
+    "encoding": "ascii",
+    "text": "Message_DisassociateIndication"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5485916,
+    "encoding": "ascii",
+    "text": "Message_DisassociateRequest"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5486380,
+    "encoding": "ascii",
+    "text": "Message_ULReceiveData"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5486888,
+    "encoding": "ascii",
+    "text": "Message_ULSend"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487116,
+    "encoding": "ascii",
+    "text": "Message_ULSendAssociateResponse"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487304,
+    "encoding": "ascii",
+    "text": "Message_ULSendData"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487408,
+    "encoding": "ascii",
+    "text": "mDestAddr"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487444,
+    "encoding": "ascii",
+    "text": "mMSDUHandle"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487520,
+    "encoding": "ascii",
+    "text": "mDestAddrMode"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5487675,
+    "encoding": "ascii",
+    "text": "!Message_ULSendDisassociateRequest"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5488088,
+    "encoding": "ascii",
+    "text": "mPANId"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5492088,
+    "encoding": "ascii",
+    "text": "mEncryption"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5492124,
+    "encoding": "ascii",
+    "text": "mEncryptionKey"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5492164,
+    "encoding": "ascii",
+    "text": "mEncryptionMethod"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5494396,
+    "encoding": "ascii",
+    "text": "SDMLReader"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5495320,
+    "encoding": "ascii",
+    "text": "SDMLToXMLConverter"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5495396,
+    "encoding": "ascii",
+    "text": "%s%o<SDMLReader>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5495568,
+    "encoding": "ascii",
+    "text": "SDTPStream"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5495824,
+    "encoding": "ascii",
+    "text": "SDTP/1.0 "
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5502384,
+    "encoding": "ascii",
+    "text": "{auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5504356,
+    "encoding": "ascii",
+    "text": "XMLDocReaderSDMLWriter"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5504588,
+    "encoding": "ascii",
+    "text": "XMLDocToSDMLConverter"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5506228,
+    "encoding": "ascii",
+    "text": "<data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5509148,
+    "encoding": "ascii",
+    "text": "%%o<SDMLReader>o<XMLWriter>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5514648,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5515848,
+    "encoding": "ascii",
+    "text": "QuestionTypeSDMLtoXML"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5529272,
+    "encoding": "ascii",
+    "text": "%o<SDMLReader>%"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5529648,
+    "encoding": "ascii",
+    "text": "o<SDTPStream>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5530080,
+    "encoding": "ascii",
+    "text": "SDTPDeviceServiceHandler"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5532428,
+    "encoding": "ascii",
+    "text": "<data><status code=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5539500,
+    "encoding": "ascii",
+    "text": "SDMLActivityReaderUtils"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5539548,
+    "encoding": "ascii",
+    "text": "%s%o<SDMLReader>b"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5541799,
+    "encoding": "ascii",
+    "text": "(<SRQ aid=\"RP\"><OLM v=\"2\" op=\"pg\"/></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5542828,
+    "encoding": "ascii",
+    "text": "/sendfile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5542896,
+    "encoding": "ascii",
+    "text": "/receivefile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5544992,
+    "encoding": "ascii",
+    "text": "ReadSDML"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5545099,
+    "encoding": "ascii",
+    "text": "*<data status=\"200\"><print type=\"pdf\"><url>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557528,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm.__init"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557576,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm.__exit"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557624,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm.DeleteSaturn()"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557679,
+    "encoding": "ascii",
+    "text": ">SaturnUplinkComm.CreateSaturn(inPortName as String) as Integer"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557767,
+    "encoding": "ascii",
+    "text": "RSaturnUplinkComm.Write(inMemoryBlock as MemoryBlock, inSize as Integer) as Integer"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557875,
+    "encoding": "ascii",
+    "text": "$SaturnUplinkComm.GetData() as String"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5557939,
+    "encoding": "ascii",
+    "text": "%SaturnUplinkComm.GotData() as Boolean"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5558004,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm.State.Get"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5558055,
+    "encoding": "ascii",
+    "text": "\"SaturnUplinkComm.LastErrorCode.Get"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 5558115,
+    "encoding": "ascii",
+    "text": "$SaturnUplinkComm.LostPacketCount.Get"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8433753,
+    "encoding": "ascii",
+    "text": "SaturnUplinkComm"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8433971,
+    "encoding": "ascii",
+    "text": "HidD_GetPreparsedData"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8433993,
+    "encoding": "ascii",
+    "text": "HidP_GetCaps"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8434020,
+    "encoding": "ascii",
+    "text": "HidD_GetHidGuid"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8434036,
+    "encoding": "ascii",
+    "text": "HidD_GetAttributes"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8434055,
+    "encoding": "ascii",
+    "text": "HidD_SetNumInputBuffers"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+    "offset": 8434079,
+    "encoding": "ascii",
+    "text": "HidD_GetSerialNumberString"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 48166,
+    "encoding": "utf-16le",
+    "text": "/sendfile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 48186,
+    "encoding": "utf-16le",
+    "text": "/receivefile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 48238,
+    "encoding": "utf-16le",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 49994,
+    "encoding": "utf-16le",
+    "text": "<data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 54192,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"401\"></status><authenticate admin=\"false\"><application id=\"\" name=\"\"/>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 54684,
+    "encoding": "utf-16le",
+    "text": "</authenticate>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 54734,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"200\">OK</status><token>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 54854,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"200\">OK</status></data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 54943,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"409\"/><activity id=\"pickaction\">"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+    "offset": 55784,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"409\"/><activity id=\"nameafile\">"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 222573,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"401\"></status><authenticate admin=\"false\"><application id=\"\" name=\"\"/>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 223059,
+    "encoding": "utf-16le",
+    "text": "</authenticate>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 223109,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"200\">OK</status><token>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 223229,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"200\">OK</status></data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 223318,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"409\"/><activity id=\"pickaction\">"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 224159,
+    "encoding": "utf-16le",
+    "text": "<data><status code=\"409\"/><activity id=\"nameafile\">"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 236480,
+    "encoding": "utf-16le",
+    "text": "<data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 237904,
+    "encoding": "utf-16le",
+    "text": "/sendfile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 237924,
+    "encoding": "utf-16le",
+    "text": "/receivefile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+    "offset": 237950,
+    "encoding": "utf-16le",
+    "text": "/authenticate"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 83724,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84562,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"AR\" vl=\"2\" vh=\"4\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84663,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"cp\"><PRM uid=\"%s\" u=\"%s\" p1=\"%s\" p2=\"%s\" /></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84748,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"hs\"></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84794,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"scl\"><PRM uid=\"%s\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84865,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"AR\" vl=\"2\" vh=\"4\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 84966,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"cp\"><PRM uid=\"%s\" u=\"%s\" p1=\"%s\" p2=\"%s\" /></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85051,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"scl\"><PRM uid=\"%s\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85122,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"scl\"><PRM uid=\"%s\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85248,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"qt\"><PRM sid=\"0\" cid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85355,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"ora\"><PRM cid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85456,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"ora\"><PRM cid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85521,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"iq\"><PRM uid=\"%s\" ut=\"%s\" sid=\"%s\" cid=\"%s\" qn=\"%s\" ln=\"%s\" qt=\"%s\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85649,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"iq\"><PRM uid=\"%s\" sid=\"%s\" cid=\"%s\" ut=\"%s\" qn=\"%s\" ln=\"%s\" qt=\"VP\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 85769,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"iq\"><PRM uid=\"%s\" sid=\"%s\" cid=\"%s\" ut=\"%s\" qn=\"%s\" ln=\"%s\" qt=\"%s\" csy=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 86191,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"fq\"><PRM uid=\"%s\" ut=\"%s\" cid=\"%s\" sid=\"%s\" twi=\"%c\" qt=\"%s\" ssi=\"%s\" apl=\"%s\" csy=\"%s\" bv=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 86390,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"sr\"><PRM qt=\"%s\" spid=\"%s\" fq=\"%d\" ans=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 86587,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"sq\"><PRM qt=\"%s\" ut=\"%s\" spid=\"%s\" bv=\"%s\" mq=\"%s\" st=\"%s\" vrp=\"%s\" ssi=\"%s\" csy=\"%s\" avp=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 86725,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"sq\"><PRM qt=\"%s\" ut=\"%s\" spid=\"%s\" bv=\"%s\" mq=\"%s\" st=\"%s\" vrp=\"%s\" ssi=\"%s\" tp=\"%s\" tf=\"%s\" tl=\"%s\" csy=\"%s\" avp=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 87532,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"dq\"><PRM uid=\"%s\" spid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 87665,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"st\"><PRM uid=\"%s\" spid=\"%s\" sid=\"%s\" cid=\"%s\" ln=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 87766,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"tr\"><PRM gid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 88017,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"fq\"><PRM uid=\"%s\" ut=\"%s\" cid=\"%s\" sid=\"%s\" twi=\"%c\" qt=\"%s\" ssi=\"%s\" apl=\"%s\" csy=\"%s\" bv=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 89548,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"dq\"><PRM uid=\"%s\" spid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 89775,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"dq\"><PRM uid=\"%s\" spid=\"%s\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 89858,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"AR\"><ART v=\"2\" op=\"uqc\"><PRM uid=\"%s\" cid=\"%s\" spid=\"%s\" csy=\"%s\" ei=\"f\"/></ART></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+    "offset": 89989,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 120120,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 122458,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"AR\" vl=\"2\" vh=\"2\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 122559,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"KW\"><KWH v=\"1\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"></PRM></KWH></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 183206,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"AR\" vl=\"2\" vh=\"2\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 183307,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"KW\"><KWH v=\"1\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"></PRM></KWH></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 183379,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"KW\"><KWH v=\"1\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"></PRM></KWH></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184031,
+    "encoding": "ascii",
+    "text": "{ua\\ %s/%01d.%01d}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184082,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184088,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184095,
+    "encoding": "ascii",
+    "text": "/receivefile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184108,
+    "encoding": "ascii",
+    "text": "/sendfile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184158,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+    "offset": 184210,
+    "encoding": "ascii",
+    "text": "{nf{bd\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 77085,
+    "encoding": "ascii",
+    "text": "NSDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81263,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81386,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"ptd\"><PRM uid=\"%s\" csy=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81487,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"ptd\"><PRM uid=\"%s\" csy=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"es-MX\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81596,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"4\" op=\"pml\"><PRM uid=\"%s\" csy=\"%s\" cid=\"%s\" sid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81693,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"5\" op=\"gpll\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81786,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"4\" op=\"gpll\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81867,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"5\" op=\"gpll\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"es-MX\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 81966,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"lg\"><PRM u=\"%s\" p1=\"%s\"><APP aid=\"MF\" vl=\"1\" vh=\"5\"/></PRM></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82067,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"RP\"><OLM v=\"2\" op=\"cp\"><PRM uid=\"%s\" u=\"%s\" p1=\"%s\" p2=\"%s\" /></OLM></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82152,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"scl\"><PRM uid=\"%s\" csy=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82494,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"gsd\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" lid=\"%s\" w=\"%c\" lv=\"2\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82612,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"ssd\"><PRM sd=\"Y$%s$%s$%s$%s$%s$%s$%s$$$0$0$$$$%d$%s$N$%c$%c\" lv=\"2\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82723,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"ssd\"><PRM sd=\"N$%s$%s$%s$%s$%s$%s$%s$%s$%s$%s$%d$%d$%s$%s$%s$%d$%s$%c$%c$%c\" lv=\"2\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82896,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 82989,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"es-MX\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 83086,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"tr\"><PRM gid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 83165,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"gdp\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" lid=\"%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 83310,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"1\" op=\"st\"><PRM uid=\"%s\" sid=\"%s\" cid=\"%s\" csy=\"%s\" top=\"%s%s\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 83417,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"en-US\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 83510,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"grtw\"><PRM uid=\"%s\" cid=\"%s\" sid=\"%s\" ssl=\"es-MX\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 93429,
+    "encoding": "ascii",
+    "text": "N<SRQ aid=\"MF\"><MRT v=\"3\" op=\"lk\"><PRM uid=\"%s\" cmd=\"%c\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 93500,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"lk\"><PRM uid=\"%s\" cmd=\"%c\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 93570,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"lk\"><PRM uid=\"%s\" cmd=\"%c\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+    "offset": 93648,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"lk\"><PRM uid=\"%s\" cmd=\"%c\"/></MRT></SRQ>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsOffline.OS3KApp",
+    "offset": 43453,
+    "encoding": "ascii",
+    "text": "NSDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsOffline.OS3KApp",
+    "offset": 150665,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsOffline.OS3KApp",
+    "offset": 153257,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"3\" op=\"srh\"><PRM cv=\"1\" l=\"US\" dt=\"NEO2\" si=\"%u\" sp=\"%s\" ph=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsOffline.OS3KApp",
+    "offset": 153341,
+    "encoding": "ascii",
+    "text": "<SRQ aid=\"MF\"><MRT v=\"2\" op=\"srh\"><PRM cv=\"1\" si=\"%u\" sp=\"%s\" ph=\""
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 31532,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/3.00~WideScreenApplet~1.02~SA~1.00~HA~1.00~ACT(l:2048)~1.00}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 31620,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/1.81}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 34538,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 35993,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36041,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36066,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36099,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36224,
+    "encoding": "ascii",
+    "text": "{auth{p\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36233,
+    "encoding": "ascii",
+    "text": "{auth\\a"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+    "offset": 36241,
+    "encoding": "ascii",
+    "text": "{auth{app\\i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 46484,
+    "encoding": "ascii",
+    "text": "{ua\\ Renaissance Responder/1.81}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48466,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48906,
+    "encoding": "ascii",
+    "text": "{auth{t\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48915,
+    "encoding": "ascii",
+    "text": "{auth{p\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48924,
+    "encoding": "ascii",
+    "text": "{auth\\a"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48932,
+    "encoding": "ascii",
+    "text": "{auth{app\\i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48944,
+    "encoding": "ascii",
+    "text": "{auth{ut\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48954,
+    "encoding": "ascii",
+    "text": "{auth{pt\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48964,
+    "encoding": "ascii",
+    "text": "{auth{ic\\r"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 48975,
+    "encoding": "ascii",
+    "text": "{auth{st\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 49530,
+    "encoding": "ascii",
+    "text": "{nf{nm\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 49538,
+    "encoding": "ascii",
+    "text": "{nf{bd\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 49546,
+    "encoding": "ascii",
+    "text": "{nf\\i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 49784,
+    "encoding": "ascii",
+    "text": "{ua\\ %s/%01d.%01d~Wireless File Transfer~%01d.%01d~SA~1.00~ACT(l:%d)~1.01~HA~1.00}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50102,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50108,
+    "encoding": "ascii",
+    "text": "/setua"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50115,
+    "encoding": "ascii",
+    "text": "/receivefile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50128,
+    "encoding": "ascii",
+    "text": "/sendfile"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50151,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50176,
+    "encoding": "ascii",
+    "text": "{nf{bd\\"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+    "offset": 50356,
+    "encoding": "ascii",
+    "text": "{nf{bd\\ }}"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 26620,
+    "encoding": "ascii",
+    "text": "cl:%i"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 26680,
+    "encoding": "ascii",
+    "text": "/auth"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 26758,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 26775,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 91694,
+    "encoding": "ascii",
+    "text": "cl:%u"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+    "offset": 91823,
+    "encoding": "ascii",
+    "text": "SDTP/1.0"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+    "offset": 3832548,
+    "encoding": "ascii",
+    "text": "%%o<dataNotificationReceiver>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+    "offset": 3849568,
+    "encoding": "ascii",
+    "text": "SATURN FIRMWARE FILE"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+    "offset": 3891911,
+    "encoding": "ascii",
+    "text": "<data><status code=\"200\">OK</status><activity id=\"1234\"><application id=\"1234567890123456\" /><title>Wisconsin State Quiz</title><actions>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+    "offset": 3909588,
+    "encoding": "ascii",
+    "text": "<data><status code=\"401\">OK</status><authenticate><application id=\"1234567890123456\" name=\"Saturn Client\"/><prompt>Please log in.</prompt></authenticate></data>"
+  },
+  {
+    "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+    "offset": 3917760,
+    "encoding": "ascii",
+    "text": "<data>"
+  }
+]

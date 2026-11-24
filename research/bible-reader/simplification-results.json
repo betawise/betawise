@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "sizes": {
+    "KJV": {
+      "applet_bytes": 1291170,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1268416,
+      "other_rom_bytes": 22754,
+      "index_magic": "IDXEXP02"
+    },
+    "NKJV": {
+      "applet_bytes": 1332730,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1309978,
+      "other_rom_bytes": 22752,
+      "index_magic": "IDXEXP02"
+    },
+    "ESV": {
+      "applet_bytes": 1311904,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1289151,
+      "other_rom_bytes": 22753,
+      "index_magic": "IDXEXP02"
+    },
+    "NIV": {
+      "applet_bytes": 1341478,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1318726,
+      "other_rom_bytes": 22752,
+      "index_magic": "IDXEXP02"
+    },
+    "NASB": {
+      "applet_bytes": 1359542,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1336789,
+      "other_rom_bytes": 22753,
+      "index_magic": "IDXEXP02"
+    },
+    "CSB": {
+      "applet_bytes": 1343090,
+      "a5_bytes": 2972,
+      "bible_resource_bytes": 1320338,
+      "other_rom_bytes": 22752,
+      "index_magic": "IDXEXP02"
+    }
+  },
+  "host": {
+    "KJV": {
+      "status": "passed",
+      "version": "KJV",
+      "source_search_cases": 360,
+      "matcher_property_cases": 320,
+      "invalid_queries": 5
+    },
+    "NKJV": {
+      "status": "passed",
+      "version": "NKJV",
+      "source_search_cases": 360,
+      "matcher_property_cases": 320,
+      "invalid_queries": 5
+    },
+    "NIV": {
+      "status": "passed",
+      "version": "NIV",
+      "source_search_cases": 360,
+      "matcher_property_cases": 320,
+      "invalid_queries": 5
+    }
+  },
+  "translation_decode": {
+    "ESV": {
+      "index_magic": "IDXEXP02"
+    },
+    "NASB": {
+      "index_magic": "IDXEXP02"
+    },
+    "CSB": {
+      "index_magic": "IDXEXP02"
+    }
+  },
+  "large_dictionary_index": {
+    "NASB": {
+      "queries": [
+        "God",
+        "faith works",
+        "be* bel*",
+        "kamai",
+        "jeshimoth",
+        "kazin",
+        "keramim"
+      ],
+      "source_search_cases": 21
+    },
+    "CSB": {
+      "queries": [
+        "God",
+        "faith works",
+        "be* bel*",
+        "sometimes",
+        "staring",
+        "stooping",
+        "sirs"
+      ],
+      "source_search_cases": 21
+    }
+  },
+  "mame": {
+    "simplify-mame-kjv": {
+      "status": "passed",
+      "cases": 42
+    },
+    "simplify-mame-small": {
+      "status": "passed",
+      "cases": 42
+    },
+    "simplify-mame-tiny": {
+      "status": "passed",
+      "cases": 42
+    },
+    "simplify-mame-search-nkjv-final": {
+      "status": "passed",
+      "cases": 18
+    }
+  }
+}

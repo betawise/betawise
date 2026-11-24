@@ -1,0 +1,98 @@
+[
+  {
+    "layout": 5,
+    "stable_samples": 3,
+    "black_pixels": 2797,
+    "description": "Five regions / two inputs"
+  },
+  {
+    "layout": 6,
+    "stable_samples": 3,
+    "black_pixels": 2456,
+    "description": "Three regions / two inputs"
+  },
+  {
+    "layout": 7,
+    "stable_samples": 3,
+    "black_pixels": 3148,
+    "description": "Title, input and body"
+  },
+  {
+    "layout": 8,
+    "stable_samples": 3,
+    "black_pixels": 3145,
+    "description": "Line selection"
+  },
+  {
+    "layout": 9,
+    "stable_samples": 3,
+    "black_pixels": 3145,
+    "description": "Shared geometry with 8"
+  },
+  {
+    "layout": 11,
+    "stable_samples": 3,
+    "black_pixels": 2944,
+    "description": "Title / 40:60 columns"
+  },
+  {
+    "layout": 12,
+    "stable_samples": 3,
+    "black_pixels": 3102,
+    "description": "Choice input"
+  },
+  {
+    "layout": 13,
+    "stable_samples": 3,
+    "black_pixels": 2786,
+    "description": "Title and body"
+  },
+  {
+    "layout": 14,
+    "stable_samples": 3,
+    "black_pixels": 3133,
+    "description": "Underlined input"
+  },
+  {
+    "layout": 15,
+    "stable_samples": 3,
+    "black_pixels": 3127,
+    "description": "Editable input"
+  },
+  {
+    "layout": 16,
+    "stable_samples": 3,
+    "black_pixels": 2925,
+    "description": "Main / two lower regions"
+  },
+  {
+    "layout": 17,
+    "stable_samples": 3,
+    "black_pixels": 2879,
+    "description": "Three regions / choice input"
+  },
+  {
+    "layout": 18,
+    "stable_samples": 3,
+    "black_pixels": 3138,
+    "description": "Variant of layout 8"
+  },
+  {
+    "layout": 19,
+    "stable_samples": 3,
+    "black_pixels": 2940,
+    "description": "Title / equal columns"
+  },
+  {
+    "layout": 20,
+    "stable_samples": 3,
+    "black_pixels": 2354,
+    "description": "Title / titled columns"
+  },
+  {
+    "layout": 21,
+    "stable_samples": 3,
+    "black_pixels": 2808,
+    "description": "Title / body and input columns"
+  }
+]

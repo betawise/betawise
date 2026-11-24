@@ -1,0 +1,146 @@
+[
+  {
+    "reader": "native-prewrap",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-prewrap-page-v1",
+    "checks": 83,
+    "initial": {
+      "seconds": 0.3451125555760015,
+      "work": [],
+      "lcd_writes": 2124
+    },
+    "scroll_seconds": 2.711617571502977,
+    "background_seconds": 1.104867505434008,
+    "total_seconds": 4.161597632512986,
+    "final_end": {
+      "seconds": 0.2510790315959994,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.03126963136599947,
+    "movement_max_seconds": 0.2510790315959994,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.02028351433100184,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 1.3268509988506594e-06,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.019048698335002,
+      "work": [],
+      "lcd_writes": 2120
+    }
+  },
+  {
+    "reader": "native-prewrap-full",
+    "version": "NKJV",
+    "mode": "page",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-prewrap-full-page-v1",
+    "checks": 83,
+    "initial": {
+      "seconds": 1.4402801151470008,
+      "work": [],
+      "lcd_writes": 2124
+    },
+    "scroll_seconds": 2.711457143128989,
+    "background_seconds": 0,
+    "total_seconds": 4.15173725827599,
+    "final_end": {
+      "seconds": 0.25107903159499756,
+      "work": [],
+      "lcd_writes": 2120
+    },
+    "movement_commands": 80,
+    "movement_median_seconds": 0.0312632383555016,
+    "movement_max_seconds": 0.25107903159499756,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 1.115450712034999,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 1.3268509988506594e-06,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.019049060203002455,
+      "work": [],
+      "lcd_writes": 2120
+    }
+  },
+  {
+    "reader": "native-prewrap",
+    "version": "NKJV",
+    "mode": "line",
+    "work": false,
+    "background_policy": null,
+    "wrapped_lines": 314,
+    "source_bytes": 12873,
+    "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-prewrap-line-v1",
+    "checks": 317,
+    "initial": {
+      "seconds": 0.3451125555760015,
+      "work": [],
+      "lcd_writes": 2124
+    },
+    "scroll_seconds": 7.078359430317061,
+    "background_seconds": 1.1048572524919926,
+    "total_seconds": 8.528329238385055,
+    "final_end": {
+      "seconds": 0.2510091306609894,
+      "work": [],
+      "lcd_writes": 2116
+    },
+    "movement_commands": 314,
+    "movement_median_seconds": 0.02203296766849938,
+    "movement_max_seconds": 0.2510091306609894,
+    "pure_decode": {
+      "seconds": 0.6476468775910007,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "total_work": [],
+    "initial_decode_and_file_fill": {
+      "seconds": 0.02028351433100184,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_editor_refresh": {
+      "seconds": 1.3268509988506594e-06,
+      "work": [],
+      "lcd_writes": 0
+    },
+    "initial_jump": {
+      "seconds": 0.019048698335002,
+      "work": [],
+      "lcd_writes": 2120
+    }
+  }
+]

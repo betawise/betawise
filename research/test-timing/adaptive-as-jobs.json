@@ -1,0 +1,17 @@
+[
+  {
+    "id": "as3k-adaptive-natural",
+    "platform": "as3k",
+    "case": "repl",
+    "adaptive": true
+  },
+  {
+    "id": "as3k-adaptive-native-4-2",
+    "platform": "as3k",
+    "case": "repl",
+    "adaptive": true,
+    "native": true,
+    "step": 4,
+    "hold": 2
+  }
+]

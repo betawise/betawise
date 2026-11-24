@@ -1,0 +1,121 @@
+{
+  "host_path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/NEOManager.exe",
+  "host_sha256": "2b06bdd3ab5c04bef45ad128fde24c0e7db24796d21c8083a90eeefa5973cc12",
+  "scope": "Static host/device trace and reconstructed entire-file stream; no USB or NOR execution",
+  "packages": [
+    {
+      "name": "as3000",
+      "package_sha256": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+      "package_bytes": 277488,
+      "blocks": 271,
+      "last_block_bytes": 1008,
+      "stream_maps": [
+        {
+          "destination_begin": "0x4c0000",
+          "erase_map_end_exclusive": "0x500000",
+          "stream_source_offset": "0x0",
+          "stream_bytes": 262144,
+          "stream_destination_end_exclusive": "0x500000",
+          "device_program_bytes": 262144,
+          "not_sent_remainder_bytes": 0,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        },
+        {
+          "destination_begin": "0x404000",
+          "erase_map_end_exclusive": "0x407c00",
+          "stream_source_offset": "0x40000",
+          "stream_bytes": 15344,
+          "stream_destination_end_exclusive": "0x407bf0",
+          "device_program_bytes": 15344,
+          "not_sent_remainder_bytes": 16,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        }
+      ]
+    },
+    {
+      "name": "neo_3_01",
+      "package_sha256": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+      "package_bytes": 262168,
+      "blocks": 257,
+      "last_block_bytes": 24,
+      "stream_maps": [
+        {
+          "destination_begin": "0x5c0000",
+          "erase_map_end_exclusive": "0x600000",
+          "stream_source_offset": "0x0",
+          "stream_bytes": 262144,
+          "stream_destination_end_exclusive": "0x600000",
+          "device_program_bytes": 262144,
+          "not_sent_remainder_bytes": 0,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        },
+        {
+          "destination_begin": "0x406000",
+          "erase_map_end_exclusive": "0x406400",
+          "stream_source_offset": "0x40000",
+          "stream_bytes": 24,
+          "stream_destination_end_exclusive": "0x406018",
+          "device_program_bytes": 24,
+          "not_sent_remainder_bytes": 1000,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        }
+      ]
+    },
+    {
+      "name": "neo_3_21",
+      "package_sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+      "package_bytes": 395264,
+      "blocks": 386,
+      "last_block_bytes": 1024,
+      "stream_maps": [
+        {
+          "destination_begin": "0x410000",
+          "erase_map_end_exclusive": "0x470000",
+          "stream_source_offset": "0x0",
+          "stream_bytes": 393216,
+          "stream_destination_end_exclusive": "0x470000",
+          "device_program_bytes": 393216,
+          "not_sent_remainder_bytes": 0,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        },
+        {
+          "destination_begin": "0x406000",
+          "erase_map_end_exclusive": "0x406400",
+          "stream_source_offset": "0x60000",
+          "stream_bytes": 1024,
+          "stream_destination_end_exclusive": "0x406400",
+          "device_program_bytes": 1024,
+          "not_sent_remainder_bytes": 0,
+          "device_note": "Count-driven program worker; no zero-tail trimming"
+        },
+        {
+          "destination_begin": "0x5ffc00",
+          "erase_map_end_exclusive": "0x600000",
+          "stream_source_offset": "0x60400",
+          "stream_bytes": 1024,
+          "stream_destination_end_exclusive": "0x600000",
+          "device_program_bytes": 0,
+          "not_sent_remainder_bytes": 0,
+          "device_note": "NEO13 SmallROM 401DDC..401DE4 discards staged count for compatibility segment"
+        }
+      ]
+    }
+  ],
+  "smallroms": [
+    {
+      "name": "as3000",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SMALLOS3KROM.OS3KOS",
+      "sha256": "479adbe2f873da053046a749f95d2c86eeada23df442237a613b09e9780fd874"
+    },
+    {
+      "name": "neo_3_01",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SMALLOS3KNeoROM.OS3KOS",
+      "sha256": "485dac693df00c8149da688bb69c9b51494dacdb512e4cfd9dd9e932498bb81d"
+    },
+    {
+      "name": "neo_3_21",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/smallos3kneorom.os3kos",
+      "sha256": "6402c40878ba28747642ce474361b1596555b2a1f137db79c7ea8bb5b35a9523"
+    }
+  ]
+}

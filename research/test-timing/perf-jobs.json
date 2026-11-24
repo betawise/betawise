@@ -1,0 +1,195 @@
+[
+  {
+    "id": "perf-as3k-base",
+    "platform": "as3k",
+    "case": "mini",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ]
+  },
+  {
+    "id": "perf-as3k-fs6",
+    "platform": "as3k",
+    "case": "mini",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "6"
+    ]
+  },
+  {
+    "id": "perf-as3k-fs11",
+    "platform": "as3k",
+    "case": "mini",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "11"
+    ]
+  },
+  {
+    "id": "perf-as3k-base-repeat",
+    "platform": "as3k",
+    "case": "mini",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ]
+  },
+  {
+    "id": "perf-as3k-unthrottled-speed2",
+    "platform": "as3k",
+    "case": "mini",
+    "options": [
+      "-nothrottle",
+      "-speed",
+      "2",
+      "-frameskip",
+      "0"
+    ]
+  },
+  {
+    "id": "perf-neo-base",
+    "platform": "neo",
+    "case": "history",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-neo-fs6",
+    "platform": "neo",
+    "case": "history",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "6"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-neo-fs11",
+    "platform": "neo",
+    "case": "history",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "11"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-neo-base-repeat",
+    "platform": "neo",
+    "case": "history",
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "0"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-neo-unthrottled-speed2",
+    "platform": "neo",
+    "case": "history",
+    "options": [
+      "-nothrottle",
+      "-speed",
+      "2",
+      "-frameskip",
+      "0"
+    ],
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "perf-neo-fs11-fresh",
+    "platform": "neo",
+    "case": "history",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    },
+    "options": [
+      "-nothrottle",
+      "-frameskip",
+      "11"
+    ],
+    "capture_fresh": true
+  }
+]

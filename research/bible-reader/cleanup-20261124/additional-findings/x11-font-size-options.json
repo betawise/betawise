@@ -1,0 +1,50 @@
+[
+  {
+    "family": "ncen",
+    "points": "08",
+    "source_height": 10,
+    "ascii_ink_height": 10,
+    "cap_height": 6,
+    "x_height": 4
+  },
+  {
+    "family": "ncen",
+    "points": "10",
+    "source_height": 13,
+    "ascii_ink_height": 11,
+    "cap_height": 8,
+    "x_height": 5
+  },
+  {
+    "family": "helv",
+    "points": "08",
+    "source_height": 11,
+    "ascii_ink_height": 10,
+    "cap_height": 6,
+    "x_height": 5
+  },
+  {
+    "family": "helv",
+    "points": "10",
+    "source_height": 13,
+    "ascii_ink_height": 10,
+    "cap_height": 8,
+    "x_height": 6
+  },
+  {
+    "family": "tim",
+    "points": "08",
+    "source_height": 10,
+    "ascii_ink_height": 9,
+    "cap_height": 5,
+    "x_height": 4
+  },
+  {
+    "family": "tim",
+    "points": "10",
+    "source_height": 13,
+    "ascii_ink_height": 11,
+    "cap_height": 7,
+    "x_height": 5
+  }
+]

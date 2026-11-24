@@ -1,0 +1,17 @@
+{
+  "eleven-times": {
+    "median_total_ms": 4.445373776000849,
+    "label_draws": 11,
+    "status": "passed",
+    "checks": 10
+  },
+  "rotation-direct-mame": {
+    "median_total_ms": 4.484817444001976,
+    "label_draws": 11,
+    "status": "passed",
+    "checks": 10
+  },
+  "direct_net_rom_bytes": 128,
+  "direct_frame_bytes": 140,
+  "buffered_frame_bytes": 220
+}

@@ -1,0 +1,11 @@
+{
+  "rom_sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+  "cases": 7,
+  "result": "PASS",
+  "scope": "Original buffer handler; no USB endpoint or wireless transport",
+  "limitations": [
+    "Synthetic applet registry for lookup; no applet executed",
+    "No file transfer, wireless transport or physical USB tested",
+    "No claim of parser reentrancy or complete session lifecycle"
+  ]
+}

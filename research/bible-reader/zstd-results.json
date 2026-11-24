@@ -1,0 +1,165 @@
+{
+  "version": "1.5.4",
+  "results": [
+    {
+      "level": 3,
+      "scope": "whole",
+      "dictionary_bytes": 0,
+      "bytes": 1202746,
+      "payload_bytes": 1202746,
+      "verified_blocks": 1,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 2586424
+    },
+    {
+      "level": 3,
+      "scope": "chapter",
+      "dictionary_bytes": 0,
+      "bytes": 1745340,
+      "payload_bytes": 1724971,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 9,
+      "scope": "whole",
+      "dictionary_bytes": 0,
+      "bytes": 1056081,
+      "payload_bytes": 1056081,
+      "verified_blocks": 1,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 4637722
+    },
+    {
+      "level": 9,
+      "scope": "chapter",
+      "dictionary_bytes": 0,
+      "bytes": 1679943,
+      "payload_bytes": 1659574,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 19,
+      "scope": "whole",
+      "dictionary_bytes": 0,
+      "bytes": 914643,
+      "payload_bytes": 914643,
+      "verified_blocks": 1,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 4637722
+    },
+    {
+      "level": 19,
+      "scope": "chapter",
+      "dictionary_bytes": 0,
+      "bytes": 1654020,
+      "payload_bytes": 1633651,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 3,
+      "scope": "chapter",
+      "dictionary_bytes": 16384,
+      "bytes": 1485820,
+      "payload_bytes": 1449067,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 9,
+      "scope": "chapter",
+      "dictionary_bytes": 16384,
+      "bytes": 1382386,
+      "payload_bytes": 1345633,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 19,
+      "scope": "chapter",
+      "dictionary_bytes": 16384,
+      "bytes": 1321944,
+      "payload_bytes": 1285191,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 3,
+      "scope": "chapter",
+      "dictionary_bytes": 65536,
+      "bytes": 1458471,
+      "payload_bytes": 1372566,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 9,
+      "scope": "chapter",
+      "dictionary_bytes": 65536,
+      "bytes": 1341253,
+      "payload_bytes": 1255348,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 19,
+      "scope": "chapter",
+      "dictionary_bytes": 65536,
+      "bytes": 1251334,
+      "payload_bytes": 1165429,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 22,
+      "scope": "whole",
+      "dictionary_bytes": 0,
+      "bytes": 914645,
+      "payload_bytes": 914645,
+      "verified_blocks": 1,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 4637722
+    },
+    {
+      "level": 22,
+      "scope": "chapter",
+      "dictionary_bytes": 0,
+      "bytes": 1654016,
+      "payload_bytes": 1633647,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 22,
+      "scope": "chapter",
+      "dictionary_bytes": 16384,
+      "bytes": 1321942,
+      "payload_bytes": 1285189,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    },
+    {
+      "level": 22,
+      "scope": "chapter",
+      "dictionary_bytes": 65536,
+      "bytes": 1251332,
+      "payload_bytes": 1165427,
+      "verified_blocks": 1189,
+      "host_dctx_estimate_bytes": 95992,
+      "host_max_dstream_estimate_bytes": 266185
+    }
+  ]
+}

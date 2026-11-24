@@ -16,7 +16,7 @@ reverse-engineering claims are inferred from the documentation reorganization.
 | Select accepts an index only when its status word is zero | ROM branches and return/unchanged-context probes; index zero is ambiguous as a return value. |
 | Message parameter widths and header offsets | ROM dispatch sites, manufacturer headers, linker/startup layout, and compiled ABI assertions. |
 | `MSG_SETFOCUS` parameter | Entry offset seen at a traced site; header now treats it as opaque rather than promising that interpretation universally. |
-| USB messages and reply codes | **Incomplete.** Payload block layout, nonzero replies, and transfer-event policies are not established. Opaque declarations are retained without a speculative payload structure. |
+| USB messages and reply codes | Neo 3.21 keyboard/direct callback layouts and scoped replies are mapped in [native USB](../../usb/native-usb.md), including shipped AlphaWord/AlphaQuiz/KeyWords/MathFacts callers. Four native direct-dispatch cases pass; full enumeration/cable behavior and other ROMs remain unqualified. |
 | Header trailing words | Betawise emits 0/1/2; their firmware policy meaning is not established. Preserve the initializer. |
 
 Historical AS3000 3.01 table/status bases: D82 / 344E. Neo 3.21: E0A / 34DE.
@@ -56,16 +56,16 @@ interpretations are not additional API guarantees.
 The entry point returns void. Use the status output for the reply requested
 by the message. Write zero for ordinary events handled without a special
 reply. The status word can contain a previous value on entry.
-The USB request block and nonzero USB reply codes remain partly unresolved.
+For Neo 3.21, see the [native USB callback contracts](../../usb/native-usb.md)
+and `UsbRequest_t` in the header. Keyboard and direct replies are distinct;
+these messages do not expose descriptors or arbitrary endpoint selection.
 
 Applet gains focus. param is an opaque launch value, observed as the entry
 offset. Reply zero for ordinary handling.
 
-USB event. param points to a USB request block. Reply semantics are unresolved.
-
-USB detach. param points to a USB request block. No reply is read at the traced call site.
-
-USB transfer event. Payload and reply details are unresolved.
+The original opaque USB declarations are now named keyboard callbacks on Neo
+3.21, with the separate direct binary `400xx` family documented alongside them.
+The older AS3000 and Neo 3.01 message contracts were not newly qualified.
 
 0x88, three trailing words. Betawise emits 0, 1, 2. Their ROM semantics are unresolved.
 

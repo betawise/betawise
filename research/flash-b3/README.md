@@ -109,3 +109,7 @@ tail space, and the firmware-update hazard of a SmallROM-to-full-ROM hook.
 [Bus width and USB repair boundaries](usb-repair-and-width.md) distinguishes
 byte/word part capabilities, firmware-mediated segment uploads, SmallROM
 self-update uncertainty and independent manual-updater entry.
+
+[First-slot installation and scanner checks](first-slot-installation.md) corrects
+the AS3000 start offset, sizes the protected extent by chip geometry, and records
+native validation rules and host-tool placement/upgrade limitations.

@@ -1,0 +1,35 @@
+{
+  "suites": {
+    "selected-controls-v3": {
+      "status": "passed",
+      "checks": 18
+    },
+    "selected-search-v3": {
+      "status": "passed",
+      "checks": 23
+    },
+    "selected-native": {
+      "status": "passed",
+      "checks": 21
+    },
+    "large-schoolbook-v3": {
+      "status": "passed",
+      "checks": 10
+    },
+    "large-times-v3": {
+      "status": "passed",
+      "checks": 10
+    },
+    "large-helvetica-final": {
+      "status": "passed",
+      "checks": 10
+    },
+    "selected-reader-v2": {
+      "status": "passed",
+      "checks": 51
+    }
+  },
+  "mame_checks": 143,
+  "host_source_search_cases": 360,
+  "host_matcher_property_cases": 320
+}

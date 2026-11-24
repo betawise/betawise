@@ -1,0 +1,62 @@
+local machine=manager.machine;local cpu=machine.devices[':maincpu'];local m=cpu.spaces.program
+local state=cpu.state;local out=@OUT@;local frame,phase=0,'wait';local snapshot,registers={},{}
+local names={'D0','D1','D2','D3','D4','D5','D6','D7','A0','A1','A2','A3','A4','A5','A6','SP','PC','SR'}
+local lowest_sp=0x3dffc;local stack_low=0x3dffc;local last_pc=0;local first_rom=false;local original_imr;local taps={};local rom_gpio,rom_usb,rom_total,seen=0,0,0,{}
+local function fileexists(p)local f=io.open(p,'r');if f then f:close();return true end;return false end
+local function save(p,t)local f=assert(io.open(out..'/'..p,'w'));f:write(t);f:close()end
+local function load(p,address)local f=assert(io.open(p,'rb'));local s=f:read('*a');f:close();for i=1,#s do m:write_u8(address+i-1,s:byte(i))end end
+emu.register_frame_done(function()
+ frame=frame+1
+ local ok,err=pcall(function()
+ if phase=='wait' then
+  assert(frame<1800,'main-ROM readiness deadline')
+  local pc=state.PC.value;local sp=state.SP.value
+  if pc<0x4c0000 or pc>=0x500000 or sp<0x1000 or sp>=0x40000 or (m:read_u32(0xfffff304)&0xffffff)==0xffffff or(state.SR.value&0x700)~=0 then return end
+  for _,r in ipairs(names)do registers[r]=state[r].value end
+  for a=0,0x3ffff do snapshot[a]=m:read_u8(a)end
+  -- Preserve CPU/firmware RAM. Only this disposable run's RAM is overwritten.
+  load(@RAM@,0)
+  load(@BINARY@,0x30000);for a=@BSS@,@END@-1 do m:write_u8(a,0)end
+  for a=0x3c000,0x3dfff do m:write_u8(a,0xa5)end
+  for a=0x3e000,0x3e100 do m:write_u8(a,0)end
+  -- No disk image or FAT/directory/sector buffers are loaded.
+  taps[#taps+1]=m:install_write_tap(0x3c000,0x3dfff,'stack_measure',function(a,v,mask)if phase=='starting'or phase=='running'or phase=='stopping'then local sp=state.SP.value;if sp<lowest_sp then lowest_sp=sp end;if a>=sp-16 and a<stack_low then stack_low=a end end end)
+  taps[#taps+1]=m:install_write_tap(0xfffff420,0xfffff421,'msc_ownership_gpio',function(a,v,mask)
+   if phase=='running'and state.PC.value>=0x400000 then rom_gpio=rom_gpio+1 end
+  end)
+  taps[#taps+1]=m:install_read_tap(0x4c0000,0x4fffff,'msc_ownership_rom',function(a,v,mask)
+   if phase=='running'then local pc=state.PC.value;if not first_rom and pc>=0x400000 then first_rom=true;local words={};for a=state.SP.value,state.SP.value+128,4 do words[#words+1]=string.format('%x',m:read_u32(a))end;save('first-rom.txt',string.format('pc=%x sp=%x last=%x d0=%x a0=%x a1=%x\n',pc,state.SP.value,last_pc,state.D0.value,state.A0.value,state.A1.value)..table.concat(words,' '))end;rom_total=rom_total+1;if(pc>=0x4e4e00 and pc<0x4e6c00)or pc==0x4cc4be then rom_usb=rom_usb+1;seen[pc]=(seen[pc]or 0)+1 end end
+  end)
+  original_imr=m:read_u32(0xfffff304);m:write_u32(0xfffff304,original_imr&~0x100000)
+  state.SP.value=0x3dffc;state.SR.value=0x2000;state.PC.value=@ENTRY@
+  phase='starting';return
+ elseif phase=='starting'then
+  if m:read_u32(0x3e000)==0x4641494c then error('native filesystem rejected by guest')end
+  if m:read_u32(0x3e000)==0x4d534331 then save('ready','ready\n');phase='running'end
+ elseif phase=='running'then
+  assert(fileexists(out..'/keep-mounted')or frame<@DEADLINE@,'prototype deadline')
+  if fileexists(out..'/inspect')and not fileexists(out..'/inspected')then
+   local raw=assert(io.open(out..'/native-live.ram','wb'));for a=0,0x3ffff do raw:write(string.char(m:read_u8(a)))end;raw:close()
+   local t={};for a=0,83,4 do t[#t+1]=tostring(m:read_u32(0x3e000+a))end
+   save('guest-live.json','{"telemetry":['..table.concat(t,',')..'],"rom_gpio_writes":'..rom_gpio..',"rom_usb_reads":'..rom_usb..'}\n')
+   save('inspected','captured live read-only state\n')
+  end
+  if fileexists(out..'/stop')then local raw=assert(io.open(out..'/failure-live.ram','wb'));for a=0,0x3ffff do raw:write(string.char(m:read_u8(a)))end;raw:close();local t={};for a=0,83,4 do t[#t+1]=tostring(m:read_u32(0x3e000+a))end;save('debug.json','{"pc":'..state.PC.value..',"sp":'..state.SP.value..',"sr":'..state.SR.value..',"t":['..table.concat(t,',')..']}');m:write_u32(0x3e030,1);phase='stopping'end
+ elseif phase=='stopping'then
+  if m:read_u32(0x3e034)~=0x444f4e45 then return end
+  local t={};for a=0,83,4 do t[#t+1]=tostring(m:read_u32(0x3e000+a))end
+  local hits={};for pc,n in pairs(seen)do hits[#hits+1]=string.format('"%x":%d',pc,n)end
+  local low=0x3e000;for a=0x3c000,0x3dfff do if m:read_u8(a)~=0xa5 then low=a;break end end;save('stack.json','{"stack_high_water_bytes":'..(0x3e000-math.min(stack_low,lowest_sp))..',"minimum_observed_sp":'..lowest_sp..',"watermark_including_nonstack_writes":'..(0x3e000-low)..'}');save('guest.json','{"telemetry":['..table.concat(t,',')..'],"rom_gpio_writes":'..rom_gpio..',"rom_usb_reads":'..rom_usb..',"rom_reads":'..rom_total..',"hits":{'..table.concat(hits,',')..'}}\n')
+  local raw=assert(io.open(out..'/native-after.ram','wb'));for a=0,0x3ffff do raw:write(string.char(m:read_u8(a)))end;raw:close()
+  for _,tap in ipairs(taps)do tap:remove()end
+  state.SR.value=0x2700
+  m:write_u32(0xfffff304,original_imr)
+  for a=0,0x3ffff do m:write_u8(a,snapshot[a])end
+  for _,r in ipairs(names)do state[r].value=registers[r]end
+  save('restored','RAM and guest registers restored\n');print('PASS MSC guest returned ownership and restored RAM/registers');phase='restored'
+ elseif phase=='restored'then
+  if fileexists(out..'/quit')then machine:exit()end
+ end
+ end)
+ if not ok then print('FAIL MSC loader '..tostring(err));save('failure',tostring(err));machine:exit()end
+end)

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "neo-editing-B",
+    "platform": "neo",
+    "case": "editing",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-history-B",
+    "platform": "neo",
+    "case": "history",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-modes-B",
+    "platform": "neo",
+    "case": "modes",
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5,
+      "checkpoint": 8,
+      "capture_gap": 12,
+      "waits": {
+        "150": 18,
+        "90": 18,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-editing-C",
+    "platform": "neo",
+    "case": "editing",
+    "timing": {
+      "hold": 2,
+      "step": 6,
+      "gap": 4,
+      "checkpoint": 6,
+      "capture_gap": 8,
+      "waits": {
+        "150": 12,
+        "90": 12,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-history-C",
+    "platform": "neo",
+    "case": "history",
+    "timing": {
+      "hold": 2,
+      "step": 6,
+      "gap": 4,
+      "checkpoint": 6,
+      "capture_gap": 8,
+      "waits": {
+        "150": 12,
+        "90": 12,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "neo-modes-C",
+    "platform": "neo",
+    "case": "modes",
+    "timing": {
+      "hold": 2,
+      "step": 6,
+      "gap": 4,
+      "checkpoint": 6,
+      "capture_gap": 8,
+      "waits": {
+        "150": 12,
+        "90": 12,
+        "450": 120,
+        "300": 120
+      }
+    }
+  },
+  {
+    "id": "as3k-repl-natural-0.5",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.5
+  },
+  {
+    "id": "as3k-repl-natural-0.4",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.4
+  },
+  {
+    "id": "as3k-repl-native-6-2",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.35,
+    "native": true,
+    "step": 6,
+    "hold": 2
+  },
+  {
+    "id": "as3k-repl-native-4-2",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.25,
+    "native": true,
+    "step": 4,
+    "hold": 2
+  },
+  {
+    "id": "as3k-repl-native-3-1",
+    "platform": "as3k",
+    "case": "repl",
+    "scale": 0.18,
+    "native": true,
+    "step": 3,
+    "hold": 1
+  },
+  {
+    "id": "as3k-repl-baseline-fixed",
+    "platform": "as3k",
+    "case": "repl"
+  }
+]

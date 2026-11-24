@@ -1,0 +1,28 @@
+{
+  "suites": {
+    "overlap-final-mame": {
+      "status": "passed",
+      "checks": 19
+    },
+    "overlap-final-search": {
+      "status": "passed",
+      "checks": 23
+    },
+    "overlap-controls-regression": {
+      "status": "passed",
+      "checks": 18
+    },
+    "century-up-final": {
+      "status": "passed",
+      "checks": 10
+    }
+  },
+  "host": {
+    "status": "passed",
+    "version": "KJV",
+    "source_search_cases": 366,
+    "matcher_property_cases": 320,
+    "invalid_queries": 5
+  },
+  "century_normal_ascii_glyph_shift_checks": 95
+}

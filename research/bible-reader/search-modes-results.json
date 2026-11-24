@@ -1,0 +1,1578 @@
+{
+  "status": "passed",
+  "scope": "KJV Neo 3.21 MAME, cold query setup plus directional backend service; no LCD writes or UI idle gaps; 8-bit Huffman, no verse boost",
+  "runs": [
+    {
+      "index": "full",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-full-final",
+      "screen_checks": 18,
+      "production": {
+        "index": "full",
+        "rom_bytes": 1293366,
+        "index_bytes": 252739,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 23102,
+        "executable_bytes": 16132,
+        "a5_bytes": 3118,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "full",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.13185789085400046,
+          "scan_seconds": 0.6019049482240035,
+          "total_seconds": 0.733762839078004
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1318573480509997,
+          "scan_seconds": 0.015383694010999704,
+          "total_seconds": 0.1472410420619994
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.12391403258300215,
+          "scan_seconds": 2.2079093842139983,
+          "total_seconds": 2.3318234167970004
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.12391348977999428,
+          "scan_seconds": 0.01538369401200157,
+          "total_seconds": 0.13929718379199585
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.13185789085400046,
+          "scan_seconds": 0.5972989048280013,
+          "total_seconds": 0.7291567956820018
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1318573480509997,
+          "scan_seconds": 0.015383694010999704,
+          "total_seconds": 0.1472410420619994
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            851,
+            37,
+            10
+          ],
+          "setup_seconds": 0.14610175935300163,
+          "scan_seconds": 0.8913129120269971,
+          "total_seconds": 1.0374146713799988
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            522,
+            6,
+            3
+          ],
+          "setup_seconds": 0.14610121655000086,
+          "scan_seconds": 0.13444398419800052,
+          "total_seconds": 0.2805452007480014
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.13600930677299772,
+          "scan_seconds": 9.155551955425999,
+          "total_seconds": 9.291561262198996
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.13600876396999695,
+          "scan_seconds": 5.615265978056996,
+          "total_seconds": 5.751274742026993
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            851,
+            37,
+            10
+          ],
+          "setup_seconds": 0.14610175935300163,
+          "scan_seconds": 0.8884743550819962,
+          "total_seconds": 1.0345761144349979
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            522,
+            6,
+            3
+          ],
+          "setup_seconds": 0.14610121655000796,
+          "scan_seconds": 0.1321836328289976,
+          "total_seconds": 0.27828484937900555
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            954,
+            50,
+            1
+          ],
+          "setup_seconds": 0.14566576810300091,
+          "scan_seconds": 2.4008477855030037,
+          "total_seconds": 2.5465135536060046
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1456652253009878,
+          "scan_seconds": 0.01538369401100681,
+          "total_seconds": 0.1610489193119946
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.13611394708499347,
+          "scan_seconds": 19.145673246288013,
+          "total_seconds": 19.281787193373006
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1361134042819998,
+          "scan_seconds": 0.015383694011987359,
+          "total_seconds": 0.15149709829398716
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            932,
+            17,
+            3
+          ],
+          "setup_seconds": 0.14566576810399567,
+          "scan_seconds": 0.24443771904500977,
+          "total_seconds": 0.39010348714900545
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.145665225301002,
+          "scan_seconds": 0.015383694010992599,
+          "total_seconds": 0.1610489193119946
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            645,
+            20,
+            2
+          ],
+          "setup_seconds": 0.6285601830630014,
+          "scan_seconds": 0.5987104935939982,
+          "total_seconds": 1.2272706766569996
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            585,
+            6,
+            2
+          ],
+          "setup_seconds": 0.6285596402589988,
+          "scan_seconds": 0.4111834740830034,
+          "total_seconds": 1.0397431143420022
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1162,
+            1,
+            0
+          ],
+          "setup_seconds": 0.6181894535939989,
+          "scan_seconds": 17.078639636953014,
+          "total_seconds": 17.696829090547013
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            345,
+            1,
+            2
+          ],
+          "setup_seconds": 0.6181889107910052,
+          "scan_seconds": 2.9956341166059985,
+          "total_seconds": 3.613823027397004
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            640,
+            24,
+            15
+          ],
+          "setup_seconds": 0.6285601830619925,
+          "scan_seconds": 0.46671298180500287,
+          "total_seconds": 1.0952731648669953
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.6285596402589988,
+          "scan_seconds": 0.3364256003080044,
+          "total_seconds": 0.9649852405670032
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.13185789085400756,
+          "scan_seconds": 0.30287315156799366,
+          "total_seconds": 0.4347310424220012
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1318573480509997,
+          "scan_seconds": 0.323116860363001,
+          "total_seconds": 0.4549742084140007
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.12391403258300215,
+          "scan_seconds": 1.9153818122510131,
+          "total_seconds": 2.0392958448340153
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.12391348977999428,
+          "scan_seconds": 0.31660352864500396,
+          "total_seconds": 0.44051701842499824
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.13185789085298438,
+          "scan_seconds": 0.30086761594600375,
+          "total_seconds": 0.43272550679898814
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1318573480509997,
+          "scan_seconds": 0.32051635259000477,
+          "total_seconds": 0.45237370064100446
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1018,
+            3,
+            28
+          ],
+          "setup_seconds": 0.1461017593529732,
+          "scan_seconds": 0.10979754180101509,
+          "total_seconds": 0.2558993011539883
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            24
+          ],
+          "setup_seconds": 0.14610121655002217,
+          "scan_seconds": 0.09903291845299123,
+          "total_seconds": 0.2451341350030134
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.13600930677301903,
+          "scan_seconds": 2.0735473632339847,
+          "total_seconds": 2.2095566700070037
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.13600876396998274,
+          "scan_seconds": 12.801165433449995,
+          "total_seconds": 12.937174197419978
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1018,
+            3,
+            28
+          ],
+          "setup_seconds": 0.14610175935300163,
+          "scan_seconds": 0.10898363919898202,
+          "total_seconds": 0.25508539855198364
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            24
+          ],
+          "setup_seconds": 0.14610121654999375,
+          "scan_seconds": 0.09817522976101145,
+          "total_seconds": 0.2442764463110052
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1000,
+            50,
+            0
+          ],
+          "setup_seconds": 0.14566576810400989,
+          "scan_seconds": 0.23143017432798274,
+          "total_seconds": 0.3770959424319926
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            997,
+            42,
+            5
+          ],
+          "setup_seconds": 0.145665225301002,
+          "scan_seconds": 0.2970982728669753,
+          "total_seconds": 0.44276349816797733
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.13611394708499347,
+          "scan_seconds": 11.899381433753007,
+          "total_seconds": 12.035495380838
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.13611340428300878,
+          "scan_seconds": 7.365627786219989,
+          "total_seconds": 7.501741190502997
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1000,
+            1,
+            11
+          ],
+          "setup_seconds": 0.1456657681029867,
+          "scan_seconds": 0.09960635942701401,
+          "total_seconds": 0.24527212753000072
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            998,
+            3,
+            8
+          ],
+          "setup_seconds": 0.14566522530000725,
+          "scan_seconds": 0.16272057091899228,
+          "total_seconds": 0.30838579621899953
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            11
+          ],
+          "setup_seconds": 0.6285601830620067,
+          "scan_seconds": 0.04391666457499355,
+          "total_seconds": 0.6724768476370002
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            12,
+            9
+          ],
+          "setup_seconds": 0.6285596402599936,
+          "scan_seconds": 0.043921791045022474,
+          "total_seconds": 0.672481431305016
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1162,
+            1,
+            0
+          ],
+          "setup_seconds": 0.6181894535930041,
+          "scan_seconds": 9.056808049295,
+          "total_seconds": 9.674997502888004
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            345,
+            1,
+            2
+          ],
+          "setup_seconds": 0.6181889107910195,
+          "scan_seconds": 10.791671752684977,
+          "total_seconds": 11.409860663475996
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            11
+          ],
+          "setup_seconds": 0.6285601830630014,
+          "scan_seconds": 0.04383892315499338,
+          "total_seconds": 0.6723991062179948
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            14,
+            17
+          ],
+          "setup_seconds": 0.6285596402589988,
+          "scan_seconds": 0.04384585896900717,
+          "total_seconds": 0.672405499228006
+        }
+      ]
+    },
+    {
+      "index": "compact",
+      "status": "passed",
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-compact-final",
+      "screen_checks": 18,
+      "production": {
+        "index": "compact",
+        "rom_bytes": 1168544,
+        "index_bytes": 127917,
+        "common_text_navigation_bytes": 1017525,
+        "app_code_assets_bytes": 23102,
+        "executable_bytes": 16132,
+        "a5_bytes": 3118,
+        "flags": {
+          "READER": "BibleReader",
+          "SEARCH_INDEX": "compact",
+          "VERSION": "KJV",
+          "PRUNE": 1,
+          "PROFILE": 0,
+          "TEST_FONT": 0,
+          "WORK_PROFILE": 0,
+          "NATIVE_STREAM": 0,
+          "FAST_BITS": 8,
+          "FAST_NATIVE": 0,
+          "VERSE_BOOST": 0,
+          "SEARCH_CLEAR_COMPLETE": 0,
+          "BENCH_QUERY": -1,
+          "NATIVE_OPEN_TEST": 1,
+          "NATIVE_PAGE_TEST": 1
+        }
+      },
+      "cases": [
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.11713587342200071,
+          "scan_seconds": 21.07825292004202,
+          "total_seconds": 21.19538879346402
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1171353306199876,
+          "scan_seconds": 11.322532804330024,
+          "total_seconds": 11.439668134950011
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10919201515199006,
+          "scan_seconds": 30.065062510898002,
+          "total_seconds": 30.174254526049992
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.10919147234898219,
+          "scan_seconds": 11.102245104390022,
+          "total_seconds": 11.211436576739004
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.11713587342299547,
+          "scan_seconds": 20.922982799673008,
+          "total_seconds": 21.040118673096003
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1171353306199876,
+          "scan_seconds": 11.228984244472002,
+          "total_seconds": 11.34611957509199
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            851,
+            37,
+            10
+          ],
+          "setup_seconds": 0.1250446907590117,
+          "scan_seconds": 18.412334517109997,
+          "total_seconds": 18.53737920786901
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            522,
+            6,
+            3
+          ],
+          "setup_seconds": 0.1250441479559754,
+          "scan_seconds": 3.1442307181260105,
+          "total_seconds": 3.269274866081986
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.1149522381779775,
+          "scan_seconds": 45.19247665604399,
+          "total_seconds": 45.30742889422197
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.11495169537602123,
+          "scan_seconds": 41.03407402096303,
+          "total_seconds": 41.149025716339054
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            851,
+            37,
+            10
+          ],
+          "setup_seconds": 0.1250446907590117,
+          "scan_seconds": 18.31609914383796,
+          "total_seconds": 18.44114383459697
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            522,
+            6,
+            3
+          ],
+          "setup_seconds": 0.1250441479559754,
+          "scan_seconds": 3.0988813557880235,
+          "total_seconds": 3.223925503743999
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            954,
+            50,
+            1
+          ],
+          "setup_seconds": 0.11849131225795873,
+          "scan_seconds": 2.8040648448440493,
+          "total_seconds": 2.922556157102008
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.11849076945600245,
+          "scan_seconds": 0.8290478250060005,
+          "total_seconds": 0.947538594462003
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10893949123902757,
+          "scan_seconds": 22.985370560075978,
+          "total_seconds": 23.094310051315006
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.10893894843599128,
+          "scan_seconds": 0.8130198844150414,
+          "total_seconds": 0.9219588328510326
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            932,
+            17,
+            3
+          ],
+          "setup_seconds": 0.11849131225801557,
+          "scan_seconds": 0.2649455918560193,
+          "total_seconds": 0.38343690411403486
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.11849076945503612,
+          "scan_seconds": 0.8217245109279929,
+          "total_seconds": 0.940215280383029
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            645,
+            20,
+            2
+          ],
+          "setup_seconds": 0.32903829581397304,
+          "scan_seconds": 1.2669488959340356,
+          "total_seconds": 1.5959871917480086
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            585,
+            6,
+            2
+          ],
+          "setup_seconds": 0.3290377530109936,
+          "scan_seconds": 0.6792462013300451,
+          "total_seconds": 1.0082839543410387
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1162,
+            1,
+            0
+          ],
+          "setup_seconds": 0.3186675663449705,
+          "scan_seconds": 35.30515672204103,
+          "total_seconds": 35.623824288386004
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            345,
+            1,
+            2
+          ],
+          "setup_seconds": 0.31866702354199106,
+          "scan_seconds": 11.099961412501955,
+          "total_seconds": 11.418628436043946
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            640,
+            24,
+            15
+          ],
+          "setup_seconds": 0.3290382958140299,
+          "scan_seconds": 0.9051934645369784,
+          "total_seconds": 1.2342317603510082
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 596,
+          "verse": 80,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            596,
+            66,
+            9
+          ],
+          "setup_seconds": 0.3290377530109936,
+          "scan_seconds": 0.3364256003080186,
+          "total_seconds": 0.6654633533190122
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.11713587342296705,
+          "scan_seconds": 3.662871530321013,
+          "total_seconds": 3.78000740374398
+        },
+        {
+          "query": "faith works",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.1171353306199876,
+          "scan_seconds": 28.407447965074994,
+          "total_seconds": 28.52458329569498
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10919201515201848,
+          "scan_seconds": 12.98979211106797,
+          "total_seconds": 13.098984126219989
+        },
+        {
+          "query": "faith works",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.10919147234903903,
+          "scan_seconds": 27.858711573757034,
+          "total_seconds": 27.967903046106073
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1048,
+            27,
+            11
+          ],
+          "setup_seconds": 0.11713587342194387,
+          "scan_seconds": 3.6390014768240917,
+          "total_seconds": 3.7561373502460356
+        },
+        {
+          "query": "faith works",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.11713533062004444,
+          "scan_seconds": 28.189985372634965,
+          "total_seconds": 28.30712070325501
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1018,
+            3,
+            28
+          ],
+          "setup_seconds": 0.12504469075906854,
+          "scan_seconds": 2.3075311230519446,
+          "total_seconds": 2.432575813811013
+        },
+        {
+          "query": "kingdom God",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            24
+          ],
+          "setup_seconds": 0.12504414795591856,
+          "scan_seconds": 0.09903291845307649,
+          "total_seconds": 0.22407706640899505
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.11495223817803435,
+          "scan_seconds": 13.935080365857061,
+          "total_seconds": 14.050032604035096
+        },
+        {
+          "query": "kingdom God",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.11495169537602123,
+          "scan_seconds": 72.06744975654101,
+          "total_seconds": 72.18240145191703
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1018,
+            3,
+            28
+          ],
+          "setup_seconds": 0.12504469075906854,
+          "scan_seconds": 2.287710438551926,
+          "total_seconds": 2.4127551293109946
+        },
+        {
+          "query": "kingdom God",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            5,
+            24
+          ],
+          "setup_seconds": 0.12504414795603225,
+          "scan_seconds": 0.09817522975993143,
+          "total_seconds": 0.22321937771596367
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1000,
+            50,
+            0
+          ],
+          "setup_seconds": 0.11849131225699239,
+          "scan_seconds": 0.23143017432892066,
+          "total_seconds": 0.34992148658591304
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            997,
+            42,
+            5
+          ],
+          "setup_seconds": 0.11849076945497927,
+          "scan_seconds": 0.2970982728669469,
+          "total_seconds": 0.41558904232192617
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": null,
+          "setup_seconds": 0.10893949123897073,
+          "scan_seconds": 14.588519914016956,
+          "total_seconds": 14.697459405255927
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": null,
+          "setup_seconds": 0.10893894843593444,
+          "scan_seconds": 9.31382281014703,
+          "total_seconds": 9.422761758582965
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1000,
+            1,
+            11
+          ],
+          "setup_seconds": 0.11849131225801557,
+          "scan_seconds": 0.09960635942695717,
+          "total_seconds": 0.21809767168497274
+        },
+        {
+          "query": "Jesus Jesus",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            998,
+            3,
+            8
+          ],
+          "setup_seconds": 0.11849076945497927,
+          "scan_seconds": 0.16272057091907755,
+          "total_seconds": 0.2812113403740568
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            11
+          ],
+          "setup_seconds": 0.3290382958140299,
+          "scan_seconds": 0.04391666457502197,
+          "total_seconds": 0.37295496038905185
+        },
+        {
+          "query": "be* bel*",
+          "mode": 0,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            12,
+            9
+          ],
+          "setup_seconds": 0.32903775301110727,
+          "scan_seconds": 0.04392179104593197,
+          "total_seconds": 0.37295954405703924
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            1162,
+            1,
+            0
+          ],
+          "setup_seconds": 0.3186675663449705,
+          "scan_seconds": 13.513553423067037,
+          "total_seconds": 13.832220989412008
+        },
+        {
+          "query": "be* bel*",
+          "mode": 1,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            345,
+            1,
+            2
+          ],
+          "setup_seconds": 0.3186670235420479,
+          "scan_seconds": 32.665761652873016,
+          "total_seconds": 32.984428676415064
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": 1,
+          "expected": [
+            999,
+            16,
+            11
+          ],
+          "setup_seconds": 0.3290382958140299,
+          "scan_seconds": 0.0438389231550218,
+          "total_seconds": 0.3728772189690517
+        },
+        {
+          "query": "be* bel*",
+          "mode": 2,
+          "chapter": 999,
+          "verse": 16,
+          "word": 0,
+          "direction": -1,
+          "expected": [
+            999,
+            14,
+            17
+          ],
+          "setup_seconds": 0.3290377530109936,
+          "scan_seconds": 0.043845858967983986,
+          "total_seconds": 0.37288361197897757
+        }
+      ]
+    }
+  ],
+  "ui": [
+    {
+      "index": "full",
+      "budget_ms": 50,
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-full-final",
+      "rows": [
+        {
+          "query": "Search mode 0 faith works",
+          "seconds": 3.6041520913249983
+        },
+        {
+          "query": "Search mode 1 kingdom of God",
+          "seconds": 1.5864064815599974
+        },
+        {
+          "query": "Search mode 2 God loved",
+          "seconds": 0.8053305403330029
+        },
+        {
+          "query": "Search mode 0 be* bel*",
+          "seconds": 1.1252809908770018
+        }
+      ]
+    },
+    {
+      "index": "compact",
+      "budget_ms": 50,
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-compact-final",
+      "rows": [
+        {
+          "query": "Search mode 0 faith works",
+          "seconds": 35.585022213095
+        },
+        {
+          "query": "Search mode 1 kingdom of God",
+          "seconds": 21.578816469931994
+        },
+        {
+          "query": "Search mode 2 God loved",
+          "seconds": 0.8016379133800058
+        },
+        {
+          "query": "Search mode 0 be* bel*",
+          "seconds": 1.1382359440359977
+        }
+      ]
+    },
+    {
+      "index": "full",
+      "budget_ms": 200,
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-ui-full",
+      "rows": [
+        {
+          "query": "Search mode 0 faith works",
+          "seconds": 1.657141282116001
+        },
+        {
+          "query": "Search mode 1 kingdom of God",
+          "seconds": 1.146188909330995
+        },
+        {
+          "query": "Search mode 2 God loved",
+          "seconds": 0.7056775601799998
+        },
+        {
+          "query": "Search mode 0 be* bel*",
+          "seconds": 1.5755908950630015
+        }
+      ]
+    },
+    {
+      "index": "compact",
+      "budget_ms": 200,
+      "path": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-ui-compact",
+      "rows": [
+        {
+          "query": "Search mode 0 faith works",
+          "seconds": 9.725140839004997
+        },
+        {
+          "query": "Search mode 1 kingdom of God",
+          "seconds": 6.431349742879
+        },
+        {
+          "query": "Search mode 2 God loved",
+          "seconds": 0.6381213523509999
+        },
+        {
+          "query": "Search mode 0 be* bel*",
+          "seconds": 1.0747312161039986
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "source_cases": 1071,
+    "property_cases": 320,
+    "invalid_queries": 5,
+    "legacy_cases": 168,
+    "backend_cases": 96,
+    "backend_screen_checks": 36,
+    "final_ui_native_checks": 35,
+    "final_ui_stream_checks": 36,
+    "regression_native_checks": 42,
+    "regression_stream_checks": 69,
+    "host": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-host-final",
+    "legacy_host": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-legacy-host",
+    "final_stream": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/search-modes-stream-budget"
+  },
+  "cancel_seconds": 0.23333333333333,
+  "final_stream_rom_bytes": 1335238,
+  "final_stream_a5_bytes": 3862
+}

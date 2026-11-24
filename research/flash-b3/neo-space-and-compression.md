@@ -1,5 +1,8 @@
 # NEO firmware gaps, compression and differential archives
 
+For the complete available-ROM address maps, including substantial **zero-filled**
+AS3000/NEO05 tails missed by an FF-only scan, see [shared library placement](rom-address-map.md).
+
 ## Read-only NEO package findings
 
 The July 2013 NEO System 3.21 package contains a substantial erased-value run:

@@ -1,0 +1,367 @@
+{
+  "date": "2026-11-19",
+  "trials": 52,
+  "excluded_trials": 7,
+  "successful_prototypes": {
+    "as3k-adaptive-natural": {
+      "id": "as3k-adaptive-natural",
+      "platform": "as3k",
+      "case": "repl",
+      "adaptive": true,
+      "wall": 74.51,
+      "user": 47.99,
+      "sys": 6.59,
+      "maxrss": 87848,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 74.5547557460377,
+      "load_before": "3.57 3.53 2.80 3/1553 3",
+      "load_after": "5.91 4.22 3.09 6/1557 6",
+      "emu_seconds": 152.1,
+      "frames": 7605,
+      "hz": 50.0,
+      "cpu_seconds": 54.58,
+      "cpu_percent": 73.3,
+      "controller_parity_checks": 0,
+      "completion_waits": {
+        "text": {
+          "count": 42,
+          "max_frames": 565,
+          "total_frames": 6185
+        },
+        "check": {
+          "count": 33,
+          "max_frames": 271,
+          "total_frames": 287
+        },
+        "tap": {
+          "count": 16,
+          "max_frames": 14,
+          "total_frames": 224
+        },
+        "chord": {
+          "count": 17,
+          "max_frames": 16,
+          "total_frames": 272
+        }
+      }
+    },
+    "neo-adaptive-history-3-8": {
+      "id": "neo-adaptive-history-3-8",
+      "platform": "neo",
+      "case": "history",
+      "adaptive": true,
+      "timing": {
+        "hold": 3,
+        "step": 8,
+        "gap": 5
+      },
+      "wall": 22.39,
+      "user": 19.27,
+      "sys": 1.07,
+      "maxrss": 95208,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 22.574459698051214,
+      "load_before": "4.61 4.11 3.33 10/1545 6",
+      "load_after": "4.86 4.23 3.39 2/1556 9",
+      "emu_seconds": 26.883333333,
+      "frames": 1613,
+      "hz": 60.0,
+      "cpu_seconds": 20.34,
+      "cpu_percent": 90.8,
+      "controller_parity_checks": 0,
+      "completion_waits": {
+        "ready": {
+          "count": 4,
+          "max_frames": 0,
+          "total_frames": 0
+        },
+        "capture": {
+          "count": 4,
+          "max_frames": 0,
+          "total_frames": 0
+        }
+      }
+    },
+    "neo-adaptive-graphics-3-8": {
+      "id": "neo-adaptive-graphics-3-8",
+      "platform": "neo",
+      "case": "logo-graphics",
+      "adaptive": true,
+      "timing": {
+        "hold": 3,
+        "step": 8,
+        "gap": 5
+      },
+      "wall": 53.08,
+      "user": 40.62,
+      "sys": 2.62,
+      "maxrss": 94840,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 53.75273411802482,
+      "load_before": "2.45 3.74 3.18 1/1550 3",
+      "load_after": "4.61 4.11 3.33 6/1545 6",
+      "emu_seconds": 51.466666667,
+      "frames": 3088,
+      "hz": 60.0,
+      "cpu_seconds": 43.24,
+      "cpu_percent": 81.5,
+      "controller_parity_checks": 0,
+      "completion_waits": {
+        "capture": {
+          "count": 20,
+          "max_frames": 1,
+          "total_frames": 1
+        },
+        "ready": {
+          "count": 26,
+          "max_frames": 61,
+          "total_frames": 82
+        }
+      }
+    },
+    "neo-adaptive-graphics-3-8-repeat": {
+      "id": "neo-adaptive-graphics-3-8-repeat",
+      "platform": "neo",
+      "case": "logo-graphics",
+      "adaptive": true,
+      "timing": {
+        "hold": 3,
+        "step": 8,
+        "gap": 5
+      },
+      "wall": 33.55,
+      "user": 31.03,
+      "sys": 2.19,
+      "maxrss": 95824,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 33.872169803013094,
+      "load_before": "2.32 2.81 3.01 2/1535 29",
+      "load_after": "2.73 2.85 3.01 2/1560 32",
+      "emu_seconds": 51.466666667,
+      "frames": 3088,
+      "hz": 60.0,
+      "cpu_seconds": 33.22,
+      "cpu_percent": 99.0,
+      "controller_parity_checks": 0,
+      "completion_waits": {
+        "capture": {
+          "count": 20,
+          "max_frames": 1,
+          "total_frames": 1
+        },
+        "key": {
+          "count": 191,
+          "max_frames": 8,
+          "total_frames": 1528
+        },
+        "ready": {
+          "count": 26,
+          "max_frames": 61,
+          "total_frames": 82
+        }
+      }
+    },
+    "neo-adaptive-graphics-2-4": {
+      "id": "neo-adaptive-graphics-2-4",
+      "platform": "neo",
+      "case": "logo-graphics",
+      "adaptive": true,
+      "timing": {
+        "hold": 2,
+        "step": 4,
+        "gap": 2
+      },
+      "wall": 27.1,
+      "user": 25.43,
+      "sys": 1.53,
+      "maxrss": 95300,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 27.286408958025277,
+      "load_before": "1.99 2.80 3.01 2/1538 26",
+      "load_after": "2.32 2.81 3.01 1/1535 29",
+      "emu_seconds": 39.466666667,
+      "frames": 2368,
+      "hz": 60.0,
+      "cpu_seconds": 26.96,
+      "cpu_percent": 99.5,
+      "controller_parity_checks": 0,
+      "completion_waits": {
+        "capture": {
+          "count": 20,
+          "max_frames": 1,
+          "total_frames": 1
+        },
+        "key": {
+          "count": 191,
+          "max_frames": 4,
+          "total_frames": 764
+        },
+        "ready": {
+          "count": 26,
+          "max_frames": 65,
+          "total_frames": 126
+        }
+      }
+    },
+    "neo-adaptive-graphics-ram": {
+      "id": "neo-adaptive-graphics-ram",
+      "platform": "neo",
+      "case": "logo-graphics",
+      "adaptive": true,
+      "ram": true,
+      "timing": {
+        "hold": 3,
+        "step": 8,
+        "gap": 5
+      },
+      "wall": 31.75,
+      "user": 29.74,
+      "sys": 1.78,
+      "maxrss": 94560,
+      "exit": 0,
+      "status": "PASS",
+      "error": null,
+      "wall_measured": 31.92921376193408,
+      "load_before": "1.80 2.81 3.02 3/1575 5",
+      "load_after": "1.92 2.73 2.99 2/1574 8",
+      "emu_seconds": 51.366666667,
+      "frames": 3082,
+      "hz": 60.0,
+      "cpu_seconds": 31.52,
+      "cpu_percent": 99.3,
+      "controller_parity_checks": 20,
+      "completion_waits": {
+        "capture": {
+          "count": 20,
+          "max_frames": 1,
+          "total_frames": 1
+        },
+        "key": {
+          "count": 191,
+          "max_frames": 8,
+          "total_frames": 1528
+        },
+        "ready": {
+          "count": 26,
+          "max_frames": 60,
+          "total_frames": 76
+        }
+      }
+    }
+  },
+  "rendering_benchmarks": {
+    "as3k": {
+      "0": {
+        "cpu_seconds": [
+          9.02,
+          8.35,
+          8.56
+        ],
+        "wall_seconds": [
+          9.12,
+          8.44,
+          8.67
+        ],
+        "passed": 3,
+        "total": 3,
+        "cpu_median": 8.56
+      },
+      "6": {
+        "cpu_seconds": [
+          8.18,
+          8.0
+        ],
+        "wall_seconds": [
+          8.27,
+          8.07
+        ],
+        "passed": 2,
+        "total": 2,
+        "cpu_median": 8.09
+      },
+      "10": {
+        "cpu_seconds": [
+          8.98,
+          8.34
+        ],
+        "wall_seconds": [
+          9.11,
+          8.41
+        ],
+        "passed": 2,
+        "total": 2,
+        "cpu_median": 8.66
+      }
+    },
+    "neo": {
+      "0": {
+        "cpu_seconds": [
+          18.64,
+          20.87,
+          18.87
+        ],
+        "wall_seconds": [
+          18.74,
+          21.09,
+          19.0
+        ],
+        "passed": 3,
+        "total": 3,
+        "cpu_median": 18.87
+      },
+      "6": {
+        "cpu_seconds": [
+          19.29,
+          18.23
+        ],
+        "wall_seconds": [
+          19.4,
+          18.35
+        ],
+        "passed": 2,
+        "total": 2,
+        "cpu_median": 18.759999999999998
+      },
+      "10": {
+        "cpu_seconds": [
+          17.65,
+          18.61
+        ],
+        "wall_seconds": [
+          17.78,
+          18.81
+        ],
+        "passed": 0,
+        "total": 2,
+        "cpu_median": 18.13
+      }
+    }
+  },
+  "maintained_test_changes": [],
+  "end_git": {
+    "betawise": {
+      "head": "813f70371d4149b3ad40b5e7aa32cbe770363192",
+      "status": " M applets/DebugTool/DebugTool.c\n M applets/NeoFontTerminal/.gitignore\n M applets/NeoFontTerminal/Makefile\n M applets/NeoFontTerminal/NeoFontTerminal.c\n M applets/NeoFontTerminal/README.md\n M applets/NeoFontTerminal/fontgen.py\n M applets/UCBLogo/Makefile\n M applets/UCBLogo/applet.c\n M os3k/os3k_display.c\n M os3k/os3k_display_internal.h\n?? applets/NeoFontTerminal/glyphs-4x6.png\n?? applets/NeoFontTerminal/glyphs-5x7.png\n?? applets/NeoFontTerminal/glyphs-5x8.png\n"
+    },
+    "mame": {
+      "head": "ca1dc90ea59c89c2c5d35389dbb1fda7357f9fa6",
+      "status": "M  src/mame/skeleton/alphasneo.cpp\n"
+    }
+  },
+  "provenance": {
+    "initial_applet_preserved": "inputs/MicroPython-extra.OS3KApp",
+    "shared_applet_rebuilt_later_at": "2026-11-19T23:15:27.600234-07:00",
+    "as3k_trials_overlapping_later_rebuild": [],
+    "mame_executables_unchanged": true
+  }
+}

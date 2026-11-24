@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-23",
+  "status": "Historical directed assertions passed; scope and limitations are in the topic reports.",
+  "experiments": [
+    {
+      "experiment": "alpha-saved-focus-evidence",
+      "scope": "Neo 3.21 native AlphaWord key/focus observation, read-only file table captures; no screen oracle",
+      "assertions": [
+        "typed: AlphaWord current and saved lengths both 512",
+        "killfocus-entry: AlphaWord current and saved lengths both 512",
+        "killfocus-return: AlphaWord current and saved lengths both 512",
+        "leave: AlphaWord current and saved lengths both 512"
+      ]
+    },
+    {
+      "experiment": "evidence",
+      "scope": "See the corresponding topic report",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    },
+    {
+      "experiment": "floor-evidence",
+      "scope": "synthetic file arena, private ROM floor experiment",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    },
+    {
+      "experiment": "lifecycle-evidence",
+      "scope": "bounded native startup clear/repack and mask-register probe",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    },
+    {
+      "experiment": "manager/evidence",
+      "scope": "Neo 3.21 original Manager packet transaction; no USB controller acceptance",
+      "normalize_command_lanes": true
+    },
+    {
+      "experiment": "manager/ram-evidence",
+      "scope": "Neo 3.21 original Manager packet transaction; no USB controller acceptance",
+      "normalize_command_lanes": false,
+      "repair_on_init": false,
+      "ram_loader_only": true
+    },
+    {
+      "experiment": "manager/repair-evidence",
+      "scope": "Neo 3.21 original Manager packet transaction; no USB controller acceptance",
+      "normalize_command_lanes": true,
+      "repair_on_init": true
+    },
+    {
+      "experiment": "public-floor-evidence",
+      "scope": "public file syscall compaction and private floor reservation experiment",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    },
+    {
+      "experiment": "public-preserve-evidence",
+      "scope": "public file syscall compaction and private floor reservation experiment",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    },
+    {
+      "experiment": "public-pressure-evidence",
+      "scope": "public file syscall compaction and private floor reservation experiment",
+      "roms": [
+        "as3000",
+        "neo_3_01",
+        "neo_3_21"
+      ],
+      "input_rom_sha256": {
+        "as3000": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+        "neo_3_01": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+        "neo_3_21": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0"
+      }
+    }
+  ]
+}

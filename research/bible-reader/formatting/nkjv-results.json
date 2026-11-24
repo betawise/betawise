@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "version": "NKJV",
+  "source_flags": {
+    "p": 9683,
+    "i": 22847,
+    "s": 6950,
+    "n": 3304,
+    "l": 23669,
+    "d": 21462,
+    "c": 17,
+    "g": 74,
+    "b": 54,
+    "r": 41259
+  },
+  "extra_headings": 2992,
+  "generated_titles": 1189,
+  "layout_events": 33352,
+  "rows": {
+    "rice_sidecar": {
+      "formatting_bytes": 79775,
+      "with_headings_bytes": 130166
+    },
+    "run_huffman_sidecar": {
+      "formatting_bytes": 66802,
+      "with_headings_bytes": 118383
+    },
+    "smallcaps_defaults_sidecar": {
+      "formatting_bytes": 59554,
+      "with_headings_bytes": 111135
+    },
+    "all_inline_best": {
+      "formatting_bytes": 74839,
+      "with_headings_bytes": 126552
+    },
+    "learned_italics_smallcaps_sidecar": {
+      "formatting_bytes": 58194,
+      "with_headings_bytes": 109775
+    }
+  },
+  "best_model": {
+    "name": "book-32/runs_huffman",
+    "bytes": 26114,
+    "index_bytes": 2473,
+    "present_chapters": 1161,
+    "header_bytes": 437,
+    "framing_bytes": 0,
+    "words": 11,
+    "profile_bytes": 138,
+    "predicted_attributes": {
+      "0": 8,
+      "1": 0,
+      "2": 3
+    }
+  },
+  "layout": {
+    "name": "translation/huffman_small",
+    "bytes": 32214,
+    "index_bytes": 2529,
+    "present_chapters": 1189,
+    "header_bytes": 241,
+    "framing_bytes": 0,
+    "exceptions": 33352
+  },
+  "heading": {
+    "bytes": 51713,
+    "index_bytes": 2471,
+    "present_chapters": 1160,
+    "header_bytes": 35146,
+    "framing_bytes": 0
+  },
+  "baseline_resource_bytes": 1309978,
+  "unchanged_sidecar_resource_files": [
+    "container.bin",
+    "search.bin",
+    "pruning.bin",
+    "verses.bin"
+  ],
+  "validation": {
+    "inline_search_cases": 1830,
+    "inline_atoms_checked": 3844115
+  },
+  "scope": "Incremental data only, including model/index/padding bytes; redletter flags, footnotes, renderer code and font assets excluded.",
+  "artifacts": {
+    "sidecars": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-sidecars-final",
+    "learned": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-learned",
+    "inline": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-inline",
+    "inline_book": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-inline-defaults",
+    "inline_layout": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-all-inline",
+    "inline_layout_book": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-all-inline-book",
+    "inline_learned": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-all-inline-learned",
+    "inline_check": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/nkjv-format-all-checked"
+  }
+}

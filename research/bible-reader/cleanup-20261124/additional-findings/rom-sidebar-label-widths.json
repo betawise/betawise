@@ -1,0 +1,89 @@
+{
+  "font_height": 9,
+  "minimum_sidebar_length": 60,
+  "labels": 1189,
+  "longest": [
+    {
+      "label": "2 Thess 2",
+      "pixels": 42
+    },
+    {
+      "label": "2 Thess 3",
+      "pixels": 42
+    },
+    {
+      "label": "1 Thess 2",
+      "pixels": 40
+    },
+    {
+      "label": "1 Thess 3",
+      "pixels": 40
+    },
+    {
+      "label": "1 Thess 4",
+      "pixels": 40
+    },
+    {
+      "label": "1 Thess 5",
+      "pixels": 40
+    },
+    {
+      "label": "2 Thess 1",
+      "pixels": 40
+    },
+    {
+      "label": "2 Sam 20",
+      "pixels": 38
+    },
+    {
+      "label": "2 Sam 22",
+      "pixels": 38
+    },
+    {
+      "label": "2 Sam 23",
+      "pixels": 38
+    }
+  ],
+  "full_names_too_long": [
+    {
+      "label": "Deuteronomy 34",
+      "pixels": 68
+    },
+    {
+      "label": "1 Chronicles 29",
+      "pixels": 63
+    },
+    {
+      "label": "2 Chronicles 36",
+      "pixels": 65
+    },
+    {
+      "label": "Ecclesiastes 12",
+      "pixels": 65
+    },
+    {
+      "label": "Song of Solomon 8",
+      "pixels": 78
+    },
+    {
+      "label": "Lamentations 5",
+      "pixels": 64
+    },
+    {
+      "label": "1 Corinthians 16",
+      "pixels": 65
+    },
+    {
+      "label": "2 Corinthians 13",
+      "pixels": 67
+    },
+    {
+      "label": "1 Thessalonians 5",
+      "pixels": 74
+    },
+    {
+      "label": "2 Thessalonians 3",
+      "pixels": 76
+    }
+  ]
+}

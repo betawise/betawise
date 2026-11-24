@@ -789,6 +789,9 @@
       4411492,
       4453948
     ],
-    "firmware_version": "3.21"
+    "firmware_version": "3.21",
+    "copies": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/OS3KNeoROM.OS3KOS"
+    ]
   }
 ]

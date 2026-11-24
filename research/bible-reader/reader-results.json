@@ -1,0 +1,1945 @@
+{
+  "status": "passed",
+  "applet_id": "0xA1B1",
+  "default_version": "KJV",
+  "default_rom_bytes": 1587200,
+  "default_static_ram_bytes": 2694,
+  "decoder_workspace_bytes": 232,
+  "variants": [
+    {
+      "version": "NKJV",
+      "filename": "BibleReader-NKJV.OS3KApp",
+      "rom_bytes": 1629994,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    },
+    {
+      "version": "ESV",
+      "filename": "BibleReader-ESV.OS3KApp",
+      "rom_bytes": 1609520,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    },
+    {
+      "version": "NIV",
+      "filename": "BibleReader-NIV.OS3KApp",
+      "rom_bytes": 1647868,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    },
+    {
+      "version": "NASB",
+      "filename": "BibleReader-NASB.OS3KApp",
+      "rom_bytes": 1668908,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    },
+    {
+      "version": "CSB",
+      "filename": "BibleReader-CSB.OS3KApp",
+      "rom_bytes": 1652854,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    },
+    {
+      "version": "KJV",
+      "filename": "BibleReader.OS3KApp",
+      "rom_bytes": 1587200,
+      "ram_bytes": 2694,
+      "id": "0xA1B1"
+    }
+  ],
+  "resources": {
+    "kjv": {
+      "version": "KJV",
+      "bytes": 1004529,
+      "search_bytes": 527821,
+      "search_words": 12517,
+      "max_chapter_bytes": 12992,
+      "max_dictionary_word": 17,
+      "dictionary_entries": 14244,
+      "chapters": 1189,
+      "verses": 31102,
+      "mapped_text_bytes": 4138567
+    },
+    "nkjv": {
+      "version": "NKJV",
+      "bytes": 1038063,
+      "search_bytes": 537088,
+      "search_words": 13056,
+      "max_chapter_bytes": 12873,
+      "max_dictionary_word": 17,
+      "dictionary_entries": 15767,
+      "chapters": 1189,
+      "verses": 31102,
+      "mapped_text_bytes": 4025833
+    },
+    "esv": {
+      "version": "ESV",
+      "bytes": 1014156,
+      "search_bytes": 540515,
+      "search_words": 13306,
+      "max_chapter_bytes": 12492,
+      "max_dictionary_word": 16,
+      "dictionary_entries": 15685,
+      "chapters": 1189,
+      "verses": 31103,
+      "mapped_text_bytes": 3932249
+    },
+    "niv": {
+      "version": "NIV",
+      "bytes": 1028071,
+      "search_bytes": 564947,
+      "search_words": 13930,
+      "max_chapter_bytes": 12253,
+      "max_dictionary_word": 17,
+      "dictionary_entries": 16841,
+      "chapters": 1189,
+      "verses": 31103,
+      "mapped_text_bytes": 3837895
+    },
+    "nasb": {
+      "version": "NASB",
+      "bytes": 1052295,
+      "search_bytes": 561770,
+      "search_words": 14019,
+      "max_chapter_bytes": 12871,
+      "max_dictionary_word": 17,
+      "dictionary_entries": 16708,
+      "chapters": 1189,
+      "verses": 31103,
+      "mapped_text_bytes": 4042842
+    },
+    "csb": {
+      "version": "CSB",
+      "bytes": 1024779,
+      "search_bytes": 573226,
+      "search_words": 14324,
+      "max_chapter_bytes": 12357,
+      "max_dictionary_word": 17,
+      "dictionary_entries": 17349,
+      "chapters": 1189,
+      "verses": 31104,
+      "mapped_text_bytes": 3846951
+    }
+  },
+  "native_verification": [
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 4138567,
+      "reverse_chapter_decode_exact": true
+    },
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 4025833,
+      "reverse_chapter_decode_exact": true
+    },
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 3932249,
+      "reverse_chapter_decode_exact": true
+    },
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 3837895,
+      "reverse_chapter_decode_exact": true
+    },
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 4042842,
+      "reverse_chapter_decode_exact": true
+    },
+    {
+      "status": "passed",
+      "codec": "huffman",
+      "chapters": 1189,
+      "text_bytes": 3846951,
+      "reverse_chapter_decode_exact": true
+    }
+  ],
+  "search": [
+    {
+      "query": "God",
+      "verses": 3877,
+      "exact": true
+    },
+    {
+      "query": "god",
+      "verses": 3877,
+      "exact": true
+    },
+    {
+      "query": "the earth",
+      "verses": 781,
+      "exact": true
+    },
+    {
+      "query": "in the beginning",
+      "verses": 17,
+      "exact": true
+    },
+    {
+      "query": "Jesus",
+      "verses": 943,
+      "exact": true
+    },
+    {
+      "query": "believe",
+      "verses": 131,
+      "exact": true
+    },
+    {
+      "query": "believed",
+      "verses": 111,
+      "exact": true
+    },
+    {
+      "query": "zzzzunknown",
+      "verses": 0,
+      "exact": true
+    },
+    {
+      "query": "love love",
+      "verses": 0,
+      "exact": true
+    },
+    {
+      "query": "verily verily",
+      "verses": 25,
+      "exact": true
+    },
+    {
+      "query": "I am that I am",
+      "verses": 1,
+      "exact": true
+    },
+    {
+      "query": "a a",
+      "verses": 0,
+      "exact": true
+    },
+    {
+      "query": "LORD's",
+      "verses": 131,
+      "exact": true
+    },
+    {
+      "query": "Jesus'",
+      "verses": 943,
+      "exact": true
+    }
+  ],
+  "mame": {
+    "terminal_and_font_switch": {
+      "status": "passed",
+      "results": [
+        {
+          "name": "Genesis with superscripts",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              261,
+              64
+            ],
+            "foreground_pixels": 3335,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-01.png"
+          }
+        },
+        {
+          "name": "Jump John 3:16",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 1963,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              259,
+              64
+            ],
+            "foreground_pixels": 3288,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-02.png"
+          }
+        },
+        {
+          "name": "Hide verse numbers",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 84,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 1841,
+          "caret": 2156,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              64
+            ],
+            "foreground_pixels": 3349,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-03.png"
+          }
+        },
+        {
+          "name": "Psalm 119 last verse",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 13098,
+          "caret": 13410,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              64
+            ],
+            "foreground_pixels": 3294,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-04.png"
+          }
+        },
+        {
+          "name": "Return Genesis",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              64
+            ],
+            "foreground_pixels": 3493,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-05.png"
+          }
+        },
+        {
+          "name": "Show numbers",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              261,
+              64
+            ],
+            "foreground_pixels": 3335,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-06.png"
+          }
+        },
+        {
+          "name": "Exact believe first match",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3418,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-07.png"
+          }
+        },
+        {
+          "name": "Next exact match",
+          "chapter": 53,
+          "verse": 5,
+          "cursor": {
+            "x": 198,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 698,
+          "caret": 1046,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              1,
+              263,
+              64
+            ],
+            "foreground_pixels": 3327,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-08.png"
+          }
+        },
+        {
+          "name": "Previous exact match",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3418,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-09.png"
+          }
+        },
+        {
+          "name": "Copy current verse with citation",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 12
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3139,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-10.png"
+          }
+        },
+        {
+          "name": "Dismiss copy notice",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3418,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-11.png"
+          }
+        },
+        {
+          "name": "Invalid verse rejected",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 12
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3170,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-12.png"
+          }
+        },
+        {
+          "name": "Cancel error",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              64
+            ],
+            "foreground_pixels": 3418,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-13.png"
+          }
+        },
+        {
+          "name": "Psalm 117",
+          "chapter": 594,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              40
+            ],
+            "foreground_pixels": 1664,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-14.png"
+          }
+        },
+        {
+          "name": "Page down",
+          "chapter": 594,
+          "verse": 2,
+          "cursor": {
+            "x": 0,
+            "y": 32,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 695,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              40
+            ],
+            "foreground_pixels": 1664,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-15.png"
+          }
+        },
+        {
+          "name": "Named reference",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 1963,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              259,
+              64
+            ],
+            "foreground_pixels": 3288,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-16.png"
+          }
+        },
+        {
+          "name": "Select from verse start",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 40,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 1963,
+          "caret": 2286,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              259,
+              64
+            ],
+            "foreground_pixels": 3304,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-17.png"
+          }
+        },
+        {
+          "name": "Copy selection with citation",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 40,
+            "y": 56,
+            "mode": 12
+          },
+          "viewport": 1963,
+          "caret": 2286,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              251,
+              64
+            ],
+            "foreground_pixels": 3097,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-18.png"
+          }
+        },
+        {
+          "name": "Cancel selection",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 56,
+            "mode": 15
+          },
+          "viewport": 1963,
+          "caret": 2285,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              259,
+              64
+            ],
+            "foreground_pixels": 3288,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-19.png"
+          }
+        },
+        {
+          "name": "System font picker",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-20.png"
+          }
+        },
+        {
+          "name": "Hide numbers in system font",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 84,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2013,
+          "caret": 2156,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              62
+            ],
+            "foreground_pixels": 2114,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-21.png"
+          }
+        },
+        {
+          "name": "Show numbers in system font",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-22.png"
+          }
+        },
+        {
+          "name": "Largest chapter in system font",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-23.png"
+          }
+        },
+        {
+          "name": "Empty exact search",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 12
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              64
+            ],
+            "foreground_pixels": 1952,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-24.png"
+          }
+        },
+        {
+          "name": "Cancel search notice",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-acceptance/expected-25.png"
+          }
+        }
+      ]
+    },
+    "production_and_resume": {
+      "status": "passed",
+      "results": [
+        {
+          "name": "Genesis with superscripts",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              249,
+              63
+            ],
+            "foreground_pixels": 2136,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-01.png"
+          }
+        },
+        {
+          "name": "Jump John 3:16",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-02.png"
+          }
+        },
+        {
+          "name": "Hide verse numbers",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 84,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2013,
+          "caret": 2156,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              62
+            ],
+            "foreground_pixels": 2114,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-03.png"
+          }
+        },
+        {
+          "name": "Psalm 119 last verse",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 13257,
+          "caret": 13410,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              63
+            ],
+            "foreground_pixels": 2218,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-04.png"
+          }
+        },
+        {
+          "name": "Return Genesis",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              257,
+              63
+            ],
+            "foreground_pixels": 2274,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-05.png"
+          }
+        },
+        {
+          "name": "Show numbers",
+          "chapter": 0,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              249,
+              63
+            ],
+            "foreground_pixels": 2136,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-06.png"
+          }
+        },
+        {
+          "name": "Exact believe first match",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              255,
+              63
+            ],
+            "foreground_pixels": 2196,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-07.png"
+          }
+        },
+        {
+          "name": "Next exact match",
+          "chapter": 53,
+          "verse": 5,
+          "cursor": {
+            "x": 198,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 882,
+          "caret": 1046,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              261,
+              63
+            ],
+            "foreground_pixels": 2057,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-08.png"
+          }
+        },
+        {
+          "name": "Previous exact match",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              255,
+              63
+            ],
+            "foreground_pixels": 2196,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-09.png"
+          }
+        },
+        {
+          "name": "Copy current verse with citation",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 12
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              253,
+              64
+            ],
+            "foreground_pixels": 2246,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-10.png"
+          }
+        },
+        {
+          "name": "Dismiss copy notice",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              255,
+              63
+            ],
+            "foreground_pixels": 2196,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-11.png"
+          }
+        },
+        {
+          "name": "Invalid verse rejected",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 12
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              253,
+              64
+            ],
+            "foreground_pixels": 2277,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-12.png"
+          }
+        },
+        {
+          "name": "Cancel error",
+          "chapter": 53,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              255,
+              63
+            ],
+            "foreground_pixels": 2196,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-13.png"
+          }
+        },
+        {
+          "name": "Psalm 117",
+          "chapter": 594,
+          "verse": 1,
+          "cursor": {
+            "x": 0,
+            "y": 0,
+            "mode": 15
+          },
+          "viewport": 0,
+          "caret": 0,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              63
+            ],
+            "foreground_pixels": 2051,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-14.png"
+          }
+        },
+        {
+          "name": "Page down",
+          "chapter": 594,
+          "verse": 2,
+          "cursor": {
+            "x": 0,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 562,
+          "caret": 695,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              0,
+              263,
+              60
+            ],
+            "foreground_pixels": 1602,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-15.png"
+          }
+        },
+        {
+          "name": "Named reference",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-16.png"
+          }
+        },
+        {
+          "name": "Select from verse start",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 40,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2286,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              64
+            ],
+            "foreground_pixels": 2116,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-17.png"
+          }
+        },
+        {
+          "name": "Copy selection with citation",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 40,
+            "y": 48,
+            "mode": 12
+          },
+          "viewport": 2145,
+          "caret": 2286,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              251,
+              64
+            ],
+            "foreground_pixels": 2175,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-18.png"
+          }
+        },
+        {
+          "name": "Cancel selection",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2285,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-19.png"
+          }
+        },
+        {
+          "name": "System font picker",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-20.png"
+          }
+        },
+        {
+          "name": "Hide numbers in system font",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 84,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2013,
+          "caret": 2156,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              263,
+              62
+            ],
+            "foreground_pixels": 2114,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-21.png"
+          }
+        },
+        {
+          "name": "Show numbers in system font",
+          "chapter": 999,
+          "verse": 16,
+          "cursor": {
+            "x": 36,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 2145,
+          "caret": 2282,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              259,
+              62
+            ],
+            "foreground_pixels": 2068,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-22.png"
+          }
+        },
+        {
+          "name": "Largest chapter in system font",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-23.png"
+          }
+        },
+        {
+          "name": "Empty exact search",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 12
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              64
+            ],
+            "foreground_pixels": 1952,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-24.png"
+          }
+        },
+        {
+          "name": "Cancel search notice",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-25.png"
+          }
+        },
+        {
+          "name": "Resume after AlphaWord round trip",
+          "chapter": 596,
+          "verse": 176,
+          "cursor": {
+            "x": 114,
+            "y": 48,
+            "mode": 15
+          },
+          "viewport": 14901,
+          "caret": 15052,
+          "gap": [
+            0,
+            512
+          ],
+          "bitmap": {
+            "region": [
+              0,
+              0,
+              264,
+              64
+            ],
+            "foreground_bounds": [
+              0,
+              2,
+              255,
+              63
+            ],
+            "foreground_pixels": 2053,
+            "differing_pixels": 0,
+            "reference": "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/reader-mame-resume/expected-26.png"
+          }
+        }
+      ]
+    }
+  },
+  "legacy_huffman_compatibility": {
+    "status": "passed",
+    "codec": "huffman",
+    "chapters": 1189,
+    "text_bytes": 4144456,
+    "reverse_chapter_decode_exact": true
+  },
+  "publication_default_kjv_only": true
+}

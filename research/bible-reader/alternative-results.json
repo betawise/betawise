@@ -1,0 +1,112 @@
+{
+  "results": [
+    {
+      "method": "word Huffman baseline, plain dictionary + ROM map",
+      "bytes": 1257855,
+      "payload_bytes": 1009665,
+      "table_bytes": 227821,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "word Huffman baseline, front dictionary + ROM map",
+      "bytes": 1150713,
+      "payload_bytes": 1009665,
+      "table_bytes": 120679,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189
+    },
+    {
+      "method": "singleton escape, raw literals, plain dictionary",
+      "bytes": 1217235,
+      "payload_bytes": 1046068,
+      "table_bytes": 150798,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "escaped_tokens": 4768
+    },
+    {
+      "method": "singleton escape, raw literals, front dictionary",
+      "bytes": 1147032,
+      "payload_bytes": 1046068,
+      "table_bytes": 80595,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "escaped_tokens": 4768
+    },
+    {
+      "method": "singleton escape, Huffman literals, plain dictionary",
+      "bytes": 1201182,
+      "payload_bytes": 1029503,
+      "table_bytes": 151310,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "escaped_tokens": 4768
+    },
+    {
+      "method": "singleton escape, Huffman literals, front dictionary",
+      "bytes": 1130979,
+      "payload_bytes": 1029503,
+      "table_bytes": 81107,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "escaped_tokens": 4768
+    },
+    {
+      "method": "alternating word separator Huffman, plain dictionaries",
+      "bytes": 1245058,
+      "payload_bytes": 1017800,
+      "table_bytes": 206889,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "word_entries": 13756,
+      "separator_entries": 84
+    },
+    {
+      "method": "alternating word separator Huffman, front dictionaries",
+      "bytes": 1152545,
+      "payload_bytes": 1017800,
+      "table_bytes": 114376,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "word_entries": 13756,
+      "separator_entries": 84
+    },
+    {
+      "method": "alternating Huffman + singleton raw escape, front dictionaries",
+      "bytes": 1146418,
+      "payload_bytes": 1048276,
+      "table_bytes": 77773,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "escaped_words": 4418
+    },
+    {
+      "method": "LZSS chapter w10 l6",
+      "bytes": 2328770,
+      "payload_bytes": 2308401,
+      "table_bytes": 0,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "history_bytes": 1024
+    },
+    {
+      "method": "LZSS chapter w11 l5",
+      "bytes": 2161179,
+      "payload_bytes": 2140810,
+      "table_bytes": 0,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "history_bytes": 2048
+    },
+    {
+      "method": "LZSS chapter w12 l4",
+      "bytes": 2113328,
+      "payload_bytes": 2092959,
+      "table_bytes": 0,
+      "framing_bytes": 20369,
+      "verified_chapters": 1189,
+      "history_bytes": 4096
+    }
+  ]
+}

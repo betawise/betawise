@@ -1,0 +1,210 @@
+AlphaSmart test timing research — 2026-11-19 (America/Denver)
+
+Recommendation
+==============
+Replace scheduled completion sleeps with expected-state predicates against LCD
+controller RAM. Keep native emulated screen rates (AS3000: 50 Hz; Neo: 60 Hz),
+headless video/sound, no frameskip, and -nothrottle. Preserve reliable physical
+key holds separately from completion waits. No maintained tests were edited and
+no commit was made. All code here is experimental research, not a production
+patch.
+
+The readiness algorithm
+=======================
+1. Read controller RAM plus display interpretation flags without altering them.
+2. If the state differs from the previous sample, evaluate the expected state.
+   If unchanged and previously not matching, continue waiting without decoding
+   it again. An unchanged nonmatching display is never a success condition.
+3. If it matches, require consecutive matching observations and any explicit
+   application-ready condition, such as the completed empty input prompt.
+4. Only then send the next input. Retain required key-down/key-up durations.
+5. A per-step emulated-time timeout fails with the last controller state,
+   screenshot, expected state and stage identity. Retain a separate wall-clock
+   process watchdog for a stuck emulator.
+
+The prototypes require two identical observations. For production I recommend
+three matching observations: two full frame intervals, about 40 ms on AS3000
+and 33 ms on Neo. That adds only one frame beyond the successfully tested
+prototype and gives additional stability margin. This is an emulated-time
+window, independent of host load or unthrottled wall speed.
+
+A fixed guessed glyph-writing delay is unnecessary. AS3000 character DDRAM
+stores character codes; Neo graphical glyphs span several RAM bytes. Match the
+complete expected glyph/row, not a partial pattern. Match the new prompt/input
+cursor position as an acknowledgement, not merely the graphics pane. An already
+correct/blank graphics pane does not prove the command handler has returned.
+Explicit no-op tests need their own acknowledgement/minimum key lifetime; they
+must not require a screen change that legitimately cannot occur.
+
+Actual controller access
+========================
+AS3000: :ks0066_0 and :ks0066_1 expose 0/m_ddram save items. Existing tests
+already read and decode their 40-character rows directly. This is independent
+of frame rendering and character cursor overlays.
+
+Neo: the RUNNING binary, not just its source, exposes :lcd0 and :lcd1 with
+0/m_ddram, 0/m_start_line and orientation/display flags. Each controller has
+9 pages by 132 bytes; the visible panel uses the 64-line display portion, not
+the separate icon row. neo_ram.lua reconstructs pixels honoring start line,
+ADC direction, COM reversal, display/reset, inversion and all-points mode.
+
+The direct Neo RAM prototype passed every one of the 20 graphics assertions.
+At each checkpoint its reconstructed complete 264x64 display matched the
+rendered pixels exactly: 337,920 pixel comparisons in total. This includes
+left-pane scrolling. It reads MAME save items, never the guest LCD data port;
+data-port reads can change the column/read-latch state.
+
+Measured reductions
+===================
+Durations below are EMULATED seconds, which are reproducible despite host load.
+
+Workload                         Old schedule       State-driven       Reduction
+AS3000 full EXTRA REPL             428.520            152.100              64.5%
+Neo history                        60.600             26.883              55.6%
+Neo 20-check Logo graphics         193.067             51.467              73.3%
+Neo graphics, direct RAM backend   193.067             51.367              73.4%
+
+The AS3000 baseline and state-driven durations were measured live. Neo history
+was also measured live at baseline. The Neo graphics baseline is the exact
+schedule derived from the frozen scenario (including the seven-frame capture
+pauses) and agrees with the prior full passing run's rounded MAME duration.
+The adaptive graphics run was repeated and had exactly the same 3,088 frames /
+51.466666667 emulated seconds, despite materially different wall time.
+
+The AS3000 full REPL includes editing, history, completion, interrupts, raw/paste
+modes and terminal controls. The experimental allocation workload was wrapped
+in exec and given a final ALLOC output marker so readiness could be observed.
+The computational work remains 900 list-allocation iterations. The prototype
+also strengthens interrupt checks by requiring the top-level prompt, avoiding
+acceptance of a stale KeyboardInterrupt message.
+
+AS3000 CPU time fell from 110.68 s to 54.58 s in those full runs (about 51%).
+Neo history CPU time fell from 32.90 s to 20.34 s (about 38%). Wall time was
+117.25 -> 74.51 s for AS3000 and 33.25 -> 22.39 s for Neo history, but these
+wall comparisons are affected by concurrent host activity. CPU-frequency/load
+variation also affects CPU-time comparisons; these are pilot measurements,
+not tightly controlled microbenchmarks. Unthrottled usage remains close to
+one busy core while running: the benefit is less total work and earlier exit.
+
+Why global delay multipliers fail
+================================
+AS3000 uniform 0.4x timing failed at Backspace. 0.5x lost input around the long
+allocation workload. Adding allocation time got farther but shortened interrupt
+holds failed. 0.6x failed the assigned Ctrl+X interrupt; 0.75x failed assigned
+plain x. Do not multiply every scheduled frame offset by a common factor.
+
+The isolated AS3000 latency probe observed a simple command's output already
+ready when the natural keyboard queue emptied. Three 900-allocation commands
+needed another 237, 240 and 237 frames after the queue emptied: 4.74, 4.80 and
+4.74 emulated seconds. The full adaptive test's longest assertion wait was
+271 frames / 5.42 seconds. A 12-second per-step emulated timeout gives more
+than 2x the longest measured wait, without paying that delay on successful
+steps. It should remain a cap, not a sleep.
+
+Neo fixed 3-frame holds / 8-frame intervals passed editing, history, completion,
+terminal controls, modes and Logo text with much shorter waits. But the same
+fixed reduction failed graphics: the square had no edges and the transcript
+showed "eat 4 [fd 20 rt 90]" instead of "repeat ...". The first letters were
+lost. The state-driven engine verifies each echoed Logo draft/cursor and the
+completed prompt, then matches the expected drawing. All 20 graphics checks
+pass under that protocol. Its longest prompt wait was 61 frames / 1.017 s.
+
+Recommended keyboard margins
+============================
+AS3000:
+- Keep MAME natural-keyboard pacing initially. The tested Lua API does not expose
+  its rate parameter. Local source uses 50 ms phases for ordinary keys, normally
+  100 ms per unshifted character and 150 ms for a shifted character, with longer
+  carriage-return phases. Stop forecasting 240 ms per character in the test.
+  Drain the real queue and await the expected LCD result instead.
+- Keep 12-frame / 240 ms holds for busy-loop interrupt keys. Even the 9-frame /
+  180 ms globally scaled plain-x test failed. Shorter ordinary matrix taps are
+  not established as a safe whole-suite default by this research.
+- The successful adaptive test uses 12-frame holds with two release frames for
+  navigation taps and 2/12/2-frame modifier setup/hold/release for chords. It
+  eliminates the much longer surrounding completion gaps.
+- The native-key AS3000 prototype is not recommended yet: its full adaptive run
+  failed with SyntaxError. Its failed measurements are retained for review.
+
+Neo:
+- Recommend ordinary keys: 3 frames down (50 ms), at least 5 frames up, and an
+  8-frame minimum interval (133 ms), plus explicit echo/readiness acknowledgement.
+  This is a minimum cadence; a slow UI operation can take longer automatically.
+- A more aggressive state-driven 2-frame down / 2-frame up / 4-frame interval
+  passed all 20 graphics checks at 39.466666667 emulated seconds. Recommend 3/8
+  instead: 1.5x the tested key-hold duration and 2x its minimum interval.
+- Retain the existing 30-frame / 500 ms busy-loop interrupt holds. Earlier work
+  and the current AS3000 sweep show these must be treated differently from
+  ordinary typing. No blanket reduction of interrupt holds is recommended.
+- The successful controller-RAM prototype currently covers Neo graphics; the
+  pixel prototype also covers history. The other Neo cases still need to be
+  explicitly ported to the readiness protocol before production adoption.
+
+Startup boot delays were not optimized in these prototypes. The original boot
+schedule remains 10.6 seconds on AS3000 and 18.3 seconds on Neo. Boot prompts
+should eventually have explicit readiness predicates too; default/system-font
+screens need their own glyph/bitmap profile rather than the terminal font.
+
+Rendering and speed measurements
+================================
+All workloads used -video none -sound none. Frame skipping changes rendering,
+not the emulated CPU clock or the 50/60 Hz callback schedule. These short fixed
+workloads were repeated with the same input schedule and binaries.
+
+                     No skip            Skip 6/12          Skip 10/12
+AS3000 CPU seconds   8.35–9.02 (3/3)     8.00–8.18 (2/2)    8.34–8.98 (2/2)
+Neo CPU seconds     18.64–20.87 (3/3)   18.23–19.29 (2/2)  17.65–18.61 (0/2)
+
+Parentheses show successful validations / trials. Skip 6 corresponds to 25 Hz
+AS3000 rendering / 30 Hz Neo rendering. Skip 10 corresponds to about 8.3 Hz /
+10 Hz. Both high-skip Neo trials failed because the capture burst did not
+contain stable cursor-free current pixels. The RAM observer can avoid cached
+render state, but final screenshots would still need fresh unskipped frames.
+
+AS3000's small samples suggest only a roughly 5% median CPU improvement with
+half rendering, with no consistent benefit at the higher skip. Neo half-render
+CPU medians differ by less than 1%, within run variability. Keep frameskip 0
+for simplicity, freshness and consistent observations; delay elimination is
+much more valuable than these rendering changes. Do not alter the driver's
+actual screen refresh as a test optimization: it changes the unit used by
+frame-based waits and may affect emulation scheduling.
+
+Both production runners already use -nothrottle. Local source applies -speed
+when throttling; -nothrottle is already maximum available execution speed.
+Adding -speed 2 did not help: AS3000's short workload took 7.96 CPU seconds vs
+8.35–9.02 at baseline; Neo took 21.17 vs 18.64–20.87. Those differences are
+compatible with observed host variation, not evidence of extra acceleration.
+A throttled 2x setting would cap faster runs and is not recommended for this
+user's throughput/consistency preference.
+
+Sources and provenance
+======================
+Official MAME option semantics:
+https://docs.mamedev.org/commandline/commandline-all.html#core-performance-options
+
+Runtime measurements and the local source take precedence over newer manual
+versions. This binary accepts frameskip 0..10. Initial requested skip-11 trials
+were rejected and silently reverted to zero by MAME; they are explicitly
+excluded, not counted as high-skip performance results.
+
+52 trial records are retained in measurements.jsonl. Seven invalid research
+setup/unsupported-option trials are annotated and excluded in
+annotated-measurements.json. Valid failures remain visible, not discarded.
+measurements.csv is the compact table; summary.json contains representative
+results and provenance. Sources are frozen under sources/, and every run has
+its Lua program, options, timing, logs and raw snapshots. No model vision was
+used for any assertion.
+
+Both MAME executable hashes stayed unchanged during the study. Neo used copies
+of an immutable seed flash. Another chat rebuilt the shared MicroPython applet
+AFTER all AS3000 trials finished; no AS3000 trial overlaps that rebuild. The
+original applet was recovered from the immutable seed and its initial hash
+verified; it is preserved at inputs/MicroPython-extra.OS3KApp. Changes made by
+other work to applet/font sources were left alone. Hash comparison confirms
+that no maintained test source differs from the study's initial snapshot.
+
+The key research files are bench.py, as_adaptive.lua, neo_adaptive.lua and
+neo_ram.lua. They are prototypes with deliberately retained unsuccessful
+branches, not a patch to merge as-is. Production work should integrate the
+successful state-based protocol, preserve failure artifacts and rerun against
+the current applet/font builds before adoption.

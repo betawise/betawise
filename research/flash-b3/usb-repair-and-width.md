@@ -88,3 +88,40 @@ unusable handoff, manual SmallROM entry, real USB dialogue, restoration of the
 original image through the vendor-supported path, and normal subsequent boot.
 Repeat for each supported model/revision before relying on this as a no-brick
 installation strategy. No erase/program commands were sent by these probes.
+
+## Address-based access versus object-based access (2026-11-21)
+
+The neotools protocol notes suggest addressed **flash update** operations, not
+a general-purpose memory debugger. In `message.py`, 02 is a length/checksum
+buffer upload (not an address), 0B programs the current destination, 16 clears
+the segment map and 17 configures/erases a firmware segment. SmallROM dispatch
+at 401C24 records a host-supplied 32-bit segment base and a 16-bit length scaled
+by 1024 before invoking the erase worker. That is an address-based capability
+below applet installation, although actual allowed ranges, chip support and
+safe self-update remain to be qualified. Current normal-firmware notes report
+8F for 16/17; they are updater-mode commands, not normal applet operations.
+
+Documented 0F/10 reads operate on a selected applet/read cursor; 12 and 1C read
+files (1C means native/raw file representation). They do not establish arbitrary
+physical-address reads. Fetching applet ID zero can obtain a firmware image,
+not a whole-RAM or necessarily whole-chip dump. 01/03 remain unknown and were
+reported to return 8F; their presence is not evidence of memory peek/poke.
+The separate one-byte protocol hello 01 in device.py is a framing-level command,
+not the eight-byte packet command 01. No implemented generic READ_MEMORY or
+WRITE_RAM operation was found in the local neotools code/documentation.
+
+A custom neotools maintenance command could therefore potentially drive the
+existing flash-segment backend without replacing the whole device protocol.
+That would require updater entry, full range/geometry checks, backups and an
+executed transfer/repair test. It is not available merely by adding a CLI
+address argument to the existing applet installer. All such USB accesses remain
+firmware-executed; USB itself does not provide bus-master access to CPU memory.
+
+If independent recovery becomes qualified, moving FileManager first and doing
+compaction on-device is a coherent architecture. Recovery must run before the
+vendor scanner encounters torn headers, and must not depend on FileManager's
+current registration, A5 state or a source block already erased by relocation.
+After migration, keep the recovery-critical first prefix outside recyclable
+blocks; journal transactions with a spare block and preserve a committed source
+until its replacement verifies. Bootstrap installation and updates remain separate
+transactions. This is a design direction, not an implemented migration engine.

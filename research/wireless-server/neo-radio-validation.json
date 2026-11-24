@@ -1,0 +1,76 @@
+{
+  "scope": "Static dispatch checks and bounded straight-line instruction execution; no SPI/RF hardware",
+  "source_sha256": "2757f362ce35324217b2f459e120fadc52deb0926859a4b8a7ce0339d8d18f96",
+  "checks": [
+    {
+      "test": "0800 write body",
+      "address": 25161,
+      "value": 165,
+      "steps": 55,
+      "result": "PASS"
+    },
+    {
+      "test": "0801 read body",
+      "address": 25161,
+      "value": 165,
+      "steps": 50,
+      "result": "PASS"
+    },
+    {
+      "test": "0800 write body",
+      "address": 24979,
+      "value": 64,
+      "steps": 55,
+      "result": "PASS"
+    },
+    {
+      "test": "0801 read body",
+      "address": 24979,
+      "value": 64,
+      "steps": 50,
+      "result": "PASS"
+    },
+    {
+      "test": "0800 write body",
+      "address": 4863,
+      "value": 0,
+      "steps": 55,
+      "result": "PASS"
+    },
+    {
+      "test": "0801 read body",
+      "address": 4863,
+      "value": 0,
+      "steps": 50,
+      "result": "PASS"
+    },
+    {
+      "test": "0800 write body",
+      "address": 4864,
+      "value": 255,
+      "steps": 55,
+      "result": "PASS"
+    },
+    {
+      "test": "0801 read body",
+      "address": 4864,
+      "value": 255,
+      "steps": 50,
+      "result": "PASS"
+    }
+  ],
+  "dispatcher_cases": {
+    "0x0": "0x98db",
+    "0x100": "0x9a0b",
+    "0x200": "0x9934",
+    "0x300": "0x996d",
+    "0x400": "0x9a0b",
+    "0x500": "0x9a0b",
+    "0x600": "0x9a0b",
+    "0x700": "0x9a0b",
+    "0x800": "0x9986",
+    "0x900": "0x9a0b",
+    "0xa00": "0x9a0b",
+    "0xb00": "0x9a0b"
+  }
+}

@@ -1,0 +1,693 @@
+{
+  "archive": {
+    "path": "Ghidra/NEOManager3_9_3USPC.zip",
+    "size": 32624119,
+    "sha256": "ca87e733af62a24e4713a1b04059fae0ea03f47754240b7da64cfec9e821d0f0"
+  },
+  "files": [
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/NEOManager3_9_3USPC/Data1.cab",
+      "size": 23913234,
+      "sha256": "a106684ea8502e4432b349ec6a999095f81cea86b23a086d47c57fa16e51e15b",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/NEOManager3_9_3USPC/ISSetup.dll",
+      "size": 1945446,
+      "sha256": "3d50013ab4bc17b67e53aaee416a6c88b43c41f93000e3b0013e83d6dbf75985",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/NEOManager3_9_3USPC/NEO Manager.msi",
+      "size": 4771328,
+      "sha256": "42856d5b0f2e2817286f58c1c04d6bfaa1969d30410538c0b46633eba42d8b88",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/NEOManager3_9_3USPC/NEO64bitDriver.msi",
+      "size": 815616,
+      "sha256": "e9762e9e5c928a69b37db38fef682a7537e31491674dcc4fc241116636b3bb47",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/NEOManager3_9_3USPC/setup.exe",
+      "size": 5776792,
+      "sha256": "1ede9aec12a98046169579d912907d68c3dc9cc24f66f6797732f88bb78c6cd5",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:System32/.:Redist/.:MS/.:System/comcat.dll",
+      "size": 22288,
+      "sha256": "96d04cdfaf4f4d7b8722b139a15074975d4c244302f78034b7be65df1a92fd03",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:System32/.:Redist/.:MS/.:System/mfc42.dll",
+      "size": 995383,
+      "sha256": "ec63a85030c60716acdcf060abfaa95a6a3528631622fa60e7d17fbea2f751f9",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:System32/.:Redist/.:MS/.:System/msvcirt.dll",
+      "size": 77878,
+      "sha256": "647f7534aaaedffa93534e4cb9b24bfcf91524828ff0364d88973be58139e255",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:System32/.:Redist/.:MS/.:System/msvcp60.dll",
+      "size": 401462,
+      "sha256": "f1fd0f1a54f196b19a6f21044092c89c02353dad173c236d80f6474cb8a7ea7f",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:System32/.:Redist/.:MS/.:System/msvcrt.dll",
+      "size": 278581,
+      "sha256": "887eb5ce93edb7192ca3e9220f07f9ca0f94db02af5862ebcbdfcb852db99fd1",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:Windows/SYSTEM/AsHubComm.dll",
+      "size": 72040,
+      "sha256": "58bbefe3c6f911982641ebcf701e163024a06f439613a2ae2a379834d678e32a",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:Windows/SYSTEM/AsUsbComm.dll",
+      "size": 72040,
+      "sha256": "e379909e01e0a0b551a04de0006cc1f0d72f7c0791b0c08840832c22bba441a0",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:Windows/SYSTEM/COMCTL32.DLL",
+      "size": 552208,
+      "sha256": "797a59de1041b53e3f4ff5e9a63700cb85e7e1fd95b3426d47e50368c2280eeb",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/.:Windows/SYSTEM/xerces-c_2_2_0.dll",
+      "size": 2076672,
+      "sha256": "969e67b1ff0fe9c2ac160e2fb3e2c4138f43fd490ad38cea8bf8742dfa489572",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0401.fud",
+      "size": 154642,
+      "sha256": "4f07f8635f74ba5892c65c51a24a951792900afc113c3f47390d0ac1588049eb",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 52",
+        "MapPosition: 137576",
+        "Device: 2Know! Responder",
+        "Firmware-Version: 04.01",
+        "BootLoader-Version: 01.00",
+        "PageSize: 64",
+        "AddressSize: 3",
+        "SourceFile: 2Know! Responder_Trimmed.s28",
+        "PackageDate: 2010-10-21 14:41:28"
+      ],
+      "header_fields": {
+        "Checksum": "52",
+        "MapPosition": "137576",
+        "Device": "2Know! Responder",
+        "Firmware-Version": "04.01",
+        "BootLoader-Version": "01.00",
+        "PageSize": "64",
+        "AddressSize": "3",
+        "SourceFile": "2Know! Responder_Trimmed.s28",
+        "PackageDate": "2010-10-21 14:41:28"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/2Know! Responder_0403.fud",
+      "size": 239314,
+      "sha256": "05d4cf7185f192f367985537a9bedbd8e92b9902adbf8f73f3b47c6bf2c88431",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 18",
+        "MapPosition: 212840",
+        "Device: 2Know! Responder",
+        "Firmware-Version: 04.03",
+        "BootLoader-Version: 01.00",
+        "PageSize: 64",
+        "AddressSize: 3",
+        "SourceFile: 2Know! Responder_Trimmed.s28",
+        "PackageDate: 2012-06-05 11:43:43"
+      ],
+      "header_fields": {
+        "Checksum": "18",
+        "MapPosition": "212840",
+        "Device": "2Know! Responder",
+        "Firmware-Version": "04.03",
+        "BootLoader-Version": "01.00",
+        "PageSize": "64",
+        "AddressSize": "3",
+        "SourceFile": "2Know! Responder_Trimmed.s28",
+        "PackageDate": "2012-06-05 11:43:43"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Receiver_0120.fud",
+      "size": 119338,
+      "sha256": "41c645a87467f36ee2a9ff1970d3c0beaf41fce2ee5695f6cdbc8d94ecc5a2a1",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 216",
+        "MapPosition: 115752",
+        "Device: Renaissance Receiver",
+        "Firmware-Version: 01.20",
+        "BootLoader-Version: 01.08",
+        "PageSize: 256",
+        "AddressSize: 4",
+        "SourceFile: Saturn.s37",
+        "PackageDate: 2011-03-30 16:57:24"
+      ],
+      "header_fields": {
+        "Checksum": "216",
+        "MapPosition": "115752",
+        "Device": "Renaissance Receiver",
+        "Firmware-Version": "01.20",
+        "BootLoader-Version": "01.08",
+        "PageSize": "256",
+        "AddressSize": "4",
+        "SourceFile": "Saturn.s37",
+        "PackageDate": "2011-03-30 16:57:24"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0180.fud",
+      "size": 69106,
+      "sha256": "baf2e2c4443d7b77431649729a14d0b23126423d20f248f49f71246e00ab2221",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 90",
+        "MapPosition: 61544",
+        "Device: Renaissance Responder",
+        "Firmware-Version: 1.80",
+        "BootLoader-Version: 1.12",
+        "PageSize: 64",
+        "AddressSize: 2",
+        "SourceFile: Reanaissance Responder_0180.s19",
+        "PackageDate: 2007-12-21 00:44:09"
+      ],
+      "header_fields": {
+        "Checksum": "90",
+        "MapPosition": "61544",
+        "Device": "Renaissance Responder",
+        "Firmware-Version": "1.80",
+        "BootLoader-Version": "1.12",
+        "PageSize": "64",
+        "AddressSize": "2",
+        "SourceFile": "Reanaissance Responder_0180.s19",
+        "PackageDate": "2007-12-21 00:44:09"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0181.fud",
+      "size": 69106,
+      "sha256": "cd509842df2ea567a83ca03be2907e46e5f65882b9dd929c42fad0424de10af2",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 219",
+        "MapPosition: 61544",
+        "Device: Renaissance Responder",
+        "Firmware-Version: 1.81",
+        "BootLoader-Version: 1.12",
+        "PageSize: 64",
+        "AddressSize: 2",
+        "SourceFile: Renaissance Responder_0181.s19",
+        "PackageDate: 2007-12-21 00:44:00"
+      ],
+      "header_fields": {
+        "Checksum": "219",
+        "MapPosition": "61544",
+        "Device": "Renaissance Responder",
+        "Firmware-Version": "1.81",
+        "BootLoader-Version": "1.12",
+        "PageSize": "64",
+        "AddressSize": "2",
+        "SourceFile": "Renaissance Responder_0181.s19",
+        "PackageDate": "2007-12-21 00:44:00"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0202.fud",
+      "size": 69106,
+      "sha256": "a741fc18533f8b9592d27c210afd81f88e35ee0497be17cc26f4c0e5615c05ce",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 109",
+        "MapPosition: 61544",
+        "Device: Renaissance Responder",
+        "Firmware-Version: 02.02",
+        "BootLoader-Version: 1.12",
+        "PageSize: 64",
+        "AddressSize: 2",
+        "SourceFile: P&E_FCS.abs.s19",
+        "PackageDate: 2011-07-21 10:39:46"
+      ],
+      "header_fields": {
+        "Checksum": "109",
+        "MapPosition": "61544",
+        "Device": "Renaissance Responder",
+        "Firmware-Version": "02.02",
+        "BootLoader-Version": "1.12",
+        "PageSize": "64",
+        "AddressSize": "2",
+        "SourceFile": "P&E_FCS.abs.s19",
+        "PackageDate": "2011-07-21 10:39:46"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0301.fud",
+      "size": 69106,
+      "sha256": "4c37c0f3b9d6b3991d7b7610dab010f63fd2bf65666ec8b7932e47dcb7398e1e",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 150",
+        "MapPosition: 61544",
+        "Device: Renaissance Responder",
+        "Firmware-Version: 3.01",
+        "BootLoader-Version: 1.12",
+        "PageSize: 64",
+        "AddressSize: 2",
+        "SourceFile: P&E_FCS.abs.s19",
+        "PackageDate: 2010-03-03 11:40:41"
+      ],
+      "header_fields": {
+        "Checksum": "150",
+        "MapPosition": "61544",
+        "Device": "Renaissance Responder",
+        "Firmware-Version": "3.01",
+        "BootLoader-Version": "1.12",
+        "PageSize": "64",
+        "AddressSize": "2",
+        "SourceFile": "P&E_FCS.abs.s19",
+        "PackageDate": "2010-03-03 11:40:41"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Firmware/Renaissance Responder_0802.fud",
+      "size": 69106,
+      "sha256": "269d483d857ae19f021296436cad81bdeaa7dad392daa1c2e69be08a69eee5d9",
+      "kind": "saturn-firmware-package",
+      "header": [
+        "SATURN FIRMWARE FILE/1.0",
+        "Checksum: 47",
+        "MapPosition: 61544",
+        "Device: Renaissance Responder",
+        "Firmware-Version: 08.02",
+        "BootLoader-Version: 1.12",
+        "PageSize: 64",
+        "AddressSize: 2",
+        "SourceFile: P&E_FCS.abs.s19",
+        "PackageDate: 2011-07-21 10:39:11"
+      ],
+      "header_fields": {
+        "Checksum": "47",
+        "MapPosition": "61544",
+        "Device": "Renaissance Responder",
+        "Firmware-Version": "08.02",
+        "BootLoader-Version": "1.12",
+        "PageSize": "64",
+        "AddressSize": "2",
+        "SourceFile": "P&E_FCS.abs.s19",
+        "PackageDate": "2011-07-21 10:39:11"
+      }
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/RPGateway.exe",
+      "size": 168328,
+      "sha256": "f02f3434d38d2435420eb9f8a45a1b5d96cbe51182e832430c70c6926593eb33",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/cdintf408.dll",
+      "size": 4194304,
+      "sha256": "eb20dcf7efe8d8da6103331942575c79549f41a7a73e44193fad9563a426e352",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Plugins/cdintf64-450.dll",
+      "size": 6483968,
+      "sha256": "b0f2724299270142ae8c662c0a987b543e2beba2231ed15a885cbf6d4d9c2d2c",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Common Application Data/Renaissance Wireless Server/Renaissance Wireless Server.exe",
+      "size": 8526776,
+      "sha256": "09d0089bee57c807efe7056b94c1884eb2e15c9c55c6845714c9b8ba63a66331",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Learning/Registration/Registration.exe",
+      "size": 919912,
+      "sha256": "a77599932a5e45933da22fd6c2742f55d9ca94e7be88417a2814a66d9adc6359",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWDatabaseIL.dll",
+      "size": 235008,
+      "sha256": "6b71e364e04d6be433cea1b7a27fac381b02f01d5c5399e311055d17752cee8b",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/KWGateway.exe",
+      "size": 65024,
+      "sha256": "f2c3cc132f54fce3ebcab32ddf90a5f865201d2721ebec3416ddbf8f78cb0ee3",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/NEO2forGoogleDocs.exe",
+      "size": 305528,
+      "sha256": "886da1e9c83067b08ca934e619cff50ace3b335bdb39b19bc20aade0a443f754",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/CommonAppData/Renaissance Wireless Server/Plugins/sqlite3.dll",
+      "size": 565827,
+      "sha256": "94dc7258046c3bf809283d5a0fed2b4ab30ad2379161fb0adc46893679dd37bf",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/AlphaSmartManager2.exe",
+      "size": 760184,
+      "sha256": "80eb8f777f9c57c942eee02fc0c026b5f5598de736201184e3830c612210d4b7",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/NEOManager.exe",
+      "size": 1800552,
+      "sha256": "2b06bdd3ab5c04bef45ad128fde24c0e7db24796d21c8083a90eeefa5973cc12",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AcceleratedReader.OS3KApp",
+      "size": 90008,
+      "sha256": "075366f9a098e418db5b8570059b166d6e8711f4ef7dac58b864ca4ffee7fe0f",
+      "kind": "applet",
+      "name": "Accelerated Reader",
+      "version_raw": "01032001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/acceleratedreader.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AlphaQuiz.OS3KApp",
+      "size": 49828,
+      "sha256": "3394331b6ba319ffe8f3de02e88a44e9f3a0998ca737bd93eeb9df784c98252e",
+      "kind": "applet",
+      "name": "AlphaQuiz",
+      "version_raw": "03012001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/alphaquiz.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/AlphaWordPlus.OS3KApp",
+      "size": 106684,
+      "sha256": "a8ae516734a0e0b2e19d51ffb7dff3893074ca733fa40207cbff7ead1433f29e",
+      "kind": "applet",
+      "name": "AlphaWord Plus",
+      "version_raw": "03042001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Beamer.OS3KApp",
+      "size": 32580,
+      "sha256": "03899b453770f021b07a99fa002f501bc7d97dc1aa8cf32f32c7076680f389ce",
+      "kind": "applet",
+      "name": "Beamer",
+      "version_raw": "01003101",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/beamer.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Calculator.OS3KApp",
+      "size": 24544,
+      "sha256": "580b066bb82f55f902313f5363d51ed12bc2497f3c0a8ff8bf650d5b04d89ea4",
+      "kind": "applet",
+      "name": "Calculator",
+      "version_raw": "03003201",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/calculator.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ControlPanel.OS3KApp",
+      "size": 27412,
+      "sha256": "503e2aaa9ebdb85b7a693d0c75f8e1687da6cef16411cc27d66915cbae28c3f6",
+      "kind": "applet",
+      "name": "Control Panel",
+      "version_raw": "01003701",
+      "historical_matches": []
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWords.OS3KApp",
+      "size": 126888,
+      "sha256": "8bb0594035691ae59e3c971e0b558fafeb6cfca60ad68e32d78f1477383b503d",
+      "kind": "applet",
+      "name": "KeyWords",
+      "version_raw": "03062001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/keywords.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/KeyWordsWireless.OS3KApp",
+      "size": 185168,
+      "sha256": "13605aa1d4822f3c6b04f1f0cb3fe21758ac1558d1dabb071bf5358eb9afacae",
+      "kind": "applet",
+      "name": "KeyWords Wireless",
+      "version_raw": "04022001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/keywordswireless.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsInAFlash.OS3KApp",
+      "size": 93728,
+      "sha256": "30a8933dd7baaaa896352b46e3491db8016e08399d9425bbb3a1ebd38f4713db",
+      "kind": "applet",
+      "name": "MathFacts in a Flash RP",
+      "version_raw": "01032001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/mathfactsinaflash.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/MathFactsOffline.OS3KApp",
+      "size": 153644,
+      "sha256": "819cd74d451839204d8cfa5a845d72a5a9cdc4912f73ff00cbc56bb5f425564a",
+      "kind": "applet",
+      "name": "MathFacts in a Flash (offline)",
+      "version_raw": "01022001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/mathfactsoffline.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontLarge.OS3KApp",
+      "size": 4264,
+      "sha256": "7f86f664fe41cfda5057f9fea724e21abdc702c348dcb575b88f07c9fb3df365",
+      "kind": "applet",
+      "name": "Neo Font - Large (4 lines)",
+      "version_raw": "01002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/neofontlarge.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontMedium.OS3KApp",
+      "size": 4360,
+      "sha256": "0e4114ab6f2c7925c2bde8c1f77995746ae49e5147037bb3989b3496efa328ea",
+      "kind": "applet",
+      "name": "Neo Font - Medium (5 lines)",
+      "version_raw": "01002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/neofontmedium.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontSmall.OS3KApp",
+      "size": 4164,
+      "sha256": "c6e8004e245710235a7b99da59c9580f6844fc723e8ede3fd295645aede9de64",
+      "kind": "applet",
+      "name": "Neo Font - Small (6 lines)",
+      "version_raw": "01002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/neofontsmall.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontVLarge.OS3KApp",
+      "size": 9392,
+      "sha256": "2ef76e0e2f6476e26ec514969e6262ddf83ad3afdf8ebeca40ef03d5363970dd",
+      "kind": "applet",
+      "name": "Neo Font - Very Large (3 lines)",
+      "version_raw": "01002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/neofontvlarge.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontXLarge.OS3KApp",
+      "size": 13152,
+      "sha256": "bbf8231022e2bc625330312cbe1b1eb9f8ecc37c7fd5e026fd1dbad430d807f3",
+      "kind": "applet",
+      "name": "Neo Font - Extra Large (2 lines)",
+      "version_raw": "01002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/neofontxlarge.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/OS3KNeoROM.OS3KOS",
+      "size": 395264,
+      "sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+      "kind": "main-rom",
+      "matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/os3kneorom.os3kos"
+      ],
+      "inventory_name": "neo_3_21"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Responder.OS3KApp",
+      "size": 36260,
+      "sha256": "3a90184b989e860e14cdb9bc1f8876ce16cba738784007c2351cd52cda2f3385",
+      "kind": "applet",
+      "name": "Responder",
+      "version_raw": "01022001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/responder.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/SMALLOS3KNeoROM.OS3KOS",
+      "size": 22554,
+      "sha256": "6402c40878ba28747642ce474361b1596555b2a1f137db79c7ea8bb5b35a9523",
+      "kind": "supplemental-rom",
+      "matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/smallos3kneorom.os3kos"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/SpellCheck Large USA.OS3KApp",
+      "size": 357312,
+      "sha256": "7528be2846076660930980c1d75cdeacc2a4a00d285e3b6dbe4a189ad1db4076",
+      "kind": "applet",
+      "name": "SpellCheck Large USA",
+      "version_raw": "01003301",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_large_usa.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/SpellCheck Small USA.OS3KApp",
+      "size": 187072,
+      "sha256": "15e86f4f3ae1d68c76b5087c941dd7947128388217eb1a063263d4b2d42ef101",
+      "kind": "applet",
+      "name": "SpellCheck Small USA",
+      "version_raw": "01003301",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/SpellCheck Spanish.OS3KApp",
+      "size": 711520,
+      "sha256": "cbacbec35d8753dbf6d294737b0a86ee6296256e5b3498dccd32d19798d461f2",
+      "kind": "applet",
+      "name": "SpellCheck Spanish",
+      "version_raw": "01002007",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_spanish.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Text2SpeechUpdate.OS3KApp",
+      "size": 11460,
+      "sha256": "d21188ce3b4a2b7de1347338f4d07163b1a5316964068109ab758fb53db2b769",
+      "kind": "applet",
+      "name": "Text2Speech Updater",
+      "version_raw": "01042001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/text2speechupdate.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Thesaurus Large USA.OS3KApp",
+      "size": 366796,
+      "sha256": "f91e89496cc2523bcfac57f195e7e277668cef71afd85b8d283f63a4144fa1d0",
+      "kind": "applet",
+      "name": "Thesaurus Large USA",
+      "version_raw": "01012001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/Thesaurus Small USA.OS3KApp",
+      "size": 259644,
+      "sha256": "8128f8545e0feecc8974192c9c6103f8e1b0770ef1cf4c830241370411569f8b",
+      "kind": "applet",
+      "name": "Thesaurus Small USA",
+      "version_raw": "01012001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "size": 105120,
+      "sha256": "7605ba816106e72c090fc830d93dc0aac4c71159627dc1a477bee1d89af080a0",
+      "kind": "applet",
+      "name": "Thesaurus Spanish to English",
+      "version_raw": "01012001",
+      "historical_matches": []
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessFileTransfer.OS3KApp",
+      "size": 50404,
+      "sha256": "b61b8fad98dcc24b5017176dfe1e5e84e816bdabce1d72c00f5b5c0a070906af",
+      "kind": "applet",
+      "name": "Wireless File Transfer",
+      "version_raw": "01012001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/wirelessfiletransfer.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/WirelessUpdate.OS3KApp",
+      "size": 103396,
+      "sha256": "2757f362ce35324217b2f459e120fadc52deb0926859a4b8a7ce0339d8d18f96",
+      "kind": "applet",
+      "name": "Wireless Updater",
+      "version_raw": "02002001",
+      "historical_matches": [
+        "Ghidra/Alphasmart Neo/SmartApplets/wirelessupdate.os3kapp"
+      ]
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/sqlite.dll",
+      "size": 213504,
+      "sha256": "c8620eeda221a6ad381b523c2745d5b34afc3c1753679660f152b485ef9bfe90",
+      "kind": "windows-component"
+    },
+    {
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/Renaissance Learning/Renaissance Wireless Server/Renaissance Wireless Server Utility.exe",
+      "size": 5713584,
+      "sha256": "08e2e0f79c3b39f9c169f6afc5113627fc0937eaf960b135d36c5e3da8b5a66a",
+      "kind": "windows-component"
+    }
+  ]
+}

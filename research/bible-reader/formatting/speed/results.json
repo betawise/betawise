@@ -1,0 +1,776 @@
+{
+  "scope": "CPU decode/merge only; no native editor, file I/O or LCD rendering",
+  "translation": "NKJV",
+  "mame": {
+    "status": "passed",
+    "scope": "CPU decode/merge only; no native editor, file I/O or LCD rendering",
+    "repetitions": 4,
+    "results": [
+      {
+        "case": "Genesis 1",
+        "variant": "raw_text",
+        "milliseconds": 213.5,
+        "hash": 2440482829,
+        "bytes": 4094,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "prepared_no_heads",
+        "milliseconds": 336.0,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 372.5,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_headings_no_heads",
+        "milliseconds": 378.75,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "prepared_heads",
+        "milliseconds": 337.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_heads",
+        "milliseconds": 396.5,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 385.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_headings_heads",
+        "milliseconds": 379.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_heads4",
+        "milliseconds": 391.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_heads1",
+        "milliseconds": 386.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "John 3",
+        "variant": "raw_text",
+        "milliseconds": 205.0,
+        "hash": 2052773958,
+        "bytes": 3935,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "prepared_no_heads",
+        "milliseconds": 323.25,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 358.25,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_headings_no_heads",
+        "milliseconds": 369.0,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "prepared_heads",
+        "milliseconds": 325.25,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_heads",
+        "milliseconds": 398.5,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 374.0,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_headings_heads",
+        "milliseconds": 369.75,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_heads4",
+        "milliseconds": 382.0,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_heads1",
+        "milliseconds": 375.75,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "raw_text",
+        "milliseconds": 79.25,
+        "hash": 2093977140,
+        "bytes": 1392,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "prepared_no_heads",
+        "milliseconds": 121.25,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 141.25,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_headings_no_heads",
+        "milliseconds": 143.25,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "prepared_heads",
+        "milliseconds": 121.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_heads",
+        "milliseconds": 163.0,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 150.25,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_headings_heads",
+        "milliseconds": 143.5,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_heads4",
+        "milliseconds": 151.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_heads1",
+        "milliseconds": 150.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "raw_text",
+        "milliseconds": 684.0,
+        "hash": 4201210106,
+        "bytes": 12873,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "prepared_no_heads",
+        "milliseconds": 1062.25,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 1176.75,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_headings_no_heads",
+        "milliseconds": 1220.25,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "prepared_heads",
+        "milliseconds": 1071.5,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_heads",
+        "milliseconds": 1496.75,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 1229.0,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_headings_heads",
+        "milliseconds": 1222.5,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_heads4",
+        "milliseconds": 1264.75,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_heads1",
+        "milliseconds": 1225.5,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      }
+    ],
+    "assets": {
+      "/home/kirk/Projects/Alphasmart/Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp": "a8ae516734a0e0b2e19d51ffb7dff3893074ca733fa40207cbff7ead1433f29e"
+    }
+  },
+  "inline_formatting_comparison": {
+    "status": "passed",
+    "scope": "CPU decode/merge only; no native editor, file I/O or LCD rendering",
+    "repetitions": 4,
+    "results": [
+      {
+        "case": "Genesis 1",
+        "variant": "raw_text",
+        "milliseconds": 213.5,
+        "hash": 2440482829,
+        "bytes": 4094,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "prepared_no_heads",
+        "milliseconds": 330.5,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 366.75,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_no_heads",
+        "milliseconds": 373.0,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_learned_no_heads",
+        "milliseconds": 380.5,
+        "hash": 3656408177,
+        "bytes": 8858,
+        "atoms": 794,
+        "headings": 0
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "prepared_heads",
+        "milliseconds": 331.5,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_heads",
+        "milliseconds": 390.25,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 378.75,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_heads",
+        "milliseconds": 397.75,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "Genesis 1",
+        "variant": "inline_learned_heads",
+        "milliseconds": 405.0,
+        "hash": 86444701,
+        "bytes": 8886,
+        "atoms": 794,
+        "headings": 1
+      },
+      {
+        "case": "John 3",
+        "variant": "raw_text",
+        "milliseconds": 205.25,
+        "hash": 2052773958,
+        "bytes": 3935,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "prepared_no_heads",
+        "milliseconds": 317.75,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 352.75,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_no_heads",
+        "milliseconds": 350.25,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_learned_no_heads",
+        "milliseconds": 361.25,
+        "hash": 812448239,
+        "bytes": 8525,
+        "atoms": 765,
+        "headings": 0
+      },
+      {
+        "case": "John 3",
+        "variant": "prepared_heads",
+        "milliseconds": 319.75,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_heads",
+        "milliseconds": 392.75,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 368.0,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_heads",
+        "milliseconds": 391.0,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "John 3",
+        "variant": "inline_learned_heads",
+        "milliseconds": 402.25,
+        "hash": 2865288571,
+        "bytes": 8578,
+        "atoms": 765,
+        "headings": 2
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "raw_text",
+        "milliseconds": 79.25,
+        "hash": 2093977140,
+        "bytes": 1392,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "prepared_no_heads",
+        "milliseconds": 119.5,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 139.25,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_no_heads",
+        "milliseconds": 133.0,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_learned_no_heads",
+        "milliseconds": 134.5,
+        "hash": 1430409030,
+        "bytes": 3018,
+        "atoms": 271,
+        "headings": 0
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "prepared_heads",
+        "milliseconds": 119.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_heads",
+        "milliseconds": 160.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 148.25,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_heads",
+        "milliseconds": 154.75,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "1 Cor 13",
+        "variant": "inline_learned_heads",
+        "milliseconds": 156.5,
+        "hash": 3289371353,
+        "bytes": 3040,
+        "atoms": 271,
+        "headings": 1
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "raw_text",
+        "milliseconds": 684.0,
+        "hash": 4201210106,
+        "bytes": 12873,
+        "atoms": 0,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "prepared_no_heads",
+        "milliseconds": 1044.75,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_no_heads",
+        "milliseconds": 1158.5,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_no_heads",
+        "milliseconds": 1231.5,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_learned_no_heads",
+        "milliseconds": 1244.5,
+        "hash": 3323491313,
+        "bytes": 27183,
+        "atoms": 2385,
+        "headings": 0
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "prepared_heads",
+        "milliseconds": 1053.0,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_heads",
+        "milliseconds": 1477.25,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "sidecar_raw_heads",
+        "milliseconds": 1209.5,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_heads",
+        "milliseconds": 1553.0,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      },
+      {
+        "case": "Psalm 119",
+        "variant": "inline_learned_heads",
+        "milliseconds": 1566.0,
+        "hash": 11512928,
+        "bytes": 27436,
+        "atoms": 2385,
+        "headings": 23
+      }
+    ],
+    "assets": {
+      "/home/kirk/Projects/Alphasmart/Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp": "a8ae516734a0e0b2e19d51ffb7dff3893074ca733fa40207cbff7ead1433f29e"
+    }
+  },
+  "inline_heading_storage": {
+    "status": "passed",
+    "version": "NKJV",
+    "headings": 2992,
+    "container_bytes": 1083933,
+    "container_delta": 43259,
+    "search_delta": 3200,
+    "heading_rule_flags_bytes": 256,
+    "total_delta": 46715,
+    "search_cases": 366,
+    "words": 17596,
+    "vocabulary": 13056,
+    "production_search_unchanged": false,
+    "production_files_untouched": true
+  },
+  "search_code_delta_bytes": 54,
+  "inline_heading_total_rom_delta_bytes": 46769,
+  "heading_pool_bytes": {
+    "front16_huffman": 51713,
+    "front4_huffman": 55536,
+    "front1_huffman": 70397,
+    "front16_raw": 72164
+  },
+  "validation": {
+    "numeric_cells_per_mame_run": 40,
+    "repetitions": 4,
+    "identical_guest_ram_samples": 3,
+    "host_semantics": "all cells equal independently generated source events",
+    "sanitizers": "ASan and UBSan pass; leak detector disabled because unsupported under ptrace",
+    "inline_heading_search_cases": 366,
+    "production_changed": false
+  }
+}

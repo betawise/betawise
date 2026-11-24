@@ -1,0 +1,253 @@
+{
+  "status": "passed",
+  "display": "264x65 physical panel; streaming text uses 264x64 hardware ring and a blank independent COMS row",
+  "streaming_release": {
+    "status": "passed",
+    "rom_bytes": 1291122,
+    "static_ram_bytes": 3816,
+    "file_count": 0
+  },
+  "native_release": {
+    "rom_bytes": 1323794,
+    "static_ram_bytes": 3146
+  },
+  "streaming_benchmarks": [
+    {
+      "name": "Initial Genesis",
+      "total_ms": 45,
+      "lines_painted": 4,
+      "data_writes": 194628
+    },
+    {
+      "name": "Fresh median chapter",
+      "total_ms": 44,
+      "lines_painted": 4,
+      "data_writes": 4342
+    },
+    {
+      "name": "Cached median redraw",
+      "total_ms": 45,
+      "lines_painted": 4,
+      "data_writes": 4346
+    },
+    {
+      "name": "Median page forward",
+      "total_ms": 53,
+      "lines_painted": 4,
+      "data_writes": 4439
+    },
+    {
+      "name": "Median page backward",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4346
+    },
+    {
+      "name": "Median cursor right",
+      "total_ms": 6,
+      "lines_painted": 0,
+      "data_writes": 4
+    },
+    {
+      "name": "Median selection",
+      "total_ms": 25,
+      "lines_painted": 0,
+      "data_writes": 20
+    },
+    {
+      "name": "Clear selection",
+      "total_ms": 45,
+      "lines_painted": 4,
+      "data_writes": 4346
+    },
+    {
+      "name": "Bottom of median screen",
+      "total_ms": 7,
+      "lines_painted": 0,
+      "data_writes": 8
+    },
+    {
+      "name": "Roll median line down",
+      "total_ms": 19,
+      "lines_painted": 1,
+      "data_writes": 1052
+    },
+    {
+      "name": "Top of median screen",
+      "total_ms": 6,
+      "lines_painted": 0,
+      "data_writes": 8
+    },
+    {
+      "name": "Roll median line up",
+      "total_ms": 18,
+      "lines_painted": 1,
+      "data_writes": 1007
+    },
+    {
+      "name": "Fresh John chapter",
+      "total_ms": 45,
+      "lines_painted": 4,
+      "data_writes": 4354
+    },
+    {
+      "name": "Psalm119 last verse",
+      "total_ms": 747,
+      "lines_painted": 4,
+      "data_writes": 3481
+    },
+    {
+      "name": "Psalm119 beginning",
+      "total_ms": 43,
+      "lines_painted": 4,
+      "data_writes": 4357
+    },
+    {
+      "name": "Checkpoint eviction forward 0",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4301
+    },
+    {
+      "name": "Checkpoint eviction forward 1",
+      "total_ms": 49,
+      "lines_painted": 4,
+      "data_writes": 4258
+    },
+    {
+      "name": "Checkpoint eviction forward 2",
+      "total_ms": 54,
+      "lines_painted": 4,
+      "data_writes": 4409
+    },
+    {
+      "name": "Checkpoint eviction forward 3",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4244
+    },
+    {
+      "name": "Checkpoint eviction forward 4",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4310
+    },
+    {
+      "name": "Checkpoint eviction forward 5",
+      "total_ms": 49,
+      "lines_painted": 4,
+      "data_writes": 4256
+    },
+    {
+      "name": "Checkpoint eviction forward 6",
+      "total_ms": 53,
+      "lines_painted": 4,
+      "data_writes": 4382
+    },
+    {
+      "name": "Checkpoint eviction forward 7",
+      "total_ms": 52,
+      "lines_painted": 4,
+      "data_writes": 4352
+    },
+    {
+      "name": "Checkpoint eviction forward 8",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4280
+    },
+    {
+      "name": "Checkpoint eviction forward 9",
+      "total_ms": 52,
+      "lines_painted": 4,
+      "data_writes": 4396
+    },
+    {
+      "name": "Checkpoint eviction backward 0",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4280
+    },
+    {
+      "name": "Checkpoint eviction backward 1",
+      "total_ms": 52,
+      "lines_painted": 4,
+      "data_writes": 4352
+    },
+    {
+      "name": "Checkpoint eviction backward 2",
+      "total_ms": 54,
+      "lines_painted": 4,
+      "data_writes": 4382
+    },
+    {
+      "name": "Checkpoint eviction backward 3",
+      "total_ms": 49,
+      "lines_painted": 4,
+      "data_writes": 4256
+    },
+    {
+      "name": "Checkpoint eviction backward 4",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4310
+    },
+    {
+      "name": "Checkpoint eviction backward 5",
+      "total_ms": 50,
+      "lines_painted": 4,
+      "data_writes": 4244
+    },
+    {
+      "name": "Checkpoint eviction backward 6",
+      "total_ms": 116,
+      "lines_painted": 4,
+      "data_writes": 4409
+    },
+    {
+      "name": "Checkpoint eviction backward 7",
+      "total_ms": 49,
+      "lines_painted": 4,
+      "data_writes": 4262
+    },
+    {
+      "name": "Checkpoint eviction backward 8",
+      "total_ms": 51,
+      "lines_painted": 4,
+      "data_writes": 4301
+    },
+    {
+      "name": "Checkpoint eviction backward 9",
+      "total_ms": 50,
+      "lines_painted": 4,
+      "data_writes": 4361
+    }
+  ],
+  "evidence_sessions": [
+    "reader7-release",
+    "reader7-benchmark",
+    "reader6-host",
+    "reader7-native-release",
+    "reader5-native-benchmark",
+    "reader7-alphaword-65",
+    "reader7-lcd-device",
+    "reader7-small",
+    "reader7-medium",
+    "reader5-final-large",
+    "reader5-final-vlarge",
+    "reader5-final-xlarge",
+    "reader5-final-tiny",
+    "reader7-repl"
+  ],
+  "acceptance": {
+    "streaming_production_checks": 51,
+    "native_production_checks": 40,
+    "small_checks": 54,
+    "medium_checks": 54,
+    "benchmark_checks": 35,
+    "lcd_parallel_checks": 67,
+    "offline_unit_tests": 25,
+    "canonical_repl_cases": 9,
+    "canonical_repl_assertions": 91
+  }
+}

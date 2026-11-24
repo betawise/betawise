@@ -1,0 +1,92 @@
+[
+  {
+    "case": "empty",
+    "file_record": 4378,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 0,
+    "anchor": 0,
+    "selection": 0
+  },
+  {
+    "case": "typed",
+    "file_record": 4378,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 3,
+    "anchor": 0,
+    "selection": 0
+  },
+  {
+    "case": "selected",
+    "file_record": 4378,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 2,
+    "anchor": 3,
+    "selection": 1
+  },
+  {
+    "case": "home",
+    "file_record": 4378,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 0,
+    "anchor": 3,
+    "selection": 0
+  },
+  {
+    "case": "file2",
+    "file_record": 4450,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 0,
+    "anchor": 0,
+    "selection": 0
+  },
+  {
+    "case": "reopened",
+    "file_record": 4378,
+    "editor": 510594,
+    "bind_destinations": {
+      "data": 0,
+      "length": 0,
+      "capacity": 0,
+      "position": 0
+    },
+    "file_position": 0,
+    "caret": 0,
+    "anchor": 0,
+    "selection": 0
+  }
+]

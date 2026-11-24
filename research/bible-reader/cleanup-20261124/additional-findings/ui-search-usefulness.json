@@ -1,0 +1,153 @@
+{
+  "faith works": {
+    "same_verse_results": 15,
+    "nearby_windows": 20,
+    "same_verse_only_anchors": 1,
+    "nearby_only_anchors": 3,
+    "same_verse_examples": [
+      {
+        "book": "Revelation",
+        "chapter": 2,
+        "verse": 13,
+        "text": "I know thy works, and where thou dwellest, even where Satan's seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth."
+      }
+    ],
+    "nearby_examples": [
+      {
+        "book": "Galatians",
+        "chapter": 3,
+        "verse": 9,
+        "text": "So then they which be of faith are blessed with faithful Abraham."
+      },
+      {
+        "book": "Ephesians",
+        "chapter": 2,
+        "verse": 8,
+        "text": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:"
+      }
+    ]
+  },
+  "kingdom God": {
+    "same_verse_results": 95,
+    "nearby_windows": 106,
+    "same_verse_only_anchors": 4,
+    "nearby_only_anchors": 13,
+    "same_verse_examples": [
+      {
+        "book": "2 Chronicles",
+        "chapter": 2,
+        "verse": 12,
+        "text": "Huram said moreover, Blessed be the Lord God of Israel, that made heaven and earth, who hath given to David the king a wise son, endued with prudence and understanding, that might build an house for the Lord, and an house for his kingdom."
+      },
+      {
+        "book": "Daniel",
+        "chapter": 6,
+        "verse": 7,
+        "text": "All the presidents of the kingdom, the governors, and the princes, the counsellors, and the captains, have consulted together to establish a royal statute, and to make a firm decree, that whosoever shall ask a petition of any God or man for thirty days, save of thee, O king, he shall be cast into the den of lions."
+      }
+    ],
+    "nearby_examples": [
+      {
+        "book": "Numbers",
+        "chapter": 24,
+        "verse": 7,
+        "text": "He shall pour the water out of his buckets, and his seed shall be in many waters, and his king shall be higher than Agag, and his kingdom shall be exalted."
+      },
+      {
+        "book": "1 Samuel",
+        "chapter": 10,
+        "verse": 24,
+        "text": "And Samuel said to all the people, See ye him whom the Lord hath chosen, that there is none like him among all the people? And all the people shouted, and said, God save the king."
+      }
+    ]
+  },
+  "mercy truth": {
+    "same_verse_results": 22,
+    "nearby_windows": 24,
+    "same_verse_only_anchors": 0,
+    "nearby_only_anchors": 2,
+    "same_verse_examples": [],
+    "nearby_examples": [
+      {
+        "book": "Exodus",
+        "chapter": 34,
+        "verse": 6,
+        "text": "And the Lord passed by before him, and proclaimed, The Lord, The Lord God, merciful and gracious, longsuffering, and abundant in goodness and truth,"
+      },
+      {
+        "book": "Psalm",
+        "chapter": 30,
+        "verse": 9,
+        "text": "What profit is there in my blood, when I go down to the pit? Shall the dust praise thee? shall it declare thy truth?"
+      }
+    ]
+  },
+  "Jesus Christ": {
+    "same_verse_results": 256,
+    "nearby_windows": 282,
+    "same_verse_only_anchors": 6,
+    "nearby_only_anchors": 18,
+    "same_verse_examples": [
+      {
+        "book": "Matthew",
+        "chapter": 1,
+        "verse": 18,
+        "text": "Now the birth of Jesus Christ was on this wise: When as his mother Mary was espoused to Joseph, before they came together, she was found with child of the Holy Ghost."
+      },
+      {
+        "book": "Romans",
+        "chapter": 15,
+        "verse": 8,
+        "text": "Now I say that Jesus Christ was a minister of the circumcision for the truth of God, to confirm the promises made unto the fathers:"
+      }
+    ],
+    "nearby_examples": [
+      {
+        "book": "Matthew",
+        "chapter": 1,
+        "verse": 17,
+        "text": "So all the generations from Abraham to David are fourteen generations; and from David until the carrying away into Babylon are fourteen generations; and from the carrying away into Babylon unto Christ are fourteen generations."
+      },
+      {
+        "book": "Matthew",
+        "chapter": 16,
+        "verse": 16,
+        "text": "And Simon Peter answered and said, Thou art the Christ, the Son of the living God."
+      }
+    ]
+  },
+  "in the beginning": {
+    "same_verse_results": 36,
+    "nearby_windows": 49,
+    "same_verse_only_anchors": 3,
+    "nearby_only_anchors": 15,
+    "same_verse_examples": [
+      {
+        "book": "1 Chronicles",
+        "chapter": 17,
+        "verse": 9,
+        "text": "Also I will ordain a place for my people Israel, and will plant them, and they shall dwell in their place, and shall be moved no more; neither shall the children of wickedness waste them any more, as at the beginning,"
+      },
+      {
+        "book": "Isaiah",
+        "chapter": 18,
+        "verse": 2,
+        "text": "That sendeth ambassadors by the sea, even in vessels of bulrushes upon the waters, saying, Go, ye swift messengers, to a nation scattered and peeled, to a people terrible from their beginning hitherto; a nation meted out and trodden down, whose land the rivers have spoiled!"
+      }
+    ],
+    "nearby_examples": [
+      {
+        "book": "Genesis",
+        "chapter": 41,
+        "verse": 21,
+        "text": "And when they had eaten them up, it could not be known that they had eaten them; but they were still ill favoured, as at the beginning. So I awoke."
+      },
+      {
+        "book": "Exodus",
+        "chapter": 12,
+        "verse": 1,
+        "text": "And the Lord spake unto Moses and Aaron in the land of Egypt, saying,"
+      }
+    ]
+  }
+}

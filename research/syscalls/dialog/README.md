@@ -1,5 +1,19 @@
 # Dialogs and text input
 
+## Status: INCOMPLETE — interactive behavior not accepted
+
+On 2026-11-23, the user reported that the interactive demo still does not work
+correctly and requested that this research be marked incomplete. Correct dialog
+configuration, focus, navigation and input behavior remain unqualified. The
+specific remaining failure has not been diagnosed; no cause is asserted here.
+
+The historical directed ROM-contract checks and later applet-entry checks are
+limited evidence, not acceptance of the interactive demo or completion of this
+research. Preserve their logs and captures as investigation artifacts. The demo,
+layout descriptions and screenshots must not be treated as verified examples
+of correct interactive behavior. Further investigation and deterministic local
+acceptance testing are required before changing this status.
+
 ## Scope
 
 List-dialog builder, text entry, and slot 69 (`A114`) item-text retrieval.
@@ -208,7 +222,7 @@ Responder, Wireless File Transfer, Accelerated Reader and KeyWords Wireless
 uses. The opaque object choice and private layout above come from original
 constructors and consumers, not a guessed SDK structure.
 
-### Completed live verification (2026-11-18)
+### Historical directed verification (2026-11-18; not interactive acceptance)
 
 The maintained Neo runner passes **126 cases** after the low-RAM/MMIO decode
 correction. It executes original ROM targets, with no replacement firmware
@@ -236,3 +250,9 @@ bytes not listed above remain unresolved. Actual radio hardware is outside the
 scope of these dialog tests. Doxygen syntax checks and XML parameter/return
 coverage checks pass for all 41 public APIs in the 237–277 follow-up; generated
 documentation is discarded.
+
+## Interactive layout gallery
+
+The [research demo applet](demo/README.md) includes source, build rules, a
+layout selector, local checks and a disposable MAME launcher.
+See the [revised selected-state screenshots](screenshots/selected/font-dialogs.png).

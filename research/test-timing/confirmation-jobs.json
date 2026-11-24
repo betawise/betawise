@@ -1,0 +1,30 @@
+[
+  {
+    "id": "neo-adaptive-graphics-2-4",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "timing": {
+      "hold": 2,
+      "step": 4,
+      "gap": 2
+    }
+  },
+  {
+    "id": "neo-adaptive-graphics-3-8-repeat",
+    "platform": "neo",
+    "case": "logo-graphics",
+    "adaptive": true,
+    "timing": {
+      "hold": 3,
+      "step": 8,
+      "gap": 5
+    }
+  },
+  {
+    "id": "as3k-adaptive-natural-repeat",
+    "platform": "as3k",
+    "case": "repl",
+    "adaptive": true
+  }
+]

@@ -1,0 +1,38 @@
+diff --git a/src/mame/skeleton/alphasneo.cpp b/src/mame/skeleton/alphasneo.cpp
+index 6e5bba4b171..fe21bfb3706 100644
+--- a/src/mame/skeleton/alphasneo.cpp
++++ b/src/mame/skeleton/alphasneo.cpp
+@@ -387,14 +387,14 @@ void alphasneo_state::vz_w(offs_t offset,u16 data,u16 mask) {
+     if(mask&0xff00)vz_write8(r,data>>8);
+     if(mask&0x00ff)vz_write8(r+1,data&0xff);
+ }
++// Absolute-short Fxxx operands are sign-extended to FFFFFxxx by the CPU.
++// Low 0000Fxxx addresses remain SRAM, including System 3 dialog state.
+ u16 alphasneo_state::ram_r(offs_t offset,u16 mask) {
+     u32 a=offset<<1;
+-    if(a>=0x0000f000 && a<0x00010000)return vz_r((a-0xf000)>>1,mask);
+     return (u16(m_sram[a])<<8)|m_sram[a+1];
+ }
+ void alphasneo_state::ram_w(offs_t offset,u16 data,u16 mask) {
+     u32 a=offset<<1;
+-    if(a>=0x0000f000 && a<0x00010000) {vz_w((a-0xf000)>>1,data,mask);return;}
+     if(mask&0xff00)m_sram[a]=data>>8;
+     if(mask&0x00ff)m_sram[a+1]=data&0xff;
+ }
+@@ -612,13 +612,14 @@ void alphasneo_state::asneo(machine_config &cfg) {
+     NEO_VZ_CPU(cfg,m_cpu,33'000'000);
+     m_cpu->set_addrmap(AS_PROGRAM,&alphasneo_state::mem_map);
+     m_cpu->set_addrmap(m68000_base_device::AS_CPU_SPACE,&alphasneo_state::cpu_space_map);
+-    screen_device &screen(SCREEN(cfg,"screen",SCREEN_TYPE_LCD));
++    screen_device &screen(SCREEN(cfg,"screen").set_lcd());
+     screen.set_refresh_hz(60);
+     // Data Image module: two 132-column ST7565-compatible controllers.
+     // The dies are under epoxy; ST7565R is a protocol-compatible provisional ID.
+     ST7565R(cfg,m_lcd[0]);
+     ST7565R(cfg,m_lcd[1]);
+-    screen.set_size(264,64);
++    // COM0..63 scroll; COMS is the independent page-8 bottom row.
++    screen.set_size(264,65);
+     screen.set_visarea_full();
+     screen.set_screen_update(FUNC(alphasneo_state::screen_update));
+     screen.set_palette("palette");

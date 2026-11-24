@@ -1,0 +1,372 @@
+{
+  "upstream_revision": "93ff30bbb530c53cd2ab26e42ee555d3938ded14",
+  "codec": {
+    "context_budget": 65536,
+    "max_followers": 512,
+    "exclusion": true,
+    "independent_chapters": true
+  },
+  "legacy_control": {
+    "label": "KJV original MAME corpus",
+    "raw_bytes": 4148450,
+    "bytes": 948662,
+    "dictionary_bytes": 50120,
+    "model_bytes": 77746,
+    "context_bytes": 48900,
+    "contexts": 577,
+    "payload_bytes": 800411,
+    "framing_bytes": 20385,
+    "chapter_blocks": 1189,
+    "tokens": 951750,
+    "dictionary_entries": 14417,
+    "max_token_utf8_bytes": 17,
+    "dictionary_max_raw_block_bytes": 148,
+    "all_blocks_roundtrip_exact": true
+  },
+  "translations": [
+    {
+      "version": "kjv",
+      "source_files": [
+        "data/kjv/kjv.json",
+        "data/kjv/kjv-footnotes.json"
+      ],
+      "verse_records": 31102,
+      "unique_present_verses": 31102,
+      "verse_slots": 31102,
+      "omitted_verse_slots": 0,
+      "split_verses": 0,
+      "headings": 1327,
+      "annotation_records": 6956,
+      "notes_with_text": 6956,
+      "records_with_cross_references": 0,
+      "flag_counts": {
+        "p": 31102,
+        "s": 6883,
+        "r": 41809
+      },
+      "format_events": 15004,
+      "paragraph_default": true,
+      "semantic_format_roundtrip_exact": true,
+      "text": {
+        "label": "kjv verse text",
+        "raw_bytes": 4140141,
+        "bytes": 944016,
+        "dictionary_bytes": 49012,
+        "model_bytes": 77184,
+        "context_bytes": 48680,
+        "contexts": 573,
+        "payload_bytes": 797436,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 946456,
+        "dictionary_entries": 14246,
+        "max_token_utf8_bytes": 17,
+        "dictionary_max_raw_block_bytes": 137,
+        "all_blocks_roundtrip_exact": true
+      },
+      "formatting": {
+        "label": "kjv formatting/headings/anchors",
+        "raw_bytes": 806007,
+        "bytes": 301543,
+        "dictionary_bytes": 1263,
+        "model_bytes": 3194,
+        "context_bytes": 2660,
+        "contexts": 61,
+        "payload_bytes": 276702,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 776312,
+        "dictionary_entries": 261,
+        "max_token_utf8_bytes": 14,
+        "dictionary_max_raw_block_bytes": 127,
+        "all_blocks_roundtrip_exact": true
+      },
+      "annotations": {
+        "label": "kjv formatting/headings/anchors/notes",
+        "raw_bytes": 1482557,
+        "bytes": 554266,
+        "dictionary_bytes": 25260,
+        "model_bytes": 20748,
+        "context_bytes": 6616,
+        "contexts": 124,
+        "payload_bytes": 487874,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 1231705,
+        "dictionary_entries": 7060,
+        "max_token_utf8_bytes": 17,
+        "dictionary_max_raw_block_bytes": 119,
+        "all_blocks_roundtrip_exact": true
+      },
+      "text_plus_format_bytes": 1245559,
+      "text_plus_all_annotations_bytes": 1498282,
+      "eight_verse_seek_index_bytes": 62732,
+      "omitted_references": [],
+      "extended_chapters": []
+    },
+    {
+      "version": "nkjv",
+      "source_files": [
+        "data/nkjv/nkjv.json",
+        "data/nkjv/nkjv-footnotes.json"
+      ],
+      "verse_records": 31117,
+      "unique_present_verses": 31102,
+      "verse_slots": 31102,
+      "omitted_verse_slots": 0,
+      "split_verses": 12,
+      "headings": 4181,
+      "annotation_records": 32519,
+      "notes_with_text": 0,
+      "records_with_cross_references": 32519,
+      "flag_counts": {
+        "p": 9683,
+        "i": 22847,
+        "s": 6950,
+        "n": 3304,
+        "l": 23669,
+        "d": 21462,
+        "c": 17,
+        "g": 74,
+        "b": 54,
+        "r": 41259
+      },
+      "format_events": 81618,
+      "paragraph_default": false,
+      "semantic_format_roundtrip_exact": true,
+      "text": {
+        "label": "nkjv verse text",
+        "raw_bytes": 4067442,
+        "bytes": 972830,
+        "dictionary_bytes": 54961,
+        "model_bytes": 82576,
+        "context_bytes": 51016,
+        "contexts": 608,
+        "payload_bytes": 814909,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 939530,
+        "dictionary_entries": 15774,
+        "max_token_utf8_bytes": 19,
+        "dictionary_max_raw_block_bytes": 127,
+        "all_blocks_roundtrip_exact": true
+      },
+      "formatting": {
+        "label": "nkjv formatting/headings/anchors",
+        "raw_bytes": 1488258,
+        "bytes": 505703,
+        "dictionary_bytes": 12508,
+        "model_bytes": 10518,
+        "context_bytes": 4384,
+        "contexts": 90,
+        "payload_bytes": 462293,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 1368965,
+        "dictionary_entries": 3061,
+        "max_token_utf8_bytes": 19,
+        "dictionary_max_raw_block_bytes": 150,
+        "all_blocks_roundtrip_exact": true
+      },
+      "annotations": {
+        "label": "nkjv formatting/headings/anchors/notes",
+        "raw_bytes": 4611620,
+        "bytes": 1568392,
+        "dictionary_bytes": 12729,
+        "model_bytes": 13796,
+        "context_bytes": 7444,
+        "contexts": 212,
+        "payload_bytes": 1521483,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 4034993,
+        "dictionary_entries": 3170,
+        "max_token_utf8_bytes": 19,
+        "dictionary_max_raw_block_bytes": 157,
+        "all_blocks_roundtrip_exact": true
+      },
+      "text_plus_format_bytes": 1478533,
+      "text_plus_all_annotations_bytes": 2541222,
+      "eight_verse_seek_index_bytes": 62732,
+      "omitted_references": [],
+      "extended_chapters": []
+    },
+    {
+      "version": "esv",
+      "source_files": [
+        "data/esv/esv.json",
+        "data/esv/esv-footnotes.json"
+      ],
+      "verse_records": 31103,
+      "unique_present_verses": 31086,
+      "verse_slots": 31103,
+      "omitted_verse_slots": 17,
+      "omitted_references": [
+        [
+          "Matthew",
+          12,
+          47
+        ],
+        [
+          "Matthew",
+          17,
+          21
+        ],
+        [
+          "Matthew",
+          18,
+          11
+        ],
+        [
+          "Matthew",
+          23,
+          14
+        ],
+        [
+          "Mark",
+          7,
+          16
+        ],
+        [
+          "Mark",
+          9,
+          44
+        ],
+        [
+          "Mark",
+          9,
+          46
+        ],
+        [
+          "Mark",
+          11,
+          26
+        ],
+        [
+          "Mark",
+          15,
+          28
+        ],
+        [
+          "Luke",
+          17,
+          36
+        ],
+        [
+          "Luke",
+          23,
+          17
+        ],
+        [
+          "John",
+          5,
+          4
+        ],
+        [
+          "Acts",
+          8,
+          37
+        ],
+        [
+          "Acts",
+          15,
+          34
+        ],
+        [
+          "Acts",
+          24,
+          7
+        ],
+        [
+          "Acts",
+          28,
+          29
+        ],
+        [
+          "Romans",
+          16,
+          24
+        ]
+      ],
+      "extended_chapters": [
+        [
+          "3 John",
+          1,
+          15
+        ]
+      ],
+      "split_verses": 17,
+      "headings": 3753,
+      "annotation_records": 49220,
+      "notes_with_text": 3846,
+      "records_with_cross_references": 45374,
+      "flag_counts": {
+        "p": 7381,
+        "n": 10539,
+        "l": 19785,
+        "d": 11338,
+        "s": 6917,
+        "i": 75,
+        "g": 74,
+        "r": 40391
+      },
+      "format_events": 41257,
+      "paragraph_default": false,
+      "semantic_format_roundtrip_exact": true,
+      "text": {
+        "label": "esv verse text",
+        "raw_bytes": 3968619,
+        "bytes": 951659,
+        "dictionary_bytes": 54177,
+        "model_bytes": 78580,
+        "context_bytes": 47192,
+        "contexts": 580,
+        "payload_bytes": 798518,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 919552,
+        "dictionary_entries": 15688,
+        "max_token_utf8_bytes": 17,
+        "dictionary_max_raw_block_bytes": 141,
+        "all_blocks_roundtrip_exact": true
+      },
+      "formatting": {
+        "label": "esv formatting/headings/anchors",
+        "raw_bytes": 1182885,
+        "bytes": 431394,
+        "dictionary_bytes": 10450,
+        "model_bytes": 9190,
+        "context_bytes": 3972,
+        "contexts": 80,
+        "payload_bytes": 391370,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 1083345,
+        "dictionary_entries": 2603,
+        "max_token_utf8_bytes": 19,
+        "dictionary_max_raw_block_bytes": 126,
+        "all_blocks_roundtrip_exact": true
+      },
+      "annotations": {
+        "label": "esv formatting/headings/anchors/notes",
+        "raw_bytes": 6084670,
+        "bytes": 1953105,
+        "dictionary_bytes": 21035,
+        "model_bytes": 23020,
+        "context_bytes": 11908,
+        "contexts": 267,
+        "payload_bytes": 1888666,
+        "framing_bytes": 20384,
+        "chapter_blocks": 1189,
+        "tokens": 4957733,
+        "dictionary_entries": 5550,
+        "max_token_utf8_bytes": 19,
+        "dictionary_max_raw_block_bytes": 138,
+        "all_blocks_roundtrip_exact": true
+      },
+      "text_plus_format_bytes": 1383053,
+      "text_plus_all_annotations_bytes": 2904764,
+      "eight_verse_seek_index_bytes": 62732
+    }
+  ]
+}

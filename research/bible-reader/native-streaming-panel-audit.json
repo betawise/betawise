@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "captures": 2297,
+  "samples_per_capture": 3,
+  "expected_physical_row_65": "blank",
+  "directories": [
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-features",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-line",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-page",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-rapid",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-bg-responsive-small",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-background",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-demand",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-end-final-window",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final-optimized-line",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-features",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-line",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-demand-page",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-window-line",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-final2-window-page",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-font-demand-v2",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-font-window",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/native-window-features-v5",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-direct-cmd-page",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-line-v2",
+    "/home/kirk/Projects/Alphasmart/.research-work/bible-compression/readthrough-native-page"
+  ]
+}
