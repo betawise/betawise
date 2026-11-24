@@ -5,9 +5,10 @@
 #include <setjmp.h>
 
 #ifndef LOGO_HEAP_KIB
-#define LOGO_HEAP_KIB 48
+#define LOGO_HEAP_KIB 64
 #endif
 enum { HEAP_SIZE = LOGO_HEAP_KIB * 1024 };
+_Static_assert(sizeof(NODE) == 32, "OS3K Logo node layout changed");
 typedef struct Block {
     unsigned size;
     struct Block *next;

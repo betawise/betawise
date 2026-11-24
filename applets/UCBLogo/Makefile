@@ -25,6 +25,7 @@ applet.o: ../../os3k/os3k_display_internal.h
 
 $(TARGET): Makefile
 
-HEAP_KIB ?= 48
+HEAP_KIB ?= 64
 PROFILE_GC ?= 0
+runtime.o: Makefile
 runtime.o: CPPFLAGS += -DLOGO_HEAP_KIB=$(HEAP_KIB) $(if $(filter 1,$(PROFILE_GC)),-DLOGO_PROFILE_GC)

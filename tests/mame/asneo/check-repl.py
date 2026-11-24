@@ -214,6 +214,68 @@ def scenario(name, variant):
         s.enter('lt 90'); s.graphics('left turn restores north turtle', 'north')
         s.enter('pu fd 10'); s.graphics('pen-up move leaves only relocated turtle', 'north-moved')
         s.enter('ct'); s.graphics('cleartext preserves graphics', 'north-moved')
+    elif name == 'logo-workspace':
+        for _ in range(8): s.enter('print 0')
+        for command, expected in [
+            ('print 2+3*4', '14'),
+            ('print difference 9 4', '5'),
+            ('print product 6 7', '42'),
+            ('print quotient 9 2', '4.5'),
+            ('print equalp 4 4', 'true'),
+            ('print lessp 2 3', 'true'),
+            ('print greaterp 3 2', 'true'),
+            ('make "x 7', None),
+            ('print thing "x', '7'),
+            ('if :x > 3 [print 81]', '81'),
+            ('ifelse :x = 7 [print 82] [print 0]', '82'),
+        ]:
+            s.enter(command, expected)
+        s.enter('to twice :n')
+        s.enter('local "x')
+        s.enter('make "x :n + :n')
+        s.enter('output :x')
+        s.enter('end')
+        s.enter('print twice 21','42')
+        s.enter('print :x','7')
+        s.enter('to fact :n')
+        s.enter('if :n < 2 [output 1]')
+        s.enter('output :n * fact :n - 1')
+        s.enter('end')
+        s.enter('print fact 5','120')
+        s.enter('to halted')
+        s.enter('stop')
+        s.enter('print 999')
+        s.enter('end')
+        s.enter('halted')
+        s.enter('print 83','83')
+        s.check('STOP skips body tail',absent=['\n999\n'])
+        s.enter('print procedures')
+        s.check('procedure enumeration',contains=['twice','fact','halted'])
+        s.enter('po [twice]')
+        s.check('procedure source',contains=['to twice :n','output :x'])
+        s.enter('print text "twice')
+        s.check('procedure text',contains=['local','output'])
+        s.enter('repeat 100 [make "z twice 2]')
+        s.enter('gc')
+        s.enter('print :z','4')
+        s.enter('print nodes')
+        s.check('node report', absent=['out of space', 'ERROR'])
+        s.enter('erps')
+        s.enter('print equalp procedures []', 'true')
+        s.enter('print :x','7')
+        s.enter('make "x 9')
+        s.enter('erall')
+        s.enter('gc')
+        s.enter('print equalp procedures []', 'true')
+        s.enter('to rebuilt')
+        s.enter('print 84')
+        s.enter('end')
+        s.enter('rebuilt','84')
+        s.enter('cs')
+        s.enter('setxy 10 10')
+        s.enter('setheading 90')
+        s.enter('fd 10')
+        s.enter('print 85','85')
     elif name == 'logo':
         # Fill the transcript so the live editor is always on row eight.
         # Decode only completed rows in the left pane; never decode turtle pixels.
@@ -278,7 +340,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--verify-rendering', action='store_true', help='cross-check RAM reconstruction against rendered pixels')
     p.add_argument('--no-build', action='store_true', help='explicitly use existing applet binaries')
-    p.add_argument('--case', choices=['all', 'editing', 'terminal', 'history', 'completion', 'interrupts', 'modes', 'logo', 'logo-graphics', 'backspace'], nargs='+', default=['all'])
+    p.add_argument('--case', choices=['all', 'editing', 'terminal', 'history', 'completion', 'interrupts', 'modes', 'logo', 'logo-graphics', 'logo-workspace', 'backspace'], nargs='+', default=['all'])
     p.add_argument('--variant', choices=['minimal', 'core', 'basic', 'extra'], default='extra')
     p.add_argument('--mame', type=Path, default=ROOT/'mame/neodiag')
     p.add_argument('--firmware', type=Path, default=ROOT/'Ghidra/Alphasmart Neo/SmartApplets')

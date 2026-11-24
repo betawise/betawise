@@ -73,6 +73,28 @@ to a file. A procedure body can contain up to 1,023 bytes, including newlines.
 Long loops and moves have an execution step limit, so they may stop before
 finishing.
 
+The profile also includes `ERALL`, `ERPS`, `GC`, `NODES`, `MAKE`,
+`LOCAL`, `THING`, `IF`, `IFELSE`, `STOP`, `OUTPUT`/`OP`,
+arithmetic operators and comparisons, `SUM`, `DIFFERENCE`, `PRODUCT`,
+`QUOTIENT`, `EQUALP`, `LESSP`, `GREATERP`, `PROCEDURES`, `PO`,
+`TEXT`, `SETXY`, and `SETHEADING`. Use `erall` followed by `gc` to
+erase the unburied workspace and collect unused nodes. `FOR` is an
+upstream Logo library macro and is not bundled.
+
+Run the extra command and GC regression with:
+
+```sh
+python3 tests/mame/asneo/check-repl.py --case logo-workspace
+```
+
+The default heap is 64 KiB. Nodes are 32 bytes: generation and promotion
+age use 16-bit fields. Oldest-generation nodes no longer decrement their
+promotion age. Type flags and GC mark counters retain their upstream
+widths. Changes are applied to build copies; the upstream submodule remains
+pristine. Unsupported transcendental arithmetic selectors in the shared
+numeric evaluator report a Logo error instead of linking unavailable
+libm routines.
+
 ## Building and technical notes
 
 See the [UCBLogo research notes](../../research/ucblogo/README.md) for building
