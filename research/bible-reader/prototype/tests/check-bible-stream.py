@@ -269,7 +269,7 @@ def verify(out):
   selected_vendors.update(matches);font_entries.append(dict(entry=c['font_entry'],height=captured_font(out,i)['height'],vendor=matches[0]if matches else None))
  if config.get('all_vendor_fonts')and font_entries:
   assert selected_vendors=={'neofontsmall','neofontmedium','neofontlarge','neofontvlarge','neofontxlarge'},('every original vendor font must actually be selected',selected_vendors)
- image=(out/'artifacts'/config['applet']).read_bytes();assert image[23]==0 and struct.unpack_from('>H',image,20)[0]==0xA1B1
+ image=(out/'artifacts'/config['applet']).read_bytes();assert image[23]==0 and struct.unpack_from('>H',image,20)[0]==0xFF22
  if config['version']!='KJV':assert image[24:60].split(b'\0')[0].decode()==Path(config['applet']).stem
  (out/'results.json').write_text(json.dumps(dict(status='passed',version=config['version'],rom_bytes=len(image),static_ram_bytes=struct.unpack_from('>I',image,8)[0],file_count=0,installed_font_entries=font_entries,results=reports),indent=2)+'\n');print('PASS',len(reports),'streaming viewer checks')
 if __name__=='__main__':main()

@@ -9,8 +9,10 @@
 | `0xA1DE` | DebugTool |
 | `0xA1F0` | BetaWise Terminal |
 | `0xA1F1` | File Manager |
-| `0xA1FF` | Betawise QEMU test applet |
 
 See the
 [SmartApplet ID registry](https://github.com/isotherm/betawise/blob/HEAD/applets/REGISTRY.md)
 to request an ID block.
+
+Tests and research fixtures use [private IDs](PRIVATE_IDS.md). QEMU uses
+`0xFF01`. Hello World is a bundled public applet and retains `0xA1A0`.

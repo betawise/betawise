@@ -35,7 +35,7 @@ typedef enum {
 } ReaderInput_e;
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1B1)
+    APPLET_ID(0xFF24)
     APPLET_NAME(BIBLE_APP_NAME)
     APPLET_INFO("Find words or verses; Option-Up/Down chapters")
     APPLET_FLAGS(APPLET_FLAG_ALLOW_FONT_DIALOG)

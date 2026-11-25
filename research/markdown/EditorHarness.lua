@@ -58,7 +58,7 @@ emu.register_frame_done(function()
  assert(frame<18000,'overall deadline')
  local sig=lcd.refresh();stable=sig==last and stable+1 or 1;last=sig
  if phase=='boot'and frame>1100 then
-  local i,p,a=app(shortcut_mode and 0xa006 or 0xa1ed)
+  local i,p,a=app(shortcut_mode and 0xa006 or private_probe_id)
   if i and a>0 and memory:read_u32(a+probe_offset)==0x4d445052 then
    probe=a+probe_offset;perf=a+(perf_offset or 0);seed=a+(seed_offset or 0)
    if perf_offset and perf_offset~=0 then timing_tap=memory:install_write_tap(perf+28,perf+29,'markdown_timing',function(offset,data,mask)

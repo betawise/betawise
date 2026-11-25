@@ -8,7 +8,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 WORKSPACE = HERE.parents[2]
 SNAPSHOT = HERE / "prototype"
-DEFAULT_OUTPUT = WORKSPACE / ".research-work/bible-compression/prototype-workspace"
+DEFAULT_OUTPUT = WORKSPACE / ".research-work/bible-compression/prototype-private-workspace"
 
 
 def link_directory(link, target):
@@ -47,7 +47,10 @@ def restore_workspace(output=DEFAULT_OUTPUT):
         link_directory(output / "betawise" / name, WORKSPACE / "betawise" / name)
     for name in ["Ghidra", "mame", ".research-work"]:
         link_directory(output / name, WORKSPACE / name)
-    link_directory(app / "upstream", WORKSPACE / "betawise/applets/BibleWise/upstream")
+    upstream = WORKSPACE / "betawise/applets/BibleReader/upstream"
+    if not upstream.exists():
+        upstream = WORKSPACE / "betawise/applets/BibleWise/upstream"
+    link_directory(app / "upstream", upstream)
 
     tests = output / "betawise/tests/mame/asneo"
     tests.mkdir(parents=True, exist_ok=True)

@@ -6,7 +6,7 @@ MAME BibleWise launcher installs them alongside all five vendor font applets.
 
 Sources are installed X11 75dpi 10-point PCF families New Century Schoolbook,
 Helvetica and Times, each with regular/bold/italic/bold-italic faces. Font IDs
-are A1F5, A1F6 and A1F7. License notices are preserved in FONT-LICENSE.txt.
+are FF30, FF31 and FF32. License notices are preserved in FONT-LICENSE.txt.
 These are ASCII test fonts: slots 32–126 preserve source ink; others use a
 question-mark fallback.
 

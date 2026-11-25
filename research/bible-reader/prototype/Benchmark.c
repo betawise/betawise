@@ -4,7 +4,7 @@
 #include <string.h>
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1F2)
+    APPLET_ID(0xFF20)
     APPLET_NAME("Bible Reader")
     APPLET_INFO("KJV compressed-ROM feasibility prototype")
     APPLET_VERSION(0, 1, "p")

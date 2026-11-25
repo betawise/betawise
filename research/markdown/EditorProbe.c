@@ -4,10 +4,13 @@
 void _OS3K_ClearScreen(void);
 APPLET_HEADER_BEGIN
 #ifdef BEAMER_HOOK_PROBE
- APPLET_ID(0xA006)
+ APPLET_ID(0xFF14)
  APPLET_NAME("Markdown Hook Probe")
+#elif defined(LIVE_MARKDOWN)
+ APPLET_ID(0xFF11)
+ APPLET_NAME("CoWriter Markdown Probe")
 #else
- APPLET_ID(0xA1ED)
+ APPLET_ID(0xFF10)
  APPLET_NAME("CoWriter Markdown Probe")
 #endif
  APPLET_FLAGS(APPLET_FLAG_HIDDEN)
@@ -54,7 +57,13 @@ static void snapshot(void){
  g_probe.source_length=n;g_probe.source[n]=0;
 }
 static int fonts(void){
- unsigned i;uint32_t reply=0,index=AppletFindById(0xa1ec);
+ unsigned i;uint32_t reply=0,index=AppletFindById(
+#ifdef LIVE_MARKDOWN
+ 0xFF13
+#else
+ 0xFF12
+#endif
+ );
  if(!index)return 0;
  for(i=0;i<4;++i)if((g_probe.done=100+i),!AppletSendMessage(index,(Message_e)(0x1000002+i),(uint32_t)&faces[i],&reply)||!faces[i])return 0;
  g_probe.done=110;return TextEditorSetFonts(ed,faces[0],faces[1],faces[2],faces[3],false)==0;

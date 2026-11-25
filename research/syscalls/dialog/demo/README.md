@@ -9,7 +9,7 @@ controls work correctly. Passing targeted entry/state checks did not establish
 correct end-to-end interaction. The remaining failure has not been diagnosed.
 See the [research status](../README.md) before relying on these examples.
 
-`FontDialogDemo.c` builds a regular Betawise SmartApplet (`0xA1F2`). It provides
+`FontDialogDemo.c` builds a regular Betawise SmartApplet (`0xFF02`). It provides
 an on-device selector for all sixteen supported font-dialog layouts and calls
 the original firmware for dialog drawing, focus, input and selection. Source,
 build rules, launcher and local checks live together in this research folder.

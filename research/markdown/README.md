@@ -1,5 +1,7 @@
 # Markdown editing and viewing research
 
+Private applet IDs for new builds are listed in [the local index](../../applets/PRIVATE_IDS.md). Historical captures below retain their original IDs.
+
 Research into Markdown and basic rich-text editing on the Neo: native text
 formatting, AlphaWord integration, fonts, standalone editor options and export.
 CoWriter is one investigated integration mechanism, not the scope of the project.
@@ -118,7 +120,7 @@ A5+0147 buffer. This pointer is borrowed, not an allocation handed to AlphaWord.
 
 ### Consequences for a Markdown companion
 
-A separate applet named Markdown with ID A1ED will not automatically receive this
+A separate applet named Markdown with ID FF10 will not automatically receive this
 hook. Options include a compatibility shim with the `CoWriter` prefix, modifying
 AlphaWord's discovery, or an independent applet using explicit document import.
 A shim competes with real CoWriter and must implement its control-record and
@@ -209,8 +211,8 @@ in some functions; branch tables and instruction operands were checked directly.
 
 ## Live AlphaWord editor experiments (resumed)
 
-The hidden experimental companion is `EditorProbe`, ID **A1ED**, name
-`CoWriter Markdown Probe`. `FontProbe`, ID A1EC, supplies four distinct 8x8
+The hidden experimental companion is `EditorProbe`, ID **FF10**, name
+`CoWriter Markdown Probe`. `FontProbe`, ID FF12, supplies four distinct 8x8
 fixture faces. These are research artifacts, not a complete Markdown applet or
 shipping font. The tests install original AlphaWord in private disposable flash.
 

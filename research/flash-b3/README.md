@@ -38,7 +38,7 @@ make -C research/flash-b3
 python3 research/flash-b3/run.py /tmp/os3k-flash-b3
 ```
 
-Use a new output directory. The probe uses test applet ID `A1FF` and is not a
+Use a new output directory. The probe uses private test applet ID `FF03` and is not a
 normal applet build target. It is inert unless explicitly armed by a RAM cookie
 and then given `p`. **Never install the probe on physical hardware.**
 

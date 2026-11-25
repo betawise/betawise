@@ -53,7 +53,7 @@ for offset in range(0x50, 0x70, 8):
 def applet(index):
     blob = bytearray(1024)
     struct.pack_into('>IIII', blob, 0, 0xc0ffeead, 1024, 2048 if index < 3 else 3072, 0)
-    struct.pack_into('>IHBB', blob, 16, 0xff000000, 0x7000+index, 1, 0)
+    struct.pack_into('>IHBB', blob, 16, 0xff000000, (0xFF40, 0xFF41, 0xFF42, 0xFF43)[index-1], 1, 0)
     name = f'HeapProbe{index}'.encode()
     blob[24:24+len(name)] = name
     blob[60:64] = bytes([1, 0, 65, 0])
@@ -139,7 +139,7 @@ if args.ram_loader_only:
                     str(out / 'ram-entry.o'), str(out / 'ram-entry.bin')], check=True)
     ram_image = bytearray(applet(4))
     struct.pack_into('>I', ram_image, 8, 2048)
-    struct.pack_into('>H', ram_image, 20, 0x7010)
+    struct.pack_into('>H', ram_image, 20, 0xFF43)
     ram_image[148:1020] = bytes(1020-148)
     code = (out / 'ram-entry.bin').read_bytes()
     ram_image[148:148+len(code)] = code
@@ -210,7 +210,7 @@ class PacketTransport:
         return reply
 
 manifest = dict(scope='Neo 3.21 original Manager packet transaction; no USB controller acceptance',
-    normalize_command_lanes=args.normalize_command_lanes, system_sha256=sha(system),
+    ram_applet_id=0xFF43, normalize_command_lanes=args.normalize_command_lanes, system_sha256=sha(system),
     repair_on_init=args.repair_on_init,
     ram_loader_only=args.ram_loader_only,
     smallrom_sha256=sha(small), initial_flash_sha256=sha(flash),
@@ -244,14 +244,14 @@ try:
         time.sleep(.02)
     dev = PacketTransport()
     check('initial two applets enumerated by neotools',
-          [r['applet_id'] for r in read_applet_list(dev)] == [0, 0x7001, 0x7002])
+          [r['applet_id'] for r in read_applet_list(dev)] == [0, 0xFF40, 0xFF41])
     if args.ram_loader_only:
         dev.rpc('L')
         loaded = json.loads(dev.rpc('S', b'after-ram-load'))
         raw = (out / 'after-ram-load.ram').read_bytes()
         num = lambda addr: int.from_bytes(raw[addr:addr+4], 'big')
         check('private loader registers RAM header and following A5',
-              loaded['applets'][-1]['id'] == 0x7010
+              loaded['applets'][-1]['id'] == 0xFF43
               and loaded['applets'][-1]['header'] == 0x5c000
               and loaded['applets'][-1]['base'] == 0x5c400)
         check('new RAM instance receives INIT while global init is complete',
@@ -260,7 +260,7 @@ try:
         check('RAM registration preserves both existing A5 blocks',
               raw[0x7c800:0x7d800] == bytes([0xc3])*4096)
         check('RAM applet appears in native Manager enumeration',
-              [r['applet_id'] for r in read_applet_list(dev)] == [0,0x7001,0x7002,0x7010])
+              [r['applet_id'] for r in read_applet_list(dev)] == [0,0xFF40,0xFF41,0xFF43])
         dev.rpc('Q')
         proc.wait(timeout=10)
         check('RAM test exits successfully', proc.returncode == 0)
@@ -295,12 +295,12 @@ try:
     check('executed INIT observes complete base table before repair',
           num(0x26300) == 0x7ac00 and num(0x26304) == num(0x26310) == 0x7bc00
           and num(0x2630c) == expected)
-    downloaded = fetch_applet(dev, 0x7003)
+    downloaded = fetch_applet(dev, 0xFF42)
     check('neotools reads back every programmed applet byte', downloaded == applets[2])
     (out / 'readback.json').write_text(json.dumps(dict(size=len(downloaded), sha256=sha(downloaded))))
     dev.rpc('H' if args.repair_on_init else 'R', b'before-remove')
     dev.label = 'remove'
-    remove_applet(dev, 0x7003)
+    remove_applet(dev, 0xFF42)
     removed = json.loads(dev.rpc('S', b'after-remove'))
     expected = 0x7c800 if args.repair_on_init else 0x7b800
     check('post-remove floor agrees with selected repair policy',
@@ -311,7 +311,7 @@ try:
           num(0x26300) == 0x7b800 and num(0x26304) == 0x7c800
           and num(0x26310) == 0 and num(0x2630c) == expected)
     check('removed applet absent from neotools enumeration',
-          [r['applet_id'] for r in read_applet_list(dev)] == [0, 0x7001, 0x7002])
+          [r['applet_id'] for r in read_applet_list(dev)] == [0, 0xFF40, 0xFF41])
     for label, floor in [('install', 0x7ac00), ('remove', 0x7b800)]:
         raw = (out / f'{label}-cleared.ram').read_bytes()
         check(f'{label}: entire applet RAM region zero before initialization',

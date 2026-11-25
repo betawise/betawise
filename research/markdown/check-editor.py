@@ -13,7 +13,15 @@ fw=root/'Ghidra/Alphasmart Neo/SmartApplets';mame=root/'mame/neodiag';prepare_se
 flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000);offset=0x70000
 (out/'artifacts').mkdir()
 for p in [fw/'alphawordplus.os3kapp',here/('MarkdownFont.OS3KApp'if a.live else'FontProbe.OS3KApp'),here/('BeamerHookProbe.OS3KApp'if a.case=='shortcuts'else'LiveMarkdown.OS3KApp'if a.live else'EditorProbe.OS3KApp')]:
- b=p.read_bytes();flash[offset:offset+len(b)]=b;offset+=len(b);shutil.copyfile(p,out/'artifacts'/p.name)
+ b=bytearray(p.read_bytes())
+ if a.case=='shortcuts' and p.name=='BeamerHookProbe.OS3KApp':
+  assert struct.unpack_from('>H',b,20)[0]==0xFF14
+  # Only this disposable copy impersonates the vendor Beamer callback target.
+  struct.pack_into('>H',b,20,0xA006)
+ flash[offset:offset+len(b)]=b;offset+=len(b);(out/'artifacts'/p.name).write_bytes(b)
+ if a.case=='shortcuts' and p.name=='BeamerHookProbe.OS3KApp':
+  (out/'packaged-BeamerHookProbe.OS3KApp').write_bytes(p.read_bytes())
+  (out/'applet-id-alias.json').write_text(json.dumps(dict(packaged_id=0xFF14,disposable_id=0xA006,reason='Original AlphaWord Beamer lookup compatibility fixture'),indent=2)+'\n')
 (out/'nvram/asneo/flashnv').write_bytes(flash)
 if a.prepare_only:
  print('Prepared interactive prototype:',out);sys.exit(0)
@@ -224,7 +232,7 @@ if a.live:
  if a.case=='live':checks[6]['x']=sum(profile[f]['widths'][ord(ch)] for text,f in [('**',0),('bold',1)] for ch in text);checks[6]['y']=0
 # References are authored from input strings + independently transformed source
 # glyph pixels before the emulator runs; never derived from a failed capture.
-source=Image.open(root/'betawise/fonts/glyphs.png').convert('L')
+source=Image.open(root/'betawise/tests/fonts/fixtures/glyphs.png').convert('L')
 for index,c in enumerate(checks,1):
  if 'render'not in c:continue
  ref=Image.new('1',(264,64));px=ref.load();x=0;yline=0
@@ -255,7 +263,7 @@ def lua(v):
  if isinstance(v,(list,tuple)):return '{'+','.join(lua(x)for x in v)+'}'
  if isinstance(v,dict):return '{'+','.join('['+lua(k)+']='+lua(x)for k,x in v.items())+'}'
  raise TypeError(v)
-script='local lcd_module='+lua(str(tests/'NeoLCD.lua'))+'\nlocal capture_directory='+lua(str(out))+'\nlocal font_height='+str(12 if a.live else 8)+'\nlocal probe_offset='+str(symbols['g_probe'])+'\nlocal shortcut_mode='+lua(a.case=='shortcuts')+'\nlocal perf_offset='+str(symbols.get('g_perf',0))+'\nlocal seed_offset='+str(symbols.get('g_seed_length',0))+'\nlocal checks='+lua(checks)+'\n'+(here/'EditorHarness.lua').read_text()
+script='local lcd_module='+lua(str(tests/'NeoLCD.lua'))+'\nlocal capture_directory='+lua(str(out))+'\nlocal font_height='+str(12 if a.live else 8)+'\nlocal probe_offset='+str(symbols['g_probe'])+'\nlocal private_probe_id='+str(0xFF11 if a.live else 0xFF10)+'\nlocal shortcut_mode='+lua(a.case=='shortcuts')+'\nlocal perf_offset='+str(symbols.get('g_perf',0))+'\nlocal seed_offset='+str(symbols.get('g_seed_length',0))+'\nlocal checks='+lua(checks)+'\n'+(here/'EditorHarness.lua').read_text()
 (out/'run.lua').write_text(script)
 with(out/'mame.log').open('w')as log:subprocess.run(list(map(str,[mame,'asneo','-rompath',out/'roms','-nvram_directory',out/'nvram','-cfg_directory',out/'cfg','-video','none','-sound','none','-nothrottle','-seconds_to_run','300','-autoboot_delay','0','-autoboot_script',out/'run.lua'])),stdout=log,stderr=subprocess.STDOUT,env={**os.environ,'SDL_VIDEODRIVER':'dummy'},timeout=180,check=True)
 log=(out/'mame.log').read_text();assert 'PASS AlphaWord companion editor suite'in log and 'FAIL 'not in log,log[-1800:]

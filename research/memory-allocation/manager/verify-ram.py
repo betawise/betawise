@@ -20,7 +20,7 @@ for row in manifest['ram_captures']:
     assert num(0x35de) == 0x5c000
     assert num(0xe0a+3*4) == 0x5c000 and num(0x355e+3*4) == 0x5c400
     assert num(0x5c000) == 0xc0ffeead
-    assert int.from_bytes(raw[0x5c014:0x5c016], 'big') == 0x7010
+    assert int.from_bytes(raw[0x5c014:0x5c016], 'big') == manifest.get('ram_applet_id', 0x7010)
     assert num(0x5c400) == 0x52414d49 and num(0x26320) == 0x5c000
     assert int.from_bytes(raw[0x26324:0x26326], 'big') == 0x2675
     assert raw[0x7c800:0x7d800] == bytes([0xc3])*4096

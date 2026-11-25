@@ -11,7 +11,7 @@
 #endif
 #include <string.h>
 APPLET_HEADER_BEGIN
- APPLET_ID(0xA1B1)
+ APPLET_ID(0xFF22)
  APPLET_NAME(BIBLE_APP_NAME)
  APPLET_INFO("Bible reader: G jump, Find search, Shift selects, Ctrl+C")
  APPLET_FLAGS(APPLET_FLAG_ALLOW_FONT_DIALOG)

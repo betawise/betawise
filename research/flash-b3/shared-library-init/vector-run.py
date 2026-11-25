@@ -26,7 +26,7 @@ assembly=WS/'betawise/research/memory-allocation/manager/ram-evidence/ram-entry.
 subprocess.run(['m68k-linux-gnu-as','-m68000',str(assembly),'-o',str(out/'ram-entry.o')],check=True)
 subprocess.run(['m68k-linux-gnu-objcopy','-O','binary','-j','.text',str(out/'ram-entry.o'),str(out/'ram-entry.bin')],check=True)
 blob=bytearray(1024);struct.pack_into('>IIII',blob,0,0xc0ffeead,1024,2048,0)
-struct.pack_into('>IHBB',blob,16,0xff000000,0x7010,1,0);blob[24:32]=b'RAMProbe'
+struct.pack_into('>IHBB',blob,16,0xff000000,0xFF44,1,0);blob[24:32]=b'RAMProbe'
 struct.pack_into('>IIII',blob,132,148,0,1,2);code=(out/'ram-entry.bin').read_bytes();blob[148:148+len(code)]=code
 struct.pack_into('>I',blob,1020,0xcafefeed);(out/'ram-probe.bin').write_bytes(blob)
 shutil.copyfile(HERE/'vector-probe.lua',out/'probe.lua')

@@ -2,7 +2,7 @@
 #include <string.h>
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1B2)
+    APPLET_ID(0xFF26)
     APPLET_NAME("SoftHyphen probe")
     APPLET_INFO("Native cached hyphen experiment")
     .fileCount = 1,

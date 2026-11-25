@@ -96,7 +96,7 @@ three identical cursor-free LCD records, message/parameter and absence of a
 CoWriter registration are asserted. It does not certify real Beamer transfers
 or a completed preview applet.
 
-An optional A006 shim can synchronously run a viewer or dispatch to applet A1ED,
+An optional A006 shim can synchronously run a viewer or dispatch to applet FF11,
 then return to AlphaWord. This avoids taking CoWriter's name-based registration. Concurrent key forwarding with genuine active CoWriter
 has not been certified. It conflicts with
 real Beamer's ID: both cannot be installed as independent A006 applets. A modal
@@ -119,3 +119,7 @@ A custom preview renderer is not constrained by the native editor's four slots.
 No representative usage counts for combined emphasis versus monospace were
 established. Their value depends on prose versus technical writing; documentation
 of the syntax is not evidence of its population frequency.
+
+The maintained hook package now uses private ID FF14. Only the disposable
+compatibility fixture aliases its installed copy to Beamer A006 for the original
+AlphaWord lookup; it records both identities and preserves the private package.

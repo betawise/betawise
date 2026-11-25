@@ -5,6 +5,7 @@ include ../../Makefile.common
 
 .PHONY: check
 check:
+	python3 ../check-applet-ids.py
 	+CROSS_COMPILE="$(CROSS_COMPILE)" ./build.sh
 
 	+CROSS_COMPILE="$(CROSS_COMPILE)" python3 abi-bridges.py

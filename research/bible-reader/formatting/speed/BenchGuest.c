@@ -3,7 +3,7 @@
 #include "BenchData.h"
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1BF)
+    APPLET_ID(0xFF25)
     APPLET_NAME("Format Bench")
     APPLET_INFO("Disposable formatting CPU benchmark")
     APPLET_VERSION(0, 1, "b")

@@ -2,7 +2,7 @@
 #include "../../applets/FileManager/Flash.h"
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1FF)
+    APPLET_ID(0xFF03)
     APPLET_NAME("Flash validation probe")
     APPLET_VERSION(0, 1, "a")
     APPLET_LANGUAGE_EN_US

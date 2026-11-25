@@ -34,11 +34,12 @@ local main=coroutine.create(function()
   for i=0,31 do
    put32(descriptors+i*4,0);m:write_u16(ids+i*2,0xffff);put32(bases+i*4,0)
   end
+  local private_ids={0xFF50,0xFF51}
   for i=1,2 do
    local h=data+(i-1)*256
    for j=0,255 do m:write_u8(h+j,0)end
-   put32(h,0xc0ffeead);put32(h+8,2048);m:write_u16(h+20,0x7000+i)
-   put32(descriptors+i*4,h);m:write_u16(ids+i*2,0x7000+i)
+   put32(h,0xc0ffeead);put32(h+8,2048);m:write_u16(h+20,private_ids[i])
+   put32(descriptors+i*4,h);m:write_u16(ids+i*2,private_ids[i])
    put32(bases+i*4,top-i*2048)
   end
   -- Simulated heap record in applet 2's ordinary A5, and heap immediately below it.

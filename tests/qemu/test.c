@@ -459,7 +459,7 @@ void ProcessMessage(Message_e message, uint32_t param, uint32_t* status) {
 #endif
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1FF)
+    APPLET_ID(0xFF01)
     APPLET_NAME("M68K Test Harness")
     APPLET_INFO("Copyright (c) 2026 Alpaxo Software")
     APPLET_VERSION(BETAWISE_VERSION_MAJOR, BETAWISE_VERSION_MINOR, BETAWISE_VERSION_REVISION)

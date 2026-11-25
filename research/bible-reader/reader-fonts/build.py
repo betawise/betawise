@@ -14,9 +14,9 @@ sys.path.insert(0, str(ROOT / 'betawise/fonts'))
 from fontgen import load
 
 FAMILIES = [
-    ('CenturySchoolbook', 'Century Schoolbook', 'ncen', ('R', 'B', 'I', 'BI'), 0xA1F5),
-    ('Helvetica', 'Helvetica', 'helv', ('R', 'B', 'O', 'BO'), 0xA1F6),
-    ('Times', 'Times', 'tim', ('R', 'B', 'I', 'BI'), 0xA1F7),
+    ('CenturySchoolbook', 'Century Schoolbook', 'ncen', ('R', 'B', 'I', 'BI'), 0xFF30),
+    ('Helvetica', 'Helvetica', 'helv', ('R', 'B', 'O', 'BO'), 0xFF31),
+    ('Times', 'Times', 'tim', ('R', 'B', 'I', 'BI'), 0xFF32),
 ]
 
 

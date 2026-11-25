@@ -1,8 +1,10 @@
 # Markdown while typing: native AlphaWord prototype
 
+Private applet IDs for new builds are listed in [the local index](../../applets/PRIVATE_IDS.md). Historical captures below retain their original IDs.
+
 Current revision: literal list markers, underscore emphasis, literal code spans
 and fences, cached typing, headings/quotes and completed-marker hiding. This replaces the earlier downsampled DejaVu font and visible-only
-prototype. The hidden companion remains ID A1ED with the CoWriter name prefix.
+prototype. The hidden companion remains ID FF11 with the CoWriter name prefix.
 It drives the original AlphaWord native editor; it does not patch its code.
 
 ## Try it
@@ -237,7 +239,7 @@ whole-document scan, parse or rewrite. Timing summary:
 `.research-work/cowriter-integration/typing-profile-v5.json`.
 
 V6 adds dedicated underscore/code/literal-list suites. The Beamer hook probe is a
-separate disposable experiment; the standard inline build still has ID A1ED and
+separate disposable experiment; the standard inline build still has ID FF11 and
 the CoWriter name prefix. Font slots remain regular/bold/italic/combined. See the
 shortcut notes for the optional preview-shim design and its Beamer conflict.
 

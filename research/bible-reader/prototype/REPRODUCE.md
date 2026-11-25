@@ -32,7 +32,7 @@ From the workspace root:
 python3 betawise/research/bible-reader/prototype_support.py
 ```
 
-This creates `.research-work/bible-compression/prototype-workspace`, copies this
+This creates `.research-work/bible-compression/prototype-private-workspace`, copies this
 snapshot, and links the SDK, pinned source submodule, canonical shared test tools,
 firmware and emulator. Frozen applet-specific harnesses are copied over the shared
 test tools. Nothing is copied back into production. Use `--output /tmp/bible-lab`
@@ -41,7 +41,7 @@ for another disposable workspace.
 For example, reproduce the old full-index native production build:
 
 ```sh
-make -C .research-work/bible-compression/prototype-workspace/betawise/applets/BibleReader \
+make -C .research-work/bible-compression/prototype-private-workspace/betawise/applets/BibleReader \
   READER=BibleReader VERSION=KJV PRUNE=1 SEARCH_INDEX=full \
   PROFILE=0 TEST_FONT=0 NATIVE_OPEN_TEST=1 NATIVE_PAGE_TEST=1 \
   PREBUILT_DATA=1
@@ -63,3 +63,8 @@ The removed SDK rectangle helper is retained in research `LegacyGraphics.h`.
 The restore helper supplies a GNUmakefile wrapper that force-includes it only
 for the frozen Streaming build. Original snapshot sources and hashes remain
 unchanged; the production SDK no longer exposes that helper.
+
+New builds use separate private IDs: Benchmark FF20, BibleReader FF21 and
+Streaming FF22. This is a header-metadata migration only. Original source bytes remain at commit
+`940e1c126921578cc8f6769749593a47c141fdf2`. Historical measurements are unchanged.
+A separate restored directory avoids overwriting an old restored prototype.

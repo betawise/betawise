@@ -2,7 +2,7 @@
 #include "os3k.h"
 
 APPLET_HEADER_BEGIN
-    APPLET_ID(0xA1F2)
+    APPLET_ID(0xFF02)
     APPLET_NAME("Font Dialog Demo")
     APPLET_INFO("Betawise Neo 3.21 dialog research")
     APPLET_VERSION(0, 1, 'a')

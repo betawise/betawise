@@ -95,5 +95,7 @@
       "path": "SearchModesBench.h"
     }
   ],
-  "generated_navigation": "Navigation.h is produced by prepare.py during the build and is not a snapshot input."
+  "generated_navigation": "Navigation.h is produced by prepare.py during the build and is not a snapshot input.",
+  "original_source_commit": "940e1c126921578cc8f6769749593a47c141fdf2",
+  "id_migration": "Applet IDs changed to private use; original source bytes remain available at original_source_commit."
 }

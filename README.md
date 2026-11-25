@@ -157,12 +157,15 @@ Firmware placement may put either base two bytes past a four-byte boundary,
 even when the linker aligns offsets within an applet image.
 
 Use the [SmartApplet ID block registry](applets/REGISTRY.md) to look up
-assignments or request a block for your own applets.
+assignments or request a public block. Tests and local fixtures use the
+unregistered private range `0xFF00`–`0xFFFE`. Bundled public applets, including
+Hello World, retain their registered IDs.
 
 ## Testing and contributing
 
 Run `python3 tests/check-doc-links.py` to check internal documentation links,
 anchors and linked images (requires `markdown-it-py` and Pillow).
+`python3 tests/check-applet-ids.py` checks local private-ID assignments.
 
 The [CI workflow](.github/workflows/ci.yml) runs the relocation/startup and
 compiler runtime arithmetic checks.
