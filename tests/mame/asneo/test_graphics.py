@@ -36,6 +36,8 @@ class GraphicsTests(unittest.TestCase):
         cls.temp = tempfile.TemporaryDirectory(prefix='neo-graphics-')
         root = Path(cls.temp.name)
         os3k = Path(__file__).resolve().parents[3] / 'os3k'
+        subprocess.run(['make', '--no-print-directory', '-s', '-C',
+                        str(os3k), 'version.h'], check=True)
         (root / 'raster.c').write_text('''#include "os3k.h"
 #include <string.h>
 unsigned char pixels[264*65];

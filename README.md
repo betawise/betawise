@@ -167,8 +167,10 @@ Run `python3 tests/check-doc-links.py` to check internal documentation links,
 anchors and linked images (requires `markdown-it-py` and Pillow).
 `python3 tests/check-applet-ids.py` checks local private-ID assignments.
 
-The [CI workflow](.github/workflows/ci.yml) runs the relocation/startup and
-compiler runtime arithmetic checks.
+The [CI workflow](.github/workflows/ci.yml) runs documentation and applet-ID
+checks, console parser tests, font conversion tests, and offline graphics/LCD
+reader and bitmap-comparator tests. It also builds the SDK, applets and fonts
+and runs QEMU relocation/startup, ABI bridge, setjmp and compiler-runtime checks.
 For firmware-driven applet tests and their local emulator/firmware prerequisites,
 see the [AS3000 MAME guide](tests/mame/asma3k/README.md) and
 [NEO MAME guide](tests/mame/asneo/README.md). The canonical NEO regression is
