@@ -1,14 +1,17 @@
 {
   "recorded_on": "2026-11-24",
   "betawise_parent_commit": "b8c5e945749b27f9eb40d4f1987f325089bce339",
-  "support_patch": {
-    "path": "research/reproduction-support.patch",
-    "scope": "Uncommitted SDK and shared Neo test support needed by these research probes; originals remain uncommitted."
-  },
   "sibling_commits": {
     "mame": "53bcc26e4e5a6300a8742cffdc215290f3224a37",
     "neotools": "4e0543c42d76c0635b505b7d789632e9f7e85eeb"
   },
-  "scope": "Research scripts, documentation, retained evidence and explicit support snapshot; no active-development acceptance implied.",
-  "research_commit": "The commit introducing research/REPRODUCIBILITY.md; discover with git log --diff-filter=A --format=%H -- research/REPRODUCIBILITY.md"
+  "scope": "Research sources and summaries with integrated SDK/shared Neo support; historical findings remain scoped to their recorded inputs.",
+  "research_commit": "The commit introducing research/REPRODUCIBILITY.md; discover with git log --diff-filter=A --format=%H -- research/REPRODUCIBILITY.md",
+  "historical_support_overlay": {
+    "commit": "940e1c126921578cc8f6769749593a47c141fdf2",
+    "git_object": "940e1c126921578cc8f6769749593a47c141fdf2:research/reproduction-support.patch",
+    "scope": "Frozen historical input available in Git history; do not apply to integrated source."
+  },
+  "integrated_source_commit": "The commit removing research/reproduction-support.patch; discover with git log --diff-filter=D --format=%H -- research/reproduction-support.patch",
+  "graphics_and_lcd_support_commit": "7758f4fe306a8f249bf7ece9c04d2c21d203ecf5"
 }

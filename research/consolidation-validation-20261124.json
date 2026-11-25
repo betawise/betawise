@@ -69,11 +69,15 @@
     },
     {
       "command": "git apply --check --cached research/reproduction-support.patch",
-      "result": "PASS"
+      "result": "PASS",
+      "source_commit": "940e1c126921578cc8f6769749593a47c141fdf2",
+      "note": "Historical check at the original research snapshot; overlay is now integrated and available only in Git history."
     },
     {
       "command": "git apply --check --reverse research/reproduction-support.patch",
-      "result": "PASS"
+      "result": "PASS",
+      "source_commit": "940e1c126921578cc8f6769749593a47c141fdf2",
+      "note": "Historical check at the original research snapshot; overlay is now integrated and available only in Git history."
     }
   ]
 }

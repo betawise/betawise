@@ -172,7 +172,9 @@ int32_t TextEditorInit(TextEditor_t* editor, uint16_t file_id, TextEditorFlags_e
 
 /** @brief Handle an editor message.
  * @param editor Initialized editor; an editable editor's file must be current.
- * @param message Applet message, including idle, key, character, and font-change notifications.
+ * @param message Applet message, including idle, key, character, and MSG_REFRESH.
+ * For MSG_REFRESH, param uses MessageRefreshParam_e;
+ * FC reloads all four fonts, FE refreshes cursor style, zero requests redraw.
  * @param param Message-specific scalar, such as a key event or character byte.
  * @param context Forwarded context value; pass zero without a native workflow requiring it.
  * @param status Required operation-status output, cleared before handling.

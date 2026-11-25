@@ -17,5 +17,6 @@
       "-"
     ]
   },
-  "betawise_support_patch": "research/reproduction-support.patch"
+  "betawise_integrated_source": "The commit removing research/reproduction-support.patch; discover with git log --diff-filter=D --format=%H -- research/reproduction-support.patch",
+  "historical_support_overlay_git_object": "940e1c126921578cc8f6769749593a47c141fdf2:research/reproduction-support.patch"
 }

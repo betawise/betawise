@@ -67,9 +67,9 @@ typedef enum _SysInt_e {
     SYS_INT_GET_WIRELESS_BLOCK = 0x0F00, /**< uint8_t[13] output: copy the opaque ROM block used by 0x0C00. Exactly 13 opaque bytes. Neo only. */
     SYS_INT_GET_FIRMWARE_VERSION = 0x1000, /**< FirmwareVersion_t* output: four version bytes. Requires a valid system applet descriptor. Neo only. */
     SYS_INT_GET_WIRELESS_NETWORK_NAME = 0x2000, /**< char[25] output: copy exactly 25 network-name bytes. No additional NUL is appended. Neo only. */
-    SYS_INT_GET_SCRATCH_BUFFER_PTR = 0x3000, /**< void** output: shared, ROM-owned scratch arena. Query its capacity with SYS_INT_GET_SCRATCH_BUFFER_SIZE. This query does not allocate or grant exclusive ownership; do not free the pointer. Neo only. */
+    SYS_INT_GET_SCRATCH_BUFFER_PTR = 0x3000, /**< void** output: shared, ROM-owned scratch arena. Query its capacity with SYS_INT_GET_SCRATCH_BUFFER_SIZE. This query does not allocate or grant exclusive ownership; do not free the pointer. Verified on Neo 3.21; unsupported on AS3000 3.01 and Neo 3.01. */
     SYS_INT_GET_SMALL_FONT_PTR = 0x4000, /**< FontHeader_t** output: ROM small-font pointer. Neo only. */
-    SYS_INT_GET_SCRATCH_BUFFER_SIZE = 0x5000, /**< uint32_t* output: scratch arena capacity in bytes (8192 on Neo 3.21 firmware). Neo only. */
+    SYS_INT_GET_SCRATCH_BUFFER_SIZE = 0x5000, /**< uint32_t* output: scratch arena capacity in bytes (8192 on Neo 3.21 firmware). Unsupported on AS3000 3.01 and Neo 3.01. */
     /** uint32_t* output: 1 on Neo 3.21 firmware. Unsupported on AS3000 3.01
      * and Neo 3.01 firmware; unsupported queries leave data unchanged.
      * This selector does not enumerate individual extended syscall slots.

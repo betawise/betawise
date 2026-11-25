@@ -167,7 +167,7 @@ void _DisplayProcessMessage(Message_e message, uint32_t* status) {
             appletIndex = AppletFindById(0xA1F0);
             if(appletIndex > 0) {
                 FontHeader_t* font = NULL;
-                AppletSendMessage(appletIndex, 0x1000002, (uint32_t)&font, status);
+                AppletSendMessage(appletIndex, MSG_FONT_GET_NORMAL, (uint32_t)&font, status);
                 if(font && font->bitmap_data &&
                    ((font->max_width == 4 && font->height == 6 && font->max_bytes == 4) ||
                     (font->max_width == 5 && font->height == 7 && font->max_bytes == 5) ||

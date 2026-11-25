@@ -13,7 +13,9 @@
  * The entry point returns void. Use the status output for the reply requested
  * by the message. Write zero for ordinary events handled without a special
  * reply. The status word can contain a previous value on entry.
- * USB payloads are opaque unless their message entry specifies a contract.
+ * USB messages use UsbRequest_t, not USB SETUP packets. The keyboard (300xx)
+ * and direct binary (400xx) workflows have different reply policies; see
+ * research/usb/native-usb.md. These contracts were traced on Neo 3.21.
  */
 typedef enum _Message_e {
     MSG_IDLE            = 0x00, /**< Idle notification. Foreground param is normally zero; battery diagnostic callbacks use 0xFEDCBA98. Reply zero for ordinary handling. */
@@ -59,11 +61,24 @@ typedef enum _Message_e {
     MSG_PS2_KEY_UP       = 0x2001F, /**< Native key-up word. */
     MSG_PS2_KEY_DOWN_BUSY = 0x2011E, /**< Native key-down while PS/2 output is queued (AS3000 pump 4D277A–4D2788). */
     MSG_PS2_KEY_UP_BUSY  = 0x2011F, /**< Native key-up while PS/2 output is queued. */
-    MSG_USB_PLUG        = 0x30001, /**< USB attach. param points to a ROM USB request block. The ROM checks the reply. */
-    MSG_USB_UNK_07      = 0x30007, /**< USB event. param points to a USB request block. The request and reply are opaque. */
-    MSG_USB_UNPLUG      = 0x3000C, /**< USB detach. param points to a USB request block. No reply is required by this notification. */
-    MSG_USB_UNK_1E      = 0x3001E, /**< USB transfer event. Payload and reply are opaque. */
-    MSG_USB_UNK_1F      = 0x3001F, /**< USB transfer event. Payload and reply are opaque. */
+    MSG_USB_PLUG        = 0x30001, /**< Keyboard-mode attach/open: input length 1, host-detection byte. Replies 0x11/0x12 suppress default attachment text; they do not exit the loop. */
+    MSG_USB_SEND_POLL   = 0x30007, /**< Keyboard output queue needs more data. No input; output capacity 1024. Reply 6 supplies text for ROM HID conversion, not raw endpoint bytes. */
+    MSG_USB_SEND_DRAINED = 0x30008, /**< Stock keyboard output queue drained. Same output fields/reply processing as SEND_POLL; not a USB bulk completion. */
+    MSG_USB_UNPLUG      = 0x3000C, /**< Keyboard-session close, including transition to direct mode. Empty input/output capacity; notification reply ignored. */
+    MSG_USB_SUSPEND     = 0x30012, /**< Entered suspended state. One input byte reports remote-wakeup enable; output capacity zero. */
+    MSG_USB_RESUME      = 0x30013, /**< Left suspended state. No input/output capacity; notification reply ignored. */
+    MSG_USB_KEY_DOWN    = 0x3001E, /**< Native 16-bit key word at input. Capacity 1024; reply 6 converts supplied text to HID, reply 3 queues native key words. */
+    MSG_USB_KEY_UP      = 0x3001F, /**< Native key-up word at input; KEY_MOD_KEY_UP is set. Same request layout as KEY_DOWN. */
+    MSG_USB_KEY_DOWN_BUSY = 0x3011E, /**< Key-down while keyboard output is queued; output capacity zero. Full code matters to handlers. */
+    MSG_USB_KEY_UP_BUSY = 0x3011F, /**< Key-up while keyboard output is queued; output capacity zero. */
+    MSG_USB_KEY_DOWN_SUSPENDED = 0x3021E, /**< Key-down during suspend; output capacity zero. Reply 9 requests the native remote-wakeup sequence. */
+    MSG_USB_KEY_UP_SUSPENDED = 0x3021F, /**< Key-up during suspend; output capacity zero; same remote-wakeup reply policy. */
+    MSG_USB_DIRECT_OPEN = 0x40001, /**< Direct bulk session opened or selected. Empty input; capacity 1024. AlphaWord/AlphaQuiz reply 0x11. */
+    MSG_USB_DIRECT_RECEIVE = 0x40002, /**< Raw bulk OUT bytes at input; chunk boundaries are not application message boundaries. Reply 4 queues output_length bytes from the supplied output buffer. */
+    MSG_USB_DIRECT_SEND_POLL = 0x40006, /**< Bulk IN output queue empty: may supply another binary chunk. Reply 4 queues data; reply 5 also schedules a terminating zero-length packet. */
+    MSG_USB_DIRECT_CLOSE = 0x4000C, /**< Direct bulk loop close/detach notification. Final cleanup may already have restored the default handler. */
+    MSG_USB_DIRECT_SUSPEND = 0x40012, /**< Direct-mode suspend notification: one input byte reports remote-wakeup enable, output capacity zero. */
+    MSG_USB_DIRECT_RESUME = 0x40013, /**< Direct-mode resume notification: no input; standard direct dispatcher supplies output capacity 1024. */
     MSG_HUB_OPEN         = 0x50001, /**< AlphaHub connection/session open. param is a native 20-byte transfer request. */
     MSG_HUB_RECEIVE      = 0x50002, /**< AlphaHub input bytes; reply 4 supplies output_length bytes. */
     MSG_HUB_RECEIVE_CONTINUATION = 0x50005, /**< AlphaHub additional input callback; not USB direct-send reply 5. */
@@ -121,6 +136,9 @@ typedef enum _Message_e {
     MSG_SPELLCHECK_GET_ENABLED = 0x1000007,
     MSG_STYLEWRITER_QUERY = 0x1A01000, /**< SWFont: low byte of param indexes 256 relative offsets; status receives the selected borrowed ROM address. */
     /* Source-compatible names retained for existing callers. */
+    MSG_USB_UNK_07      = MSG_USB_SEND_POLL,
+    MSG_USB_UNK_1E      = MSG_USB_KEY_DOWN,
+    MSG_USB_UNK_1F      = MSG_USB_KEY_UP,
     MSG_MOD_SYNTHETIC   = 0x1000000 /**< Dispatch flag applied by AppletSendMessage() to most messages. */
 } Message_e;
 
@@ -136,6 +154,25 @@ typedef enum _MessageRefreshParam_e {
     MSG_REFRESH_FONTS = 0xFC, /**< Reload the four current font pointers and reconcile layout. */
     MSG_REFRESH_CURSOR_STYLE = 0xFE /**< Refresh the applet's saved native cursor-style setting and redraw. */
 } MessageRefreshParam_e;
+
+/** @brief Native RAM request used by the Neo 3.21 keyboard/direct USB callbacks.
+ *
+ * Twenty bytes on the target ABI. The ROM owns both buffers and the record;
+ * consume/copy input synchronously and do not retain these pointers. Set
+ * output_length only for a reply that consumes output, never beyond
+ * output_capacity. Keyboard reply 3 consumes even-length native key words;
+ * keyboard reply 6 consumes text; direct replies 4/5 consume arbitrary bytes.
+ * Direct reply 8 releases the selected handler, while 0x0F returns to HID mode.
+ * This record supplies no endpoint, descriptor or EP0 SETUP-request selector.
+ * A nonzero reply is written through ProcessMessage's separate status pointer.
+ */
+typedef struct _UsbRequest_t {
+    uint32_t input_length; /**< +00, bytes available at input. */
+    const void* input; /**< +04, borrowed bytes or a big-endian native key word. */
+    uint32_t output_capacity; /**< +08, caller-provided output limit; may be zero. */
+    uint32_t output_length; /**< +0C, handler-produced byte count, initially zero. */
+    void* output; /**< +10, borrowed writable output buffer. */
+} UsbRequest_t;
 
 /** @brief Applet-provided message handler.
  * @param message Message code, possibly including a dispatch flag.

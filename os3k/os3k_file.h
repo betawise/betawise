@@ -60,7 +60,8 @@ typedef enum _ClipboardTextMode_e {
 #define FILE_LENGTH_RESTORE_SAVED (-2)
 /** @brief Record the current logical length as the saved length. */
 #define FILE_LENGTH_SAVE_CURRENT  (-3)
-/** @brief Snapshot all non-clipboard logical lengths as saved lengths when no file is cached open.
+/** @brief Snapshot all file records, including the clipboard, as saved lengths and compact
+ * allocations when no file is cached open.
  * With a cached open file, lengths are unchanged.
  */
 #define FILE_LENGTH_SNAPSHOT_ALL (-4)

@@ -18,15 +18,27 @@ the commit introducing this guide:
 git log --diff-filter=A --format=%H -- research/REPRODUCIBILITY.md
 ```
 
-Use that research commit, rather than the parent alone. The source consolidation
-includes the frozen experimental reader and historical probe sources. Optional
-SDK and shared Neo-reader edits needed by some probes are captured in
-`reproduction-support.patch`; their identity and sibling repository revisions
-are in `reproduction-baseline.json`. Apply the overlay only to a fresh checkout
-of this research snapshot, with `git apply --check` first. It is a source input,
-not a dump of generated validation output or a separately qualified SDK release.
-The matching MAME revision and overlay are documented in the OS3K reproduction
-guide. Manager transactions additionally use the recorded neotools revision.
+For current reproduction, use the commit that removes the support overlay,
+or a later revision. Find the integration anchor with:
+
+```sh
+git log --diff-filter=D --format=%H -- research/reproduction-support.patch
+```
+
+That commit includes the frozen research sources and the SDK API corrections;
+its parent `7758f4f` supplies the graphics and shared 65-row Neo-reader support.
+No Betawise overlay is needed. Source identities and sibling repository
+revisions are recorded in `reproduction-baseline.json`.
+
+For an exact historical source snapshot, the original research commit above
+still contains its frozen support overlay in Git history. Apply that overlay
+only to that historical checkout, with `git apply --check` first; do not apply
+it to the integrated source. The line implementation has since been replaced
+by the tested run-slice version. Historical result tables are observations of
+the recorded sources, not claims of identical timings on the newer code.
+The matching MAME revision and its separate overlay are documented in the OS3K
+reproduction guide. Manager transactions additionally use the recorded
+neotools revision.
 
 Provide the original private ROM/applet/installer inputs at their documented
 workspace paths and verify their hashes. No saved user session and no retained
