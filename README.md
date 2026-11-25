@@ -161,6 +161,9 @@ assignments or request a block for your own applets.
 
 ## Testing and contributing
 
+Run `python3 tests/check-doc-links.py` to check internal documentation links,
+anchors and linked images (requires `markdown-it-py` and Pillow).
+
 The [CI workflow](.github/workflows/ci.yml) runs the relocation/startup and
 compiler runtime arithmetic checks.
 For firmware-driven applet tests and their local emulator/firmware prerequisites,

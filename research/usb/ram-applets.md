@@ -120,6 +120,10 @@ still apply. Initially target the emulator-qualified Neo 3.21 loader, then
 qualify hardware and other firmware versions explicitly. This runs a transient
 RAM instance; it does not perform persistent flash installation.
 
+## Source provenance
+
+This audit was retained from the sibling neotools workspace on 2026-11-24.
 The inspected neotools source revision was
-`4e0543c42d76c0635b505b7d789632e9f7e85eeb`. Original inputs and fresh-output
-reproduction are described in the Manager investigation.
+`4e0543c42d76c0635b505b7d789632e9f7e85eeb`; firmware identities and executable
+probe/evidence reproduction are recorded in the linked Manager investigation.
+It requires no retained `.research-work` output.

@@ -164,9 +164,9 @@ make -C betawise/applets/BibleReader READER=BibleReader VERSION=NKJV PRUNE=1 PRO
 # NATIVE_STREAM=0: existing full-chapter native reader.
 ```
 
-Production images, symbols, source snapshots and stack-usage files are retained
-under `.research-work/bible-compression/reader-maintenance-final/`.
-The three image names (regenerate with the [reader-cost measurements](reader-costs.md#reproduction)) are:
+The generated production images were retired during cleanup. Symbols, source
+snapshots and stack-usage files describe the historical run; use the
+[reproduction commands](reader-costs.md#reproduction) to rebuild these variants:
 * `BibleReader-NativeWindow-NKJV.OS3KApp`
 * `BibleReader-NativeDemand-NKJV.OS3KApp`
 * `BibleReader-NativeBG-NKJV.OS3KApp`

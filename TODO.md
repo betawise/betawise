@@ -163,6 +163,13 @@ and applet ideas are possibilities, not commitments.
 
 ## Applet and companion ideas
 
+- Add **Load/run in RAM** to DebugTool: select an OS3KApp image stored as a
+  DebugTool binary data file, validate it, reserve/copy RAM and hand off to the
+  ROM loader. Use existing file syscalls and qualify Manager binary-file upload;
+  no stdio layer or separate USB loader protocol is required initially. Handle
+  GET_ID before INIT and qualify replacement/unload/reset and Manager changes.
+  Start with Neo 3.21 emulator coverage, then hardware and other firmware
+  ([RAM research](research/memory-allocation/manager/README.md#proposed-debugtool-file-backed-loader)).
 - Consider an editor with undo, screenplay formatting, markdown, or vi/Emacs-style keybindings.
 - Validate the [File Manager prototype](applets/FileManager/README.md) on native
   firmware; complete special-file move metadata, then flash backup/restore and
