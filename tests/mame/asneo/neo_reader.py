@@ -26,8 +26,10 @@ class Reading:
         return not (self.unknown_cells or self.ambiguous_cells or self.cursor_columns)
 
 
-def read_lcd_samples(path):
+def read_lcd_samples(path, height=64):
     """Reconstruct visible pixels from non-mutating controller save-item reads."""
+    if height not in (64, 65):
+        raise ValueError("Neo LCD height must be 64 or 65")
     data = json.loads(Path(path).read_text())
     if not isinstance(data, dict) or data.get('format') != 'neo-lcd-v1' or not isinstance(data.get('samples'), list):
         raise ValueError('unsupported Neo LCD record')
@@ -53,12 +55,13 @@ def read_lcd_samples(path):
                 raise ValueError('invalid LCD display flags')
             decoded.append((ram, start, flags))
         pixels = []
-        for y in range(64):
+        for y in range(height):
             for x in range(264):
                 ram, start, flags = decoded[x//132]
                 on, adc, com, reverse, all_points, reset = flags
                 col = 131-x%132 if adc else x%132
-                line = ((63-y if com else y)+start)&63
+                # COMS (page 8, bit 0) never follows start-line or COM reversal.
+                line = 64 if y == 64 else ((63-y if com else y)+start)&63
                 value = ((ram[(line//8)*132+col] >> (line&7))&1)^reverse
                 pixels.append(int(on and not reset and (all_points or value)))
         frames.append(pixels)
@@ -67,9 +70,9 @@ def read_lcd_samples(path):
     return frames
 
 
-def lcd_frames(path):
+def lcd_frames(path, height=64):
     data = json.loads(Path(path).read_text())
-    frames = read_lcd_samples(path)
+    frames = read_lcd_samples(path, height)
     if len(frames) < 3 or any(s != data['samples'][0] for s in data['samples'][1:]):
         raise ValueError('LCD capture needs three identical controller samples')
     return frames
@@ -82,9 +85,9 @@ def is_lcd(path):
 def bitmap(path, size):
     """Accept native or exact integer nearest-neighbour enlargement, two colours only."""
     if is_lcd(path):
-        if size != (264, 64):
-            raise ValueError('LCD records are 264x64')
-        return lcd_frames(path)[0]
+        if size not in ((264, 64), (264, 65)):
+            raise ValueError("LCD records support 264x64 text or 264x65 full panel")
+        return lcd_frames(path, size[1])[0]
     with Image.open(path) as source:
         im = source.convert('RGB')
     w, h = size

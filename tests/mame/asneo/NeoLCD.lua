@@ -28,7 +28,7 @@ function lcd.black(x,y)
     if c.m_all_points~=0 then return true end
     if c.m_adc~=0 then col=131-col end
     local scan=c.m_com_reverse~=0 and 63-y or y
-    local line=(scan+c.m_start_line)&63
+    local line=y==64 and 64 or (scan+c.m_start_line)&63
     return (((c.ram:byte((line//8)*132+col+1)>>(line&7))&1) ~= c.m_reverse)
 end
 function lcd.frame()

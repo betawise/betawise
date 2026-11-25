@@ -33,9 +33,9 @@ def capture_images(paths, region=None, screen_size=(264, 64)):
     images = []
     for path in paths:
         if is_lcd(path):
-            if screen_size != (264, 64):
-                raise ValueError('Neo LCD records require a 264x64 screen')
-            frames = lcd_frames(path)
+            if screen_size not in ((264, 64), (264, 65)):
+                raise ValueError("Neo LCD records require a 264x64 text area or 264x65 full panel")
+            frames = lcd_frames(path, screen_size[1])
         else:
             frames = [bitmap(path, screen_size)]
         for bits in frames:

@@ -226,7 +226,10 @@ void RasterOp(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t* bitmap, R
  */
 void DrawPixel(uint16_t x, uint16_t y, bool black);
 
-/** @brief Betawise wrapper that draws an inclusive line through DrawPixel().
+/** @brief Draw an inclusive Bresenham line using maximal RasterOp() spans.
+ * Shallow lines use horizontal spans; steep lines use vertical spans.
+ * The original pixel placement and directional tie rules are preserved.
+ * Both endpoints must be on-screen (Neo: x < 264, y < 65); no clipping.
  * @param x0 First endpoint's horizontal coordinate.
  * @param y0 First endpoint's vertical coordinate.
  * @param x1 Second endpoint's horizontal coordinate.

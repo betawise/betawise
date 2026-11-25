@@ -36,6 +36,26 @@ class ScreenBitmapTests(unittest.TestCase):
         self.assertEqual(report['foreground_bounds'], (17,11,18,12))
         self.assertEqual(report['region'], [0,0,264,64])
 
+    def test_full_panel_coms_does_not_scroll_or_reverse_com(self):
+        controllers = self.record['samples'][0]['controllers']
+        for c in controllers:
+            c['ram'] = bytes(1188).hex()
+            c['m_start_line'] = 37
+            c['m_com_reverse'] = 1
+        ram = bytearray(1188); ram[8*132+9] = 1
+        controllers[0]['ram'] = ram.hex()
+        self.capture.write_text(json.dumps(self.record))
+        report = compare([self.capture], self.reference((264,65), (9,64)),
+                         self.root/'panel', screen_size=(264,65))
+        self.assertEqual(report['foreground_pixels'], 1)
+        self.assertEqual(report['foreground_bounds'], (9,64,10,65))
+        # The existing 64-row terminal region deliberately excludes COMS.
+        compare([self.capture], self.reference((264,64)), self.root/'text')
+        controllers[0]['m_adc'] = 1
+        self.capture.write_text(json.dumps(self.record))
+        compare([self.capture], self.reference((264,65), (122,64)),
+                self.root/'panel-adc', screen_size=(264,65))
+
     def test_arbitrary_region_and_blank_region(self):
         report = compare([self.capture], self.reference((9,7), (2,3)), self.root/'crop', (15,8,9,7))
         self.assertEqual(report['foreground_bounds'], (2,3,3,4))

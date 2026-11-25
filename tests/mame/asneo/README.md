@@ -344,3 +344,9 @@ Interrupt keys during running code are held for 30 emulated frames to span the
 VM's periodic keyboard scans. Ordinary typing uses shorter taps. These checks
 validate interrupt assignment and recovery, not minimum keypress duration or
 physical keyboard latency.
+
+## Graphics helper performance
+
+[Line drawing measurements and reproduction](line-performance.md) compare the
+SDK span implementation against the original pixel-at-a-time routine using
+real Neo RasterOp calls and emulated time.
