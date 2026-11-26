@@ -14,7 +14,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y gcc gcc-m68k-linux-gnu qemu-user xxd \
-          python3-pil python3-markdown-it xfonts-utils
+          python3-pil python3-markdown-it python3-fonttools xfonts-utils \
+          pkg-config libfreetype-dev
     - name: Check out repository.
       uses: actions/checkout@v5
       with:
@@ -23,6 +24,8 @@ jobs:
       run: |
         python3 tests/check-doc-links.py
         python3 tests/check-applet-ids.py
+    - name: Initialize pinned font sources.
+      run: git submodule update --init fonts/upstream/75dpi fonts/upstream/100dpi fonts/upstream/misc
     - name: Run offline console, font, and graphics tests.
       run: |
         bash tests/console/check.sh
@@ -39,6 +42,8 @@ jobs:
       run: |
         echo "$PREFIX/bin" >> $GITHUB_PATH
         make
+        python3 tests/fonts/check_reader_applets.py
+        python3 tests/fonts/check_font_relocations.py
         os3k/compiler-rt/check.sh
     - name: Collect published applets and fonts.
       id: artifacts
@@ -68,6 +73,7 @@ jobs:
           fi
           cp -- "$image" "$destination/"
         done
+        cp -- fonts/LICENSE.md "$artifact_dir/fonts/LICENSE.md"
         echo "path=$artifact_dir" >> "$GITHUB_OUTPUT"
     - name: Upload applets and fonts artifact.
       uses: actions/upload-artifact@v6

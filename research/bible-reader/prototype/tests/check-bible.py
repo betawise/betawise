@@ -95,13 +95,13 @@ def main():
     # region in this newly-created disposable image. No existing session read.
     prepare_session(out,args.firmware,'extra',args.mame)
     flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000)
-    images=[args.firmware/'alphawordplus.os3kapp',APP/'BibleReader.OS3KApp',ROOT/'betawise/fonts/BetaWiseTerminal.OS3KApp']
+    images=[args.firmware/'alphawordplus.os3kapp',APP/'BibleReader.OS3KApp',ROOT/'betawise/fonts/BetaWiseTerminal-Medium.OS3KApp']
     (out/'artifacts').mkdir()
     offset=0x70000
     for path in images:
         b=path.read_bytes();assert int.from_bytes(b[4:8],'big')==len(b) and offset+len(b)<=len(flash)
         flash[offset:offset+len(b)]=b;offset+=len(b)
-        if path.parent==APP or path.name=='BetaWiseTerminal.OS3KApp':shutil.copyfile(path,out/'artifacts'/path.name)
+        if path.parent==APP or path.name=='BetaWiseTerminal-Medium.OS3KApp':shutil.copyfile(path,out/'artifacts'/path.name)
     (out/'nvram/asneo/flashnv').write_bytes(flash)
     nm=subprocess.check_output(['m68k-linux-gnu-nm','-n',str(APP/'BibleReader.elf')],text=True)
     symbols={s[2]:int(s[0],16)for line in nm.splitlines()if len(s:=line.split())==3}

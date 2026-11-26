@@ -1,0 +1,157 @@
+{
+  "Serif": [
+    {
+      "name": "Liberation Serif",
+      "directory": "/usr/share/fonts/truetype/liberation2",
+      "files": [
+        "LiberationSerif-Regular.ttf",
+        "LiberationSerif-Bold.ttf",
+        "LiberationSerif-Italic.ttf",
+        "LiberationSerif-BoldItalic.ttf"
+      ],
+      "provenance": "https://github.com/liberationfonts/liberation-fonts",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "name": "Times New Roman",
+      "directory": "~/.wine/drive_c/windows/Fonts",
+      "files": [
+        "times.ttf",
+        "timesbd.ttf",
+        "timesi.ttf",
+        "timesbi.ttf"
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/times-new-roman",
+      "license": "Proprietary Microsoft/Monotype font; installed local reference",
+      "hinting": "TrueType bytecode present in the installed files"
+    }
+  ],
+  "Sans": [
+    {
+      "name": "Liberation Sans",
+      "directory": "/usr/share/fonts/truetype/liberation2",
+      "files": [
+        "LiberationSans-Regular.ttf",
+        "LiberationSans-Bold.ttf",
+        "LiberationSans-Italic.ttf",
+        "LiberationSans-BoldItalic.ttf"
+      ],
+      "provenance": "https://github.com/liberationfonts/liberation-fonts",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "name": "Arial",
+      "directory": "~/.wine/drive_c/windows/Fonts",
+      "files": [
+        "arial.ttf",
+        "arialbd.ttf",
+        "ariali.ttf",
+        "arialbi.ttf"
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/arial",
+      "license": "Proprietary Microsoft/Monotype font; installed local reference",
+      "hinting": "TrueType bytecode present in the installed files"
+    },
+    {
+      "name": "Verdana",
+      "directory": "~/.wine/drive_c/windows/Fonts",
+      "files": [
+        "verdana.ttf",
+        "verdanab.ttf",
+        "verdanai.ttf",
+        "verdanaz.ttf"
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/verdana",
+      "license": "Proprietary Microsoft/Monotype font; installed local reference",
+      "hinting": "Hand-hinted screen family per Microsoft; installed TrueType bytecode verified"
+    }
+  ],
+  "Book": [
+    {
+      "name": "TeX Gyre Schola",
+      "directory": "/usr/share/texmf/fonts/opentype/public/tex-gyre",
+      "files": [
+        "texgyreschola-regular.otf",
+        "texgyreschola-bold.otf",
+        "texgyreschola-italic.otf",
+        "texgyreschola-bolditalic.otf"
+      ],
+      "provenance": "https://www.gust.org.pl/projects/e-foundry/tex-gyre/schola",
+      "license": "GUST Font License"
+    },
+    {
+      "name": "Georgia",
+      "directory": "~/.wine/drive_c/windows/Fonts",
+      "files": [
+        "georgia.ttf",
+        "georgiab.ttf",
+        "georgiai.ttf",
+        "georgiaz.ttf"
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/georgia",
+      "license": "Proprietary Microsoft/Monotype font; installed local reference",
+      "hinting": "TrueType bytecode present in the installed files"
+    },
+    {
+      "name": "Georgia 2.11 (Regular)",
+      "directory": "~/.local/share/fonts",
+      "files": [
+        "Georgia.ttf",
+        null,
+        null,
+        null
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/georgia",
+      "license": "Proprietary Microsoft font; installed local reference",
+      "hinting": "Older installed TrueType version 2.11; native bytecode verified"
+    }
+  ],
+  "Mono": [
+    {
+      "name": "Liberation Mono",
+      "directory": "/usr/share/fonts/truetype/liberation2",
+      "files": [
+        "LiberationMono-Regular.ttf",
+        "LiberationMono-Bold.ttf",
+        "LiberationMono-Italic.ttf",
+        "LiberationMono-BoldItalic.ttf"
+      ],
+      "provenance": "https://github.com/liberationfonts/liberation-fonts",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "name": "Courier New",
+      "directory": "~/.wine/drive_c/windows/Fonts",
+      "files": [
+        null,
+        null,
+        "couri.ttf",
+        null
+      ],
+      "optional": true,
+      "provenance": "https://learn.microsoft.com/en-us/typography/font-list/courier-new",
+      "license": "Proprietary Microsoft/Monotype font; installed local reference",
+      "hinting": "TrueType bytecode present in the installed files",
+      "availability": "Only Italic is installed locally; no synthesized missing styles"
+    }
+  ],
+  "Terminal": [
+    {
+      "name": "Liberation Mono (reference)",
+      "directory": "/usr/share/fonts/truetype/liberation2",
+      "files": [
+        "LiberationMono-Regular.ttf",
+        "LiberationMono-Bold.ttf",
+        "LiberationMono-Italic.ttf",
+        "LiberationMono-BoldItalic.ttf"
+      ],
+      "provenance": "https://github.com/liberationfonts/liberation-fonts",
+      "license": "SIL Open Font License 1.1"
+    }
+  ]
+}

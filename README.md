@@ -88,9 +88,9 @@ backend setup.
 ### After installation
 
 Disconnect the USB cable, press **Applets**, and choose the installed applet.
-On NEO/NEO2, also install `BetaWiseTerminal.OS3KApp` for MicroPython and UCBLogo.
+On NEO/NEO2, also install `BetaWiseTerminal-Medium.OS3KApp` for MicroPython and UCBLogo.
 The AS3000 uses its built-in text display and does not need this font applet.
-The [font guide](fonts/README.md) describes the optional
+The [font guide and visual specimens](fonts/README.md#font-specimens) describe the optional
 Small and Tiny variants; install only one font variant at a time because they
 share an applet ID.
 
@@ -105,6 +105,7 @@ AS3000 applets require System 3 firmware.
 | [MicroPython](applets/MicroPython/README.md) | ✓ | ✓ | ✓ | An interactive Python prompt, with four profiles to choose from. See the guide for features, keys, and limitations. |
 | [UCBLogo](applets/UCBLogo/README.md) | — | ✓ | ✓ | Turtle graphics and small Logo procedures. Requires the NEO graphics display. |
 | [BetaWise Terminal](fonts/README.md) | — | ✓ | ✓ | Monospaced fonts for more characters on the screen; also usable in AlphaWord. |
+| [BetaWise reading fonts](fonts/README.md#font-specimens) | — | ✓ | ✓ | Serif, Sans, Book and Mono in four sizes, with bold and italic styles. |
 | [Hello World](applets/HelloWorld/README.md) | ✓ | ✓ | ✓ | A minimal demonstration applet and starting point for developers. |
 | [DebugTool](applets/DebugTool/README.md) | ✓ | ✓ | ✓ | Low-level tools for firmware and SDK development. |
 | [File Manager](applets/FileManager/README.md) | ✓ | ✓ | ✓ | An experimental file browser with rename, move, and delete operations. Read its prototype limitations before use. |

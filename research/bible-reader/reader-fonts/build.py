@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build four-face, six-row ASCII Neo test fonts from installed X11 PCF assets."""
+"""Build four-face, six-row ASCII/curly-quote Neo test fonts from installed X11 PCF assets."""
 import hashlib
 import json
 from pathlib import Path
@@ -38,9 +38,10 @@ def build_fonts():
         for face, style in enumerate(styles):
             points = '10'
             path = Path('/usr/share/fonts/X11/75dpi') / f'{family}{style}{points}.pcf.gz'
-            original = load(path, 'iso8859-1', ord('?'))
-            # ASCII test fonts, not a mapping of the Neo's extended character set.
-            glyphs = [original[c] if 32 <= c < 127 else original[ord('?')] for c in range(256)]
+            original = load(path, 'cp1252', ord('?'))
+            # Neo-US quote positions 91..94 match CP1252. Other extended slots
+            # remain explicitly unsupported in these temporary demo fonts.
+            glyphs = [original[c] if 32 <= c < 127 or 0x91 <= c <= 0x94 else original[ord('?')] for c in range(256)]
             # Eleven-pixel cells need an empty last row for six rows on the LCD.
             trim_top = 3 if family == 'helv' else 2
             padded = []
@@ -74,7 +75,7 @@ def build_fonts():
             descriptors.append(f'{{{height},{max(widths)},{max(widths)*((height+7)//8)},0,'
                 f'widths_{face},offsets_{face},pixels_{face}}}')
             sources.append(dict(path=str(path), sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
-                height=height, trim_top=trim_top, shift_up=1 if family == 'ncen' else 0, coverage='ASCII 32..126; other slots use question mark'))
+                height=height, trim_top=trim_top, shift_up=1 if family == 'ncen' else 0, coverage='ASCII 32..126 and Neo curly quotes 91..94; other slots use question mark'))
         source = f'''#include "os3k.h"
 APPLET_HEADER_BEGIN
     APPLET_FLAGS(APPLET_FLAG_FONT | APPLET_FLAG_HIDDEN)

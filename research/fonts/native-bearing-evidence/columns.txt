@@ -1,0 +1,1823 @@
+=== 4206f4 ===
+004206f4 movem.l {  A6 A3 A2 D7 D6 D5 D4 D3 D2},-(SP)
+004206f8 subq.l #0x4,SP
+004206fa lea (0x2e,SP),A2
+004206fe lea (0x36,SP),A6
+00420702 move.l #0x1008001,D2
+00420708 move.l #0x1008000,D5
+0042070e move.w (0x32,SP),D6w
+00420712 move.w (0x3a,SP),D3w
+00420716 movea.l (0x40,SP),A1
+0042071a moveq #0x0,D0
+0042071c move.w D3w,D0w
+0042071e moveq #0x0,D1
+00420720 move.w D6w,D1w
+00420722 andi.l #0x7,D1
+00420728 add.l D1,D0
+0042072a moveq #0x8,D1
+0042072c cmp.l D1,D0
+0042072e bgt.b 0x0042079c
+00420730 moveq #0x7,D4
+00420732 move.w D6w,D0w
+00420734 and.b D0b,D4b
+00420736 move.b #-0x1,D7b
+0042073a lsl.b D4,D7b
+0042073c move.w D3w,D0w
+0042073e add.b D4b,D0b
+00420740 neg.b D0b
+00420742 addq.b #0x8,D0b
+00420744 move.l #0xff,D1
+0042074a asr.l D0,D1
+0042074c and.b D1b,D7b
+0042074e move.b D7b,D3b
+00420750 not.b D3b
+00420752 moveq #0x0,D0
+00420754 move.w D6w,D0w
+00420756 asr.l #0x3,D0
+00420758 andi.b #0xf,D0b
+0042075c ori.b #-0x50,D0b
+00420760 movea.l D5,A0
+00420762 move.b D0b,(A0)
+00420764 moveq #0x0,D0
+00420766 move.w (A2),D0w
+00420768 asr.l #0x4,D0
+0042076a bset.l 0x4,D0
+0042076e move.b D0b,(A0)
+00420770 move.w (A2),D0w
+00420772 andi.b #0xf,D0b
+00420776 move.b D0b,(A0)
+00420778 move.b #-0x20,(A0)
+0042077c bra.b 0x00420790
+0042077e movea.l D2,A0
+00420780 tst.b (A0)
+00420782 move.b (A0),D6b
+00420784 and.b D3b,D6b
+00420786 move.b (A1)+,D0b
+00420788 lsl.b D4,D0b
+0042078a and.b D7b,D0b
+0042078c or.b D0b,D6b
+0042078e move.b D6b,(A0)
+00420790 move.w (A6),D6w
+00420792 subq.w #0x1,(A6)
+00420794 tst.w D6w
+00420796 bne.b 0x0042077e
+00420798 bra.w 0x00420978
+0042079c moveq #0x7,D0
+0042079e and.b D6b,D0b
+004207a0 beq.w 0x00420874
+004207a4 move.w D6w,D0w
+004207a6 andi.b #0x7,D0b
+004207aa move.b D0b,(0x3,SP)
+004207ae move.b #-0x1,D1b
+004207b2 lsl.b D0,D1b
+004207b4 move.b D1b,(0x2,SP)
+004207b8 not.b D1b
+004207ba move.b D1b,(0x1,SP)
+004207be movea.l A1,A3
+004207c0 move.w (A6),D4w
+004207c2 moveq #0x0,D0
+004207c4 move.w D6w,D0w
+004207c6 asr.l #0x3,D0
+004207c8 andi.b #0xf,D0b
+004207cc ori.b #-0x50,D0b
+004207d0 movea.l D5,A0
+004207d2 move.b D0b,(A0)
+004207d4 moveq #0x0,D0
+004207d6 move.w (A2),D0w
+004207d8 asr.l #0x4,D0
+004207da bset.l 0x4,D0
+004207de move.b D0b,(A0)
+004207e0 move.w (A2),D0w
+004207e2 andi.b #0xf,D0b
+004207e6 move.b D0b,(A0)
+004207e8 move.b #-0x20,(A0)
+004207ec bra.b 0x00420808
+004207ee movea.l D2,A0
+004207f0 tst.b (A0)
+004207f2 move.b (A0),D7b
+004207f4 and.b (0x1,SP),D7b
+004207f8 move.b (A3)+,D0b
+004207fa move.b (0x3,SP),D1b
+004207fe lsl.b D1,D0b
+00420800 and.b (0x2,SP),D0b
+00420804 or.b D0b,D7b
+00420806 move.b D7b,(A0)
+00420808 move.w D4w,D7w
+0042080a subq.w #0x1,D4w
+0042080c tst.w D7w
+0042080e bne.b 0x004207ee
+00420810 movea.l D5,A0
+00420812 move.b #-0x12,(A0)
+00420816 moveq #0x0,D0
+00420818 move.w (0x3e,SP),D0w
+0042081c adda.l D0,A3
+0042081e moveq #0x7,D4
+00420820 move.w D6w,D0w
+00420822 neg.b D0b
+00420824 addq.b #0x8,D0b
+00420826 and.b D0b,D4b
+00420828 clr.w D0w
+0042082a move.b D4b,D0b
+0042082c add.w D0w,D6w
+0042082e sub.w D0w,D3w
+00420830 bra.b 0x0042087c
+00420832 move.w (A6),D7w
+00420834 moveq #0x0,D0
+00420836 move.w D6w,D0w
+00420838 asr.l #0x3,D0
+0042083a andi.b #0xf,D0b
+0042083e ori.b #-0x50,D0b
+00420842 movea.l D5,A0
+00420844 move.b D0b,(A0)
+00420846 moveq #0x0,D0
+00420848 move.w (A2),D0w
+0042084a asr.l #0x4,D0
+0042084c bset.l 0x4,D0
+00420850 move.b D0b,(A0)
+00420852 move.w (A2),D0w
+00420854 andi.b #0xf,D0b
+00420858 move.b D0b,(A0)
+0042085a bra.b 0x00420860
+0042085c movea.l D2,A0
+0042085e move.b (A1)+,(A0)
+00420860 move.w D7w,D4w
+00420862 subq.w #0x1,D7w
+00420864 tst.w D4w
+00420866 bne.b 0x0042085c
+00420868 moveq #0x0,D0
+0042086a move.w (0x3e,SP),D0w
+0042086e adda.l D0,A1
+00420870 subq.w #0x8,D3w
+00420872 addq.w #0x8,D6w
+00420874 cmpi.w #0x8,D3w
+00420878 bcc.b 0x00420832
+0042087a clr.b D4b
+0042087c tst.b D4b
+0042087e beq.b 0x004208f4
+00420880 move.b D4b,(0x2,SP)
+00420884 move.b D4b,D0b
+00420886 neg.b D0b
+00420888 addq.b #0x8,D0b
+0042088a move.b D0b,(0x3,SP)
+0042088e bra.b 0x004208ee
+00420890 move.w (A6),D7w
+00420892 moveq #0x0,D0
+00420894 move.w D6w,D0w
+00420896 asr.l #0x3,D0
+00420898 andi.b #0xf,D0b
+0042089c ori.b #-0x50,D0b
+004208a0 movea.l D5,A0
+004208a2 move.b D0b,(A0)
+004208a4 moveq #0x0,D0
+004208a6 move.w (A2),D0w
+004208a8 asr.l #0x4,D0
+004208aa bset.l 0x4,D0
+004208ae move.b D0b,(A0)
+004208b0 move.w (A2),D0w
+004208b2 andi.b #0xf,D0b
+004208b6 move.b D0b,(A0)
+004208b8 bra.b 0x004208d8
+004208ba moveq #0x0,D0
+004208bc move.b (A1)+,D0b
+004208be move.b (0x2,SP),D1b
+004208c2 asr.l D1,D0
+004208c4 move.b (A3)+,D1b
+004208c6 move.b D0b,(SP)
+004208c8 move.b (0x3,SP),D0b
+004208cc lsl.b D0,D1b
+004208ce or.b (SP),D1b
+004208d0 move.b D1b,(0x1,SP)
+004208d4 movea.l D2,A0
+004208d6 move.b D1b,(A0)
+004208d8 move.w D7w,(SP)
+004208da subq.w #0x1,D7w
+004208dc tst.w (SP)
+004208de bne.b 0x004208ba
+004208e0 moveq #0x0,D0
+004208e2 move.w (0x3e,SP),D0w
+004208e6 adda.l D0,A1
+004208e8 adda.l D0,A3
+004208ea subq.w #0x8,D3w
+004208ec addq.w #0x8,D6w
+004208ee cmpi.w #0x8,D3w
+004208f2 bcc.b 0x00420890
+004208f4 tst.w D3w
+004208f6 beq.w 0x0042097e
+004208fa moveq #0x0,D0
+004208fc move.b D4b,D0b
+004208fe neg.l D0
+00420900 addq.l #0x8,D0
+00420902 moveq #0x0,D1
+00420904 move.w D3w,D1w
+00420906 cmp.l D1,D0
+00420908 blt.b 0x0042090c
+0042090a movea.l A1,A3
+0042090c move.b #-0x1,D7b
+00420910 lsl.b D3,D7b
+00420912 move.b D7b,D0b
+00420914 not.b D0b
+00420916 move.b D0b,(0x2,SP)
+0042091a move.b D4b,(0x3,SP)
+0042091e moveq #0x8,D3
+00420920 sub.b D4b,D3b
+00420922 move.w (A6),D4w
+00420924 moveq #0x0,D0
+00420926 move.w D6w,D0w
+00420928 asr.l #0x3,D0
+0042092a andi.b #0xf,D0b
+0042092e ori.b #-0x50,D0b
+00420932 movea.l D5,A0
+00420934 move.b D0b,(A0)
+00420936 moveq #0x0,D0
+00420938 move.w (A2),D0w
+0042093a asr.l #0x4,D0
+0042093c bset.l 0x4,D0
+00420940 move.b D0b,(A0)
+00420942 move.w (A2),D0w
+00420944 andi.b #0xf,D0b
+00420948 move.b D0b,(A0)
+0042094a move.b #-0x20,(A0)
+0042094e bra.b 0x00420970
+00420950 movea.l D2,A0
+00420952 tst.b (A0)
+00420954 move.b (A0),D6b
+00420956 and.b D7b,D6b
+00420958 moveq #0x0,D0
+0042095a move.b (A1)+,D0b
+0042095c move.b (0x3,SP),D1b
+00420960 asr.l D1,D0
+00420962 move.b (A3)+,D1b
+00420964 lsl.b D3,D1b
+00420966 or.b D1b,D0b
+00420968 and.b (0x2,SP),D0b
+0042096c or.b D0b,D6b
+0042096e move.b D6b,(A0)
+00420970 move.w D4w,D6w
+00420972 subq.w #0x1,D4w
+00420974 tst.w D6w
+00420976 bne.b 0x00420950
+00420978 movea.l D5,A0
+0042097a move.b #-0x12,(A0)
+0042097e addq.l #0x4,SP
+00420980 movem.l (SP)+,{  D2 D3 D4 D5 D6 D7 A2 A3 A6}
+00420984 rts
+
+void FUN_004206f4(byte param_1,ushort param_2,short param_3,ushort param_4,ushort param_5,
+                 byte *param_6)
+
+{
+  uint uVar1;
+  byte bVar3;
+  short sVar2;
+  byte bVar4;
+  byte *unaff_A3;
+  byte *pbVar5;
+  
+  uVar1 = (uint)param_4;
+  bVar3 = (byte)param_2;
+  if (uVar1 + (param_2 & 7) < 9) {
+    bVar3 = bVar3 & 7;
+    bVar4 = -1 << bVar3 & (byte)(0xff >> ((byte)(8 - ((char)param_4 + bVar3)) & 0x3f));
+    while (param_3 != 0) {
+      DAT_01008001 = DAT_01008001 & ~bVar4 | *param_6 << bVar3 & bVar4;
+      param_6 = param_6 + 1;
+      param_3 = param_3 + -1;
+    }
+  }
+  else {
+    if ((param_2 & 7) == 0) {
+      for (; 7 < (ushort)uVar1; uVar1 = (uint)(ushort)((ushort)uVar1 - 8)) {
+        DAT_01008000 = param_1 & 0xf;
+        sVar2 = param_3;
+        while (sVar2 != 0) {
+          DAT_01008001 = *param_6;
+          param_6 = param_6 + 1;
+          sVar2 = sVar2 + -1;
+        }
+        param_6 = param_6 + param_5;
+      }
+      bVar3 = 0;
+    }
+    else {
+      bVar4 = -1 << (bVar3 & 7);
+      pbVar5 = param_6;
+      sVar2 = param_3;
+      while (sVar2 != 0) {
+        DAT_01008001 = DAT_01008001 & ~bVar4 | *pbVar5 << (bVar3 & 7) & bVar4;
+        pbVar5 = pbVar5 + 1;
+        sVar2 = sVar2 + -1;
+      }
+      DAT_01008000 = 0xee;
+      unaff_A3 = pbVar5 + param_5;
+      bVar3 = 8 - bVar3 & 7;
+      uVar1 = (uint)(ushort)(param_4 - bVar3);
+    }
+    if (bVar3 != 0) {
+      for (; 7 < (ushort)uVar1; uVar1 = (uint)(ushort)((ushort)uVar1 - 8)) {
+        DAT_01008000 = param_1 & 0xf;
+        sVar2 = param_3;
+        while (sVar2 != 0) {
+          DAT_01008001 = *unaff_A3 << ((byte)(8 - bVar3) & 0x3f) |
+                         (byte)((int)(uint)*param_6 >> bVar3);
+          param_6 = param_6 + 1;
+          unaff_A3 = unaff_A3 + 1;
+          sVar2 = sVar2 + -1;
+        }
+        param_6 = param_6 + param_5;
+        unaff_A3 = unaff_A3 + param_5;
+      }
+    }
+    if ((short)uVar1 == 0) {
+      return;
+    }
+    if ((int)uVar1 <= (int)(8 - (uint)bVar3)) {
+      unaff_A3 = param_6;
+    }
+    bVar4 = -1 << (uVar1 & 0x3f);
+    while (param_3 != 0) {
+      DAT_01008001 = DAT_01008001 & bVar4 |
+                     ((byte)((int)(uint)*param_6 >> bVar3) | *unaff_A3 << ((byte)(8 - bVar3) & 0x3f)
+                     ) & ~bVar4;
+      param_6 = param_6 + 1;
+      unaff_A3 = unaff_A3 + 1;
+      param_3 = param_3 + -1;
+    }
+  }
+  DAT_01008000 = 0xee;
+  return;
+}
+
+
+=== 420986 ===
+00420986 movem.l {  A6 A3 A2 D7 D6 D5 D4 D3 D2},-(SP)
+0042098a subq.l #0x4,SP
+0042098c lea (0x2e,SP),A2
+00420990 lea (0x36,SP),A6
+00420994 move.w (0x32,SP),D6w
+00420998 move.w (0x3a,SP),D3w
+0042099c movea.l (0x40,SP),A1
+004209a0 moveq #0x0,D0
+004209a2 move.w (0x3e,SP),D0w
+004209a6 adda.l D0,A1
+004209a8 move.l #0x1000000,D5
+004209ae move.l #0x1000001,D2
+004209b4 moveq #0x0,D0
+004209b6 move.w D3w,D0w
+004209b8 moveq #0x0,D1
+004209ba move.w D6w,D1w
+004209bc andi.l #0x7,D1
+004209c2 add.l D1,D0
+004209c4 moveq #0x8,D1
+004209c6 cmp.l D1,D0
+004209c8 bgt.b 0x00420a36
+004209ca moveq #0x7,D4
+004209cc move.w D6w,D0w
+004209ce and.b D0b,D4b
+004209d0 move.b #-0x1,D7b
+004209d4 lsl.b D4,D7b
+004209d6 move.w D3w,D0w
+004209d8 add.b D4b,D0b
+004209da neg.b D0b
+004209dc addq.b #0x8,D0b
+004209de move.l #0xff,D1
+004209e4 asr.l D0,D1
+004209e6 and.b D1b,D7b
+004209e8 move.b D7b,D3b
+004209ea not.b D3b
+004209ec moveq #0x0,D0
+004209ee move.w D6w,D0w
+004209f0 asr.l #0x3,D0
+004209f2 andi.b #0xf,D0b
+004209f6 ori.b #-0x50,D0b
+004209fa movea.l D5,A0
+004209fc move.b D0b,(A0)
+004209fe moveq #0x0,D0
+00420a00 move.w (A2),D0w
+00420a02 asr.l #0x4,D0
+00420a04 bset.l 0x4,D0
+00420a08 move.b D0b,(A0)
+00420a0a move.w (A2),D0w
+00420a0c andi.b #0xf,D0b
+00420a10 move.b D0b,(A0)
+00420a12 move.b #-0x20,(A0)
+00420a16 bra.b 0x00420a2a
+00420a18 movea.l D2,A0
+00420a1a tst.b (A0)
+00420a1c move.b (A0),D6b
+00420a1e and.b D3b,D6b
+00420a20 move.b (A1)+,D0b
+00420a22 lsl.b D4,D0b
+00420a24 and.b D7b,D0b
+00420a26 or.b D0b,D6b
+00420a28 move.b D6b,(A0)
+00420a2a move.w (A6),D6w
+00420a2c subq.w #0x1,(A6)
+00420a2e tst.w D6w
+00420a30 bne.b 0x00420a18
+00420a32 bra.w 0x00420c12
+00420a36 moveq #0x7,D0
+00420a38 and.b D6b,D0b
+00420a3a beq.w 0x00420b0e
+00420a3e move.w D6w,D0w
+00420a40 andi.b #0x7,D0b
+00420a44 move.b D0b,(0x3,SP)
+00420a48 move.b #-0x1,D1b
+00420a4c lsl.b D0,D1b
+00420a4e move.b D1b,(0x2,SP)
+00420a52 not.b D1b
+00420a54 move.b D1b,(0x1,SP)
+00420a58 movea.l A1,A3
+00420a5a move.w (A6),D4w
+00420a5c moveq #0x0,D0
+00420a5e move.w D6w,D0w
+00420a60 asr.l #0x3,D0
+00420a62 andi.b #0xf,D0b
+00420a66 ori.b #-0x50,D0b
+00420a6a movea.l D5,A0
+00420a6c move.b D0b,(A0)
+00420a6e moveq #0x0,D0
+00420a70 move.w (A2),D0w
+00420a72 asr.l #0x4,D0
+00420a74 bset.l 0x4,D0
+00420a78 move.b D0b,(A0)
+00420a7a move.w (A2),D0w
+00420a7c andi.b #0xf,D0b
+00420a80 move.b D0b,(A0)
+00420a82 move.b #-0x20,(A0)
+00420a86 bra.b 0x00420aa2
+00420a88 movea.l D2,A0
+00420a8a tst.b (A0)
+00420a8c move.b (A0),D7b
+00420a8e and.b (0x1,SP),D7b
+00420a92 move.b (A3)+,D0b
+00420a94 move.b (0x3,SP),D1b
+00420a98 lsl.b D1,D0b
+00420a9a and.b (0x2,SP),D0b
+00420a9e or.b D0b,D7b
+00420aa0 move.b D7b,(A0)
+00420aa2 move.w D4w,D7w
+00420aa4 subq.w #0x1,D4w
+00420aa6 tst.w D7w
+00420aa8 bne.b 0x00420a88
+00420aaa movea.l D5,A0
+00420aac move.b #-0x12,(A0)
+00420ab0 moveq #0x0,D0
+00420ab2 move.w (0x3e,SP),D0w
+00420ab6 adda.l D0,A3
+00420ab8 moveq #0x7,D4
+00420aba move.w D6w,D0w
+00420abc neg.b D0b
+00420abe addq.b #0x8,D0b
+00420ac0 and.b D0b,D4b
+00420ac2 clr.w D0w
+00420ac4 move.b D4b,D0b
+00420ac6 add.w D0w,D6w
+00420ac8 sub.w D0w,D3w
+00420aca bra.b 0x00420b16
+00420acc move.w (A6),D7w
+00420ace moveq #0x0,D0
+00420ad0 move.w D6w,D0w
+00420ad2 asr.l #0x3,D0
+00420ad4 andi.b #0xf,D0b
+00420ad8 ori.b #-0x50,D0b
+00420adc movea.l D5,A0
+00420ade move.b D0b,(A0)
+00420ae0 moveq #0x0,D0
+00420ae2 move.w (A2),D0w
+00420ae4 asr.l #0x4,D0
+00420ae6 bset.l 0x4,D0
+00420aea move.b D0b,(A0)
+00420aec move.w (A2),D0w
+00420aee andi.b #0xf,D0b
+00420af2 move.b D0b,(A0)
+00420af4 bra.b 0x00420afa
+00420af6 movea.l D2,A0
+00420af8 move.b (A1)+,(A0)
+00420afa move.w D7w,D4w
+00420afc subq.w #0x1,D7w
+00420afe tst.w D4w
+00420b00 bne.b 0x00420af6
+00420b02 moveq #0x0,D0
+00420b04 move.w (0x3e,SP),D0w
+00420b08 adda.l D0,A1
+00420b0a subq.w #0x8,D3w
+00420b0c addq.w #0x8,D6w
+00420b0e cmpi.w #0x8,D3w
+00420b12 bcc.b 0x00420acc
+00420b14 clr.b D4b
+00420b16 tst.b D4b
+00420b18 beq.b 0x00420b8e
+00420b1a move.b D4b,(0x2,SP)
+00420b1e move.b D4b,D0b
+00420b20 neg.b D0b
+00420b22 addq.b #0x8,D0b
+00420b24 move.b D0b,(0x3,SP)
+00420b28 bra.b 0x00420b88
+00420b2a move.w (A6),D7w
+00420b2c moveq #0x0,D0
+00420b2e move.w D6w,D0w
+00420b30 asr.l #0x3,D0
+00420b32 andi.b #0xf,D0b
+00420b36 ori.b #-0x50,D0b
+00420b3a movea.l D5,A0
+00420b3c move.b D0b,(A0)
+00420b3e moveq #0x0,D0
+00420b40 move.w (A2),D0w
+00420b42 asr.l #0x4,D0
+00420b44 bset.l 0x4,D0
+00420b48 move.b D0b,(A0)
+00420b4a move.w (A2),D0w
+00420b4c andi.b #0xf,D0b
+00420b50 move.b D0b,(A0)
+00420b52 bra.b 0x00420b72
+00420b54 moveq #0x0,D0
+00420b56 move.b (A1)+,D0b
+00420b58 move.b (0x2,SP),D1b
+00420b5c asr.l D1,D0
+00420b5e move.b (A3)+,D1b
+00420b60 move.b D0b,(SP)
+00420b62 move.b (0x3,SP),D0b
+00420b66 lsl.b D0,D1b
+00420b68 or.b (SP),D1b
+00420b6a move.b D1b,(0x1,SP)
+00420b6e movea.l D2,A0
+00420b70 move.b D1b,(A0)
+00420b72 move.w D7w,(SP)
+00420b74 subq.w #0x1,D7w
+00420b76 tst.w (SP)
+00420b78 bne.b 0x00420b54
+00420b7a moveq #0x0,D0
+00420b7c move.w (0x3e,SP),D0w
+00420b80 adda.l D0,A1
+00420b82 adda.l D0,A3
+00420b84 subq.w #0x8,D3w
+00420b86 addq.w #0x8,D6w
+00420b88 cmpi.w #0x8,D3w
+00420b8c bcc.b 0x00420b2a
+00420b8e tst.w D3w
+00420b90 beq.w 0x00420c18
+00420b94 moveq #0x0,D0
+00420b96 move.b D4b,D0b
+00420b98 neg.l D0
+00420b9a addq.l #0x8,D0
+00420b9c moveq #0x0,D1
+00420b9e move.w D3w,D1w
+00420ba0 cmp.l D1,D0
+00420ba2 blt.b 0x00420ba6
+00420ba4 movea.l A1,A3
+00420ba6 move.b #-0x1,D7b
+00420baa lsl.b D3,D7b
+00420bac move.b D7b,D0b
+00420bae not.b D0b
+00420bb0 move.b D0b,(0x2,SP)
+00420bb4 move.b D4b,(0x3,SP)
+00420bb8 moveq #0x8,D3
+00420bba sub.b D4b,D3b
+00420bbc move.w (A6),D4w
+00420bbe moveq #0x0,D0
+00420bc0 move.w D6w,D0w
+00420bc2 asr.l #0x3,D0
+00420bc4 andi.b #0xf,D0b
+00420bc8 ori.b #-0x50,D0b
+00420bcc movea.l D5,A0
+00420bce move.b D0b,(A0)
+00420bd0 moveq #0x0,D0
+00420bd2 move.w (A2),D0w
+00420bd4 asr.l #0x4,D0
+00420bd6 bset.l 0x4,D0
+00420bda move.b D0b,(A0)
+00420bdc move.w (A2),D0w
+00420bde andi.b #0xf,D0b
+00420be2 move.b D0b,(A0)
+00420be4 move.b #-0x20,(A0)
+00420be8 bra.b 0x00420c0a
+00420bea movea.l D2,A0
+00420bec tst.b (A0)
+00420bee move.b (A0),D6b
+00420bf0 and.b D7b,D6b
+00420bf2 moveq #0x0,D0
+00420bf4 move.b (A1)+,D0b
+00420bf6 move.b (0x3,SP),D1b
+00420bfa asr.l D1,D0
+00420bfc move.b (A3)+,D1b
+00420bfe lsl.b D3,D1b
+00420c00 or.b D1b,D0b
+00420c02 and.b (0x2,SP),D0b
+00420c06 or.b D0b,D6b
+00420c08 move.b D6b,(A0)
+00420c0a move.w D4w,D6w
+00420c0c subq.w #0x1,D4w
+00420c0e tst.w D6w
+00420c10 bne.b 0x00420bea
+00420c12 movea.l D5,A0
+00420c14 move.b #-0x12,(A0)
+00420c18 addq.l #0x4,SP
+00420c1a movem.l (SP)+,{  D2 D3 D4 D5 D6 D7 A2 A3 A6}
+00420c1e rts
+
+void FUN_00420986(byte param_1,ushort param_2,short param_3,ushort param_4,ushort param_5,
+                 int param_6)
+
+{
+  uint uVar1;
+  byte bVar3;
+  short sVar2;
+  byte bVar4;
+  byte *pbVar5;
+  byte *unaff_A3;
+  byte *pbVar6;
+  
+  uVar1 = (uint)param_4;
+  pbVar5 = (byte *)((uint)param_5 + param_6);
+  bVar3 = (byte)param_2;
+  if (uVar1 + (param_2 & 7) < 9) {
+    bVar3 = bVar3 & 7;
+    bVar4 = -1 << bVar3 & (byte)(0xff >> ((byte)(8 - ((char)param_4 + bVar3)) & 0x3f));
+    while (param_3 != 0) {
+      DAT_01000001 = DAT_01000001 & ~bVar4 | *pbVar5 << bVar3 & bVar4;
+      pbVar5 = pbVar5 + 1;
+      param_3 = param_3 + -1;
+    }
+  }
+  else {
+    if ((param_2 & 7) == 0) {
+      for (; 7 < (ushort)uVar1; uVar1 = (uint)(ushort)((ushort)uVar1 - 8)) {
+        DAT_01000000 = param_1 & 0xf;
+        sVar2 = param_3;
+        while (sVar2 != 0) {
+          DAT_01000001 = *pbVar5;
+          pbVar5 = pbVar5 + 1;
+          sVar2 = sVar2 + -1;
+        }
+        pbVar5 = pbVar5 + param_5;
+      }
+      bVar3 = 0;
+    }
+    else {
+      bVar4 = -1 << (bVar3 & 7);
+      pbVar6 = pbVar5;
+      sVar2 = param_3;
+      while (sVar2 != 0) {
+        DAT_01000001 = DAT_01000001 & ~bVar4 | *pbVar6 << (bVar3 & 7) & bVar4;
+        pbVar6 = pbVar6 + 1;
+        sVar2 = sVar2 + -1;
+      }
+      DAT_01000000 = 0xee;
+      unaff_A3 = pbVar6 + param_5;
+      bVar3 = 8 - bVar3 & 7;
+      uVar1 = (uint)(ushort)(param_4 - bVar3);
+    }
+    if (bVar3 != 0) {
+      for (; 7 < (ushort)uVar1; uVar1 = (uint)(ushort)((ushort)uVar1 - 8)) {
+        DAT_01000000 = param_1 & 0xf;
+        sVar2 = param_3;
+        while (sVar2 != 0) {
+          DAT_01000001 = *unaff_A3 << ((byte)(8 - bVar3) & 0x3f) |
+                         (byte)((int)(uint)*pbVar5 >> bVar3);
+          pbVar5 = pbVar5 + 1;
+          unaff_A3 = unaff_A3 + 1;
+          sVar2 = sVar2 + -1;
+        }
+        pbVar5 = pbVar5 + param_5;
+        unaff_A3 = unaff_A3 + param_5;
+      }
+    }
+    if ((short)uVar1 == 0) {
+      return;
+    }
+    if ((int)uVar1 <= (int)(8 - (uint)bVar3)) {
+      unaff_A3 = pbVar5;
+    }
+    bVar4 = -1 << (uVar1 & 0x3f);
+    while (param_3 != 0) {
+      DAT_01000001 = DAT_01000001 & bVar4 |
+                     ((byte)((int)(uint)*pbVar5 >> bVar3) | *unaff_A3 << ((byte)(8 - bVar3) & 0x3f))
+                     & ~bVar4;
+      pbVar5 = pbVar5 + 1;
+      unaff_A3 = unaff_A3 + 1;
+      param_3 = param_3 + -1;
+    }
+  }
+  DAT_01000000 = 0xee;
+  return;
+}
+
+
+=== 420d82 ===
+00420d82 movem.l {  A6 A3 A2 D7 D6 D5 D4 D3 D2},-(SP)
+00420d86 subq.l #0x6,SP
+00420d88 lea (0x3c,SP),A2
+00420d8c lea (0x30,SP),A6
+00420d90 move.l #0x1008000,D4
+00420d96 move.l #0x1008001,D3
+00420d9c move.w (0x34,SP),D6w
+00420da0 movea.l (0x42,SP),A1
+00420da4 moveq #0x0,D0
+00420da6 move.w (A2),D0w
+00420da8 moveq #0x0,D1
+00420daa move.w D6w,D1w
+00420dac andi.l #0x7,D1
+00420db2 add.l D1,D0
+00420db4 moveq #0x8,D1
+00420db6 cmp.l D1,D0
+00420db8 bgt.w 0x00420e9a
+00420dbc moveq #0x7,D5
+00420dbe move.w D6w,D0w
+00420dc0 and.b D0b,D5b
+00420dc2 move.b #-0x1,D2b
+00420dc6 lsl.b D5,D2b
+00420dc8 move.w (A2),D0w
+00420dca add.b D5b,D0b
+00420dcc neg.b D0b
+00420dce addq.b #0x8,D0b
+00420dd0 move.l #0xff,D1
+00420dd6 asr.l D0,D1
+00420dd8 and.b D1b,D2b
+00420dda move.b D2b,D0b
+00420ddc not.b D0b
+00420dde move.b D0b,(0x5,SP)
+00420de2 moveq #0x0,D0
+00420de4 move.w D6w,D0w
+00420de6 asr.l #0x3,D0
+00420de8 andi.b #0xf,D0b
+00420dec ori.b #-0x50,D0b
+00420df0 movea.l D4,A0
+00420df2 move.b D0b,(A0)
+00420df4 moveq #0x0,D0
+00420df6 move.w (A6),D0w
+00420df8 asr.l #0x4,D0
+00420dfa bset.l 0x4,D0
+00420dfe move.b D0b,(A0)
+00420e00 move.w (A6),D0w
+00420e02 andi.b #0xf,D0b
+00420e06 move.b D0b,(A0)
+00420e08 move.b #-0x20,(A0)
+00420e0c bra.b 0x00420e88
+00420e0e movea.l D3,A0
+00420e10 tst.b (A0)
+00420e12 move.b (A0),D7b
+00420e14 move.b D7b,D6b
+00420e16 and.b D2b,D6b
+00420e18 move.b (0x49,SP),D0b
+00420e1c subq.b #0x1,D0b
+00420e1e cmpi.b #0x6,D0b
+00420e22 bhi.b 0x00420e84
+00420e24 ext.w D0w
+00420e26 add.w D0w,D0w
+00420e28 move.w (0x420e30,PC,D0w*0x1),D0w
+00420e2c jmp (0x420e30,PC,D0w*0x1)
+00420e84 movea.l D3,A0
+00420e86 move.b D7b,(A0)
+00420e88 move.w (0x38,SP),D7w
+00420e8c subq.w #0x1,(0x38,SP)
+00420e90 tst.w D7w
+00420e92 bne.w 0x00420e0e
+00420e96 bra.w 0x00421282
+00420e9a moveq #0x7,D0
+00420e9c and.b D6b,D0b
+00420e9e beq.w 0x0042103c
+00420ea2 moveq #0x7,D2
+00420ea4 move.w D6w,D0w
+00420ea6 and.b D0b,D2b
+00420ea8 move.b #-0x1,D0b
+00420eac lsl.b D2,D0b
+00420eae move.b D0b,(0x5,SP)
+00420eb2 not.b D0b
+00420eb4 move.b D0b,(0x4,SP)
+00420eb8 movea.l A1,A3
+00420eba move.w (0x38,SP),(0x2,SP)
+00420ec0 moveq #0x0,D0
+00420ec2 move.w D6w,D0w
+00420ec4 asr.l #0x3,D0
+00420ec6 andi.b #0xf,D0b
+00420eca ori.b #-0x50,D0b
+00420ece movea.l D4,A0
+00420ed0 move.b D0b,(A0)
+00420ed2 moveq #0x0,D0
+00420ed4 move.w (A6),D0w
+00420ed6 asr.l #0x4,D0
+00420ed8 bset.l 0x4,D0
+00420edc move.b D0b,(A0)
+00420ede move.w (A6),D0w
+00420ee0 andi.b #0xf,D0b
+00420ee4 move.b D0b,(A0)
+00420ee6 move.b #-0x20,(A0)
+00420eea bra.b 0x00420f6a
+00420eec movea.l D3,A0
+00420eee tst.b (A0)
+00420ef0 move.b (A0),D7b
+00420ef2 move.b D7b,D5b
+00420ef4 and.b (0x5,SP),D5b
+00420ef8 move.b (0x49,SP),D0b
+00420efc subq.b #0x1,D0b
+00420efe cmpi.b #0x6,D0b
+00420f02 bhi.b 0x00420f66
+00420f04 ext.w D0w
+00420f06 add.w D0w,D0w
+00420f08 move.w (0x420f10,PC,D0w*0x1),D0w
+00420f0c jmp (0x420f10,PC,D0w*0x1)
+00420f66 movea.l D3,A0
+00420f68 move.b D7b,(A0)
+00420f6a move.w (0x2,SP),D7w
+00420f6e subq.w #0x1,(0x2,SP)
+00420f72 tst.w D7w
+00420f74 bne.w 0x00420eec
+00420f78 movea.l D4,A0
+00420f7a move.b #-0x12,(A0)
+00420f7e moveq #0x0,D0
+00420f80 move.w (0x40,SP),D0w
+00420f84 adda.l D0,A3
+00420f86 move.w D6w,D0w
+00420f88 neg.b D0b
+00420f8a addq.b #0x8,D0b
+00420f8c andi.b #0x7,D0b
+00420f90 move.b D0b,(0x3,SP)
+00420f94 clr.w D1w
+00420f96 move.b D0b,D1b
+00420f98 add.w D1w,D6w
+00420f9a sub.w D1w,(A2)
+00420f9c bra.w 0x00421048
+00420fa0 move.w (0x38,SP),D5w
+00420fa4 moveq #0x0,D0
+00420fa6 move.w D6w,D0w
+00420fa8 asr.l #0x3,D0
+00420faa andi.b #0xf,D0b
+00420fae ori.b #-0x50,D0b
+00420fb2 movea.l D4,A0
+00420fb4 move.b D0b,(A0)
+00420fb6 moveq #0x0,D0
+00420fb8 move.w (A6),D0w
+00420fba asr.l #0x4,D0
+00420fbc bset.l 0x4,D0
+00420fc0 move.b D0b,(A0)
+00420fc2 move.w (A6),D0w
+00420fc4 andi.b #0xf,D0b
+00420fc8 move.b D0b,(A0)
+00420fca move.b #-0x20,(A0)
+00420fce bra.b 0x00421022
+00420fd0 movea.l D3,A0
+00420fd2 tst.b (A0)
+00420fd4 move.b (A0),D7b
+00420fd6 move.b (0x49,SP),D0b
+00420fda subq.b #0x1,D0b
+00420fdc cmpi.b #0x6,D0b
+00420fe0 bhi.b 0x0042101e
+00420fe2 ext.w D0w
+00420fe4 add.w D0w,D0w
+00420fe6 move.w (0x420fee,PC,D0w*0x1),D0w
+00420fea jmp (0x420fee,PC,D0w*0x1)
+0042101e movea.l D3,A0
+00421020 move.b D7b,(A0)
+00421022 move.w D5w,D7w
+00421024 subq.w #0x1,D5w
+00421026 tst.w D7w
+00421028 bne.b 0x00420fd0
+0042102a movea.l D4,A0
+0042102c move.b #-0x12,(A0)
+00421030 moveq #0x0,D0
+00421032 move.w (0x40,SP),D0w
+00421036 adda.l D0,A1
+00421038 subq.w #0x8,(A2)
+0042103a addq.w #0x8,D6w
+0042103c cmpi.w #0x8,(A2)
+00421040 bcc.w 0x00420fa0
+00421044 clr.b (0x3,SP)
+00421048 tst.b (0x3,SP)
+0042104c beq.w 0x00421142
+00421050 move.b (0x3,SP),D2b
+00421054 moveq #0x8,D5
+00421056 sub.b D2b,D5b
+00421058 bra.w 0x0042113a
+0042105c move.w (0x38,SP),(0x4,SP)
+00421062 moveq #0x0,D0
+00421064 move.w D6w,D0w
+00421066 asr.l #0x3,D0
+00421068 andi.b #0xf,D0b
+0042106c ori.b #-0x50,D0b
+00421070 movea.l D4,A0
+00421072 move.b D0b,(A0)
+00421074 moveq #0x0,D0
+00421076 move.w (A6),D0w
+00421078 asr.l #0x4,D0
+0042107a bset.l 0x4,D0
+0042107e move.b D0b,(A0)
+00421080 move.w (A6),D0w
+00421082 andi.b #0xf,D0b
+00421086 move.b D0b,(A0)
+00421088 move.b #-0x20,(A0)
+0042108c bra.w 0x00421118
+00421090 movea.l D3,A0
+00421092 tst.b (A0)
+00421094 move.b (A0),D7b
+00421096 move.b (0x49,SP),D0b
+0042109a subq.b #0x1,D0b
+0042109c cmpi.b #0x6,D0b
+004210a0 bhi.b 0x00421114
+004210a2 ext.w D0w
+004210a4 add.w D0w,D0w
+004210a6 move.w (0x4210ae,PC,D0w*0x1),D0w
+004210aa jmp (0x4210ae,PC,D0w*0x1)
+00421114 movea.l D3,A0
+00421116 move.b D7b,(A0)
+00421118 move.w (0x4,SP),D7w
+0042111c subq.w #0x1,(0x4,SP)
+00421120 tst.w D7w
+00421122 bne.w 0x00421090
+00421126 movea.l D4,A0
+00421128 move.b #-0x12,(A0)
+0042112c moveq #0x0,D0
+0042112e move.w (0x40,SP),D0w
+00421132 adda.l D0,A1
+00421134 adda.l D0,A3
+00421136 subq.w #0x8,(A2)
+00421138 addq.w #0x8,D6w
+0042113a cmpi.w #0x8,(A2)
+0042113e bcc.w 0x0042105c
+00421142 tst.w (A2)
+00421144 beq.w 0x00421288
+00421148 moveq #0x0,D0
+0042114a move.b (0x3,SP),D0b
+0042114e neg.l D0
+00421150 addq.l #0x8,D0
+00421152 moveq #0x0,D1
+00421154 move.w (A2),D1w
+00421156 cmp.l D1,D0
+00421158 blt.b 0x0042115c
+0042115a movea.l A1,A3
+0042115c move.b #-0x1,D5b
+00421160 move.b (0x3d,SP),D0b
+00421164 lsl.b D0,D5b
+00421166 move.b D5b,D0b
+00421168 not.b D0b
+0042116a move.b D0b,(0x4,SP)
+0042116e move.b (0x3,SP),D2b
+00421172 move.b D2b,D0b
+00421174 neg.b D0b
+00421176 addq.b #0x8,D0b
+00421178 move.b D0b,(0x5,SP)
+0042117c move.w (0x38,SP),(0x2,SP)
+00421182 moveq #0x0,D0
+00421184 move.w D6w,D0w
+00421186 asr.l #0x3,D0
+00421188 andi.b #0xf,D0b
+0042118c ori.b #-0x50,D0b
+00421190 movea.l D4,A0
+00421192 move.b D0b,(A0)
+00421194 moveq #0x0,D0
+00421196 move.w (A6),D0w
+00421198 asr.l #0x4,D0
+0042119a bset.l 0x4,D0
+0042119e move.b D0b,(A0)
+004211a0 move.w (A6),D0w
+004211a2 andi.b #0xf,D0b
+004211a6 move.b D0b,(A0)
+004211a8 move.b #-0x20,(A0)
+004211ac bra.w 0x00421274
+004211b0 movea.l D3,A0
+004211b2 tst.b (A0)
+004211b4 move.b (A0),D7b
+004211b6 move.b D7b,D6b
+004211b8 and.b (0x4,SP),D6b
+004211bc move.b (0x49,SP),D0b
+004211c0 subq.b #0x1,D0b
+004211c2 cmpi.b #0x6,D0b
+004211c6 bhi.w 0x00421270
+004211ca ext.w D0w
+004211cc add.w D0w,D0w
+004211ce move.w (0x4211d6,PC,D0w*0x1),D0w
+004211d2 jmp (0x4211d6,PC,D0w*0x1)
+00421270 movea.l D3,A0
+00421272 move.b D7b,(A0)
+00421274 move.w (0x2,SP),D7w
+00421278 subq.w #0x1,(0x2,SP)
+0042127c tst.w D7w
+0042127e bne.w 0x004211b0
+00421282 movea.l D4,A0
+00421284 move.b #-0x12,(A0)
+00421288 addq.l #0x6,SP
+0042128a movem.l (SP)+,{  D2 D3 D4 D5 D6 D7 A2 A3 A6}
+0042128e rts
+
+void FUN_00420d82(undefined4 param_1,ushort param_2,short param_3,ushort param_4,ushort param_5,
+                 byte *param_6,undefined param_7)
+
+{
+  byte bVar1;
+  byte bVar3;
+  uint uVar2;
+  byte bVar7;
+  byte bVar8;
+  short sVar5;
+  short sVar6;
+  uint uVar4;
+  byte bVar9;
+  byte *unaff_A3;
+  byte *pbVar10;
+  short sStack40;
+  short sStack38;
+  
+  bVar7 = (byte)param_2;
+  if (8 < (uint)param_4 + (param_2 & 7)) {
+    if ((param_2 & 7) == 0) {
+LAB_0042103c:
+      sVar5 = param_3;
+      if (7 < param_4) {
+LAB_00421022:
+        sVar6 = sVar5 + -1;
+        if (sVar5 == 0) goto code_r0x0042102a;
+        sVar5 = sVar6;
+        switch(param_7) {
+        case 1:
+          *param_6 = DAT_01008001;
+          break;
+        case 2:
+          DAT_01008001 = ~DAT_01008001;
+          goto LAB_00421022;
+        case 3:
+          DAT_01008001 = *param_6 ^ DAT_01008001;
+          break;
+        case 4:
+          DAT_01008001 = ~*param_6;
+          break;
+        case 5:
+          DAT_01008001 = 0;
+          goto LAB_00421022;
+        case 6:
+          DAT_01008001 = 0xff;
+          goto LAB_00421022;
+        case 7:
+          DAT_01008001 = DAT_01008001 | *param_6;
+          break;
+        default:
+          goto LAB_00421022;
+        }
+        param_6 = param_6 + 1;
+        goto LAB_00421022;
+      }
+      bVar7 = 0;
+      goto LAB_00421048;
+    }
+    bVar9 = bVar7 & 7;
+    bVar1 = -1 << bVar9;
+    bVar3 = ~bVar1;
+    sStack40 = param_3;
+    pbVar10 = param_6;
+LAB_00420f6a:
+    sVar5 = sStack40 + -1;
+    if (sStack40 == 0) goto code_r0x00420f78;
+    bVar8 = DAT_01008001 & bVar1;
+    sStack40 = sVar5;
+    switch(param_7) {
+    case 1:
+      *pbVar10 = (byte)((int)(uint)bVar8 >> bVar9);
+      pbVar10 = pbVar10 + 1;
+      goto LAB_00420f6a;
+    case 2:
+      bVar8 = ~bVar8 & bVar1;
+      goto code_r0x00420f4c;
+    case 3:
+      bVar8 = *pbVar10 << bVar9 ^ bVar8;
+      break;
+    case 4:
+      bVar8 = ~*pbVar10 << bVar9;
+      break;
+    case 5:
+      DAT_01008001 = DAT_01008001 & bVar3;
+      goto LAB_00420f6a;
+    case 6:
+      DAT_01008001 = DAT_01008001 & bVar3 | bVar1;
+      goto LAB_00420f6a;
+    case 7:
+      bVar8 = bVar8 | *pbVar10 << bVar9;
+      break;
+    default:
+      goto LAB_00420f6a;
+    }
+    pbVar10 = pbVar10 + 1;
+code_r0x00420f4c:
+    DAT_01008001 = DAT_01008001 & bVar3 | bVar8;
+    goto LAB_00420f6a;
+  }
+  bVar7 = bVar7 & 7;
+  bVar3 = -1 << bVar7 & (byte)(0xff >> ((byte)(8 - ((char)param_4 + bVar7)) & 0x3f));
+  bVar1 = ~bVar3;
+LAB_00420e88:
+  sVar5 = param_3 + -1;
+  if (param_3 == 0) {
+    DAT_01008000 = 0xee;
+    return;
+  }
+  bVar9 = DAT_01008001 & bVar3;
+  param_3 = sVar5;
+  switch(param_7) {
+  case 1:
+    *param_6 = (byte)((int)(uint)bVar9 >> bVar7);
+    param_6 = param_6 + 1;
+    goto LAB_00420e88;
+  case 2:
+    bVar9 = ~bVar9 & bVar3;
+    goto code_r0x00420e6a;
+  case 3:
+    bVar9 = *param_6 << bVar7 ^ bVar9;
+    break;
+  case 4:
+    bVar9 = ~*param_6 << bVar7;
+    break;
+  case 5:
+    DAT_01008001 = DAT_01008001 & bVar1;
+    goto LAB_00420e88;
+  case 6:
+    DAT_01008001 = DAT_01008001 & bVar1 | bVar3;
+    goto LAB_00420e88;
+  case 7:
+    bVar9 = bVar9 | *param_6 << bVar7;
+    break;
+  default:
+    goto LAB_00420e88;
+  }
+  param_6 = param_6 + 1;
+code_r0x00420e6a:
+  DAT_01008001 = DAT_01008001 & bVar1 | bVar9;
+  goto LAB_00420e88;
+code_r0x0042102a:
+  DAT_01008000 = 0xee;
+  param_6 = param_6 + param_5;
+  param_4 = param_4 - 8;
+  goto LAB_0042103c;
+code_r0x00420f78:
+  DAT_01008000 = 0xee;
+  unaff_A3 = pbVar10 + param_5;
+  bVar7 = 8 - bVar7 & 7;
+  param_4 = param_4 - bVar7;
+LAB_00421048:
+  if (bVar7 != 0) {
+    uVar2 = (uint)bVar7;
+    uVar4 = (uint)(byte)(8 - bVar7);
+LAB_0042113a:
+    if (7 < param_4) {
+      sStack38 = param_3;
+LAB_00421118:
+      sVar5 = sStack38 + -1;
+      if (sStack38 == 0) goto code_r0x00421126;
+      sStack38 = sVar5;
+      switch(param_7) {
+      case 1:
+        *param_6 = *param_6 | DAT_01008001 << uVar2;
+        *unaff_A3 = *unaff_A3 | (byte)((int)(uint)DAT_01008001 >> (uVar4 & 0x3f));
+        param_6 = param_6 + 1;
+        unaff_A3 = unaff_A3 + 1;
+        goto LAB_00421118;
+      case 2:
+        DAT_01008001 = ~DAT_01008001;
+        goto LAB_00421118;
+      case 3:
+        DAT_01008001 = ((byte)((int)(uint)*param_6 >> uVar2) | *unaff_A3 << (uVar4 & 0x3f)) ^
+                       DAT_01008001;
+        break;
+      case 4:
+        DAT_01008001 = (byte)~*param_6 >> uVar2 | ~*unaff_A3 << (uVar4 & 0x3f);
+        param_6 = param_6 + 1;
+        unaff_A3 = unaff_A3 + 1;
+        goto LAB_00421118;
+      case 5:
+        DAT_01008001 = 0;
+        goto LAB_00421118;
+      case 6:
+        DAT_01008001 = 0xff;
+        goto LAB_00421118;
+      case 7:
+        DAT_01008001 = DAT_01008001 |
+                       (byte)((int)(uint)*param_6 >> uVar2) | *unaff_A3 << (uVar4 & 0x3f);
+        break;
+      default:
+        goto LAB_00421118;
+      }
+      param_6 = param_6 + 1;
+      unaff_A3 = unaff_A3 + 1;
+      goto LAB_00421118;
+    }
+  }
+  if (param_4 == 0) {
+    return;
+  }
+  if ((int)(uint)param_4 <= (int)(8 - (uint)bVar7)) {
+    unaff_A3 = param_6;
+  }
+  bVar3 = -1 << ((byte)param_4 & 0x3f);
+  bVar1 = ~bVar3;
+  uVar2 = (uint)bVar7;
+  bVar7 = 8 - bVar7;
+  sStack40 = param_3;
+LAB_00421274:
+  sVar5 = sStack40 + -1;
+  if (sStack40 == 0) {
+    DAT_01008000 = 0xee;
+    return;
+  }
+  bVar9 = DAT_01008001 & bVar1;
+  sStack40 = sVar5;
+  switch(param_7) {
+  case 1:
+    *param_6 = *param_6 | bVar9 << uVar2;
+    *unaff_A3 = *unaff_A3 | (byte)((int)(uint)bVar9 >> (bVar7 & 0x3f));
+    param_6 = param_6 + 1;
+    unaff_A3 = unaff_A3 + 1;
+    goto LAB_00421274;
+  case 2:
+    bVar9 = ~bVar9 & bVar1;
+    goto code_r0x0042123a;
+  case 3:
+    bVar9 = (*unaff_A3 << (bVar7 & 0x3f) | (byte)((int)(uint)*param_6 >> uVar2)) ^ bVar9;
+    break;
+  case 4:
+    DAT_01008001 = DAT_01008001 & bVar3 | bVar1 & (byte)~*param_6 >> uVar2 |
+                   bVar1 & ~*unaff_A3 << (bVar7 & 0x3f);
+    param_6 = param_6 + 1;
+    unaff_A3 = unaff_A3 + 1;
+    goto LAB_00421274;
+  case 5:
+    DAT_01008001 = DAT_01008001 & bVar3;
+    goto LAB_00421274;
+  case 6:
+    DAT_01008001 = DAT_01008001 & bVar3 | ~bVar3;
+    goto LAB_00421274;
+  case 7:
+    bVar9 = bVar9 | *unaff_A3 << (bVar7 & 0x3f) | (byte)((int)(uint)*param_6 >> uVar2);
+    break;
+  default:
+    goto LAB_00421274;
+  }
+  unaff_A3 = unaff_A3 + 1;
+  param_6 = param_6 + 1;
+code_r0x0042123a:
+  DAT_01008001 = DAT_01008001 & bVar3 | bVar9;
+  goto LAB_00421274;
+code_r0x00421126:
+  DAT_01008000 = 0xee;
+  param_6 = param_6 + param_5;
+  unaff_A3 = unaff_A3 + param_5;
+  param_4 = param_4 - 8;
+  goto LAB_0042113a;
+}
+
+
+=== 421290 ===
+00421290 movem.l {  A6 A3 A2 D7 D6 D5 D4 D3 D2},-(SP)
+00421294 subq.l #0x6,SP
+00421296 lea (0x3c,SP),A2
+0042129a lea (0x30,SP),A6
+0042129e move.w (0x34,SP),D6w
+004212a2 movea.l (0x42,SP),A1
+004212a6 moveq #0x0,D0
+004212a8 move.w (0x40,SP),D0w
+004212ac adda.l D0,A1
+004212ae move.l #0x1000000,D4
+004212b4 move.l #0x1000001,D3
+004212ba moveq #0x0,D0
+004212bc move.w (A2),D0w
+004212be moveq #0x0,D1
+004212c0 move.w D6w,D1w
+004212c2 andi.l #0x7,D1
+004212c8 add.l D1,D0
+004212ca moveq #0x8,D1
+004212cc cmp.l D1,D0
+004212ce bgt.w 0x004213b0
+004212d2 moveq #0x7,D5
+004212d4 move.w D6w,D0w
+004212d6 and.b D0b,D5b
+004212d8 move.b #-0x1,D2b
+004212dc lsl.b D5,D2b
+004212de move.w (A2),D0w
+004212e0 add.b D5b,D0b
+004212e2 neg.b D0b
+004212e4 addq.b #0x8,D0b
+004212e6 move.l #0xff,D1
+004212ec asr.l D0,D1
+004212ee and.b D1b,D2b
+004212f0 move.b D2b,D0b
+004212f2 not.b D0b
+004212f4 move.b D0b,(0x5,SP)
+004212f8 moveq #0x0,D0
+004212fa move.w D6w,D0w
+004212fc asr.l #0x3,D0
+004212fe andi.b #0xf,D0b
+00421302 ori.b #-0x50,D0b
+00421306 movea.l D4,A0
+00421308 move.b D0b,(A0)
+0042130a moveq #0x0,D0
+0042130c move.w (A6),D0w
+0042130e asr.l #0x4,D0
+00421310 bset.l 0x4,D0
+00421314 move.b D0b,(A0)
+00421316 move.w (A6),D0w
+00421318 andi.b #0xf,D0b
+0042131c move.b D0b,(A0)
+0042131e move.b #-0x20,(A0)
+00421322 bra.b 0x0042139e
+00421324 movea.l D3,A0
+00421326 tst.b (A0)
+00421328 move.b (A0),D7b
+0042132a move.b D7b,D6b
+0042132c and.b D2b,D6b
+0042132e move.b (0x49,SP),D0b
+00421332 subq.b #0x1,D0b
+00421334 cmpi.b #0x6,D0b
+00421338 bhi.b 0x0042139a
+0042133a ext.w D0w
+0042133c add.w D0w,D0w
+0042133e move.w (0x421346,PC,D0w*0x1),D0w
+00421342 jmp (0x421346,PC,D0w*0x1)
+0042139a movea.l D3,A0
+0042139c move.b D7b,(A0)
+0042139e move.w (0x38,SP),D7w
+004213a2 subq.w #0x1,(0x38,SP)
+004213a6 tst.w D7w
+004213a8 bne.w 0x00421324
+004213ac bra.w 0x00421784
+004213b0 moveq #0x7,D0
+004213b2 and.b D6b,D0b
+004213b4 beq.w 0x00421552
+004213b8 moveq #0x7,D2
+004213ba move.w D6w,D0w
+004213bc and.b D0b,D2b
+004213be move.b #-0x1,D0b
+004213c2 lsl.b D2,D0b
+004213c4 move.b D0b,(0x5,SP)
+004213c8 not.b D0b
+004213ca move.b D0b,(0x4,SP)
+004213ce movea.l A1,A3
+004213d0 move.w (0x38,SP),(0x2,SP)
+004213d6 moveq #0x0,D0
+004213d8 move.w D6w,D0w
+004213da asr.l #0x3,D0
+004213dc andi.b #0xf,D0b
+004213e0 ori.b #-0x50,D0b
+004213e4 movea.l D4,A0
+004213e6 move.b D0b,(A0)
+004213e8 moveq #0x0,D0
+004213ea move.w (A6),D0w
+004213ec asr.l #0x4,D0
+004213ee bset.l 0x4,D0
+004213f2 move.b D0b,(A0)
+004213f4 move.w (A6),D0w
+004213f6 andi.b #0xf,D0b
+004213fa move.b D0b,(A0)
+004213fc move.b #-0x20,(A0)
+00421400 bra.b 0x00421480
+00421402 movea.l D3,A0
+00421404 tst.b (A0)
+00421406 move.b (A0),D7b
+00421408 move.b D7b,D5b
+0042140a and.b (0x5,SP),D5b
+0042140e move.b (0x49,SP),D0b
+00421412 subq.b #0x1,D0b
+00421414 cmpi.b #0x6,D0b
+00421418 bhi.b 0x0042147c
+0042141a ext.w D0w
+0042141c add.w D0w,D0w
+0042141e move.w (0x421426,PC,D0w*0x1),D0w
+00421422 jmp (0x421426,PC,D0w*0x1)
+0042147c movea.l D3,A0
+0042147e move.b D7b,(A0)
+00421480 move.w (0x2,SP),D7w
+00421484 subq.w #0x1,(0x2,SP)
+00421488 tst.w D7w
+0042148a bne.w 0x00421402
+0042148e movea.l D4,A0
+00421490 move.b #-0x12,(A0)
+00421494 moveq #0x0,D0
+00421496 move.w (0x40,SP),D0w
+0042149a adda.l D0,A3
+0042149c move.w D6w,D0w
+0042149e neg.b D0b
+004214a0 addq.b #0x8,D0b
+004214a2 andi.b #0x7,D0b
+004214a6 move.b D0b,(0x2,SP)
+004214aa clr.w D1w
+004214ac move.b D0b,D1b
+004214ae add.w D1w,D6w
+004214b0 sub.w D1w,(A2)
+004214b2 bra.w 0x0042155e
+004214b6 move.w (0x38,SP),D5w
+004214ba moveq #0x0,D0
+004214bc move.w D6w,D0w
+004214be asr.l #0x3,D0
+004214c0 andi.b #0xf,D0b
+004214c4 ori.b #-0x50,D0b
+004214c8 movea.l D4,A0
+004214ca move.b D0b,(A0)
+004214cc moveq #0x0,D0
+004214ce move.w (A6),D0w
+004214d0 asr.l #0x4,D0
+004214d2 bset.l 0x4,D0
+004214d6 move.b D0b,(A0)
+004214d8 move.w (A6),D0w
+004214da andi.b #0xf,D0b
+004214de move.b D0b,(A0)
+004214e0 move.b #-0x20,(A0)
+004214e4 bra.b 0x00421538
+004214e6 movea.l D3,A0
+004214e8 tst.b (A0)
+004214ea move.b (A0),D7b
+004214ec move.b (0x49,SP),D0b
+004214f0 subq.b #0x1,D0b
+004214f2 cmpi.b #0x6,D0b
+004214f6 bhi.b 0x00421534
+004214f8 ext.w D0w
+004214fa add.w D0w,D0w
+004214fc move.w (0x421504,PC,D0w*0x1),D0w
+00421500 jmp (0x421504,PC,D0w*0x1)
+00421534 movea.l D3,A0
+00421536 move.b D7b,(A0)
+00421538 move.w D5w,D7w
+0042153a subq.w #0x1,D5w
+0042153c tst.w D7w
+0042153e bne.b 0x004214e6
+00421540 movea.l D4,A0
+00421542 move.b #-0x12,(A0)
+00421546 moveq #0x0,D0
+00421548 move.w (0x40,SP),D0w
+0042154c adda.l D0,A1
+0042154e subq.w #0x8,(A2)
+00421550 addq.w #0x8,D6w
+00421552 cmpi.w #0x8,(A2)
+00421556 bcc.w 0x004214b6
+0042155a clr.b (0x2,SP)
+0042155e tst.b (0x2,SP)
+00421562 beq.w 0x00421658
+00421566 move.b (0x2,SP),D2b
+0042156a moveq #0x8,D5
+0042156c sub.b D2b,D5b
+0042156e bra.w 0x00421650
+00421572 move.w (0x38,SP),(0x4,SP)
+00421578 moveq #0x0,D0
+0042157a move.w D6w,D0w
+0042157c asr.l #0x3,D0
+0042157e andi.b #0xf,D0b
+00421582 ori.b #-0x50,D0b
+00421586 movea.l D4,A0
+00421588 move.b D0b,(A0)
+0042158a moveq #0x0,D0
+0042158c move.w (A6),D0w
+0042158e asr.l #0x4,D0
+00421590 bset.l 0x4,D0
+00421594 move.b D0b,(A0)
+00421596 move.w (A6),D0w
+00421598 andi.b #0xf,D0b
+0042159c move.b D0b,(A0)
+0042159e move.b #-0x20,(A0)
+004215a2 bra.w 0x0042162e
+004215a6 movea.l D3,A0
+004215a8 tst.b (A0)
+004215aa move.b (A0),D7b
+004215ac move.b (0x49,SP),D0b
+004215b0 subq.b #0x1,D0b
+004215b2 cmpi.b #0x6,D0b
+004215b6 bhi.b 0x0042162a
+004215b8 ext.w D0w
+004215ba add.w D0w,D0w
+004215bc move.w (0x4215c4,PC,D0w*0x1),D0w
+004215c0 jmp (0x4215c4,PC,D0w*0x1)
+0042162a movea.l D3,A0
+0042162c move.b D7b,(A0)
+0042162e move.w (0x4,SP),D7w
+00421632 subq.w #0x1,(0x4,SP)
+00421636 tst.w D7w
+00421638 bne.w 0x004215a6
+0042163c movea.l D4,A0
+0042163e move.b #-0x12,(A0)
+00421642 moveq #0x0,D0
+00421644 move.w (0x40,SP),D0w
+00421648 adda.l D0,A1
+0042164a adda.l D0,A3
+0042164c subq.w #0x8,(A2)
+0042164e addq.w #0x8,D6w
+00421650 cmpi.w #0x8,(A2)
+00421654 bcc.w 0x00421572
+00421658 tst.w (A2)
+0042165a beq.w 0x0042178a
+0042165e moveq #0x0,D0
+00421660 move.b (0x2,SP),D0b
+00421664 neg.l D0
+00421666 addq.l #0x8,D0
+00421668 moveq #0x0,D1
+0042166a move.w (A2),D1w
+0042166c cmp.l D1,D0
+0042166e blt.b 0x00421672
+00421670 movea.l A1,A3
+00421672 move.b #-0x1,D5b
+00421676 move.b (0x3d,SP),D0b
+0042167a lsl.b D0,D5b
+0042167c move.b D5b,D0b
+0042167e not.b D0b
+00421680 move.b D0b,(0x3,SP)
+00421684 move.b (0x2,SP),(0x4,SP)
+0042168a move.b (0x2,SP),D0b
+0042168e neg.b D0b
+00421690 addq.b #0x8,D0b
+00421692 move.b D0b,(0x5,SP)
+00421696 move.w (0x38,SP),D2w
+0042169a moveq #0x0,D0
+0042169c move.w D6w,D0w
+0042169e asr.l #0x3,D0
+004216a0 andi.b #0xf,D0b
+004216a4 ori.b #-0x50,D0b
+004216a8 movea.l D4,A0
+004216aa move.b D0b,(A0)
+004216ac moveq #0x0,D0
+004216ae move.w (A6),D0w
+004216b0 asr.l #0x4,D0
+004216b2 bset.l 0x4,D0
+004216b6 move.b D0b,(A0)
+004216b8 move.w (A6),D0w
+004216ba andi.b #0xf,D0b
+004216be move.b D0b,(A0)
+004216c0 move.b #-0x20,(A0)
+004216c4 bra.w 0x0042177a
+004216c8 movea.l D3,A0
+004216ca tst.b (A0)
+004216cc move.b (A0),D7b
+004216ce move.b D7b,D6b
+004216d0 and.b (0x3,SP),D6b
+004216d4 move.b (0x49,SP),D0b
+004216d8 subq.b #0x1,D0b
+004216da cmpi.b #0x6,D0b
+004216de bhi.w 0x00421776
+004216e2 ext.w D0w
+004216e4 add.w D0w,D0w
+004216e6 move.w (0x4216ee,PC,D0w*0x1),D0w
+004216ea jmp (0x4216ee,PC,D0w*0x1)
+00421776 movea.l D3,A0
+00421778 move.b D7b,(A0)
+0042177a move.w D2w,D7w
+0042177c subq.w #0x1,D2w
+0042177e tst.w D7w
+00421780 bne.w 0x004216c8
+00421784 movea.l D4,A0
+00421786 move.b #-0x12,(A0)
+0042178a addq.l #0x6,SP
+0042178c movem.l (SP)+,{  D2 D3 D4 D5 D6 D7 A2 A3 A6}
+00421790 rts
+
+/* WARNING: Could not reconcile some variable overlaps */
+
+void FUN_00421290(undefined4 param_1,ushort param_2,short param_3,ushort param_4,ushort param_5,
+                 int param_6,undefined param_7)
+
+{
+  byte bVar1;
+  byte bVar4;
+  uint uVar2;
+  short sVar3;
+  byte bVar7;
+  byte bVar8;
+  short sVar6;
+  uint uVar5;
+  byte bVar9;
+  byte *pbVar10;
+  byte *unaff_A3;
+  byte *pbVar11;
+  short sStack40;
+  short sStack38;
+  
+  pbVar10 = (byte *)((uint)param_5 + param_6);
+  bVar7 = (byte)param_2;
+  if (8 < (uint)param_4 + (param_2 & 7)) {
+    if ((param_2 & 7) == 0) {
+LAB_00421552:
+      sVar3 = param_3;
+      if (7 < param_4) {
+LAB_00421538:
+        sVar6 = sVar3 + -1;
+        if (sVar3 == 0) goto code_r0x00421540;
+        sVar3 = sVar6;
+        switch(param_7) {
+        case 1:
+          *pbVar10 = DAT_01000001;
+          break;
+        case 2:
+          DAT_01000001 = ~DAT_01000001;
+          goto LAB_00421538;
+        case 3:
+          DAT_01000001 = *pbVar10 ^ DAT_01000001;
+          break;
+        case 4:
+          DAT_01000001 = ~*pbVar10;
+          break;
+        case 5:
+          DAT_01000001 = 0;
+          goto LAB_00421538;
+        case 6:
+          DAT_01000001 = 0xff;
+          goto LAB_00421538;
+        case 7:
+          DAT_01000001 = DAT_01000001 | *pbVar10;
+          break;
+        default:
+          goto LAB_00421538;
+        }
+        pbVar10 = pbVar10 + 1;
+        goto LAB_00421538;
+      }
+      sStack40._0_1_ = 0;
+      goto LAB_0042155e;
+    }
+    bVar9 = bVar7 & 7;
+    bVar1 = -1 << bVar9;
+    bVar4 = ~bVar1;
+    sStack40 = param_3;
+    pbVar11 = pbVar10;
+LAB_00421480:
+    sVar3 = sStack40 + -1;
+    if (sStack40 == 0) goto code_r0x0042148e;
+    bVar8 = DAT_01000001 & bVar1;
+    sStack40 = sVar3;
+    switch(param_7) {
+    case 1:
+      *pbVar11 = (byte)((int)(uint)bVar8 >> bVar9);
+      pbVar11 = pbVar11 + 1;
+      goto LAB_00421480;
+    case 2:
+      bVar8 = ~bVar8 & bVar1;
+      goto code_r0x00421462;
+    case 3:
+      bVar8 = *pbVar11 << bVar9 ^ bVar8;
+      break;
+    case 4:
+      bVar8 = ~*pbVar11 << bVar9;
+      break;
+    case 5:
+      DAT_01000001 = DAT_01000001 & bVar4;
+      goto LAB_00421480;
+    case 6:
+      DAT_01000001 = DAT_01000001 & bVar4 | bVar1;
+      goto LAB_00421480;
+    case 7:
+      bVar8 = bVar8 | *pbVar11 << bVar9;
+      break;
+    default:
+      goto LAB_00421480;
+    }
+    pbVar11 = pbVar11 + 1;
+code_r0x00421462:
+    DAT_01000001 = DAT_01000001 & bVar4 | bVar8;
+    goto LAB_00421480;
+  }
+  bVar7 = bVar7 & 7;
+  bVar4 = -1 << bVar7 & (byte)(0xff >> ((byte)(8 - ((char)param_4 + bVar7)) & 0x3f));
+  bVar1 = ~bVar4;
+LAB_0042139e:
+  sVar3 = param_3 + -1;
+  if (param_3 == 0) {
+    DAT_01000000 = 0xee;
+    return;
+  }
+  bVar9 = DAT_01000001 & bVar4;
+  param_3 = sVar3;
+  switch(param_7) {
+  case 1:
+    *pbVar10 = (byte)((int)(uint)bVar9 >> bVar7);
+    pbVar10 = pbVar10 + 1;
+    goto LAB_0042139e;
+  case 2:
+    bVar9 = ~bVar9 & bVar4;
+    goto code_r0x00421380;
+  case 3:
+    bVar9 = *pbVar10 << bVar7 ^ bVar9;
+    break;
+  case 4:
+    bVar9 = ~*pbVar10 << bVar7;
+    break;
+  case 5:
+    DAT_01000001 = DAT_01000001 & bVar1;
+    goto LAB_0042139e;
+  case 6:
+    DAT_01000001 = DAT_01000001 & bVar1 | bVar4;
+    goto LAB_0042139e;
+  case 7:
+    bVar9 = bVar9 | *pbVar10 << bVar7;
+    break;
+  default:
+    goto LAB_0042139e;
+  }
+  pbVar10 = pbVar10 + 1;
+code_r0x00421380:
+  DAT_01000001 = DAT_01000001 & bVar1 | bVar9;
+  goto LAB_0042139e;
+code_r0x00421540:
+  DAT_01000000 = 0xee;
+  pbVar10 = pbVar10 + param_5;
+  param_4 = param_4 - 8;
+  goto LAB_00421552;
+code_r0x0042148e:
+  DAT_01000000 = 0xee;
+  unaff_A3 = pbVar11 + param_5;
+  sStack40._0_1_ = 8 - bVar7 & 7;
+  param_4 = param_4 - sStack40._0_1_;
+LAB_0042155e:
+  if (sStack40._0_1_ != 0) {
+    uVar2 = (uint)sStack40._0_1_;
+    uVar5 = (uint)(byte)(8 - sStack40._0_1_);
+LAB_00421650:
+    if (7 < param_4) {
+      sStack38 = param_3;
+LAB_0042162e:
+      sVar3 = sStack38 + -1;
+      if (sStack38 == 0) goto code_r0x0042163c;
+      sStack38 = sVar3;
+      switch(param_7) {
+      case 1:
+        *pbVar10 = *pbVar10 | DAT_01000001 << uVar2;
+        *unaff_A3 = *unaff_A3 | (byte)((int)(uint)DAT_01000001 >> (uVar5 & 0x3f));
+        pbVar10 = pbVar10 + 1;
+        unaff_A3 = unaff_A3 + 1;
+        goto LAB_0042162e;
+      case 2:
+        DAT_01000001 = ~DAT_01000001;
+        goto LAB_0042162e;
+      case 3:
+        DAT_01000001 = ((byte)((int)(uint)*pbVar10 >> uVar2) | *unaff_A3 << (uVar5 & 0x3f)) ^
+                       DAT_01000001;
+        break;
+      case 4:
+        DAT_01000001 = (byte)~*pbVar10 >> uVar2 | ~*unaff_A3 << (uVar5 & 0x3f);
+        pbVar10 = pbVar10 + 1;
+        unaff_A3 = unaff_A3 + 1;
+        goto LAB_0042162e;
+      case 5:
+        DAT_01000001 = 0;
+        goto LAB_0042162e;
+      case 6:
+        DAT_01000001 = 0xff;
+        goto LAB_0042162e;
+      case 7:
+        DAT_01000001 = DAT_01000001 |
+                       (byte)((int)(uint)*pbVar10 >> uVar2) | *unaff_A3 << (uVar5 & 0x3f);
+        break;
+      default:
+        goto LAB_0042162e;
+      }
+      pbVar10 = pbVar10 + 1;
+      unaff_A3 = unaff_A3 + 1;
+      goto LAB_0042162e;
+    }
+  }
+  if (param_4 == 0) {
+    return;
+  }
+  if ((int)(uint)param_4 <= (int)(8 - (uint)sStack40._0_1_)) {
+    unaff_A3 = pbVar10;
+  }
+  bVar4 = -1 << ((byte)param_4 & 0x3f);
+  bVar7 = ~bVar4;
+  bVar1 = 8 - sStack40._0_1_;
+LAB_0042177a:
+  sVar3 = param_3 + -1;
+  if (param_3 == 0) {
+    DAT_01000000 = 0xee;
+    return;
+  }
+  bVar9 = DAT_01000001 & bVar7;
+  param_3 = sVar3;
+  switch(param_7) {
+  case 1:
+    *pbVar10 = *pbVar10 | bVar9 << (uint)sStack40._0_1_;
+    *unaff_A3 = *unaff_A3 | (byte)((int)(uint)bVar9 >> (bVar1 & 0x3f));
+    pbVar10 = pbVar10 + 1;
+    unaff_A3 = unaff_A3 + 1;
+    goto LAB_0042177a;
+  case 2:
+    bVar9 = ~bVar9 & bVar7;
+    break;
+  case 3:
+  case 7:
+    bVar9 = (*unaff_A3 << (bVar1 & 0x3f) | (byte)((int)(uint)*pbVar10 >> (uint)sStack40._0_1_)) ^
+            bVar9;
+    pbVar10 = pbVar10 + 1;
+    unaff_A3 = unaff_A3 + 1;
+    break;
+  case 4:
+    DAT_01000001 = DAT_01000001 & bVar4 | bVar7 & (byte)~*pbVar10 >> (uint)sStack40._0_1_ |
+                   bVar7 & ~*unaff_A3 << (bVar1 & 0x3f);
+    pbVar10 = pbVar10 + 1;
+    unaff_A3 = unaff_A3 + 1;
+    goto LAB_0042177a;
+  case 5:
+    DAT_01000001 = DAT_01000001 & bVar4;
+    goto LAB_0042177a;
+  case 6:
+    DAT_01000001 = DAT_01000001 & bVar4 | ~bVar4;
+  default:
+    goto LAB_0042177a;
+  }
+  DAT_01000001 = DAT_01000001 & bVar4 | bVar9;
+  goto LAB_0042177a;
+code_r0x0042163c:
+  DAT_01000000 = 0xee;
+  pbVar10 = pbVar10 + param_5;
+  unaff_A3 = unaff_A3 + param_5;
+  param_4 = param_4 - 8;
+  goto LAB_00421650;
+}
+
+

@@ -6,8 +6,87 @@ BDF ENCODING values are native byte slots. PCF uses Pillow's codec mapping
 """
 import argparse
 import gzip
+import re
 from pathlib import Path
 from PIL import Image, PcfFontFile
+
+
+class UnicodePCF(PcfFontFile.PcfFontFile):
+    codes = []
+
+    def _load_encoding(self):
+        stream, _, read16, _ = self._getformat(PcfFontFile.PCF_BDF_ENCODINGS)
+        c0,c1,r0,r1,_ = [read16(stream.read(2)) for _ in range(5)]
+        width = c1-c0+1
+        entries = [read16(stream.read(2)) for _ in range(width*(r1-r0+1))]
+        out = [None]*256
+        for index,code in enumerate(self.codes):
+            row,col = code>>8,code&255
+            if r0<=row<=r1 and c0<=col<=c1:
+                value = entries[(row-r0)*width+col-c0]
+                if value!=65535:out[index]=value
+        return out
+
+
+def read_unicode_source(path, codes):
+    """Read original ISO10646 BDF/PCF glyphs in baseline-relative coordinates.
+
+    This is separate from load_bdf(), whose ENCODING values are Neo byte slots.
+    """
+    path = Path(path)
+    name = path.name.lower().removesuffix('.gz')
+    opener = gzip.open if path.suffix == '.gz' else open
+    if name.endswith('.pcf'):
+        UnicodePCF.codes = tuple(codes)
+        with opener(path, 'rb') as stream:
+            font = UnicodePCF(stream)
+        info = {key.decode(): value.decode(errors='replace') if isinstance(value, bytes) else value
+                for key, value in font.info.items()}
+        glyphs = {}
+        for code, glyph in zip(codes, font.glyph):
+            if glyph is None:
+                continue
+            advance, (left, top, right, bottom), rect, bitmap = glyph
+            image = bitmap.crop(rect)
+            points = {(left+x, top+y) for y in range(image.height)
+                      for x in range(image.width) if image.getpixel((x, y))}
+            glyphs[code] = dict(advance=advance[0], points=points)
+    elif name.endswith('.bdf'):
+        with opener(path, 'rt', encoding='ascii') as stream:
+            lines = iter(stream)
+            if next(lines).strip() != 'STARTFONT 2.1':
+                raise ValueError('expected BDF 2.1')
+            info, glyphs = {}, {}
+            requested = set(codes)
+            for line in lines:
+                fields = line.split()
+                if not fields:
+                    continue
+                if fields[0] != 'STARTCHAR':
+                    info[fields[0]] = ' '.join(fields[1:]).strip('"')
+                    continue
+                props = {}
+                for line in lines:
+                    fields = line.split()
+                    if fields[0] == 'BITMAP':
+                        break
+                    props[fields[0]] = fields[1:]
+                width, height, left, bottom = map(int, props['BBX'])
+                rows = [next(lines).strip() for _ in range(height)]
+                if next(lines).strip() != 'ENDCHAR':
+                    raise ValueError('missing ENDCHAR')
+                code = int(props['ENCODING'][0])
+                if code not in requested:
+                    continue
+                points = {(left+x, -bottom-height+y)
+                          for y, row in enumerate(rows) for x in range(width)
+                          if int(row, 16) & (1 << (8*((width+7)//8)-1-x))}
+                glyphs[code] = dict(advance=int(props['DWIDTH'][0]), points=points)
+    else:
+        raise ValueError('expected Unicode BDF or PCF source')
+    if info.get('CHARSET_REGISTRY') != 'ISO10646':
+        raise ValueError(f'{path}: source must declare ISO10646')
+    return info, glyphs
 
 
 def load_bdf(path):
@@ -83,10 +162,18 @@ def load(path, codec, missing_glyph=None):
     if missing:
         if missing_glyph is None:
             raise ValueError('missing slots: ' + ', '.join(f'{c:02X}' for c in missing))
-        if not 0 <= missing_glyph < 256 or glyphs[missing_glyph] is None:
-            raise ValueError('fallback slot must contain a glyph')
+        if missing_glyph == 'blank':
+            blank_ascent = max([ascent or 0] + [-g[1][1] for g in glyphs if g])
+            blank_descent = max([descent or 0] + [g[1][3] for g in glyphs if g])
+            blank_height = blank_ascent + blank_descent
+            fallback = ((1, 0), (0, -blank_ascent, 1, blank_descent),
+                        (0, 0, 1, blank_height), Image.new('1', (1, blank_height)))
+        else:
+            if not 0 <= missing_glyph < 256 or glyphs[missing_glyph] is None:
+                raise ValueError('fallback slot must contain a glyph')
+            fallback = glyphs[missing_glyph]
         for c in missing:
-            glyphs[c] = glyphs[missing_glyph]
+            glyphs[c] = fallback
     # Preserve declared leading and all source bounds at a common baseline.
     ascent = max([ascent or 0] + [-g[1][1] for g in glyphs])
     descent = max([descent or 0] + [g[1][3] for g in glyphs])
@@ -101,7 +188,9 @@ def load(path, codec, missing_glyph=None):
     return result
 
 
-def generate(source, destination, codec='iso8859-1', missing_glyph=None):
+def generate(source, destination, codec='iso8859-1', missing_glyph=None, symbol_prefix=''):
+    if symbol_prefix and not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_]*', symbol_prefix):
+        raise ValueError('symbol prefix must be a C identifier')
     glyphs = load(Path(source), codec, missing_glyph)
     h = glyphs[0].height
     widths = [g.width for g in glyphs]
@@ -128,23 +217,33 @@ def generate(source, destination, codec='iso8859-1', missing_glyph=None):
         offsets = []; data = []
         for glyph in packed:
             offsets.append(len(data)); data.extend(glyph)
-        if len(data) > 65536:
-            raise ValueError('font exceeds 16-bit bitmap offset range')
         out.append('#define GLYPH_PROPORTIONAL 1\n')
         for typ, name, values in [('uint8_t','GLYPH_WIDTHS',widths),
                                   ('uint16_t','GLYPH_OFFSETS',offsets),
                                   ('uint8_t','GLYPH_DATA',data)]:
             out.append(f'const {typ} {name}[{len(values)}] = {{' + ', '.join(map(str, values)) + '};\n')
         out.append('\n')
+    tables = ('0', '0', 'GLYPHS[0]') if len(set(widths)) == 1 else (
+        'GLYPH_WIDTHS', 'GLYPH_OFFSETS', 'GLYPH_DATA')
+    # With -msep-data GCC places pointer-bearing const descriptors in
+    # .data.rel.ro.* automatically; crt0 rebases them. Glyphs stay in flash.
+    out.append('static const FontHeader_t GLYPH_FONT = {\n'
+               '    GLYPH_HEIGHT, GLYPH_WIDTH, GLYPH_BYTES, 0,\n'
+               f'    {tables[0]}, {tables[1]}, {tables[2]}\n'
+               '};\n')
     out.append('#endif\n')
-    Path(destination).write_text(''.join(out))
+    text = ''.join(out)
+    if symbol_prefix:
+        text = re.sub(r'\b(GLYPH\w*|GLYPHS)\b', lambda m: symbol_prefix + m[0], text)
+    Path(destination).write_text(text)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source'); parser.add_argument('destination')
     parser.add_argument('--pcf-encoding', default='iso8859-1', help='Python codec for PCF slot mapping')
-    parser.add_argument('--missing-glyph', type=lambda s: int(s, 0),
-                        help='explicit fallback byte slot, e.g. 0x3f; default: reject missing glyphs')
+    parser.add_argument('--missing-glyph', type=lambda s: 'blank' if s == 'blank' else int(s, 0),
+                        help='explicit fallback byte slot (e.g. 0x3f) or blank; default: reject missing glyphs')
+    parser.add_argument('--symbol-prefix', default='', help='prefix generated C symbols/macros for multi-style fonts')
     args = parser.parse_args()
-    generate(args.source, args.destination, args.pcf_encoding, args.missing_glyph)
+    generate(args.source, args.destination, args.pcf_encoding, args.missing_glyph, args.symbol_prefix)

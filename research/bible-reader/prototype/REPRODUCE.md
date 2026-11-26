@@ -61,8 +61,9 @@ because source moved. For a new run, always choose a new result directory.
 
 The removed SDK rectangle helper is retained in research `LegacyGraphics.h`.
 The restore helper supplies a GNUmakefile wrapper that force-includes it only
-for the frozen Streaming build. Original snapshot sources and hashes remain
-unchanged; the production SDK no longer exposes that helper.
+for the frozen Streaming build. The prototype font include/build dependency now targets
+`fonts/build/BetaWiseTerminal-Medium/glyphs.h`; no private compatibility header is needed.
+Apart from this path maintenance, original snapshot sources remain unchanged; the production SDK no longer exposes that helper.
 
 New builds use separate private IDs: Benchmark FF20, BibleReader FF21 and
 Streaming FF22. This is a header-metadata migration only. Original source bytes remain at commit

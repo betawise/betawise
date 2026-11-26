@@ -2,7 +2,7 @@
 #include "Decoder.h"
 #include "Search.h"
 #include "Navigation.h"
-#include "../../fonts/glyphs.h"
+#include "../../fonts/build/BetaWiseTerminal-Medium/glyphs.h"
 #include <string.h>
 /* Observed Neo 3.21 notifications; keep private while the public API evolves. */
 #define READER_REDRAW_MESSAGE ((Message_e)0x1b)

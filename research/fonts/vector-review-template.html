@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'">
+<title>BetaWise bitmap and vector review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f5f2;color:#232725;font:16px system-ui,sans-serif}header{padding:16px 24px;background:white;border-bottom:1px solid #bbc4bf}h1{font-size:24px;margin:0 0 10px}h2{font-size:19px}p{max-width:1050px;line-height:1.45}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end}label{display:flex;flex-direction:column;gap:5px;font-size:13px}button,input,select,textarea{font:inherit;border:1px solid #abb6b0;border-radius:5px;background:white;color:inherit;padding:7px}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #267cb2;outline-offset:2px}main{padding:8px 24px 40px}#status,#action,.muted{color:#526159;font-size:14px}#error{color:#9f241e;white-space:pre-wrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.candidate{padding:14px;border:1px solid #b7c1bb;border-radius:7px;background:white;text-align:left;display:flex;flex-direction:column;align-items:start;gap:10px;min-height:150px}.candidate[aria-pressed=true]{border:3px solid #267445;padding:12px;background:#f0faef}.candidate .title{font-weight:650}.candidate .metrics{font-size:13px;color:#526159}.candidate canvas,canvas{image-rendering:pixelated;display:block;background:white}.candidate .drawing{display:flex;align-items:start;gap:15px;min-height:80px}.context{display:flex;flex-wrap:wrap;gap:12px}.context article{padding:12px;background:white;border:1px solid #ccd2ce;border-radius:6px}.context .pair{display:flex;gap:18px;align-items:start;margin-top:8px}.group button{margin-right:6px}#group-nav button{margin:0 5px 8px 0}#group-nav button[aria-current=true]{background:#d9eedf}.samples{display:flex;gap:22px;flex-wrap:wrap}.sample{max-width:100%;overflow:auto}textarea{width:100%;max-width:1050px;min-height:70px}#note{min-height:45px}.hint{font-size:14px;color:#526159}details{margin-top:18px}#styles{display:flex;flex-wrap:wrap;gap:15px}#styles article{background:white;padding:12px;border:1px solid #ccd2ce;overflow:auto}#glyph{width:100px}#import{max-width:220px}#sources{white-space:pre-wrap;font-size:13px}#empty{padding:14px;background:#fff5da}#action{min-height:1.5em}@media(max-width:600px){header,main{padding:12px}.cards{grid-template-columns:1fr}}
+</style>
+<header>
+<h1>Bitmap ↔ hinted vector review</h1>
+<p>Compare shapes at the existing baseline and spacing. Every offered candidate fits the full cell without clipping or rescaling. Metric checks describe differences; choose what reads best in context. Export choices for a later BDF update.</p>
+<div class="controls">
+<label>Family<select id="family"></select></label><label>Size<select id="size"></select></label><label>Style<select id="style"></select></label>
+<label>Character or byte<input id="glyph" value="C" placeholder="C or 0x43"></label><button id="go">Show</button>
+<label>Related shapes<select id="group"></select></label><label>Pixel zoom<select id="zoom"><option>3</option><option selected>6</option><option>9</option></select></label>
+<label>Outline source<select id="source"><option value="all">All outline sources</option></select></label>
+<label>Hinting<select id="hint"><option value="all">Both methods</option><option value="native">Native hints</option><option value="auto">Auto hints</option></select></label>
+</div>
+<div class="controls" style="margin-top:12px"><button id="previous">Previous flagged</button><button id="next">Next flagged</button><button id="unreview">Mark unreviewed</button><button id="export">Export choices</button><label>Import flags or saved choices<input id="import" type="file" accept=".json,application/json"></label></div>
+<p id="status" aria-live="polite"></p><div id="action" aria-live="polite"></div><div id="error" role="alert"></div>
+</header>
+<main>
+<h2 id="heading"></h2><div id="group-nav"></div><div id="context" class="context"></div>
+<h2>Choose a drawing</h2><p id="source-availability" class="hint"></p><p id="dimensions" class="hint"></p><div id="empty" hidden></div><div id="candidates" class="cards"></div>
+<p class="hint">Pixel count, enclosed counters and separate parts are diagnostics, not legibility scores. Different accent marks naturally create separate parts. Hover or focus a candidate to preview it in the text below.</p>
+<label>Review note<textarea id="note" placeholder="What needs fixing, or why this drawing works"></textarea></label>
+<h2>Text at unchanged spacing</h2><label>Sample text<textarea id="sample">COG QOC COG QOC. Cocoa, cog, concise café; Ç ça.
+The quick brown fox jumps over the lazy dog. 0123456789.</textarea></label>
+<div class="samples"><div class="sample"><p>Current bitmap</p><canvas id="sample-current"></canvas></div><div class="sample"><p>Selected drawings / hovered candidate</p><canvas id="sample-chosen"></canvas></div></div>
+<h2>Other styles at this size</h2><div id="styles"></div>
+<details><summary>Outline sources and comparison details</summary><p class="hint">These are reference designs, not exact outline counterparts of every bitmap. Terminal has no matching outline source. Candidate selection preserves the bitmap advance; the reference font’s own advance is shown separately.</p><div id="sources"></div></details>
+</main>
+<script>const VECTOR_DATA=/*VECTOR_DATA*/null;</script>
+<script>/*VECTOR_JS*/</script>
+</html>

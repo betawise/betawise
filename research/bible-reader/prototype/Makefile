@@ -116,7 +116,9 @@ wide.bin: bible.bin wide_huffman.py .build-profile
 verse-boost.bin: bible.bin search.bin verse_boost.py .build-profile
 	python3 verse_boost.py "$(DATA_DIR)" $(VERSE_BOOST) $@
 ReaderResource.o: ReaderResource.asm bible.bin search.bin verses.bin pruning.bin wide.bin verse-boost.bin
-BibleReader.o Streaming.o: Search.h NativeFeed.h Superscript.h ../../fonts/glyphs.h
+../../fonts/build/BetaWiseTerminal-Medium/glyphs.h: ../../fonts/fontgen.py ../../fonts/BetaWiseTerminal/glyphs.bdf
+	+$(MAKE) -C ../../fonts build/BetaWiseTerminal-Medium/glyphs.h
+BibleReader.o Streaming.o: Search.h NativeFeed.h Superscript.h ../../fonts/build/BetaWiseTerminal-Medium/glyphs.h
 Search.o: Search.h SearchMatch.h VerseBoost.h NoIndex.h Decoder.h HuffmanDecoder.h
 endif
 

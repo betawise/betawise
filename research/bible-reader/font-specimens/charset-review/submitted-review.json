@@ -1,0 +1,326 @@
+{
+  "format": "betawise-font-fixes-v1",
+  "glyphs": [],
+  "mapping": [
+    {
+      "slot": 0,
+      "hex": "0x00",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2588",
+      "unicode": 9608
+    },
+    {
+      "slot": 1,
+      "hex": "0x01",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03B4",
+      "unicode": 948
+    },
+    {
+      "slot": 2,
+      "hex": "0x02",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+0394",
+      "unicode": 916
+    },
+    {
+      "slot": 3,
+      "hex": "0x03",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+222B",
+      "unicode": 8747
+    },
+    {
+      "slot": 4,
+      "hex": "0x04",
+      "currentUnicode": 209,
+      "currentCharacter": "Ñ",
+      "state": "change",
+      "suggestion": "U+0144",
+      "unicode": 324
+    },
+    {
+      "slot": 5,
+      "hex": "0x05",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+0133",
+      "unicode": 307
+    },
+    {
+      "slot": 6,
+      "hex": "0x06",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+26F6",
+      "unicode": 9974
+    },
+    {
+      "slot": 7,
+      "hex": "0x07",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2154",
+      "unicode": 8532
+    },
+    {
+      "slot": 8,
+      "hex": "0x08",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+02D9",
+      "unicode": 729
+    },
+    {
+      "slot": 9,
+      "hex": "0x09",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+21E5",
+      "unicode": 8677
+    },
+    {
+      "slot": 10,
+      "hex": "0x0A",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2193",
+      "unicode": 8595
+    },
+    {
+      "slot": 11,
+      "hex": "0x0B",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2191",
+      "unicode": 8593
+    },
+    {
+      "slot": 12,
+      "hex": "0x0C",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2913",
+      "unicode": 10515
+    },
+    {
+      "slot": 13,
+      "hex": "0x0D",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+21B5",
+      "unicode": 8629
+    },
+    {
+      "slot": 14,
+      "hex": "0x0E",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2908",
+      "unicode": 10504
+    },
+    {
+      "slot": 15,
+      "hex": "0x0F",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2909",
+      "unicode": 10505
+    },
+    {
+      "slot": 16,
+      "hex": "0x10",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2192",
+      "unicode": 8594
+    },
+    {
+      "slot": 17,
+      "hex": "0x11",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2153",
+      "unicode": 8531
+    },
+    {
+      "slot": 18,
+      "hex": "0x12",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+039E",
+      "unicode": 926
+    },
+    {
+      "slot": 19,
+      "hex": "0x13",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03B1",
+      "unicode": 945
+    },
+    {
+      "slot": 20,
+      "hex": "0x14",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03C1",
+      "unicode": 961
+    },
+    {
+      "slot": 21,
+      "hex": "0x15",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2195",
+      "unicode": 8597
+    },
+    {
+      "slot": 23,
+      "hex": "0x17",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2395",
+      "unicode": 9109
+    },
+    {
+      "slot": 24,
+      "hex": "0x18",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+221A",
+      "unicode": 8730
+    },
+    {
+      "slot": 25,
+      "hex": "0x19",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2264",
+      "unicode": 8804
+    },
+    {
+      "slot": 26,
+      "hex": "0x1A",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2265",
+      "unicode": 8805
+    },
+    {
+      "slot": 27,
+      "hex": "0x1B",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+0398",
+      "unicode": 920
+    },
+    {
+      "slot": 28,
+      "hex": "0x1C",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+221E",
+      "unicode": 8734
+    },
+    {
+      "slot": 29,
+      "hex": "0x1D",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03A9",
+      "unicode": 937
+    },
+    {
+      "slot": 30,
+      "hex": "0x1E",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03B2",
+      "unicode": 946
+    },
+    {
+      "slot": 31,
+      "hex": "0x1F",
+      "currentUnicode": 931,
+      "currentCharacter": "Σ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 127,
+      "hex": "0x7F",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+2190",
+      "unicode": 8592
+    },
+    {
+      "slot": 141,
+      "hex": "0x8D",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03A6",
+      "unicode": 934
+    },
+    {
+      "slot": 143,
+      "hex": "0x8F",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03A0",
+      "unicode": 928
+    },
+    {
+      "slot": 144,
+      "hex": "0x90",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "confirmed"
+    },
+    {
+      "slot": 157,
+      "hex": "0x9D",
+      "currentUnicode": null,
+      "currentCharacter": null,
+      "state": "change",
+      "suggestion": "U+03C0",
+      "unicode": 960
+    }
+  ]
+}

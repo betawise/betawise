@@ -1,0 +1,904 @@
+{
+  "note": "Candidate inventory only: raw matches are not evidence of text-token use.\n\nInspect disassembly and callers before assigning meaning. Font and dictionary\nbytes, jump tables, hardware bit masks and transport opcodes all produce matches.\n",
+  "images": [
+    {
+      "name": "SpellCheck Small USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Small USA.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x1216d",
+          "bytes": "b2d5b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Control Panel",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/ControlPanel.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x301e",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3086",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x30d0",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x39f4",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3a5e",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3ece",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3f06",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Medium (5 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontMedium.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Thesaurus Large USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Large USA.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x10a09",
+          "bytes": "b208b2"
+        },
+        {
+          "offset": "0x1376a",
+          "bytes": "b2e8b2"
+        },
+        {
+          "offset": "0x21b31",
+          "bytes": "b228b2"
+        },
+        {
+          "offset": "0x26a38",
+          "bytes": "b208b2"
+        },
+        {
+          "offset": "0x2bf48",
+          "bytes": "b2b7b2"
+        },
+        {
+          "offset": "0x2c0fd",
+          "bytes": "b1bcb1"
+        },
+        {
+          "offset": "0x2ca99",
+          "bytes": "b1bcb1"
+        },
+        {
+          "offset": "0x2f7b9",
+          "bytes": "b152b1"
+        },
+        {
+          "offset": "0x3b17f",
+          "bytes": "b12cb1"
+        },
+        {
+          "offset": "0x41f89",
+          "bytes": "b165b1"
+        },
+        {
+          "offset": "0x44127",
+          "bytes": "b16cb1"
+        },
+        {
+          "offset": "0x4f341",
+          "bytes": "b14ab1"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Extra Large (2 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontXLarge.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Thesaurus Small USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Thesaurus Small USA.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x59db",
+          "bytes": "b207b2"
+        },
+        {
+          "offset": "0x59dd",
+          "bytes": "b27fb2"
+        },
+        {
+          "offset": "0x59df",
+          "bytes": "b287b2"
+        },
+        {
+          "offset": "0x59e1",
+          "bytes": "b29fb2"
+        },
+        {
+          "offset": "0x59e3",
+          "bytes": "b2c7b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Small (6 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontSmall.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Thesaurus Spanish to English",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x56ab",
+          "bytes": "b118b1"
+        },
+        {
+          "offset": "0x56c7",
+          "bytes": "b28eb2"
+        },
+        {
+          "offset": "0xf85d",
+          "bytes": "b102b1"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Keywords",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/KeyWords.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Very Large (3 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontVLarge.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Beamer",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Beamer.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "SpellCheck Large USA",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SpellCheck Large USA.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0xc2d4",
+          "bytes": "b131b1"
+        },
+        {
+          "offset": "0xc4a5",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x123d7",
+          "bytes": "b128b1"
+        },
+        {
+          "offset": "0x125da",
+          "bytes": "b217b2"
+        },
+        {
+          "offset": "0x1a536",
+          "bytes": "b123b1"
+        },
+        {
+          "offset": "0x1a788",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x2433a",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x243b8",
+          "bytes": "b232b2"
+        },
+        {
+          "offset": "0x4873a",
+          "bytes": "b232b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Calculator",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/Calculator.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "AlphaWord Plus",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/AlphaWordPlus.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x2662",
+          "opcode": "0x16bc",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x266c",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x26a2",
+          "opcode": "0x16bc",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x26ac",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x26b2",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x26be",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x7860",
+          "opcode": "0xc16",
+          "value": "0xbb"
+        },
+        {
+          "offset": "0x7c1c",
+          "opcode": "0xc16",
+          "value": "0xbc"
+        },
+        {
+          "offset": "0x7c28",
+          "opcode": "0xc16",
+          "value": "0xbd"
+        },
+        {
+          "offset": "0x80a2",
+          "opcode": "0xc12",
+          "value": "0xbb"
+        },
+        {
+          "offset": "0x819e",
+          "opcode": "0xc12",
+          "value": "0xbc"
+        },
+        {
+          "offset": "0x8cc8",
+          "opcode": "0xc13",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x8cce",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x8d54",
+          "opcode": "0xc01",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x8d60",
+          "opcode": "0x10bc",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x8d7a",
+          "opcode": "0x10bc",
+          "value": "0xb0"
+        }
+      ]
+    },
+    {
+      "name": "StyleWriterFont",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/SWFont.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Large (4 lines)",
+      "path": "Ghidra/Alphasmart 3000/SmartApplets/NeoFontLarge.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Solo (1 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontSolo.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Tech (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech6.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Neuropol (3 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNeuropol.OS3KApp",
+      "community_font": true,
+      "raw_frames": [
+        {
+          "offset": "0xb37",
+          "bytes": "b1b1b1"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Tech (1 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech1.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Femto (9 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontFemto.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Klingon (2 line)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontKlingon.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Atto (11 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontAtto.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Micro (7 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMicro.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Nano (8 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNano.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Mirror (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMirror.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Bold (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/NeoFonts/NeoFontBold.OS3KApp",
+      "community_font": true,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "MathFacts in a Flash RP",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsinaflash.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "MathFacts in a Flash (offline)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/mathfactsoffline.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "SpellCheck Small USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_small_usa.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x12200",
+          "bytes": "b2d5b2"
+        }
+      ],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x5d34",
+          "opcode": "0xc00",
+          "value": "0xb2"
+        },
+        {
+          "offset": "0xc1ea",
+          "opcode": "0xc00",
+          "value": "0xb2"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Extra Large (2 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontxlarge.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "CW_Topics",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CW_Topics.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Responder",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/responder.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x39b0",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Very Large (3 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontvlarge.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "CW_MainDictionary",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CW_MainDictionary.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Wireless File Transfer",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/wirelessfiletransfer.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x4e1e",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "AlphaQuiz",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/alphaquiz.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Thesaurus Small USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_small_usa.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x5a33",
+          "bytes": "b207b2"
+        },
+        {
+          "offset": "0x5a35",
+          "bytes": "b27fb2"
+        },
+        {
+          "offset": "0x5a37",
+          "bytes": "b287b2"
+        },
+        {
+          "offset": "0x5a39",
+          "bytes": "b29fb2"
+        },
+        {
+          "offset": "0x5a3b",
+          "bytes": "b2c7b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "AlphaWord Plus",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/alphawordplus.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x6f98",
+          "opcode": "0xc00",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x82a0",
+          "opcode": "0xc16",
+          "value": "0xbb"
+        },
+        {
+          "offset": "0x865c",
+          "opcode": "0xc16",
+          "value": "0xbc"
+        },
+        {
+          "offset": "0x8668",
+          "opcode": "0xc16",
+          "value": "0xbd"
+        },
+        {
+          "offset": "0x8ae2",
+          "opcode": "0xc12",
+          "value": "0xbb"
+        },
+        {
+          "offset": "0x8bde",
+          "opcode": "0xc12",
+          "value": "0xbc"
+        },
+        {
+          "offset": "0x9708",
+          "opcode": "0xc13",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x9714",
+          "opcode": "0x1f7c",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x979a",
+          "opcode": "0xc01",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x97ac",
+          "opcode": "0x10bc",
+          "value": "0xb0"
+        },
+        {
+          "offset": "0x97c6",
+          "opcode": "0x10bc",
+          "value": "0xb0"
+        }
+      ]
+    },
+    {
+      "name": "Thesaurus Large USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/thesaurus_large_usa.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0xc725",
+          "bytes": "b24ab2"
+        },
+        {
+          "offset": "0xf2a4",
+          "bytes": "b148b1"
+        },
+        {
+          "offset": "0xfe31",
+          "bytes": "b202b2"
+        },
+        {
+          "offset": "0x24de5",
+          "bytes": "b23ab2"
+        },
+        {
+          "offset": "0x350e3",
+          "bytes": "b113b1"
+        },
+        {
+          "offset": "0x3a58f",
+          "bytes": "b11bb1"
+        },
+        {
+          "offset": "0x42ad3",
+          "bytes": "b20bb2"
+        },
+        {
+          "offset": "0x53fad",
+          "bytes": "b276b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Medium (5 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontmedium.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Accelerated Reader",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/acceleratedreader.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Calculator",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/calculator.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Inspiration(R) Outliner",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/Inspiration(R) Outliner.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Wireless Updater",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/wirelessupdate.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "KeyWords",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/keywords.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Beamer",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/beamer.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "SpellCheck Spanish",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_spanish.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x4cfe8",
+          "bytes": "b175b1"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "SpellCheck Large USA",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/spellcheck_large_usa.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0xc34f",
+          "bytes": "b131b1"
+        },
+        {
+          "offset": "0xc520",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x1245c",
+          "bytes": "b128b1"
+        },
+        {
+          "offset": "0x1265f",
+          "bytes": "b217b2"
+        },
+        {
+          "offset": "0x1a60b",
+          "bytes": "b123b1"
+        },
+        {
+          "offset": "0x1a85d",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x244b1",
+          "bytes": "b1f1b1"
+        },
+        {
+          "offset": "0x2452f",
+          "bytes": "b232b2"
+        },
+        {
+          "offset": "0x48dc2",
+          "bytes": "b232b2"
+        }
+      ],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Text2Speech Updater",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/text2speechupdate.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "KeyWords Wireless",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/keywordswireless.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Neo Font - Small (6 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontsmall.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "CoWriter",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/CoWriter.os3kapp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0xa793",
+          "bytes": "b201b2"
+        }
+      ],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x344",
+          "opcode": "0xc00",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x794",
+          "opcode": "0xc00",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3a76",
+          "opcode": "0xc00",
+          "value": "0xb6"
+        },
+        {
+          "offset": "0x6382",
+          "opcode": "0xc00",
+          "value": "0xb6"
+        },
+        {
+          "offset": "0x68e4",
+          "opcode": "0xc00",
+          "value": "0xb6"
+        }
+      ]
+    },
+    {
+      "name": "Neo Font - Large (4 lines)",
+      "path": "Ghidra/Alphasmart Neo/SmartApplets/neofontlarge.os3kapp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": []
+    },
+    {
+      "name": "Control Panel",
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ControlPanel.OS3KApp",
+      "community_font": false,
+      "raw_frames": [],
+      "byte_instruction_candidates": [
+        {
+          "offset": "0x3570",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x35d8",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x3622",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x428c",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x42f6",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x47b4",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        },
+        {
+          "offset": "0x47ec",
+          "opcode": "0x103c",
+          "value": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "Thesaurus Spanish to English",
+      "path": "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/ThesaurusSpanishtoEng.OS3KApp",
+      "community_font": false,
+      "raw_frames": [
+        {
+          "offset": "0x5703",
+          "bytes": "b118b1"
+        },
+        {
+          "offset": "0x571f",
+          "bytes": "b28eb2"
+        },
+        {
+          "offset": "0xf8b5",
+          "bytes": "b102b1"
+        }
+      ],
+      "byte_instruction_candidates": []
+    }
+  ]
+}

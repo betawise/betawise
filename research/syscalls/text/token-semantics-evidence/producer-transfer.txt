@@ -1,0 +1,1416 @@
+SITE 0042d8e8 FUNCTION 0042d7fe
+SITE 0042dae0 FUNCTION 0042d9a6
+SITE 0042dec6 FUNCTION 0042dd3e
+SITE 0042e0e8 FUNCTION 0042df04
+SITE 00428598 FUNCTION 00428598
+SITE 004285ce FUNCTION 004285ce
+SITE 0043fae6 FUNCTION 0043f97a
+=== FUNCTION 00428598 ===
+00428598 movem.l {  A4 A3},-(SP)
+0042859c movea.l (0xc,SP),A3
+004285a0 movea.l (0x10,SP),A4
+004285a4 pea (0x7c).w
+004285a8 clr.l -(SP)
+004285aa move.l A4,-(SP)
+004285ac jsr 0x004366c2.l
+004285b2 lea (0xc,SP),SP
+004285b6 move.w (A3),(A4)
+004285b8 clr.b (0x2,A4)
+004285bc clr.b (0x3,A4)
+004285c0 clr.w (0x1c,A4)
+004285c4 move.l A3,(0x50,A4)
+004285c8 movem.l (SP)+,{  A3 A4}
+004285cc rts
+
+void FUN_00428598(undefined2 *param_1,undefined2 *param_2)
+
+{
+  func_0x004366c2(param_2,0,0x7c);
+  *param_2 = *param_1;
+  *(undefined *)(param_2 + 1) = 0;
+  *(undefined *)((int)param_2 + 3) = 0;
+  param_2[0xe] = 0;
+  *(undefined2 **)(param_2 + 0x28) = param_1;
+  return;
+}
+
+
+=== FUNCTION 004285ce ===
+004285ce movem.l {  A4 A3 A2 D7 D6},-(SP)
+004285d2 movea.l (0x18,SP),A4
+004285d6 move.l (0x1c,SP),D7
+004285da movea.l (0x24,SP),A2
+004285de movea.l (0x20,SP),A3
+004285e2 jsr 0x00435948.l
+004285e8 bsr.w 0x0042a0b4
+004285ec clr.l (A2)
+004285ee move.l #0xff,D0
+004285f4 and.l D7,D0
+004285f6 moveq #0x20,D1
+004285f8 cmp.l D1,D0
+004285fa bhi.w 0x00428824
+004285fe movea.l #0x2f,A0
+00428604 moveq #0xc,D1
+00428606 addq.l #0x1,A0
+00428608 cmp.b (0x428608,PC,A0*0x1),D0b
+0042860c dbls D1w,0x00428606
+00428610 bne.w 0x00428824
+00428614 add.l D1,D1
+00428616 move.w (0x42861e,PC,D1*0x1),D1w
+0042861a jmp (0x42861e,PC,D1w*0x1)
+00428824 moveq #0x0,D0
+00428826 movem.l (SP)+,{  D6 D7 A2 A3 A4}
+0042882a rts
+
+undefined4 FUN_004285ce(undefined4 param_1,byte param_2,undefined4 param_3,undefined4 *param_4)
+
+{
+  byte *pbVar1;
+  undefined4 uVar2;
+  uint uVar3;
+  ushort uVar4;
+  int iVar5;
+  
+  func_0x00435948();
+  func_0x0042a0b4();
+  *param_4 = 0;
+  if (param_2 < 0x21) {
+    uVar3 = 0xc;
+    iVar5 = 0x2f;
+    do {
+      pbVar1 = (byte *)(iVar5 + 0x428609);
+      if (param_2 <= *pbVar1) break;
+      uVar4 = (short)uVar3 - 1;
+      uVar3 = (uint)uVar4;
+      iVar5 = iVar5 + 1;
+    } while (uVar4 != 0xffff);
+    if (param_2 == *pbVar1) {
+                    /* WARNING: Could not recover jumptable at 0x0042861a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      uVar2 = (*(code *)(*(short *)(uVar3 * 2 + 0x42861e) + 0x42861e))();
+      return uVar2;
+    }
+  }
+  return 0;
+}
+
+
+=== FUNCTION 0042d7fe ===
+0042d7fe movem.l {  A6 A4 A3 A2 D7 D6 D5 D4 D3},-(SP)
+0042d802 lea (-0x14,SP),SP
+0042d806 movea.l (0x3c,SP),A2
+0042d80a clr.w (0x8,SP)
+0042d80e clr.w (0x6,SP)
+0042d812 clr.w (0x4,SP)
+0042d816 move.l (0x4e,A2),(SP)
+0042d81a tst.w (0x36,A2)
+0042d81e beq.w 0x0042d99a
+0042d822 move.l (0x38,A2),D0
+0042d826 cmp.l (0x24,A2),D0
+0042d82a beq.w 0x0042d99a
+0042d82e cmp.l (0x24,A2),D0
+0042d832 bcc.b 0x0042d842
+0042d834 moveq #0xd,D5
+0042d836 move.l (0x24,A2),D0
+0042d83a sub.l (0x38,A2),D0
+0042d83e add.l D0,D5
+0042d840 bra.b 0x0042d84a
+0042d842 moveq #0xd,D5
+0042d844 sub.l (0x24,A2),D0
+0042d848 add.l D0,D5
+0042d84a pea (0x1).w
+0042d84e jsr 0x00439a54.l
+0042d854 move.l D0,D7
+0042d856 move.l D5,-(SP)
+0042d858 jsr 0x00439ab4.l
+0042d85e addq.l #0x8,SP
+0042d860 cmp.l D5,D0
+0042d862 beq.b 0x0042d87c
+0042d864 movea.l (0x40,SP),A0
+0042d868 move.l #0x1000003,(A0)
+0042d86e move.l D7,-(SP)
+0042d870 jsr 0x00439ab4.l
+0042d876 addq.l #0x4,SP
+0042d878 bra.w 0x0042d99a
+0042d87c jsr 0x00439a9e.l
+0042d882 movea.l D0,A4
+0042d884 clr.l -(SP)
+0042d886 clr.l -(SP)
+0042d888 clr.l -(SP)
+0042d88a clr.l -(SP)
+0042d88c moveq #0x0,D0
+0042d88e move.w (A2),D0w
+0042d890 move.l D0,-(SP)
+0042d892 jsr 0x0043a81c.l
+0042d898 move.l D0,(0x20,SP)
+0042d89c movea.l D0,A6
+0042d89e movea.l A6,A3
+0042d8a0 move.l A3,(0x24,SP)
+0042d8a4 moveq #0x0,D0
+0042d8a6 move.w (A2),D0w
+0042d8a8 move.l D0,-(SP)
+0042d8aa jsr 0x0043a53e.l
+0042d8b0 lea (0x18,SP),SP
+0042d8b4 add.l D0,(0xc,SP)
+0042d8b8 move.l (0x38,A2),D0
+0042d8bc cmp.l (0x24,A2),D0
+0042d8c0 bls.b 0x0042d8d2
+0042d8c2 adda.l (0x24,A2),A3
+0042d8c6 adda.l D0,A6
+0042d8c8 move.b (0x1d,A2),D7b
+0042d8cc move.b (0x35,A2),D3b
+0042d8d0 bra.b 0x0042d8e0
+0042d8d2 adda.l (0x24,A2),A6
+0042d8d6 adda.l D0,A3
+0042d8d8 move.b (0x1d,A2),D3b
+0042d8dc move.b (0x35,A2),D7b
+0042d8e0 clr.w D4w
+0042d8e2 move.b D7b,D4b
+0042d8e4 move.w D4w,(0xa,SP)
+0042d8e8 move.b #-0x4e,(A4)+
+0042d8ec clr.b (A4)+
+0042d8ee move.b #-0x4e,(A4)+
+0042d8f2 move.b #-0x4f,(A4)+
+0042d8f6 move.b D7b,(A4)+
+0042d8f8 move.b #-0x4f,(A4)+
+0042d8fc moveq #0x6,D6
+0042d8fe bra.b 0x0042d92c
+0042d900 moveq #0xa,D1
+0042d902 move.b (0x1,SP,D1*0x1),D0b
+0042d906 or.b D4b,D0b
+0042d908 btst.l 0x0,D0
+0042d90c bne.b 0x0042d91a
+0042d90e cmpi.b #-0x59,(A3)
+0042d912 beq.b 0x0042d91a
+0042d914 cmpi.b #-0x58,(A3)
+0042d918 bne.b 0x0042d924
+0042d91a adda.l D7,A3
+0042d91c bra.b 0x0042d928
+0042d91e move.b (A3)+,(A4)+
+0042d920 addq.l #0x1,D6
+0042d922 subq.l #0x1,D7
+0042d924 tst.l D7
+0042d926 bne.b 0x0042d91e
+0042d928 move.w (0xa,SP),D4w
+0042d92c cmpa.l A6,A3
+0042d92e bcc.b 0x0042d960
+0042d930 pea (0x4,SP)
+0042d934 pea (0xa,SP)
+0042d938 pea (0x10,SP)
+0042d93c pea (0x16,SP)
+0042d940 pea (0x10,SP)
+0042d944 movea.l SP,A0
+0042d946 move.l (0x20,A0),-(SP)
+0042d94a movea.l SP,A0
+0042d94c move.l (0x28,A0),-(SP)
+0042d950 move.l A3,-(SP)
+0042d952 move.l A2,-(SP)
+0042d954 bsr.w 0x0042c120
+0042d958 lea (0x24,SP),SP
+0042d95c move.l D0,D7
+0042d95e bne.b 0x0042d900
+0042d960 move.b #-0x4e,(A4)+
+0042d964 move.b D3b,(A4)+
+0042d966 move.b #-0x4e,(A4)+
+0042d96a move.b #-0x4f,(A4)+
+0042d96e clr.b (A4)+
+0042d970 move.b #-0x4f,(A4)
+0042d974 addq.l #0x6,D6
+0042d976 cmp.l D5,D6
+0042d978 beq.b 0x0042d984
+0042d97a move.l D6,-(SP)
+0042d97c jsr 0x00439ab4.l
+0042d982 addq.l #0x4,SP
+0042d984 pea (0x1).w
+0042d988 pea (0x4).w
+0042d98c pea (0xcb).w
+0042d990 jsr 0x0043a9ae.l
+0042d996 lea (0xc,SP),SP
+0042d99a moveq #0x3,D0
+0042d99c lea (0x14,SP),SP
+0042d9a0 movem.l (SP)+,{  D3 D4 D5 D6 D7 A2 A3 A4 A6}
+0042d9a4 rts
+
+undefined4 FUN_0042d7fe(undefined2 *param_1,undefined4 *param_2)
+
+{
+  uint uVar1;
+  uint uVar2;
+  uint uVar3;
+  ushort uVar4;
+  int iVar5;
+  undefined4 uVar6;
+  int iVar7;
+  undefined *puVar8;
+  int iVar9;
+  int iVar10;
+  char cVar11;
+  byte bVar12;
+  char *pcVar13;
+  char *pcVar14;
+  undefined4 uStack56;
+  undefined2 uStack52;
+  undefined2 uStack50;
+  undefined2 uStack48;
+  undefined2 uStack46;
+  int iStack44;
+  int iStack40;
+  
+  uStack48 = 0;
+  uStack50 = 0;
+  uStack52 = 0;
+  uStack56 = *(undefined4 *)(param_1 + 0x27);
+  if ((param_1[0x1b] != 0) &&
+     (uVar1 = *(uint *)(param_1 + 0x1c), uVar1 != *(uint *)(param_1 + 0x12))) {
+    if (uVar1 < *(uint *)(param_1 + 0x12)) {
+      iVar5 = *(int *)(param_1 + 0x12) - *(int *)(param_1 + 0x1c);
+    }
+    else {
+      iVar5 = uVar1 - *(int *)(param_1 + 0x12);
+    }
+    iVar5 = iVar5 + 0xd;
+    uVar6 = func_0x00439a54(1);
+    iVar7 = func_0x00439ab4(iVar5);
+    if (iVar7 == iVar5) {
+      puVar8 = (undefined *)func_0x00439a9e();
+      iVar7 = func_0x0043a81c(*param_1,0,0,0,0);
+      iStack44 = iVar7;
+      iStack40 = iVar7;
+      iVar9 = func_0x0043a53e(*param_1);
+      iStack44 = iVar9 + iStack44;
+      uVar1 = *(uint *)(param_1 + 0x1c);
+      if (*(uint *)(param_1 + 0x12) < uVar1) {
+        bVar12 = *(byte *)((int)param_1 + 0x1d);
+        cVar11 = *(char *)((int)param_1 + 0x35);
+        uVar3 = *(uint *)(param_1 + 0x12);
+        uVar2 = uVar1;
+      }
+      else {
+        uVar2 = *(uint *)(param_1 + 0x12);
+        cVar11 = *(char *)((int)param_1 + 0x1d);
+        bVar12 = *(byte *)((int)param_1 + 0x35);
+        uVar3 = uVar1;
+      }
+      pcVar13 = (char *)(uVar3 + iVar7);
+      uStack46 = (ushort)bVar12;
+      *puVar8 = 0xb2;
+      puVar8[1] = 0;
+      puVar8[2] = 0xb2;
+      puVar8[3] = 0xb1;
+      puVar8[4] = bVar12;
+      pcVar14 = puVar8 + 6;
+      puVar8[5] = 0xb1;
+      iVar9 = 6;
+      while ((uVar4 = uStack46, pcVar13 < (char *)(uVar2 + iVar7) &&
+             (iVar10 = func_0x0042c120(param_1,pcVar13,iStack40,iStack44,&uStack56,&uStack46,
+                                       &uStack48,&uStack50,&uStack52), iVar10 != 0))) {
+        if (((((byte)uStack46 | (byte)uVar4) & 1) == 0) &&
+           ((*pcVar13 != -0x59 && (*pcVar13 != -0x58)))) {
+          for (; iVar10 != 0; iVar10 = iVar10 + -1) {
+            *pcVar14 = *pcVar13;
+            iVar9 = iVar9 + 1;
+            pcVar13 = pcVar13 + 1;
+            pcVar14 = pcVar14 + 1;
+          }
+        }
+        else {
+          pcVar13 = pcVar13 + iVar10;
+        }
+      }
+      *pcVar14 = -0x4e;
+      pcVar14[1] = cVar11;
+      pcVar14[2] = -0x4e;
+      pcVar14[3] = -0x4f;
+      pcVar14[4] = '\0';
+      pcVar14[5] = -0x4f;
+      if (iVar9 + 6 != iVar5) {
+        func_0x00439ab4(iVar9 + 6);
+      }
+      func_0x0043a9ae(0xcb,4,1);
+    }
+    else {
+      *param_2 = 0x1000003;
+      func_0x00439ab4(uVar6);
+    }
+  }
+  return 3;
+}
+
+
+=== FUNCTION 0042d9a6 ===
+0042d9a6 movem.l {  A6 A4 A3 A2 D7 D6 D5 D4},-(SP)
+0042d9aa lea (-0x14,SP),SP
+0042d9ae movea.l (0x38,SP),A4
+0042d9b2 clr.w (0x8,SP)
+0042d9b6 clr.w (0x6,SP)
+0042d9ba clr.w (0x4,SP)
+0042d9be move.l (0x4e,A4),(SP)
+0042d9c2 movea.l (0x3c,SP),A0
+0042d9c6 clr.l (A0)
+0042d9c8 tst.w (0x36,A4)
+0042d9cc beq.b 0x0042d9d8
+0042d9ce move.l (0x38,A4),D0
+0042d9d2 cmp.l (0x24,A4),D0
+0042d9d6 bne.b 0x0042d9de
+0042d9d8 moveq #0x3,D0
+0042d9da bra.w 0x0042db4c
+0042d9de clr.l -(SP)
+0042d9e0 clr.l -(SP)
+0042d9e2 clr.l -(SP)
+0042d9e4 clr.l -(SP)
+0042d9e6 moveq #0x0,D0
+0042d9e8 move.w (A4),D0w
+0042d9ea move.l D0,-(SP)
+0042d9ec jsr 0x0043a81c.l
+0042d9f2 movea.l D0,A6
+0042d9f4 move.l A6,(0x24,SP)
+0042d9f8 movea.l A6,A3
+0042d9fa move.l A3,(0x20,SP)
+0042d9fe moveq #0x0,D0
+0042da00 move.w (A4),D0w
+0042da02 move.l D0,-(SP)
+0042da04 jsr 0x0043a53e.l
+0042da0a lea (0x18,SP),SP
+0042da0e adda.l D0,A6
+0042da10 move.l (0x38,A4),D0
+0042da14 cmp.l (0x24,A4),D0
+0042da18 bls.b 0x0042da2c
+0042da1a adda.l (0x24,A4),A3
+0042da1e add.l D0,(0x10,SP)
+0042da22 move.b (0x1d,A4),D5b
+0042da26 move.b (0x35,A4),D4b
+0042da2a bra.b 0x0042da4c
+0042da2c move.l (0x24,A4),D0
+0042da30 add.l D0,(0x10,SP)
+0042da34 adda.l (0x38,A4),A3
+0042da38 move.b (0x1d,A4),D4b
+0042da3c move.b (0x35,A4),D5b
+0042da40 move.l (0x38,A4),(0x24,A4)
+0042da46 move.w (0x34,A4),(0x1c,A4)
+0042da4c movea.l A3,A2
+0042da4e clr.w D6w
+0042da50 move.b D5b,D6b
+0042da52 move.w D6w,(0xa,SP)
+0042da56 bra.b 0x0042da9a
+0042da58 moveq #0x1,D1
+0042da5a move.b (0xa,SP,D1*0x1),D0b
+0042da5e or.b D6b,D0b
+0042da60 andi.b #0x3,D0b
+0042da64 bne.b 0x0042da72
+0042da66 cmpi.b #-0x59,(A3)
+0042da6a beq.b 0x0042da72
+0042da6c cmpi.b #-0x58,(A3)
+0042da70 bne.b 0x0042da94
+0042da72 cmpi.b #-0x59,(A3)
+0042da76 bne.b 0x0042da8e
+0042da78 move.l A2,D0
+0042da7a sub.l (0xc,SP),D0
+0042da7e move.l D0,(0x28,A4)
+0042da82 add.l D7,D0
+0042da84 move.l D0,(0x2c,A4)
+0042da88 bra.b 0x0042da8e
+0042da8a move.b (A3)+,(A2)+
+0042da8c subq.l #0x1,D7
+0042da8e tst.l D7
+0042da90 bne.b 0x0042da8a
+0042da92 bra.b 0x0042da96
+0042da94 adda.l D7,A3
+0042da96 move.w (0xa,SP),D6w
+0042da9a cmpa.l (0x10,SP),A3
+0042da9e bcc.b 0x0042dacc
+0042daa0 pea (0x4,SP)
+0042daa4 pea (0xa,SP)
+0042daa8 pea (0x10,SP)
+0042daac pea (0x16,SP)
+0042dab0 pea (0x10,SP)
+0042dab4 move.l A6,-(SP)
+0042dab6 movea.l SP,A0
+0042dab8 move.l (0x24,A0),-(SP)
+0042dabc move.l A3,-(SP)
+0042dabe move.l A4,-(SP)
+0042dac0 bsr.w 0x0042c120
+0042dac4 lea (0x24,SP),SP
+0042dac8 move.l D0,D7
+0042daca bne.b 0x0042da58
+0042dacc cmp.b D5b,D4b
+0042dace beq.b 0x0042daf8
+0042dad0 move.b D5b,D7b
+0042dad2 eor.b D4b,D7b
+0042dad4 and.b D4b,D7b
+0042dad6 move.b D5b,D6b
+0042dad8 eor.b D4b,D6b
+0042dada and.b D5b,D6b
+0042dadc tst.b D7b
+0042dade beq.b 0x0042daea
+0042dae0 move.b #-0x4f,(A2)+
+0042dae4 move.b D7b,(A2)+
+0042dae6 move.b #-0x4f,(A2)+
+0042daea tst.b D6b
+0042daec beq.b 0x0042daf8
+0042daee move.b #-0x4e,(A2)+
+0042daf2 move.b D6b,(A2)+
+0042daf4 move.b #-0x4e,(A2)+
+0042daf8 move.l (0xc,SP),D0
+0042dafc add.l (0x28,A4),D0
+0042db00 cmpa.l D0,A2
+0042db02 bcc.b 0x0042db10
+0042db04 move.l A3,D7
+0042db06 sub.l A2,D7
+0042db08 sub.l D7,(0x28,A4)
+0042db0c sub.l D7,(0x2c,A4)
+0042db10 move.l A6,D0
+0042db12 sub.l A3,D0
+0042db14 move.l D0,-(SP)
+0042db16 move.l A3,-(SP)
+0042db18 move.l A2,-(SP)
+0042db1a jsr 0x00436b46.l
+0042db20 move.l A3,D0
+0042db22 sub.l A2,D0
+0042db24 suba.l D0,A6
+0042db26 move.l (0x18,SP),D0
+0042db2a neg.l D0
+0042db2c pea (0x0,A6,D0*0x1)
+0042db30 jsr 0x0043a640.l
+0042db36 pea (0x1).w
+0042db3a move.l A4,-(SP)
+0042db3c bsr.w 0x0042b5d0
+0042db40 lea (0x18,SP),SP
+0042db44 movea.l (0x3c,SP),A0
+0042db48 move.l D0,(A0)
+0042db4a moveq #0x1,D0
+0042db4c lea (0x14,SP),SP
+0042db50 movem.l (SP)+,{  D4 D5 D6 D7 A2 A3 A4 A6}
+0042db54 rts
+
+undefined4 FUN_0042d9a6(undefined2 *param_1,undefined4 *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  ushort uVar3;
+  undefined4 uVar4;
+  int iVar5;
+  int iVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  char *pcVar10;
+  char *pcVar11;
+  char *pcVar12;
+  undefined4 uStack52;
+  undefined2 uStack48;
+  undefined2 uStack46;
+  undefined2 uStack44;
+  undefined2 uStack42;
+  int iStack40;
+  char *pcStack36;
+  
+  uStack44 = 0;
+  uStack46 = 0;
+  uStack48 = 0;
+  uStack52 = *(undefined4 *)(param_1 + 0x27);
+  *param_2 = 0;
+  if ((param_1[0x1b] == 0) || (*(int *)(param_1 + 0x1c) == *(int *)(param_1 + 0x12))) {
+    uVar4 = 3;
+  }
+  else {
+    iVar5 = func_0x0043a81c(*param_1,0,0,0,0);
+    iStack40 = iVar5;
+    pcStack36 = (char *)iVar5;
+    iVar6 = func_0x0043a53e(*param_1);
+    iVar6 = iVar6 + iVar5;
+    uVar1 = *(uint *)(param_1 + 0x1c);
+    if (*(uint *)(param_1 + 0x12) < uVar1) {
+      iVar2 = *(int *)(param_1 + 0x12);
+      bVar8 = *(byte *)((int)param_1 + 0x1d);
+      bVar7 = *(byte *)((int)param_1 + 0x35);
+    }
+    else {
+      uVar1 = *(uint *)(param_1 + 0x12);
+      iVar2 = *(int *)(param_1 + 0x1c);
+      bVar7 = *(byte *)((int)param_1 + 0x1d);
+      bVar8 = *(byte *)((int)param_1 + 0x35);
+      *(undefined4 *)(param_1 + 0x12) = *(undefined4 *)(param_1 + 0x1c);
+      param_1[0xe] = param_1[0x1a];
+    }
+    pcStack36 = (char *)(uVar1 + (int)pcStack36);
+    pcVar11 = (char *)(iVar2 + iVar5);
+    uStack42 = (ushort)bVar8;
+    pcVar12 = pcVar11;
+    while ((uVar3 = uStack42, pcVar12 < pcStack36 &&
+           (iVar5 = func_0x0042c120(param_1,pcVar12,iStack40,iVar6,&uStack52,&uStack42,&uStack44,
+                                    &uStack46,&uStack48), iVar5 != 0))) {
+      if (((((byte)uStack42 | (byte)uVar3) & 3) == 0) &&
+         ((*pcVar12 != -0x59 && (*pcVar12 != -0x58)))) {
+        pcVar12 = pcVar12 + iVar5;
+      }
+      else {
+        if (*pcVar12 == -0x59) {
+          *(int *)(param_1 + 0x14) = (int)pcVar11 - iStack40;
+          *(int *)(param_1 + 0x16) = ((int)pcVar11 - iStack40) + iVar5;
+        }
+        for (; iVar5 != 0; iVar5 = iVar5 + -1) {
+          *pcVar11 = *pcVar12;
+          pcVar11 = pcVar11 + 1;
+          pcVar12 = pcVar12 + 1;
+        }
+      }
+    }
+    if (bVar7 != bVar8) {
+      bVar9 = (bVar7 ^ bVar8) & bVar7;
+      bVar8 = (bVar7 ^ bVar8) & bVar8;
+      if (bVar9 != 0) {
+        *pcVar11 = -0x4f;
+        pcVar10 = pcVar11 + 2;
+        pcVar11[1] = bVar9;
+        pcVar11 = pcVar11 + 3;
+        *pcVar10 = -0x4f;
+      }
+      if (bVar8 != 0) {
+        *pcVar11 = -0x4e;
+        pcVar10 = pcVar11 + 2;
+        pcVar11[1] = bVar8;
+        pcVar11 = pcVar11 + 3;
+        *pcVar10 = -0x4e;
+      }
+    }
+    if (pcVar11 < (char *)(iStack40 + *(int *)(param_1 + 0x14))) {
+      *(int *)(param_1 + 0x14) = *(int *)(param_1 + 0x14) - ((int)pcVar12 - (int)pcVar11);
+      *(int *)(param_1 + 0x16) = *(int *)(param_1 + 0x16) - ((int)pcVar12 - (int)pcVar11);
+    }
+    func_0x00436b46(pcVar11,pcVar12,iVar6 - (int)pcVar12);
+    func_0x0043a640((iVar6 - ((int)pcVar12 - (int)pcVar11)) - iStack40);
+    uVar4 = func_0x0042b5d0(param_1,1);
+    *param_2 = uVar4;
+    uVar4 = 1;
+  }
+  return uVar4;
+}
+
+
+=== FUNCTION 0042dd3e ===
+0042dd3e movem.l {  A6 A4 A3 A2 D7 D6 D5 D4},-(SP)
+0042dd42 movea.l (0x24,SP),A2
+0042dd46 movea.l (0x28,SP),A6
+0042dd4a clr.b D5b
+0042dd4c clr.l (A6)
+0042dd4e btst.b 0x1,(0x1d,A2)
+0042dd54 bne.w 0x0042de5e
+0042dd58 jsr 0x00439a9e.l
+0042dd5e movea.l D0,A4
+0042dd60 pea (0x1).w
+0042dd64 jsr 0x00439a54.l
+0042dd6a addq.l #0x4,SP
+0042dd6c add.l A4,D0
+0042dd6e movea.l D0,A3
+0042dd70 move.l A3,D0
+0042dd72 sub.l A4,D0
+0042dd74 moveq #0xc,D1
+0042dd76 cmp.l D1,D0
+0042dd78 blt.b 0x0042ddda
+0042dd7a cmpi.b #-0x4e,(A4)
+0042dd7e bne.b 0x0042ddda
+0042dd80 cmpi.b #-0x4e,(0x2,A4)
+0042dd86 bne.b 0x0042ddda
+0042dd88 cmpi.b #-0x4f,(0x3,A4)
+0042dd8e bne.b 0x0042ddda
+0042dd90 cmpi.b #-0x4f,(0x5,A4)
+0042dd96 bne.b 0x0042ddda
+0042dd98 cmpi.b #-0x4f,(-0x1,A3)
+0042dd9e bne.b 0x0042ddda
+0042dda0 cmpi.b #-0x4f,(-0x3,A3)
+0042dda6 bne.b 0x0042ddda
+0042dda8 cmpi.b #-0x4e,(-0x4,A3)
+0042ddae bne.b 0x0042ddda
+0042ddb0 cmpi.b #-0x4e,(-0x6,A3)
+0042ddb6 bne.b 0x0042ddda
+0042ddb8 move.b (0x1d,A2),D7b
+0042ddbc move.b D7b,D6b
+0042ddbe move.b (0x4,A4),D0b
+0042ddc2 eor.b D0b,D6b
+0042ddc4 and.b D7b,D6b
+0042ddc6 move.b D7b,D5b
+0042ddc8 move.b (-0x5,A3),D0b
+0042ddcc eor.b D0b,D5b
+0042ddce and.b D7b,D5b
+0042ddd0 move.b D6b,(0x1,A4)
+0042ddd4 move.b D5b,(-0x2,A3)
+0042ddd8 moveq #0x1,D5
+0042ddda move.l A3,D7
+0042dddc sub.l A4,D7
+0042ddde tst.b D5b
+0042dde0 bne.b 0x0042de04
+0042dde2 bra.b 0x0042ddfa
+0042dde4 cmpi.b #-0x5f,(A4)
+0042dde8 bcs.b 0x0042ddf0
+0042ddea cmpi.b #-0x41,(A4)
+0042ddee bls.b 0x0042ddf6
+0042ddf0 cmpi.b #-0x71,(A4)
+0042ddf4 bne.b 0x0042ddf8
+0042ddf6 addq.l #0x2,D7
+0042ddf8 addq.l #0x1,A4
+0042ddfa cmpa.l A3,A4
+0042ddfc bcs.b 0x0042dde4
+0042ddfe jsr 0x00439a9e.l
+0042de04 move.l (0x18,A2),D4
+0042de08 clr.l -(SP)
+0042de0a move.l D7,-(SP)
+0042de0c move.l (0x24,A2),-(SP)
+0042de10 move.l A2,-(SP)
+0042de12 bsr.w 0x0042bf58
+0042de16 lea (0x10,SP),SP
+0042de1a move.l D0,(A6)
+0042de1c beq.b 0x0042de76
+0042de1e pea (0xc).w
+0042de22 move.l A2,-(SP)
+0042de24 bsr.w 0x0042e2e0
+0042de28 addq.l #0x8,SP
+0042de2a move.l (0x2c,A2),D6
+0042de2e sub.l (0x28,A2),D6
+0042de32 moveq #0xc,D0
+0042de34 cmp.l D0,D6
+0042de36 bls.b 0x0042de58
+0042de38 sub.l D0,D6
+0042de3a cmp.l D6,D7
+0042de3c bls.b 0x0042de6e
+0042de3e clr.l -(SP)
+0042de40 move.l D7,D0
+0042de42 sub.l D6,D0
+0042de44 move.l D0,-(SP)
+0042de46 move.l (0x24,A2),-(SP)
+0042de4a move.l A2,-(SP)
+0042de4c bsr.w 0x0042bf58
+0042de50 lea (0x10,SP),SP
+0042de54 move.l D0,(A6)
+0042de56 beq.b 0x0042de64
+0042de58 move.l #0x1000004,(A6)
+0042de5e moveq #0x3,D0
+0042de60 bra.w 0x0042defe
+0042de64 add.l D6,(0x24,A2)
+0042de68 add.l D6,(0x28,A2)
+0042de6c bra.b 0x0042de76
+0042de6e add.l D7,(0x24,A2)
+0042de72 add.l D7,(0x28,A2)
+0042de76 move.l D4,(0x18,A2)
+0042de7a jsr 0x00439a9e.l
+0042de80 movea.l D0,A3
+0042de82 pea (0x1).w
+0042de86 jsr 0x00439a54.l
+0042de8c clr.l -(SP)
+0042de8e clr.l -(SP)
+0042de90 clr.l -(SP)
+0042de92 clr.l -(SP)
+0042de94 moveq #0x0,D0
+0042de96 move.w (A2),D0w
+0042de98 move.l D0,-(SP)
+0042de9a jsr 0x0043a81c.l
+0042dea0 lea (0x18,SP),SP
+0042dea4 movea.l D0,A4
+0042dea6 move.l (0x24,A2),D0
+0042deaa sub.l D7,D0
+0042deac adda.l D0,A4
+0042deae tst.b D5b
+0042deb0 bne.b 0x0042dede
+0042deb2 bra.b 0x0042ded8
+0042deb4 cmpi.b #-0x5f,(A3)
+0042deb8 bcs.b 0x0042dec0
+0042deba cmpi.b #-0x41,(A3)
+0042debe bls.b 0x0042dec6
+0042dec0 cmpi.b #-0x71,(A3)
+0042dec4 bne.b 0x0042ded4
+0042dec6 move.b #-0x50,(A4)+
+0042deca move.b (A3)+,(A4)+
+0042decc move.b #-0x50,(A4)+
+0042ded0 subq.l #0x3,D7
+0042ded2 bra.b 0x0042ded8
+0042ded4 move.b (A3)+,(A4)+
+0042ded6 subq.l #0x1,D7
+0042ded8 tst.l D7
+0042deda bne.b 0x0042deb4
+0042dedc bra.b 0x0042deee
+0042dede move.l D7,-(SP)
+0042dee0 move.l A3,-(SP)
+0042dee2 move.l A4,-(SP)
+0042dee4 jsr 0x00436678.l
+0042deea lea (0xc,SP),SP
+0042deee pea (0x1).w
+0042def2 move.l A2,-(SP)
+0042def4 bsr.w 0x0042b5d0
+0042def8 addq.l #0x8,SP
+0042defa move.l D0,(A6)
+0042defc moveq #0x1,D0
+0042defe movem.l (SP)+,{  D4 D5 D6 D7 A2 A3 A4 A6}
+0042df02 rts
+
+undefined4 FUN_0042dd3e(undefined2 *param_1,int *param_2)
+
+{
+  byte bVar1;
+  byte bVar2;
+  bool bVar3;
+  byte *pbVar4;
+  int iVar5;
+  byte *pbVar6;
+  undefined4 uVar7;
+  uint uVar8;
+  uint uVar9;
+  
+  bVar3 = false;
+  *param_2 = 0;
+  if ((*(byte *)((int)param_1 + 0x1d) & 2) == 0) {
+    pbVar4 = (byte *)func_0x00439a9e();
+    iVar5 = func_0x00439a54(1);
+    pbVar6 = pbVar4 + iVar5;
+    if (((((0xb < (int)pbVar6 - (int)pbVar4) && (*pbVar4 == 0xb2)) && (pbVar4[2] == 0xb2)) &&
+        (((pbVar4[3] == 0xb1 && (pbVar4[5] == 0xb1)) &&
+         ((pbVar6[-1] == 0xb1 && ((pbVar6[-3] == 0xb1 && (pbVar6[-4] == 0xb2)))))))) &&
+       (pbVar6[-6] == 0xb2)) {
+      bVar1 = *(byte *)((int)param_1 + 0x1d);
+      bVar2 = pbVar6[-5];
+      pbVar4[1] = (pbVar4[4] ^ bVar1) & bVar1;
+      pbVar6[-2] = (bVar2 ^ bVar1) & bVar1;
+      bVar3 = true;
+    }
+    uVar9 = (int)pbVar6 - (int)pbVar4;
+    if (!bVar3) {
+      for (; pbVar4 < pbVar6; pbVar4 = pbVar4 + 1) {
+        if (((0xa0 < *pbVar4) && (*pbVar4 < 0xc0)) || (*pbVar4 == 0x8f)) {
+          uVar9 = uVar9 + 2;
+        }
+      }
+      func_0x00439a9e();
+    }
+    uVar7 = *(undefined4 *)(param_1 + 0xc);
+    iVar5 = func_0x0042bf58(param_1,*(undefined4 *)(param_1 + 0x12),uVar9,0);
+    *param_2 = iVar5;
+    if (iVar5 != 0) {
+      func_0x0042e2e0(param_1,0xc);
+      if ((uint)(*(int *)(param_1 + 0x16) - *(int *)(param_1 + 0x14)) < 0xd) {
+LAB_0042de58:
+        *param_2 = 0x1000004;
+        goto LAB_0042de5e;
+      }
+      uVar8 = (*(int *)(param_1 + 0x16) - *(int *)(param_1 + 0x14)) - 0xc;
+      if (uVar8 < uVar9) {
+        iVar5 = func_0x0042bf58(param_1,*(undefined4 *)(param_1 + 0x12),uVar9 - uVar8,0);
+        *param_2 = iVar5;
+        if (iVar5 != 0) goto LAB_0042de58;
+        *(uint *)(param_1 + 0x12) = uVar8 + *(int *)(param_1 + 0x12);
+        *(uint *)(param_1 + 0x14) = uVar8 + *(int *)(param_1 + 0x14);
+      }
+      else {
+        *(uint *)(param_1 + 0x12) = uVar9 + *(int *)(param_1 + 0x12);
+        *(uint *)(param_1 + 0x14) = uVar9 + *(int *)(param_1 + 0x14);
+      }
+    }
+    *(undefined4 *)(param_1 + 0xc) = uVar7;
+    pbVar4 = (byte *)func_0x00439a9e();
+    func_0x00439a54(1);
+    iVar5 = func_0x0043a81c(*param_1,0,0,0,0);
+    pbVar6 = (byte *)((*(int *)(param_1 + 0x12) - uVar9) + iVar5);
+    if (bVar3) {
+      func_0x00436678(pbVar6,pbVar4,uVar9);
+    }
+    else {
+      while (uVar9 != 0) {
+        if (((*pbVar4 < 0xa1) || (0xbf < *pbVar4)) && (*pbVar4 != 0x8f)) {
+          *pbVar6 = *pbVar4;
+          uVar9 = uVar9 - 1;
+          pbVar4 = pbVar4 + 1;
+          pbVar6 = pbVar6 + 1;
+        }
+        else {
+          *pbVar6 = 0xb0;
+          pbVar6[1] = *pbVar4;
+          pbVar6[2] = 0xb0;
+          uVar9 = uVar9 - 3;
+          pbVar4 = pbVar4 + 1;
+          pbVar6 = pbVar6 + 3;
+        }
+      }
+    }
+    iVar5 = func_0x0042b5d0(param_1,1);
+    *param_2 = iVar5;
+    uVar7 = 1;
+  }
+  else {
+LAB_0042de5e:
+    uVar7 = 3;
+  }
+  return uVar7;
+}
+
+
+=== FUNCTION 0042df04 ===
+0042df04 movem.l {  A6 A4 A3 A2 D7 D6 D5 D4},-(SP)
+0042df08 subq.l #0x4,SP
+0042df0a movea.l (0x28,SP),A2
+0042df0e movea.l (0x2c,SP),A6
+0042df12 clr.b D4b
+0042df14 move.l (0x2c,A2),D6
+0042df18 sub.l (0x28,A2),D6
+0042df1c moveq #0xc,D0
+0042df1e cmp.l D0,D6
+0042df20 bls.b 0x0042df26
+0042df22 sub.l D0,D6
+0042df24 bra.b 0x0042df28
+0042df26 moveq #0x0,D6
+0042df28 clr.l (A6)
+0042df2a btst.b 0x1,(0x1d,A2)
+0042df30 bne.w 0x0042e078
+0042df34 jsr 0x00439a9e.l
+0042df3a movea.l D0,A4
+0042df3c pea (0x1).w
+0042df40 jsr 0x00439a54.l
+0042df46 addq.l #0x4,SP
+0042df48 add.l A4,D0
+0042df4a movea.l D0,A3
+0042df4c move.l A3,D0
+0042df4e sub.l A4,D0
+0042df50 moveq #0xc,D1
+0042df52 cmp.l D1,D0
+0042df54 blt.b 0x0042dfb6
+0042df56 cmpi.b #-0x4e,(A4)
+0042df5a bne.b 0x0042dfb6
+0042df5c cmpi.b #-0x4e,(0x2,A4)
+0042df62 bne.b 0x0042dfb6
+0042df64 cmpi.b #-0x4f,(0x3,A4)
+0042df6a bne.b 0x0042dfb6
+0042df6c cmpi.b #-0x4f,(0x5,A4)
+0042df72 bne.b 0x0042dfb6
+0042df74 cmpi.b #-0x4f,(-0x1,A3)
+0042df7a bne.b 0x0042dfb6
+0042df7c cmpi.b #-0x4f,(-0x3,A3)
+0042df82 bne.b 0x0042dfb6
+0042df84 cmpi.b #-0x4e,(-0x4,A3)
+0042df8a bne.b 0x0042dfb6
+0042df8c cmpi.b #-0x4e,(-0x6,A3)
+0042df92 bne.b 0x0042dfb6
+0042df94 move.b (0x1d,A2),D7b
+0042df98 move.b D7b,D5b
+0042df9a move.b (0x4,A4),D0b
+0042df9e eor.b D0b,D5b
+0042dfa0 and.b D7b,D5b
+0042dfa2 move.b D7b,D4b
+0042dfa4 move.b (-0x5,A3),D0b
+0042dfa8 eor.b D0b,D4b
+0042dfaa and.b D7b,D4b
+0042dfac move.b D5b,(0x1,A4)
+0042dfb0 move.b D4b,(-0x2,A3)
+0042dfb4 moveq #0x1,D4
+0042dfb6 move.l A3,D7
+0042dfb8 sub.l A4,D7
+0042dfba tst.b D4b
+0042dfbc bne.b 0x0042dfe0
+0042dfbe bra.b 0x0042dfd6
+0042dfc0 cmpi.b #-0x5f,(A4)
+0042dfc4 bcs.b 0x0042dfcc
+0042dfc6 cmpi.b #-0x41,(A4)
+0042dfca bls.b 0x0042dfd2
+0042dfcc cmpi.b #-0x71,(A4)
+0042dfd0 bne.b 0x0042dfd4
+0042dfd2 addq.l #0x2,D7
+0042dfd4 addq.l #0x1,A4
+0042dfd6 cmpa.l A3,A4
+0042dfd8 bcs.b 0x0042dfc0
+0042dfda jsr 0x00439a9e.l
+0042dfe0 move.l (0x18,A2),D5
+0042dfe4 moveq #0x0,D0
+0042dfe6 move.w (A2),D0w
+0042dfe8 move.l D0,-(SP)
+0042dfea jsr 0x0043a4fe.l
+0042dff0 addq.l #0x4,SP
+0042dff2 add.l D6,D0
+0042dff4 cmp.l D0,D7
+0042dff6 bls.b 0x0042e00a
+0042dff8 moveq #0x0,D0
+0042dffa move.w (A2),D0w
+0042dffc move.l D0,-(SP)
+0042dffe jsr 0x0043a4fe.l
+0042e004 addq.l #0x4,SP
+0042e006 move.l D0,D7
+0042e008 add.l D6,D7
+0042e00a tst.l (0x2,A2)
+0042e00e beq.b 0x0042e05a
+0042e010 moveq #0x0,D0
+0042e012 move.w (A2),D0w
+0042e014 move.l D0,-(SP)
+0042e016 move.l (0x2,A2),D0
+0042e01a move.l D0,(0x4,SP)
+0042e01e jsr 0x0043a53e.l
+0042e024 addq.l #0x4,SP
+0042e026 sub.l D0,(SP)
+0042e028 move.l (SP),D0
+0042e02a move.l (0x46,A2),D1
+0042e02e sub.l (0x42,A2),D1
+0042e032 add.l D1,D0
+0042e034 add.l D6,D0
+0042e036 cmp.l D0,D7
+0042e038 bls.b 0x0042e05a
+0042e03a moveq #0x0,D0
+0042e03c move.w (A2),D0w
+0042e03e move.l D0,-(SP)
+0042e040 move.l (0x2,A2),D7
+0042e044 jsr 0x0043a53e.l
+0042e04a addq.l #0x4,SP
+0042e04c sub.l D0,D7
+0042e04e move.l (0x46,A2),D0
+0042e052 sub.l (0x42,A2),D0
+0042e056 add.l D0,D7
+0042e058 add.l D6,D7
+0042e05a cmp.l D6,D7
+0042e05c bls.b 0x0042e088
+0042e05e clr.l -(SP)
+0042e060 move.l D7,D0
+0042e062 sub.l D6,D0
+0042e064 move.l D0,-(SP)
+0042e066 move.l (0x24,A2),-(SP)
+0042e06a move.l A2,-(SP)
+0042e06c bsr.w 0x0042bf58
+0042e070 lea (0x10,SP),SP
+0042e074 move.l D0,(A6)
+0042e076 beq.b 0x0042e07e
+0042e078 moveq #0x3,D0
+0042e07a bra.w 0x0042e15c
+0042e07e add.l D6,(0x24,A2)
+0042e082 add.l D6,(0x28,A2)
+0042e086 bra.b 0x0042e090
+0042e088 add.l D7,(0x24,A2)
+0042e08c add.l D7,(0x28,A2)
+0042e090 move.l D5,(0x18,A2)
+0042e094 jsr 0x00439a9e.l
+0042e09a movea.l D0,A3
+0042e09c pea (0x1).w
+0042e0a0 jsr 0x00439a54.l
+0042e0a6 clr.l -(SP)
+0042e0a8 clr.l -(SP)
+0042e0aa clr.l -(SP)
+0042e0ac clr.l -(SP)
+0042e0ae moveq #0x0,D0
+0042e0b0 move.w (A2),D0w
+0042e0b2 move.l D0,-(SP)
+0042e0b4 jsr 0x0043a81c.l
+0042e0ba lea (0x18,SP),SP
+0042e0be movea.l D0,A4
+0042e0c0 move.l (0x24,A2),D0
+0042e0c4 sub.l D7,D0
+0042e0c6 adda.l D0,A4
+0042e0c8 moveq #-0x1,D5
+0042e0ca tst.b D4b
+0042e0cc bne.b 0x0042e148
+0042e0ce bra.b 0x0042e106
+0042e0d0 cmpi.b #-0x5f,(A3)
+0042e0d4 bcs.b 0x0042e0dc
+0042e0d6 cmpi.b #-0x41,(A3)
+0042e0da bls.b 0x0042e0e2
+0042e0dc cmpi.b #-0x71,(A3)
+0042e0e0 bne.b 0x0042e102
+0042e0e2 moveq #0x3,D0
+0042e0e4 cmp.l D0,D7
+0042e0e6 bcs.b 0x0042e0fc
+0042e0e8 move.b #-0x50,(A4)+
+0042e0ec move.b (A3)+,(A4)+
+0042e0ee move.b #-0x50,(A4)+
+0042e0f2 sub.l D0,D7
+0042e0f4 bra.b 0x0042e106
+0042e0f6 move.b #0x20,(A4)+
+0042e0fa add.l D5,D7
+0042e0fc tst.l D7
+0042e0fe bne.b 0x0042e0f6
+0042e100 bra.b 0x0042e106
+0042e102 move.b (A3)+,(A4)+
+0042e104 subq.l #0x1,D7
+0042e106 tst.l D7
+0042e108 bne.b 0x0042e0d0
+0042e10a bra.b 0x0042e14c
+0042e10c pea (0x3,SP)
+0042e110 move.l A3,-(SP)
+0042e112 bsr.w 0x0042b4f8
+0042e116 addq.l #0x8,SP
+0042e118 move.b D0b,D6b
+0042e11a moveq #0x0,D0
+0042e11c move.b D6b,D0b
+0042e11e cmp.l D7,D0
+0042e120 bhi.b 0x0042e144
+0042e122 move.l D0,-(SP)
+0042e124 move.l A3,-(SP)
+0042e126 move.l A4,-(SP)
+0042e128 jsr 0x00436678.l
+0042e12e lea (0xc,SP),SP
+0042e132 moveq #0x0,D0
+0042e134 move.b D6b,D0b
+0042e136 adda.l D0,A3
+0042e138 adda.l D0,A4
+0042e13a sub.l D0,D7
+0042e13c bra.b 0x0042e148
+0042e13e move.b #0x20,(A4)+
+0042e142 add.l D5,D7
+0042e144 tst.l D7
+0042e146 bne.b 0x0042e13e
+0042e148 tst.l D7
+0042e14a bne.b 0x0042e10c
+0042e14c pea (0x1).w
+0042e150 move.l A2,-(SP)
+0042e152 bsr.w 0x0042b5d0
+0042e156 addq.l #0x8,SP
+0042e158 move.l D0,(A6)
+0042e15a moveq #0x1,D0
+0042e15c addq.l #0x4,SP
+0042e15e movem.l (SP)+,{  D4 D5 D6 D7 A2 A3 A4 A6}
+0042e162 rts
+
+undefined4 FUN_0042df04(undefined2 *param_1,int *param_2)
+
+{
+  byte bVar1;
+  bool bVar2;
+  byte *pbVar3;
+  int iVar4;
+  byte *pbVar5;
+  int iVar6;
+  undefined4 uVar7;
+  byte bVar8;
+  uint uVar9;
+  uint uVar10;
+  undefined4 uStack36;
+  
+  bVar2 = false;
+  if ((uint)(*(int *)(param_1 + 0x16) - *(int *)(param_1 + 0x14)) < 0xd) {
+    uVar9 = 0;
+  }
+  else {
+    uVar9 = (*(int *)(param_1 + 0x16) - *(int *)(param_1 + 0x14)) - 0xc;
+  }
+  *param_2 = 0;
+  if ((*(byte *)((int)param_1 + 0x1d) & 2) == 0) {
+    pbVar3 = (byte *)func_0x00439a9e();
+    iVar4 = func_0x00439a54(1);
+    pbVar5 = pbVar3 + iVar4;
+    if (((((0xb < (int)pbVar5 - (int)pbVar3) && (*pbVar3 == 0xb2)) && (pbVar3[2] == 0xb2)) &&
+        (((pbVar3[3] == 0xb1 && (pbVar3[5] == 0xb1)) &&
+         ((pbVar5[-1] == 0xb1 && ((pbVar5[-3] == 0xb1 && (pbVar5[-4] == 0xb2)))))))) &&
+       (pbVar5[-6] == 0xb2)) {
+      bVar8 = *(byte *)((int)param_1 + 0x1d);
+      bVar1 = pbVar5[-5];
+      pbVar3[1] = (pbVar3[4] ^ bVar8) & bVar8;
+      pbVar5[-2] = (bVar1 ^ bVar8) & bVar8;
+      bVar2 = true;
+    }
+    uVar10 = (int)pbVar5 - (int)pbVar3;
+    if (!bVar2) {
+      for (; pbVar3 < pbVar5; pbVar3 = pbVar3 + 1) {
+        if (((0xa0 < *pbVar3) && (*pbVar3 < 0xc0)) || (*pbVar3 == 0x8f)) {
+          uVar10 = uVar10 + 2;
+        }
+      }
+      func_0x00439a9e();
+    }
+    uVar7 = *(undefined4 *)(param_1 + 0xc);
+    iVar4 = func_0x0043a4fe(*param_1);
+    if (iVar4 + uVar9 < uVar10) {
+      iVar4 = func_0x0043a4fe(*param_1);
+      uVar10 = iVar4 + uVar9;
+    }
+    if (*(int *)(param_1 + 1) != 0) {
+      uStack36 = *(int *)(param_1 + 1);
+      iVar4 = func_0x0043a53e(*param_1);
+      uStack36 = uStack36 - iVar4;
+      if (uStack36 + (*(int *)(param_1 + 0x23) - *(int *)(param_1 + 0x21)) + uVar9 < uVar10) {
+        iVar4 = *(int *)(param_1 + 1);
+        iVar6 = func_0x0043a53e(*param_1);
+        uVar10 = (iVar4 - iVar6) + (*(int *)(param_1 + 0x23) - *(int *)(param_1 + 0x21)) + uVar9;
+      }
+    }
+    if (uVar9 < uVar10) {
+      iVar4 = func_0x0042bf58(param_1,*(undefined4 *)(param_1 + 0x12),uVar10 - uVar9,0);
+      *param_2 = iVar4;
+      if (iVar4 != 0) goto LAB_0042e078;
+      *(uint *)(param_1 + 0x12) = uVar9 + *(int *)(param_1 + 0x12);
+      *(uint *)(param_1 + 0x14) = uVar9 + *(int *)(param_1 + 0x14);
+    }
+    else {
+      *(uint *)(param_1 + 0x12) = uVar10 + *(int *)(param_1 + 0x12);
+      *(uint *)(param_1 + 0x14) = uVar10 + *(int *)(param_1 + 0x14);
+    }
+    *(undefined4 *)(param_1 + 0xc) = uVar7;
+    pbVar3 = (byte *)func_0x00439a9e();
+    func_0x00439a54(1);
+    iVar4 = func_0x0043a81c(*param_1,0,0,0,0);
+    pbVar5 = (byte *)((*(int *)(param_1 + 0x12) - uVar10) + iVar4);
+    if (bVar2) {
+      while (uVar10 != 0) {
+        bVar8 = func_0x0042b4f8(pbVar3,(int)&uStack36 + 3);
+        if (uVar10 < bVar8) {
+          for (; uVar10 != 0; uVar10 = uVar10 - 1) {
+            *pbVar5 = 0x20;
+            pbVar5 = pbVar5 + 1;
+          }
+        }
+        else {
+          func_0x00436678(pbVar5,pbVar3,(uint)bVar8);
+          uVar9 = (uint)bVar8;
+          pbVar3 = pbVar3 + uVar9;
+          pbVar5 = pbVar5 + uVar9;
+          uVar10 = uVar10 - uVar9;
+        }
+      }
+    }
+    else {
+      while (uVar10 != 0) {
+        if (((*pbVar3 < 0xa1) || (0xbf < *pbVar3)) && (*pbVar3 != 0x8f)) {
+          *pbVar5 = *pbVar3;
+          uVar10 = uVar10 - 1;
+          pbVar3 = pbVar3 + 1;
+          pbVar5 = pbVar5 + 1;
+        }
+        else {
+          if (uVar10 < 3) {
+            for (; uVar10 != 0; uVar10 = uVar10 - 1) {
+              *pbVar5 = 0x20;
+              pbVar5 = pbVar5 + 1;
+            }
+          }
+          else {
+            *pbVar5 = 0xb0;
+            pbVar5[1] = *pbVar3;
+            pbVar5[2] = 0xb0;
+            uVar10 = uVar10 - 3;
+            pbVar3 = pbVar3 + 1;
+            pbVar5 = pbVar5 + 3;
+          }
+        }
+      }
+    }
+    iVar4 = func_0x0042b5d0(param_1,1);
+    *param_2 = iVar4;
+    uVar7 = 1;
+  }
+  else {
+LAB_0042e078:
+    uVar7 = 3;
+  }
+  return uVar7;
+}
+
+
+=== FUNCTION 0043f97a ===
+0043f97a movem.l {  A6 A4 A3 A2 D7 D6},-(SP)
+0043f97e lea (-0x1a,SP),SP
+0043f982 movea.l (0x42,SP),A4
+0043f986 movea.l (0x4a,SP),A6
+0043f98a moveq #0x0,D0
+0043f98c move.w (0x38,SP),D0w
+0043f990 move.l D0,-(SP)
+0043f992 jsr 0x00439bbc.l
+0043f998 addq.l #0x4,SP
+0043f99a move.l D0,D7
+0043f99c bne.b 0x0043fa1a
+0043f99e movea.l (0x4,A4),A0
+0043f9a2 move.b (A0),D0b
+0043f9a4 cmpi.b #0x1e,D0b
+0043f9a8 beq.b 0x0043f9ac
+0043f9aa bra.b 0x0043f9f8
+0043f9ac movea.l (0x10,A4),A0
+0043f9b0 move.b #0x5e,(A0)
+0043f9b4 pea (0xa000).l
+0043f9ba jsr 0x00439bbc.l
+0043f9c0 addq.l #0x4,SP
+0043f9c2 tst.l D0
+0043f9c4 beq.b 0x0043f9ca
+0043f9c6 moveq #0x1,D6
+0043f9c8 bra.b 0x0043f9cc
+0043f9ca clr.b D6b
+0043f9cc pea (0xa001).l
+0043f9d2 jsr 0x00439bbc.l
+0043f9d8 addq.l #0x4,SP
+0043f9da tst.l D0
+0043f9dc beq.b 0x0043f9e2
+0043f9de moveq #0x2,D7
+0043f9e0 bra.b 0x0043f9e4
+0043f9e2 clr.b D7b
+0043f9e4 move.b D6b,D0b
+0043f9e6 or.b D7b,D0b
+0043f9e8 movea.l (0x10,A4),A0
+0043f9ec move.b D0b,(0x1,A0)
+0043f9f0 moveq #0x2,D0
+0043f9f2 move.l D0,(0xc,A4)
+0043f9f6 bra.b 0x0043fa0e
+0043f9f8 movea.l (0x4,A4),A0
+0043f9fc move.b (A0),D0b
+0043f9fe bset.l 0x7,D0
+0043fa02 movea.l (0x10,A4),A0
+0043fa06 move.b D0b,(A0)
+0043fa08 moveq #0x1,D0
+0043fa0a move.l D0,(0xc,A4)
+0043fa0e movea.l (0x46,SP),A0
+0043fa12 moveq #0x4,D0
+0043fa14 move.l D0,(A0)
+0043fa16 bra.w 0x0043fb3e
+0043fa1a move.b #0x1,(0x00003dfc).l
+0043fa22 jsr 0x004393e6.l
+0043fa28 jsr 0x0043a9a6.l
+0043fa2e moveq #-0x1,D0
+0043fa30 move.l D0,(0x000035f0).l
+0043fa36 movea.l #0xe0a,A2
+0043fa3c move.l D7,(0x000035ec).l
+0043fa42 beq.b 0x0043fa74
+0043fa44 move.l D7,D1
+0043fa46 lsl.l #0x2,D1
+0043fa48 move.l (0x0,A2,D1*0x1),D0
+0043fa4c move.l D7,D1
+0043fa4e lsl.l #0x2,D1
+0043fa50 movea.l (0x0,A2,D1*0x1),A0
+0043fa54 add.l (0x84,A0),D0
+0043fa58 movea.l D0,A3
+0043fa5a move.l D7,D0
+0043fa5c lsl.l #0x2,D0
+0043fa5e addi.l #0x355e,D0
+0043fa64 movea.l D0,A0
+0043fa66 move.l (A0),-(SP)
+0043fa68 jsr 0x00410094.l
+0043fa6e addq.l #0x4,SP
+0043fa70 move.l D0,D7
+0043fa72 bra.b 0x0043fa80
+0043fa74 move.l D7,D0
+0043fa76 lsl.l #0x2,D0
+0043fa78 movea.l (0x0,A2,D0*0x1),A0
+0043fa7c movea.l (0x84,A0),A3
+0043fa80 lea (0x2,SP),A2
+0043fa84 moveq #0x1,D0
+0043fa86 move.l D0,(A2)
+0043fa88 clr.l (0x6,SP)
+0043fa8c clr.l (0xa,SP)
+0043fa90 move.l #0x400,(0xe,SP)
+0043fa98 clr.l (0x12,SP)
+0043fa9c move.l #0x35fa,(0x16,SP)
+0043faa4 move.l A2,-(SP)
+0043faa6 pea (0xa,SP)
+0043faaa movea.l SP,A0
+0043faac move.l (0x42,A0),-(SP)
+0043fab0 jsr (A3)
+0043fab2 lea (0xc,SP),SP
+0043fab6 cmpi.l #0x11,(A2)
+0043fabc beq.b 0x0043fad2
+0043fabe cmpi.l #0x12,(A2)
+0043fac4 beq.b 0x0043fad2
+0043fac6 move.l D7,-(SP)
+0043fac8 jsr 0x00410094.l
+0043face addq.l #0x4,SP
+0043fad0 bra.b 0x0043fb3e
+0043fad2 cmpi.l #0x20001,(0x3a,SP)
+0043fada bne.b 0x0043fb1e
+0043fadc movea.l (0x4,A4),A0
+0043fae0 cmpi.b #-0x43,(A0)
+0043fae4 beq.b 0x0043fb1e
+0043fae6 move.b #-0x44,(0x1,SP)
+0043faec moveq #0x1,D0
+0043faee move.l D0,(0x6,SP)
+0043faf2 lea (0x1,SP),A0
+0043faf6 move.l A0,(0xa,SP)
+0043fafa move.l #0x400,(0xe,SP)
+0043fb02 clr.l (0x12,SP)
+0043fb06 move.l #0x35fa,(0x16,SP)
+0043fb0e move.l A2,-(SP)
+0043fb10 move.l A4,-(SP)
+0043fb12 pea (0x20002).l
+0043fb18 jsr (A3)
+0043fb1a lea (0xc,SP),SP
+0043fb1e move.l A6,D0
+0043fb20 beq.b 0x0043fb24
+0043fb22 move.l D7,(A6)
+0043fb24 movea.l (0x4e,SP),A0
+0043fb28 move.l A3,(A0)
+0043fb2a movea.l SP,A0
+0043fb2c move.l (0x46,A0),-(SP)
+0043fb30 move.l A4,-(SP)
+0043fb32 movea.l SP,A0
+0043fb34 move.l (0x46,A0),-(SP)
+0043fb38 jsr (A3)
+0043fb3a lea (0xc,SP),SP
+0043fb3e lea (0x1a,SP),SP
+0043fb42 movem.l (SP)+,{  D6 D7 A2 A3 A4 A6}
+0043fb46 rts
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0043f97a(undefined2 param_1,int param_2,undefined4 param_3,int param_4,undefined4 *param_5,
+                 int *param_6,code **param_7)
+
+{
+  int iVar1;
+  int iVar2;
+  code *pcVar3;
+  byte bVar4;
+  undefined uStack49;
+  int iStack48;
+  undefined4 uStack44;
+  undefined *puStack40;
+  undefined4 uStack36;
+  undefined4 uStack32;
+  undefined4 uStack28;
+  
+  iVar1 = func_0x00439bbc(param_1);
+  if (iVar1 == 0) {
+    if (**(char **)(param_4 + 4) == '\x1e') {
+      **(undefined **)(param_4 + 0x10) = 0x5e;
+      iVar1 = func_0x00439bbc(0xa000);
+      iVar2 = func_0x00439bbc(0xa001);
+      if (iVar2 == 0) {
+        bVar4 = 0;
+      }
+      else {
+        bVar4 = 2;
+      }
+      *(byte *)(*(int *)(param_4 + 0x10) + 1) = iVar1 != 0 | bVar4;
+      *(undefined4 *)(param_4 + 0xc) = 2;
+    }
+    else {
+      **(byte **)(param_4 + 0x10) = **(byte **)(param_4 + 4) | 0x80;
+      *(undefined4 *)(param_4 + 0xc) = 1;
+    }
+    *param_5 = 4;
+  }
+  else {
+    DAT_00003dfc = 1;
+    func_0x004393e6();
+    func_0x0043a9a6();
+    _DAT_000035f0 = 0xffffffff;
+    _DAT_000035ec = iVar1;
+    if (iVar1 == 0) {
+      pcVar3 = *(code **)(iRam00000e0a + 0x84);
+    }
+    else {
+      pcVar3 = (code *)(*(int *)(iVar1 * 4 + 0xe0a) + *(int *)(*(int *)(iVar1 * 4 + 0xe0a) + 0x84));
+      iVar1 = func_0x00410094(*(undefined4 *)(iVar1 * 4 + 0x355e));
+    }
+    iStack48 = 1;
+    uStack44 = 0;
+    puStack40 = (undefined *)0x0;
+    uStack36 = 0x400;
+    uStack32 = 0;
+    uStack28 = 0x35fa;
+    (*pcVar3)(param_2,&uStack44,&iStack48);
+    if ((iStack48 == 0x11) || (iStack48 == 0x12)) {
+      if ((param_2 == 0x20001) && (**(char **)(param_4 + 4) != -0x43)) {
+        uStack49 = 0xbc;
+        uStack44 = 1;
+        puStack40 = &uStack49;
+        uStack36 = 0x400;
+        uStack32 = 0;
+        uStack28 = 0x35fa;
+        (*pcVar3)(0x20002,param_4,&iStack48);
+      }
+      if (param_6 != (int *)0x0) {
+        *param_6 = iVar1;
+      }
+      *param_7 = pcVar3;
+      (*pcVar3)(param_3,param_4,param_5);
+    }
+    else {
+      func_0x00410094(iVar1);
+    }
+  }
+  return;
+}
+
+

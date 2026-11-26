@@ -1,0 +1,75 @@
+{
+  "description": "Shared BetaWise fallback numerals: TI-83/84 graph-screen small font, with three ink columns and a four-pixel advance.",
+  "height": 5,
+  "advance": 4,
+  "alignment": "top of unaccented H in the regular body face",
+  "source": {
+    "name": "TI-83 Plus Developer Guide, third release, Appendix B",
+    "url": "https://education.ti.com/-/media/672891A1E98349CAB91C11B4928C253C",
+    "pdf_page": 181,
+    "printed_page": 164,
+    "codes": "30h\u201339h"
+  },
+  "columns": [
+    [
+      14,
+      17,
+      14,
+      0
+    ],
+    [
+      18,
+      31,
+      16,
+      0
+    ],
+    [
+      25,
+      21,
+      18,
+      0
+    ],
+    [
+      17,
+      21,
+      10,
+      0
+    ],
+    [
+      7,
+      4,
+      30,
+      0
+    ],
+    [
+      23,
+      21,
+      9,
+      0
+    ],
+    [
+      30,
+      21,
+      29,
+      0
+    ],
+    [
+      25,
+      5,
+      3,
+      0
+    ],
+    [
+      31,
+      21,
+      31,
+      0
+    ],
+    [
+      23,
+      21,
+      15,
+      0
+    ]
+  ]
+}

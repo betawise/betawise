@@ -1,0 +1,583 @@
+{
+  "format": "betawise-font-fixes-v1",
+  "glyphs": [
+    {
+      "font": "BetaWiseBook/BetaWiseBook-Small-Regular.bdf",
+      "slot": 170,
+      "hex": "0xAA",
+      "character": "ª",
+      "family": "BetaWise Book",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseMono/BetaWiseMono-Small-Regular.bdf",
+      "slot": 67,
+      "hex": "0x43",
+      "character": "C",
+      "family": "BetaWise Mono",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseMono/BetaWiseMono-Small-Regular.bdf",
+      "slot": 71,
+      "hex": "0x47",
+      "character": "G",
+      "family": "BetaWise Mono",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseMono/BetaWiseMono-Small-Regular.bdf",
+      "slot": 199,
+      "hex": "0xC7",
+      "character": "Ç",
+      "family": "BetaWise Mono",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseSerif/BetaWiseSerif-Small-Regular.bdf",
+      "slot": 18,
+      "hex": "0x12",
+      "character": "Ξ",
+      "family": "BetaWise Serif",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseSerif/BetaWiseSerif-Small-Regular.bdf",
+      "slot": 99,
+      "hex": "0x63",
+      "character": "c",
+      "family": "BetaWise Serif",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseSerif/BetaWiseSerif-Small-Regular.bdf",
+      "slot": 231,
+      "hex": "0xE7",
+      "character": "ç",
+      "family": "BetaWise Serif",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 4,
+      "hex": "0x04",
+      "character": "Ń",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 192,
+      "hex": "0xC0",
+      "character": "À",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 193,
+      "hex": "0xC1",
+      "character": "Á",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 194,
+      "hex": "0xC2",
+      "character": "Â",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 195,
+      "hex": "0xC3",
+      "character": "Ã",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 196,
+      "hex": "0xC4",
+      "character": "Ä",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 197,
+      "hex": "0xC5",
+      "character": "Å",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 199,
+      "hex": "0xC7",
+      "character": "Ç",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 200,
+      "hex": "0xC8",
+      "character": "È",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 201,
+      "hex": "0xC9",
+      "character": "É",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 202,
+      "hex": "0xCA",
+      "character": "Ê",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 203,
+      "hex": "0xCB",
+      "character": "Ë",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 204,
+      "hex": "0xCC",
+      "character": "Ì",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 205,
+      "hex": "0xCD",
+      "character": "Í",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 206,
+      "hex": "0xCE",
+      "character": "Î",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 207,
+      "hex": "0xCF",
+      "character": "Ï",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 209,
+      "hex": "0xD1",
+      "character": "Ñ",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 210,
+      "hex": "0xD2",
+      "character": "Ò",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 211,
+      "hex": "0xD3",
+      "character": "Ó",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 212,
+      "hex": "0xD4",
+      "character": "Ô",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 213,
+      "hex": "0xD5",
+      "character": "Õ",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 214,
+      "hex": "0xD6",
+      "character": "Ö",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 217,
+      "hex": "0xD9",
+      "character": "Ù",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 218,
+      "hex": "0xDA",
+      "character": "Ú",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    },
+    {
+      "font": "BetaWiseTerminal/glyphs-5x7.bdf",
+      "slot": 219,
+      "hex": "0xDB",
+      "character": "Û",
+      "family": "BetaWise Terminal",
+      "size": "Small",
+      "style": "Regular",
+      "implemented": true
+    }
+  ],
+  "mapping": [
+    {
+      "slot": 0,
+      "hex": "0x00",
+      "currentUnicode": 9608,
+      "currentCharacter": "█",
+      "state": "confirmed"
+    },
+    {
+      "slot": 1,
+      "hex": "0x01",
+      "currentUnicode": 948,
+      "currentCharacter": "δ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 2,
+      "hex": "0x02",
+      "currentUnicode": 916,
+      "currentCharacter": "Δ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 3,
+      "hex": "0x03",
+      "currentUnicode": 8747,
+      "currentCharacter": "∫",
+      "state": "confirmed"
+    },
+    {
+      "slot": 4,
+      "hex": "0x04",
+      "currentUnicode": 323,
+      "currentCharacter": "Ń",
+      "state": "change",
+      "suggestion": "U+0144",
+      "unicode": 324
+    },
+    {
+      "slot": 5,
+      "hex": "0x05",
+      "currentUnicode": 307,
+      "currentCharacter": "ĳ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 6,
+      "hex": "0x06",
+      "currentUnicode": 9974,
+      "currentCharacter": "⛶",
+      "state": "confirmed"
+    },
+    {
+      "slot": 7,
+      "hex": "0x07",
+      "currentUnicode": 8532,
+      "currentCharacter": "⅔",
+      "state": "confirmed"
+    },
+    {
+      "slot": 8,
+      "hex": "0x08",
+      "currentUnicode": 729,
+      "currentCharacter": "˙",
+      "state": "confirmed"
+    },
+    {
+      "slot": 9,
+      "hex": "0x09",
+      "currentUnicode": 8677,
+      "currentCharacter": "⇥",
+      "state": "confirmed"
+    },
+    {
+      "slot": 10,
+      "hex": "0x0A",
+      "currentUnicode": 8595,
+      "currentCharacter": "↓",
+      "state": "confirmed"
+    },
+    {
+      "slot": 11,
+      "hex": "0x0B",
+      "currentUnicode": 8593,
+      "currentCharacter": "↑",
+      "state": "confirmed"
+    },
+    {
+      "slot": 12,
+      "hex": "0x0C",
+      "currentUnicode": 10515,
+      "currentCharacter": "⤓",
+      "state": "confirmed"
+    },
+    {
+      "slot": 13,
+      "hex": "0x0D",
+      "currentUnicode": 8629,
+      "currentCharacter": "↵",
+      "state": "confirmed"
+    },
+    {
+      "slot": 14,
+      "hex": "0x0E",
+      "currentUnicode": 10504,
+      "currentCharacter": "⤈",
+      "state": "confirmed"
+    },
+    {
+      "slot": 15,
+      "hex": "0x0F",
+      "currentUnicode": 10505,
+      "currentCharacter": "⤉",
+      "state": "confirmed"
+    },
+    {
+      "slot": 16,
+      "hex": "0x10",
+      "currentUnicode": 8594,
+      "currentCharacter": "→",
+      "state": "confirmed"
+    },
+    {
+      "slot": 17,
+      "hex": "0x11",
+      "currentUnicode": 8531,
+      "currentCharacter": "⅓",
+      "state": "confirmed"
+    },
+    {
+      "slot": 18,
+      "hex": "0x12",
+      "currentUnicode": 926,
+      "currentCharacter": "Ξ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 19,
+      "hex": "0x13",
+      "currentUnicode": 945,
+      "currentCharacter": "α",
+      "state": "confirmed"
+    },
+    {
+      "slot": 20,
+      "hex": "0x14",
+      "currentUnicode": 961,
+      "currentCharacter": "ρ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 21,
+      "hex": "0x15",
+      "currentUnicode": 8597,
+      "currentCharacter": "↕",
+      "state": "confirmed"
+    },
+    {
+      "slot": 23,
+      "hex": "0x17",
+      "currentUnicode": 9647,
+      "currentCharacter": "▯",
+      "state": "change",
+      "suggestion": "U+2395",
+      "unicode": 9109
+    },
+    {
+      "slot": 24,
+      "hex": "0x18",
+      "currentUnicode": 8730,
+      "currentCharacter": "√",
+      "state": "confirmed"
+    },
+    {
+      "slot": 25,
+      "hex": "0x19",
+      "currentUnicode": 8804,
+      "currentCharacter": "≤",
+      "state": "confirmed"
+    },
+    {
+      "slot": 26,
+      "hex": "0x1A",
+      "currentUnicode": 8805,
+      "currentCharacter": "≥",
+      "state": "confirmed"
+    },
+    {
+      "slot": 27,
+      "hex": "0x1B",
+      "currentUnicode": 920,
+      "currentCharacter": "Θ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 28,
+      "hex": "0x1C",
+      "currentUnicode": 8734,
+      "currentCharacter": "∞",
+      "state": "confirmed"
+    },
+    {
+      "slot": 29,
+      "hex": "0x1D",
+      "currentUnicode": 937,
+      "currentCharacter": "Ω",
+      "state": "confirmed"
+    },
+    {
+      "slot": 30,
+      "hex": "0x1E",
+      "currentUnicode": 946,
+      "currentCharacter": "β",
+      "state": "confirmed"
+    },
+    {
+      "slot": 31,
+      "hex": "0x1F",
+      "currentUnicode": 931,
+      "currentCharacter": "Σ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 127,
+      "hex": "0x7F",
+      "currentUnicode": 8592,
+      "currentCharacter": "←",
+      "state": "confirmed"
+    },
+    {
+      "slot": 141,
+      "hex": "0x8D",
+      "currentUnicode": 934,
+      "currentCharacter": "Φ",
+      "state": "confirmed"
+    },
+    {
+      "slot": 143,
+      "hex": "0x8F",
+      "currentUnicode": 928,
+      "currentCharacter": "Π",
+      "state": "confirmed"
+    },
+    {
+      "slot": 144,
+      "hex": "0x90",
+      "currentUnicode": 96,
+      "currentCharacter": "`",
+      "state": "confirmed"
+    },
+    {
+      "slot": 157,
+      "hex": "0x9D",
+      "currentUnicode": 960,
+      "currentCharacter": "π",
+      "state": "confirmed"
+    }
+  ]
+}

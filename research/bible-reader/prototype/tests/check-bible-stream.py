@@ -143,7 +143,7 @@ def main():
  assert not a.lcd_roll or a.readthrough,'LCD roll comparison currently verifies system-font read-throughs only'
  out.mkdir(parents=True,exist_ok=False);fw=ROOT/'Ghidra/Alphasmart Neo/SmartApplets';vendor=(ROOT/'betawise/fonts/BetaWiseTerminal-Tiny.OS3KApp'if a.vendor_font=='tiny'else fw/f'neofont{a.vendor_font}.os3kapp')if a.vendor_font else None;stem='BibleReader-Stream'+(''if a.version=='KJV'else'-'+a.version);args=['READER=Streaming',f'LCD_ROLL={int(a.lcd_roll)}',f'WORK_PROFILE={int(a.work_profile)}',f'VERSION={a.version}','STREAM_SEARCH=1','PRUNE=1','DIRECT_DRAW=1',f'PROFILE={int(not a.production)}',f'TEST_FONT={int(bool(vendor))}',f'TEST_FONT_ID={hex(int.from_bytes(vendor.read_bytes()[20:22],"big"))if vendor else ""}',]
  with(out/'build.log').open('w')as log:subprocess.run(['make','-C',str(APP),'-B',*args],stdout=log,stderr=subprocess.STDOUT,check=True)
- mame=ROOT/'mame/neodiag';prepare_session(out,fw,'extra',mame);flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000);offset=0x70000;(out/'artifacts').mkdir();images=[fw/'alphawordplus.os3kapp',APP/(stem+'.OS3KApp'),ROOT/'betawise/fonts/BetaWiseTerminal.OS3KApp']
+ mame=ROOT/'mame/neodiag';prepare_session(out,fw,'extra',mame);flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000);offset=0x70000;(out/'artifacts').mkdir();images=[fw/'alphawordplus.os3kapp',APP/(stem+'.OS3KApp'),ROOT/'betawise/fonts/BetaWiseTerminal-Medium.OS3KApp']
  if a.no_terminal_font:
   assert not vendor,'--no-terminal-font cannot supply a test font'
   images=images[:2]

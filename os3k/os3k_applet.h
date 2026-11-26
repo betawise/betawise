@@ -106,7 +106,8 @@ typedef enum _Message_e {
     MSG_FONT_GET_BOLD   = 0x1000003, /**< Write font slot 1, or NULL to use the normal face. */
     MSG_FONT_GET_ITALIC = 0x1000004, /**< Write font slot 2, or NULL to use the normal face. */
     MSG_FONT_GET_BOLD_ITALIC = 0x1000005, /**< Write font slot 3, or NULL to use the bold face. */
-    MSG_FONT_GET_HEIGHT = 0x1000006, /**< Write the pixel height as a uint32_t through param, not a FontHeader_t*. Stock Neo providers also initialize their descriptor and zero-extend its height byte; BetaWiseTerminal initializes via MSG_INIT. */
+    MSG_FONT_GET_HEIGHT = 0x1000006, /**< Write the pixel height as a uint32_t through param, not a FontHeader_t*. Stock Neo providers also initialize their descriptor and zero-extend its height byte; BetaWise providers use statically initialized descriptors. */
+    MSG_FONT_GET_PRIVATE = 0x1000007, /**< BetaWise extension: write stable private small-cap/superscript FontHeader_t*, or NULL when absent. Encoding: charsets/neo-smallcaps.json. Initialize output to NULL before querying other providers. */
     MSG_FONT_INITIALIZE = MSG_FONT_GET_HEIGHT, /**< Compatibility name; the output is a scalar height. */
     /* Other providers intentionally reuse font-query numbers. These aliases
      * are scoped protocol selectors, not universal meanings of low codes.

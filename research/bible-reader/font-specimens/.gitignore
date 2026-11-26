@@ -1,0 +1,10 @@
+build/
+__pycache__/
+
+# Generated historical output belongs in the font archive, not the source tree.
+*.png
+*.bdf
+*.html
+*.json
+FONT-LICENSE.txt
+!submitted-review.json

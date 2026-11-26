@@ -2,19 +2,22 @@
 
 ## Community NEO fonts
 
-| ID | Applet or resource |
-| --- | --- |
-| `0x7107` | NeoFontMicro |
-| `0x7108` | NeoFontNano |
-| `0x7109` | NeoFontFemto |
-| `0x710B` | NeoFontAtto |
-| `0x7123` | NeoFontNeuropol |
-| `0x7151` | NeoFontSolo |
-| `0x7156` | NeoFontBold |
-| `0x715D` | NeoFontMirror |
-| `0x715E` | NeoFontTech1 |
-| `0x715F` | NeoFontTech6 |
-| `0x7162` | NeoFontKlingon |
+| ID | Applet or resource | Lines |
+| --- | --- | ---: |
+| `0x7107` | NeoFontMicro | 7 |
+| `0x7108` | NeoFontNano | 8 |
+| `0x7109` | NeoFontFemto | 9 |
+| `0x710B` | NeoFontAtto | 11 |
+| `0x7123` | NeoFontNeuropol | 3 |
+| `0x7151` | NeoFontSolo | 1 |
+| `0x7156` | NeoFontBold | 6 |
+| `0x715D` | NeoFontMirror | 6 |
+| `0x715E` | NeoFontTech1 | 1 |
+| `0x715F` | NeoFontTech6 | 6 |
+| `0x7162` | NeoFontKlingon | 2 |
+
+Lines are the advertised counts. See the [community font inventory](../research/bible-reader/font-specimens/neo-fonts/README.md)
+for cell metrics, display-boundary behavior and charset coverage.
 
 ## CoWriter resources
 
@@ -48,11 +51,13 @@
 
 ## Legacy NEO fonts
 
-| `0xAF00` | NeoFontSmall |
-| `0xAF02` | NeoFontLarge |
-| `0xAF03` | NeoFontXLarge |
-| `0xAF73` | NeoFontVLarge |
-| `0xAF75` | NeoFontMedium |
+| ID | Applet or resource | Lines |
+| --- | --- | ---: |
+| `0xAF00` | NeoFontSmall | 6 |
+| `0xAF02` | NeoFontLarge | 4 |
+| `0xAF03` | NeoFontXLarge | 2 |
+| `0xAF73` | NeoFontVLarge | 3 |
+| `0xAF75` | NeoFontMedium | 5 |
 
 See the
 [SmartApplet ID registry](https://github.com/isotherm/betawise/blob/HEAD/applets/REGISTRY.md)

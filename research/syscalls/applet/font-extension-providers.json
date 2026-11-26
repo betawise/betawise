@@ -1,0 +1,448 @@
+[
+  {
+    "paths": [
+      "Ghidra/Alphasmart 3000/SmartApplets/NeoFontMedium.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart 3000/SmartApplets/NeoFontXLarge.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart 3000/SmartApplets/NeoFontSmall.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart 3000/SmartApplets/NeoFontVLarge.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart 3000/SmartApplets/NeoFontLarge.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontMedium.OS3KApp",
+      "Ghidra/Alphasmart Neo/SmartApplets/neofontmedium.os3kapp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontXLarge.OS3KApp",
+      "Ghidra/Alphasmart Neo/SmartApplets/neofontxlarge.os3kapp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontSmall.OS3KApp",
+      "Ghidra/Alphasmart Neo/SmartApplets/neofontsmall.os3kapp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontVLarge.OS3KApp",
+      "Ghidra/Alphasmart Neo/SmartApplets/neofontvlarge.os3kapp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/NEOManager3_9_3USPC-extracted/payload/Program Files/AlphaSmart/AlphaSmart Manager 2/SmartApplets/NeoFontLarge.OS3KApp",
+      "Ghidra/Alphasmart Neo/SmartApplets/neofontlarge.os3kapp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontSolo.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech6.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNeuropol.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontTech1.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontFemto.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontKlingon.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontAtto.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMicro.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontNano.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontMirror.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  },
+  {
+    "paths": [
+      "Ghidra/Alphasmart Neo/NeoFonts/NeoFontBold.OS3KApp"
+    ],
+    "entry": "0x94",
+    "ram": 16,
+    "exit": 0,
+    "results": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        305419896,
+        0,
+        0
+      ]
+    ],
+    "stderr": ""
+  }
+]

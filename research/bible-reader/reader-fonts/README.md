@@ -7,8 +7,9 @@ MAME BibleWise launcher installs them alongside all five vendor font applets.
 Sources are installed X11 75dpi 10-point PCF families New Century Schoolbook,
 Helvetica and Times, each with regular/bold/italic/bold-italic faces. Font IDs
 are FF30, FF31 and FF32. License notices are preserved in FONT-LICENSE.txt.
-These are ASCII test fonts: slots 32–126 preserve source ink; others use a
-question-mark fallback.
+These temporary test fonts provide ASCII slots 32–126 and native curly quotes
+at 91–94, taken from the Unicode X11 source. Other slots use a question-mark
+fallback; this is not a complete mapping of the native extended character set.
 
 Every source cell is thirteen pixels high. All ASCII faces of Century
 Schoolbook and Times have two empty top rows, asserted before removing them,

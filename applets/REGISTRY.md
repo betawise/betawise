@@ -10,8 +10,13 @@ Betawise maintains the canonical list of SmartApplet ID block assignments. See
 | `0xA000`–`0xA11F` | [AlphaSmart legacy applets](HISTORICAL.md#alphasmart-legacy-applets) |
 | `0xA120`–`0xA13F` | [Jakub Kolcar / ioma8](https://github.com/ioma8/neo-re) |
 | `0xA1A0`–`0xA1FF` | [Alpaxo / Betawise](APPLETS.md) |
-| `0xAF00`–`0xAFFF` | [Legacy NEO fonts](HISTORICAL.md#legacy-neo-fonts) |
+| `0xAF00`–`0xAFEF` | [Legacy NEO fonts](HISTORICAL.md#legacy-neo-fonts) |
+| `0xAFF0`–`0xAFFF` | [BetaWise reading fonts](APPLETS.md#reading-fonts) |
 | `0xFF00`–`0xFFFE` | Private use: tests, examples, fixtures and local experiments |
+
+The final 16 IDs of the former `0xAF00`–`0xAFFF` legacy font block are
+allocated to BetaWise reading fonts. The historical vendor font IDs remain
+unchanged. Individual font assignments are listed in [APPLETS.md](APPLETS.md#reading-fonts).
 
 ## Private use
 

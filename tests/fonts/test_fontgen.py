@@ -15,37 +15,46 @@ fontgen = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(fontgen)
 
 
+def setUpModule():
+    from font_inputs import ensure_fonts
+    ensure_fonts()
+
+
 class FontConversion(unittest.TestCase):
     def test_terminal_sources(self):
         for name in ('glyphs', 'glyphs-5x7', 'glyphs-4x6'):
             with self.subTest(name=name), tempfile.TemporaryDirectory() as td:
                 a = fontgen.load(FIXTURES / (name+'.png'), 'iso8859-1')
-                b = fontgen.load(HERE / (name+'.bdf'), 'iso8859-1')
+                b = fontgen.load(HERE / 'build/bdf/BetaWiseTerminal' / (name+'.bdf'), 'iso8859-1', 63)
                 self.assertEqual(len(b), 256)
-                self.assertEqual([(g.size,g.tobytes()) for g in a],
-                                 [(g.size,g.tobytes()) for g in b])
-                # Same output filename gives the same include guard.
-                dest = Path(td)/'glyphs.h'
-                fontgen.generate(FIXTURES/(name+'.png'), dest)
-                expected = dest.read_bytes()
-                fontgen.generate(HERE/(name+'.bdf'), dest)
-                self.assertEqual(expected, dest.read_bytes())
+                # Medium is the AS3000 exception. Fixed variants retain native
+                # ASCII; Neo extras now follow the shared Unicode mapping.
+                slots = range(256) if name == 'glyphs' else range(32, 127)
+                for slot in slots:
+                    self.assertEqual((a[slot].size, a[slot].tobytes()),
+                                     (b[slot].size, b[slot].tobytes()), hex(slot))
+                if name == 'glyphs':
+                    dest = Path(td)/'glyphs.h'
+                    fontgen.generate(FIXTURES/(name+'.png'), dest)
+                    expected = dest.read_bytes()
+                    fontgen.generate(HERE/'build/bdf/BetaWiseTerminal'/(name+'.bdf'), dest)
+                    self.assertEqual(expected, dest.read_bytes())
 
     @unittest.skipUnless(shutil.which('bdftopcf'), 'bdftopcf not installed')
     def test_pcf_and_compressed_inputs(self):
         with tempfile.TemporaryDirectory() as td:
             td = Path(td)
             for name in ('glyphs','glyphs-5x7','glyphs-4x6'):
-                source = HERE/(name+'.bdf')
+                source = HERE/'build/bdf/BetaWiseTerminal'/(name+'.bdf')
                 pcf = td/(name+'.pcf')
                 subprocess.run(['bdftopcf','-o',str(pcf),str(source)],check=True,capture_output=True)
                 dest = td/'font.h'
-                fontgen.generate(source,dest);expected=dest.read_bytes()
+                fontgen.generate(source,dest, missing_glyph=63);expected=dest.read_bytes()
                 for path in (source,pcf):
                     compressed=td/(path.name+'.gz')
                     compressed.write_bytes(gzip.compress(path.read_bytes()))
                     for test in (path,compressed):
-                        fontgen.generate(test,dest)
+                        fontgen.generate(test,dest, missing_glyph=63)
                         self.assertEqual(expected,dest.read_bytes())
 
     def test_overhang_and_proportional_packing(self):
@@ -68,6 +77,13 @@ class FontConversion(unittest.TestCase):
             self.assertIn('GLYPH_DATA[1023]',text)
             # First glyph: one blank row, then 1010 and 0100 -> 2,4,2,0.
             self.assertIn('GLYPH_DATA[1023] = {2, 4, 2, 0,',text)
+
+    def test_blank_missing_policy(self):
+        source=HERE/'build/bdf/BetaWiseSerif/private/BetaWiseSerif-Tiny-SmallCaps.bdf'
+        glyphs=fontgen.load(source,'iso8859-1','blank')
+        self.assertEqual(glyphs[0].size,(1,11))
+        self.assertIsNone(glyphs[0].getbbox())
+        self.assertIsNotNone(glyphs[0x4B].getbbox())
 
     def test_missing_slots_require_explicit_policy(self):
         with tempfile.TemporaryDirectory() as td:

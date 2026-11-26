@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'">
+<title>BetaWise glyph review</title>
+<style>
+:root {color-scheme:light dark;--bg:#fafafa;--fg:#20242a;--panel:white;--line:#c8cdd4;--muted:#58616c;--marked:#fff0ed;--red:#a32616;--accent:#185fa6}
+@media(prefers-color-scheme:dark){:root{--bg:#191c21;--fg:#edf0f5;--panel:#252a31;--line:#59616c;--muted:#b4bdc9;--marked:#492c2b;--red:#ffb0a4;--accent:#91c8ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif}header{position:sticky;top:0;z-index:2;background:var(--bg);padding:14px 20px;border-bottom:1px solid var(--line)}h1{font-size:23px;margin:0 0 10px}p{margin:8px 0}.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:end}.controls label{display:flex;flex-direction:column;gap:4px;font-size:13px}.controls .check{display:block;padding-bottom:8px;font-size:15px}button,select,input{font:inherit}button,select,input[type=search]{padding:7px 10px;border:1px solid var(--line);border-radius:5px;color:var(--fg);background:var(--panel)}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}#status,#action{font-size:14px;color:var(--muted);min-height:1.3em}#error{color:var(--red)}main{padding:12px 20px 40px}details{margin:12px 0 22px}summary{padding:10px 0;font-weight:600;cursor:pointer}summary small{font-weight:400;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cell-width,86px),1fr));gap:7px}.glyph{display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-height:70px;padding:7px 4px;gap:5px;border:1px solid var(--line);background:var(--panel);border-radius:5px;position:relative}.glyph[aria-pressed=true]{border:2px solid var(--red);padding:6px 3px;background:var(--marked)}.glyph .code{font:12px ui-monospace,monospace;color:var(--muted)}.glyph .tag{font-size:12px;min-height:16px;color:var(--muted)}.glyph[aria-pressed=true] .tag{color:var(--red);font-weight:600}.glyph.missing{border-style:dashed}.glyph canvas{image-rendering:pixelated;background:white;display:block}.mapping-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:12px}.mapping-card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:12px;display:flex;flex-direction:column;gap:8px}.mapping-card h2{font-size:17px;margin:0}.mapping-card[data-state=confirmed]{border:2px solid #2b7950}.mapping-card[data-state=change]{border:2px solid var(--red)}.mapping-card canvas{image-rendering:pixelated;background:white}.mapping-card input{width:100%;padding:7px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px}.mapping-pictures{display:flex;gap:20px;align-items:end}.mapping-pictures label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:5px}.mapping-actions{display:flex;gap:6px;flex-wrap:wrap}.help{font-size:14px;color:var(--muted);max-width:1100px}.empty{color:var(--muted)}#import{max-width:220px}#clear{color:var(--red)}@media(max-width:600px){header{position:static;padding:12px}main{padding:10px 12px}.controls{gap:10px}#search{max-width:180px}}
+</style>
+<header>
+<h1>BetaWise glyph review</h1>
+<p class="help"><button id="vector-review" type="button">Compare with hinted vector candidates</button> (generate with make vector-review).</p>
+<div class="controls">
+<label>Review<select id="mode"><option value="glyphs">Glyphs needing fixes</option><option value="mapping">Neo-US additions / mapping</option></select></label>
+<label>Family<select id="family"></select></label>
+<label>Size<select id="size"></select></label>
+<label>Face<select id="style"></select></label>
+<label>Find character, name or hex slot<input type="search" id="search" placeholder="ç, cedilla, 0xE7"></label>
+<label>Pixel scale<select id="scale"><option>3</option><option selected>5</option><option>7</option><option>9</option></select></label>
+<label class="check"><input id="accents" type="checkbox" checked> Also flag accents and aliases</label>
+<label class="check"><input id="flagged" type="checkbox"> Flagged only</label>
+<label class="check"><input id="baseline" type="checkbox"> Baseline guide</label>
+</div>
+<div class="controls" style="margin-top:12px">
+<button id="all">Show all faces</button><button id="undo" disabled>Undo</button>
+<button id="export">Export fixes JSON</button>
+<label>Import fixes<input id="import" type="file" accept="application/json,.json"></label>
+<button id="clear">Clear flags</button>
+</div>
+<p id="status" aria-live="polite"></p><div id="action" aria-live="polite"></div><div id="error" role="alert"></div>
+<p class="help">Click a glyph to flag or unflag it. Unicode aliases and an ASCII letter’s accented forms toggle together <b>in the same face</b>; Shift-click affects only that glyph. Accented glyphs can then be toggled individually. Flags are saved in this browser when available; export JSON for a portable copy. No font pixels are changed. In mapping review, confirm an identity or suggest a character / U+ code; these are exported as proposals, not applied to the fonts.</p>
+</header>
+<main id="faces"></main>
+<script>const FONT_DATA=/*FONT_DATA*/null;</script>
+<script>/*FONT_REVIEW_JS*/</script>
+</html>

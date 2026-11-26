@@ -10,3 +10,12 @@
 [submodule "applets/BibleReader/upstream"]
 	path = applets/BibleReader/upstream
 	url = https://github.com/jburson/bible-data.git
+[submodule "fonts/upstream/75dpi"]
+	path = fonts/upstream/75dpi
+	url = https://gitlab.freedesktop.org/xorg/font/adobe-75dpi.git
+[submodule "fonts/upstream/100dpi"]
+	path = fonts/upstream/100dpi
+	url = https://gitlab.freedesktop.org/xorg/font/adobe-100dpi.git
+[submodule "fonts/upstream/misc"]
+	path = fonts/upstream/misc
+	url = https://gitlab.freedesktop.org/xorg/font/misc-misc.git

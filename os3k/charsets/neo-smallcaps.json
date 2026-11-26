@@ -1,0 +1,674 @@
+{
+  "name": "neo-smallcaps",
+  "version": 1,
+  "source_charset": "neo-us.txt",
+  "description": "Private glyph encoding: table-free Regular from lowercase source bits; Italic = Regular XOR 2B; Bold = Regular XOR 40; digits 30–39. Byte strings are hexadecimal.",
+  "source_policy": "Regular is reassigned by a reversible bit transform. Incoming converters accept native lowercase letters; decode returns native lowercase or digits. Preserve original file bytes for exact case recovery. N-acute is omitted because Neo-US lacks its lowercase counterpart.",
+  "artwork_policy": "Prefer same-family Adobe capitals at body x-height or one pixel taller; no whole-glyph rescaling.",
+  "styles": [
+    "regular",
+    "bold",
+    "italic"
+  ],
+  "reserved": [
+    "00",
+    "09",
+    "0A",
+    "0D",
+    "20",
+    "2D",
+    "81",
+    "8D",
+    "8F",
+    "9D",
+    "A7",
+    "A8",
+    "AD",
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B7",
+    "B8",
+    "B9",
+    "BA",
+    "BB",
+    "BE",
+    "BF"
+  ],
+  "superscript_digits": [
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39"
+  ],
+  "letters": [
+    {
+      "text": "A",
+      "canonical": "61",
+      "source": [
+        "61"
+      ],
+      "regular": "4B",
+      "bold": "0B",
+      "italic": "60"
+    },
+    {
+      "text": "B",
+      "canonical": "62",
+      "source": [
+        "62"
+      ],
+      "regular": "63",
+      "bold": "23",
+      "italic": "48"
+    },
+    {
+      "text": "C",
+      "canonical": "63",
+      "source": [
+        "63"
+      ],
+      "regular": "62",
+      "bold": "22",
+      "italic": "49"
+    },
+    {
+      "text": "D",
+      "canonical": "64",
+      "source": [
+        "64"
+      ],
+      "regular": "4E",
+      "bold": "0E",
+      "italic": "65"
+    },
+    {
+      "text": "E",
+      "canonical": "65",
+      "source": [
+        "65"
+      ],
+      "regular": "64",
+      "bold": "24",
+      "italic": "4F"
+    },
+    {
+      "text": "F",
+      "canonical": "66",
+      "source": [
+        "66"
+      ],
+      "regular": "4C",
+      "bold": "0C",
+      "italic": "67"
+    },
+    {
+      "text": "G",
+      "canonical": "67",
+      "source": [
+        "67"
+      ],
+      "regular": "66",
+      "bold": "26",
+      "italic": "4D"
+    },
+    {
+      "text": "H",
+      "canonical": "68",
+      "source": [
+        "68"
+      ],
+      "regular": "42",
+      "bold": "02",
+      "italic": "69"
+    },
+    {
+      "text": "I",
+      "canonical": "69",
+      "source": [
+        "69"
+      ],
+      "regular": "43",
+      "bold": "03",
+      "italic": "68"
+    },
+    {
+      "text": "J",
+      "canonical": "6A",
+      "source": [
+        "6A"
+      ],
+      "regular": "6B",
+      "bold": "2B",
+      "italic": "40"
+    },
+    {
+      "text": "K",
+      "canonical": "6B",
+      "source": [
+        "6B"
+      ],
+      "regular": "6A",
+      "bold": "2A",
+      "italic": "41"
+    },
+    {
+      "text": "L",
+      "canonical": "6C",
+      "source": [
+        "6C"
+      ],
+      "regular": "46",
+      "bold": "06",
+      "italic": "6D"
+    },
+    {
+      "text": "M",
+      "canonical": "6D",
+      "source": [
+        "6D"
+      ],
+      "regular": "6C",
+      "bold": "2C",
+      "italic": "47"
+    },
+    {
+      "text": "N",
+      "canonical": "6E",
+      "source": [
+        "6E"
+      ],
+      "regular": "44",
+      "bold": "04",
+      "italic": "6F"
+    },
+    {
+      "text": "O",
+      "canonical": "6F",
+      "source": [
+        "6F"
+      ],
+      "regular": "6E",
+      "bold": "2E",
+      "italic": "45"
+    },
+    {
+      "text": "P",
+      "canonical": "70",
+      "source": [
+        "70"
+      ],
+      "regular": "5A",
+      "bold": "1A",
+      "italic": "71"
+    },
+    {
+      "text": "Q",
+      "canonical": "71",
+      "source": [
+        "71"
+      ],
+      "regular": "5B",
+      "bold": "1B",
+      "italic": "70"
+    },
+    {
+      "text": "R",
+      "canonical": "72",
+      "source": [
+        "72"
+      ],
+      "regular": "58",
+      "bold": "18",
+      "italic": "73"
+    },
+    {
+      "text": "S",
+      "canonical": "73",
+      "source": [
+        "73"
+      ],
+      "regular": "59",
+      "bold": "19",
+      "italic": "72"
+    },
+    {
+      "text": "T",
+      "canonical": "74",
+      "source": [
+        "74"
+      ],
+      "regular": "5E",
+      "bold": "1E",
+      "italic": "75"
+    },
+    {
+      "text": "U",
+      "canonical": "75",
+      "source": [
+        "75"
+      ],
+      "regular": "5F",
+      "bold": "1F",
+      "italic": "74"
+    },
+    {
+      "text": "V",
+      "canonical": "76",
+      "source": [
+        "76"
+      ],
+      "regular": "5C",
+      "bold": "1C",
+      "italic": "77"
+    },
+    {
+      "text": "W",
+      "canonical": "77",
+      "source": [
+        "77"
+      ],
+      "regular": "5D",
+      "bold": "1D",
+      "italic": "76"
+    },
+    {
+      "text": "X",
+      "canonical": "78",
+      "source": [
+        "78"
+      ],
+      "regular": "52",
+      "bold": "12",
+      "italic": "79"
+    },
+    {
+      "text": "Y",
+      "canonical": "79",
+      "source": [
+        "79"
+      ],
+      "regular": "53",
+      "bold": "13",
+      "italic": "78"
+    },
+    {
+      "text": "Z",
+      "canonical": "7A",
+      "source": [
+        "7A"
+      ],
+      "regular": "50",
+      "bold": "10",
+      "italic": "7B"
+    },
+    {
+      "text": "IJ",
+      "canonical": "05",
+      "source": [
+        "05"
+      ],
+      "regular": "7A",
+      "bold": "3A",
+      "italic": "51"
+    },
+    {
+      "text": "Š",
+      "canonical": "9A",
+      "source": [
+        "9A"
+      ],
+      "regular": "56",
+      "bold": "16",
+      "italic": "7D"
+    },
+    {
+      "text": "Œ",
+      "canonical": "9C",
+      "source": [
+        "9C"
+      ],
+      "regular": "57",
+      "bold": "17",
+      "italic": "7C"
+    },
+    {
+      "text": "Ž",
+      "canonical": "9E",
+      "source": [
+        "9E"
+      ],
+      "regular": "54",
+      "bold": "14",
+      "italic": "7F"
+    },
+    {
+      "text": "Ÿ",
+      "canonical": "FF",
+      "source": [
+        "FF"
+      ],
+      "regular": "D5",
+      "bold": "95",
+      "italic": "FE"
+    },
+    {
+      "text": "À",
+      "canonical": "E0",
+      "source": [
+        "E0"
+      ],
+      "regular": "CA",
+      "bold": "8A",
+      "italic": "E1"
+    },
+    {
+      "text": "Á",
+      "canonical": "E1",
+      "source": [
+        "E1"
+      ],
+      "regular": "CB",
+      "bold": "8B",
+      "italic": "E0"
+    },
+    {
+      "text": "Â",
+      "canonical": "E2",
+      "source": [
+        "E2"
+      ],
+      "regular": "E3",
+      "bold": "A3",
+      "italic": "C8"
+    },
+    {
+      "text": "Ã",
+      "canonical": "E3",
+      "source": [
+        "E3"
+      ],
+      "regular": "E2",
+      "bold": "A2",
+      "italic": "C9"
+    },
+    {
+      "text": "Ä",
+      "canonical": "E4",
+      "source": [
+        "E4"
+      ],
+      "regular": "CE",
+      "bold": "8E",
+      "italic": "E5"
+    },
+    {
+      "text": "Å",
+      "canonical": "E5",
+      "source": [
+        "E5"
+      ],
+      "regular": "E4",
+      "bold": "A4",
+      "italic": "CF"
+    },
+    {
+      "text": "Æ",
+      "canonical": "E6",
+      "source": [
+        "E6"
+      ],
+      "regular": "CC",
+      "bold": "8C",
+      "italic": "E7"
+    },
+    {
+      "text": "Ç",
+      "canonical": "E7",
+      "source": [
+        "E7"
+      ],
+      "regular": "E6",
+      "bold": "A6",
+      "italic": "CD"
+    },
+    {
+      "text": "È",
+      "canonical": "E8",
+      "source": [
+        "E8"
+      ],
+      "regular": "C2",
+      "bold": "82",
+      "italic": "E9"
+    },
+    {
+      "text": "É",
+      "canonical": "E9",
+      "source": [
+        "E9"
+      ],
+      "regular": "C3",
+      "bold": "83",
+      "italic": "E8"
+    },
+    {
+      "text": "Ê",
+      "canonical": "EA",
+      "source": [
+        "EA"
+      ],
+      "regular": "EB",
+      "bold": "AB",
+      "italic": "C0"
+    },
+    {
+      "text": "Ë",
+      "canonical": "EB",
+      "source": [
+        "EB"
+      ],
+      "regular": "EA",
+      "bold": "AA",
+      "italic": "C1"
+    },
+    {
+      "text": "Ì",
+      "canonical": "EC",
+      "source": [
+        "EC"
+      ],
+      "regular": "C6",
+      "bold": "86",
+      "italic": "ED"
+    },
+    {
+      "text": "Í",
+      "canonical": "ED",
+      "source": [
+        "ED"
+      ],
+      "regular": "EC",
+      "bold": "AC",
+      "italic": "C7"
+    },
+    {
+      "text": "Î",
+      "canonical": "EE",
+      "source": [
+        "EE"
+      ],
+      "regular": "C4",
+      "bold": "84",
+      "italic": "EF"
+    },
+    {
+      "text": "Ï",
+      "canonical": "EF",
+      "source": [
+        "EF"
+      ],
+      "regular": "EE",
+      "bold": "AE",
+      "italic": "C5"
+    },
+    {
+      "text": "Ð",
+      "canonical": "F0",
+      "source": [
+        "F0"
+      ],
+      "regular": "DA",
+      "bold": "9A",
+      "italic": "F1"
+    },
+    {
+      "text": "Ñ",
+      "canonical": "F1",
+      "source": [
+        "F1"
+      ],
+      "regular": "DB",
+      "bold": "9B",
+      "italic": "F0"
+    },
+    {
+      "text": "Ò",
+      "canonical": "F2",
+      "source": [
+        "F2"
+      ],
+      "regular": "D8",
+      "bold": "98",
+      "italic": "F3"
+    },
+    {
+      "text": "Ó",
+      "canonical": "F3",
+      "source": [
+        "F3"
+      ],
+      "regular": "D9",
+      "bold": "99",
+      "italic": "F2"
+    },
+    {
+      "text": "Ô",
+      "canonical": "F4",
+      "source": [
+        "F4"
+      ],
+      "regular": "DE",
+      "bold": "9E",
+      "italic": "F5"
+    },
+    {
+      "text": "Õ",
+      "canonical": "F5",
+      "source": [
+        "F5"
+      ],
+      "regular": "DF",
+      "bold": "9F",
+      "italic": "F4"
+    },
+    {
+      "text": "Ö",
+      "canonical": "F6",
+      "source": [
+        "F6"
+      ],
+      "regular": "DC",
+      "bold": "9C",
+      "italic": "F7"
+    },
+    {
+      "text": "SS",
+      "canonical": "DF",
+      "source": [
+        "DF"
+      ],
+      "regular": "55",
+      "bold": "15",
+      "italic": "7E"
+    },
+    {
+      "text": "Ø",
+      "canonical": "F8",
+      "source": [
+        "F8"
+      ],
+      "regular": "D2",
+      "bold": "92",
+      "italic": "F9"
+    },
+    {
+      "text": "Ù",
+      "canonical": "F9",
+      "source": [
+        "F9"
+      ],
+      "regular": "D3",
+      "bold": "93",
+      "italic": "F8"
+    },
+    {
+      "text": "Ú",
+      "canonical": "FA",
+      "source": [
+        "FA"
+      ],
+      "regular": "D0",
+      "bold": "90",
+      "italic": "FB"
+    },
+    {
+      "text": "Û",
+      "canonical": "FB",
+      "source": [
+        "FB"
+      ],
+      "regular": "D1",
+      "bold": "91",
+      "italic": "FA"
+    },
+    {
+      "text": "Ü",
+      "canonical": "FC",
+      "source": [
+        "FC"
+      ],
+      "regular": "D6",
+      "bold": "96",
+      "italic": "FD"
+    },
+    {
+      "text": "Ý",
+      "canonical": "FD",
+      "source": [
+        "FD"
+      ],
+      "regular": "D7",
+      "bold": "97",
+      "italic": "FC"
+    },
+    {
+      "text": "Þ",
+      "canonical": "FE",
+      "source": [
+        "FE"
+      ],
+      "regular": "D4",
+      "bold": "94",
+      "italic": "FF"
+    }
+  ]
+}

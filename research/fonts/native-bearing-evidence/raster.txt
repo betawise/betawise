@@ -1,0 +1,324 @@
+=== 4205de ===
+004205de movem.l {  A4 D7 D6 D5 D4},-(SP)
+004205e2 move.w (0x1a,SP),D7w
+004205e6 move.w (0x1e,SP),D6w
+004205ea move.w (0x22,SP),D5w
+004205ee move.w (0x26,SP),D4w
+004205f2 movea.l (0x28,SP),A4
+004205f6 moveq #0x0,D0
+004205f8 move.w D7w,D0w
+004205fa moveq #0x0,D1
+004205fc move.w D5w,D1w
+004205fe add.l D1,D0
+00420600 cmpi.l #0x108,D0
+00420606 bgt.w 0x004206ee
+0042060a moveq #0x0,D0
+0042060c move.w D6w,D0w
+0042060e moveq #0x0,D1
+00420610 move.w D4w,D1w
+00420612 add.l D1,D0
+00420614 moveq #0x42,D1
+00420616 cmp.l D1,D0
+00420618 bgt.w 0x004206ee
+0042061c clr.w D0w
+0042061e move.b (0x000048c1).l,D0b
+00420624 add.w D0w,D6w
+00420626 cmpi.w #0x84,D7w
+0042062a bcs.b 0x00420652
+0042062c move.l A4,-(SP)
+0042062e clr.l -(SP)
+00420630 moveq #0x0,D0
+00420632 move.w D4w,D0w
+00420634 move.l D0,-(SP)
+00420636 moveq #0x0,D0
+00420638 move.w D5w,D0w
+0042063a move.l D0,-(SP)
+0042063c moveq #0x0,D0
+0042063e move.w D6w,D0w
+00420640 move.l D0,-(SP)
+00420642 move.w #-0x84,D0w
+00420646 add.w D7w,D0w
+00420648 moveq #0x0,D1
+0042064a move.w D0w,D1w
+0042064c move.l D1,-(SP)
+0042064e bra.w 0x004206e6
+00420652 moveq #0x0,D0
+00420654 move.w D7w,D0w
+00420656 moveq #0x0,D1
+00420658 move.w D5w,D1w
+0042065a add.l D1,D0
+0042065c cmpi.l #0x84,D0
+00420662 bge.b 0x00420684
+00420664 move.l A4,-(SP)
+00420666 clr.l -(SP)
+00420668 moveq #0x0,D0
+0042066a move.w D4w,D0w
+0042066c move.l D0,-(SP)
+0042066e move.l D1,-(SP)
+00420670 moveq #0x0,D0
+00420672 move.w D6w,D0w
+00420674 move.l D0,-(SP)
+00420676 moveq #0x0,D0
+00420678 move.w D7w,D0w
+0042067a move.l D0,-(SP)
+0042067c bsr.b 0x004206f4
+0042067e lea (0x18,SP),SP
+00420682 bra.b 0x004206ee
+00420684 move.l A4,-(SP)
+00420686 move.w D7w,D0w
+00420688 add.w D5w,D0w
+0042068a addi.w #-0x84,D0w
+0042068e moveq #0x0,D1
+00420690 move.w D0w,D1w
+00420692 move.l D1,-(SP)
+00420694 moveq #0x0,D0
+00420696 move.w D4w,D0w
+00420698 move.l D0,-(SP)
+0042069a move.w D7w,D0w
+0042069c neg.w D0w
+0042069e addi.w #0x84,D0w
+004206a2 moveq #0x0,D1
+004206a4 move.w D0w,D1w
+004206a6 move.l D1,-(SP)
+004206a8 moveq #0x0,D0
+004206aa move.w D6w,D0w
+004206ac move.l D0,-(SP)
+004206ae moveq #0x0,D0
+004206b0 move.w D7w,D0w
+004206b2 move.l D0,-(SP)
+004206b4 bsr.b 0x004206f4
+004206b6 lea (0x18,SP),SP
+004206ba move.l A4,-(SP)
+004206bc move.w D7w,D0w
+004206be neg.w D0w
+004206c0 addi.w #0x84,D0w
+004206c4 moveq #0x0,D1
+004206c6 move.w D0w,D1w
+004206c8 move.l D1,-(SP)
+004206ca moveq #0x0,D0
+004206cc move.w D4w,D0w
+004206ce move.l D0,-(SP)
+004206d0 move.w D7w,D0w
+004206d2 add.w D5w,D0w
+004206d4 addi.w #-0x84,D0w
+004206d8 moveq #0x0,D1
+004206da move.w D0w,D1w
+004206dc move.l D1,-(SP)
+004206de moveq #0x0,D0
+004206e0 move.w D6w,D0w
+004206e2 move.l D0,-(SP)
+004206e4 clr.l -(SP)
+004206e6 bsr.w 0x00420986
+004206ea lea (0x18,SP),SP
+004206ee movem.l (SP)+,{  D4 D5 D6 D7 A4}
+004206f2 rts
+
+void FUN_004205de(ushort param_1,ushort param_2,ushort param_3,ushort param_4,undefined4 param_5)
+
+{
+  short sVar1;
+  short sVar2;
+  short sVar3;
+  
+  if (((uint)param_1 + (uint)param_3 < 0x109) && ((uint)param_2 + (uint)param_4 < 0x43)) {
+    sVar3 = param_2 + DAT_000048c1;
+    if (param_1 < 0x84) {
+      if ((uint)param_1 + (uint)param_3 < 0x84) {
+        func_0x004206f4(param_1,sVar3,(uint)param_3,param_4,0,param_5);
+        return;
+      }
+      func_0x004206f4(param_1,sVar3,0x84 - param_1,param_4,param_1 + param_3 + -0x84,param_5);
+      sVar2 = 0x84 - param_1;
+      param_3 = (param_1 + param_3) - 0x84;
+      sVar1 = 0;
+    }
+    else {
+      sVar2 = 0;
+      sVar1 = param_1 - 0x84;
+    }
+    func_0x00420986(sVar1,sVar3,param_3,param_4,sVar2,param_5);
+  }
+  return;
+}
+
+
+=== 420c20 ===
+00420c20 movem.l {  A4 D7 D6 D5 D4 D3},-(SP)
+00420c24 move.w (0x1e,SP),D7w
+00420c28 move.w (0x22,SP),D5w
+00420c2c move.w (0x26,SP),D6w
+00420c30 move.w (0x2a,SP),D4w
+00420c34 movea.l (0x2c,SP),A4
+00420c38 move.b (0x33,SP),D3b
+00420c3c moveq #0x0,D0
+00420c3e move.w D7w,D0w
+00420c40 moveq #0x0,D1
+00420c42 move.w D6w,D1w
+00420c44 add.l D1,D0
+00420c46 cmpi.l #0x108,D0
+00420c4c bgt.w 0x00420d7c
+00420c50 moveq #0x0,D0
+00420c52 move.w D5w,D0w
+00420c54 moveq #0x0,D1
+00420c56 move.w D4w,D1w
+00420c58 add.l D1,D0
+00420c5a moveq #0x42,D1
+00420c5c cmp.l D1,D0
+00420c5e bgt.w 0x00420d7c
+00420c62 cmpi.b #0x1,D3b
+00420c66 bne.b 0x00420c90
+00420c68 moveq #0x0,D0
+00420c6a move.w D4w,D0w
+00420c6c addq.l #0x7,D0
+00420c6e moveq #0x8,D1
+00420c70 jsr 0x0043709c.l
+00420c76 moveq #0x0,D1
+00420c78 move.w D6w,D1w
+00420c7a jsr 0x00438378.l
+00420c80 move.l D0,-(SP)
+00420c82 clr.l -(SP)
+00420c84 move.l A4,-(SP)
+00420c86 jsr 0x004366c2.l
+00420c8c lea (0xc,SP),SP
+00420c90 clr.w D0w
+00420c92 move.b (0x000048c1).l,D0b
+00420c98 add.w D0w,D5w
+00420c9a cmpi.w #0x84,D7w
+00420c9e bcs.b 0x00420ccc
+00420ca0 moveq #0x0,D0
+00420ca2 move.b D3b,D0b
+00420ca4 move.l D0,-(SP)
+00420ca6 move.l A4,-(SP)
+00420ca8 clr.l -(SP)
+00420caa moveq #0x0,D0
+00420cac move.w D4w,D0w
+00420cae move.l D0,-(SP)
+00420cb0 moveq #0x0,D0
+00420cb2 move.w D6w,D0w
+00420cb4 move.l D0,-(SP)
+00420cb6 moveq #0x0,D0
+00420cb8 move.w D5w,D0w
+00420cba move.l D0,-(SP)
+00420cbc move.w #-0x84,D0w
+00420cc0 add.w D7w,D0w
+00420cc2 moveq #0x0,D1
+00420cc4 move.w D0w,D1w
+00420cc6 move.l D1,-(SP)
+00420cc8 bra.w 0x00420d74
+00420ccc moveq #0x0,D0
+00420cce move.w D7w,D0w
+00420cd0 moveq #0x0,D1
+00420cd2 move.w D6w,D1w
+00420cd4 add.l D1,D0
+00420cd6 cmpi.l #0x84,D0
+00420cdc bge.b 0x00420d06
+00420cde moveq #0x0,D0
+00420ce0 move.b D3b,D0b
+00420ce2 move.l D0,-(SP)
+00420ce4 move.l A4,-(SP)
+00420ce6 clr.l -(SP)
+00420ce8 moveq #0x0,D0
+00420cea move.w D4w,D0w
+00420cec move.l D0,-(SP)
+00420cee move.l D1,-(SP)
+00420cf0 moveq #0x0,D0
+00420cf2 move.w D5w,D0w
+00420cf4 move.l D0,-(SP)
+00420cf6 moveq #0x0,D0
+00420cf8 move.w D7w,D0w
+00420cfa move.l D0,-(SP)
+00420cfc bsr.w 0x00420d82
+00420d00 lea (0x1c,SP),SP
+00420d04 bra.b 0x00420d7c
+00420d06 moveq #0x0,D0
+00420d08 move.b D3b,D0b
+00420d0a move.l D0,-(SP)
+00420d0c move.l A4,-(SP)
+00420d0e move.w D7w,D0w
+00420d10 add.w D6w,D0w
+00420d12 addi.w #-0x84,D0w
+00420d16 moveq #0x0,D1
+00420d18 move.w D0w,D1w
+00420d1a move.l D1,-(SP)
+00420d1c moveq #0x0,D0
+00420d1e move.w D4w,D0w
+00420d20 move.l D0,-(SP)
+00420d22 move.w D7w,D0w
+00420d24 neg.w D0w
+00420d26 addi.w #0x84,D0w
+00420d2a moveq #0x0,D1
+00420d2c move.w D0w,D1w
+00420d2e move.l D1,-(SP)
+00420d30 moveq #0x0,D0
+00420d32 move.w D5w,D0w
+00420d34 move.l D0,-(SP)
+00420d36 moveq #0x0,D0
+00420d38 move.w D7w,D0w
+00420d3a move.l D0,-(SP)
+00420d3c bsr.b 0x00420d82
+00420d3e lea (0x1c,SP),SP
+00420d42 moveq #0x0,D0
+00420d44 move.b D3b,D0b
+00420d46 move.l D0,-(SP)
+00420d48 move.l A4,-(SP)
+00420d4a move.w D7w,D0w
+00420d4c neg.w D0w
+00420d4e addi.w #0x84,D0w
+00420d52 moveq #0x0,D1
+00420d54 move.w D0w,D1w
+00420d56 move.l D1,-(SP)
+00420d58 moveq #0x0,D0
+00420d5a move.w D4w,D0w
+00420d5c move.l D0,-(SP)
+00420d5e move.w D7w,D0w
+00420d60 add.w D6w,D0w
+00420d62 addi.w #-0x84,D0w
+00420d66 moveq #0x0,D1
+00420d68 move.w D0w,D1w
+00420d6a move.l D1,-(SP)
+00420d6c moveq #0x0,D0
+00420d6e move.w D5w,D0w
+00420d70 move.l D0,-(SP)
+00420d72 clr.l -(SP)
+00420d74 bsr.w 0x00421290
+00420d78 lea (0x1c,SP),SP
+00420d7c movem.l (SP)+,{  D3 D4 D5 D6 D7 A4}
+00420d80 rts
+
+void FUN_00420c20(ushort param_1,ushort param_2,ushort param_3,ushort param_4,undefined4 param_5,
+                 char param_6)
+
+{
+  undefined4 uVar1;
+  short sVar2;
+  short sVar3;
+  short sVar4;
+  
+  if (((uint)param_1 + (uint)param_3 < 0x109) && ((uint)param_2 + (uint)param_4 < 0x43)) {
+    if (param_6 == '\x01') {
+      func_0x0043709c();
+      uVar1 = func_0x00438378();
+      func_0x004366c2(param_5,0,uVar1);
+    }
+    sVar4 = param_2 + DAT_000048c1;
+    if (param_1 < 0x84) {
+      if ((uint)param_1 + (uint)param_3 < 0x84) {
+        func_0x00420d82(param_1,sVar4,(uint)param_3,param_4,0,param_5,param_6);
+        return;
+      }
+      func_0x00420d82(param_1,sVar4,0x84 - param_1,param_4,param_1 + param_3 + -0x84,param_5,param_6
+                     );
+      sVar3 = 0x84 - param_1;
+      param_3 = (param_1 + param_3) - 0x84;
+      sVar2 = 0;
+    }
+    else {
+      sVar3 = 0;
+      sVar2 = param_1 - 0x84;
+    }
+    func_0x00421290(sVar2,sVar4,param_3,param_4,sVar3,param_5,param_6);
+  }
+  return;
+}
+
+

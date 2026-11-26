@@ -24,7 +24,7 @@ def main():
  with(out/'build.log').open('w')as log:subprocess.run(['make','-C',str(APP),'-B','READER=BibleReader',f'SEARCH_INDEX={a.search_index}',f'FAST_BITS={a.fast_bits}',f'VERSE_BOOST={int(a.verse_boost)}',f'FAST_NATIVE={int(a.native_fast_load)}',f'SEARCH_CLEAR_COMPLETE={int(a.clear_complete)}',f'BENCH_QUERY={-1 if not a.bench_query else ["Methus","believ","love","God","in the beg","Jesus Jesus","th"].index(a.bench_query)}',f'NATIVE_STREAM={["off","window","demand","background","lookahead","viewport","prewrap","prewrap-full"].index(a.native_stream)}',f'NATIVE_PAGE_TEST={int(a.native_page_test or a.native_stream!="off")}',f'NATIVE_OPEN_TEST={dict(baseline=0,direct=1,**{"refresh-only":2,"viewport-full":3})[a.native_open_test]}',f'VERSION={a.version}',f'WORK_PROFILE={int(a.work_profile)}',f'TEST_FONT={0 if a.system_font else 1}',f'PROFILE={int(a.profile)}',f'TEST_FONT_ID={hex(vendor_id) if vendor else ""}',*extra],stdout=log,stderr=subprocess.STDOUT,check=True)
  fw=ROOT/'Ghidra/Alphasmart Neo/SmartApplets';mame=ROOT/'mame/neodiag';prepare_session(out,fw,'extra',mame)
  flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000);offset=0x70000
- images=[fw/'alphawordplus.os3kapp',APP/(stem+'.OS3KApp'),ROOT/'betawise/fonts/BetaWiseTerminal.OS3KApp'];(out/'artifacts').mkdir()
+ images=[fw/'alphawordplus.os3kapp',APP/(stem+'.OS3KApp'),ROOT/'betawise/fonts/BetaWiseTerminal-Medium.OS3KApp'];(out/'artifacts').mkdir()
  if vendor:
   if a.vendor_font=='tiny':images[-1]=vendor
   else:images.append(vendor)
