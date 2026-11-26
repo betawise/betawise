@@ -127,3 +127,8 @@ candidates rather than treating arbitrary A04C words as calls. Original files
 are read without modification. RasterOp's dispatch slot is zero in the inspected
 AS3000 3.01 and Neo 3.01 images, and populated in the Neo 3.21 image; the shared ROM
 inventory identifies those exact images.
+
+Cursor RAM portability and syscall-based font discovery are documented in
+[cursor-and-font-discovery.md](cursor-and-font-discovery.md). The hash-checked
+`audit-cursor-access.py` preserves original-ROM disassembly and vendor reference
+candidates, distinguishing PC-relative deltas from absolute-address evidence.

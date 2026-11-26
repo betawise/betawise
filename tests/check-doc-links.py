@@ -14,6 +14,7 @@ import unicodedata
 from urllib.parse import unquote, urlsplit
 
 from markdown_it import MarkdownIt
+from archived_sources import recorded_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCUMENTS = {'.md', '.markdown', '.html', '.htm', '.rst'}
@@ -89,6 +90,8 @@ def main():
 
     for name in documents:
         source = ROOT / name
+        if recorded_snapshot(source, ROOT):
+            continue
         _, links, references = parsed(source)
         issues.extend((name, message) for message in references)
         for target in links:

@@ -1,0 +1,35 @@
+[
+  {
+    "rom": "as3000",
+    "sha256": "732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708",
+    "syscall": "A2D8",
+    "target": "0x4d5afa",
+    "inputs_read_from_scan": [
+      "editor at +0",
+      "offset at +4"
+    ],
+    "scan_xy_flags_font_consumed": false
+  },
+  {
+    "rom": "neo_3_01",
+    "sha256": "5f550e48ad36892ee5f5a067e8c1b87f6bf504b6cb2c2dfc4098776fa8831a3d",
+    "syscall": "A2D8",
+    "target": "0x5d7de0",
+    "inputs_read_from_scan": [
+      "editor at +0",
+      "offset at +4"
+    ],
+    "scan_xy_flags_font_consumed": false
+  },
+  {
+    "rom": "neo_3_21",
+    "sha256": "32fe55bb50c1b58326bd303f14973b8402ddf8bf6662b210e4d5e9f931c7e6c0",
+    "syscall": "A2D8",
+    "target": "0x429818",
+    "inputs_read_from_scan": [
+      "editor at +0",
+      "offset at +4"
+    ],
+    "scan_xy_flags_font_consumed": false
+  }
+]

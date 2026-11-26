@@ -14,7 +14,7 @@ using the standard library and no research imports. Generated navigation/font
 headers, payloads and objects live under ignored build directories. Test probes
 and font overrides compile only into separate testing images.
 
-The [manual and complete feature inventory](prototype/README.md)
+The [manual and complete feature inventory](../../applets/BibleWise/README.md)
 describe the retained controls, three search modes, native selection, citation
 copying and A5/native-file position preservation. Copying deliberately includes
 whole touched verses, rather than arbitrary selected character substrings.

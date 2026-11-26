@@ -242,6 +242,9 @@ int32_t TextScanDelete(TextScan_t* position, uint32_t count, TextByteMode_e mode
 int32_t TextScanInsert(TextScan_t* position, void* data, uint32_t length, TextByteMode_e mode);
 
 /** @brief Move the editor caret to a scan position.
+ * AS3000 3.01 and Neo 3.01/3.21 consume the editor pointer and raw offset,
+ * recomputing layout rather than consuming the scanner's x/y or token state.
+ * Initialize a scan and assign its offset for a direct seek; no prefix scan is needed.
  * @param position Source position. Editable mode avoids placing the caret inside the internal gap.
  * @param draw_selection True to update selection drawing after layout.
  * @return Zero or a layout error. Read-only mode copies the offset without relayout.

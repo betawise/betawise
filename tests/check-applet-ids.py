@@ -8,6 +8,8 @@ from pathlib import Path
 import re
 import subprocess
 
+from archived_sources import recorded_snapshot
+
 ROOT = Path(__file__).resolve().parents[1]
 index = ROOT / 'applets/PRIVATE_IDS.md'
 private = {}
@@ -24,6 +26,8 @@ impersonated = 0
 for name in sorted(names):
     path = ROOT / name
     if any(part in {'upstream', 'snapshot', 'evidence', 'build'} or part.endswith('-evidence') for part in path.relative_to(ROOT).parts):
+        continue
+    if recorded_snapshot(path, ROOT):
         continue
     text = path.read_text()
     allowed = {int(value, 16) for value in re.findall(r'APPLET_ID_IMPERSONATION:\s*(0x[0-9a-fA-F]{4})\b', text)}

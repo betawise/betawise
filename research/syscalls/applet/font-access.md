@@ -124,3 +124,91 @@ probe now also executes the compiled production adapters and public predicates
 against the original ROM, in addition to the eight raw-register cases (nine
 cases total). Existing 18 pointer bridges and all 21 proportional picker
 checkpoints passed after this integration.
+
+## Follow-up: built-in dialog font access and coverage
+
+`inspect-dialog-fonts.py --mame` extracts unchanged artwork and rechecks native
+register results in disposable Neo 3.21 state. Outputs stay in
+`build/dialog-fonts/`: 32×8 byte-slot cards, a 264×65 reading sample enlarged
+without interpolation, coverage JSON, instruction excerpts and 31 register cases.
+
+CallSysInt's complete 24-selector switch has two constant font outputs:
+0700 → 44AF8E (6×16) and 4000 → 44D592 (9px proportional).
+There is no selector for the 11px descriptor at 44E336. Unsupported selectors
+return false without manufacturing another font output. The previous full
+populated syscall-table audit found no dedicated getter elsewhere.
+
+Creation at 433B86 allocates a pool object and looks up a geometry template.
+An invalid layout returns D0=0, A1=0; exhausted allocation returns D0=0 with
+A0 pointing into the object pool and A1 pointing to a geometry template.
+Neither failure leaks the font pointer. Successful creation also leaves object
+pointers, not a font descriptor. Creation alone does not initialize font globals.
+
+There IS a narrower indirect route, so “no way to obtain it” would be too strong:
+FontDialogTextWidth (slot 269, entry 43490C) leaves the currently active dialog
+font in A1 for a nonempty ordinary string. Once the dialog subsystem is
+initialized, the tested path leaves the 9px RAM descriptor at 7E32. The 11px RAM
+copy immediately follows at +16. Native assertions verify both descriptors and
+the latter's bitmap pointer. This avoids a literal ROM font address, but relies
+on undocumented A1 contents, subsystem initialization and private adjacency;
+it is not an independent getter. Before initialization A1 was zero. The probe
+uses the private subsystem initializer ONLY to establish initialized test state,
+not as a proposed production API. No SDK adapter or production fallback to 11px
+has been added here.
+
+The 9px resource has blank slots 01–1F and 20; the 11px resource only has blank
+20. However, nonempty artwork is NOT character coverage: the 9px resource uses
+one identical replacement box in 69 slots, and 11px does so in six slots.
+See the exact comparison and implications below. The cards retain native byte
+labels and do not substitute generated glyphs.
+
+## Exact 9px versus 11px artwork comparison
+
+The extraction script also produces per-slot `pixel-comparison.json`, a summary,
+and `differences.png`. It compares all pixels in the advance cell, trying each
+possible blank-row padding (0+2, 1+1, 2+0). A separate ink-coordinate comparison
+allows horizontal translation, without obscuring advance differences.
+
+Excluding space, blank 9px slots, and repeated replacement-box slots, 155 slots
+have distinct implemented artwork in both resources. Of these, 147 match exactly
+including advance after padding: 144 with two blank rows above, two with one
+above and one below, one with two below. Eight differ:
+
+* 00 full block fills the entire 9px or 11px cell.
+* 40 @: advance 7→6 and three ink pixels removed after +2 vertical alignment.
+* 72 r: same ink shifted right one pixel and down two; advance 4→5.
+* 7A z: same ink shifted down two; advance 5→4.
+* C7 Ç: advance 5→6 and different artwork.
+* EC/ED/EE ì/í/î: each 11px glyph has one additional ink pixel after +1 alignment.
+
+For printable ASCII 21–7E, 91 of 94 match with padding, with only @/r/z differing.
+Thus the everyday English appearance is substantially the same, but 11px is not
+merely a padded copy of the entire 9px resource.
+
+9px is missing the Neo extras at 01–1F (Greek, arrows, fractions, math symbols,
+Ń and ĳ). Its 69 repeated replacement-box slots include many Western letters:
+Š Œ Ž š ž Ÿ À Á Â Ã Ä Å È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ø Ù Ú Û Ü Ý
+à á â ã ä å è é ê ë ñ ò ó ô õ ö ù ú û ü ý ÿ.
+Other replacements include ‰ ¥ © ª ® ± ¹ ² ³, nonbreaking space, and six Neo
+extra/alias slots. All exact byte positions are recorded in `coverage.json`.
+11px retains the box only at 81/8D/8F/90/9D/A0: ⌐/Φ/Π/grave alias/π/NBSP.
+The ordinary ASCII grave at 60 remains available.
+
+Recommendation: 9px is a compact English reading option (seven complete lines),
+not a general Neo-US/Western default. Preserve installed reading-font priority;
+its normal/bold/italic faces provide real styles, while the ROM fallback uses
+the same body face for all styles. Prefer complete providers or 6×16 when text
+requires unsupported characters. BibleWise supplies verse-number superscript
+bitmaps separately, so its verse numbers do not depend on native ¹²³ slots.
+The user's global font should remain an explicit choice rather than an inherited
+unpredictable default. No default-selection policy was changed by this audit.
+
+Cross-ROM fallback check: the pinned AS3000 and Neo 3.01 images do not contain
+slots 263/269 (FontDialogCreate/TextWidth), and a byte-alignment-independent
+scan finds no 9px or 11px proportional descriptors with in-image width, offset
+and bitmap pointers. Neo 3.21 has ROM descriptors at 44D592 and 44E336, separated
+by 0xDA4 bytes, NOT adjacent. Only their private RAM copies are adjacent (+16).
+Therefore adjacency cannot be inferred from the ROM small-font getter, and the
+A1 route is not a general cross-ROM fallback API. Prefer the public 6×16 getter
+for a portable complete fallback; a Neo 3.21-specific 11px adapter would need
+separate initialization/version validation and a safe fallback.

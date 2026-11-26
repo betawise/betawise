@@ -1,0 +1,474 @@
+{
+  "status": "passed",
+  "suites": [
+    {
+      "name": "bench-sidecar-kjv",
+      "checkpoints": 14,
+      "translation": "kjv"
+    },
+    {
+      "name": "bench-sidecar-nkjv",
+      "checkpoints": 14,
+      "translation": "nkjv"
+    },
+    {
+      "name": "bench-inline-kjv",
+      "checkpoints": 14,
+      "translation": "kjv"
+    },
+    {
+      "name": "bench-inline-nkjv",
+      "checkpoints": 14,
+      "translation": "nkjv"
+    },
+    {
+      "name": "accept-reader-kjv",
+      "checkpoints": 53,
+      "translation": "kjv"
+    },
+    {
+      "name": "accept-usage-nkjv",
+      "checkpoints": 73,
+      "translation": "nkjv"
+    },
+    {
+      "name": "accept-vendor-small-nkjv",
+      "checkpoints": 14,
+      "translation": "nkjv"
+    },
+    {
+      "name": "accept-partial-copy-kjv",
+      "checkpoints": 12,
+      "translation": "kjv"
+    }
+  ],
+  "checkpoints": 208,
+  "production_checkpoints": 180,
+  "release": {
+    "KJV": {
+      "sidecar": {
+        "rom_bytes": 1311244,
+        "a5_bytes": 1570,
+        "resources": {
+          "container.bin": 1009315,
+          "search.bin": 253376,
+          "verses.bin": 2378,
+          "pruning.bin": 6144,
+          "styles.bin": 2439,
+          "layouts.bin": 175
+        },
+        "aligned_resource_bytes": 1273830,
+        "application_rom_bytes": 37414,
+        "formatter_stack_frame_bytes": 1596,
+        "sha256": "b4059725159d3835960d4fe6eeb0fc2d4c081a6298845460b7b155d3c7b48d0c"
+      },
+      "inline": {
+        "rom_bytes": 1309208,
+        "a5_bytes": 1530,
+        "resources": {
+          "container.bin": 1012055,
+          "search.bin": 253383,
+          "verses.bin": 2378,
+          "pruning.bin": 6144
+        },
+        "aligned_resource_bytes": 1273962,
+        "application_rom_bytes": 35246,
+        "formatter_stack_frame_bytes": 624,
+        "sha256": "da4d938bee34c136f519841ee75a69fed2b69997591415944632d7646d2150b9"
+      },
+      "rom_saved": 2036,
+      "a5_saved": 40,
+      "application_rom_saved": 2168,
+      "resource_rom_saved": -132
+    },
+    "NKJV": {
+      "sidecar": {
+        "rom_bytes": 1457244,
+        "a5_bytes": 1570,
+        "resources": {
+          "container.bin": 1084008,
+          "search.bin": 268969,
+          "verses.bin": 2378,
+          "pruning.bin": 6144,
+          "styles.bin": 26114,
+          "layouts.bin": 32214
+        },
+        "aligned_resource_bytes": 1419828,
+        "application_rom_bytes": 37416,
+        "formatter_stack_frame_bytes": 1596,
+        "sha256": "45b4a4745a811489c42d38c9180c11219be6a1ad11a6718bbc8b4ca78c267d9d"
+      },
+      "inline": {
+        "rom_bytes": 1439734,
+        "a5_bytes": 1530,
+        "resources": {
+          "container.bin": 1126965,
+          "search.bin": 269000,
+          "verses.bin": 2378,
+          "pruning.bin": 6144
+        },
+        "aligned_resource_bytes": 1404488,
+        "application_rom_bytes": 35246,
+        "formatter_stack_frame_bytes": 624,
+        "sha256": "9c953bfc5af798f51af8d4252bcecc8aad922488e32760d8d7c6366baaf6410a"
+      },
+      "rom_saved": 17510,
+      "a5_saved": 40,
+      "application_rom_saved": 2170,
+      "resource_rom_saved": 15340
+    }
+  },
+  "timings": {
+    "KJV": {
+      "sidecar": [
+        {
+          "name": "Load Genesis 1",
+          "decode_write_ms": 422.746621,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load 1 Corinthians 13",
+          "decode_write_ms": 159.98979,
+          "load_display_ms": 274.161056
+        },
+        {
+          "name": "Select short verse",
+          "decode_write_ms": null,
+          "load_display_ms": 103.405376
+        },
+        {
+          "name": "Copy short verse",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load John 3",
+          "decode_write_ms": 419.979774,
+          "load_display_ms": 586.931854
+        },
+        {
+          "name": "Load Psalm 119",
+          "decode_write_ms": 1463.72823,
+          "load_display_ms": 1796.819212
+        },
+        {
+          "name": "Select whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Hide headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy body only",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Restore headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Seek after copy",
+          "decode_write_ms": null,
+          "load_display_ms": 374.862188
+        },
+        {
+          "name": "Resume reconstructed Psalm",
+          "decode_write_ms": 1463.72823,
+          "load_display_ms": 1817.977362
+        },
+        {
+          "name": "Reload Genesis",
+          "decode_write_ms": 422.746621,
+          "load_display_ms": 583.229035
+        }
+      ],
+      "inline": [
+        {
+          "name": "Load Genesis 1",
+          "decode_write_ms": 345.396743,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load 1 Corinthians 13",
+          "decode_write_ms": 131.69698,
+          "load_display_ms": 245.881032
+        },
+        {
+          "name": "Select short verse",
+          "decode_write_ms": null,
+          "load_display_ms": 103.405376
+        },
+        {
+          "name": "Copy short verse",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load John 3",
+          "decode_write_ms": 344.756296,
+          "load_display_ms": 511.721162
+        },
+        {
+          "name": "Load Psalm 119",
+          "decode_write_ms": 1232.672529,
+          "load_display_ms": 1565.776297
+        },
+        {
+          "name": "Select whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Hide headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy body only",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Restore headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Seek after copy",
+          "decode_write_ms": null,
+          "load_display_ms": 374.849402
+        },
+        {
+          "name": "Resume reconstructed Psalm",
+          "decode_write_ms": 1232.672529,
+          "load_display_ms": 1586.921662
+        },
+        {
+          "name": "Reload Genesis",
+          "decode_write_ms": 345.383957,
+          "load_display_ms": 505.879157
+        }
+      ]
+    },
+    "NKJV": {
+      "sidecar": [
+        {
+          "name": "Load Genesis 1",
+          "decode_write_ms": 452.760538,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load 1 Corinthians 13",
+          "decode_write_ms": 172.701689,
+          "load_display_ms": 288.526874
+        },
+        {
+          "name": "Select short verse",
+          "decode_write_ms": null,
+          "load_display_ms": 116.669184
+        },
+        {
+          "name": "Copy short verse",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load John 3",
+          "decode_write_ms": 449.015681,
+          "load_display_ms": 613.30634
+        },
+        {
+          "name": "Load Psalm 119",
+          "decode_write_ms": 1532.28603,
+          "load_display_ms": 1892.137429
+        },
+        {
+          "name": "Select whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Hide headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy body only",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Restore headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Seek after copy",
+          "decode_write_ms": null,
+          "load_display_ms": 387.782342
+        },
+        {
+          "name": "Resume reconstructed Psalm",
+          "decode_write_ms": 1532.28603,
+          "load_display_ms": 1904.063892
+        },
+        {
+          "name": "Reload Genesis",
+          "decode_write_ms": 452.760538,
+          "load_display_ms": 619.147199
+        }
+      ],
+      "inline": [
+        {
+          "name": "Load Genesis 1",
+          "decode_write_ms": 368.280524,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load 1 Corinthians 13",
+          "decode_write_ms": 136.857165,
+          "load_display_ms": 252.695136
+        },
+        {
+          "name": "Select short verse",
+          "decode_write_ms": null,
+          "load_display_ms": 116.656398
+        },
+        {
+          "name": "Copy short verse",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Load John 3",
+          "decode_write_ms": 362.575908,
+          "load_display_ms": 526.879352
+        },
+        {
+          "name": "Load Psalm 119",
+          "decode_write_ms": 1305.252256,
+          "load_display_ms": 1665.103656
+        },
+        {
+          "name": "Select whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy whole Psalm",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Hide headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Copy body only",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Restore headings",
+          "decode_write_ms": null,
+          "load_display_ms": null
+        },
+        {
+          "name": "Seek after copy",
+          "decode_write_ms": null,
+          "load_display_ms": 387.782342
+        },
+        {
+          "name": "Resume reconstructed Psalm",
+          "decode_write_ms": 1305.265042,
+          "load_display_ms": 1677.030119
+        },
+        {
+          "name": "Reload Genesis",
+          "decode_write_ms": 368.280524,
+          "load_display_ms": 534.667185
+        }
+      ]
+    }
+  },
+  "host": {
+    "KJV": {
+      "codec": {
+        "status": "passed",
+        "sha256": "ecfdb94e1aef1d655cf7b7c702803ba915072553fab30dd7d2e22e06fa5c8a98",
+        "chapters": 1189,
+        "matcher_cases": 320
+      },
+      "format": {
+        "status": "passed",
+        "chapters": 1189,
+        "atoms": 789631,
+        "headings": 138,
+        "search_cases": 399,
+        "sha256": "bbaf413582e04d0352268e12b2e33b20b43abc49aeaeaa45d1576edb92834916"
+      }
+    },
+    "NKJV": {
+      "codec": {
+        "status": "passed",
+        "sha256": "37b1e60cdd788cd84cff4e803141f81a1aa30fd36d79f88aeca611de8319592d",
+        "chapters": 1189,
+        "matcher_cases": 320
+      },
+      "format": {
+        "status": "passed",
+        "chapters": 1189,
+        "atoms": 768823,
+        "headings": 2992,
+        "search_cases": 399,
+        "sha256": "c5648b3037b715ed6863ffa853794c0333402325820106a4d5cc6cde69ad816f"
+      }
+    }
+  },
+  "bounds": {
+    "KJV": {
+      "status": "passed",
+      "chapter_profiles": 19024,
+      "max_written": 16064,
+      "min_margin": 4
+    },
+    "NKJV": {
+      "status": "passed",
+      "chapter_profiles": 19024,
+      "max_written": 18005,
+      "min_margin": 3
+    }
+  },
+  "identical_native_chapters": {
+    "KJV": 14,
+    "NKJV": 14
+  },
+  "notes": [
+    "Times are emulated Neo milliseconds, not host wall time. Decode/write includes native markup generation.",
+    "Load/display includes allocation, native layout and painting; initial Genesis starts before the phase-1 tap attaches.",
+    "Application ROM subtracts word-aligned Bible resources from actual release image bytes; includes SDK, headers and non-Bible data.",
+    "Formatter stack frames are compiler-reported local frames, not total peak call-stack measurements.",
+    "Old fallback-font source assertions discarded style records. Updated source oracle requires bold/italic provenance to survive regular-face fallback; pixel/cursor/LCD assertions remain exact."
+  ]
+}

@@ -5,6 +5,7 @@
 | ID | Applet or resource |
 | --- | --- |
 | `0xA1A0` | Hello World |
+| `0xA1B1` | BibleWise |
 | `0xA1BA` | EhBASIC |
 | `0xA1C0` | MicroPython |
 | `0xA1CB` | UCBLogo |

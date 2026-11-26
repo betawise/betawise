@@ -13,6 +13,8 @@ ASFLAGS = --pcrel -m68000
 CFLAGS = -m68000 -msoft-float -msep-data -fomit-frame-pointer -fshort-enums
 # Prevent GCC from merging byte stores into an unaligned word store.
 CFLAGS += -fno-store-merging
+# Linux headers must not replace firmware string calls with glibc *_chk helpers.
+CFLAGS += -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0
 CFLAGS += -Os -I"$(TOP)/os3k/build" -I"$(TOP)/os3k" -ffunction-sections -fdata-sections
 OS3K_LIB = $(TOP)/os3k/build/libos3k.a
 LDFLAGS = -static -T "$(TOP)/os3k/os3k.lds" $(OS3K_LIB)

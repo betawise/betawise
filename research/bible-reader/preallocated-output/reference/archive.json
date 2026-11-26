@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "2c579923c406b98655f0c863cd0a33db4b74771c",
+  "release": {
+    "KJV": {
+      "sha256": "b34e9087a6e1dd25f299d19eddd85e63b59a6ce55c5eca322203ed529cdff16b",
+      "research_rebuild_sha256": "7fb05bd4af11eb9825293c40a241f88711ec9d60bebaf6282bef4a8674869883"
+    },
+    "NKJV": {
+      "sha256": "176679348549bc9f9e477ed89891345e6b5a6b826fd4a72b946437622b3953b3",
+      "research_rebuild_sha256": "e31343c1c2e7b43a87c6bd5b9638eb9d541f5978da8d1b48c86899d880da9411"
+    }
+  },
+  "sources": {
+    "Search.h": "d6ca674ab58cbdbf181667a99d134874c8d53e091655eb4ce2c466c256c40e29",
+    "README.md": "811a55076a58c75db94a2d6de7f142b5256034668d1a46a5a7e335d9b5685f76",
+    "Decoder.c": "2ee8221ce0f6bec61d331ea11bc48fb37b23f8253b151ab282618bc28a1700d4",
+    "Resources.S": "c960316254e9f61d388387dabd760053c7863b9f3a70a2300c849dddd472395f",
+    "Formatting.h": "71cf824882256007bcaae5598d1fc0fc348bfa758c23fab8c07c17c81ff1c0ae",
+    "build_data.py": "2d90bcc13d9f25ed33ac954d4e2c29036013ca87677def662aaa307025dd27eb",
+    "convert_source.py": "e6781528972785992e291719538dc01217b5febf30be09520b4fcf12a61b52b8",
+    "Decoder.h": "3695663220160c2880c18afe4395946ad3ef1b557feaf771823cbd5fa59e1bd0",
+    "Search.c": "163081e7c3df1d68e36bca0a6f8883ed698315627d50951ac1a3ea2de1b0db75",
+    "format_data.py": "f18f567bad4b651e0f439abf4e20a1479e9b614b374dc2ea984efe6134296845",
+    "compress_text.py": "124b10405b69670e23c0318e209d817379105b329e90a7f3b39bf9907f1eb5d4",
+    "BibleWise.c": "62a9d2ca35fdac2e23c532afb64eb26d6eb8afc2a3508b8e543c979f339566e3",
+    "generate_superscript.py": "9bf5fde6f15b878edac019ab46ec68def4312387ccbc55dd2b7607241a648c8d",
+    "build_index.py": "6f8c6d928be6a51dcb4fc0c83640fcf081c3ba66269316beae095768ad5e7acd",
+    "Makefile": "0e5f258b119c8a4172962e61e853f24aa7df2e28d4ebc86acc2675f065926620",
+    "BibleFormat.h": "03b58ec1557d3801aa6642994be0b2a46701a44ff59550fc8c82c819600ac872",
+    "Formatting.c": "7cee3af2b2a380dfe40fbab6ddc1caad39d3d8d96befed02b753a45b7d4dd4fc",
+    "ChapterPositions.h": "734f1564bcccd161f2146eac1895077a6c4dba7d633a069d6b178c75e08ab456"
+  }
+}

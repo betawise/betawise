@@ -119,6 +119,13 @@ The supported toolchain is Debian/Ubuntu's **`m68k-linux-gnu-gcc`**. Follow the
 [CI workflow](.github/workflows/ci.yml) for the current build environment,
 dependencies, submodule initialization, build commands, and runtime checks.
 Use a Git checkout with tags available, as CI does, for version generation.
+Initialize all pinned submodules before building, including the Bible data and
+font sources. From the repository root:
+
+```sh
+git submodule update --init
+make
+```
 
 Applet images are written to `applets/<name>/build/**/*.OS3KApp`. Install them using the
 steps above. See the individual applet guides for build options.

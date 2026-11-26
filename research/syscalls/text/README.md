@@ -252,3 +252,22 @@ call sites were inspected for return usage as described above.
 | 192 / A300 | TextFormReset | 004DA328 | 005DCA68 | 0042F186 |
 | 193 / A304 | TextFormFind | 004DAA18 | 005DD19C | 0042F998 |
 | 194 / A308 | TextEditorClear | 004D4A6C | 005D6D36 | 0042842C |
+
+### Direct offset positioning and local scanner restoration
+
+The hash-pinned AS3000 3.01, Neo 3.01 and Neo 3.21 A2D8 implementations read
+only the `TextScan_t.editor` and `.offset` fields. Editable mode clamps the
+position to the file/gap boundaries and runs native layout; it does not consume
+the supplied scan x/y, font or token flags. `TextScanInit(START)` followed by an
+assigned raw offset is therefore sufficient for a direct seek in these ROMs.
+Scanning the whole prefix before calling the setter duplicates work. See
+[direct-seek-evidence.json](direct-seek-evidence.json); the inspected function
+addresses are evidence, not calls added to production code.
+
+BibleWise now uses that direct seek. After reflow establishes a fresh viewport,
+its caret and selection scanners start from that viewport's valid current-font
+state, scanning only the offset difference (backward for an earlier selection
+anchor). It does not reuse old pixel coordinates or font state across a font
+change. Its caller preserves logical offsets and remaps the current editor gap.
+The change is tested with exact source/style/font/pixel/cursor assertions,
+including retained selections, all display-option combinations and focus return.

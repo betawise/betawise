@@ -1,0 +1,33 @@
+{
+  "commit": "28040c2e8c9ea08a55add0f86d37856a94e03900",
+  "sources": {
+    "Search.h": "d6ca674ab58cbdbf181667a99d134874c8d53e091655eb4ce2c466c256c40e29",
+    "README.md": "811a55076a58c75db94a2d6de7f142b5256034668d1a46a5a7e335d9b5685f76",
+    "Decoder.c": "d7222f2527b068aec3abf5524fe4562393d068aac269004d13fa1ecf8ea97199",
+    "Resources.S": "c960316254e9f61d388387dabd760053c7863b9f3a70a2300c849dddd472395f",
+    "Formatting.h": "71cf824882256007bcaae5598d1fc0fc348bfa758c23fab8c07c17c81ff1c0ae",
+    "build_data.py": "bb94d9debb1e051a316ae0ca37ad5b2de3366acd8c42d7d3a1d132edcfd23230",
+    "convert_source.py": "e6781528972785992e291719538dc01217b5febf30be09520b4fcf12a61b52b8",
+    "Decoder.h": "3695663220160c2880c18afe4395946ad3ef1b557feaf771823cbd5fa59e1bd0",
+    "Search.c": "163081e7c3df1d68e36bca0a6f8883ed698315627d50951ac1a3ea2de1b0db75",
+    "format_data.py": "16d13ae273e852ffe20f7bf0c7d34c6593d3b670149bb5d14bb1d3af2ed30e08",
+    "compress_text.py": "e3d221b9a60512f7a32214ec0fa7782f87f5e8600adbb1985ab0b51eba63c9be",
+    "BibleWise.c": "423641b69ae788ea8fdcdb22973d6ceeda0a5368a9518c3b8d271ba44461d3c2",
+    "generate_superscript.py": "9bf5fde6f15b878edac019ab46ec68def4312387ccbc55dd2b7607241a648c8d",
+    "build_index.py": "6f8c6d928be6a51dcb4fc0c83640fcf081c3ba66269316beae095768ad5e7acd",
+    "Makefile": "9a220cbc564c7423a512c78aa9c697b455b40c22c88f912bd3bdffae3e86a96b",
+    "BibleFormat.h": "67c3809cc04a29ed3413fc1a4e5048dd4a00c3cbd90ccf1aec021f0286898ee2",
+    "Formatting.c": "7cee3af2b2a380dfe40fbab6ddc1caad39d3d8d96befed02b753a45b7d4dd4fc",
+    "ChapterPositions.h": "734f1564bcccd161f2146eac1895077a6c4dba7d633a069d6b178c75e08ab456"
+  },
+  "release": {
+    "KJV": {
+      "bytes": 1311244,
+      "sha256": "b4059725159d3835960d4fe6eeb0fc2d4c081a6298845460b7b155d3c7b48d0c"
+    },
+    "NKJV": {
+      "bytes": 1457244,
+      "sha256": "45b4a4745a811489c42d38c9180c11219be6a1ad11a6718bbc8b4ca78c267d9d"
+    }
+  }
+}
