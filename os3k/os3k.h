@@ -10,7 +10,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#include "version.h"
+#include "build/version.h"
 
 #include "os3k_applet.h"
 #include "os3k_dialog.h"

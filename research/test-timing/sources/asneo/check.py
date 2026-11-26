@@ -65,8 +65,8 @@ def main():
                 flash[dest:dest+size] = system[source:source+size]
                 source += size
             images = [args.firmware/'alphawordplus.os3kapp',
-                      ROOT/'betawise/applets/UCBLogo/UCBLogo.OS3KApp',
-                      ROOT/f'betawise/applets/MicroPython/MicroPython-{args.variant}.OS3KApp',
+                      ROOT/'betawise/applets/UCBLogo/build/UCBLogo.OS3KApp',
+                      ROOT/f'betawise/applets/MicroPython/build/MicroPython-{args.variant}.OS3KApp',
                       ROOT/'betawise/applets/NeoFontTerminal/NeoFontTerminal.OS3KApp']
             offset = 0x70000
             manifest = []

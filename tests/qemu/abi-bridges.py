@@ -61,6 +61,6 @@ with tempfile.TemporaryDirectory(prefix='os3k-bridges-') as tmp:
     run([cross + 'gcc', '-m68000', '-c', out / 'start.S', '-o', out / 'start.o'])
     run([cross + 'gcc', *flags, '-nostdlib', '-static', '-Wl,--build-id=none', '-Wl,--gc-sections',
          out / 'start.o', out / 'test.c', out / 'mocks.c',
-         repo / 'os3k/os3k_abi_bridge.o', '-o', out / 'test.elf'])
+         repo / 'os3k/build/os3k_abi_bridge.o', '-o', out / 'test.elf'])
     run([qemu, '-cpu', 'm68000', out / 'test.elf'])
 print(f'PASS {len(entries)} production ABI bridges: arguments, NULL and non-NULL D0 results')

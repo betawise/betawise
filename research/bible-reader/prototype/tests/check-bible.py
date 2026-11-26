@@ -95,7 +95,7 @@ def main():
     # region in this newly-created disposable image. No existing session read.
     prepare_session(out,args.firmware,'extra',args.mame)
     flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000)
-    images=[args.firmware/'alphawordplus.os3kapp',APP/'BibleReader.OS3KApp',ROOT/'betawise/fonts/BetaWiseTerminal-Medium.OS3KApp']
+    images=[args.firmware/'alphawordplus.os3kapp',APP/'BibleReader.OS3KApp',ROOT/'betawise/fonts/build/BetaWiseTerminal-Medium/BetaWiseTerminal-Medium.OS3KApp']
     (out/'artifacts').mkdir()
     offset=0x70000
     for path in images:

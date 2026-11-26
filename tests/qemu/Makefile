@@ -1,5 +1,5 @@
-OBJ = test.o externs.o
-TARGET = test.OS3KApp
+OBJ = build/test.o build/externs.o
+TARGET = build/test.OS3KApp
 
 include ../../Makefile.common
 

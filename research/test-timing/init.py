@@ -13,7 +13,7 @@ subprocess.run([sys.executable,str(ROOT/'betawise/tests/mame/asneo/check.py'),'-
 metadata={'sources':{},'inputs':{},'git':{}}
 for p in SOURCES.rglob('*'):
  if p.is_file():metadata['sources'][str(p.relative_to(SOURCES))]=hashlib.sha256(p.read_bytes()).hexdigest()
-for p in [ROOT/'mame/mame',ROOT/'mame/neodiag',ROOT/'betawise/applets/MicroPython/MicroPython-extra.OS3KApp',ROOT/'betawise/applets/MicroPython/build-extra/MicroPython.OS3KApp']:
+for p in [ROOT/'mame/mame',ROOT/'mame/neodiag',ROOT/'betawise/applets/MicroPython/build/MicroPython-extra.OS3KApp',ROOT/'betawise/applets/MicroPython/build/extra/MicroPython.OS3KApp']:
  metadata['inputs'][str(p)]=hashlib.sha256(p.read_bytes()).hexdigest()
 for repo in ['betawise','mame']:
  metadata['git'][repo]={'head':subprocess.check_output(['git','-C',str(ROOT/repo),'rev-parse','HEAD'],text=True).strip(),'status':subprocess.check_output(['git','-C',str(ROOT/repo),'status','--short'],text=True)}

@@ -120,7 +120,7 @@ The supported toolchain is Debian/Ubuntu's **`m68k-linux-gnu-gcc`**. Follow the
 dependencies, submodule initialization, build commands, and runtime checks.
 Use a Git checkout with tags available, as CI does, for version generation.
 
-Applet images are written to `applets/<name>/*.OS3KApp`. Install them using the
+Applet images are written to `applets/<name>/build/**/*.OS3KApp`. Install them using the
 steps above. See the individual applet guides for build options.
 
 ### Windows and other toolchains

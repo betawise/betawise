@@ -58,7 +58,6 @@ PRIVATE_HEADER = $(if $(PRIVATE_BDF),$(BUILD_DIR)/glyphs-private.h)
 INT = $(PRIVATE_HEADER) $(NORMAL_HEADER) $(BOLD_HEADER) $(ITALIC_HEADER) $(BOLD_ITALIC_HEADER)
 OBJ = $(BUILD_DIR)/FontApplet.o
 TARGET = $(BUILD_DIR)/$(BASE).OS3KApp
-PUBLISHED_TARGET = $(BASE).OS3KApp
 include ../Makefile.common
 
 $(OBJ): FontApplet.c $(INT) $(OS3K_HEADERS) Makefile
@@ -98,9 +97,6 @@ $(PRIVATE_HEADER): $(PRIVATE_BDF) fontgen.py Makefile
 	python3 fontgen.py $< $@ --missing-glyph blank --symbol-prefix PRIVATE_
 endif
 
-all: $(PUBLISHED_TARGET)
-$(PUBLISHED_TARGET): $(TARGET)
-	cp $< $@
 clean: clean-generated
 .PHONY: clean-generated
 clean-generated:

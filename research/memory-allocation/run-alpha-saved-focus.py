@@ -7,7 +7,7 @@ fw=root/'Ghidra/Alphasmart Neo/SmartApplets';mame=root/'mame/neodiag'
 prepare_session(out,fw,'extra',mame)
 flash=bytearray((out/'nvram/asneo/flashnv').read_bytes());flash[0x70000:]=b'\xff'*(len(flash)-0x70000)
 aw=(fw/'alphawordplus.os3kapp').read_bytes();flash[0x70000:0x70000+len(aw)]=aw
-hello=(root/'betawise/applets/HelloWorld/HelloWorld.OS3KApp').read_bytes();addr=(0x70000+len(aw)+1023)&~1023;flash[addr:addr+len(hello)]=hello
+hello=(root/'betawise/applets/HelloWorld/build/HelloWorld.OS3KApp').read_bytes();addr=(0x70000+len(aw)+1023)&~1023;flash[addr:addr+len(hello)]=hello
 (out/'nvram/asneo/flashnv').write_bytes(flash)
 lua=(Path(__file__).resolve().parent/'alpha-saved-focus.lua').read_text()
 (out/'run.lua').write_text(lua.replace('OUT',json.dumps(str(out))))

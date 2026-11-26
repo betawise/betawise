@@ -19,7 +19,7 @@ ASM
 
 "${cross}gcc" -m68000 -msoft-float -msep-data -ffreestanding -Os \
     -ffunction-sections -fdata-sections -nostdlib -static -Wl,--gc-sections \
-    "$build/start.S" "$here/smoke.c" "$here/../libos3k.a" \
+    "$build/start.S" "$here/smoke.c" "$here/../build/libos3k.a" \
     -o "$build/smoke.elf"
 "$qemu" -cpu m68000 "$build/smoke.elf" || {
     status=$?

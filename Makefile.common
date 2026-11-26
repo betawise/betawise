@@ -13,13 +13,21 @@ ASFLAGS = --pcrel -m68000
 CFLAGS = -m68000 -msoft-float -msep-data -fomit-frame-pointer -fshort-enums
 # Prevent GCC from merging byte stores into an unaligned word store.
 CFLAGS += -fno-store-merging
-CFLAGS += -Os -I"$(TOP)/os3k" -ffunction-sections -fdata-sections
-OS3K_LIB = $(TOP)/os3k/libos3k.a
+CFLAGS += -Os -I"$(TOP)/os3k/build" -I"$(TOP)/os3k" -ffunction-sections -fdata-sections
+OS3K_LIB = $(TOP)/os3k/build/libos3k.a
 LDFLAGS = -static -T "$(TOP)/os3k/os3k.lds" $(OS3K_LIB)
 LDFLAGS += --gc-sections --emit-relocs
 ARFLAGS = rcs
 OS3K_HEADERS ?= $(addprefix $(TOP)/os3k/,os3k.h os3k_applet.h os3k_dialog.h \
-                os3k_display.h os3k_file.h os3k_irda.h os3k_keyboard.h os3k_localization.h os3k_markup.h os3k_power.h os3k_serial.h os3k_speech.h os3k_wireless.h os3k_stdlib.h os3k_text.h os3k_time.h setjmp.h version.h)
+                os3k_display.h os3k_file.h os3k_irda.h os3k_keyboard.h os3k_localization.h os3k_markup.h os3k_power.h os3k_serial.h os3k_speech.h os3k_wireless.h os3k_stdlib.h os3k_text.h os3k_time.h setjmp.h build/version.h)
+
+build/%.o : %.c $(OS3K_HEADERS)
+	@mkdir -p $(@D)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+build/%.o : %.asm
+	@mkdir -p $(@D)
+	$(AS) $(ASFLAGS) $< -o $@
 
 %.o : %.c $(OS3K_HEADERS)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
@@ -33,6 +41,7 @@ $(OBJ): $(TOP)/Makefile.common
 endif
 
 %.OS3KApp : $(OBJ) $(TOP)/os3k/os3k.lds $(TOP)/os3k/fixups.py $(OS3K_LIB)
+	@mkdir -p $(@D)
 	$(LD) $(OBJ) $(LDFLAGS) --defsym __os3k_reloc_size=0 -o $(basename $@).elf
 	set -e; reloc_count=$$(python3 "$(TOP)/os3k/fixups.py" "$(READELF)" $(basename $@).elf $(basename $@).reloc); \
 	$(LD) $(OBJ) $(LDFLAGS) --defsym __os3k_reloc_size=$$reloc_count -o $(basename $@).elf; \
@@ -70,3 +79,4 @@ all: $(TARGET) $(SUBDIRS)
 
 clean: $(CLEAN_TARGETS)
 	$(RM) $(INT) $(OBJ) $(TARGET) $(APPLET_INTERMEDIATES)
+	$(RM) -r build

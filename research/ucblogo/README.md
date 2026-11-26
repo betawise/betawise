@@ -14,7 +14,7 @@ make -C os3k
 make -C applets/UCBLogo -j4
 ```
 
-The output is `applets/UCBLogo/UCBLogo.OS3KApp` (relative to the repository root). The pristine submodule is
+The output is `applets/UCBLogo/build/UCBLogo.OS3KApp` (relative to the repository root). The pristine submodule is
 pinned to [UCBLogo 6.2.5](https://github.com/jrincayc/ucblogo-code/releases/tag/version_6.2.5)
 (commit `a0215433f07384e4c42fe247525867f11e6f32f7`). Set `UPSTREAM` to use
 another checkout of the same revision.

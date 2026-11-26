@@ -83,19 +83,19 @@ endif
 all: $(SELECTED_VARIANTS)
 
 $(VARIANTS):
-	$(MAKE) VARIANT=$@ BUILD="$(if $(filter command line,$(origin BUILD)),$(BUILD),build-$@)" variant
+	$(MAKE) VARIANT=$@ BUILD="$(if $(filter command line,$(origin BUILD)),$(BUILD),build/$@)" variant
 
 applet: variant
 
 variant: $(BUILD)/libmicropython.a
 	$(MAKE) -f applet.mk CROSS_COMPILE="$(CROSS_COMPILE)" MICROPY_DIR="$(MICROPY_DIR)" VARIANT="$(VARIANT)" BUILD="$(BUILD)"
-	cmp -s $(BUILD)/MicroPython.OS3KApp MicroPython-$(VARIANT).OS3KApp || cp $(BUILD)/MicroPython.OS3KApp MicroPython-$(VARIANT).OS3KApp
+	mkdir -p build
+	cmp -s $(BUILD)/MicroPython.OS3KApp build/MicroPython-$(VARIANT).OS3KApp || cp $(BUILD)/MicroPython.OS3KApp build/MicroPython-$(VARIANT).OS3KApp
 
 # Intermediates (including ELF/relocation files) live entirely in these directories.
 # Upstream's clean recipe below also removes a custom BUILD directory.
 clean: clean-applet
 clean-applet:
-	$(RM) -rf $(addprefix build-,$(VARIANTS))
-	$(RM) -f $(addprefix MicroPython-,$(addsuffix .OS3KApp,$(VARIANTS)))
+	$(RM) -rf build
 
 include $(TOP)/py/mkrules.mk

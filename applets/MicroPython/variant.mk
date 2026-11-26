@@ -1,7 +1,7 @@
 # Include before py/mkenv.mk, which otherwise supplies BUILD=build.
 VARIANTS := minimal core basic extra
 VARIANT ?= core
-BUILD ?= build-$(VARIANT)
+BUILD ?= build/$(VARIANT)
 
 ifeq ($(VARIANT),minimal)
 ROM_LEVEL := MICROPY_CONFIG_ROM_LEVEL_MINIMUM

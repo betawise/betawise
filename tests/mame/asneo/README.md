@@ -110,8 +110,8 @@ import sys
 neo_files, betawise = map(Path, sys.argv[1:])
 images = [
     neo_files / "alphawordplus.os3kapp",
-    betawise / "applets/MicroPython/MicroPython-core.OS3KApp",
-    betawise / "fonts/BetaWiseTerminal-Medium.OS3KApp",
+    betawise / "applets/MicroPython/build/MicroPython-core.OS3KApp",
+    betawise / "fonts/build/BetaWiseTerminal-Medium/BetaWiseTerminal-Medium.OS3KApp",
 ]
 flash = bytearray(Path("seed/asneo/flashnv").read_bytes())
 assert len(flash) == 0x400000, "unexpected flash size"

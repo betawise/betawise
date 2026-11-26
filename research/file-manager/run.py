@@ -30,7 +30,7 @@ script.write_text((ROOT / 'tests/mame/asma3k/asma3k.lua').read_text() + (HERE / 
 with (OUT / 'mame.log').open('w') as log:
     result = subprocess.run([str(ROOT.parent / 'mame/mame'), 'asma3k', '-rompath', str(roms),
         '-nvram_directory', str(OUT / 'nvram'), '-snapshot_directory', str(OUT / 'snap'),
-        '-applet', str(ROOT / 'applets/FileManager/FileManager.OS3KApp'),
+        '-applet', str(ROOT / 'applets/FileManager/build/FileManager.OS3KApp'),
         '-video', 'none', '-sound', 'none', '-nothrottle', '-seconds_to_run', '40',
         '-autoboot_delay', '0', '-autoboot_script', str(script)], cwd=OUT,
         env={**os.environ, 'SDL_VIDEODRIVER':'dummy'}, stdout=log, stderr=subprocess.STDOUT)

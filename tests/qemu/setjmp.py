@@ -21,7 +21,7 @@ with tempfile.TemporaryDirectory(prefix='os3k-setjmp-') as directory:
             '-fomit-frame-pointer', '-fshort-enums', optimization,
             '-ffreestanding', '-nostdlib', '-static', '-I' + str(repo / 'os3k'),
             '-Wl,--build-id=none', str(start),
-            str(here / 'setjmp.c'), str(repo / 'os3k/libos3k.a'),
+            str(here / 'setjmp.c'), str(repo / 'os3k/build/libos3k.a'),
             '-o', str(image),
         ], check=True)
         subprocess.run([qemu, '-cpu', 'm68000', str(image)], check=True)

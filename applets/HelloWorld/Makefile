@@ -1,4 +1,4 @@
-OBJ = HelloWorld.o
-TARGET = HelloWorld.OS3KApp
+OBJ = build/HelloWorld.o
+TARGET = build/HelloWorld.OS3KApp
 
 include ../../Makefile.common

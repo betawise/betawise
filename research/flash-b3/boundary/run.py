@@ -16,7 +16,7 @@ OUT = Path(sys.argv[1] if len(sys.argv) > 1 else '/tmp/as3000-flash-boundary').r
 OUT.mkdir(parents=True, exist_ok=False)
 original = (ROOT / 'tests/mame/asma3k/OS3KROM.OS3KOS').read_bytes()
 assert hashlib.sha256(original).hexdigest() == '732dca63399d883071ce41cc07ad352fa19c506b7b8c307ace16d5c53e6f8708'
-applet = ROOT / 'applets/HelloWorld/HelloWorld.OS3KApp'
+applet = ROOT / 'applets/HelloWorld/build/HelloWorld.OS3KApp'
 end = 0x408000 + len(applet.read_bytes())
 for name, limit, response in [('stock', 0x4C0000, 0x46), ('two-constant-experiment', 0x480000, 0x88)]:
     run = OUT / name

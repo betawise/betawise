@@ -37,7 +37,7 @@ class GraphicsTests(unittest.TestCase):
         root = Path(cls.temp.name)
         os3k = Path(__file__).resolve().parents[3] / 'os3k'
         subprocess.run(['make', '--no-print-directory', '-s', '-C',
-                        str(os3k), 'version.h'], check=True)
+                        str(os3k), 'build/version.h'], check=True)
         (root / 'raster.c').write_text('''#include "os3k.h"
 #include <string.h>
 unsigned char pixels[264*65];
@@ -59,7 +59,7 @@ void RasterOp(uint16_t x,uint16_t y,uint16_t w,uint16_t h,uint8_t*b,RopCode_e op
 }
 ''')
         subprocess.run(['cc', '-shared', '-fPIC', '-O2', '-Wall', '-Wextra',
-                        '-Werror', '-I' + str(os3k), str(os3k / 'os3k_display_gfx.c'),
+                        '-Werror', '-I' + str(os3k / 'build'), '-I' + str(os3k), str(os3k / 'os3k_display_gfx.c'),
                         str(root / 'raster.c'), '-o', str(root / 'graphics.so')], check=True)
         cls.lib = ctypes.CDLL(str(root / 'graphics.so'))
         cls.lib.DrawLine.argtypes = [ctypes.c_uint16] * 4 + [ctypes.c_bool]

@@ -11,7 +11,7 @@ def run(args,**kw):subprocess.run(list(map(str,args)),check=True,**kw)
 run(['make','-C',repo/'os3k','-j4'],stdout=subprocess.DEVNULL)
 run(['m68k-linux-gnu-gcc','-m68000','-msoft-float','-msep-data','-fomit-frame-pointer','-fshort-enums','-fno-store-merging','-Os','-fno-builtin','-ffunction-sections','-fdata-sections','-I'+str(repo/'os3k'),'-c',here/'rom-probe.c','-o',out/'probe.o'])
 (out/'probe.lds').write_text('SECTIONS { . = 0x30000; .text : { *(.text*) *(.rodata*) } . = 0x34000; .data : { *(.got.plt) *(.got) *(.data*) *(.bss*) } }')
-run(['m68k-linux-gnu-ld','--gc-sections','-e','console_probe','-T',out/'probe.lds',out/'probe.o',repo/'os3k/libos3k.a','-o',out/'probe.elf'])
+run(['m68k-linux-gnu-ld','--gc-sections','-e','console_probe','-T',out/'probe.lds',out/'probe.o',repo/'os3k/build/libos3k.a','-o',out/'probe.elf'])
 run(['m68k-linux-gnu-objcopy','-O','binary',out/'probe.elf',out/'probe.bin'])
 symbols={l.split()[2]:int(l.split()[0],16) for l in subprocess.check_output(['m68k-linux-gnu-nm',str(out/'probe.elf')],text=True).splitlines() if len(l.split())==3}
 assert len((out/'probe.bin').read_bytes())<0x5000

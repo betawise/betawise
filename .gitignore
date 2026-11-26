@@ -9,3 +9,6 @@ version.h
 # Python caches
 __pycache__/
 *.py[cod]
+
+# All generated build outputs
+build/

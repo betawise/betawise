@@ -200,7 +200,7 @@ def run(job):
   (out/'cfg').mkdir();(out/'nvram').mkdir()
   exe=ROOT/'mame/mame';driver='asma3k'
   rompath=str(ROOT/'mame/roms')
-  extra=['-applet',str(ROOT/'betawise/applets/MicroPython/build-extra/MicroPython.OS3KApp')]
+  extra=['-applet',str(ROOT/'betawise/applets/MicroPython/build/extra/MicroPython.OS3KApp')]
  (out/'scenario.lua').write_text(script)
  options=job.get('options',['-nothrottle','-frameskip','0'])
  command=[str(exe),driver,'-noreadconfig','-rompath',rompath,'-cfg_directory',str(out/'cfg'),'-nvram_directory',str(out/'nvram'),

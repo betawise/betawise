@@ -22,9 +22,9 @@ make VARIANT=basic -j4 # another way to select one level
 ```
 
 Each profile has its own core library, generated headers, wrapper objects,
-ELF, and image in `build-<profile>/`. Intermediate names stay identical:
+ELF, and image in `build/<profile>/`. Intermediate names stay identical:
 `MicroPython.o`, `MicroPython.elf`, and `MicroPython.OS3KApp`. Only the published
-images in this applet directory carry the profile name:
+images in this applet’s `build/` directory carry the profile name:
 
 - `MicroPython-minimal.OS3KApp`
 - `MicroPython-core.OS3KApp`
@@ -107,7 +107,7 @@ when supplied. It does not touch the upstream source submodule at `upstream/`.
 
 ## REPL implementation
 
-Mount `applets/MicroPython/MicroPython-core.OS3KApp` in MAME's AS3000
+Mount `applets/MicroPython/build/MicroPython-core.OS3KApp` in MAME's AS3000
 SmartApplet slot. To test a new installation, use fresh NVRAM so the
 firmware scans its flash. Complete the initial setup and select
 MicroPython in the SmartApplets menu.

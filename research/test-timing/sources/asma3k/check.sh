@@ -55,7 +55,7 @@ for test_case in "${cases[@]}"; do
 
     artifact="$root/applets/$applet/$applet"
     if [[ $applet == MicroPython ]]; then
-        artifact="$root/applets/MicroPython/MicroPython-core"
+        artifact="$root/applets/MicroPython/build/MicroPython-core"
     fi
     script="$applet.lua"
     if [[ -n $variant ]]; then

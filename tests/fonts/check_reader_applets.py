@@ -29,14 +29,14 @@ def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--report',type=Path);args=p.parse_args();cross=os.environ.get('CROSS_COMPILE','m68k-linux-gnu-');results=[]
  for size, columns, lines in [('Medium',44,8),('Small',52,9),('Tiny',66,10)]:
   base=f'BetaWiseTerminal-{size}'
-  data=(FONTS/(base+'.OS3KApp')).read_bytes()
+  data=(FONTS/'build'/base/(base+'.OS3KApp')).read_bytes()
   assert data[24:60].split(b'\0')[0].decode()==f'BetaWise - Terminal {size} ({columns}x{lines})'
  with tempfile.TemporaryDirectory(prefix='reader-font-check-')as td:
   td=Path(td);(td/'start.S').write_text(START)
   subprocess.run([cross+'gcc','-m68000','-c',td/'start.S','-o',td/'start.o'],check=True)
   for familyidx,family in enumerate(FAMILIES):
    for lines in range(3,7):
-    base=f'BetaWise{family}-{SIZES[lines][0]}';data=(FONTS/(base+'.OS3KApp')).read_bytes();expectedid=0xaff0+4*familyidx+lines-3
+    base=f'BetaWise{family}-{SIZES[lines][0]}';data=(FONTS/'build'/base/(base+'.OS3KApp')).read_bytes();expectedid=0xaff0+4*familyidx+lines-3
     assert struct.unpack_from('>I',data)[0]==0xc0ffeead
     assert struct.unpack_from('>H',data,20)[0]==expectedid
     assert data[24:60].split(b'\0')[0].decode()==f'BetaWise - {family} {SIZES[lines][1]} ({lines} lines)'
@@ -82,7 +82,7 @@ int test(void) {
 }
 '''.replace('HASHES',','.join(f'0x{h:08x}u'for h in hashes)).replace('EXPECTED_HEIGHT',str(height)).replace('EXPECTED_NAME',f'BetaWise {family} {SIZES[lines][1]}')
     (td/'test.c').write_text(source)
-    subprocess.run([cross+'gcc','-m68000','-msoft-float','-msep-data','-fomit-frame-pointer','-fshort-enums','-fno-store-merging','-Os','-fno-builtin','-ffreestanding','-I'+str(ROOT/'os3k'),'-nostdlib','-static','-Wl,--build-id=none','-Wl,--defsym,__os3k_rom_size=0','-Wl,--defsym,__os3k_ram_size=0',td/'start.o',td/'test.c',FONTS/'build'/base/'FontApplet.o',ROOT/'os3k/libos3k.a','-o',td/'test.elf'],check=True)
+    subprocess.run([cross+'gcc','-m68000','-msoft-float','-msep-data','-fomit-frame-pointer','-fshort-enums','-fno-store-merging','-Os','-fno-builtin','-ffreestanding','-I'+str(ROOT/'os3k/build'),'-I'+str(ROOT/'os3k'),'-nostdlib','-static','-Wl,--build-id=none','-Wl,--defsym,__os3k_rom_size=0','-Wl,--defsym,__os3k_ram_size=0',td/'start.o',td/'test.c',FONTS/'build'/base/'FontApplet.o',ROOT/'os3k/build/libos3k.a','-o',td/'test.elf'],check=True)
     subprocess.run(['qemu-m68k','-cpu','m68000',td/'test.elf'],check=True,timeout=10)
     results.append(dict(applet=base,id=f'{expectedid:04X}',height=height,style_hashes=hashes,glyphs=1280,passed=True))
  report=dict(applets=results,validated_applets=len(results),validated_style_tables=len(results)*5,validated_glyphs=len(results)*1280,passed=True,scope='Offline compiled m68000 handlers and image headers; not native editor acceptance')

@@ -11,10 +11,21 @@ include ../Makefile.common
 
 # CI uses the same selection as `all`, ignoring stale disabled applet images.
 # Run after building; paths are relative to the repository root.
+# BibleWise defaults to KJV only, even when optional translation builds exist.
 .PHONY: published-applets
 published-applets:
-	@$(foreach image,$(wildcard ../fonts/*.OS3KApp),printf '%s\n' 'fonts/$(notdir $(image))';) :
-	@$(foreach applet,$(SUBDIRS),$(foreach image,$(wildcard $(applet)/*.OS3KApp),printf '%s\n' 'applets/$(image)';)) :
+	@bash -c 'shopt -s globstar nullglob; \
+	  for image in ../fonts/build/**/*.OS3KApp; do printf "%s\n" "$${image#../}"; done; \
+	  for applet in $(SUBDIRS); do \
+	    for image in "$$applet"/build/**/*.OS3KApp; do \
+	      case "$$image" in \
+	        MicroPython/*) [[ "$$image" == MicroPython/build/MicroPython-*.OS3KApp ]] || continue ;; \
+	        BibleWise/*) [[ "$$image" == BibleWise/build/KJV/BibleWise.OS3KApp ]] || continue ;; \
+	      esac; \
+	      printf "applets/%s\n" "$$image"; \
+	    done; \
+	  done'
+
 
 .PHONY: fonts
 all: fonts

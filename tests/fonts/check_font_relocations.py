@@ -92,7 +92,7 @@ def check(image):
 
 
 def main():
-    images = sorted(FONTS.glob('*.OS3KApp'))
+    images = sorted(FONTS.glob('build/**/*.OS3KApp'))
     assert len(images) == 19
     faces = sum(check(image) for image in images)
     assert faces == 83

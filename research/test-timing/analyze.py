@@ -36,7 +36,7 @@ for name,digest in meta['sources'].items():
  if p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()!=digest:summary['maintained_test_changes'].append(name)
 summary['end_git']={repo:{'head':subprocess.check_output(['git','-C',str(ROOT/repo),'rev-parse','HEAD'],text=True).strip(),'status':subprocess.check_output(['git','-C',str(ROOT/repo),'status','--short'],text=True)} for repo in ['betawise','mame']}
 # Another chat rebuilt the shared applet after every AS3000 trial finished.
-p=ROOT/'betawise/applets/MicroPython/build-extra/MicroPython.OS3KApp'
+p=ROOT/'betawise/applets/MicroPython/build/extra/MicroPython.OS3KApp'
 summary['provenance']={'initial_applet_preserved':'inputs/MicroPython-extra.OS3KApp',
  'shared_applet_rebuilt_later_at':datetime.datetime.fromtimestamp(p.stat().st_mtime,ZoneInfo('America/Denver')).isoformat(),
  'as3k_trials_overlapping_later_rebuild':[r['id'] for r in rows if r['platform']=='as3k' and (BASE/'runs'/r['id']/'time.json').stat().st_mtime>p.stat().st_mtime],

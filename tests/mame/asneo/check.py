@@ -47,9 +47,9 @@ def prepare_session(out, firmware, variant, mame):
             raise ValueError('invalid firmware segment')
         flash[dest:dest+size] = system[source:source+size]
         source += size
-    images = [firmware/'alphawordplus.os3kapp', ROOT/'betawise/applets/UCBLogo/UCBLogo.OS3KApp',
-              ROOT/f'betawise/applets/MicroPython/MicroPython-{variant}.OS3KApp',
-              ROOT/'betawise/fonts/BetaWiseTerminal-Medium.OS3KApp']
+    images = [firmware/'alphawordplus.os3kapp', ROOT/'betawise/applets/UCBLogo/build/UCBLogo.OS3KApp',
+              ROOT/f'betawise/applets/MicroPython/build/MicroPython-{variant}.OS3KApp',
+              ROOT/'betawise/fonts/build/BetaWiseTerminal-Medium/BetaWiseTerminal-Medium.OS3KApp']
     offset = 0x70000
     for path in images:
         data = path.read_bytes()

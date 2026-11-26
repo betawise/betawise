@@ -4,7 +4,7 @@ Original X11 sources are pinned under `upstream/`. The build generates all
 reader BDFs and Terminal Small/Tiny under `build/bdf/`; only Terminal Medium
 remains a source BDF, in `BetaWiseTerminal/glyphs.bdf`. All providers use
 [FontApplet.c](FontApplet.c).
-Finished `.OS3KApp` files stay directly in `fonts/`; intermediate files go in
+Finished `.OS3KApp` files and intermediate files stay in
 `build/<applet>/`, with headers named `glyphs.h`, `glyphs-bold.h`, etc.
 
 Our original work in this folder is public domain. Third-party font notices
