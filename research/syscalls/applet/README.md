@@ -117,3 +117,17 @@ The expanded [ROM/applet dispatch audit](dispatch-audit.md) covers all three
 inventoried ROMs and all 56 original applet images, including ADB, PS/2, USB,
 AlphaHub, print, IrDA and scoped provider requests. It corrects font query 6 to
 a scalar height and records oversized CoWriter/dictionary reply buffers.
+
+## Font metadata and selection follow-up
+
+The [actual-table audit](font-access.md) checks all populated Neo 3.21 dispatch
+roots and all CallSysInt selector branches. It found usable secondary header
+results from the existing ID/name lookup syscalls, verified across three ROM
+instruction bodies and original-firmware MAME cases, including the production SDK adapters.
+`AppletGetFlags` and `AppletIsFont` now expose that metadata without public header
+pointers. It found no global
+font-selection restore syscall; screen save/restore only restores the console
+font, not the editor/provider selection.
+
+The SDK [shared proportional font picker](font-picker.md) provides uncached
+family/size selection without changing the global text-editor font choice.

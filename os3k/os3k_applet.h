@@ -243,6 +243,22 @@ uint32_t AppletFindById(uint16_t id);
  */
 bool AppletGetName(uint32_t index, char* name);
 
+/** @brief Read the complete on-flash flags word for an installed applet.
+ * @param index Nonzero installed applet index 1–31, as for AppletGetName().
+ * @return Header flags, or zero for a missing/out-of-range index or index zero.
+ * Zero is also a valid flags word. This does not report disabled/context locks;
+ * use AppletGetDisableMask() for those. The SDK adapts an undocumented secondary
+ * register result verified on AS3000 3.01, Neo 3.01 and Neo 3.21.
+ */
+uint32_t AppletGetFlags(uint32_t index);
+
+/** @brief Read an installed applet's stable header ID.
+ * @param index Nonzero installed applet index 1–31.
+ * @return Header ID, or zero for an invalid index. Uses the same private
+ * header adapter as AppletGetFlags(); does not return an installed index.
+ */
+uint16_t AppletGetId(uint32_t index);
+
 /** @brief Dispatch a message synchronously to another installed applet.
  *
  * The ROM installs the target's A5 context and
@@ -362,7 +378,19 @@ extern char __os3k_ram_size;
 /** @brief Hide the applet from the regular applet list. */
 #define APPLET_FLAG_HIDDEN 0x001
 /** @brief Identify an applet as a font provider. */
-#define APPLET_FLAG_FONT (0x010 | 0x020)
+#define APPLET_FLAG_FONT (0x010 | APPLET_FLAG_FONT_PROVIDER)
+/** @brief Font-provider bit tested by the native Neo font enumerator. */
+#define APPLET_FLAG_FONT_PROVIDER 0x020
+
+/** @brief Test the same font-provider flag used by the native Neo selector.
+ * @param index Nonzero installed applet index 1–31.
+ * @return False for a non-font or invalid index. Does not test disable/context
+ * locks; a font picker should separately check AppletGetDisableMask().
+ */
+static inline bool AppletIsFont(uint32_t index) {
+    return (AppletGetFlags(index) & APPLET_FLAG_FONT_PROVIDER) != 0;
+}
+
 /** @brief Advertise support for the font selection dialog. */
 #define APPLET_FLAG_ALLOW_FONT_DIALOG 0x080
 /** @brief Mark the applet as requiring wireless support. */

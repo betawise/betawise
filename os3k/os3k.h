@@ -16,6 +16,7 @@
 #include "os3k_dialog.h"
 #include "os3k_display.h"
 #include "os3k_file.h"
+#include "os3k_font_picker.h"
 #include "os3k_irda.h"
 #include "os3k_keyboard.h"
 #include "os3k_localization.h"

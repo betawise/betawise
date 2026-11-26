@@ -118,7 +118,9 @@ void ClearRows(uint8_t row_first, uint8_t row_last);
  * AS3000 3.01 captures all 160 LCD character bytes and
  * the ROM cursor row, column, and visibility into the text shadow. Neo
  * captures LCD pixels, its live text grid, logical and pixel cursor positions,
- * visibility, and font pointer. A later save replaces the earlier snapshot;
+ * visibility, and console font pointer (used by PutString/PutChar). It does not
+ * save the system text-editor provider choice or its four face pointers.
+ * A later save replaces the earlier snapshot;
  * ROM dialogs can use the same storage. Betawise's private display state is
  * outside this snapshot.
  */
@@ -128,7 +130,8 @@ void SaveScreen(void);
  *
  * Requires a preceding SaveScreen(). AS3000 3.01 writes
  * the text shadow bytes directly to the LCD and restores cursor metadata.
- * Neo restores the captured pixels, live text grid, cursor state, and font.
+ * Neo restores the captured pixels, live text grid, cursor state, and console
+ * font. It does not restore the system text-editor font selection.
  * This does not consume the snapshot, so restoration can be repeated. On
  * AS3000 3.01, PutCharToShadow() and InvalidateTextShadow() alter the character
  * data this restores. Neo's captured pixels are separate from its text shadow.
