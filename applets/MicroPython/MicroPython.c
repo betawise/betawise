@@ -17,7 +17,7 @@ APPLET_HEADER_BEGIN
     APPLET_LANGUAGE_EN_US
 APPLET_HEADER_END
 
-static uint32_t heap[OS3K_MP_HEAP_KB * 1024 / sizeof(uint32_t)];
+static uint32_t __attribute__((section(".os3k.heap"))) heap[OS3K_MP_HEAP_KB * 1024 / sizeof(uint32_t)];
 static bool started;
 static bool repl_paste_mode;
 // Preserve ordinary typeahead while execution owns the keyboard queue.

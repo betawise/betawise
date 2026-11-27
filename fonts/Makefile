@@ -60,12 +60,12 @@ OBJ = $(BUILD_DIR)/FontApplet.o
 TARGET = $(BUILD_DIR)/$(BASE).OS3KApp
 include ../Makefile.common
 
-# Font-only C entry: no SDK archive, startup, GOT, or relocation image.
+# Direct C entry: no startup, GOT, or initialized RAM image.
 CFLAGS := $(filter-out -msep-data,$(CFLAGS)) -fno-pic -fno-pie -mpcrel -ffixed-a5 -ffreestanding -fno-builtin
 
-$(TARGET): $(OBJ) font.lds
-	$(LD) $(OBJ) -static -T font.lds --gc-sections --emit-relocs -o $(basename $@).elf
-	$(OBJCOPY) -O binary $(basename $@).elf $@
+# The C entry supplies Os3kEntry; the archive does not pull in crt0.
+LDFLAGS += --defsym __os3k_direct_entry=1
+$(TARGET): $(OBJ) $(OS3K_LDS) Makefile
 
 $(OBJ): FontApplet.c $(INT) $(OS3K_HEADERS) Makefile
 	$(CC) $(CPPFLAGS) $(CFLAGS) -I. -DFONT_NAME='"$(FONT_NAME)"' \

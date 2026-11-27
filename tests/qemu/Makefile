@@ -5,6 +5,7 @@ include ../../Makefile.common
 
 .PHONY: check
 check:
+	python3 test_elf_reader.py
 	python3 ../check-applet-ids.py
 	+CROSS_COMPILE="$(CROSS_COMPILE)" ./build.sh
 
@@ -13,3 +14,5 @@ check:
 	+CROSS_COMPILE="$(CROSS_COMPILE)" python3 applet-flags.py
 
 	+CROSS_COMPILE="$(CROSS_COMPILE)" python3 setjmp.py
+
+	+CROSS_COMPILE="$(CROSS_COMPILE)" python3 relative-fixups.py

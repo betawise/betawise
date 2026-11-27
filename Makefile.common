@@ -1,13 +1,12 @@
 .DEFAULT_GOAL := all
 .DELETE_ON_ERROR:
 
-TOP = $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
+TOP := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 CROSS_COMPILE ?= m68k-linux-gnu-
 CC = $(CROSS_COMPILE)gcc
 AS = $(CROSS_COMPILE)as
 LD = $(CROSS_COMPILE)ld
 AR = $(CROSS_COMPILE)ar
-READELF = $(CROSS_COMPILE)readelf
 OBJCOPY = $(CROSS_COMPILE)objcopy
 ASFLAGS = --pcrel -m68000
 CFLAGS = -m68000 -msoft-float -msep-data -fomit-frame-pointer -fshort-enums
@@ -17,13 +16,24 @@ CFLAGS += -fno-store-merging
 CFLAGS += -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0
 CFLAGS += -Os -I"$(TOP)/os3k/build" -I"$(TOP)/os3k" -ffunction-sections -fdata-sections
 OS3K_LIB = $(TOP)/os3k/build/libos3k.a
-LDFLAGS = -static -T "$(TOP)/os3k/os3k.lds" $(OS3K_LIB)
+OS3K_LDS = $(TOP)/os3k/$(if $(filter grouped,$(RODATA_LAYOUT)),os3k-grouped.lds,os3k.lds)
+LDFLAGS = -static -T "$(OS3K_LDS)" $(OS3K_LIB)
 LDFLAGS += --gc-sections --emit-relocs
 ARFLAGS = rcs
+
+OS3K_PACKAGE_SOLVER ?= $(if $(filter 1,$(OS3K_INTERNAL_ORDERS)),1,0)
+export OS3K_LAYOUT_SOLVER OS3K_LAYOUT_MARGIN OS3K_ORDER_SEED
+
+# Fixups are automatic; OS3K_FIXUPS=0 keeps ordinary compiler/linker output.
+include $(TOP)/tools/compiler-mode.mk
+ifeq ($(OS3K_FIXUPS),1)
+CC = python3 $(TOP)/tools/relative_calls.py cc
+LD = python3 $(TOP)/tools/relative_calls.py ld
+endif
 OS3K_HEADERS ?= $(addprefix $(TOP)/os3k/,os3k.h os3k_applet.h os3k_dialog.h \
                 os3k_display.h os3k_file.h os3k_irda.h os3k_keyboard.h os3k_localization.h os3k_markup.h os3k_power.h os3k_serial.h os3k_speech.h os3k_wireless.h os3k_stdlib.h os3k_text.h os3k_time.h setjmp.h build/version.h)
 
-build/%.o : %.c $(OS3K_HEADERS)
+build/%.o : %.c $(OS3K_HEADERS) $(OS3K_COMPILER_STAMP)
 	@mkdir -p $(@D)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
@@ -31,7 +41,7 @@ build/%.o : %.asm
 	@mkdir -p $(@D)
 	$(AS) $(ASFLAGS) $< -o $@
 
-%.o : %.c $(OS3K_HEADERS)
+%.o : %.c $(OS3K_HEADERS) $(OS3K_COMPILER_STAMP)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 %.o : %.asm
@@ -39,19 +49,29 @@ build/%.o : %.asm
 
 # Keep objects produced by the implicit rules for incremental builds.
 ifneq ($(strip $(OBJ)),)
-$(OBJ): $(TOP)/Makefile.common
+$(OBJ): $(TOP)/Makefile.common $(OS3K_COMPILER_STAMP)
 endif
 
-%.OS3KApp : $(OBJ) $(TOP)/os3k/os3k.lds $(TOP)/os3k/fixups.py $(OS3K_LIB)
+# Re-link when experimental addressing or layout choices change.
+.PHONY: FORCE_RELATIVE_LINK_MODE
+build/relative-link-mode: FORCE_RELATIVE_LINK_MODE
 	@mkdir -p $(@D)
+	@printf '%s\n' '$(OS3K_FIXUPS):$(ROM_REFERENCES):$(RODATA_LAYOUT):$(MAX_RELAX_PASSES):$(OBJECT_ORDER):$(OS3K_LAYOUT_SOLVER):$(OS3K_LAYOUT_MARGIN):$(OS3K_INTERNAL_ORDERS):$(OS3K_PACKAGE_SOLVER):$(OS3K_ORDER_SEED)' | cmp -s - $@ || printf '%s\n' '$(OS3K_FIXUPS):$(ROM_REFERENCES):$(RODATA_LAYOUT):$(MAX_RELAX_PASSES):$(OBJECT_ORDER):$(OS3K_LAYOUT_SOLVER):$(OS3K_LAYOUT_MARGIN):$(OS3K_INTERNAL_ORDERS):$(OS3K_PACKAGE_SOLVER):$(OS3K_ORDER_SEED)' > $@
+
+%.OS3KApp : $(OBJ) build/relative-link-mode $(OS3K_LDS) $(filter-out input,$(OBJECT_ORDER)) $(TOP)/os3k/fixups.py $(OS3K_LIB) $(TOP)/tools/relative_calls.py $(TOP)/tools/elf_reader.py $(TOP)/tools/fast_layout.py $(TOP)/tools/order_solver.py $(OS3K_ORDER_SEED)
+	@mkdir -p $(@D)
+ifeq ($(OS3K_FIXUPS):$(OS3K_PACKAGE_SOLVER),1:1)
+	python3 $(TOP)/tools/relative_calls.py package $(OBJ) $(LDFLAGS) --defsym __os3k_reloc_size=0 -o $(basename $@).elf
+else
 	$(LD) $(OBJ) $(LDFLAGS) --defsym __os3k_reloc_size=0 -o $(basename $@).elf
-	set -e; reloc_count=$$(python3 "$(TOP)/os3k/fixups.py" "$(READELF)" $(basename $@).elf $(basename $@).reloc); \
+	set -e; reloc_count=$$(python3 "$(TOP)/os3k/fixups.py" $(basename $@).elf $(basename $@).reloc); \
 	$(LD) $(OBJ) $(LDFLAGS) --defsym __os3k_reloc_size=$$reloc_count -o $(basename $@).elf; \
-	final_count=$$(python3 "$(TOP)/os3k/fixups.py" "$(READELF)" $(basename $@).elf $(basename $@).reloc); \
+	final_count=$$(python3 "$(TOP)/os3k/fixups.py" $(basename $@).elf $(basename $@).reloc); \
 	test "$$final_count" = "$$reloc_count"
 	$(OBJCOPY) --update-section .data.reloc=$(basename $@).reloc $(basename $@).elf
 	$(OBJCOPY) -O binary $(basename $@).elf $@
 	$(RM) $(basename $@).reloc
+endif
 
 CLEAN_SUBDIRS ?= $(SUBDIRS)
 CLEAN_TARGETS = $(addprefix clean-,$(CLEAN_SUBDIRS))

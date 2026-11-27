@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Write the big-endian RAM fixup table for an OS3K ELF."""
 import argparse
-import re
 import struct
-import subprocess
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
+from elf_reader import Image, R_68K_32, GOT_OFFSETS
 
 RAM_BASE = 0x80000000
 HEADER_FIELDS = {
@@ -14,18 +15,9 @@ HEADER_FIELDS = {
 }
 
 
-def readelf(executable, image, option):
-    return subprocess.check_output([executable, option, image], text=True)
-
-
-def fixups(executable, image):
-    symbols = {}
-    for line in readelf(executable, image, "-sW").splitlines():
-        fields = line.split()
-        if len(fields) >= 8 and re.fullmatch(r"\d+:", fields[0]):
-            index = int(fields[0][:-1])
-            symbols[index] = (fields[6], fields[7], int(fields[1], 16))
-    values = {name: value for _, name, value in symbols.values()}
+def fixups(image):
+    metadata = Image(image)
+    values = metadata.values
     got_size = values["__os3k_got_size"]
     image_size = values["__os3k_image_size"]
     rom_size = values["__os3k_rom_size"]
@@ -35,26 +27,27 @@ def fixups(executable, image):
         raise ValueError(f"GOT base is {got_base:#x}, expected {RAM_BASE:#x}")
 
     offsets = set()
-    for line in readelf(executable, image, "-rW").splitlines():
-        fields = line.split()
-        if len(fields) < 7 or not fields[2].startswith("R_68K_"):
+    for rel in metadata.relocations:
+        kind = rel.kind
+        symbol = rel.symbol
+        # GNU ld represents resolved zero-valued absolute constants using the
+        # reserved null symbol. These are not pointers requiring runtime rebasing.
+        if symbol.key[1] == 0:
             continue
-        kind = fields[2]
-        section, name, value = symbols[int(fields[1], 16) >> 8]
-        if kind in {"R_68K_GOT8O", "R_68K_GOT16O", "R_68K_GOT32O"} and section == "ABS":
-            raise ValueError(f"absolute GOT target cannot be rebased: {line.strip()}")
-        if kind != "R_68K_32":
+        description = f'relocation type {kind} at {rel.offset:#x} to {symbol.name}'
+        if kind in GOT_OFFSETS and symbol.section == "SHN_ABS":
+            raise ValueError(f"absolute GOT target cannot be rebased: {description}")
+        if kind != R_68K_32:
             continue
-        address = int(fields[0], 16)
-        if HEADER_FIELDS.get(address) == name or section == "ABS":
+        address = rel.offset
+        if HEADER_FIELDS.get(address) == symbol.name or symbol.section == "SHN_ABS":
             continue
         offset = address - RAM_BASE
         if not got_size <= offset <= image_size - 4 or not offset or offset % 2:
-            raise ValueError(f"absolute relocation outside initialized data: {line.strip()}")
-        addend = int(fields[6], 16)
-        target = value + (addend if fields[5] == "+" else -addend)
+            raise ValueError(f"absolute relocation outside initialized data: {description}")
+        target = rel.target
         if not (0 <= target <= rom_size or RAM_BASE <= target <= RAM_BASE + ram_size):
-            raise ValueError(f"unsupported pointer target: {line.strip()}")
+            raise ValueError(f"unsupported pointer target: {description}")
         if offset in offsets:
             raise ValueError(f"duplicate fixup at RAM offset {offset:#x}")
         offsets.add(offset)
@@ -63,12 +56,11 @@ def fixups(executable, image):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("readelf")
     parser.add_argument("image")
     parser.add_argument("table", type=Path)
     args = parser.parse_args()
     try:
-        offsets = fixups(args.readelf, args.image)
+        offsets = fixups(args.image)
     except (KeyError, ValueError) as error:
         parser.exit(1, f"{args.image}: {error}\n")
     args.table.write_bytes(b"".join(struct.pack(">I", offset) for offset in [*offsets, 0]))

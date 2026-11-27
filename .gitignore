@@ -12,3 +12,8 @@ __pycache__/
 
 # All generated build outputs
 build/
+
+# Relative-call experiment metadata and retained validation artifacts
+.relative-calls/
+.experiment-results
+.baseline-sizes.json

@@ -118,6 +118,8 @@ on the device.
 The supported toolchain is Debian/Ubuntu's **`m68k-linux-gnu-gcc`**. Follow the
 [CI workflow](.github/workflows/ci.yml) for the current build environment,
 dependencies, submodule initialization, build commands, and runtime checks.
+ELF inspection also requires `pyelftools` (`python3-pyelftools` on Debian/Ubuntu,
+or `python3 -m pip install pyelftools` in your Python build environment).
 Use a Git checkout with tags available, as CI does, for version generation.
 Initialize all pinned submodules before building, including the Bible data and
 font sources. From the repository root:

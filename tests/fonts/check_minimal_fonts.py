@@ -69,7 +69,9 @@ def check(image):
     assert not any(name.endswith('GLYPH_FONT') for name in addresses)
     assert addresses['Os3kEntry'] == addresses['BwProcessMessage'] == entry
     assert addresses['__header'] == 0
-    assert '_ConsoleReset' not in symbols and '__os3k_got_size' not in symbols
+    assert '_ConsoleReset' not in symbols and addresses['__os3k_got_size'] == 0
+    assert addresses['__os3k_image_size'] == 0
+    assert addresses['__os3k_direct_ram_end'] - addresses['__os3k_direct_ram_start'] == ram_size
     # Only header constants and GCC's range-checked PC16 references.
     pc16_displacements = []
     assert 'R_68K_PC32' not in relocs
@@ -192,11 +194,13 @@ def main():
     # Prove that a future layout regression fails at link time, rather than
     # silently wrapping the 68000's signed 16-bit displacement.
     far_script = OUT/'out-of-range.lds'
-    script = (FONTS/'font.lds').read_text()
+    script = (ROOT/'os3k/os3k.lds').read_text()
     far_script.write_text(script.replace('        *(.rodata .rodata.*)',
                                          '        . += 0x10000;\n        *(.rodata .rodata.*)'))
     failure = subprocess.run([CROSS+'ld', str(FONTS/'build/BetaWiseMono-Large/FontApplet.o'),
                               '-static', '-T', str(far_script), '--gc-sections',
+                              '--defsym', '__os3k_direct_entry=1',
+                              '--defsym', '__os3k_reloc_size=0',
                               '-o', str(OUT/'out-of-range.elf')], capture_output=True, text=True, timeout=30)
     (OUT/'out-of-range.log').write_text(failure.stdout+failure.stderr)
     assert failure.returncode != 0 and 'R_68K_PC16' in failure.stderr

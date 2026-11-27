@@ -124,17 +124,19 @@ python3 -m unittest discover -s tests/fonts -p test_fontgen.py -v
 python3 tests/fonts/check_minimal_fonts.py
 ```
 
-Font providers use a dedicated linker script (`font.lds`) and dispatch directly
-into the C message handler, without the SDK archive, message pump, CRT, GOT, or
-RAM relocation table. Firmware supplies A5; only the 16-byte descriptor for each
-face uses RAM (16 bytes per Terminal font, 80 per five-face reader font).
-Getters fill the A5 descriptors with ordinary C address assignments on demand,
-so they also work before `MSG_INIT`. GCC's `-mpcrel` forms the runtime ROM
-addresses directly, without stored descriptor templates or manual rebasing.
-The header stays at offset zero; the regular face is linked before the handler
-and the remaining faces after it, keeping their start addresses within PC16
-reach even when the full package exceeds 32 KiB. The linker rejects out-of-range
-references, implicit writable data and GOT sections.
+Font providers use the common applet linker script and packaging rules. Their
+C handler supplies Os3kEntry directly, so the SDK archive does not pull in CRT
+or its default message pump. `__os3k_direct_entry` enables link-time checks
+against GOT, initialized writable data and implicit BSS. Firmware supplies A5;
+only the 16-byte descriptor for each face uses RAM (16 bytes per Terminal font,
+80 per five-face reader font). The common image format includes a four-byte
+unused relocation-table terminator.
+
+Getters fill descriptors on demand, including before MSG_INIT. GCC's -mpcrel
+forms runtime ROM addresses directly. The common linker places the regular
+face before the handler and the remaining faces afterward to keep PC16
+references in range, including packages larger than 32 KiB. Linker overflow
+checks remain mandatory; font builds do not use GOT fallback.
 
 The offline check executes all 19 shipping flat images on m68000 QEMU at two
 independent ROM/RAM placements, starting with dirty RAM. It checks every packed

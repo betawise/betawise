@@ -15,6 +15,10 @@ include $(MICROPY_DIR)/py/mkenv.mk
 MICROPY_ROM_TEXT_COMPRESSION ?= 1
 QSTR_DEFS = qstrdefsport.h
 include $(TOP)/py/py.mk
+include ../../tools/compiler-mode.mk
+ifeq ($(OS3K_FIXUPS),1)
+CC = python3 $(abspath ../../tools/relative_calls.py) cc
+endif
 # Upstream's splitter keeps stale fragments when a source loses every
 # registration. Reset generated fragments on port-configuration changes so
 # disabling a module also removes its registration and old archive contents.
@@ -68,7 +72,7 @@ $(BUILD)/shared/libc/printf.o: $(TOP)/shared/libc/printf.c
 	$(Q)$(OBJCOPY) --redefine-sym printf=mp_libc_printf --redefine-sym vprintf=mp_libc_vprintf --redefine-sym putchar=mp_libc_putchar --redefine-sym puts=mp_libc_puts $@
 
 # Rebuild when variant mappings, compiler flags, or source selections change.
-$(OBJ): Makefile variant.mk ../../os3k/setjmp.h
+$(OBJ): Makefile variant.mk ../../os3k/setjmp.h $(OS3K_COMPILER_STAMP)
 
 $(LIBM_OBJ): CFLAGS += -include libm_port.h
 $(LIBM_OBJ): libm_port.h

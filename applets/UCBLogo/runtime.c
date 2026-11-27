@@ -14,7 +14,7 @@ typedef struct Block {
     struct Block *next;
     int available;
 } Block;
-static union { Block align; unsigned char bytes[HEAP_SIZE]; } arena;
+static union { Block align; unsigned char bytes[HEAP_SIZE]; } arena __attribute__((section(".os3k.heap")));
 static Block *first;
 static unsigned bytes_in_use;
 /* Read from the emulator RAM dump when measuring this profile. */

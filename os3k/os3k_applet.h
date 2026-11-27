@@ -280,6 +280,8 @@ bool AppletSendMessage(uint32_t index, Message_e message, uint32_t param, uint32
 void Os3kEntry(Message_e message, uint32_t param, uint32_t* status);
 
 /** @brief Apply Betawise lifecycle handling and forward the message to ProcessMessage().
+ * Applications may define their own BwProcessMessage to replace this weak
+ * default and manage their own display/console lifecycle.
  * @param message ROM message code.
  * @param param Message-specific input.
  * @param status Message-specific reply word.

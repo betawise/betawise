@@ -1,5 +1,6 @@
 /* OS3K supplies A5 and the normal C argument frame on each dispatch. */
 .section .text.Os3kEntry,"ax"
+.balign 2
 .globl Os3kEntry
 .type Os3kEntry,@function
 Os3kEntry:

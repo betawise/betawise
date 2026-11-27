@@ -1,5 +1,6 @@
 #define DEFINE_SYSCALL(index, name) \
     asm(".section .text." #name); \
+    asm(".balign 2"); \
     asm(".global " #name); \
     asm(#name ": .word 0xA000 + 4*" #index); \
     asm(".text");

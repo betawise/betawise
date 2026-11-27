@@ -1,6 +1,6 @@
 #include "os3k_display_internal.h"
 
-void BwProcessMessage(Message_e message, uint32_t param, uint32_t* status) {
+__attribute__((weak)) void BwProcessMessage(Message_e message, uint32_t param, uint32_t* status) {
     _DisplayProcessMessage(message, status);
     if(message == MSG_SETFOCUS) _ConsoleReset();
     ProcessMessage(message, param, status);
