@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Publish compact README specimens from the actual linked font applet bytes.
 
-ELF symbols/program headers locate initialized descriptors in each OS3KApp.
+Executed descriptors locate glyph bytes in each OS3KApp; ELF load records verify its layout.
 Every decoded glyph is checked against its source BDF before publication.
 No screenshots, model inference, or reconstructed substitute glyphs are used.
 """
-import argparse,json,os,struct,subprocess,sys
+import argparse,hashlib,json,struct,subprocess,sys
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[2]
@@ -31,11 +31,15 @@ class Applet:
             if kind==1:
                 assert self.data[physical:physical+size]==self.elf[offset:offset+size]
                 self.loads.append((virtual,physical,size))
-        output=subprocess.check_output([os.environ.get('CROSS_COMPILE','m68k-linux-gnu-')+'nm','-S',str(folder/(stem+'.elf'))],text=True)
-        self.symbols={fields[3]:int(fields[0],16)for line in output.splitlines()if len(fields:=line.split())==4}
+        results=ROOT/'tests/fonts/build/minimal'
+        record=next(row for row in json.loads((results/'results.json').read_text())['applets'] if row['applet']==stem)
+        assert record['passed'] and record['sha256']==hashlib.sha256(self.data).hexdigest()
+        self.descriptors=(results/stem/'ram-210000.bin').read_bytes()
+        assert len(self.descriptors)==int.from_bytes(self.data[8:12],'big')+8
         self.name=self.data[24:60].split(b'\0')[0].decode('ascii')
 
     def read(self,address,size):
+        address-=0x210000  # ROM placement of the executed descriptor capture.
         for virtual,physical,length in self.loads:
             if virtual<=address and address+size<=virtual+length:
                 start=physical+address-virtual
@@ -43,7 +47,8 @@ class Applet:
         raise ValueError(f'Pointer outside linked applet ROM: {address:x}+{size}')
 
     def face(self,symbol,bdf,private=False):
-        h,mw,stride,pad,wp,op,bp=struct.unpack('>4BIII',self.read(self.symbols[symbol],16))
+        index=['GLYPH_FONT','BOLD_GLYPH_FONT','ITALIC_GLYPH_FONT','BOLD_ITALIC_GLYPH_FONT','PRIVATE_GLYPH_FONT'].index(symbol)
+        h,mw,stride,pad,wp,op,bp=struct.unpack_from('>4BIII',self.descriptors,4+16*index)
         widths=list(self.read(wp,256))if wp else [mw]*256
         offsets=struct.unpack('>256H',self.read(op,512))if op else [c*stride for c in range(256)]
         expected=fontgen.load(bdf,'iso8859-1','blank'if private else 63)
@@ -89,6 +94,7 @@ def main():
     parser.add_argument('--no-build',action='store_true')
     args=parser.parse_args()
     if not args.no_build:subprocess.run(['make','-s','-C',str(ROOT/'fonts'),'-j4'],check=True)
+    subprocess.run([sys.executable,str(ROOT/'tests/fonts/check_minimal_fonts.py')],check=True)
     args.output.mkdir(parents=True,exist_ok=True);report=[]
     for family in ['Serif','Sans','Book','Mono']:
         regular=[];styled=[]
@@ -106,7 +112,7 @@ def main():
     terminal=[]
     for size,columns,lines,source in [('Medium',44,8,'glyphs.bdf'),('Small',52,9,'glyphs-5x7.bdf'),('Tiny',66,10,'glyphs-4x6.bdf')]:
         stem='BetaWiseTerminal-'+size;applet=Applet(stem)
-        bdf=ROOT/'fonts/BetaWiseTerminal/glyphs.bdf'if size=='Medium'else ROOT/'fonts/build/bdf/BetaWiseTerminal'/source
+        bdf=ROOT/'fonts/BetaWiseTerminalMedium.bdf'if size=='Medium'else ROOT/'fonts/build/bdf/BetaWiseTerminal'/source
         glyphs=applet.face('GLYPH_FONT',bdf)
         terminal.append((f'{size} · {columns} columns × {lines} lines',glyphs))
         report.append(dict(applet=applet.name,faces_checked=1,glyphs_checked=256))

@@ -295,7 +295,7 @@ def main():
     parser.add_argument('--x11-root', type=Path, default=X11_ROOT)
     parser.add_argument('--charset', type=Path, default=ROOT / 'os3k/charsets/neo-us.txt')
     parser.add_argument('--output', type=Path, default=ROOT / 'fonts/build/bdf')
-    parser.add_argument('--terminal-medium', type=Path, default=ROOT / 'fonts/BetaWiseTerminal/glyphs.bdf')
+    parser.add_argument('--terminal-medium', type=Path, default=ROOT / 'fonts/BetaWiseTerminalMedium.bdf')
     args = parser.parse_args()
     global MAPPING
     MAPPING = load(args.charset)

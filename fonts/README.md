@@ -2,7 +2,7 @@
 
 Original X11 sources are pinned under `upstream/`. The build generates all
 reader BDFs and Terminal Small/Tiny under `build/bdf/`; only Terminal Medium
-remains a source BDF, in `BetaWiseTerminal/glyphs.bdf`. All providers use
+remains a source BDF, in `BetaWiseTerminalMedium.bdf`. All providers use
 [FontApplet.c](FontApplet.c).
 Finished `.OS3KApp` files and intermediate files stay in
 `build/<applet>/`, with headers named `glyphs.h`, `glyphs-bold.h`, etc.
@@ -121,13 +121,27 @@ Verification after building:
 
 ```
 python3 -m unittest discover -s tests/fonts -p test_fontgen.py -v
-python3 tests/fonts/check_reader_applets.py
-python3 tests/fonts/check_font_relocations.py
+python3 tests/fonts/check_minimal_fonts.py
 ```
 
-The offline checks exercise IDs, names, style getters and glyph tables, and
-rebase all initialized descriptor pointers at displaced flash/RAM addresses.
-It uses no screenshots or model inference.
+Font providers use a dedicated linker script (`font.lds`) and dispatch directly
+into the C message handler, without the SDK archive, message pump, CRT, GOT, or
+RAM relocation table. Firmware supplies A5; only the 16-byte descriptor for each
+face uses RAM (16 bytes per Terminal font, 80 per five-face reader font).
+Getters fill the A5 descriptors with ordinary C address assignments on demand,
+so they also work before `MSG_INIT`. GCC's `-mpcrel` forms the runtime ROM
+addresses directly, without stored descriptor templates or manual rebasing.
+The header stays at offset zero; the regular face is linked before the handler
+and the remaining faces after it, keeping their start addresses within PC16
+reach even when the full package exceeds 32 KiB. The linker rejects out-of-range
+references, implicit writable data and GOT sections.
+
+The offline check executes all 19 shipping flat images on m68000 QEMU at two
+independent ROM/RAM placements, starting with dirty RAM. It checks every packed
+glyph byte against the BDF sources, descriptor/name/height messages, absent
+faces, initialization, focus/unknown messages, and RAM guards. Binaries, raw
+descriptor RAM, disassembly, relocations, hashes and results are preserved in
+`tests/fonts/build/minimal/`. It uses no screenshots or model inference.
 
 ## Glyph review
 

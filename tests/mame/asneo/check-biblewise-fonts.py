@@ -39,6 +39,9 @@ def main():
     # Each emulator owns a separate disposable flash/RAM and build directory.
     with ThreadPoolExecutor(max_workers=2) as pool:
         results=list(pool.map(run,FONTS))
+    # These share Terminal Medium's applet ID and BibleWise build directory.
+    # Keep their builds outside the parallel pool to avoid linker races.
+    results += [run(font) for font in ('terminal_small', 'tiny')]
     (args.output/'results.json').write_text(json.dumps(dict(status='passed',fonts=results),indent=2)+'\n')
 
 if __name__ == '__main__': main()

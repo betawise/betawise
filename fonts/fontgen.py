@@ -225,12 +225,21 @@ def generate(source, destination, codec='iso8859-1', missing_glyph=None, symbol_
         out.append('\n')
     tables = ('0', '0', 'GLYPHS[0]') if len(set(widths)) == 1 else (
         'GLYPH_WIDTHS', 'GLYPH_OFFSETS', 'GLYPH_DATA')
+    # Runtime providers assign addresses directly; GCC handles PC-relative LEAs.
+    out.append('#ifdef FONT_RUNTIME_DESCRIPTORS\n'
+               'static __attribute__((always_inline)) inline void GLYPH_INIT(FontHeader_t *font) {\n'
+               '    font->height = GLYPH_HEIGHT; font->max_width = GLYPH_WIDTH;\n'
+               '    font->max_bytes = GLYPH_BYTES; font->padding = 0;\n'
+               f'    font->width_table = {tables[0]};\n'
+               f'    font->offset_table = {tables[1]};\n'
+               f'    font->bitmap_data = {tables[2]};\n'
+               '}\n#else\n')
     # With -msep-data GCC places pointer-bearing const descriptors in
     # .data.rel.ro.* automatically; crt0 rebases them. Glyphs stay in flash.
     out.append('static const FontHeader_t GLYPH_FONT = {\n'
                '    GLYPH_HEIGHT, GLYPH_WIDTH, GLYPH_BYTES, 0,\n'
                f'    {tables[0]}, {tables[1]}, {tables[2]}\n'
-               '};\n')
+               '};\n#endif\n')
     out.append('#endif\n')
     text = ''.join(out)
     if symbol_prefix:

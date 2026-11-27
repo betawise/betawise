@@ -45,7 +45,7 @@ FONT_INFO = $(if $(filter Medium,$(FONT)),Public domain; recreated from AS3000 L
 SOURCE_Medium = glyphs.bdf
 SOURCE_Small = glyphs-5x7.bdf
 SOURCE_Tiny = glyphs-4x6.bdf
-NORMAL_BDF = $(if $(filter Medium,$(FONT)),$(FAMILY)/$(SOURCE_$(FONT)),$(BDF_DIR)/$(FAMILY)/$(SOURCE_$(FONT)))
+NORMAL_BDF = $(if $(filter Medium,$(FONT)),BetaWiseTerminalMedium.bdf,$(BDF_DIR)/$(FAMILY)/$(SOURCE_$(FONT)))
 MISSING_POLICY = --missing-glyph 0x3f
 endif
 
@@ -59,6 +59,13 @@ INT = $(PRIVATE_HEADER) $(NORMAL_HEADER) $(BOLD_HEADER) $(ITALIC_HEADER) $(BOLD_
 OBJ = $(BUILD_DIR)/FontApplet.o
 TARGET = $(BUILD_DIR)/$(BASE).OS3KApp
 include ../Makefile.common
+
+# Font-only C entry: no SDK archive, startup, GOT, or relocation image.
+CFLAGS := $(filter-out -msep-data,$(CFLAGS)) -fno-pic -fno-pie -mpcrel -ffixed-a5 -ffreestanding -fno-builtin
+
+$(TARGET): $(OBJ) font.lds
+	$(LD) $(OBJ) -static -T font.lds --gc-sections --emit-relocs -o $(basename $@).elf
+	$(OBJCOPY) -O binary $(basename $@).elf $@
 
 $(OBJ): FontApplet.c $(INT) $(OS3K_HEADERS) Makefile
 	$(CC) $(CPPFLAGS) $(CFLAGS) -I. -DFONT_NAME='"$(FONT_NAME)"' \
@@ -122,7 +129,7 @@ GENERATED_BDFS = $(foreach family,Serif Sans Book Mono,\
       $(BDF_DIR)/BetaWise$(family)/BetaWise$(family)-$(SIZE_$(lines))-$(style).bdf) \
     $(BDF_DIR)/BetaWise$(family)/private/BetaWise$(family)-$(SIZE_$(lines))-SmallCaps.bdf)) \
   $(addprefix $(BDF_DIR)/BetaWiseTerminal/,glyphs.bdf glyphs-5x7.bdf glyphs-4x6.bdf)
-BDF_INPUTS = Makefile fontgen.py BetaWiseTerminal/glyphs.bdf \
+BDF_INPUTS = Makefile fontgen.py BetaWiseTerminalMedium.bdf \
   $(wildcard ../research/fonts/build*.py ../research/fonts/*characters.json ../research/fonts/superscript-3x5.json) \
   $(wildcard ../os3k/charsets/*.py ../os3k/charsets/*.json ../os3k/charsets/*.txt) \
   $(wildcard upstream/75dpi/*.bdf upstream/100dpi/*.bdf upstream/misc/*.bdf) \

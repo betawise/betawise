@@ -42,8 +42,7 @@ jobs:
       run: |
         echo "$PREFIX/bin" >> $GITHUB_PATH
         make
-        python3 tests/fonts/check_reader_applets.py
-        python3 tests/fonts/check_font_relocations.py
+        python3 tests/fonts/check_minimal_fonts.py
         os3k/compiler-rt/check.sh
     - name: Collect published applets and fonts.
       id: artifacts
