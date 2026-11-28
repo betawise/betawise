@@ -17,6 +17,8 @@ evidence, private input dependencies and disposable output locations.
 
 - [Syscall investigations](syscalls/README.md): subsystem findings, unresolved
   questions, test sources, captured results, and historical probes.
+- [Clang/LLVM M68k assessment](toolchains/clang-m68k.md): initial HelloWorld
+  code-size comparison, MIR/A5 rewriting probes, limitations and newer-LLVM leads.
 - [OS3K / GCC ABI audit](abi-audit/README.md): cross-subsystem calling
   conventions, pointer-return remediation, firmware inventory, and maintained
   integration runner.
