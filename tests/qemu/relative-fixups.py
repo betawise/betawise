@@ -6,6 +6,8 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'tests/qemu/build/relative-fixups'
@@ -80,6 +82,58 @@ def operand_modes(ram):
         samples.append(run([QEMU,'-cpu','m68000',elf],directory/(name+'.bin')))
     assert samples[0] == samples[1] and len(samples[0]) == 16*len(cases)
     RESULTS.append({'case':directory.name,'destinations':len(cases),'passed':True})
+
+
+def flag_cleanup_execution(ram):
+    directory = OUT/('ram-flag-cleanup' if ram else 'rom-flag-cleanup')
+    directory.mkdir(parents=True, exist_ok=True)
+    bodies = [
+        ' move.l target@GOT(%a5),-(%sp)\n move.l #123,%a0\n'
+        ' lea 4(%sp),%a1\n move.l %d0,%d1\n',
+        ' move.l target@GOT(%a5),-(%sp)\n move.l target@GOT(%a5),-(%sp)\n'
+        ' move.l %d0,%d1\n',
+        ' move.l target@GOT(%a5),-(%sp)\n move.l #123,%a0\n'
+        ' jne .Lgood\n moveq #99,%d6\n.Lgood:\n',
+        ' move.l target@GOT(%a5),-(%sp)\n',
+        ' move.l target@GOT(%a5),-(%sp)\n addx.l %d2,%d3\n',
+    ]
+    source = '.text\n.globl _start\n_start:\n lea 0x80000000,%a5\n lea report,%a4\n'
+    flows = [(ccr, body.replace('.Lgood', '.Lgood'+str(i)))
+             for i, (ccr, body) in enumerate((ccr, body) for ccr in (0,31) for body in bodies)]
+    for ccr, body in flows:
+        source += (' lea stack+128,%sp\n moveq #0,%d0\n moveq #0,%d6\n'
+                   ' moveq #-1,%d2\n moveq #0,%d3\n'+f' move.w #{ccr},%ccr\n'+body+
+                   ' move.w %sr,%d7\n and.l #31,%d7\n move.l %d7,(%a4)+\n'
+                   ' move.l %sp,(%a4)+\n move.l (%sp),(%a4)+\n move.l %d6,(%a4)+\n')
+    source += (' moveq #4,%d0\n moveq #1,%d1\n move.l #report,%d2\n'
+               f' move.l #{16*len(flows)},%d3\n trap #0\n moveq #1,%d0\n moveq #0,%d1\n trap #0\n')
+    source += ('.data' if ram else '.section .rodata')+'\ntarget: .long 123\n'
+    source += '.data\nreport: .space 256\n.bss\nstack: .space 256\n'
+    _, record = record_object(directory, source)
+    script = directory/'test.lds'
+    script.write_text('ENTRY(_start)\nSECTIONS { . = 0x10000; .text : { *(.text) } '
+                      '. = 0x14000; .rodata : { *(.rodata) } . = 0x80000000; '
+                      '.got : { *(.got*) } . = 0x80001000; .data : { *(.data) } '
+                      '.bss : { *(.bss) } }\n')
+    labels = {s['label'] for s in record['sites']}
+    samples = []
+    for name, disabled, cleanup in [('original',labels,'0'),('retained',set(),'0'),('cleaned',set(),'1')]:
+        obj = directory/(name+'.o')
+        with patch.dict(os.environ, OS3K_TST_CLEANUP=cleanup):
+            rendered = adapter.render(record, disabled, set() if ram else labels)
+            if name == 'retained': assert rendered.count('tst.l (%sp)') == 12
+            if name == 'cleaned': assert rendered.count('tst.l (%sp)') == 6
+            result = adapter.compile_record(record, obj, disabled, set() if ram else labels)
+        assert result.returncode == 0, result.stderr
+        elf = obj.with_suffix('.elf')
+        run([PREFIX+'ld','-T',script,obj,'-o',elf], directory/(name+'-link.log'))
+        samples.append(run([QEMU,'-cpu','m68000',elf],directory/(name+'.bin')))
+        if name == 'cleaned':
+            with patch.dict(os.environ, OS3K_TST_CLEANUP='1'):
+                assert adapter.cleanup_stats([(record,obj,None)],set(),elf)['removed_live_tst'] == 6
+    assert samples[0] == samples[1] == samples[2] and len(samples[0]) == 16*len(flows)
+    assert all(int.from_bytes(samples[0][i+12:i+16],'big') == 0 for i in range(0,len(samples[0]),16))
+    RESULTS.append({'case':directory.name,'removed_tst':6,'incoming_x_values':[0,1],'live_flags_preserved':True,'passed':True})
 
 
 def near_far():
@@ -223,7 +277,8 @@ void Os3kEntry(Message_e, uint32_t, uint32_t *) __attribute__((alias("BwProcessM
     env = dict(os.environ)
     for key in ('OS3K_INTERNAL_ORDERS','OS3K_LAYOUT_SOLVER','OS3K_PACKAGE_SOLVER',
                 'OS3K_FIXUPS','RELATIVE_CALLS','OBJECT_ORDER','OS3K_ORDER_SEED',
-                'MAKEFLAGS','MFLAGS','MAKEOVERRIDES'):
+                'MAKEFLAGS','MFLAGS','MAKEOVERRIDES','OS3K_CLEANUP',
+                'OS3K_TST_CLEANUP','OS3K_A5_CLEANUP','OS3K_ASM_LIVENESS','OS3K_ASM_CFG'):
         env.pop(key,None)
     make = ['make','OS3K_LIB=']
     run(make,directory/'default.log',directory,env)
@@ -236,15 +291,62 @@ void Os3kEntry(Message_e, uint32_t, uint32_t *) __attribute__((alias("BwProcessM
     assert object_order.read_symbols(directory/'mode.elf')['__os3k_got_size'] > 0
     run(make,directory/'restored.log',directory,env)
     assert (directory/'mode.OS3KApp').read_bytes() == original
+    log = run([*make,'OS3K_TST_CLEANUP=0'],directory/'cleanup-disabled.log',directory,env)
+    assert b'relative_calls.py package' in log and b'relative_calls.py cc' not in log
+    assert json.loads((directory/'mode.elf.calls.json').read_text())['tst_cleanup']['enabled'] is False
+    run([*make,'OS3K_TST_CLEANUP=1'],directory/'cleanup-restored.log',directory,env)
+    assert (directory/'mode.OS3KApp').read_bytes() == original
+    stats = json.loads((directory/'mode.elf.calls.json').read_text())['tst_cleanup']
+    assert stats['enabled'] and stats['a5_cleanup']['enabled'] and stats['asm_liveness']['enabled']
+    for setting in ['OS3K_ASM_LIVENESS=0', 'OS3K_ASM_CFG=0']:
+        log = run([*make,setting],directory/(setting.split('=')[0]+'-off.log'),directory,env)
+        assert b'relative_calls.py package' in log and b'relative_calls.py cc' not in log
+        stats = json.loads((directory/'mode.elf.calls.json').read_text())['tst_cleanup']['asm_liveness']
+        assert not stats['enabled'] if setting.startswith('OS3K_ASM_LIVENESS=') else not stats['CFG']
+        run(make,directory/(setting.split('=')[0]+'-restored.log'),directory,env)
+        assert (directory/'mode.OS3KApp').read_bytes() == original
+    for setting in ['OS3K_A5_CLEANUP=0', 'OS3K_CLEANUP=0']:
+        log = run([*make,setting],directory/(setting.split('=')[0]+'-off.log'),directory,env)
+        assert b'relative_calls.py package' in log and b'relative_calls.py cc' not in log
+        stats = json.loads((directory/'mode.elf.calls.json').read_text())['tst_cleanup']
+        assert not stats['a5_cleanup']['enabled']
+        if setting.startswith('OS3K_CLEANUP='):
+            assert not stats['enabled'] and not stats['asm_liveness']['enabled']
+        run(make,directory/(setting.split('=')[0]+'-restored.log'),directory,env)
+        assert (directory/'mode.OS3KApp').read_bytes() == original
     log = run(make,directory/'no-op.log',directory,env)
     assert b'relative_calls.py' not in log
+    # Compiler restrictions must survive in registry metadata; legacy records
+    # without this field cannot lend either scratch register.
+    fixed = directory/'fixed.o'
+    run([sys.executable, ROOT/'tools/relative_calls.py', 'cc', '-m68000',
+         '-msep-data', '-Os', '-ffixed-a0', '-fcall-saved-a1',
+         '-I'+str(ROOT/'os3k'), '-c', directory/'mode.c', '-o', fixed],
+        directory/'fixed-registers.log', directory, env)
+    key = adapter.REGISTRY/(adapter.digest(fixed.read_bytes())+'.json')
+    assert json.loads(key.read_text())['asm_allowed'] == []
+    run([sys.executable, ROOT/'tools/relative_calls.py', 'cc', '-m68000',
+         '-msep-data', '-Os', '-I'+str(ROOT/'os3k'), '-c', directory/'mode.c',
+         '-o', fixed], directory/'ordinary-registers.log', directory, env)
+    ordinary = adapter.REGISTRY/(adapter.digest(fixed.read_bytes())+'.json')
+    assert ordinary != key
+    assert json.loads(ordinary.read_text())['asm_allowed'] == ['%a0', '%a1']
+    assert json.loads(key.read_text())['asm_allowed'] == []
     RESULTS.append({'case':'build-controls','sha256':hashlib.sha256(original).hexdigest(),'passed':True})
 
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
+    suite = unittest.defaultTestLoader.loadTestsFromNames(['test_flag_cleanup', 'test_a5_cleanup'])
+    assert unittest.TextTestRunner().run(suite).wasSuccessful()
     operand_modes(False)
     operand_modes(True)
+    flag_cleanup_execution(False)
+    flag_cleanup_execution(True)
+    import runpy
+    runpy.run_path(str(ROOT/'tests/qemu/a5-cleanup.py'), run_name='__main__')
+    for script in ['asm-liveness.py', 'asm-operands.py', 'asm-flow.py']:
+        runpy.run_path(str(ROOT/'tests/qemu'/script), run_name='__main__')
     near_far()
     packaging_fallbacks()
     build_controls()

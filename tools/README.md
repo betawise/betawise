@@ -34,6 +34,43 @@ Automatic ordering applies only to the supplied OS3K linker templates. Custom
 linker scripts retain their layout. Explicit `OBJECT_ORDER` remains available
 for existing experiment commands.
 
+## Dead-code cleanup
+
+Cleanup is enabled by default. `make OS3K_CLEANUP=0` disables all cleanup passes;
+`OS3K_TST_CLEANUP=0`, `OS3K_A5_CLEANUP=0`, or
+`OS3K_ASM_LIVENESS=0` disables a single pass. Switching
+these flags relinks images without recompiling their original GOT objects.
+`OS3K_FIXUPS=0` still disables the complete adapter pipeline.
+
+Only the adapter's added stack-push TST is eligible for flag cleanup. A bounded
+scan proves that NZVC is overwritten before use, following up to four local
+jumps and 32 assembly lines. Known data arithmetic and ordinary C calls can
+kill incoming NZVC. Conditional flag reads, status/control-register accesses,
+inline assembly, cycles and unknown instructions retain the TST. Original TSTs
+remain intact; X is preserved.
+
+A separate pass removes a function's first standalone A5 save and matching
+restores only when the complete control-flow/stack proof succeeds. It adjusts
+caller-stack displacements above the removed slot. MOVEM frames, frame pointers,
+dynamic/indexed stack access, inline assembly, A5 writes, inconsistent joins and
+uncertain instructions retain the complete original frame. Discovery sees the
+same frame changes as the checked final link. This uses no RTL dumps or GCC
+patches; canonical compiler objects remain usable without a translation pass.
+
+After BSR and A5 fixups, bounded assembly liveness can replace a generated
+PEA/MOVE-pop transfer with LEA/MOVE through A0 or A1. A full overwrite must
+precede any read on every inspected path, within 64 lines and four local jumps.
+Calls, returns, cycles, unknown instructions, inline assembly and CFI frames stop
+the proof. Fixed or call-saved registers are excluded; records without register
+metadata retain the stack transfer. The replacement preserves flags and code
+size while avoiding a temporary stack write/read. `OS3K_ASM_CFG=0` restricts this
+to straight-line proofs. No compiler RTL information is used.
+
+Placement models include the shorter TST forms. `.elf.calls.json` reports live
+TST omissions, accepted/rejected A5 functions, removed saves/restores and adjusted
+stack accesses, plus scratch substitutions and proof results. The QEMU regressions compare values, SP, arguments and CCR,
+including live flags, carry chains and conservative fallback cases.
+
 ## Fixups and fallback
 
 The compiler adapter retains original GOT assembly and objects, with records
@@ -47,7 +84,7 @@ Eligible transformations are:
 - RAM addresses become A5-relative address formation.
 - ROM addresses in the same output section become PC-relative address formation.
 - Address-register destinations use `LEA`. Other destinations use `PEA` and
-  `MOVE.L (SP)+,destination`. Direct pushes use `PEA` and `TST.L (SP)` to preserve
+  `MOVE.L (SP)+,destination`. Direct pushes use `PEA` and retain `TST.L (SP)` when needed to preserve
   the original MOVE condition flags. General transfers need four transient
   stack bytes and can add two instruction bytes.
 

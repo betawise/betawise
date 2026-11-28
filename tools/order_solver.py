@@ -10,6 +10,7 @@ from elf_reader import Image, GOT_OFFSETS
 import time
 from pathlib import Path
 import object_order
+import flag_cleanup
 
 
 def read_model(elf, records):
@@ -34,9 +35,8 @@ def read_model(elf, records):
         if names.get(sections[label]) in {'.ram','.rom.ram','.data','.bss','.got'}:
             if s.get('kind') == 'address' and 0 <= target-0x80000000 <= 32767: ram.add(label)
         elif sections[label] == sources[label] and str(sections[label]).isdigit(): rom.add(label)
-    deltas = {key: -2 if sites[key].get('kind','call') == 'call' else
-              0 if re.fullmatch(r'%(?:a[0-7]|sp)',sites[key]['register'].strip()) else 2
-              for key in addresses}
+    removable = set().union(*(flag_cleanup.removable_sites(record) for record, _, _ in records))
+    deltas = {key: flag_cleanup.site_delta(sites[key], removable) for key in addresses}
     return dict(sites=sites, addresses=addresses, targets=targets, ram=ram,
                 rom=rom, deltas=deltas, slots=slots, values=values)
 

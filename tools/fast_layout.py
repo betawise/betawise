@@ -9,6 +9,7 @@ import bisect
 import re
 from elf_reader import Image, R_68K_GOT16O
 import time
+import flag_cleanup
 
 
 def predict(elf, records, margin=128, rom_addresses=True):
@@ -38,11 +39,8 @@ def predict(elf, records, margin=128, rom_addresses=True):
     enabled = ram | rom
     ordered = sorted(addresses, key=addresses.get)
     positions = [addresses[label] for label in ordered]
-    deltas = {}
-    for label in ordered:
-        site = sites[label]
-        deltas[label] = (-2 if site.get('kind', 'call') == 'call' else
-                         0 if re.fullmatch(r'%(?:a[0-7]|sp)', site['register'].strip()) else 2)
+    removable = set().union(*(flag_cleanup.removable_sites(record) for record, _, _ in records))
+    deltas = {label: flag_cleanup.site_delta(sites[label], removable) for label in ordered}
     rounds = 0
     while True:
         rounds += 1

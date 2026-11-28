@@ -13,6 +13,9 @@ import time
 import importlib.util
 import struct
 from elf_reader import Image, R_68K_16, R_68K_PC16, R_68K_GOT16O
+import flag_cleanup
+import a5_cleanup
+import asm_liveness
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / '.relative-calls'
@@ -35,6 +38,9 @@ def digest(data):
 
 def render(record, disabled, rom_labels=()):
     text = record['assembly']
+    removable = flag_cleanup.removable_sites(record) if any(
+        s.get('kind') == 'address' and s['register'].strip() == '-(%sp)'
+        and s['label'] not in disabled for s in record['sites']) else frozenset()
     for site in record['sites']:
         if site['label'] in disabled:
             replacement = site['original']
@@ -55,12 +61,16 @@ def render(record, disabled, rom_labels=()):
                 # MOVE evaluates its source postincrement before its destination
                 # EA, restoring SP before stack-relative destinations are formed.
                 # The final MOVE also reproduces NZVC while preserving X.
-                finish = ('\n\ttst.l (%sp)' if destination == '-(%sp)' else
-                          '\n\tmove.l (%sp)+,' + destination)
+                if destination == '-(%sp)':
+                    finish = '' if site['label'] in removable else '\n\ttst.l (%sp)'
+                else:
+                    finish = '\n\tmove.l (%sp)+,' + destination
             replacement = (instruction + '\n\t.reloc .-2,' + relocation + ',' + target + finish)
         text = text.replace(site['token'], '.globl ' + site['label'] + '\n.hidden ' +
                             site['label'] + '\n' + site['label'] + ':\n' + replacement)
-    return text
+    if a5_cleanup.enabled() and 'input_sha256' in record:
+        text = a5_cleanup.transform(text, record['object'])
+    return asm_liveness.transform(record, text, disabled)
 
 
 def compile_record(record, output, disabled, rom_labels=()):
@@ -114,7 +124,14 @@ def compiler(args):
     result = run([CC, *command])
     if result.returncode:
         return result.returncode
-    record = make_record(asm.read_text(), output)
+    allowed = ['%'+name for name in ['a0', 'a1']
+               if '-ffixed-'+name not in args and '-fcall-saved-'+name not in args]
+    # Registry keys are object hashes. Keep availability in the nonloaded
+    # comment section so identical code with different register restrictions
+    # cannot overwrite each other's metadata. This adds no packaged bytes.
+    source = asm.read_text() + '\n.ident "OS3K scratch registers: ' + ','.join(allowed) + '"\n'
+    record = make_record(source, output)
+    record['asm_allowed'] = allowed
     if not record['sites']:
         return run([CC, *args]).returncode
     # Compile with original GOT references. Each final link gets its own optimized
@@ -222,6 +239,20 @@ def linker(args):
             command[command.index('-T') + 1] = str(script)
         if not records:
             return run([LD, *args]).returncode
+        if a5_cleanup.enabled():
+            # Discovery and final link must see identical frame changes and
+            # zero-byte provenance labels; original input objects stay usable.
+            archives = set()
+            for record, target, archive in records:
+                assembled = compile_record(record, target, {s['label'] for s in record['sites']})
+                if assembled.returncode:
+                    sys.stderr.write(assembled.stderr)
+                    return assembled.returncode
+                if archive:
+                    archives.add(archive)
+            for archive in archives:
+                members = [target for _, target, owner in records if owner == archive]
+                run([AR, 'r', archive, *members], check=True, stdout=subprocess.DEVNULL)
         labels = {s['label'] for record, _, _ in records for s in record['sites']}
         data_labels = {s['label'] for record, _, _ in records for s in record['sites']
                        if s.get('kind') == 'address'}
@@ -324,6 +355,7 @@ def linker(args):
                                                    {'pass': 2, 'phase': 'checked-final'}],
                                   'fast_layout': fast_attempt, 'invocation': args,
                                   'cwd': str(Path.cwd()), 'object_order': ordering or 'incumbent'}
+                        report['tst_cleanup'] = cleanup_stats(records, predicted_disabled, output)
                         Path(str(output)+'.order.json').write_text(json.dumps(state)+'\n')
                         Path(str(output)+'.calls.json').write_text(json.dumps(report)+'\n')
                         with Path(str(output)+'.passes.jsonl').open('a') as log:
@@ -421,12 +453,23 @@ def linker(args):
             if fast_attempt:
                 report['fast_layout'] = fast_attempt
                 report['total_link_passes'] += fast_attempt['link_calls']
+            report['tst_cleanup'] = cleanup_stats(records, disabled, output)
             report['object_order'] = ordering or 'incumbent'
             Path(str(output) + '.calls.json').write_text(json.dumps(report, indent=2) + '\n')
             with Path(str(output) + '.passes.jsonl').open('a') as log:
                 log.write(json.dumps(report) + '\n')
         return result.returncode
 
+
+
+def cleanup_stats(records, disabled, output):
+    removable = set().union(*(flag_cleanup.removable_sites(record) for record, _, _ in records))
+    candidates = removable - disabled
+    live = candidates & Image(output).values.keys() if candidates else set()
+    return {'enabled': flag_cleanup.enabled(), 'removed_live_tst': len(live),
+            'instruction_bytes_removed': 2*len(live),
+            'a5_cleanup': a5_cleanup.live_stats(records, Image(output)),
+            'asm_liveness': asm_liveness.live_stats(records, disabled, Image(output))}
 
 
 def fixup_module():
